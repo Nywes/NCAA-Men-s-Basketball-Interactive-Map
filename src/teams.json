@@ -1,0 +1,6275 @@
+[
+  {
+    "id": "103",
+    "name": "Boston College Eagles",
+    "latitude": "42.3066991",
+    "longitude": "-71.1461226",
+    "oldPlayers": [
+      {
+        "id": "6443",
+        "name": "Reggie Jackson",
+        "years": "2008-2011",
+        "draftPosition": "24",
+        "draftYear": "2011",
+        "draftTeam": "Oklahoma City Thunder"
+      },
+      {
+        "id": "40",
+        "name": "Dana Barros",
+        "years": "1985-1989",
+        "draftPosition": "16",
+        "draftYear": "1989",
+        "draftTeam": "Seattle SuperSonics"
+      },
+      {
+        "id": "3619",
+        "name": "Michael Adams",
+        "years": "1981-1985",
+        "draftPosition": "66",
+        "draftYear": "1985",
+        "draftTeam": "Sacramento Kings"
+      }
+    ]
+  },
+  {
+    "id": "25",
+    "name": "California Golden Bears",
+    "latitude": "37.8701701",
+    "longitude": "-122.2595628",
+    "oldPlayers": [
+      {
+        "id": "3917376",
+        "name": "Jaylen Brown",
+        "years": "2015-2016",
+        "draftPosition": "3",
+        "draftYear": "2016",
+        "draftTeam": "Boston Celtics"
+      },
+      {
+        "id": "429",
+        "name": "Jason Kidd",
+        "years": "1992-1994",
+        "draftPosition": "2",
+        "draftYear": "1994",
+        "draftTeam": "Dallas Mavericks"
+      },
+      {
+        "id": "3",
+        "name": "Shareef Abdur-Rahim",
+        "years": "1994-1996",
+        "draftPosition": "3",
+        "draftYear": "1996",
+        "draftTeam": "Vancouver Grizzlies"
+      }
+    ]
+  },
+  {
+    "id": "228",
+    "name": "Clemson Tigers",
+    "latitude": "34.674997",
+    "longitude": "-82.8431933",
+    "oldPlayers": [
+      {
+        "id": "4270",
+        "name": "Trevor Booker",
+        "years": "2006-1010",
+        "draftPosition": "23",
+        "draftYear": "2010",
+        "draftTeam": "Minneasota Timberwolves"
+      },
+      {
+        "id": "127",
+        "name": "Elden Campbell",
+        "years": "1986-1990",
+        "draftPosition": "27",
+        "draftYear": "1990",
+        "draftTeam": "Los Angeles Lakers"
+      }
+    ]
+  },
+  {
+    "id": "150",
+    "name": "Duke Blue Devils",
+    "latitude": "36.0014301",
+    "longitude": "-78.9408035",
+    "oldPlayers": [
+      {
+        "id": "453",
+        "name": "Christian Laettner",
+        "years": "1988-1992",
+        "trophy": ["1991", "1992"],
+        "draftPosition": "3",
+        "draftYear": "1992",
+        "draftTeam": "Minneasota Timberwolves"
+      },
+      {
+        "id": "336",
+        "name": "Grant Hill",
+        "years": "1990-1994",
+        "trophy": ["1991", "1992"],
+        "draftPosition": "3",
+        "draftYear": "1994",
+        "draftTeam": "Detroit Pistons"
+      },
+      {
+        "id": "3024",
+        "name": "JJ Redick",
+        "years": "2002-2006",
+        "draftPosition": "11",
+        "draftYear": "2006",
+        "draftTeam": "Orlando Magic"
+      },
+      {
+        "id": "976",
+        "name": "Shane Battier",
+        "years": "1997-2001",
+        "trophy": ["2001"],
+        "draftPosition": "6",
+        "draftYear": "2001",
+        "draftTeam": "Memphis Grizzlies"
+      },
+      {
+        "id": "3680",
+        "name": "Johnny Dawkins",
+        "years": "1983-1986",
+        "trophy": ["1986"],
+        "draftPosition": "10",
+        "draftYear": "1986",
+        "draftTeam": "San Antonio Spurs"
+      },
+      {
+        "id": "91",
+        "name": "Elton Brand",
+        "years": "1997-1999",
+        "draftPosition": "1",
+        "draftYear": "1999",
+        "draftTeam": "Chicago Bulls"
+      },
+      {
+        "id": "4395628",
+        "name": "Zion Williamson",
+        "years": "2015-2016",
+        "trophy": ["2016"],
+        "draftPosition": "2",
+        "draftYear": "2016",
+        "draftTeam": "Los Angeles Lakers"
+      },
+      {
+        "id": "6442",
+        "name": "Kyrie Irving",
+        "years": "2010-2011",
+        "draftPosition": "1",
+        "draftYear": "2011",
+        "draftTeam": "Cleveland Cavaliers"
+      },
+      {
+        "id": "4065648",
+        "name": "Jayson Tatum",
+        "years": "2016-2017",
+        "draftPosition": "3",
+        "draftYear": "2017",
+        "draftTeam": "Boston Celtics"
+      },
+      {
+        "id": "3913176",
+        "name": "Brandon Ingram",
+        "years": "2018-2019",
+        "draftPosition": "1",
+        "draftYear": "2019",
+        "draftTeam": "New Orleans Pelicans"
+      },
+      {
+        "id": "4432573",
+        "name": "Paolo Banchero",
+        "years": "2021-2022",
+        "draftPosition": "1",
+        "draftYear": "2022",
+        "draftTeam": "Orlando Magic"
+      }
+    ]
+  },
+  {
+    "id": "52",
+    "name": "Florida States Seminoles",
+    "latitude": "30.442087",
+    "longitude": "-84.2979579",
+    "oldPlayers": [
+      {
+        "id": "4132",
+        "name": "Dave Cowens",
+        "years": "1966-1970",
+        "draftPosition": "4",
+        "draftYear": "1970",
+        "draftTeam": "Boston Celtics"
+      },
+      {
+        "id": "4433134",
+        "name": "Scottie Barnes",
+        "years": "2020-2021",
+        "draftPosition": "4",
+        "draftYear": "2021",
+        "draftTeam": "Toronto Raptors"
+      },
+      {
+        "id": "138",
+        "name": "Sam Cassell",
+        "years": "1991-1993",
+        "draftPosition": "24",
+        "draftYear": "1993",
+        "draftTeam": "Houston Rockets"
+      },
+      {
+        "id": "4065654",
+        "name": "Jonathan Isaac",
+        "years": "2016-2017",
+        "draftPosition": "6",
+        "draftYear": "2017",
+        "draftTeam": "Orlando Magic"
+      }
+    ]
+  },
+  {
+    "id": "59",
+    "name": "Georgia Tech Yellow Jackets",
+    "latitude": "33.7758135",
+    "longitude": "-84.4068353",
+    "oldPlayers": [
+      {
+        "id": "1977",
+        "name": "Chris Bosh",
+        "years": "2002-2003",
+        "draftPosition": "4",
+        "draftYear": "2003",
+        "draftTeam": "Toronto Raptors"
+      },
+      {
+        "id": "509",
+        "name": "Stephon Marbury",
+        "years": "1995-1996",
+        "draftPosition": "4",
+        "draftYear": "1996",
+        "draftTeam": "Milwaukee Bucks"
+      },
+      {
+        "id": "3822",
+        "name": "Mark Price",
+        "years": "1982-1986",
+        "draftPosition": "25",
+        "draftYear": "1986",
+        "draftTeam": "Dallas Mavericks"
+      },
+      {
+        "id": "15",
+        "name": "Kenny Anderson",
+        "years": "1989-1991",
+        "draftPosition": "2",
+        "draftYear": "1991",
+        "draftTeam": "New Jersey Nets"
+      },
+      {
+        "id": "4277869",
+        "name": "Jose Alvarado",
+        "years": "2017-2021"
+      }
+    ]
+  },
+  {
+    "id": "97",
+    "name": "Louisville Cardinals",
+    "latitude": "38.2159837",
+    "longitude": "-85.7623499",
+    "oldPlayers": [
+      {
+        "id": "4148",
+        "name": "Wes Unseld",
+        "years": "1965-1968",
+        "draftPosition": "2",
+        "draftYear": "1968",
+        "draftTeam": "Baltimore Bullets"
+      },
+      {
+        "id": "3908809",
+        "name": "Donovan Mitchell",
+        "years": "2015-2017",
+        "draftPosition": "13",
+        "draftYear": "2017",
+        "draftTeam": "Denver Nuggets"
+      },
+      {
+        "id": "5063",
+        "name": "Darrell Griffith",
+        "years": "1976-1980",
+        "draftPosition": "2",
+        "draftYear": "1980",
+        "draftTeam": "Utah Jazz"
+      }
+    ]
+  },
+  {
+    "id": "2390",
+    "name": "Miami Hurricanes",
+    "latitude": "25.7173278",
+    "longitude": "-80.2781823",
+    "oldPlayers": [
+      {
+        "id": "4122",
+        "name": "Rick Barry",
+        "years": "1962-1965",
+        "draftPosition": "2",
+        "draftYear": "1965",
+        "draftTeam": "San Francisco Warriors"
+      },
+      {
+        "id": "2009",
+        "name": "James Jones",
+        "years": "1999-2003",
+        "draftPosition": "49",
+        "draftYear": "2003",
+        "draftTeam": "Indiana Pacers"
+      },
+      {
+        "id": "4277890",
+        "name": "Lonnie Walker IV",
+        "years": "2017-2018",
+        "draftPosition": "18",
+        "draftYear": "2018",
+        "draftTeam": "San Antonio Spurs"
+      }
+    ]
+  },
+  {
+    "id": "152",
+    "name": "NC State Wolfpack",
+    "latitude": "35.7850787",
+    "longitude": "-78.6838573",
+    "oldPlayers": [
+      {
+        "id": "6177",
+        "name": "David Thompson",
+        "years": "1972-1975",
+        "draftPosition": "1",
+        "draftYear": "1975",
+        "draftTeam": "Atlanta Hawks"
+      },
+      {
+        "id": "287",
+        "name": "Tom Gugliotta",
+        "years": "1988-1992",
+        "draftPosition": "6",
+        "draftYear": "1992",
+        "draftTeam": "Washington Bullets"
+      }
+    ]
+  },
+  {
+    "id": "153",
+    "name": "North Carolina Tar Heels",
+    "latitude": "35.9049165",
+    "longitude": "-79.0494883",
+    "oldPlayers": [
+      {
+        "id": "1035",
+        "name": "Michael Jordan",
+        "years": "1981-1984",
+        "draftPosition": "3",
+        "draftYear": "1984",
+        "draftTeam": "Chicago Bulls"
+      },
+      {
+        "id": "3547",
+        "name": "James Worthy",
+        "years": "1979-1982",
+        "draftPosition": "1",
+        "draftYear": "1982",
+        "draftTeam": "Los Angeles Lakers"
+      },
+      {
+        "id": "136",
+        "name": "Vince Carter",
+        "years": "1995-1998",
+        "draftPosition": "5",
+        "draftYear": "1998",
+        "draftTeam": "Golden State Warriors"
+      },
+      {
+        "id": "3991",
+        "name": "Tyler Hansbrough",
+        "years": "2005-2009",
+        "draftPosition": "13",
+        "draftYear": "2009",
+        "draftTeam": "Indiana Pacers"
+      }
+    ]
+  },
+  {
+    "id": "87",
+    "name": "Notre Dame Fighting Irish",
+    "latitude": "41.7051957",
+    "longitude": "-86.2377404",
+    "oldPlayers": [
+      {
+        "id": "4777",
+        "name": "Adrian Dantley",
+        "years": "1973-1976",
+        "draftPosition": "6",
+        "draftYear": "1976",
+        "draftTeam": "Buffalo Braves"
+      },
+      {
+        "id": "3815",
+        "name": "John Paxson",
+        "years": "1979-1983",
+        "draftPosition": "19",
+        "draftYear": "1983",
+        "draftTeam": "San Antonio Spurs"
+      },
+      {
+        "id": "4666",
+        "name": "Austin Carr",
+        "years": "1968-1971",
+        "draftPosition": "1",
+        "draftYear": "1971",
+        "draftTeam": "Cleveland Cavaliers"
+      },
+      {
+        "id": "2578239",
+        "name": "Pat Connaughton",
+        "years": "2011-2015",
+        "draftPosition": "41",
+        "draftYear": "2015",
+        "draftTeam": "Brooklyn Nets"
+      }
+    ]
+  },
+  {
+    "id": "221",
+    "name": "Pittsburgh Panthers",
+    "latitude": "40.4314699",
+    "longitude": "-80.0629011",
+    "oldPlayers": [
+      {
+        "id": "3491",
+        "name": "Charles Smith",
+        "years": "1984-1988",
+        "draftPosition": "3",
+        "draftYear": "1988",
+        "draftTeam": "Philadelphia Sixers"
+      },
+      {
+        "id": "2991235",
+        "name": "Steven Adams",
+        "years": "2012-2013",
+        "draftPosition": "12",
+        "draftYear": "2013",
+        "draftTeam": "Oklahoma City Thunder"
+      },
+      {
+        "id": "2222",
+        "name": "Brandin Knight",
+        "years": "1999-2003"
+      }
+    ]
+  },
+  {
+    "id": "2567",
+    "name": "SMU Mustangs",
+    "latitude": "32.8412345",
+    "longitude": "-96.8029714",
+    "oldPlayers": [
+      {
+        "id": "5387",
+        "name": "Jim Krebs",
+        "years": "1954–1957",
+        "draftPosition": "3",
+        "draftYear": "1957",
+        "draftTeam": "Minneapolis Lakers"
+      },
+      {
+        "id": "3056602",
+        "name": "Semi Ojeleye",
+        "years": "2016-2017",
+        "draftPosition": "37",
+        "draftYear": "2017",
+        "draftTeam": "Boston Celtics"
+      },
+      {
+        "id": "3915195",
+        "name": "Shake Milton",
+        "years": "2015-2018",
+        "draftPosition": "54",
+        "draftYear": "2018",
+        "draftTeam": "Dallas Mavericks"
+      }
+    ]
+  },
+  {
+    "id": "24",
+    "name": "3B",
+    "latitude": "37.4276642",
+    "longitude": "-122.1726349",
+    "oldPlayers": [
+      {
+        "id": "3448",
+        "name": "Brook Lopez",
+        "years": "2006-2008",
+        "draftPosition": "10",
+        "draftYear": "2008",
+        "draftTeam": "New Jersey Nets"
+      },
+      {
+        "id": "440",
+        "name": "Brevin Knight",
+        "years": "11993-1997",
+        "draftPosition": "6",
+        "draftYear": "1997",
+        "draftTeam": "Cleveland Cavaliers"
+      },
+      {
+        "id": "2531367",
+        "name": "Dwight Powell",
+        "years": "2010-2014",
+        "draftPosition": "45",
+        "draftYear": "2014",
+        "draftTeam": "Charlotte Hornets"
+      }
+    ]
+  },
+  {
+    "id": "183",
+    "name": "Syracuse Orange",
+    "latitude": "43.0386541",
+    "longitude": "-76.1362671",
+    "oldPlayers": [
+      {
+        "id": "1975",
+        "name": "Carmelo Anthony",
+        "years": "2002-2003",
+        "trophy": ["2003"],
+        "draftPosition": "3",
+        "draftYear": "2003",
+        "draftTeam": "Denver Nuggets"
+      },
+      {
+        "id": "4146",
+        "name": "Dave Bing",
+        "years": "1962-1966",
+        "draftPosition": "2",
+        "draftYear": "1966",
+        "draftTeam": "Detroit Pistons"
+      }
+    ]
+  },
+  {
+    "id": "258",
+    "name": "Virginia Cavaliers",
+    "latitude": "38.0335571",
+    "longitude": "-78.5105521",
+    "oldPlayers": [
+      {
+        "id": "5964",
+        "name": "Ralph Samson",
+        "years": "1979-1983",
+        "draftPosition": "1",
+        "draftYear": "1983",
+        "draftTeam": "Houston Rockets"
+      },
+      {
+        "id": "2566769",
+        "name": "Malcolm Brogdon",
+        "years": "2011-2016",
+        "draftPosition": "36",
+        "draftYear": "2016",
+        "draftTeam": "Milwaukee Bucks"
+      }
+    ]
+  },
+  {
+    "id": "259",
+    "name": "Virginia Tech Hokies",
+    "latitude": "37.2283885",
+    "longitude": "-80.4259916",
+    "oldPlayers": [
+      {
+        "id": "175",
+        "name": "Dell Curry",
+        "years": "1982-1986",
+        "draftPosition": "1986",
+        "draftYear": "15",
+        "draftTeam": "Utah Jazz"
+      },
+      {
+        "id": "159",
+        "name": "Bimbo Coles",
+        "years": "1986-1990",
+        "draftPosition": "40",
+        "draftYear": "1990",
+        "draftTeam": "Sacramento Kings"
+      },
+      {
+        "id": "2282205",
+        "name": "Malcolm Delaney",
+        "years": "2007-2011"
+      }
+    ]
+  },
+  {
+    "id": "154",
+    "name": "Wake Forest Demon Deacons",
+    "latitude": "36.135493",
+    "longitude": "-80.2818636",
+    "oldPlayers": [
+      {
+        "id": "215",
+        "name": "Tim Duncan",
+        "years": "1993-1997",
+        "draftPosition": "1",
+        "draftYear": "1997",
+        "draftTeam": "San Antonio Spurs"
+      },
+      {
+        "id": "2779",
+        "name": "Chris Paul",
+        "years": "2003-2005",
+        "draftPosition": "4",
+        "draftYear": "2005",
+        "draftTeam": "New Orleans Hornets"
+      },
+      {
+        "id": "4015",
+        "name": "Jeff Teague",
+        "years": "2007-2009",
+        "draftPosition": "2009",
+        "draftYear": "19",
+        "draftTeam": "Atlanta Hawks"
+      },
+      {
+        "id": "73",
+        "name": "Muggsy Bogues",
+        "years": "1983-1987",
+        "draftPosition": "1987",
+        "draftYear": "12",
+        "draftTeam": "Washington Bullets"
+      },
+      {
+        "id": "3908845",
+        "name": "John Collins",
+        "years": "2015-2017",
+        "draftPosition": "19",
+        "draftYear": "2017",
+        "draftTeam": "Atlanta Hawks"
+      }
+    ]
+  },
+  {
+    "id": "2046",
+    "name": "Austin Peay Governors",
+    "latitude": "36.5353441",
+    "longitude": "-87.3607908",
+    "oldPlayers": [
+      {
+        "id": "10000000",
+        "name": "Fly Williams",
+        "years": "1972-1974",
+        "draftPosition": "152",
+        "draftYear": "1976",
+        "draftTeam": "Philadelphia Sixers"
+      }
+    ]
+  },
+  {
+    "id": "91",
+    "name": "Bellarmine Knights",
+    "latitude": "38.2162544",
+    "longitude": "-85.7166275"
+  },
+  {
+    "id": "2110",
+    "name": "Central Arkansas Bears",
+    "latitude": "35.0780983",
+    "longitude": "-92.4604665",
+    "oldPlayers": [
+      {
+        "id": "663",
+        "name": "Scottie Pippen",
+        "years": "1983-1987",
+        "draftPosition": "5",
+        "draftYear": "1987",
+        "draftTeam": "Seattle SuperSonics"
+      }
+    ]
+  },
+  {
+    "id": "2198",
+    "name": "Eastern Kentucky Colonels",
+    "latitude": "37.7359886",
+    "longitude": "-84.3172022",
+    "oldPlayers": [
+      {
+        "id": "4462",
+        "name": "Jim Baechtold",
+        "years": "1948-1952",
+        "draftPosition": "2",
+        "draftYear": "1952",
+        "draftTeam": "Baltimore Bullets"
+      }
+    ]
+  },
+  {
+    "id": "526",
+    "name": "Florida Gulf Coast Eagles",
+    "latitude": "26.4627015",
+    "longitude": "-81.7826497",
+    "oldPlayers": [
+      {
+        "id": "3057198",
+        "name": "Brandon Goodwin",
+        "years": "2016-2018"
+      }
+    ]
+  },
+  {
+    "id": "294",
+    "name": "Jacksonville Dolphins",
+    "latitude": "30.3516324",
+    "longitude": "-81.6061034",
+    "oldPlayers": [
+      {
+        "id": "5008",
+        "name": "Artis Gilmore",
+        "years": "1969-1971",
+        "draftPosition": "117",
+        "draftYear": "1971",
+        "draftTeam": "Chicago Bulls"
+      },
+      {
+        "id": "97",
+        "name": "Dee Brown",
+        "years": "1986-1990",
+        "draftPosition": "19",
+        "draftYear": "1990",
+        "draftTeam": "Boston Celtics"
+      }
+    ]
+  },
+  {
+    "id": "288",
+    "name": "Lipscomb Bisons",
+    "latitude": "36.1046474",
+    "longitude": "-86.8014477",
+    "oldPlayers": [
+      {
+        "id": "10000001",
+        "name": "John Pierce",
+        "years": "1990-1994"
+      },
+      {
+        "id": "3913180",
+        "name": "Garrison Mathews",
+        "years": "2015-2019"
+      }
+    ]
+  },
+  {
+    "id": "2453",
+    "name": "North Alabama Lions",
+    "latitude": "34.8078404",
+    "longitude": "-87.6830425"
+  },
+  {
+    "id": "2454",
+    "name": "North Florida Ospreys",
+    "latitude": "30.266125",
+    "longitude": "-81.5098063"
+  },
+  {
+    "id": "2511",
+    "name": "Queens University Royals",
+    "latitude": "35.1740609",
+    "longitude": "-80.8620301"
+  },
+  {
+    "id": "56",
+    "name": "Stetson Hatters",
+    "latitude": "29.0335314",
+    "longitude": "-81.3193784"
+  },
+  {
+    "id": "2698",
+    "name": "West Georgia Wolves",
+    "latitude": "33.5753504",
+    "longitude": "-85.1066968"
+  },
+  {
+    "id": "2066",
+    "name": "Binghamton Bearcats",
+    "latitude": "42.0894328",
+    "longitude": "-75.9720634"
+  },
+  {
+    "id": "2803",
+    "name": "Bryant Bulldogs",
+    "latitude": "41.9175539",
+    "longitude": "-71.5784651"
+  },
+  {
+    "id": "311",
+    "name": "Maine Black Bears",
+    "latitude": "44.9018807",
+    "longitude": "-68.687279"
+  },
+  {
+    "id": "2885",
+    "name": "NJIT Highlanders",
+    "latitude": "40.7424407",
+    "longitude": "-74.1968545"
+  },
+  {
+    "id": "160",
+    "name": "New Hampshire Wildcats",
+    "latitude": "43.1389519",
+    "longitude": "-70.9396001"
+  },
+  {
+    "id": "399",
+    "name": "UAlbany Great Danes",
+    "latitude": "42.672607",
+    "longitude": "-73.8209055"
+  },
+  {
+    "id": "2378",
+    "name": "UMBC Retrievers",
+    "latitude": "39.2554091",
+    "longitude": "-76.7109206"
+  },
+  {
+    "id": "2349",
+    "name": "UMass Lowell River Hawks",
+    "latitude": "42.6552626",
+    "longitude": "-71.3272913"
+  },
+  {
+    "id": "261",
+    "name": "Vermont Catamounts",
+    "latitude": "44.4703886",
+    "longitude": "-73.1973891"
+  },
+  {
+    "id": "2429",
+    "name": "Charlotte 49ers",
+    "latitude": "35.307418",
+    "longitude": "-80.7358559",
+    "oldPlayers": [
+      {
+        "id": "5524",
+        "name": "Cedric Maxell",
+        "years": "1973-1977",
+        "draftPosition": "12",
+        "draftYear": "1977",
+        "draftTeam": "Boston Celtics"
+      }
+    ]
+  },
+  {
+    "id": "151",
+    "name": "East Carolina Pirates",
+    "latitude": "35.6068849",
+    "longitude": "-77.3691113",
+    "oldPlayers": [
+      {
+        "id": "3695",
+        "name": "Blue Edwards",
+        "years": "1986-1989",
+        "draftPosition": "21",
+        "draftYear": "1989",
+        "draftTeam": "Utah Jazz"
+      }
+    ]
+  },
+  {
+    "id": "2226",
+    "name": "Florida Atlantic Owls",
+    "latitude": "26.3736524",
+    "longitude": "-80.1019573"
+  },
+  {
+    "id": "235",
+    "name": "Memphis Tigers",
+    "latitude": "35.1198972",
+    "longitude": "-89.9559058",
+    "oldPlayers": [
+      {
+        "id": "302",
+        "name": "Penny Hardaway",
+        "years": "1989-1993",
+        "draftPosition": "3",
+        "draftYear": "1993",
+        "draftTeam": "Golden State Warriors"
+      },
+      {
+        "id": "3456",
+        "name": "Derrick Rose",
+        "years": "2007-2008",
+        "draftPosition": "1",
+        "draftYear": "2008",
+        "draftTeam": "Chicago Bulls"
+      },
+      {
+        "id": "5339",
+        "name": "Larry Kenon",
+        "years": "1970-1973",
+        "draftPosition": "50",
+        "draftYear": "1973",
+        "draftTeam": "Detroit Pistons"
+      },
+      {
+        "id": "3983",
+        "name": "Tyreke Evans",
+        "years": "2008-2009",
+        "draftPosition": "4",
+        "draftYear": "2009",
+        "draftTeam": "Sacramento Kings"
+      },
+      {
+        "id": "4433621",
+        "name": "Jalen Duren",
+        "years": "2021-2022",
+        "draftPosition": "13",
+        "draftYear": "2022",
+        "draftTeam": "Charlotte Hornets"
+      }
+    ]
+  },
+  {
+    "id": "249",
+    "name": "North Texas Mean Green",
+    "latitude": "33.2074925",
+    "longitude": "-97.1551611"
+  },
+  {
+    "id": "242",
+    "name": "Rice Owls",
+    "latitude": "29.7168363",
+    "longitude": "-95.4035531",
+    "oldPlayers": [
+      {
+        "id": "4707",
+        "name": "Bill Closs",
+        "years": "1940-1943"
+      },
+      {
+        "id": "3820",
+        "name": "Ricky Pierce",
+        "years": "1979-1982",
+        "draftPosition": "18",
+        "draftYear": "1982",
+        "draftTeam": "Detroit Pistons"
+      },
+      {
+        "id": "3188",
+        "name": "Morris Almond",
+        "years": "2003-2007",
+        "draftPosition": "23",
+        "draftYear": "2007",
+        "draftTeam": "Utah Jazz"
+      }
+    ]
+  },
+  {
+    "id": "58",
+    "name": "South Florida Bulls",
+    "latitude": "28.0587078",
+    "longitude": "-82.4164288",
+    "oldPlayers": [
+      {
+        "id": "26",
+        "name": "Chucky Atkins",
+        "years": "1992–1996"
+      }
+    ]
+  },
+  {
+    "id": "218",
+    "name": "Temple Owls",
+    "latitude": "39.9811952",
+    "longitude": "-75.1579312",
+    "oldPlayers": [
+      {
+        "id": "402",
+        "name": "Eddie Jones",
+        "years": "1991-1994",
+        "draftPosition": "10",
+        "draftYear": "1994",
+        "draftTeam": "Los Angeles Lakers"
+      },
+      {
+        "id": "5926",
+        "name": "Guy Rodgers",
+        "years": "1955-1958",
+        "draftPosition": "as territorial pick",
+        "draftYear": "1958",
+        "draftTeam": "Philadelphia Warriors"
+      }
+    ]
+  },
+  {
+    "id": "2655",
+    "name": "Tulane Green Wave",
+    "latitude": "29.9407328",
+    "longitude": "-90.1228916",
+    "oldPlayers": [
+      {
+        "id": "918",
+        "name": "Hot Rod Williams",
+        "years": "1981-1985",
+        "draftPosition": "45",
+        "draftYear": "1985",
+        "draftTeam": "Cleveland Cavaliers"
+      }
+    ]
+  },
+  {
+    "id": "202",
+    "name": "Tulsa Golden Hurricane",
+    "latitude": "36.0963065",
+    "longitude": "-96.2117431",
+    "oldPlayers": [
+      {
+        "id": "5832",
+        "name": "Paul Pressey",
+        "years": "1980-1982",
+        "draftPosition": "20",
+        "draftYear": "1982",
+        "draftTeam": "Milwaukee Bucks"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "UAB Blazers",
+    "latitude": "33.5021025",
+    "longitude": "-86.8236127"
+  },
+  {
+    "id": "2636",
+    "name": "UTSA Roadrunners",
+    "latitude": "29.5830779",
+    "longitude": "-98.6224528",
+    "oldPlayers": [
+      {
+        "id": "1858",
+        "name": "Devin Brown",
+        "years": "1998-2002"
+      }
+    ]
+  },
+  {
+    "id": "2724",
+    "name": "Wichita State Shockers",
+    "latitude": "37.7190824",
+    "longitude": "-97.2941009",
+    "oldPlayers": [
+      {
+        "id": "2991230",
+        "name": "Fred VanVleet",
+        "years": "2012-2016"
+      },
+      {
+        "id": "3787",
+        "name": "Xavier McDaniel",
+        "years": "1981-1985",
+        "draftPosition": "4",
+        "draftYear": "1985",
+        "draftTeam": "Seattle SuperSonics"
+      },
+      {
+        "id": "369",
+        "name": "Warren Jabali",
+        "years": "1964-1968",
+        "draftPosition": "44",
+        "draftYear": "1968",
+        "draftTeam": "New York Knicks"
+      },
+      {
+        "id": "3914044",
+        "name": "Landry Shamet",
+        "years": "2015-2018",
+        "draftPosition": "26",
+        "draftYear": "2018",
+        "draftTeam": "Philadelphia Sixers"
+      }
+    ]
+  },
+  {
+    "id": "2166",
+    "name": "Davidson Wildcats",
+    "latitude": "35.5015528",
+    "longitude": "-81.4026275",
+    "oldPlayers": [
+      {
+        "id": "3975",
+        "name": "Stephen Curry",
+        "years": "2006–2009",
+        "draftPosition": "7",
+        "draftYear": "2009",
+        "draftTeam": "Golden State Warriors"
+      }
+    ]
+  },
+  {
+    "id": "2168",
+    "name": "Dayton Flyers",
+    "latitude": "39.740171",
+    "longitude": "-84.1818585",
+    "oldPlayers": [
+      {
+        "id": "5788",
+        "name": "Jim Paxson",
+        "years": "1975-1979",
+        "draftPosition": "12",
+        "draftYear": "1979",
+        "draftTeam": "Portland Trail Blazers"
+      },
+      {
+        "id": "4278355",
+        "name": "Obi Toppin",
+        "years": "2018-2020",
+        "draftPosition": "8",
+        "draftYear": "2020",
+        "draftTeam": "New York Knicks"
+      }
+    ]
+  },
+  {
+    "id": "2184",
+    "name": "Duquesne Dukes",
+    "latitude": "40.4369485",
+    "longitude": "-79.9902576",
+    "oldPlayers": [
+      {
+        "id": "5708",
+        "name": "Norm Nixon",
+        "years": "1973-1977",
+        "draftPosition": "22",
+        "draftYear": "1977",
+        "draftTeam": "Los Angeles Lakers"
+      }
+    ]
+  },
+  {
+    "id": "2230",
+    "name": "Fordham Rams",
+    "latitude": "40.8596583",
+    "longitude": "-73.8871048"
+  },
+  {
+    "id": "2244",
+    "name": "George Mason Patriots",
+    "latitude": "38.8314094",
+    "longitude": "-77.311153"
+  },
+  {
+    "id": "45",
+    "name": "George Washington Revolutionaries",
+    "latitude": "38.8997149",
+    "longitude": "-77.0533403",
+    "oldPlayers": [
+      {
+        "id": "3133838",
+        "name": "Yuta Watanabe",
+        "years": "2014-2018"
+      },
+      {
+        "id": "184",
+        "name": "Yinka Dare",
+        "years": "1992-1994",
+        "draftPosition": "14",
+        "draftYear": "1994",
+        "draftTeam": "New Jersey Nets"
+      }
+    ]
+  },
+  {
+    "id": "2325",
+    "name": "La Salle Explorers",
+    "latitude": "40.0390398",
+    "longitude": "-75.1580071",
+    "oldPlayers": [
+      {
+        "id": "5018",
+        "name": "Tom Gola",
+        "years": "1951-1955",
+        "trophy": ["1954"],
+        "draftPosition": "as territorial pick",
+        "draftYear": "1955",
+        "draftTeam": "Philadelphia Warriors"
+      },
+      {
+        "id": "4955",
+        "name": "Larry Foust",
+        "years": "1946-1950",
+        "draftPosition": "5",
+        "draftYear": "1950",
+        "draftTeam": "Chicago Stags"
+      },
+      {
+        "id": "3489",
+        "name": "Lionel Simmons",
+        "years": "1986-1990",
+        "draftPosition": "7",
+        "draftYear": "1990",
+        "draftTeam": "Sacramento Kings"
+      }
+    ]
+  },
+  {
+    "id": "2350",
+    "name": "Loyola Chicago Ramblers",
+    "latitude": "41.9983568",
+    "longitude": "-92.1393593"
+  },
+  {
+    "id": "113",
+    "name": "Massachusetts Minutemen",
+    "latitude": "42.391155",
+    "longitude": "-72.526711",
+    "oldPlayers": [
+      {
+        "id": "4130",
+        "name": "Julius Erving",
+        "years": "1968-1971",
+        "draftPosition": "12",
+        "draftYear": "1972",
+        "draftTeam": "Milwaukee Bucks"
+      },
+      {
+        "id": "125",
+        "name": "Marcus Camby",
+        "years": "1993-1996",
+        "draftPosition": "2",
+        "draftYear": "1996",
+        "draftTeam": "Toronto Raptors"
+      }
+    ]
+  },
+  {
+    "id": "227",
+    "name": "Rhode Island Rams",
+    "latitude": "41.4862328",
+    "longitude": "-71.5306788",
+    "oldPlayers": [
+      {
+        "id": "617",
+        "name": "Lamar Odom",
+        "years": "1998-1999",
+        "draftPosition": "4",
+        "draftYear": "1999",
+        "draftTeam": "Los Angeles Clippers"
+      },
+      {
+        "id": "566",
+        "name": "Cuttino Mobley",
+        "years": "1994-1998",
+        "draftPosition": "41",
+        "draftYear": "1998",
+        "draftTeam": "Houston Rockets"
+      }
+    ]
+  },
+  {
+    "id": "257",
+    "name": "Richmond Spiders",
+    "latitude": "37.5758243",
+    "longitude": "-77.5397192",
+    "oldPlayers": [
+      {
+        "id": "602",
+        "name": "Johnny Newman",
+        "years": "1982-1986",
+        "draftPosition": "29",
+        "draftYear": "1986",
+        "draftTeam": "Cleveland Cavaliers"
+      }
+    ]
+  },
+  {
+    "id": "2603",
+    "name": "Saint Joseph's Hawks",
+    "latitude": "39.9951217",
+    "longitude": "-75.2399328",
+    "oldPlayers": [
+      {
+        "id": "2439",
+        "name": "Jameer Nelson",
+        "years": "2000-2004",
+        "draftPosition": "20",
+        "draftYear": "2004",
+        "draftTeam": "Denver Nuggets"
+      }
+    ]
+  },
+  {
+    "id": "139",
+    "name": "Saint Louis Billikens",
+    "latitude": "38.6356968",
+    "longitude": "-90.2370893",
+    "oldPlayers": [
+      {
+        "id": "356",
+        "name": "Larry Hughes",
+        "years": "1997-1998",
+        "draftPosition": "8",
+        "draftYear": "1998",
+        "draftTeam": "Philadelphia Sixers"
+      }
+    ]
+  },
+  {
+    "id": "179",
+    "name": "St. Bonaventure Bonnies",
+    "latitude": "42.0785768",
+    "longitude": "-78.4829439",
+    "oldPlayers": [
+      {
+        "id": "5410",
+        "name": "Bob Lanier",
+        "years": "1969-1973",
+        "draftPosition": "1",
+        "draftYear": "1970",
+        "draftTeam": "Detroit Pistons"
+      }
+    ]
+  },
+  {
+    "id": "2670",
+    "name": "VCU Rams",
+    "latitude": "37.5464394",
+    "longitude": "-77.4548304",
+    "oldPlayers": [
+      {
+        "id": "4001",
+        "name": "Eric Maynor",
+        "years": "2005-2009",
+        "draftPosition": "20",
+        "draftYear": "2009",
+        "draftTeam": "Utah Jazz"
+      },
+      {
+        "id": "2489530",
+        "name": "Troy Daniels",
+        "years": "2009-2013"
+      },
+      {
+        "id": "4397227",
+        "name": "Vince Williams Jr.",
+        "years": "2018-2022",
+        "draftPosition": "47",
+        "draftYear": "2022",
+        "draftTeam": "Memphis Grizzlies"
+      },
+      {
+        "id": "4592492",
+        "name": "Bones Hyland",
+        "years": "2019-2021",
+        "draftPosition": "26 ",
+        "draftYear": "2021",
+        "draftTeam": "Denver Nuggets"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Arizona State Sun Devils",
+    "latitude": "33.4229795",
+    "longitude": "-111.9279264",
+    "oldPlayers": [
+      {
+        "id": "3992",
+        "name": "James Harden",
+        "years": "2007-2009",
+        "draftPosition": "3",
+        "draftYear": "2009",
+        "draftTeam": "Oklahoma City Thunder"
+      },
+      {
+        "id": "3483",
+        "name": "Byron Scott",
+        "years": "1979-1983",
+        "draftPosition": "4",
+        "draftYear": "1983",
+        "draftTeam": "San Diego Clippers"
+      },
+      {
+        "id": "3763",
+        "name": "Fat Lever",
+        "years": "1979-1982",
+        "draftPosition": "11",
+        "draftYear": "1982",
+        "draftTeam": "Portland Trail Blazers"
+      },
+      {
+        "id": "4397020",
+        "name": "Luguentz Dort",
+        "years": "2018-2019"
+      }
+    ]
+  },
+  {
+    "id": "12",
+    "name": "Arizona Wildcats",
+    "latitude": "32.2322737",
+    "longitude": "-110.95925",
+    "oldPlayers": [
+      {
+        "id": "225",
+        "name": "Sean Elliott",
+        "years": "1985-1989",
+        "draftPosition": "3",
+        "draftYear": "1989",
+        "draftTeam": "San Antonio Spurs"
+      },
+      {
+        "id": "974",
+        "name": "Gilbert Arenas",
+        "years": "1999-2001",
+        "draftPosition": "31",
+        "draftYear": "2001",
+        "draftTeam": "Golden State Warriors"
+      },
+      {
+        "id": "61",
+        "name": "Mike Bibby",
+        "years": "1996-1998",
+        "trophy": ["1997"],
+        "draftPosition": "2",
+        "draftYear": "1998",
+        "draftTeam": "Vancouver Grizzlies"
+      },
+      {
+        "id": "2386",
+        "name": "Andre Iguodala",
+        "years": "2002-2004",
+        "draftPosition": "9",
+        "draftYear": "2004",
+        "draftTeam": "Philadelphia Sixers"
+      },
+      {
+        "id": "817",
+        "name": "Damon Stoudemire",
+        "years": "1991-1995",
+        "draftPosition": "7",
+        "draftYear": "1995",
+        "draftTeam": "Toronto Raptors"
+      },
+      {
+        "id": "841",
+        "name": "Jason Terry",
+        "years": "1995-1999",
+        "trophy": ["1997"],
+        "draftPosition": "10",
+        "draftYear": "1999",
+        "draftTeam": "Atlanta Hawks"
+      },
+      {
+        "id": "1006",
+        "name": "Richard Jefferson",
+        "years": "1998-2001",
+        "draftPosition": "13",
+        "draftYear": "2001",
+        "draftTeam": "Houston Rockets"
+      },
+      {
+        "id": "425",
+        "name": "Steve Kerr",
+        "years": "1983-1988",
+        "draftPosition": "50",
+        "draftYear": "1988",
+        "draftTeam": "Phoenix Suns"
+      },
+      {
+        "id": "4066336",
+        "name": "Lauri Markkanen",
+        "years": "2016-2017",
+        "draftPosition": "7",
+        "draftYear": "2017",
+        "draftTeam": "Minneasota Timberwolves"
+      },
+      {
+        "id": "3064290",
+        "name": "Aaron Gordon",
+        "years": "2013-2014",
+        "draftPosition": "4",
+        "draftYear": "2014",
+        "draftTeam": "Orlando Magic"
+      },
+      {
+        "id": "4278129",
+        "name": "Deandre Ayton",
+        "years": "2017-2018",
+        "draftPosition": "1",
+        "draftYear": "2018",
+        "draftTeam": "Phoenix Suns"
+      }
+    ]
+  },
+  {
+    "id": "252",
+    "name": "BYU Cougars",
+    "latitude": "40.2518594",
+    "longitude": "-111.6596153",
+    "oldPlayers": [
+      {
+        "id": "3622",
+        "name": "Danny Ainge",
+        "years": "1977-1981",
+        "draftPosition": "31",
+        "draftYear": "1981",
+        "draftTeam": "Boston Celtics"
+      }
+    ]
+  },
+  {
+    "id": "239",
+    "name": "Baylor Bears",
+    "latitude": "31.5501027",
+    "longitude": "-97.1238397",
+    "oldPlayers": [
+      {
+        "id": "4278053",
+        "name": "Davion Mitchell",
+        "years": "2019-2021",
+        "trophy": ["2021"],
+        "draftPosition": "9",
+        "draftYear": "2021",
+        "draftTeam": "Sacramento Kings"
+      },
+      {
+        "id": "5275",
+        "name": "Vinnie Johnson",
+        "years": "1977-1979",
+        "draftPosition": "7",
+        "draftYear": "1979",
+        "draftTeam": "Seattle SuperSonics"
+      }
+    ]
+  },
+  {
+    "id": "2132",
+    "name": "Cincinnati Bearcats",
+    "latitude": "39.1329381",
+    "longitude": "-84.5252501",
+    "oldPlayers": [
+      {
+        "id": "4119",
+        "name": "Oscar Robertson",
+        "years": "1957-1960",
+        "draftPosition": "1",
+        "draftYear": "1960",
+        "draftTeam": "Cincinnati Royals"
+      },
+      {
+        "id": "515",
+        "name": "Kenyon Martin",
+        "years": "1996-2000",
+        "draftPosition": "1",
+        "draftYear": "2000",
+        "draftTeam": "New Jersey Nets"
+      },
+      {
+        "id": "6224",
+        "name": "Jack Twyman",
+        "years": "1952-1955",
+        "draftPosition": "8",
+        "draftYear": "1955",
+        "draftTeam": "Rochester Royals"
+      },
+      {
+        "id": "868",
+        "name": "Nick Van Exel",
+        "years": "1991-1993",
+        "draftPosition": "37",
+        "draftYear": "1993",
+        "draftTeam": "Los Angeles Lakers"
+      },
+      {
+        "id": "4244",
+        "name": "Lance Stephenson",
+        "years": "2009-2010",
+        "draftPosition": "40",
+        "draftYear": "2010",
+        "draftTeam": "Indiana Pacers"
+      }
+    ]
+  },
+  {
+    "id": "38",
+    "name": "Colorado Buffaloes",
+    "latitude": "40.0073659",
+    "longitude": "-105.2762868",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "248",
+    "name": "Houston Cougars",
+    "latitude": "29.7204809",
+    "longitude": "-95.3532316",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "66",
+    "name": "Iowa State Cyclones",
+    "latitude": "42.0266728",
+    "longitude": "-93.6567513",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2305",
+    "name": "Kansas Jayhawks",
+    "latitude": "38.9543601",
+    "longitude": "-95.2660958",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2306",
+    "name": "Kansas State Wildcats",
+    "latitude": "39.1974599",
+    "longitude": "-96.5950246",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "197",
+    "name": "Oklahoma State Cowboys",
+    "latitude": "36.1265889",
+    "longitude": "-97.0837818",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2628",
+    "name": "TCU Horned Frogs",
+    "latitude": "32.7078707",
+    "longitude": "-97.3731038",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2641",
+    "name": "Texas Tech Red Raiders",
+    "latitude": "33.5845696",
+    "longitude": "-101.884948",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2116",
+    "name": "UCF Knights",
+    "latitude": "28.6024459",
+    "longitude": "-81.2103596",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "254",
+    "name": "Utah Utes",
+    "latitude": "40.7649368",
+    "longitude": "-111.8421021",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "277",
+    "name": "West Virginia Mountaineers",
+    "latitude": "39.6449459",
+    "longitude": "-79.9714985",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2086",
+    "name": "Butler Bulldogs",
+    "latitude": "39.8406",
+    "longitude": "-86.1713",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "156",
+    "name": "Creighton Bluejays",
+    "latitude": "41.26671678",
+    "longitude": "-95.9449804",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "305",
+    "name": "DePaul Blue Demons",
+    "latitude": "41.9220031",
+    "longitude": "-87.654057",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "46",
+    "name": "Georgetown Hoyas",
+    "latitude": "38.9076089",
+    "longitude": "-77.0722585",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "269",
+    "name": "Marquette Golden Eagles",
+    "latitude": "43.0386955",
+    "longitude": "-87.931014",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2507",
+    "name": "Providence Friars",
+    "latitude": "41.840076",
+    "longitude": "-71.404789",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2550",
+    "name": "Seton Hall Pirates",
+    "latitude": "40.7423095",
+    "longitude": "-74.2456785",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2599",
+    "name": "St. John's Red Storm",
+    "latitude": "40.7209832",
+    "longitude": "-73.7902303",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "41",
+    "name": "UConn Huskies",
+    "latitude": "41.805641",
+    "longitude": "-72.253243",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "222",
+    "name": "Villanova Wildcats",
+    "latitude": "40.0376",
+    "longitude": "-75.3431",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2752",
+    "name": "Xavier Musketeers",
+    "latitude": "39.149292",
+    "longitude": "-84.476091",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "331",
+    "name": "Eastern Washington Eagles",
+    "latitude": "47.49149",
+    "longitude": "-117.58492",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "304",
+    "name": "Idaho State Bengals",
+    "latitude": "42.8605",
+    "longitude": "-112.4348",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "70",
+    "name": "Idaho Vandals",
+    "latitude": "46.7319",
+    "longitude": "-117.1653",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "149",
+    "name": "Montana Grizzlies",
+    "latitude": "46.8601",
+    "longitude": "-113.9843",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "147",
+    "name": "Montana State Bobcats",
+    "latitude": "45.6666",
+    "longitude": "-111.0485",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2464",
+    "name": "Northern Arizona Lumberjacks",
+    "latitude": "35.1877",
+    "longitude": "-111.6553",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2458",
+    "name": "Northern Colorado Bears",
+    "latitude": "40.4042",
+    "longitude": "-104.6984",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2502",
+    "name": "Portland State Vikings",
+    "latitude": "45.5116",
+    "longitude": "-122.6846",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "16",
+    "name": "Sacramento State Hornets",
+    "latitude": "38.5615",
+    "longitude": "-121.4241",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2692",
+    "name": "Weber State Wildcats",
+    "latitude": "41.1919",
+    "longitude": "-111.9447",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2127",
+    "name": "Charleston Southern Buccaneers",
+    "latitude": "32.9782",
+    "longitude": "-80.0662",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2241",
+    "name": "Gardner-Webb Runnin' Bulldogs",
+    "latitude": "35.2443",
+    "longitude": "-81.6674",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2272",
+    "name": "High Point Panthers",
+    "latitude": "35.9727",
+    "longitude": "-79.9944",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2344",
+    "name": "Longwood Lancers",
+    "latitude": "37.3021",
+    "longitude": "-78.3919",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2506",
+    "name": "Presbyterian Blue Hose",
+    "latitude": "34.4474",
+    "longitude": "-81.8698",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2515",
+    "name": "Radford Highlanders",
+    "latitude": "37.1384",
+    "longitude": "-80.5482",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2908",
+    "name": "South Carolina Upstate Spartans",
+    "latitude": "34.9954",
+    "longitude": "-81.9877",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2427",
+    "name": "UNC Asheville Bulldogs",
+    "latitude": "35.615",
+    "longitude": "-82.5654",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2737",
+    "name": "Winthrop Eagles",
+    "latitude": "34.939",
+    "longitude": "-81.0305",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "356",
+    "name": "Illinois Fighting Illini",
+    "latitude": "40.1106",
+    "longitude": "-88.2073",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "84",
+    "name": "Indiana Hoosiers",
+    "latitude": "39.1653",
+    "longitude": "-86.5264",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2294",
+    "name": "Iowa Hawkeyes",
+    "latitude": "41.6611",
+    "longitude": "-91.5302",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "120",
+    "name": "Maryland Terrapins",
+    "latitude": "38.9867",
+    "longitude": "-76.9426",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "130",
+    "name": "Michigan Wolverines",
+    "latitude": "42.2770",
+    "longitude": "-83.7382",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "127",
+    "name": "Michigan State Spartans",
+    "latitude": "42.7361",
+    "longitude": "-84.4822",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "135",
+    "name": "Minnesota Golden Gophers",
+    "latitude": "44.9749",
+    "longitude": "-93.2270",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "158",
+    "name": "Nebraska Cornhuskers",
+    "latitude": "40.818902",
+    "longitude": "-96.702532",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "77",
+    "name": "Northwestern Wildcats",
+    "latitude": "42.0514",
+    "longitude": "-87.6742",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "194",
+    "name": "Ohio State Buckeyes",
+    "latitude": "40.0004",
+    "longitude": "-83.0170",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2483",
+    "name": "Oregon Ducks",
+    "latitude": "44.0462",
+    "longitude": "-123.0720",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "213",
+    "name": "Penn State Nittany Lions",
+    "latitude": "40.7934",
+    "longitude": "-77.8600",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2509",
+    "name": "Purdue Boilermakers",
+    "latitude": "40.4251",
+    "longitude": "-86.9081",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "164",
+    "name": "Rutgers Scarlet Knights",
+    "latitude": "40.5016",
+    "longitude": "-74.4482",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "26",
+    "name": "UCLA Bruins",
+    "latitude": "34.0682",
+    "longitude": "-118.4455",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "30",
+    "name": "USC Trojans",
+    "latitude": "34.0167901",
+    "longitude": "-118.470817",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "264",
+    "name": "Washington Huskies",
+    "latitude": "47.6553",
+    "longitude": "-122.3035",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "275",
+    "name": "Wisconsin Badgers",
+    "latitude": "43.0759",
+    "longitude": "-89.4043",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "13",
+    "name": "Cal Poly Mustangs",
+    "latitude": "35.3004",
+    "longitude": "-120.6625",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2934",
+    "name": "Cal State Bakersfield Roadrunners",
+    "latitude": "35.3505",
+    "longitude": "-119.1046",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2239",
+    "name": "Cal State Fullerton Titans",
+    "latitude": "33.8829",
+    "longitude": "-117.8854",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2463",
+    "name": "Cal State Northridge Matadors",
+    "latitude": "34.2425",
+    "longitude": "-118.5280",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "62",
+    "name": "Hawai'i Rainbow Warriors",
+    "latitude": "21.2969",
+    "longitude": "-157.8193",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "299",
+    "name": "Long Beach State Beach",
+    "latitude": "33.7838",
+    "longitude": "-118.1141",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "302",
+    "name": "UC Davis Aggies",
+    "latitude": "38.5382",
+    "longitude": "-121.7617",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "300",
+    "name": "UC Irvine Anteaters",
+    "latitude": "33.6454",
+    "longitude": "-117.8420",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "27",
+    "name": "UC Riverside Highlanders",
+    "latitude": "33.9737",
+    "longitude": "-117.3281",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "28",
+    "name": "UC San Diego Tritons",
+    "latitude": "32.8801",
+    "longitude": "-117.2340",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2540",
+    "name": "UC Santa Barbara Gauchos",
+    "latitude": "34.4140",
+    "longitude": "-119.8456",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2097",
+    "name": "Campbell Fighting Camels",
+    "latitude": "35.4094",
+    "longitude": "-78.7336",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "232",
+    "name": "Charleston Cougars",
+    "latitude": "32.7846",
+    "longitude": "-79.9403",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "48",
+    "name": "Delaware Blue Hens",
+    "latitude": "39.6780",
+    "longitude": "-75.7506",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2182",
+    "name": "Drexel Dragons",
+    "latitude": "39.9566",
+    "longitude": "-75.1880",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2210",
+    "name": "Elon Phoenix",
+    "latitude": "36.1021",
+    "longitude": "-79.5020",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2261",
+    "name": "Hampton Pirates",
+    "latitude": "37.0221",
+    "longitude": "-76.3375",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2275",
+    "name": "Hofstra Pride",
+    "latitude": "40.7174",
+    "longitude": "-73.6001",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2405",
+    "name": "Monmouth Hawks",
+    "latitude": "40.2832",
+    "longitude": "-74.0060",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2448",
+    "name": "North Carolina A&T Aggies",
+    "latitude": "36.0735",
+    "longitude": "-79.7720",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "111",
+    "name": "Northeastern Huskies",
+    "latitude": "42.3400",
+    "longitude": "-71.0892",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2619",
+    "name": "Stony Brook Seawolves",
+    "latitude": "40.9126",
+    "longitude": "-73.1235",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "119",
+    "name": "Towson Tigers",
+    "latitude": "39.3933",
+    "longitude": "-76.6085",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "350",
+    "name": "UNC Wilmington Seahawks",
+    "latitude": "34.2257",
+    "longitude": "-77.8759",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2729",
+    "name": "William & Mary Tribe",
+    "latitude": "37.2707",
+    "longitude": "-76.7179",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2229",
+    "name": "Florida International Panthers",
+    "latitude": "25.7567",
+    "longitude": "-80.3770",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "55",
+    "name": "Jacksonville State Gamecocks",
+    "latitude": "33.8209",
+    "longitude": "-85.7636",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "338",
+    "name": "Kennesaw State Owls",
+    "latitude": "34.0368",
+    "longitude": "-84.5802",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2335",
+    "name": "Liberty Flames",
+    "latitude": "37.3501",
+    "longitude": "-79.1792",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2348",
+    "name": "Louisiana Tech Bulldogs",
+    "latitude": "32.5287",
+    "longitude": "-92.6465",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2393",
+    "name": "Middle Tennessee Blue Raiders",
+    "latitude": "35.8490",
+    "longitude": "-86.3643",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "166",
+    "name": "New Mexico State Aggies",
+    "latitude": "32.2834",
+    "longitude": "-106.7537",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2534",
+    "name": "Sam Houston Bearkats",
+    "latitude": "30.7151",
+    "longitude": "-95.5477",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2638",
+    "name": "UTEP Miners",
+    "latitude": "31.7716",
+    "longitude": "-106.5048",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "98",
+    "name": "Western Kentucky Hilltoppers",
+    "latitude": "36.9864",
+    "longitude": "-86.4559",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "325",
+    "name": "Cleveland State Vikings",
+    "latitude": "41.5022",
+    "longitude": "-81.6754",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2174",
+    "name": "Detroit Mercy Titans",
+    "latitude": "42.4173",
+    "longitude": "-83.1385",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2739",
+    "name": "Green Bay Phoenix",
+    "latitude": "44.5314",
+    "longitude": "-87.9206",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "85",
+    "name": "IU Indianapolis Jaguars",
+    "latitude": "39.7739",
+    "longitude": "-86.1763",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "270",
+    "name": "Milwaukee Panthers",
+    "latitude": "43.0780",
+    "longitude": "-87.8812",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "94",
+    "name": "Northern Kentucky Norse",
+    "latitude": "39.0300",
+    "longitude": "-84.4658",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2473",
+    "name": "Oakland Golden Grizzlies",
+    "latitude": "42.6740",
+    "longitude": "-83.2165",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2870",
+    "name": "Purdue Fort Wayne Mastodons",
+    "latitude": "41.118442",
+    "longitude": "-85.1060376",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2523",
+    "name": "Robert Morris Colonials",
+    "latitude": "40.5220",
+    "longitude": "-80.2116",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2750",
+    "name": "Wright State Raiders",
+    "latitude": "39.7820",
+    "longitude": "-84.0631",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2754",
+    "name": "Youngstown State Penguins",
+    "latitude": "41.1036",
+    "longitude": "-80.6463",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "225",
+    "name": "Brown Bears",
+    "latitude": "41.8268",
+    "longitude": "-71.4025",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "171",
+    "name": "Columbia Lions",
+    "latitude": "40.8075",
+    "longitude": "-73.9626",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "172",
+    "name": "Cornell Big Red",
+    "latitude": "42.4534",
+    "longitude": "-76.4735",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "159",
+    "name": "Dartmouth Big Green",
+    "latitude": "43.7044",
+    "longitude": "-72.2887",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "108",
+    "name": "Harvard Crimson",
+    "latitude": "42.3770",
+    "longitude": "-71.1167",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "219",
+    "name": "Pennsylvania Quakers",
+    "latitude": "39.9522",
+    "longitude": "-75.1932",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "163",
+    "name": "Princeton Tigers",
+    "latitude": "40.3431",
+    "longitude": "-74.6551",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "43",
+    "name": "Yale Bulldogs",
+    "latitude": "41.3163",
+    "longitude": "-72.9223",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2099",
+    "name": "Canisius Golden Griffins",
+    "latitude": "42.9267",
+    "longitude": "-78.8528",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2217",
+    "name": "Fairfield Stags",
+    "latitude": "41.1591",
+    "longitude": "-73.2575",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "314",
+    "name": "Iona Gaels",
+    "latitude": "40.9304",
+    "longitude": "-73.7846",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2363",
+    "name": "Manhattan Jaspers",
+    "latitude": "40.8890",
+    "longitude": "-73.9036",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2368",
+    "name": "Marist Red Foxes",
+    "latitude": "41.7224",
+    "longitude": "-73.9339",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2771",
+    "name": "Merrimack Warriors",
+    "latitude": "42.6680",
+    "longitude": "-71.1230",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "116",
+    "name": "Mount St. Mary's Mountaineers",
+    "latitude": "39.6821",
+    "longitude": "-77.3492",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "315",
+    "name": "Niagara Purple Eagles",
+    "latitude": "43.1372",
+    "longitude": "-79.0318",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2514",
+    "name": "Quinnipiac Bobcats",
+    "latitude": "41.4194",
+    "longitude": "-72.8969",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2520",
+    "name": "Rider Broncs",
+    "latitude": "40.2808",
+    "longitude": "-74.7431",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2529",
+    "name": "Sacred Heart Pioneers",
+    "latitude": "41.2079",
+    "longitude": "-73.2454",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2612",
+    "name": "Saint Peter's Peacocks",
+    "latitude": "40.7268",
+    "longitude": "-74.0702",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2561",
+    "name": "Siena Saints",
+    "latitude": "42.7190",
+    "longitude": "-73.7524",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2154",
+    "name": "Coppin State Eagles",
+    "latitude": "39.3124",
+    "longitude": "-76.6626",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2169",
+    "name": "Delaware State Hornets",
+    "latitude": "39.1880",
+    "longitude": "-75.5390",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "47",
+    "name": "Howard Bison",
+    "latitude": "38.9226",
+    "longitude": "-77.0192",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2379",
+    "name": "Maryland Eastern Shore Hawks",
+    "latitude": "38.2116",
+    "longitude": "-75.6873",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2415",
+    "name": "Morgan State Bears",
+    "latitude": "39.3448",
+    "longitude": "-76.5847",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2450",
+    "name": "Norfolk State Spartans",
+    "latitude": "36.8462",
+    "longitude": "-76.2593",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2428",
+    "name": "North Carolina Central Eagles",
+    "latitude": "35.9733",
+    "longitude": "-78.8986",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2569",
+    "name": "South Carolina State Bulldogs",
+    "latitude": "33.4957",
+    "longitude": "-80.8560",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2006",
+    "name": "Akron Zips",
+    "latitude": "41.0760",
+    "longitude": "-81.5100",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2050",
+    "name": "Ball State Cardinals",
+    "latitude": "40.1980",
+    "longitude": "-85.4081",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "189",
+    "name": "Bowling Green Falcons",
+    "latitude": "41.3763",
+    "longitude": "-83.6406",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2084",
+    "name": "Buffalo Bulls",
+    "latitude": "43.0016",
+    "longitude": "-78.7870",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2117",
+    "name": "Central Michigan Chippewas",
+    "latitude": "43.5917",
+    "longitude": "-84.7758",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2199",
+    "name": "Eastern Michigan Eagles",
+    "latitude": "42.2456",
+    "longitude": "-83.6266",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2309",
+    "name": "Kent State Golden Flashes",
+    "latitude": "41.1496",
+    "longitude": "-81.3436",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "193",
+    "name": "Miami (OH) RedHawks",
+    "latitude": "39.5075",
+    "longitude": "-84.7314",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2459",
+    "name": "Northern Illinois Huskies",
+    "latitude": "41.9339",
+    "longitude": "-88.7755",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "195",
+    "name": "Ohio Bobcats",
+    "latitude": "39.3244",
+    "longitude": "-82.1012",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2649",
+    "name": "Toledo Rockets",
+    "latitude": "41.6611",
+    "longitude": "-83.6140",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2711",
+    "name": "Western Michigan Broncos",
+    "latitude": "42.2830",
+    "longitude": "-85.6107",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2057",
+    "name": "Belmont Bruins",
+    "latitude": "36.1336",
+    "longitude": "-86.7947",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "71",
+    "name": "Bradley Braves",
+    "latitude": "40.6961",
+    "longitude": "-89.6167",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2181",
+    "name": "Drake Bulldogs",
+    "latitude": "41.6034",
+    "longitude": "-93.6525",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "339",
+    "name": "Evansville Purple Aces",
+    "latitude": "37.9694",
+    "longitude": "-87.5281",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2287",
+    "name": "Illinois State Redbirds",
+    "latitude": "40.5105",
+    "longitude": "-88.9948",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "282",
+    "name": "Indiana State Sycamores",
+    "latitude": "39.4690",
+    "longitude": "-87.4070",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2623",
+    "name": "Missouri State Bears",
+    "latitude": "37.2004",
+    "longitude": "-93.2816",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "93",
+    "name": "Murray State Racers",
+    "latitude": "36.6116",
+    "longitude": "-88.3188",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2460",
+    "name": "Northern Iowa Panthers",
+    "latitude": "42.5146",
+    "longitude": "-92.4666",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "79",
+    "name": "Southern Illinois Salukis",
+    "latitude": "37.7103",
+    "longitude": "-89.2202",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "82",
+    "name": "UIC Flames",
+    "latitude": "41.8708",
+    "longitude": "-87.6505",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2674",
+    "name": "Valparaiso Beacons",
+    "latitude": "41.4635",
+    "longitude": "-87.0437",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2005",
+    "name": "Air Force Falcons",
+    "latitude": "39.0092",
+    "longitude": "-104.8894",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "68",
+    "name": "Boise State Broncos",
+    "latitude": "43.6033",
+    "longitude": "-116.2073",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "36",
+    "name": "Colorado State Rams",
+    "latitude": "40.5762",
+    "longitude": "-105.0809",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "278",
+    "name": "Fresno State Bulldogs",
+    "latitude": "36.8124",
+    "longitude": "-119.7474",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2440",
+    "name": "Nevada Wolf Pack",
+    "latitude": "39.5387",
+    "longitude": "-119.8164",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "167",
+    "name": "New Mexico Lobos",
+    "latitude": "35.0845",
+    "longitude": "-106.6197",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "21",
+    "name": "San Diego State Aztecs",
+    "latitude": "32.7757",
+    "longitude": "-117.0719",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "23",
+    "name": "San José State Spartans",
+    "latitude": "37.3352",
+    "longitude": "-121.8811",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2439",
+    "name": "UNLV Rebels",
+    "latitude": "36.1076",
+    "longitude": "-115.1415",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "328",
+    "name": "Utah State Aggies",
+    "latitude": "41.7454",
+    "longitude": "-111.8097",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2751",
+    "name": "Wyoming Cowboys",
+    "latitude": "41.3129",
+    "longitude": "-105.5873",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2115",
+    "name": "Central Connecticut Blue Devils",
+    "latitude": "41.6932",
+    "longitude": "-72.7692",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2130",
+    "name": "Chicago State Cougars",
+    "latitude": "41.7183",
+    "longitude": "-87.6145",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "161",
+    "name": "Fairleigh Dickinson Knights",
+    "latitude": "40.8960",
+    "longitude": "-74.0293",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2330",
+    "name": "Le Moyne Dolphins",
+    "latitude": "43.0393",
+    "longitude": "-76.0822",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "112358",
+    "name": "Long Island University Sharks",
+    "latitude": "40.6912",
+    "longitude": "-73.9803",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2385",
+    "name": "Mercyhurst Lakers",
+    "latitude": "42.1199",
+    "longitude": "-80.0694",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2598",
+    "name": "St. Francis (PA) Red Flash",
+    "latitude": "40.5032",
+    "longitude": "-78.6371",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "284",
+    "name": "Stonehill Skyhawks",
+    "latitude": "42.0625",
+    "longitude": "-71.0811",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2681",
+    "name": "Wagner Seahawks",
+    "latitude": "40.6146",
+    "longitude": "-74.0902",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2197",
+    "name": "Eastern Illinois Panthers",
+    "latitude": "39.4840",
+    "longitude": "-88.1760",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2815",
+    "name": "Lindenwood Lions",
+    "latitude": "38.7881",
+    "longitude": "-90.5042",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2031",
+    "name": "Little Rock Trojans",
+    "latitude": "34.7267",
+    "longitude": "-92.3365",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2413",
+    "name": "Morehead State Eagles",
+    "latitude": "38.1893987",
+    "longitude": "-83.4310968",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2565",
+    "name": "SIU Edwardsville Cougars",
+    "latitude": "38.7939",
+    "longitude": "-89.9943",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2546",
+    "name": "Southeast Missouri State Redhawks",
+    "latitude": "37.3090",
+    "longitude": "-89.5181",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "88",
+    "name": "Southern Indiana Screaming Eagles",
+    "latitude": "37.9639",
+    "longitude": "-87.6765",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2634",
+    "name": "Tennessee State Tigers",
+    "latitude": "36.1674",
+    "longitude": "-86.8307",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2635",
+    "name": "Tennessee Tech Golden Eagles",
+    "latitude": "36.1745",
+    "longitude": "-85.5055",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2630",
+    "name": "UT Martin Skyhawks",
+    "latitude": "36.3437",
+    "longitude": "-88.8640",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2710",
+    "name": "Western Illinois Leathernecks",
+    "latitude": "40.4745",
+    "longitude": "-90.6864",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "44",
+    "name": "American University Eagles",
+    "latitude": "38.9375",
+    "longitude": "-77.0890",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "349",
+    "name": "Army Black Knights",
+    "latitude": "41.3910",
+    "longitude": "-73.9561",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "104",
+    "name": "Boston University Terriers",
+    "latitude": "42.3505",
+    "longitude": "-71.1054",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2083",
+    "name": "Bucknell Bison",
+    "latitude": "40.9549",
+    "longitude": "-76.8844",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2142",
+    "name": "Colgate Raiders",
+    "latitude": "42.8175",
+    "longitude": "-75.5394",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "107",
+    "name": "Holy Cross Crusaders",
+    "latitude": "42.2390",
+    "longitude": "-71.8097",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "322",
+    "name": "Lafayette Leopards",
+    "latitude": "40.7003",
+    "longitude": "-75.2087",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2329",
+    "name": "Lehigh Mountain Hawks",
+    "latitude": "40.6085",
+    "longitude": "-75.3773",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2352",
+    "name": "Loyola Maryland Greyhounds",
+    "latitude": "39.3465",
+    "longitude": "-76.6205",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2426",
+    "name": "Navy Midshipmen",
+    "latitude": "38.9822",
+    "longitude": "-76.4833",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "333",
+    "name": "Alabama Crimson Tide",
+    "latitude": "33.2098",
+    "longitude": "-87.5463",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Arkansas Razorbacks",
+    "latitude": "36.0687",
+    "longitude": "-94.1780",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Auburn Tigers",
+    "latitude": "32.6038",
+    "longitude": "-85.4866",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "57",
+    "name": "Florida Gators",
+    "latitude": "29.6480",
+    "longitude": "-82.3490",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "61",
+    "name": "Georgia Bulldogs",
+    "latitude": "33.9519",
+    "longitude": "-83.3755",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "96",
+    "name": "Kentucky Wildcats",
+    "latitude": "38.0373",
+    "longitude": "-84.5035",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "99",
+    "name": "LSU Tigers",
+    "latitude": "30.4143",
+    "longitude": "-91.1780",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "344",
+    "name": "Mississippi State Bulldogs",
+    "latitude": "33.4537",
+    "longitude": "-88.7940",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "142",
+    "name": "Missouri Tigers",
+    "latitude": "38.9450",
+    "longitude": "-92.3290",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "201",
+    "name": "Oklahoma Sooners",
+    "latitude": "35.2059",
+    "longitude": "-97.4457",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "145",
+    "name": "Ole Miss Rebels",
+    "latitude": "34.3663",
+    "longitude": "-89.5367",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2579",
+    "name": "South Carolina Gamecocks",
+    "latitude": "33.9986",
+    "longitude": "-81.0246",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2633",
+    "name": "Tennessee Volunteers",
+    "latitude": "35.9545",
+    "longitude": "-83.9295",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "245",
+    "name": "Texas A&M Aggies",
+    "latitude": "30.6133",
+    "longitude": "-96.3414",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "251",
+    "name": "Texas Longhorns",
+    "latitude": "30.2849",
+    "longitude": "-97.7341",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "238",
+    "name": "Vanderbilt Commodores",
+    "latitude": "36.1447",
+    "longitude": "-86.8027",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2010",
+    "name": "Alabama A&M Bulldogs",
+    "latitude": "34.7403",
+    "longitude": "-86.5866",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2011",
+    "name": "Alabama State Hornets",
+    "latitude": "32.3662",
+    "longitude": "-86.3107",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2016",
+    "name": "Alcorn State Braves",
+    "latitude": "31.4550",
+    "longitude": "-90.9898",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2029",
+    "name": "Arkansas-Pine Bluff Golden Lions",
+    "latitude": "34.2576",
+    "longitude": "-91.1948",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2065",
+    "name": "Bethune-Cookman Wildcats",
+    "latitude": "29.2032",
+    "longitude": "-81.0407",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "50",
+    "name": "Florida A&M Rattlers",
+    "latitude": "30.4237073",
+    "longitude": "-84.2874521",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2755",
+    "name": "Grambling Tigers",
+    "latitude": "32.5260",
+    "longitude": "-93.7471",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2296",
+    "name": "Jackson State Tigers",
+    "latitude": "32.2988",
+    "longitude": "-90.1826",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2400",
+    "name": "Mississippi Valley State Delta Devils",
+    "latitude": "33.4092",
+    "longitude": "-90.1595",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2504",
+    "name": "Prairie View A&M Panthers",
+    "latitude": "30.0864",
+    "longitude": "-95.9784",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2582",
+    "name": "Southern Jaguars",
+    "latitude": "30.4347",
+    "longitude": "-91.1641",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2640",
+    "name": "Texas Southern Tigers",
+    "latitude": "29.7334",
+    "longitude": "-95.3455",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "236",
+    "name": "Chattanooga Mocs",
+    "latitude": "35.0656",
+    "longitude": "-85.2503",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2193",
+    "name": "East Tennessee State Buccaneers",
+    "latitude": "36.3145",
+    "longitude": "-82.3618",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "231",
+    "name": "Furman Paladins",
+    "latitude": "34.9288",
+    "longitude": "-82.4335",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2382",
+    "name": "Mercer Bears",
+    "latitude": "32.8442",
+    "longitude": "-83.6358",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2535",
+    "name": "Samford Bulldogs",
+    "latitude": "33.4530",
+    "longitude": "-86.7743",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2643",
+    "name": "The Citadel Bulldogs",
+    "latitude": "32.7853",
+    "longitude": "-79.9509",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2430",
+    "name": "UNC Greensboro Spartans",
+    "latitude": "36.0632",
+    "longitude": "-79.8282",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2678",
+    "name": "VMI Keydets",
+    "latitude": "37.2285",
+    "longitude": "-79.4436",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2717",
+    "name": "Western Carolina Catamounts",
+    "latitude": "35.3050",
+    "longitude": "-83.1832",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2747",
+    "name": "Wofford Terriers",
+    "latitude": "34.9825",
+    "longitude": "-81.9039",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2277",
+    "name": "Houston Christian Huskies",
+    "latitude": "29.6800",
+    "longitude": "-95.4428",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2916",
+    "name": "Incarnate Word Cardinals",
+    "latitude": "29.5326",
+    "longitude": "-98.4670",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2320",
+    "name": "Lamar Cardinals",
+    "latitude": "30.2627",
+    "longitude": "-94.1309",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2377",
+    "name": "McNeese Cowboys",
+    "latitude": "30.2010",
+    "longitude": "-93.2040",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2443",
+    "name": "New Orleans Privateers",
+    "latitude": "29.9562",
+    "longitude": "-90.0622",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2447",
+    "name": "Nicholls Colonels",
+    "latitude": "29.6170",
+    "longitude": "-90.5832",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2466",
+    "name": "Northwestern State Demons",
+    "latitude": "31.7450",
+    "longitude": "-93.1976",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2545",
+    "name": "SE Louisiana Lions",
+    "latitude": "30.1345",
+    "longitude": "-90.4694",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2617",
+    "name": "Stephen F. Austin Lumberjacks",
+    "latitude": "31.6188",
+    "longitude": "-94.6146",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2837",
+    "name": "Texas A&M-Commerce Lions",
+    "latitude": "33.2493",
+    "longitude": "-95.6010",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "357",
+    "name": "Texas A&M-Corpus Christi Islanders",
+    "latitude": "27.7544",
+    "longitude": "-97.3844",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "292",
+    "name": "UT Rio Grande Valley Vaqueros",
+    "latitude": "26.306453",
+    "longitude": "-98.174881",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2172",
+    "name": "Denver Pioneers",
+    "latitude": "39.7400",
+    "longitude": "-104.9922",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "140",
+    "name": "Kansas City Roos",
+    "latitude": "39.0369",
+    "longitude": "-94.5795",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "155",
+    "name": "North Dakota Fighting Hawks",
+    "latitude": "47.9223",
+    "longitude": "-97.0709",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2449",
+    "name": "North Dakota State Bison",
+    "latitude": "46.9235",
+    "longitude": "-96.8626",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2437",
+    "name": "Omaha Mavericks",
+    "latitude": "41.258039",
+    "longitude": "-96.010779",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "198",
+    "name": "Oral Roberts Golden Eagles",
+    "latitude": "36.1557",
+    "longitude": "-95.9389",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "233",
+    "name": "South Dakota Coyotes",
+    "latitude": "42.9750",
+    "longitude": "-97.1275",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2571",
+    "name": "South Dakota State Jackrabbits",
+    "latitude": "44.3053",
+    "longitude": "-96.9471",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2900",
+    "name": "St. Thomas-Minnesota Tommies",
+    "latitude": "44.9440",
+    "longitude": "-93.1739",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2026",
+    "name": "App State Mountaineers",
+    "latitude": "36.2152",
+    "longitude": "-81.6746",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2032",
+    "name": "Arkansas State Red Wolves",
+    "latitude": "35.8436",
+    "longitude": "-90.7043",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "324",
+    "name": "Coastal Carolina Chanticleers",
+    "latitude": "33.8439",
+    "longitude": "-79.0140",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "290",
+    "name": "Georgia Southern Eagles",
+    "latitude": "32.3999",
+    "longitude": "-81.7822",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2247",
+    "name": "Georgia State Panthers",
+    "latitude": "33.7485",
+    "longitude": "-84.3884",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "256",
+    "name": "James Madison Dukes",
+    "latitude": "38.4421",
+    "longitude": "-78.8689",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "309",
+    "name": "Louisiana Ragin' Cajuns",
+    "latitude": "30.2033",
+    "longitude": "-92.0203",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "276",
+    "name": "Marshall Thundering Herd",
+    "latitude": "38.4192",
+    "longitude": "-82.4452",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "295",
+    "name": "Old Dominion Monarchs",
+    "latitude": "36.8852",
+    "longitude": "-76.3056",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "South Alabama Jaguars",
+    "latitude": "30.6764",
+    "longitude": "-88.1185",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2572",
+    "name": "Southern Miss Golden Eagles",
+    "latitude": "31.3270",
+    "longitude": "-89.3312",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "326",
+    "name": "Texas State Bobcats",
+    "latitude": "29.8887",
+    "longitude": "-97.9376",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2653",
+    "name": "Troy Trojans",
+    "latitude": "31.802401",
+    "longitude": "-85.957438",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2433",
+    "name": "UL Monroe Warhawks",
+    "latitude": "32.5093",
+    "longitude": "-92.1099",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2000",
+    "name": "Abilene Christian Wildcats",
+    "latitude": "32.4626",
+    "longitude": "-99.7330",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2856",
+    "name": "California Baptist Lancers",
+    "latitude": "33.9289282",
+    "longitude": "-117.4260227",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2253",
+    "name": "Grand Canyon Lopes",
+    "latitude": "33.5100257",
+    "longitude": "-112.128979",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2547",
+    "name": "Seattle U Redhawks",
+    "latitude": "47.609225",
+    "longitude": "-122.3178278",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "253",
+    "name": "Southern Utah Thunderbirds",
+    "latitude": "37.6638",
+    "longitude": "-113.0958",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2627",
+    "name": "Tarleton State Texans",
+    "latitude": "32.2955",
+    "longitude": "-98.2193",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "250",
+    "name": "UT Arlington Mavericks",
+    "latitude": "32.7357",
+    "longitude": "-97.1081",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "3101",
+    "name": "Utah Tech Trailblazers",
+    "latitude": "37.1185",
+    "longitude": "-113.6075",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "3084",
+    "name": "Utah Valley Wolverines",
+    "latitude": "40.2338",
+    "longitude": "-111.6550",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2250",
+    "name": "Gonzaga Bulldogs",
+    "latitude": "47.6740",
+    "longitude": "-117.3961",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2351",
+    "name": "Loyola Marymount Lions",
+    "latitude": "33.9691542",
+    "longitude": "-118.4190284",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "204",
+    "name": "Oregon State Beavers",
+    "latitude": "44.561967",
+    "longitude": "-123.279641",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "279",
+    "name": "Pacific Tigers",
+    "latitude": "37.9798836",
+    "longitude": "-121.3129744",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2492",
+    "name": "Pepperdine Waves",
+    "latitude": "34.041504",
+    "longitude": "-118.709710",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2501",
+    "name": "Portland Pilots",
+    "latitude": "45.5729878",
+    "longitude": "-122.7279094",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2608",
+    "name": "Saint Mary's Gaels",
+    "latitude": "37.840962",
+    "longitude": "-122.1092837",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "301",
+    "name": "San Diego Toreros",
+    "latitude": "32.7765",
+    "longitude": "-117.0704",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2539",
+    "name": "San Francisco Dons",
+    "latitude": "37.7765481",
+    "longitude": "-122.450768",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "2541",
+    "name": "Santa Clara Broncos",
+    "latitude": "37.348926",
+    "longitude": "-121.936847",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  },
+  {
+    "id": "265",
+    "name": "Washington State Cougars",
+    "latitude": "46.7265",
+    "longitude": "-117.1592",
+    "oldPlayers": [
+      {
+        "id": "",
+        "name": "",
+        "years": "",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": ""
+      }
+    ]
+  }
+]

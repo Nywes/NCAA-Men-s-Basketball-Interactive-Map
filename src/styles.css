@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #root {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    color: #333;
+    background-color: #DDDDDD;
+  }
+
+  @font-face {
+    font-family: 'MasqueFont';
+    src: url('./assets/MASQUE.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* height of the container */
+  .leaflet-container {
+    height: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .leaflet-popup-content {
+    min-width: 400px;
+    max-width: 400px;
+  }
+  
+  .cluster-icon {
+    background-color: #333;
+    height: 2em;
+    width: 2em;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0px 5px #fff;
+  }
+  

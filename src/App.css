@@ -28,6 +28,25 @@
   color: #61dafb;
 }
 
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  gap: 8px;
+  padding-bottom: 12px;
+  scroll-behavior: smooth;
+}
+
+.division-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border: none;
+  width: 75px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +54,8 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+div::-webkit-scrollbar {
+  display: none; /* Masque la scrollbar dans WebKit */
 }
