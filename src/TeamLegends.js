@@ -20,19 +20,21 @@ const TeamLegends = ({ team }) => {
         flexDirection: 'column',
         width: '100%',
         maxHeight: '300px',
-        overflowY: 'scroll',
+        overflowY: 'auto',
       }}
     >
       <h2>Team Famous Players</h2>
       {team.oldPlayers ? (
         <ul style={{ padding: 0 }}>
           {team.oldPlayers
-            ?.reduce((rows, player, index) => {
-              // Si l'index est pair, on crée un nouvel élément
+            .filter(
+              (player) =>
+                player.id && player.name && player.years
+            )
+            .reduce((rows, player, index) => {
               if (index % 2 === 0) {
                 rows.push([]);
               }
-              // Ajoute le joueur courant à la dernière paire
               rows[rows.length - 1].push(player);
               return rows;
             }, [])

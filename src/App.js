@@ -1,6 +1,7 @@
 import './styles.css';
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import L from 'leaflet';
 import { FullscreenControl } from 'react-leaflet-fullscreen';
 import 'react-leaflet-fullscreen/styles.css';
 
@@ -8,7 +9,6 @@ import { Icon } from 'leaflet';
 import { useEffect, useState } from 'react';
 
 import teamsData from './teams.json';
-import teamsData2 from './teams-other-format.json';
 
 import ncaaLogo from './assets/icons/ncaa-logo.png';
 import TeamInfo from './TeamInfo';
@@ -57,17 +57,14 @@ const customIcon = function (logo) {
 const adjustTextColor = (hexColor) => {
   const hex = hexColor.replace('#', '');
 
-  // Convertir en RGB
   const r = parseInt(hex.substr(0, 2), 16);
   const g = parseInt(hex.substr(2, 2), 16);
   const b = parseInt(hex.substr(4, 2), 16);
 
-  // Calculer la distance entre la couleur et le blanc pur (#FFFFFF)
   const distanceFromWhite = Math.sqrt(
     (255 - r) * (255 - r) + (255 - g) * (255 - g) + (255 - b) * (255 - b)
   );
 
-  // Si la distance est petite (donc proche du blanc), retourne noir
   return distanceFromWhite < 50 ? '#000000' : `#${hexColor}`;
 };
 
@@ -83,13 +80,41 @@ const fetchTeamInfo = async (teamId) => {
   }
 };
 
-export default function App({searchQuery}) {
+function CustomAttribution() {
+  const map = useMap();
+
+  useEffect(() => {
+    const attributionControl = L.control.attribution({ position: 'bottomleft' });
+    attributionControl.addTo(map);
+
+    return () => {
+      attributionControl.remove();
+    };
+  }, [map]);
+
+  return null;
+}
+
+export default function App({ searchQuery }) {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedDivisions, setSelectedDivisions] = useState([]);
 
   const [roster, setRoster] = useState(null);
   const [rosterLoading, setRosterLoading] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  const updateScreenSize = () => {
+    setIsSmallScreen(window.innerWidth < 600);
+  };
+
+  useEffect(() => {
+    updateScreenSize();
+
+    window.addEventListener('resize', updateScreenSize);
+
+    return () => window.removeEventListener('resize', updateScreenSize);
+  }, []);
 
   const toggleDivision = (division) => {
     if (selectedDivisions.includes(division)) {
@@ -175,7 +200,7 @@ export default function App({searchQuery}) {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '95vh',
+          height: `calc(100vh - 40px)`
         }}
       >
         <img
@@ -203,21 +228,22 @@ export default function App({searchQuery}) {
   }
 
   return (
-    <div style={{ width: '100%', height: '95vh' }}>
+    <div style={{ width: '100%', height: 'calc(100vh - 40px)' }}>
       <div
         style={{
-          display: 'grid',
-          gridTemplateColumns: '1fr minmax(150px, 15%)',
+          position: 'relative',
           height: '100%',
           width: '100%',
         }}
       >
-        <MapContainer center={[37.0902, -105.7129]} zoom={4}>
+        <MapContainer center={[37.0902, -105.7129]} zoom={4} style={{ zIndex: 0 }}>
           <TileLayer
             attribution="Jawg Sunny"
             url="https://tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token=Lko8BbD9udqn97TlGKDf86gU5pvGzg1Tao375U3VUY0l0odxgtIsHzr2vVQIvX0B"
           />
-          <FullscreenControl />
+          <CustomAttribution />
+
+          <FullscreenControl position="topleft" />
           {filteredTeams.map(
             (team, index) =>
               team &&
@@ -287,48 +313,18 @@ export default function App({searchQuery}) {
               )
           )}
         </MapContainer>
-        <div
-          style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(2, 1fr)',
-            gap: '8px',
-            padding: '8px',
-            alignItems: 'center',
-            justifyContent: 'center',
-            overflow: 'scroll',
-          }}
-        >
+
+        <div style={styles.divisionButtonsContainer(isSmallScreen)}>
           {divisions.map((division) => (
             <button
               key={division.id}
               onClick={() => toggleDivision(division.id)}
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                alignItems: 'center',
-                justifyContent: 'center',
-                border: 'none',
-                cursor: 'pointer',
-                height: '75px',
-                borderRadius: '12px',
-                backgroundColor:
-                  selectedDivisions.length === 0 || selectedDivisions.includes(division.id)
-                    ? '#f0f0f0'
-                    : 'initial',
-              }}
+              style={styles.divisionButton(selectedDivisions, division, isSmallScreen)}
             >
               <img
                 src={`https://loodibee.com/wp-content/uploads/${division.imgLinkName}`}
                 alt={division.name}
-                style={{
-                  height: '100%',
-                  width: '100%',
-                  objectFit: 'contain',
-                  filter:
-                    selectedDivisions.length === 0 || selectedDivisions.includes(division.id)
-                      ? 'none'
-                      : 'grayscale(100%)',
-                }}
+                style={styles.divisionButtonImg(selectedDivisions, division)}
               />
             </button>
           ))}
@@ -337,3 +333,51 @@ export default function App({searchQuery}) {
     </div>
   );
 }
+
+const styles = {
+  divisionButtonsContainer: (isSmallScreen) => ({
+    position: 'absolute',
+    right:isSmallScreen ? null : 0,
+    left: isSmallScreen ? 0 : null,
+    top: isSmallScreen ? null : 0,
+    bottom: isSmallScreen ? 0 :null,
+    width: isSmallScreen ? '100%' : '15%',
+    minWidth: isSmallScreen ? '86.5px' : '150px',
+    height: isSmallScreen ? '100px' : '100%',
+    backdropFilter: 'blur(8px)',
+    zIndex: 1,
+    display: isSmallScreen ? 'flex' : 'grid',
+    flexDirection: 'row',
+    gridTemplateColumns: isSmallScreen ? null : 'repeat(2, 1fr)',
+    gap: '8px',
+    padding: '8px',
+    alignItems: isSmallScreen ? null : 'center',
+    justifyContent: isSmallScreen ? null : 'center',
+    overflowX: 'auto',
+  }),
+  divisionButton: (selectedDivisions, division, isSmallScreen) => ({
+    display: 'flex',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    border: 'none',
+    cursor: 'pointer',
+    width: isSmallScreen ? '55.5' : null,
+    aspectRatio: '1 / 1',
+    borderRadius: '12px',
+    backgroundColor:
+      selectedDivisions.length === 0 || selectedDivisions.includes(division.id)
+        ? 'rgba(240, 240, 240, 0.9)'
+        : 'initial',
+  }),
+  divisionButtonImg: (selectedDivisions, division) => ({
+    height: '100%',
+    width: '100%',
+    opacity: 1,
+    objectFit: 'contain',
+    filter:
+      selectedDivisions.length === 0 || selectedDivisions.includes(division.id)
+        ? 'none'
+        : 'grayscale(100%)',
+  }),
+};

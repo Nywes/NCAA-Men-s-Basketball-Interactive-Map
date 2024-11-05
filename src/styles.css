@@ -1,47 +1,77 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  #root {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    font-family: sans-serif;
-    color: #333;
-    background-color: #DDDDDD;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  @font-face {
-    font-family: 'MasqueFont';
-    src: url('./assets/MASQUE.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-  }
-  
-  /* height of the container */
-  .leaflet-container {
-    height: 100%;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-  }
+#root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: sans-serif;
+  color: #333;
+  background-color: #dddddd;
+}
 
-  .leaflet-popup-content {
-    min-width: 400px;
-    max-width: 400px;
-  }
-  
-  .cluster-icon {
-    background-color: #333;
-    height: 2em;
-    width: 2em;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 1.2rem;
-    box-shadow: 0 0 0px 5px #fff;
-  }
-  
+@font-face {
+  font-family: 'MasqueFont';
+  src: url('./assets/MASQUE.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* height of the container */
+
+
+.leaflet-container {
+  height: 100%;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.leaflet-popup-content {
+  min-width: 400px;
+  max-width: 400px;
+}
+
+.leaflet-touch .leaflet-control-layers .leaflet-touch .leaflet-bar {
+  position: absolute;
+  top: 40px;
+}
+
+.cluster-icon {
+  background-color: #333;
+  height: 2em;
+  width: 2em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  box-shadow: 0 0 0px 5px #fff;
+}
+
+.custom-input {
+  padding: 8px;
+  font-size: 16px;
+  position: absolute;
+  left: 50%;
+  top: 8px;
+  transform: translateX(-50%);
+  width: 15%;
+  min-width: 150px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #333;
+  z-index: 1;
+}
+
+.custom-input:focus {
+  border: 1.5px solid;
+  border-color: #333;
+  outline: none;
+}

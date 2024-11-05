@@ -13,8 +13,8 @@ function Root() {
 
   return (
     <StrictMode>
-      <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
-      <App searchQuery={searchQuery} />
+      <Navbar searchQuery={searchQuery} setSearchQuery={setSearchQuery}/>
+      <App searchQuery={searchQuery}/>
     </StrictMode>
   );
 }

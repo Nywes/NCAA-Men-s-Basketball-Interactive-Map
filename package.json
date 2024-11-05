@@ -1,6 +1,7 @@
 {
   "name": "ncaa-project",
   "version": "0.1.0",
+  "homepage": "https://Nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -9,6 +10,7 @@
     "axios": "^1.7.7",
     "leaflet": "^1.9.4",
     "react": "^18.3.1",
+    "react-detectable-overflow": "^0.8.0",
     "react-dom": "^18.3.1",
     "react-leaflet": "^4.2.1",
     "react-leaflet-cluster": "^2.1.0",
@@ -19,6 +21,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -39,5 +43,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.2.0"
   }
 }
