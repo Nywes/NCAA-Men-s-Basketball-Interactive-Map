@@ -87,7 +87,7 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
       )}
       <input
         type="text"
-        placeholder="Rechercher une équipe..."
+        placeholder="Search a team..."
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         style={{
