@@ -200,7 +200,7 @@ export default function App({ searchQuery }) {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: `calc(100vh - 40px)`
+          height: `calc(100vh - 40px)`,
         }}
       >
         <img
@@ -337,10 +337,10 @@ export default function App({ searchQuery }) {
 const styles = {
   divisionButtonsContainer: (isSmallScreen) => ({
     position: 'absolute',
-    right:isSmallScreen ? null : 0,
+    right: isSmallScreen ? null : 0,
     left: isSmallScreen ? 0 : null,
     top: isSmallScreen ? null : 0,
-    bottom: isSmallScreen ? 0 :null,
+    bottom: isSmallScreen ? 0 : null,
     width: isSmallScreen ? '100%' : '15%',
     minWidth: isSmallScreen ? '86.5px' : '150px',
     height: isSmallScreen ? '100px' : '100%',
@@ -362,8 +362,12 @@ const styles = {
     justifyContent: 'center',
     border: 'none',
     cursor: 'pointer',
-    width: isSmallScreen ? '55.5' : null,
+    width: isSmallScreen ? '84' : null,
     aspectRatio: '1 / 1',
+    minWidth: isSmallScreen ? '84px' : null,
+    minHeight: isSmallScreen ? '84px' : null,
+    maxWidth: isSmallScreen ? '84px' : null,
+    maxHeight: isSmallScreen ? '84px' : null,
     borderRadius: '12px',
     backgroundColor:
       selectedDivisions.length === 0 || selectedDivisions.includes(division.id)

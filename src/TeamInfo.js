@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import blankHeadshot from './assets/player.png';
 import TeamRoster from './TeamRoster';
 import TeamStanding from './TeamStanding';
 import TeamLegends from './TeamLegends';
@@ -29,7 +28,6 @@ const TeamInfo = ({ roster, rosterLoading, team }) => {
           width: '100%',
         }}
       >
-        {/* Bouton 1 */}
         <button
           onClick={() => toggleButton(1)}
           style={{
@@ -44,7 +42,6 @@ const TeamInfo = ({ roster, rosterLoading, team }) => {
           {activeButton === 1 ? 'Hide Roster' : 'Show Roster'}
         </button>
 
-        {/* Bouton 2 */}
         <button
           onClick={() => toggleButton(2)}
           style={{
@@ -59,7 +56,6 @@ const TeamInfo = ({ roster, rosterLoading, team }) => {
           {activeButton === 2 ? `Hide Standing` : `Show Standing`}
         </button>
 
-        {/* Bouton 3 (Ajout d'un exemple supplémentaire) */}
         <button
           onClick={() => toggleButton(3)}
           style={{
@@ -77,12 +73,8 @@ const TeamInfo = ({ roster, rosterLoading, team }) => {
       {activeButton === 1 && (
         <TeamRoster roster={roster} rosterLoading={rosterLoading} team={team} />
       )}
-      {activeButton === 2 && (
-        <TeamStanding team={team} />
-      )}
-      {activeButton === 3 && (
-        <TeamLegends team={team} />
-      )}
+      {activeButton === 2 && <TeamStanding team={team} />}
+      {activeButton === 3 && <TeamLegends team={team} />}
     </div>
   );
 };

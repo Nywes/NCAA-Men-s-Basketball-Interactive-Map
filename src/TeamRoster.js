@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import blankHeadshot from './assets/player.png';
 
 const TeamRoster = ({ roster, rosterLoading, team }) => {
