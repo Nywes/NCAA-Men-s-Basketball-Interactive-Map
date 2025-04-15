@@ -97,7 +97,10 @@
         "id": "453",
         "name": "Christian Laettner",
         "years": "1988-1992",
-        "trophy": ["1991", "1992"],
+        "trophy": [
+          "1991",
+          "1992"
+        ],
         "draftPosition": "3",
         "draftYear": "1992",
         "draftTeam": "Minneasota Timberwolves"
@@ -106,7 +109,10 @@
         "id": "336",
         "name": "Grant Hill",
         "years": "1990-1994",
-        "trophy": ["1991", "1992"],
+        "trophy": [
+          "1991",
+          "1992"
+        ],
         "draftPosition": "3",
         "draftYear": "1994",
         "draftTeam": "Detroit Pistons"
@@ -123,7 +129,9 @@
         "id": "976",
         "name": "Shane Battier",
         "years": "1997-2001",
-        "trophy": ["2001"],
+        "trophy": [
+          "2001"
+        ],
         "draftPosition": "6",
         "draftYear": "2001",
         "draftTeam": "Memphis Grizzlies"
@@ -132,7 +140,9 @@
         "id": "3680",
         "name": "Johnny Dawkins",
         "years": "1983-1986",
-        "trophy": ["1986"],
+        "trophy": [
+          "1986"
+        ],
         "draftPosition": "10",
         "draftYear": "1986",
         "draftTeam": "San Antonio Spurs"
@@ -149,7 +159,9 @@
         "id": "4395628",
         "name": "Zion Williamson",
         "years": "2015-2016",
-        "trophy": ["2016"],
+        "trophy": [
+          "2016"
+        ],
         "draftPosition": "2",
         "draftYear": "2016",
         "draftTeam": "Los Angeles Lakers"
@@ -544,7 +556,9 @@
         "id": "1975",
         "name": "Carmelo Anthony",
         "years": "2002-2003",
-        "trophy": ["2003"],
+        "trophy": [
+          "2003"
+        ],
         "draftPosition": "3",
         "draftYear": "2003",
         "draftTeam": "Denver Nuggets"
@@ -1198,7 +1212,9 @@
         "id": "5018",
         "name": "Tom Gola",
         "years": "1951-1955",
-        "trophy": ["1954"],
+        "trophy": [
+          "1954"
+        ],
         "draftPosition": "as territorial pick",
         "draftYear": "1955",
         "draftTeam": "Philadelphia Warriors"
@@ -1439,7 +1455,9 @@
         "id": "61",
         "name": "Mike Bibby",
         "years": "1996-1998",
-        "trophy": ["1997"],
+        "trophy": [
+          "1997"
+        ],
         "draftPosition": "2",
         "draftYear": "1998",
         "draftTeam": "Vancouver Grizzlies"
@@ -1464,7 +1482,9 @@
         "id": "841",
         "name": "Jason Terry",
         "years": "1995-1999",
-        "trophy": ["1997"],
+        "trophy": [
+          "1997"
+        ],
         "draftPosition": "10",
         "draftYear": "1999",
         "draftTeam": "Atlanta Hawks"
@@ -1537,7 +1557,9 @@
         "id": "4278053",
         "name": "Davion Mitchell",
         "years": "2019-2021",
-        "trophy": ["2021"],
+        "trophy": [
+          "2021"
+        ],
         "draftPosition": "9",
         "draftYear": "2021",
         "draftTeam": "Sacramento Kings"
@@ -3051,6 +3073,14 @@
         "draftPosition": "4",
         "draftYear": "2022",
         "draftTeam": "Sacramento Kings"
+      },
+      {
+        "id": "4594326",
+        "name": "Khris Murray",
+        "years": "2020-2023",
+        "draftPosition": "23",
+        "draftYear": "2023",
+        "draftTeam": "Portland Trail Blazers"
       }
     ]
   },
@@ -3061,12 +3091,44 @@
     "longitude": "-76.9426",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "51527518391",
+        "name": "Len Bias",
+        "years": "1982-1986",
+        "draftPosition": "2",
+        "draftYear": "1986",
+        "draftTeam": "Boston Celtics"
+      },
+      {
+        "id": "255",
+        "name": "Steve Francis",
+        "years": "1998-1999",
+        "draftPosition": "2",
+        "draftYear": "1999",
+        "draftTeam": "Vancouver Grizzlies"
+      },
+      {
+        "id": "3534",
+        "name": "Buck Williams",
+        "years": "1978-1981",
+        "draftPosition": "3",
+        "draftYear": "1981",
+        "draftTeam": "New Jersey Nets"
+      },
+      {
+        "id": "788",
+        "name": "Joe Smith",
+        "years": "1993-1995",
+        "draftPosition": "1",
+        "draftYear": "1995",
+        "draftTeam": "Golden State Warriors"
+      },
+      {
+        "id": "6033",
+        "name": "Gene Shue",
+        "years": "1951-1954",
+        "draftPosition": "3",
+        "draftYear": "1954",
+        "draftTeam": "Philadelphia Warriors"
       }
     ]
   },
@@ -3077,12 +3139,100 @@
     "longitude": "-83.7382",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "702",
+        "name": "Glen Rice",
+        "years": "1985-1989",
+        "draftPosition": "4",
+        "draftYear": "1989",
+        "draftTeam": "Miami Heat"
+      },
+      {
+        "id": "897",
+        "name": "Chris Webber",
+        "years": "1991-1993",
+        "draftPosition": "1",
+        "draftYear": "1993",
+        "draftTeam": "Orlando Magic"
+      },
+      {
+        "id": "738",
+        "name": "Jalen Rose",
+        "years": "1991-1994",
+        "draftPosition": "13",
+        "draftYear": "1994",
+        "draftTeam": "Denver Nuggets"
+      },
+      {
+        "id": "5960",
+        "name": "Cazzie Russell",
+        "years": "1963-1966",
+        "draftPosition": "1",
+        "draftYear": "1966",
+        "draftTeam": "New York Knicks"
+      },
+      {
+        "id": "351",
+        "name": "Juwan Howard",
+        "years": "1991-1994",
+        "draftPosition": "5",
+        "draftYear": "1994",
+        "draftTeam": "Washington Bullets"
+      },
+      {
+        "id": "2579260",
+        "name": "Trey Burke",
+        "years": "2011-2013",
+        "draftPosition": "9",
+        "draftYear": "2013",
+        "draftTeam": "Minnesota Timberwolves"
+      },
+      {
+        "id": "165",
+        "name": "Jamal Crawford",
+        "years": "1999-2000",
+        "draftPosition": "8",
+        "draftYear": "2000",
+        "draftTeam": "Cleveland Cavaliers"
+      },
+      {
+        "id": "2528210",
+        "name": "Tim Hardaway Jr.",
+        "years": "2010-2013",
+        "draftPosition": "24",
+        "draftYear": "2013",
+        "draftTeam": "New York Knicks"
+      },
+      {
+        "id": "3150844",
+        "name": "Moritz Wagner",
+        "years": "2015-2018",
+        "draftPosition": "25",
+        "draftYear": "2018",
+        "draftTeam": "Los Angeles Lakers"
+      },
+      {
+        "id": "4566434",
+        "name": "Franz Wagner",
+        "years": "2020-2022",
+        "draftPosition": "8",
+        "draftYear": "2021",
+        "draftTeam": "Orlando Magic"
+      },
+      {
+        "id": "4277956",
+        "name": "Jordan Poole",
+        "years": "2017-2019",
+        "draftPosition": "28",
+        "draftYear": "2019",
+        "draftTeam": "Golden State Warriors"
+      },
+      {
+        "id": "4433249",
+        "name": "Moussa Diabate",
+        "years": "2018-2021",
+        "draftPosition": "43",
+        "draftYear": "2021",
+        "draftTeam": "Los Angeles Clippers"
       }
     ]
   },
@@ -3093,12 +3243,68 @@
     "longitude": "-84.4822",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "2334",
+        "name": "Magic Johnson",
+        "years": "1979-1984",
+        "draftPosition": "1",
+        "draftYear": "1984",
+        "draftTeam": "Los Angeles Lakers"
+      },
+      {
+        "id": "151",
+        "name": "Mateen Cleaves",
+        "years": "1996-2000",
+        "draftPosition": "14",
+        "draftYear": "2000",
+        "draftTeam": "Detroit Pistons"
+      },
+      {
+        "id": "6589",
+        "name": "Draymond Green",
+        "years": "2008-2012",
+        "draftPosition": "35",
+        "draftYear": "2012",
+        "draftTeam": "Golden State Warriors"
+      },
+      {
+        "id": "781",
+        "name": "Steve Smith",
+        "years": "1987-1991",
+        "draftPosition": "5",
+        "draftYear": "1991",
+        "draftTeam": "Miami Heat"
+      },
+      {
+        "id": "4066382",
+        "name": "Cassius Winston",
+        "years": "2016-2020",
+        "draftPosition": "53",
+        "draftYear": "2020",
+        "draftTeam": "Oklahoma City Thunder"
+      },
+      {
+        "id": "699",
+        "name": "Shawn Respert",
+        "years": "1990-1995",
+        "draftPosition": "8",
+        "draftYear": "1995",
+        "draftTeam": "Portland Trail Blazers"
+      },
+      {
+        "id": "4277961",
+        "name": "Jaren Jackson Jr.",
+        "years": "2017-2018",
+        "draftPosition": "4",
+        "draftYear": "2018",
+        "draftTeam": "Memphis Grizzlies"
+      },
+      {
+        "id": "1017",
+        "name": "Zach Randolph",
+        "years": "2000-2001",
+        "draftPosition": "19",
+        "draftYear": "2001",
+        "draftTeam": "Portland Trail Blazers"
       }
     ]
   },
