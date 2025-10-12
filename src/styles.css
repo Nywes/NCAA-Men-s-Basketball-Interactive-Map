@@ -55,7 +55,7 @@
     margin: 2px 0 !important;
   }
   
-  .leaflet-popup-content img:not(.flag-image):not(.college-logo) {
+  .leaflet-popup-content img:not(.flag-image):not(.college-logo):not(.trophy-image) {
     width: 60px !important;
     height: auto !important;
   }

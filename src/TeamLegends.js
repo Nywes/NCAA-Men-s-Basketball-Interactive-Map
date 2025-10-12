@@ -2,7 +2,7 @@ import React from 'react';
 import blankHeadshot from './assets/player.png';
 import trophy from './assets/ncaa-trophy.jpg';
 
-const TeamLegends = ({ team }) => {
+const TeamLegends = ({ team, isSmallScreen }) => {
   const getImageSrc = (id) => {
     try {
       return require(`./assets/players/${id}.jpg`);
@@ -27,7 +27,6 @@ const TeamLegends = ({ team }) => {
       {team.oldPlayers ? (
         <>
           {team.oldPlayers.length > 0 && !team.oldPlayers[0].id ? (
-            // Si le premier joueur est vide, affiche "WORK IN PROGRESS"
             <h3 style={{ fontWeight: 500, textAlign: 'center', color: 'orange' }}>
               WORK IN PROGRESS
             </h3>
@@ -83,7 +82,13 @@ const TeamLegends = ({ team }) => {
                                   fontWeight: 500,
                                 }}
                               >
-                                <img src={trophy} alt="ncaa-trophy" width="18px" height="18px" />{' '}
+                                <img
+                                  src={trophy}
+                                  alt="ncaa-trophy"
+                                  className="trophy-image"
+                                  width={isSmallScreen ? '20px' : '18px'}
+                                  height={isSmallScreen ? '20px' : '18px'}
+                                />{' '}
                                 {year}
                               </h5>
                             ))}

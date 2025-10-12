@@ -79,7 +79,7 @@ const TeamInfo = ({ roster, rosterLoading, team, isSmallScreen }) => {
         />
       )}
       {activeButton === 2 && <TeamStanding team={team} isSmallScreen={isSmallScreen} />}
-      {activeButton === 3 && <TeamLegends team={team} />}
+      {activeButton === 3 && <TeamLegends team={team} isSmallScreen={isSmallScreen} />}
     </div>
   );
 };
