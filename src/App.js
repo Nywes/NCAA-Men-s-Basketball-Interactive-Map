@@ -126,8 +126,9 @@ function AutoPanPopup({ children, isSmallScreen, rosterLoading }) {
     <Popup
       ref={popupRef}
       autoPan={true}
-      autoPanPaddingTopLeft={[70, 100]}
-      autoPanPaddingBottomRight={[isSmallScreen ? 20 : (window.innerWidth * 0.15 + 20), 20]}
+      autoPanPaddingTopLeft={[isSmallScreen ? 20 : 70, 100]}
+      autoPanPaddingBottomRight={[isSmallScreen ? 20 : window.innerWidth * 0.15 + 20, 20]}
+      className={isSmallScreen ? 'mobile-popup' : ''}
     >
       {children}
     </Popup>
@@ -343,7 +344,12 @@ export default function App({ searchQuery }) {
                           />
                         )}
                       </div>
-                      <TeamInfo roster={roster} rosterLoading={rosterLoading} team={team} />
+                      <TeamInfo
+                        roster={roster}
+                        rosterLoading={rosterLoading}
+                        team={team}
+                        isSmallScreen={isSmallScreen}
+                      />
                     </div>
                   </AutoPanPopup>
                 </Marker>

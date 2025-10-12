@@ -3,7 +3,7 @@ import TeamRoster from './TeamRoster';
 import TeamStanding from './TeamStanding';
 import TeamLegends from './TeamLegends';
 
-const TeamInfo = ({ roster, rosterLoading, team }) => {
+const TeamInfo = ({ roster, rosterLoading, team, isSmallScreen }) => {
   const [activeButton, setActiveButton] = useState(null);
 
   const toggleButton = (buttonId) => {
@@ -71,9 +71,14 @@ const TeamInfo = ({ roster, rosterLoading, team }) => {
         </button>
       </div>
       {activeButton === 1 && (
-        <TeamRoster roster={roster} rosterLoading={rosterLoading} team={team} />
+        <TeamRoster
+          roster={roster}
+          rosterLoading={rosterLoading}
+          team={team}
+          isSmallScreen={isSmallScreen}
+        />
       )}
-      {activeButton === 2 && <TeamStanding team={team} />}
+      {activeButton === 2 && <TeamStanding team={team} isSmallScreen={isSmallScreen} />}
       {activeButton === 3 && <TeamLegends team={team} />}
     </div>
   );

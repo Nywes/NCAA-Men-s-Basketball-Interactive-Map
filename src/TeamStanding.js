@@ -143,6 +143,7 @@ const TeamStanding = ({ team }) => {
                   <img
                     src={`https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/${entry.team.id}.png&h=40&w=40`}
                     alt="logo"
+                    className="college-logo"
                     style={{ width: '20px', height: '20px' }}
                   />
                   {entry.team.displayName}

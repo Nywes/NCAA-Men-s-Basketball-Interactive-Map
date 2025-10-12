@@ -34,6 +34,64 @@
   max-width: 400px;
 }
 
+@media (max-width: 768px) {
+  .leaflet-popup-content {
+    min-width: 280px;
+    max-width: 360px;
+    padding: 8px;
+  }
+  
+  .leaflet-popup-content-wrapper {
+    border-radius: 8px;
+  }
+  
+  .leaflet-popup-content h1 {
+    font-size: 1.2rem !important;
+    margin: 4px 0 !important;
+  }
+  
+  .leaflet-popup-content h3 {
+    font-size: 0.9rem !important;
+    margin: 2px 0 !important;
+  }
+  
+  .leaflet-popup-content img:not(.flag-image):not(.college-logo) {
+    width: 60px !important;
+    height: auto !important;
+  }
+  
+  .leaflet-popup-content button {
+    padding: 6px 8px !important;
+    font-size: 0.8rem !important;
+    margin: 2px !important;
+  }
+  
+  .mobile-popup .leaflet-popup-content-wrapper {
+    max-width: 320px !important;
+  }
+  
+  .mobile-popup .leaflet-popup-content {
+    max-width: 300px !important;
+    min-width: 280px !important;
+  }
+  
+  @media (max-width: 480px) {
+    .leaflet-popup-content {
+      min-width: 250px;
+      max-width: 280px;
+    }
+    
+    .mobile-popup .leaflet-popup-content-wrapper {
+      max-width: 280px !important;
+    }
+    
+    .mobile-popup .leaflet-popup-content {
+      max-width: 260px !important;
+      min-width: 250px !important;
+    }
+  }
+}
+
 .leaflet-touch .leaflet-control-layers .leaflet-touch .leaflet-bar {
   position: absolute;
   top: 40px;
