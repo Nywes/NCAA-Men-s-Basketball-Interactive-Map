@@ -15,7 +15,7 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
 
     if (smallScreen) {
       setShowText(false);
-    } else if (window.innerWidth < 1200) {
+    } else if (window.innerWidth < 1000) {
       setText('NCAA');
       setShowText(true);
     } else {
@@ -52,15 +52,15 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
         minHeight: '60px',
         backdropFilter: 'blur(8px)',
         backgroundColor: 'rgba(240, 240, 240, 0.5)',
-        display: 'grid',
-        gridTemplateColumns: showText ? 'calc(50% - 140px) 280px calc(50% - 140px)' : '80% 20%',
+        display: 'flex',
+        justifyContent: 'space-between',
         alignItems: 'center',
         position: 'absolute',
         top: '20px',
         left: '70px',
         zIndex: 2,
         borderRadius: '12px',
-        padding: '8px',
+        padding: '8px 20px',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
       }}
     >
@@ -72,7 +72,6 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
             fontSize: '1.25rem',
             fontFamily: 'MasqueFont, serif',
             zIndex: 1,
-            paddingLeft: '20px',
             cursor: 'default',
             display: 'flex',
             overflow: 'hidden',
@@ -96,46 +95,50 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
           ))}
         </p>
       )}
-      <input
-        type="text"
-        placeholder="Search a team..."
-        value={searchQuery}
-        onChange={(e) => setSearchQuery(e.target.value)}
+      <div
         style={{
-          padding: '8px',
-          fontSize: '16px',
-          zIndex: 1,
-          height: '80%',
-          borderRadius: '8px',
-          border: 'none',
-          maxWidth: '280px',
-          outline: 'none',
-          margin: showText ? 'auto' : 'inherit',
-          marginLeft: showText ? 'inherit' : '8px',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '12px',
         }}
-      />
-      <button
-        onClick={() =>
-          window.open(
-            'https://www.linkedin.com/feed/update/urn:li:activity:7242089253717864449/',
-            '_blank'
-          )
-        }
-        title="Nywes"
-        style={{
-          height: '75%',
-          aspectRatio: '1 / 1',
-          marginLeft: 'auto',
-          marginRight: '20px',
-          backgroundImage: `url(${aboutMe})`,
-          backgroundSize: 'contain',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          backgroundColor: 'transparent',
-          border: 'none',
-          cursor: 'pointer',
-        }}
-      />
+      >
+        <input
+          type="text"
+          placeholder="Search a team..."
+          value={searchQuery}
+          onChange={(e) => setSearchQuery(e.target.value)}
+          style={{
+            padding: '8px',
+            fontSize: '16px',
+            zIndex: 1,
+            height: '80%',
+            borderRadius: '8px',
+            border: 'none',
+            maxWidth: '280px',
+            outline: 'none',
+          }}
+        />
+        <button
+          onClick={() =>
+            window.open(
+              'https://www.linkedin.com/feed/update/urn:li:activity:7242089253717864449/',
+              '_blank'
+            )
+          }
+          title="About me"
+          style={{
+            height: '36px',
+            width: '36px',
+            backgroundImage: `url(${aboutMe})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundColor: 'transparent',
+            border: 'none',
+            cursor: 'pointer',
+          }}
+        />
+      </div>
     </div>
   );
 }
