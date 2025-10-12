@@ -6,7 +6,7 @@ import { FullscreenControl } from 'react-leaflet-fullscreen';
 import 'react-leaflet-fullscreen/styles.css';
 
 import { Icon } from 'leaflet';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 
 import teamsData from './teams.json';
 
@@ -95,6 +95,45 @@ function CustomAttribution() {
   return null;
 }
 
+function AutoPanPopup({ children, isSmallScreen, rosterLoading }) {
+  const popupRef = useRef(null);
+
+  useEffect(() => {
+    if (popupRef.current) {
+      const popup = popupRef.current;
+
+      const observer = new ResizeObserver(() => {
+        setTimeout(() => {
+          if (popup.isOpen()) {
+            popup._updateLayout();
+            popup._adjustPan();
+          }
+        }, 100);
+      });
+
+      const popupContent = popup.getElement()?.querySelector('.leaflet-popup-content');
+      if (popupContent) {
+        observer.observe(popupContent);
+      }
+
+      return () => {
+        observer.disconnect();
+      };
+    }
+  }, [rosterLoading]);
+
+  return (
+    <Popup
+      ref={popupRef}
+      autoPan={true}
+      autoPanPaddingTopLeft={[70, 100]}
+      autoPanPaddingBottomRight={[isSmallScreen ? 20 : window.innerWidth * 0.15, 20]}
+    >
+      {children}
+    </Popup>
+  );
+}
+
 export default function App({ searchQuery }) {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -118,10 +157,8 @@ export default function App({ searchQuery }) {
 
   const toggleDivision = (division) => {
     if (selectedDivisions.includes(division)) {
-      // Si la division est déjà sélectionnée, on la retire
       setSelectedDivisions(selectedDivisions.filter((d) => d !== division));
     } else {
-      // Sinon, on l'ajoute
       setSelectedDivisions([...selectedDivisions, division]);
     }
   };
@@ -200,7 +237,7 @@ export default function App({ searchQuery }) {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: `calc(100vh - 40px)`,
+          height: '100vh',
         }}
       >
         <img
@@ -228,7 +265,7 @@ export default function App({ searchQuery }) {
   }
 
   return (
-    <div style={{ width: '100%', height: 'calc(100vh - 40px)' }}>
+    <div style={{ width: '100%', height: '100vh' }}>
       <div
         style={{
           position: 'relative',
@@ -259,7 +296,7 @@ export default function App({ searchQuery }) {
                     },
                   }}
                 >
-                  <Popup>
+                  <AutoPanPopup isSmallScreen={isSmallScreen} rosterLoading={rosterLoading}>
                     <div
                       style={{
                         display: 'flex',
@@ -308,7 +345,7 @@ export default function App({ searchQuery }) {
                       </div>
                       <TeamInfo roster={roster} rosterLoading={rosterLoading} team={team} />
                     </div>
-                  </Popup>
+                  </AutoPanPopup>
                 </Marker>
               )
           )}

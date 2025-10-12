@@ -1,18 +1,22 @@
 import { useEffect, useState } from 'react';
 import './styles.css';
-import profileLogo from './assets/profile.png';
+import aboutMe from './assets/aboutme.png';
 
 export default function Navbar({ searchQuery, setSearchQuery }) {
   const [text, setText] = useState("NCAA Division I Men's Basketball");
   const [hover, setHover] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
   const [showText, setShowText] = useState(true);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const updateText = () => {
-    if (window.innerWidth < 600) {
+    const smallScreen = window.innerWidth < 600;
+    setIsSmallScreen(smallScreen);
+
+    if (smallScreen) {
       setShowText(false);
     } else if (window.innerWidth < 1200) {
-      setText("NCAA");
+      setText('NCAA');
       setShowText(true);
     } else {
       setText("NCAA Division I Men's Basketball");
@@ -44,20 +48,27 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
   return (
     <div
       style={{
-        width: '100%',
-        minHeight: '40px',
-        backgroundColor: '#333',
+        width: isSmallScreen ? 'calc(100% - 90px)' : 'calc(85% - 90px)',
+        minHeight: '60px',
+        backdropFilter: 'blur(8px)',
+        backgroundColor: 'rgba(240, 240, 240, 0.5)',
         display: 'grid',
         gridTemplateColumns: showText ? 'calc(50% - 140px) 280px calc(50% - 140px)' : '80% 20%',
         alignItems: 'center',
-        position: 'relative',
+        position: 'absolute',
+        top: '20px',
+        left: '70px',
+        zIndex: 2,
+        borderRadius: '12px',
+        padding: '8px',
+        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
       }}
     >
       {showText && (
         <p
           style={{
             margin: 0,
-            color: '#fff',
+            color: '#333',
             fontSize: '1.25rem',
             fontFamily: 'MasqueFont, serif',
             zIndex: 1,
@@ -66,7 +77,7 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
             display: 'flex',
             overflow: 'hidden',
             textWrap: 'nowrap',
-            textOverflow: 'ellipsis'
+            textOverflow: 'ellipsis',
           }}
           onMouseEnter={() => setHover(true)}
           onMouseLeave={() => setHover(false)}
@@ -75,7 +86,7 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
             <span
               key={index}
               style={{
-                color: index === activeIndex ? 'rgb(69, 155, 217)' : '#FFF',
+                color: index === activeIndex ? 'rgb(69, 155, 217)' : '#333',
                 transition: 'color 0.075s ease',
                 whiteSpace: char === ' ' ? 'pre' : 'normal',
               }}
@@ -100,7 +111,7 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
           maxWidth: '280px',
           outline: 'none',
           margin: showText ? 'auto' : 'inherit',
-          marginLeft: showText ? 'inherit' : '8px'
+          marginLeft: showText ? 'inherit' : '8px',
         }}
       />
       <button
@@ -110,19 +121,19 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
             '_blank'
           )
         }
-        title='Nywes'
+        title="Nywes"
         style={{
           height: '75%',
           aspectRatio: '1 / 1',
           marginLeft: 'auto',
           marginRight: '20px',
-          backgroundImage: `url(${profileLogo})`,
+          backgroundImage: `url(${aboutMe})`,
           backgroundSize: 'contain',
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'center',
-          backgroundColor: '#333',
+          backgroundColor: 'transparent',
           border: 'none',
-          cursor: 'pointer'
+          cursor: 'pointer',
         }}
       />
     </div>
