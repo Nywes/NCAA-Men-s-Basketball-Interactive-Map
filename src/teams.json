@@ -75,7 +75,7 @@
         "years": "2006-1010",
         "draftPosition": "23",
         "draftYear": "2010",
-        "draftTeam": "Minneasota Timberwolves"
+        "draftTeam": "Minnesota Timberwolves"
       },
       {
         "id": "127",
@@ -103,7 +103,7 @@
         ],
         "draftPosition": "3",
         "draftYear": "1992",
-        "draftTeam": "Minneasota Timberwolves"
+        "draftTeam": "Minnesota Timberwolves"
       },
       {
         "id": "336",
@@ -197,6 +197,14 @@
         "draftPosition": "1",
         "draftYear": "2022",
         "draftTeam": "Orlando Magic"
+      },
+      {
+        "id": "5041939",
+        "name": "Cooper Flagg",
+        "years": "2024-2025",
+        "draftPosition": "1",
+        "draftYear": "2025",
+        "draftTeam": "Dallas Mavericks"
       }
     ]
   },
@@ -441,6 +449,14 @@
         "years": "1968-1971",
         "draftPosition": "1",
         "draftYear": "1971",
+        "draftTeam": "Cleveland Cavaliers"
+      },
+      {
+        "id": "3759",
+        "name": "Bill Laimbeer",
+        "years": "1975-1979",
+        "draftPosition": "65",
+        "draftYear": "1979",
         "draftTeam": "Cleveland Cavaliers"
       },
       {
@@ -1511,7 +1527,7 @@
         "years": "2016-2017",
         "draftPosition": "7",
         "draftYear": "2017",
-        "draftTeam": "Minneasota Timberwolves"
+        "draftTeam": "Minnesota Timberwolves"
       },
       {
         "id": "3064290",
@@ -1565,12 +1581,39 @@
         "draftTeam": "Sacramento Kings"
       },
       {
+        "id": "4395695",
+        "name": "Jared Butler",
+        "years": "2018-2021",
+        "trophy": [
+          "2021"
+        ],
+        "draftPosition": "40",
+        "draftYear": "2021",
+        "draftTeam": "New Orleans Pelicans"
+      },
+      {
         "id": "5275",
         "name": "Vinnie Johnson",
         "years": "1977-1979",
         "draftPosition": "7",
         "draftYear": "1979",
         "draftTeam": "Seattle SuperSonics"
+      },
+      {
+        "id": "6159",
+        "name": "Terry Teagle",
+        "years": "1978-1982",
+        "draftPosition": "16",
+        "draftYear": "1982",
+        "draftTeam": "Houston Rockets"
+      },
+      {
+        "id": "5124612",
+        "name": "V.J. Edgecombe",
+        "years": "2024-2025",
+        "draftPosition": "3",
+        "draftYear": "2025",
+        "draftTeam": "Philadelphia Sixers"
       }
     ]
   },
@@ -2426,7 +2469,7 @@
         "years": "1993-1996",
         "draftPosition": "5",
         "draftYear": "1996",
-        "draftTeam": "Minneasota Timberwolves"
+        "draftTeam": "Minnesota Timberwolves"
       },
       {
         "id": "6479",
@@ -3315,12 +3358,28 @@
     "longitude": "-93.2270",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "4144",
+        "name": "Kevin McHale",
+        "years": "1976-1980",
+        "draftPosition": "3",
+        "draftYear": "1980",
+        "draftTeam": "Boston Celtics"
+      },
+      {
+        "id": "6180",
+        "name": "Mychal Thompson",
+        "years": "1974–1978",
+        "draftPosition": "1",
+        "draftYear": "1978",
+        "draftTeam": "Portland Trail Blazers"
+      },
+      {
+        "id": "5206",
+        "name": "Lou Hudson",
+        "years": "1963–1966",
+        "draftPosition": "4",
+        "draftYear": "1966",
+        "draftTeam": "Saint-Louis Hawks"
       }
     ]
   },
@@ -3331,12 +3390,36 @@
     "longitude": "-96.702532",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "5411",
+        "name": "Stuart Lantz",
+        "years": "1965–1968",
+        "draftPosition": "23",
+        "draftYear": "1968",
+        "draftTeam": "San Diego Rockets"
+      },
+      {
+        "id": "489",
+        "name": "Tyronn Lue",
+        "years": "1995–1998",
+        "draftPosition": "23",
+        "draftYear": "1998",
+        "draftTeam": "Denver Nuggets"
+      },
+      {
+        "id": "660",
+        "name": "Eric Piatkowski",
+        "years": "1990–1994",
+        "draftPosition": "15",
+        "draftYear": "1994",
+        "draftTeam": "Indiana Pacers"
+      },
+      {
+        "id": "194728192",
+        "name": "Dave Hoppen",
+        "years": "1982–1986",
+        "draftPosition": "65",
+        "draftYear": "1986",
+        "draftTeam": "Atlanta Hawks"
       }
     ]
   },
@@ -3347,12 +3430,17 @@
     "longitude": "-87.6742",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "17482934",
+        "name": "Max Morris",
+        "years": "1943–1946"
+      },
+      {
+        "id": "4418",
+        "name": "Don Adams",
+        "years": "1967–1970",
+        "draftPosition": "120",
+        "draftYear": "1970",
+        "draftTeam": "San Diego Rockets"
       }
     ]
   },
@@ -3363,12 +3451,81 @@
     "longitude": "-83.0170",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "4137",
+        "name": "Jerry Lucas",
+        "years": "1959–1962",
+        "draftPosition": "as territorial pick",
+        "draftYear": "1962",
+        "draftTeam": "Cincinnati Royals"
+      },
+      {
+        "id": "5278",
+        "name": "Neil Johnston",
+        "years": "1946–1948"
+      },
+      {
+        "id": "4120",
+        "name": "John Havlicek",
+        "years": "1959–1962",
+        "draftPosition": "7",
+        "draftYear": "1962",
+        "draftTeam": "Boston Celtics"
+      },
+      {
+        "id": "4239",
+        "name": "Evan Turner",
+        "years": "2007–2010",
+        "draftPosition": "2",
+        "draftYear": "2010",
+        "draftTeam": "Philadelphia Sixers"
+      },
+      {
+        "id": "372",
+        "name": "Jim Jackson",
+        "years": "1989–1992",
+        "draftPosition": "4",
+        "draftYear": "1992",
+        "draftTeam": "Dallas Mavericks"
+      },
+      {
+        "id": "692",
+        "name": "Michael Redd",
+        "years": "1997–2000",
+        "draftPosition": "43",
+        "draftYear": "2000",
+        "draftTeam": "Milwaukee Bucks"
+      },
+      {
+        "id": "5192",
+        "name": "Dennis Hopson",
+        "years": "1983–1987",
+        "draftPosition": "3",
+        "draftYear": "1987",
+        "draftTeam": "New Jersey Nets"
+      },
+      {
+        "id": "5330",
+        "name": "Clark Kellogg",
+        "years": "1979–1982",
+        "draftPosition": "8",
+        "draftYear": "1982",
+        "draftTeam": "Indiana Pacers"
+      },
+      {
+        "id": "3136776",
+        "name": "D’Angelo Russell",
+        "years": "2014–2015",
+        "draftPosition": "2",
+        "draftYear": "2015",
+        "draftTeam": "Los Angeles Lakers"
+      },
+      {
+        "id": "3195",
+        "name": "Mike Conley",
+        "years": "2006–2007",
+        "draftPosition": "4",
+        "draftYear": "2007",
+        "draftTeam": "Memphis Grizzlies"
       }
     ]
   },
@@ -3379,12 +3536,73 @@
     "longitude": "-123.0720",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "5433",
+        "name": "Ron Lee",
+        "years": "1972-1976",
+        "draftPosition": "1076",
+        "draftYear": "10",
+        "draftTeam": "Phoenix Suns"
+      },
+      {
+        "id": "1985",
+        "name": "Luke Ridnour",
+        "years": "2000–2003",
+        "draftPosition": "14",
+        "draftYear": "2003",
+        "draftTeam": "Seattle SuperSonics"
+      },
+      {
+        "id": "92",
+        "name": "Terrell Brandon",
+        "years": "1989–1991",
+        "draftPosition": "11",
+        "draftYear": "1991",
+        "draftTeam": "Cleveland Cavaliers"
+      },
+      {
+        "id": "5236",
+        "name": "Luke Jackson",
+        "years": "2000–2004",
+        "draftPosition": "10",
+        "draftYear": "2004",
+        "draftTeam": "Cleveland Cavaliers"
+      },
+      {
+        "id": "91731293942",
+        "name": "Greg Ballard",
+        "years": "1973–1977",
+        "draftPosition": "4",
+        "draftYear": "1977",
+        "draftTeam": "Washington Bullets"
+      },
+      {
+        "id": "4066354",
+        "name": "Payton Pritchard",
+        "years": "2016–2020",
+        "draftPosition": "26",
+        "draftYear": "2020",
+        "draftTeam": "Boston Celtics"
+      },
+      {
+        "id": "3155526",
+        "name": "Dillon Brooks",
+        "years": "2014-2017",
+        "draftPosition": "45",
+        "draftYear": "2017",
+        "draftTeam": "Houston Rockets"
+      },
+      {
+        "id": "3064427",
+        "name": "Jordan Bell",
+        "years": "2013-2017",
+        "draftPosition": "38",
+        "draftYear": "2017",
+        "draftTeam": "Chicago Bulls"
+      },
+      {
+        "id": "3948153",
+        "name": "Chris Boucher",
+        "years": "2015-2017"
       }
     ]
   },
@@ -3395,12 +3613,41 @@
     "longitude": "-77.8600",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "8149000",
+        "name": "Jesse Arnelle",
+        "years": "1951–1955",
+        "draftPosition": "13",
+        "draftYear": "1955",
+        "draftTeam": "Fort Wayne Pistons"
+      },
+      {
+        "id": "36465000",
+        "name": "Talor Battle",
+        "years": "2007–2011"
+      },
+      {
+        "id": "6308",
+        "name": "Bob Weiss",
+        "years": "1961-1965",
+        "draftPosition": "22",
+        "draftYear": "1965",
+        "draftTeam": "Philadelphia Sixers"
+      },
+      {
+        "id": "3653",
+        "name": "Frank Brickowski",
+        "years": "1977-1981",
+        "draftPosition": "57",
+        "draftYear": "1981",
+        "draftTeam": "New York Knicks"
+      },
+      {
+        "id": "77",
+        "name": "Calvin Booth",
+        "years": "1995-1999",
+        "draftPosition": "35",
+        "draftYear": "1999",
+        "draftTeam": "Washington Wizards"
       }
     ]
   },
@@ -3411,12 +3658,68 @@
     "longitude": "-86.9081",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "717",
+        "name": "Glenn Robinson",
+        "years": "1992–1994",
+        "draftPosition": "1",
+        "draftYear": "1994",
+        "draftTeam": "Milwaukee Bucks"
+      },
+      {
+        "id": "579",
+        "name": "Rick Mount",
+        "years": "1967–1970",
+        "draftPosition": "132",
+        "draftYear": "1970",
+        "draftTeam": "Los Angeles Lakers"
+      },
+      {
+        "id": "4600663",
+        "name": "Zach Edey",
+        "years": "2020–2024",
+        "draftPosition": "9",
+        "draftYear": "2024",
+        "draftTeam": "Memphis Grizzlies"
+      },
+      {
+        "id": "4670",
+        "name": "Joe Barry Carroll",
+        "years": "1976–1980",
+        "draftPosition": "1",
+        "draftYear": "1980",
+        "draftTeam": "Golden State Warriors"
+      },
+      {
+        "id": "4833",
+        "name": "Terry Dischinger",
+        "years": "1959–1962",
+        "draftPosition": "8",
+        "draftYear": "1962",
+        "draftTeam": "Chicago Zephyrs"
+      },
+      {
+        "id": "6633",
+        "name": "Robbie Hummel",
+        "years": "2007–2012",
+        "draftPosition": "58",
+        "draftYear": "2012",
+        "draftTeam": "Minnesota Timberwolves"
+      },
+      {
+        "id": "6460",
+        "name": "E'Twaun Moore",
+        "years": "2007–2011",
+        "draftPosition": "55",
+        "draftYear": "2011",
+        "draftTeam": "Boston Celtics"
+      },
+      {
+        "id": "4433218",
+        "name": "Jaden Ivey",
+        "years": "2020–2022",
+        "draftPosition": "5",
+        "draftYear": "2022",
+        "draftTeam": "Detroit Pistons"
       }
     ]
   },
@@ -3427,12 +3730,57 @@
     "longitude": "-74.4482",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "6007",
+        "name": "Phil Sellers",
+        "years": "1972–1976",
+        "draftPosition": "48",
+        "draftYear": "1976",
+        "draftTeam": "Detroit Pistons"
+      },
+      {
+        "id": "5305",
+        "name": "Eddie Jordan",
+        "years": "1973–1977",
+        "draftPosition": "33",
+        "draftYear": "1977",
+        "draftTeam": "Cleveland Cavaliers"
+      },
+      {
+        "id": "3000",
+        "name": "Quincy Douby",
+        "years": "2003–2006",
+        "draftPosition": "19",
+        "draftYear": "2006",
+        "draftTeam": "Sacramento Kings"
+      },
+      {
+        "id": "4465",
+        "name": "James Bailey",
+        "years": "1975-1979",
+        "draftPosition": "6",
+        "draftYear": "1979",
+        "draftTeam": "Seattle SuperSonics"
+      },
+      {
+        "id": "4397251",
+        "name": "Ron Harper Jr.",
+        "years": "2018–2022"
+      },
+      {
+        "id": "5037871",
+        "name": "Dylan Harper",
+        "years": "2024–2025",
+        "draftPosition": "2",
+        "draftYear": "2025",
+        "draftTeam": "San Antonio Spurs"
+      },
+      {
+        "id": "4873138",
+        "name": "Ace Bailey",
+        "years": "2024-2025",
+        "draftPosition": "5",
+        "draftYear": "2025",
+        "draftTeam": "Utah Jazz"
       }
     ]
   },
@@ -3443,12 +3791,116 @@
     "longitude": "-118.4455",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "4145",
+        "name": "Kareem Abdul-Jabbar",
+        "years": "1966-1969",
+        "draftPosition": "1",
+        "draftYear": "1969",
+        "draftTeam": "Milwaukee Bucks"
+      },
+      {
+        "id": "4127",
+        "name": "Bill Walton",
+        "years": "1970-1974",
+        "draftPosition": "1",
+        "draftYear": "1974",
+        "draftTeam": "Portland Trail Blazers"
+      },
+      {
+        "id": "5022",
+        "name": "Gail Goodrich",
+        "years": "1961-1965",
+        "draftPosition": "as territorial pick",
+        "draftYear": "1965",
+        "draftTeam": "Los Angeles Lakers"
+      },
+      {
+        "id": "552",
+        "name": "Reggie Miller",
+        "years": "1983-1987",
+        "draftPosition": "11",
+        "draftYear": "1987",
+        "draftTeam": "Indiana Pacers"
+      },
+      {
+        "id": "3468",
+        "name": "Russell Westbrook",
+        "years": "2006-2008",
+        "draftPosition": "4",
+        "draftYear": "2008",
+        "draftTeam": "Seattle SuperSonics"
+      },
+      {
+        "id": "6340",
+        "name": "Jamaal Wilkes",
+        "years": "1970-1974",
+        "draftPosition": "11",
+        "draftYear": "1974",
+        "draftTeam": "Golden State Warriors"
+      },
+      {
+        "id": "5266",
+        "name": "Marques Johnson",
+        "years": "1973-1977",
+        "draftPosition": "3",
+        "draftYear": "1977",
+        "draftTeam": "Milwaukee Bucks"
+      },
+      {
+        "id": "3449",
+        "name": "Kevin Love",
+        "years": "2007-2008",
+        "draftPosition": "5",
+        "draftYear": "2008",
+        "draftTeam": "Memphis Grizzlies"
+      },
+      {
+        "id": "6330",
+        "name": "Sidney Wicks",
+        "years": "1968-1971",
+        "draftPosition": "2",
+        "draftYear": "1971",
+        "draftTeam": "Portland Trail Blazers"
+      },
+      {
+        "id": "194",
+        "name": "Baron Davis",
+        "years": "1997-1999",
+        "draftPosition": "3",
+        "draftYear": "1999",
+        "draftTeam": "Charlotte Hornets"
+      },
+      {
+        "id": "610",
+        "name": "Ed O'Bannon",
+        "years": "1991-1995",
+        "draftPosition": "9",
+        "draftYear": "1995",
+        "draftTeam": "New Jersey Nets"
+      },
+      {
+        "id": "6239",
+        "name": "Kiki Vandeweghe",
+        "years": "1976-1980",
+        "draftPosition": "11",
+        "draftYear": "1980",
+        "draftTeam": "Dallas Mavericks"
+      },
+      {
+        "id": "3995",
+        "name": "Jrue Holiday",
+        "years": "2008-2009",
+        "draftPosition": "17",
+        "draftYear": "2009",
+        "draftTeam": "Philadelphia Sixers"
+      },
+      {
+        "id": "3064440",
+        "name": "Zach LaVine",
+        "years": "2013-2014",
+        "draftPosition": "13",
+        "draftYear": "2014",
+        "draftTeam": "Minnesota Timberwolves"
       }
     ]
   },
