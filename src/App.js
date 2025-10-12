@@ -127,7 +127,7 @@ function AutoPanPopup({ children, isSmallScreen, rosterLoading }) {
       ref={popupRef}
       autoPan={true}
       autoPanPaddingTopLeft={[70, 100]}
-      autoPanPaddingBottomRight={[isSmallScreen ? 20 : window.innerWidth * 0.15, 20]}
+      autoPanPaddingBottomRight={[isSmallScreen ? 20 : (window.innerWidth * 0.15 + 20), 20]}
     >
       {children}
     </Popup>
