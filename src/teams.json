@@ -2,8 +2,8 @@
   {
     "id": "103",
     "name": "Boston College Eagles",
-    "latitude": "42.3066991",
-    "longitude": "-71.1461226",
+    "latitude": "42.33522",
+    "longitude": "-71.167568",
     "oldPlayers": [
       {
         "id": "6443",
@@ -296,8 +296,8 @@
   {
     "id": "97",
     "name": "Louisville Cardinals",
-    "latitude": "38.2159837",
-    "longitude": "-85.7623499",
+    "latitude": "38.216716",
+    "longitude": "-85.758834",
     "oldPlayers": [
       {
         "id": "4148",
@@ -472,8 +472,8 @@
   {
     "id": "221",
     "name": "Pittsburgh Panthers",
-    "latitude": "40.4314699",
-    "longitude": "-80.0629011",
+    "latitude": "40.443853",
+    "longitude": "-79.962253",
     "oldPlayers": [
       {
         "id": "3491",
@@ -501,8 +501,8 @@
   {
     "id": "2567",
     "name": "SMU Mustangs",
-    "latitude": "32.8412345",
-    "longitude": "-96.8029714",
+    "latitude": "32.843463",
+    "longitude": "-96.784926",
     "oldPlayers": [
       {
         "id": "5387",
@@ -709,8 +709,8 @@
   {
     "id": "91",
     "name": "Bellarmine Knights",
-    "latitude": "38.2162544",
-    "longitude": "-85.7166275"
+    "latitude": "38.219473",
+    "longitude": "-85.705476"
   },
   {
     "id": "2110",
@@ -814,14 +814,14 @@
   {
     "id": "2511",
     "name": "Queens University Royals",
-    "latitude": "35.1740609",
-    "longitude": "-80.8620301"
+    "latitude": "35.189298",
+    "longitude": "-80.833369"
   },
   {
     "id": "56",
     "name": "Stetson Hatters",
-    "latitude": "29.0335314",
-    "longitude": "-81.3193784"
+    "latitude": "29.035386",
+    "longitude": "-81.300931"
   },
   {
     "id": "2698",
@@ -844,14 +844,14 @@
   {
     "id": "311",
     "name": "Maine Black Bears",
-    "latitude": "44.9018807",
-    "longitude": "-68.687279"
+    "latitude": "44.901582",
+    "longitude": "-68.667908"
   },
   {
     "id": "2885",
     "name": "NJIT Highlanders",
-    "latitude": "40.7424407",
-    "longitude": "-74.1968545"
+    "latitude": "40.743116",
+    "longitude": "-74.178266"
   },
   {
     "id": "160",
@@ -924,8 +924,8 @@
   {
     "id": "235",
     "name": "Memphis Tigers",
-    "latitude": "35.1198972",
-    "longitude": "-89.9559058",
+    "latitude": "35.118737",
+    "longitude": "-89.937148",
     "oldPlayers": [
       {
         "id": "302",
@@ -1060,8 +1060,8 @@
   {
     "id": "202",
     "name": "Tulsa Golden Hurricane",
-    "latitude": "36.0963065",
-    "longitude": "-96.2117431",
+    "latitude": "36.148896",
+    "longitude": "-95.942136",
     "oldPlayers": [
       {
         "id": "5832",
@@ -1076,8 +1076,8 @@
   {
     "id": "5",
     "name": "UAB Blazers",
-    "latitude": "33.5021025",
-    "longitude": "-86.8236127"
+    "latitude": "33.499507",
+    "longitude": "-86.805054"
   },
   {
     "id": "2636",
@@ -1200,8 +1200,8 @@
   {
     "id": "45",
     "name": "George Washington Revolutionaries",
-    "latitude": "38.8997149",
-    "longitude": "-77.0533403",
+    "latitude": "38.899221",
+    "longitude": "-77.047518",
     "oldPlayers": [
       {
         "id": "3133838",
@@ -1256,8 +1256,8 @@
   {
     "id": "2350",
     "name": "Loyola Chicago Ramblers",
-    "latitude": "41.9983568",
-    "longitude": "-92.1393593"
+    "latitude": "41.999920",
+    "longitude": "-87.657366"
   },
   {
     "id": "113",
@@ -1550,8 +1550,8 @@
   {
     "id": "252",
     "name": "BYU Cougars",
-    "latitude": "40.2518594",
-    "longitude": "-111.6596153",
+    "latitude": "40.253396",
+    "longitude": "-111.647337",
     "oldPlayers": [
       {
         "id": "3622",
@@ -1566,8 +1566,8 @@
   {
     "id": "239",
     "name": "Baylor Bears",
-    "latitude": "31.5501027",
-    "longitude": "-97.1238397",
+    "latitude": "31.549685",
+    "longitude": "-97.116736",
     "oldPlayers": [
       {
         "id": "4278053",
@@ -1620,8 +1620,8 @@
   {
     "id": "2132",
     "name": "Cincinnati Bearcats",
-    "latitude": "39.1329381",
-    "longitude": "-84.5252501",
+    "latitude": "39.132126",
+    "longitude": "-84.515775",
     "oldPlayers": [
       {
         "id": "4119",
@@ -1732,8 +1732,8 @@
   {
     "id": "248",
     "name": "Houston Cougars",
-    "latitude": "29.7204809",
-    "longitude": "-95.3532316",
+    "latitude": "29.720123",
+    "longitude": "-95.342819",
     "oldPlayers": [
       {
         "id": "619",
@@ -1966,8 +1966,8 @@
   {
     "id": "2628",
     "name": "TCU Horned Frogs",
-    "latitude": "32.7078707",
-    "longitude": "-97.3731038",
+    "latitude": "32.709026",
+    "longitude": "-97.363264",
     "oldPlayers": [
       {
         "id": "846",
@@ -2412,8 +2412,8 @@
   {
     "id": "2599",
     "name": "St. John's Red Storm",
-    "latitude": "40.7209832",
-    "longitude": "-73.7902303",
+    "latitude": "40.723633",
+    "longitude": "-73.793173",
     "oldPlayers": [
       {
         "id": "582",
@@ -2913,8 +2913,8 @@
   {
     "id": "2908",
     "name": "South Carolina Upstate Spartans",
-    "latitude": "34.9954",
-    "longitude": "-81.9877",
+    "latitude": "34.999167",
+    "longitude": "-81.971028",
     "oldPlayers": [
       {
         "id": "2528693",
@@ -2938,8 +2938,8 @@
   {
     "id": "356",
     "name": "Illinois Fighting Illini",
-    "latitude": "40.1106",
-    "longitude": "-88.2073",
+    "latitude": "40.096289",
+    "longitude": "-88.235945",
     "oldPlayers": [
       {
         "id": "269",
@@ -3058,8 +3058,8 @@
   {
     "id": "2294",
     "name": "Iowa Hawkeyes",
-    "latitude": "41.6611",
-    "longitude": "-91.5302",
+    "latitude": "41.660651",
+    "longitude": "-91.547910",
     "oldPlayers": [
       {
         "id": "4277951",
@@ -3282,8 +3282,8 @@
   {
     "id": "127",
     "name": "Michigan State Spartans",
-    "latitude": "42.7361",
-    "longitude": "-84.4822",
+    "latitude": "42.72798",
+    "longitude": "-84.492051",
     "oldPlayers": [
       {
         "id": "2334",
@@ -4400,8 +4400,8 @@
   {
     "id": "232",
     "name": "Charleston Cougars",
-    "latitude": "32.7846",
-    "longitude": "-79.9403",
+    "latitude": "32.783760",
+    "longitude": "-79.937258",
     "oldPlayers": [
       {
         "id": "",
@@ -4784,8 +4784,8 @@
   {
     "id": "2174",
     "name": "Detroit Mercy Titans",
-    "latitude": "42.4173",
-    "longitude": "-83.1385",
+    "latitude": "42.41472",
+    "longitude": "-83.137923",
     "oldPlayers": [
       {
         "id": "",
@@ -5008,8 +5008,8 @@
   {
     "id": "108",
     "name": "Harvard Crimson",
-    "latitude": "42.3770",
-    "longitude": "-71.1167",
+    "latitude": "42.366713",
+    "longitude": "-71.122707",
     "oldPlayers": [
       {
         "id": "",
@@ -5104,8 +5104,8 @@
   {
     "id": "314",
     "name": "Iona Gaels",
-    "latitude": "40.9304",
-    "longitude": "-73.7846",
+    "latitude": "40.927187",
+    "longitude": "-73.786470",
     "oldPlayers": [
       {
         "id": "",
@@ -5280,8 +5280,8 @@
   {
     "id": "2154",
     "name": "Coppin State Eagles",
-    "latitude": "39.3124",
-    "longitude": "-76.6626",
+    "latitude": "39.312427",
+    "longitude": "-76.657809",
     "oldPlayers": [
       {
         "id": "",
@@ -5488,8 +5488,8 @@
   {
     "id": "2199",
     "name": "Eastern Michigan Eagles",
-    "latitude": "42.2456",
-    "longitude": "-83.6266",
+    "latitude": "42.2513",
+    "longitude": "-83.623907",
     "oldPlayers": [
       {
         "id": "",
@@ -5648,8 +5648,8 @@
   {
     "id": "339",
     "name": "Evansville Purple Aces",
-    "latitude": "37.9694",
-    "longitude": "-87.5281",
+    "latitude": "37.971413",
+    "longitude": "-87.531669",
     "oldPlayers": [
       {
         "id": "",
@@ -6192,8 +6192,8 @@
   {
     "id": "2546",
     "name": "Southeast Missouri State Redhawks",
-    "latitude": "37.3090",
-    "longitude": "-89.5181",
+    "latitude": "37.315332",
+    "longitude": "-89.527618",
     "oldPlayers": [
       {
         "id": "",
@@ -6464,8 +6464,8 @@
   {
     "id": "8",
     "name": "Arkansas Razorbacks",
-    "latitude": "36.0687",
-    "longitude": "-94.1780",
+    "latitude": "36.06157",
+    "longitude": "-94.178107",
     "oldPlayers": [
       {
         "id": "",
@@ -6704,8 +6704,8 @@
   {
     "id": "2010",
     "name": "Alabama A&M Bulldogs",
-    "latitude": "34.7403",
-    "longitude": "-86.5866",
+    "latitude": "34.782642",
+    "longitude": "-86.568715",
     "oldPlayers": [
       {
         "id": "",
@@ -6752,8 +6752,8 @@
   {
     "id": "2029",
     "name": "Arkansas-Pine Bluff Golden Lions",
-    "latitude": "34.2576",
-    "longitude": "-91.1948",
+    "latitude": "34.252727",
+    "longitude": "-92.026371",
     "oldPlayers": [
       {
         "id": "",
@@ -6768,8 +6768,8 @@
   {
     "id": "2065",
     "name": "Bethune-Cookman Wildcats",
-    "latitude": "29.2032",
-    "longitude": "-81.0407",
+    "latitude": "29.210667",
+    "longitude": "-81.031128",
     "oldPlayers": [
       {
         "id": "",
@@ -6800,8 +6800,8 @@
   {
     "id": "2755",
     "name": "Grambling Tigers",
-    "latitude": "32.5260",
-    "longitude": "-93.7471",
+    "latitude": "32.519349",
+    "longitude": "-92.717637",
     "oldPlayers": [
       {
         "id": "",
@@ -6816,8 +6816,8 @@
   {
     "id": "2296",
     "name": "Jackson State Tigers",
-    "latitude": "32.2988",
-    "longitude": "-90.1826",
+    "latitude": "32.297781",
+    "longitude": "-90.207912",
     "oldPlayers": [
       {
         "id": "",
@@ -6864,8 +6864,8 @@
   {
     "id": "2582",
     "name": "Southern Jaguars",
-    "latitude": "30.4347",
-    "longitude": "-91.1641",
+    "latitude": "30.523674",
+    "longitude": "-91.188805",
     "oldPlayers": [
       {
         "id": "",
@@ -6880,8 +6880,8 @@
   {
     "id": "2640",
     "name": "Texas Southern Tigers",
-    "latitude": "29.7334",
-    "longitude": "-95.3455",
+    "latitude": "29.721565",
+    "longitude": "-95.359653",
     "oldPlayers": [
       {
         "id": "",
@@ -6896,8 +6896,8 @@
   {
     "id": "236",
     "name": "Chattanooga Mocs",
-    "latitude": "35.0656",
-    "longitude": "-85.2503",
+    "latitude": "35.046819",
+    "longitude": "-85.297813",
     "oldPlayers": [
       {
         "id": "",
@@ -6912,8 +6912,8 @@
   {
     "id": "2193",
     "name": "East Tennessee State Buccaneers",
-    "latitude": "36.3145",
-    "longitude": "-82.3618",
+    "latitude": "36.302915",
+    "longitude": "-82.369717",
     "oldPlayers": [
       {
         "id": "",
@@ -6960,8 +6960,8 @@
   {
     "id": "2535",
     "name": "Samford Bulldogs",
-    "latitude": "33.4530",
-    "longitude": "-86.7743",
+    "latitude": "33.465432",
+    "longitude": "-86.791868",
     "oldPlayers": [
       {
         "id": "",
@@ -6976,8 +6976,8 @@
   {
     "id": "2643",
     "name": "The Citadel Bulldogs",
-    "latitude": "32.7853",
-    "longitude": "-79.9509",
+    "latitude": "32.795898",
+    "longitude": "-79.959462",
     "oldPlayers": [
       {
         "id": "",
@@ -6992,8 +6992,8 @@
   {
     "id": "2430",
     "name": "UNC Greensboro Spartans",
-    "latitude": "36.0632",
-    "longitude": "-79.8282",
+    "latitude": "36.070505",
+    "longitude": "-79.810115",
     "oldPlayers": [
       {
         "id": "",
@@ -7040,8 +7040,8 @@
   {
     "id": "2747",
     "name": "Wofford Terriers",
-    "latitude": "34.9825",
-    "longitude": "-81.9039",
+    "latitude": "34.959804",
+    "longitude": "-81.935392",
     "oldPlayers": [
       {
         "id": "",
@@ -7056,8 +7056,8 @@
   {
     "id": "2277",
     "name": "Houston Christian Huskies",
-    "latitude": "29.6800",
-    "longitude": "-95.4428",
+    "latitude": "29.694764",
+    "longitude": "-95.515717",
     "oldPlayers": [
       {
         "id": "",
@@ -7072,8 +7072,8 @@
   {
     "id": "2916",
     "name": "Incarnate Word Cardinals",
-    "latitude": "29.5326",
-    "longitude": "-98.4670",
+    "latitude": "29.467094",
+    "longitude": "-98.466361",
     "oldPlayers": [
       {
         "id": "",
@@ -7088,8 +7088,8 @@
   {
     "id": "2320",
     "name": "Lamar Cardinals",
-    "latitude": "30.2627",
-    "longitude": "-94.1309",
+    "latitude": "30.042485",
+    "longitude": "-94.075175",
     "oldPlayers": [
       {
         "id": "",
@@ -7104,8 +7104,8 @@
   {
     "id": "2377",
     "name": "McNeese Cowboys",
-    "latitude": "30.2010",
-    "longitude": "-93.2040",
+    "latitude": "30.180443",
+    "longitude": "-93.216733",
     "oldPlayers": [
       {
         "id": "",
@@ -7120,8 +7120,8 @@
   {
     "id": "2443",
     "name": "New Orleans Privateers",
-    "latitude": "29.9562",
-    "longitude": "-90.0622",
+    "latitude": "30.026211",
+    "longitude": "-90.066685",
     "oldPlayers": [
       {
         "id": "",
@@ -7136,8 +7136,8 @@
   {
     "id": "2447",
     "name": "Nicholls Colonels",
-    "latitude": "29.6170",
-    "longitude": "-90.5832",
+    "latitude": "29.794652",
+    "longitude": "-90.801469",
     "oldPlayers": [
       {
         "id": "",
@@ -7152,8 +7152,8 @@
   {
     "id": "2466",
     "name": "Northwestern State Demons",
-    "latitude": "31.7450",
-    "longitude": "-93.1976",
+    "latitude": "31.748957",
+    "longitude": "-93.100968",
     "oldPlayers": [
       {
         "id": "",
@@ -7168,8 +7168,8 @@
   {
     "id": "2545",
     "name": "SE Louisiana Lions",
-    "latitude": "30.1345",
-    "longitude": "-90.4694",
+    "latitude": "30.519683",
+    "longitude": "-90.470319",
     "oldPlayers": [
       {
         "id": "",
@@ -7199,9 +7199,9 @@
   },
   {
     "id": "2837",
-    "name": "Texas A&M-Commerce Lions",
-    "latitude": "33.2493",
-    "longitude": "-95.6010",
+    "name": "East Texas A&M Lions",
+    "latitude": "33.24253",
+    "longitude": "-95.910239",
     "oldPlayers": [
       {
         "id": "",
@@ -7216,8 +7216,8 @@
   {
     "id": "357",
     "name": "Texas A&M-Corpus Christi Islanders",
-    "latitude": "27.7544",
-    "longitude": "-97.3844",
+    "latitude": "27.713705",
+    "longitude": "-97.323955",
     "oldPlayers": [
       {
         "id": "",
@@ -7248,8 +7248,8 @@
   {
     "id": "2172",
     "name": "Denver Pioneers",
-    "latitude": "39.7400",
-    "longitude": "-104.9922",
+    "latitude": "39.676618",
+    "longitude": "-104.961006",
     "oldPlayers": [
       {
         "id": "",
@@ -7328,8 +7328,8 @@
   {
     "id": "198",
     "name": "Oral Roberts Golden Eagles",
-    "latitude": "36.1557",
-    "longitude": "-95.9389",
+    "latitude": "36.051442",
+    "longitude": "-95.952821",
     "oldPlayers": [
       {
         "id": "",
@@ -7408,8 +7408,8 @@
   {
     "id": "2032",
     "name": "Arkansas State Red Wolves",
-    "latitude": "35.8436",
-    "longitude": "-90.7043",
+    "latitude": "35.842791",
+    "longitude": "-90.677045",
     "oldPlayers": [
       {
         "id": "",
@@ -7424,8 +7424,8 @@
   {
     "id": "324",
     "name": "Coastal Carolina Chanticleers",
-    "latitude": "33.8439",
-    "longitude": "-79.0140",
+    "latitude": "33.79725093754252",
+    "longitude": "-79.01282267980703",
     "oldPlayers": [
       {
         "id": "",
@@ -7440,8 +7440,8 @@
   {
     "id": "290",
     "name": "Georgia Southern Eagles",
-    "latitude": "32.3999",
-    "longitude": "-81.7822",
+    "latitude": "32.422346",
+    "longitude": "-81.787398",
     "oldPlayers": [
       {
         "id": "",
@@ -7488,8 +7488,8 @@
   {
     "id": "309",
     "name": "Louisiana Ragin' Cajuns",
-    "latitude": "30.2033",
-    "longitude": "-92.0203",
+    "latitude": "30.211706",
+    "longitude": "-92.020345",
     "oldPlayers": [
       {
         "id": "",
@@ -7536,8 +7536,8 @@
   {
     "id": "6",
     "name": "South Alabama Jaguars",
-    "latitude": "30.6764",
-    "longitude": "-88.1185",
+    "latitude": "30.695898",
+    "longitude": "-88.184296",
     "oldPlayers": [
       {
         "id": "",
@@ -7600,8 +7600,8 @@
   {
     "id": "2433",
     "name": "UL Monroe Warhawks",
-    "latitude": "32.5093",
-    "longitude": "-92.1099",
+    "latitude": "32.532259",
+    "longitude": "-92.067887",
     "oldPlayers": [
       {
         "id": "",
@@ -7616,8 +7616,8 @@
   {
     "id": "2000",
     "name": "Abilene Christian Wildcats",
-    "latitude": "32.4626",
-    "longitude": "-99.7330",
+    "latitude": "32.469213",
+    "longitude": "-99.706875",
     "oldPlayers": [
       {
         "id": "",
@@ -7696,8 +7696,8 @@
   {
     "id": "2627",
     "name": "Tarleton State Texans",
-    "latitude": "32.2955",
-    "longitude": "-98.2193",
+    "latitude": "32.215945",
+    "longitude": "-98.215921",
     "oldPlayers": [
       {
         "id": "",
@@ -7712,8 +7712,8 @@
   {
     "id": "250",
     "name": "UT Arlington Mavericks",
-    "latitude": "32.7357",
-    "longitude": "-97.1081",
+    "latitude": "32.730324",
+    "longitude": "-97.113035",
     "oldPlayers": [
       {
         "id": "",
@@ -7744,8 +7744,8 @@
   {
     "id": "3084",
     "name": "Utah Valley Wolverines",
-    "latitude": "40.2338",
-    "longitude": "-111.6550",
+    "latitude": "40.27863293839118",
+    "longitude": "-111.71556556136825",
     "oldPlayers": [
       {
         "id": "",
@@ -7760,8 +7760,8 @@
   {
     "id": "2250",
     "name": "Gonzaga Bulldogs",
-    "latitude": "47.6740",
-    "longitude": "-117.3961",
+    "latitude": "47.666418",
+    "longitude": "-117.401557",
     "oldPlayers": [
       {
         "id": "",
