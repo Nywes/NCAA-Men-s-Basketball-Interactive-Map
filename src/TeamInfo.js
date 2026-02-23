@@ -67,7 +67,7 @@ const TeamInfo = ({ roster, rosterLoading, team, isSmallScreen }) => {
             borderRadius: '5px',
           }}
         >
-          {activeButton === 3 ? `Hide Famous Players` : `Show Famous Players`}
+          {activeButton === 3 ? `Hide Notable Players` : `Show Notable Players`}
         </button>
       </div>
       {activeButton === 1 && (

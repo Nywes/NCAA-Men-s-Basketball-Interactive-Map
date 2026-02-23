@@ -23,7 +23,7 @@ const TeamLegends = ({ team, isSmallScreen }) => {
         overflowY: 'auto',
       }}
     >
-      <h2>{team.shortDisplayName} Famous Players</h2>
+      <h2>{team.shortDisplayName} Notable Players</h2>
       {team.oldPlayers ? (
         <>
           {team.oldPlayers.length > 0 && !team.oldPlayers[0].id ? (

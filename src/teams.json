@@ -3911,12 +3911,84 @@
     "longitude": "-118.470817",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "3789",
+        "name": "Harold Miner",
+        "years": "1989-1992",
+        "draftPosition": "12",
+        "draftYear": "1992",
+        "draftTeam": "Miami Heat"
+      },
+      {
+        "id": "4126",
+        "name": "Bill Sharman",
+        "years": "1946-1950",
+        "draftPosition": "23",
+        "draftYear": "1950",
+        "draftTeam": "Washington Capitols"
+      },
+      {
+        "id": "3978",
+        "name": "DeMar DeRozan",
+        "years": "2008-2009",
+        "draftPosition": "9",
+        "draftYear": "2009",
+        "draftTeam": "Toronto Raptors"
+      },
+      {
+        "id": "6316",
+        "name": "Paul Westphal",
+        "years": "1969-1972",
+        "draftPosition": "10",
+        "draftYear": "1972",
+        "draftTeam": "Boston Celtics"
+      },
+      {
+        "id": "6352",
+        "name": "Gus Williams",
+        "years": "1972-1975",
+        "draftPosition": "20",
+        "draftYear": "1975",
+        "draftTeam": "Golden State Warriors"
+      },
+      {
+        "id": "3450",
+        "name": "O.J Mayo",
+        "years": "2007-2008",
+        "draftPosition": "3",
+        "draftYear": "2008",
+        "draftTeam": "Minnesota Timberwolves"
+      },
+      {
+        "id": "3986",
+        "name": "Taj Gibson",
+        "years": "2007–2009",
+        "draftPosition": "26",
+        "draftYear": "2009",
+        "draftTeam": "Chicago Bulls"
+      },
+      {
+        "id": "4432158",
+        "name": "Evan Mobley",
+        "years": "2020-2021",
+        "draftPosition": "3",
+        "draftYear": "2021",
+        "draftTeam": "Cleveland Cavaliers"
+      },
+      {
+        "id": "3243",
+        "name": "Nick Young",
+        "years": "2004-2007",
+        "draftPosition": "16",
+        "draftYear": "2007",
+        "draftTeam": "Washington Wizards"
+      },
+      {
+        "id": "6478",
+        "name": "Nikola Vucevic",
+        "years": "2008-2011",
+        "draftPosition": "16",
+        "draftYear": "2011",
+        "draftTeam": "Philadelphia Sixers"
       }
     ]
   },
@@ -3927,12 +3999,84 @@
     "longitude": "-122.3035",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "3027",
+        "name": "Brandon Roy",
+        "years": "2002–2006",
+        "draftPosition": "6",
+        "draftYear": "2006",
+        "draftTeam": "Portland Trail Blazers"
+      },
+      {
+        "id": "757",
+        "name": "Detlef Schrempf",
+        "years": "1981-1985",
+        "draftPosition": "8",
+        "draftYear": "1985",
+        "draftTeam": "Dallas Mavericks"
+      },
+      {
+        "id": "6472",
+        "name": "Isaiah Thomas",
+        "years": "2008-2011",
+        "draftPosition": "60",
+        "draftYear": "2011",
+        "draftTeam": "Sacramento Kings"
+      },
+      {
+        "id": "6312",
+        "name": "Christian Welp",
+        "years": "1983-1987",
+        "draftPosition": "16",
+        "draftYear": "1987",
+        "draftTeam": "Philadelphia Sixers"
+      },
+      {
+        "id": "5198",
+        "name": "Bob Houbregs",
+        "years": "1950–1953",
+        "draftPosition": "2",
+        "draftYear": "1953",
+        "draftTeam": "Milwaukee Hawks"
+      },
+      {
+        "id": "2782",
+        "name": "Nate Robinson",
+        "years": "2002-2005",
+        "draftPosition": "21",
+        "draftYear": "2005",
+        "draftTeam": "Phoenix Suns"
+      },
+      {
+        "id": "3907497",
+        "name": "Dejounte Murray",
+        "years": "2015-2016",
+        "draftPosition": "29",
+        "draftYear": "2016",
+        "draftTeam": "San Antonio Spurs"
+      },
+      {
+        "id": "6619",
+        "name": "Terrence Ross",
+        "years": "2010-2012",
+        "draftPosition": "8",
+        "draftYear": "2012",
+        "draftTeam": "Toronto Raptors"
+      },
+      {
+        "id": "4066636",
+        "name": "Markelle Fultz",
+        "years": "2016-2017",
+        "draftPosition": "1",
+        "draftYear": "2017",
+        "draftTeam": "Philadelphia Sixers"
+      },
+      {
+        "id": "3907498",
+        "name": "Matisse Thybulle",
+        "years": "2015-2019",
+        "draftPosition": "20",
+        "draftYear": "2019",
+        "draftTeam": "Boston Celtics"
       }
     ]
   },
@@ -3943,12 +4087,52 @@
     "longitude": "-89.4043",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "242",
+        "name": "Michael Finley",
+        "years": "1991-1995",
+        "draftPosition": "21",
+        "draftYear": "1995",
+        "draftTeam": "Phoenix Suns"
+      },
+      {
+        "id": "2579294",
+        "name": "Frank Kaminsky",
+        "years": "2011-2015",
+        "draftPosition": "9",
+        "draftYear": "2015",
+        "draftTeam": "Charlotte Hornets"
+      },
+      {
+        "id": "2382",
+        "name": "Devin Harris",
+        "years": "2001-2004",
+        "draftPosition": "5",
+        "draftYear": "2004",
+        "draftTeam": "Washington Wizards"
+      },
+      {
+        "id": "2991184",
+        "name": "Sam Dekker",
+        "years": "2012-2015",
+        "draftPosition": "18",
+        "draftYear": "2015",
+        "draftTeam": "Houston Rockets"
+      },
+      {
+        "id": "3238",
+        "name": "Alando Tucker",
+        "years": "2002-2007",
+        "draftPosition": "29",
+        "draftYear": "2007",
+        "draftTeam": "Phoenix Suns"
+      },
+      {
+        "id": "5522",
+        "name": "Wes Matthews",
+        "years": "1977-1980",
+        "draftPosition": "14",
+        "draftYear": "1980",
+        "draftTeam": "Washington Bullets"
       }
     ]
   },
@@ -3959,12 +4143,14 @@
     "longitude": "-120.6625",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "3062744",
+        "name": "David Nwaba",
+        "years": "2013–2016"
+      },
+      {
+        "id": "4567400000",
+        "name": "Chris Eversley",
+        "years": "2011–2014"
       }
     ]
   },
@@ -3975,12 +4161,12 @@
     "longitude": "-119.1046",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "809",
+        "name": "Kebu Stewart",
+        "years": "1995-1997",
+        "draftPosition": "35",
+        "draftYear": "1997",
+        "draftTeam": "Philadelphia Sixers"
       }
     ]
   },
@@ -3991,12 +4177,30 @@
     "longitude": "-117.8854",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "3472",
+        "name": "Bobby Brown",
+        "years": "2003-2007"
+      },
+      {
+        "id": "141",
+        "name": "Cedric Ceballos",
+        "years": "1988-1990",
+        "draftPosition": "48",
+        "draftYear": "1990",
+        "draftTeam": "Phoenix Suns"
+      },
+      {
+        "id": "6396",
+        "name": "Leon Wood",
+        "years": "1981-1984",
+        "draftPosition": "10",
+        "draftYear": "1984",
+        "draftTeam": "Philadelphia Sixers"
+      },
+      {
+        "id": "83",
+        "name": "Bruce Bowen",
+        "years": "1989-1993"
       }
     ]
   },
@@ -4004,17 +4208,7 @@
     "id": "2463",
     "name": "Cal State Northridge Matadors",
     "latitude": "34.2425",
-    "longitude": "-118.5280",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ]
+    "longitude": "-118.5280"
   },
   {
     "id": "62",
@@ -4023,12 +4217,17 @@
     "longitude": "-157.8193",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "5142",
+        "name": "Tom Henderson",
+        "years": "1972-1974",
+        "draftPosition": "7",
+        "draftYear": "1974",
+        "draftTeam": "Atlanta Hawks"
+      },
+      {
+        "id": "137",
+        "name": "Anthony Carter",
+        "years": "1996-1998"
       }
     ]
   },
@@ -4039,12 +4238,52 @@
     "longitude": "-118.1141",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "309",
+        "name": "Lucious Harris",
+        "years": "1989-1993",
+        "draftPosition": "28",
+        "draftYear": "1993",
+        "draftTeam": "Dallas Mavericks"
+      },
+      {
+        "id": "742",
+        "name": "Bryon Russell",
+        "years": "1990-1993",
+        "draftPosition": "45",
+        "draftYear": "1993",
+        "draftTeam": "Utah Jazz"
+      },
+      {
+        "id": "5172",
+        "name": "Craig Hodges",
+        "years": "1978-1982",
+        "draftPosition": "48",
+        "draftYear": "1982",
+        "draftTeam": "San Diego Clippers"
+      },
+      {
+        "id": "5038",
+        "name": "Leonard Gray",
+        "years": "1971–1974",
+        "draftPosition": "26",
+        "draftYear": "1974",
+        "draftTeam": "Seattle SuperSonics"
+      },
+      {
+        "id": "5863",
+        "name": "Ed Ratleff",
+        "years": "1969-1973",
+        "draftPosition": "6",
+        "draftYear": "1973",
+        "draftTeam": "Houston Rockets"
+      },
+      {
+        "id": "5067",
+        "name": "Bob Gross",
+        "years": "1973–1975",
+        "draftPosition": "25",
+        "draftYear": "1975",
+        "draftTeam": "Portland Trail Blazers"
       }
     ]
   },
@@ -4055,12 +4294,19 @@
     "longitude": "-121.7617",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "3919347",
+        "name": "Chima Moneke",
+        "years": "2016-2018"
+      },
+      {
+        "id": "2531186",
+        "name": "Corey Hawkins",
+        "years": "2012–2015"
+      },
+      {
+        "id": "4279066000",
+        "name": "TJ Shorts II",
+        "years": "2017-2019"
       }
     ]
   },
@@ -4071,12 +4317,19 @@
     "longitude": "-117.8420",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "3654",
+        "name": "Scott Brooks",
+        "years": "1985-1987"
+      },
+      {
+        "id": "4279073000",
+        "name": "Collin Welp",
+        "years": "2017–2022"
+      },
+      {
+        "id": "1097000",
+        "name": "Jerry Green",
+        "years": "1998–2002"
       }
     ]
   },
