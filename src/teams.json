@@ -72,7 +72,7 @@
       {
         "id": "4270",
         "name": "Trevor Booker",
-        "years": "2006-1010",
+        "years": "2006-2010",
         "draftPosition": "23",
         "draftYear": "2010",
         "draftTeam": "Minnesota Timberwolves"
@@ -140,9 +140,6 @@
         "id": "3680",
         "name": "Johnny Dawkins",
         "years": "1983-1986",
-        "trophy": [
-          "1986"
-        ],
         "draftPosition": "10",
         "draftYear": "1986",
         "draftTeam": "San Antonio Spurs"
@@ -158,13 +155,10 @@
       {
         "id": "4395628",
         "name": "Zion Williamson",
-        "years": "2015-2016",
-        "trophy": [
-          "2016"
-        ],
-        "draftPosition": "2",
-        "draftYear": "2016",
-        "draftTeam": "Los Angeles Lakers"
+        "years": "2018-2019",
+        "draftPosition": "1",
+        "draftYear": "2019",
+        "draftTeam": "New Orleans Pelicans"
       },
       {
         "id": "6442",
@@ -185,10 +179,10 @@
       {
         "id": "3913176",
         "name": "Brandon Ingram",
-        "years": "2018-2019",
-        "draftPosition": "1",
-        "draftYear": "2019",
-        "draftTeam": "New Orleans Pelicans"
+        "years": "2015-2016",
+        "draftPosition": "2",
+        "draftYear": "2016",
+        "draftTeam": "Los Angeles Lakers"
       },
       {
         "id": "4432573",
@@ -210,7 +204,7 @@
   },
   {
     "id": "52",
-    "name": "Florida States Seminoles",
+    "name": "Florida State Seminoles",
     "latitude": "30.442087",
     "longitude": "-84.2979579",
     "oldPlayers": [
@@ -507,7 +501,7 @@
       {
         "id": "5387",
         "name": "Jim Krebs",
-        "years": "1954–1957",
+        "years": "1954-1957",
         "draftPosition": "3",
         "draftYear": "1957",
         "draftTeam": "Minneapolis Lakers"
@@ -532,7 +526,7 @@
   },
   {
     "id": "24",
-    "name": "3B",
+    "name": "Stanford Cardinal",
     "latitude": "37.4276642",
     "longitude": "-122.1726349",
     "oldPlayers": [
@@ -547,7 +541,7 @@
       {
         "id": "440",
         "name": "Brevin Knight",
-        "years": "11993-1997",
+        "years": "1993-1997",
         "draftPosition": "6",
         "draftYear": "1997",
         "draftTeam": "Cleveland Cavaliers"
@@ -597,7 +591,7 @@
     "oldPlayers": [
       {
         "id": "5964",
-        "name": "Ralph Samson",
+        "name": "Ralph Sampson",
         "years": "1979-1983",
         "draftPosition": "1",
         "draftYear": "1983",
@@ -623,8 +617,8 @@
         "id": "175",
         "name": "Dell Curry",
         "years": "1982-1986",
-        "draftPosition": "1986",
-        "draftYear": "15",
+        "draftPosition": "15",
+        "draftYear": "1986",
         "draftTeam": "Utah Jazz"
       },
       {
@@ -668,16 +662,16 @@
         "id": "4015",
         "name": "Jeff Teague",
         "years": "2007-2009",
-        "draftPosition": "2009",
-        "draftYear": "19",
+        "draftPosition": "19",
+        "draftYear": "2009",
         "draftTeam": "Atlanta Hawks"
       },
       {
         "id": "73",
         "name": "Muggsy Bogues",
         "years": "1983-1987",
-        "draftPosition": "1987",
-        "draftYear": "12",
+        "draftPosition": "12",
+        "draftYear": "1987",
         "draftTeam": "Washington Bullets"
       },
       {
@@ -891,7 +885,7 @@
     "oldPlayers": [
       {
         "id": "5524",
-        "name": "Cedric Maxell",
+        "name": "Cedric Maxwell",
         "years": "1973-1977",
         "draftPosition": "12",
         "draftYear": "1977",
@@ -1013,7 +1007,7 @@
       {
         "id": "26",
         "name": "Chucky Atkins",
-        "years": "1992–1996"
+        "years": "1992-1996"
       }
     ]
   },
@@ -1035,9 +1029,10 @@
         "id": "5926",
         "name": "Guy Rodgers",
         "years": "1955-1958",
-        "draftPosition": "as territorial pick",
+        "draftPosition": "",
         "draftYear": "1958",
-        "draftTeam": "Philadelphia Warriors"
+        "draftTeam": "Philadelphia Warriors",
+        "territorialPick": true
       }
     ]
   },
@@ -1138,7 +1133,7 @@
       {
         "id": "3975",
         "name": "Stephen Curry",
-        "years": "2006–2009",
+        "years": "2006-2009",
         "draftPosition": "7",
         "draftYear": "2009",
         "draftTeam": "Golden State Warriors"
@@ -1231,9 +1226,10 @@
         "trophy": [
           "1954"
         ],
-        "draftPosition": "as territorial pick",
+        "draftPosition": "",
         "draftYear": "1955",
-        "draftTeam": "Philadelphia Warriors"
+        "draftTeam": "Philadelphia Warriors",
+        "territorialPick": true
       },
       {
         "id": "4955",
@@ -1811,9 +1807,10 @@
         "id": "4142",
         "name": "Wilt Chamberlain",
         "years": "1956-1958",
-        "draftPosition": "as territorial pick",
+        "draftPosition": "",
         "draftYear": "1959",
-        "draftTeam": "Philadelphia Warriors"
+        "draftTeam": "Philadelphia Warriors",
+        "territorialPick": true
       },
       {
         "id": "5468",
@@ -2012,7 +2009,7 @@
       {
         "id": "291",
         "name": "Darvin Ham",
-        "years": "193-1996"
+        "years": "1993-1996"
       }
     ]
   },
@@ -2126,7 +2123,7 @@
       {
         "id": "6184",
         "name": "Rod Thorn",
-        "years": "1960–1963",
+        "years": "1960-1963",
         "draftPosition": "2",
         "draftYear": "1963",
         "draftTeam": "Baltimore Bullets"
@@ -2547,9 +2544,10 @@
         "id": "4123",
         "name": "Paul Arizin",
         "years": "1946-1950",
-        "draftPosition": "as territorial pick",
+        "draftPosition": "",
         "draftYear": "1950",
-        "draftTeam": "Philadelphia Warriors"
+        "draftTeam": "Philadelphia Warriors",
+        "territorialPick": true
       },
       {
         "id": "3934672",
@@ -2610,7 +2608,7 @@
       {
         "id": "5298",
         "name": "Wali Jones",
-        "years": "1961–1964",
+        "years": "1961-1964",
         "draftPosition": "18",
         "draftYear": "1964",
         "draftTeam": "Detroit Pistons"
@@ -2679,7 +2677,7 @@
       {
         "id": "4553",
         "name": "Ron Boone",
-        "years": "1965–1968",
+        "years": "1965-1968",
         "draftPosition": "147",
         "draftYear": "1968",
         "draftTeam": "Phoenix Suns"
@@ -2687,7 +2685,7 @@
       {
         "id": "5130",
         "name": "Steve Hayes",
-        "years": "1973–1977",
+        "years": "1973-1977",
         "draftPosition": "76",
         "draftYear": "1977",
         "draftTeam": "New York Knicks"
@@ -2703,7 +2701,7 @@
       {
         "id": "5260",
         "name": "Gus Johnson",
-        "years": "1962–1963",
+        "years": "1962-1963",
         "draftPosition": "10",
         "draftYear": "1963",
         "draftTeam": "Chicago Zephyrs"
@@ -2711,7 +2709,7 @@
       {
         "id": "18404173",
         "name": "Orlando Lightfoot",
-        "years": "1991–1994"
+        "years": "1991-1994"
       }
     ]
   },
@@ -2748,7 +2746,7 @@
       {
         "id": "79361740",
         "name": "Cat Thompson",
-        "years": "1926–1930"
+        "years": "1926-1930"
       }
     ]
   },
@@ -2761,7 +2759,7 @@
       {
         "id": "3498",
         "name": "Andre Spencer",
-        "years": "1984–1986"
+        "years": "1984-1986"
       }
     ]
   },
@@ -3368,7 +3366,7 @@
       {
         "id": "6180",
         "name": "Mychal Thompson",
-        "years": "1974–1978",
+        "years": "1974-1978",
         "draftPosition": "1",
         "draftYear": "1978",
         "draftTeam": "Portland Trail Blazers"
@@ -3376,7 +3374,7 @@
       {
         "id": "5206",
         "name": "Lou Hudson",
-        "years": "1963–1966",
+        "years": "1963-1966",
         "draftPosition": "4",
         "draftYear": "1966",
         "draftTeam": "Saint-Louis Hawks"
@@ -3392,7 +3390,7 @@
       {
         "id": "5411",
         "name": "Stuart Lantz",
-        "years": "1965–1968",
+        "years": "1965-1968",
         "draftPosition": "23",
         "draftYear": "1968",
         "draftTeam": "San Diego Rockets"
@@ -3400,7 +3398,7 @@
       {
         "id": "489",
         "name": "Tyronn Lue",
-        "years": "1995–1998",
+        "years": "1995-1998",
         "draftPosition": "23",
         "draftYear": "1998",
         "draftTeam": "Denver Nuggets"
@@ -3408,7 +3406,7 @@
       {
         "id": "660",
         "name": "Eric Piatkowski",
-        "years": "1990–1994",
+        "years": "1990-1994",
         "draftPosition": "15",
         "draftYear": "1994",
         "draftTeam": "Indiana Pacers"
@@ -3416,7 +3414,7 @@
       {
         "id": "194728192",
         "name": "Dave Hoppen",
-        "years": "1982–1986",
+        "years": "1982-1986",
         "draftPosition": "65",
         "draftYear": "1986",
         "draftTeam": "Atlanta Hawks"
@@ -3432,12 +3430,12 @@
       {
         "id": "17482934",
         "name": "Max Morris",
-        "years": "1943–1946"
+        "years": "1943-1946"
       },
       {
         "id": "4418",
         "name": "Don Adams",
-        "years": "1967–1970",
+        "years": "1967-1970",
         "draftPosition": "120",
         "draftYear": "1970",
         "draftTeam": "San Diego Rockets"
@@ -3453,20 +3451,21 @@
       {
         "id": "4137",
         "name": "Jerry Lucas",
-        "years": "1959–1962",
-        "draftPosition": "as territorial pick",
+        "years": "1959-1962",
+        "draftPosition": "",
         "draftYear": "1962",
-        "draftTeam": "Cincinnati Royals"
+        "draftTeam": "Cincinnati Royals",
+        "territorialPick": true
       },
       {
         "id": "5278",
         "name": "Neil Johnston",
-        "years": "1946–1948"
+        "years": "1946-1948"
       },
       {
         "id": "4120",
         "name": "John Havlicek",
-        "years": "1959–1962",
+        "years": "1959-1962",
         "draftPosition": "7",
         "draftYear": "1962",
         "draftTeam": "Boston Celtics"
@@ -3474,7 +3473,7 @@
       {
         "id": "4239",
         "name": "Evan Turner",
-        "years": "2007–2010",
+        "years": "2007-2010",
         "draftPosition": "2",
         "draftYear": "2010",
         "draftTeam": "Philadelphia Sixers"
@@ -3482,7 +3481,7 @@
       {
         "id": "372",
         "name": "Jim Jackson",
-        "years": "1989–1992",
+        "years": "1989-1992",
         "draftPosition": "4",
         "draftYear": "1992",
         "draftTeam": "Dallas Mavericks"
@@ -3490,7 +3489,7 @@
       {
         "id": "692",
         "name": "Michael Redd",
-        "years": "1997–2000",
+        "years": "1997-2000",
         "draftPosition": "43",
         "draftYear": "2000",
         "draftTeam": "Milwaukee Bucks"
@@ -3498,7 +3497,7 @@
       {
         "id": "5192",
         "name": "Dennis Hopson",
-        "years": "1983–1987",
+        "years": "1983-1987",
         "draftPosition": "3",
         "draftYear": "1987",
         "draftTeam": "New Jersey Nets"
@@ -3506,7 +3505,7 @@
       {
         "id": "5330",
         "name": "Clark Kellogg",
-        "years": "1979–1982",
+        "years": "1979-1982",
         "draftPosition": "8",
         "draftYear": "1982",
         "draftTeam": "Indiana Pacers"
@@ -3514,7 +3513,7 @@
       {
         "id": "3136776",
         "name": "D’Angelo Russell",
-        "years": "2014–2015",
+        "years": "2014-2015",
         "draftPosition": "2",
         "draftYear": "2015",
         "draftTeam": "Los Angeles Lakers"
@@ -3522,7 +3521,7 @@
       {
         "id": "3195",
         "name": "Mike Conley",
-        "years": "2006–2007",
+        "years": "2006-2007",
         "draftPosition": "4",
         "draftYear": "2007",
         "draftTeam": "Memphis Grizzlies"
@@ -3546,7 +3545,7 @@
       {
         "id": "1985",
         "name": "Luke Ridnour",
-        "years": "2000–2003",
+        "years": "2000-2003",
         "draftPosition": "14",
         "draftYear": "2003",
         "draftTeam": "Seattle SuperSonics"
@@ -3554,7 +3553,7 @@
       {
         "id": "92",
         "name": "Terrell Brandon",
-        "years": "1989–1991",
+        "years": "1989-1991",
         "draftPosition": "11",
         "draftYear": "1991",
         "draftTeam": "Cleveland Cavaliers"
@@ -3562,7 +3561,7 @@
       {
         "id": "5236",
         "name": "Luke Jackson",
-        "years": "2000–2004",
+        "years": "2000-2004",
         "draftPosition": "10",
         "draftYear": "2004",
         "draftTeam": "Cleveland Cavaliers"
@@ -3570,7 +3569,7 @@
       {
         "id": "91731293942",
         "name": "Greg Ballard",
-        "years": "1973–1977",
+        "years": "1973-1977",
         "draftPosition": "4",
         "draftYear": "1977",
         "draftTeam": "Washington Bullets"
@@ -3578,7 +3577,7 @@
       {
         "id": "4066354",
         "name": "Payton Pritchard",
-        "years": "2016–2020",
+        "years": "2016-2020",
         "draftPosition": "26",
         "draftYear": "2020",
         "draftTeam": "Boston Celtics"
@@ -3615,7 +3614,7 @@
       {
         "id": "8149000",
         "name": "Jesse Arnelle",
-        "years": "1951–1955",
+        "years": "1951-1955",
         "draftPosition": "13",
         "draftYear": "1955",
         "draftTeam": "Fort Wayne Pistons"
@@ -3623,7 +3622,7 @@
       {
         "id": "36465000",
         "name": "Talor Battle",
-        "years": "2007–2011"
+        "years": "2007-2011"
       },
       {
         "id": "6308",
@@ -3660,7 +3659,7 @@
       {
         "id": "717",
         "name": "Glenn Robinson",
-        "years": "1992–1994",
+        "years": "1992-1994",
         "draftPosition": "1",
         "draftYear": "1994",
         "draftTeam": "Milwaukee Bucks"
@@ -3668,7 +3667,7 @@
       {
         "id": "579",
         "name": "Rick Mount",
-        "years": "1967–1970",
+        "years": "1967-1970",
         "draftPosition": "132",
         "draftYear": "1970",
         "draftTeam": "Los Angeles Lakers"
@@ -3676,7 +3675,7 @@
       {
         "id": "4600663",
         "name": "Zach Edey",
-        "years": "2020–2024",
+        "years": "2020-2024",
         "draftPosition": "9",
         "draftYear": "2024",
         "draftTeam": "Memphis Grizzlies"
@@ -3684,7 +3683,7 @@
       {
         "id": "4670",
         "name": "Joe Barry Carroll",
-        "years": "1976–1980",
+        "years": "1976-1980",
         "draftPosition": "1",
         "draftYear": "1980",
         "draftTeam": "Golden State Warriors"
@@ -3692,7 +3691,7 @@
       {
         "id": "4833",
         "name": "Terry Dischinger",
-        "years": "1959–1962",
+        "years": "1959-1962",
         "draftPosition": "8",
         "draftYear": "1962",
         "draftTeam": "Chicago Zephyrs"
@@ -3700,7 +3699,7 @@
       {
         "id": "6633",
         "name": "Robbie Hummel",
-        "years": "2007–2012",
+        "years": "2007-2012",
         "draftPosition": "58",
         "draftYear": "2012",
         "draftTeam": "Minnesota Timberwolves"
@@ -3708,7 +3707,7 @@
       {
         "id": "6460",
         "name": "E'Twaun Moore",
-        "years": "2007–2011",
+        "years": "2007-2011",
         "draftPosition": "55",
         "draftYear": "2011",
         "draftTeam": "Boston Celtics"
@@ -3716,7 +3715,7 @@
       {
         "id": "4433218",
         "name": "Jaden Ivey",
-        "years": "2020–2022",
+        "years": "2020-2022",
         "draftPosition": "5",
         "draftYear": "2022",
         "draftTeam": "Detroit Pistons"
@@ -3732,7 +3731,7 @@
       {
         "id": "6007",
         "name": "Phil Sellers",
-        "years": "1972–1976",
+        "years": "1972-1976",
         "draftPosition": "48",
         "draftYear": "1976",
         "draftTeam": "Detroit Pistons"
@@ -3740,7 +3739,7 @@
       {
         "id": "5305",
         "name": "Eddie Jordan",
-        "years": "1973–1977",
+        "years": "1973-1977",
         "draftPosition": "33",
         "draftYear": "1977",
         "draftTeam": "Cleveland Cavaliers"
@@ -3748,7 +3747,7 @@
       {
         "id": "3000",
         "name": "Quincy Douby",
-        "years": "2003–2006",
+        "years": "2003-2006",
         "draftPosition": "19",
         "draftYear": "2006",
         "draftTeam": "Sacramento Kings"
@@ -3764,12 +3763,12 @@
       {
         "id": "4397251",
         "name": "Ron Harper Jr.",
-        "years": "2018–2022"
+        "years": "2018-2022"
       },
       {
         "id": "5037871",
         "name": "Dylan Harper",
-        "years": "2024–2025",
+        "years": "2024-2025",
         "draftPosition": "2",
         "draftYear": "2025",
         "draftTeam": "San Antonio Spurs"
@@ -3810,9 +3809,10 @@
         "id": "5022",
         "name": "Gail Goodrich",
         "years": "1961-1965",
-        "draftPosition": "as territorial pick",
+        "draftPosition": "",
         "draftYear": "1965",
-        "draftTeam": "Los Angeles Lakers"
+        "draftTeam": "Los Angeles Lakers",
+        "territorialPick": true
       },
       {
         "id": "552",
@@ -3961,7 +3961,7 @@
       {
         "id": "3986",
         "name": "Taj Gibson",
-        "years": "2007–2009",
+        "years": "2007-2009",
         "draftPosition": "26",
         "draftYear": "2009",
         "draftTeam": "Chicago Bulls"
@@ -4001,7 +4001,7 @@
       {
         "id": "3027",
         "name": "Brandon Roy",
-        "years": "2002–2006",
+        "years": "2002-2006",
         "draftPosition": "6",
         "draftYear": "2006",
         "draftTeam": "Portland Trail Blazers"
@@ -4033,7 +4033,7 @@
       {
         "id": "5198",
         "name": "Bob Houbregs",
-        "years": "1950–1953",
+        "years": "1950-1953",
         "draftPosition": "2",
         "draftYear": "1953",
         "draftTeam": "Milwaukee Hawks"
@@ -4145,12 +4145,12 @@
       {
         "id": "3062744",
         "name": "David Nwaba",
-        "years": "2013–2016"
+        "years": "2013-2016"
       },
       {
         "id": "4567400000",
         "name": "Chris Eversley",
-        "years": "2011–2014"
+        "years": "2011-2014"
       }
     ]
   },
@@ -4264,7 +4264,7 @@
       {
         "id": "5038",
         "name": "Leonard Gray",
-        "years": "1971–1974",
+        "years": "1971-1974",
         "draftPosition": "26",
         "draftYear": "1974",
         "draftTeam": "Seattle SuperSonics"
@@ -4280,7 +4280,7 @@
       {
         "id": "5067",
         "name": "Bob Gross",
-        "years": "1973–1975",
+        "years": "1973-1975",
         "draftPosition": "25",
         "draftYear": "1975",
         "draftTeam": "Portland Trail Blazers"
@@ -4301,7 +4301,7 @@
       {
         "id": "2531186",
         "name": "Corey Hawkins",
-        "years": "2012–2015"
+        "years": "2012-2015"
       },
       {
         "id": "4279066000",
@@ -4324,12 +4324,12 @@
       {
         "id": "4279073000",
         "name": "Collin Welp",
-        "years": "2017–2022"
+        "years": "2017-2022"
       },
       {
         "id": "1097000",
         "name": "Jerry Green",
-        "years": "1998–2002"
+        "years": "1998-2002"
       }
     ]
   },
