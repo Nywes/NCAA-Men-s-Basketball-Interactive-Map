@@ -2,7 +2,6 @@ import React from 'react';
 import blankHeadshot from './assets/player.png';
 
 const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen }) => {
-  console.log(roster);
   return (
     <div style={{ textAlign: 'center', width: '100%' }}>
       {rosterLoading ? (
@@ -11,40 +10,29 @@ const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen }) => {
         <div
           style={{
             display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+            gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
             gap: '10px',
             marginTop: '10px',
-            maxHeight: '200px',
-            overflow: 'scroll',
+            maxHeight: '260px',
+            overflowY: 'auto',
           }}
         >
-          {roster.athletes.map((player, index) => (
-            <div
-              key={index}
-              style={{
-                display: 'grid',
-                gridTemplateColumns: isSmallScreen
-                  ? '20% 40% 15% 15% 10%'
-                  : '15% 25% 5% 15% 10% 30%',
-                width: '100%',
-                alignItems: 'center',
-                paddingY: '4px',
-                border: '2px solid',
-                borderRadius: '5px',
-                borderColor: `#${team.color}`,
-                backgroundColor: '#f9f9f9',
-                height: '54px',
-              }}
-            >
+          {roster.athletes.map((player, index) => {
+            const height = player.height ? Math.floor(player.height * 2.54) + ' cm' : null;
+            const city = player.birthPlace?.city;
+            return (
               <div
+                key={index}
                 style={{
-                  height: '100%',
-                  width: '100%',
                   display: 'flex',
                   alignItems: 'center',
-                  justifyContent: 'center',
-                  overflow: 'hidden',
-                  borderRadius: '4px',
+                  gap: '8px',
+                  padding: '6px 8px',
+                  border: '2px solid',
+                  borderRadius: '6px',
+                  borderColor: `#${team.color}`,
+                  backgroundColor: '#f9f9f9',
+                  minHeight: '52px',
                 }}
               >
                 <img
@@ -55,88 +43,79 @@ const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen }) => {
                   }}
                   alt="playerPhoto"
                   style={{
-                    height: '100%',
-                    width: '100%',
+                    width: '40px',
+                    height: '40px',
+                    flex: 'none',
                     objectFit: 'cover',
-                    display: 'block',
-                    maxWidth: '100%',
-                    maxHeight: '100%',
+                    borderRadius: '4px',
                   }}
                 />
-              </div>
-              <div style={{ textAlign: 'left' }}>
-                <strong>{player.fullName}</strong>
-              </div>
-              <div style={{ textAlign: 'left', margin: 'auto' }}>
-                {player.position?.abbreviation || 'Position N/A'}
-              </div>
-              {!isSmallScreen && (
-                <div style={{ textAlign: 'left', margin: 'auto' }}>
-                  {Math.floor(player.height * 2.54) + ' cm' || 'Height N/A'}
-                </div>
-              )}
-              <div style={{ textAlign: 'left', margin: 'auto' }}>
-                {player.jersey ? 'n°' + player.jersey : 'n°?'}
-              </div>
-              <div
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  marginRight: '12px',
-                  textAlign: 'left',
-                  width: '100%',
-                }}
-              >
-                {!isSmallScreen && (
+                <div style={{ textAlign: 'left', minWidth: 0, flex: 1 }}>
                   <div
                     style={{
-                      display: 'flex',
-                      flexWrap: 'wrap',
+                      fontWeight: 'bold',
+                      whiteSpace: 'nowrap',
                       overflow: 'hidden',
-                      wordBreak: 'break-word',
-                      maxWidth: 'calc(100% - 20px)',
+                      textOverflow: 'ellipsis',
                     }}
+                    title={player.fullName}
                   >
-                    {player.birthPlace.city}
+                    {player.fullName}
                   </div>
-                )}
-                {player.flag && player.flag.href ? (
-                  <img
-                    src={player.flag.href}
-                    alt={player.flag.alt || 'birthCountry'}
-                    title={player.flag.alt || 'birthCountry'}
-                    className="flag-image"
-                    style={{
-                      marginLeft: '4px',
-                      marginRight: '8px',
-                      width: '16px',
-                      height: '12px',
-                      objectFit: 'cover',
-                    }}
-                  />
-                ) : (
                   <div
-                    title={player.birthPlace.country || 'birthCountry'}
                     style={{
-                      marginLeft: '4px',
-                      marginRight: '8px',
-                      width: isSmallScreen ? '12px' : '16px',
-                      height: isSmallScreen ? '8px' : '12px',
-                      backgroundColor: '#333',
-                      color: 'white',
-                      fontSize: isSmallScreen ? '6px' : '8px',
                       display: 'flex',
-                      justifyContent: 'center',
                       alignItems: 'center',
+                      gap: '6px',
+                      fontSize: '0.82em',
+                      color: '#555',
+                      marginTop: '2px',
                     }}
                   >
-                    ?
+                    <span>{player.position?.abbreviation || '—'}</span>
+                    {height && <span>{height}</span>}
+                    <span>{player.jersey ? 'n°' + player.jersey : 'n°?'}</span>
+                    <span
+                      style={{
+                        display: 'inline-flex',
+                        alignItems: 'center',
+                        gap: '3px',
+                        minWidth: 0,
+                        flex: 1,
+                      }}
+                    >
+                      {!isSmallScreen && city && (
+                        <span
+                          style={{
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                            whiteSpace: 'nowrap',
+                          }}
+                          title={city}
+                        >
+                          {city}
+                        </span>
+                      )}
+                      {player.flag && player.flag.href && (
+                        <img
+                          src={player.flag.href}
+                          alt={player.flag.alt || 'birthCountry'}
+                          title={player.flag.alt || player.birthPlace?.country || ''}
+                          className="flag-image"
+                          style={{
+                            width: '16px',
+                            height: '12px',
+                            objectFit: 'cover',
+                            flex: 'none',
+                          }}
+                        />
+                      )}
+                    </span>
                   </div>
-                )}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       ) : (
         <p>No roster available</p>
