@@ -29,7 +29,29 @@
         "draftYear": "1985",
         "draftTeam": "Sacramento Kings"
       }
-    ]
+    ],
+    "venue": "Conte Forum",
+    "conference": "ACC",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1967",
+        "1982",
+        "1994"
+      ],
+      "sweetSixteens": [
+        "1967",
+        "1975",
+        "1981",
+        "1982",
+        "1983",
+        "1985",
+        "1994",
+        "2006"
+      ],
+      "appearances": 18
+    }
   },
   {
     "id": "25",
@@ -413,7 +435,45 @@
         "draftYear": "2009",
         "draftTeam": "Indiana Pacers"
       }
-    ]
+    ],
+    "venue": "Dean E. Smith Center",
+    "conference": "ACC",
+    "tournament": {
+      "titles": [
+        "1957",
+        "1982",
+        "1993",
+        "2005",
+        "2009",
+        "2017"
+      ],
+      "finalFours": [
+        "1946",
+        "1957",
+        "1967",
+        "1968",
+        "1969",
+        "1972",
+        "1977",
+        "1981",
+        "1982",
+        "1991",
+        "1993",
+        "1995",
+        "1997",
+        "1998",
+        "2000",
+        "2005",
+        "2008",
+        "2009",
+        "2016",
+        "2017",
+        "2022"
+      ],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 53
+    }
   },
   {
     "id": "87",

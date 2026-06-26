@@ -12,6 +12,7 @@ import teamsData from './teams.json';
 
 import ncaaLogo from './assets/icons/ncaa-logo.png';
 import TeamInfo from './TeamInfo';
+import TeamIdentity from './TeamIdentity';
 
 const divisions = [
   { id: '2', name: 'ACC', imgLinkName: 'Atlantic_Coast_Conference_ACC_logo.png' },
@@ -344,6 +345,7 @@ export default function App({ searchQuery }) {
                           />
                         )}
                       </div>
+                      <TeamIdentity team={team} />
                       <TeamInfo
                         roster={roster}
                         rosterLoading={rosterLoading}
