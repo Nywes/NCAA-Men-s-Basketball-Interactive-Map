@@ -134,3 +134,297 @@
   border-color: #333;
   outline: none;
 }
+
+/* ═══════════════════════════════════════════
+   New Modal Design
+═══════════════════════════════════════════ */
+
+.leaflet-popup-content-wrapper {
+  padding: 0 !important;
+  border-radius: 18px !important;
+  overflow: hidden !important;
+}
+.leaflet-popup-content {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.modal-wrapper {
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+/* ── Header ── */
+.modal-header {
+  background: linear-gradient(140deg, #0c1f3a 0%, #13294B 100%);
+  border-radius: 18px 18px 0 0;
+  padding: 14px 16px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+}
+.modal-header::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 92% 50%, rgba(255,255,255,.07) 0%, transparent 55%);
+  pointer-events: none;
+}
+.modal-logo {
+  width: 84px;
+  height: 84px;
+  object-fit: contain;
+  flex-shrink: 0;
+  filter: drop-shadow(0 0 7px rgba(255,255,255,.38)) drop-shadow(0 4px 14px rgba(0,0,0,.5));
+  position: relative;
+  z-index: 1;
+}
+.modal-header-text {
+  flex: 1;
+  min-width: 0;
+  position: relative;
+  z-index: 1;
+}
+.modal-team-name {
+  font-size: 17px;
+  font-weight: 900;
+  color: #fff;
+  line-height: 1.15;
+}
+.modal-team-alt {
+  font-size: 11px;
+  color: rgba(255,255,255,.38);
+  margin-top: 3px;
+}
+.modal-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 8px;
+  flex-wrap: wrap;
+}
+.modal-conf-chip {
+  background: rgba(255,255,255,.14);
+  border: 1px solid rgba(255,255,255,.28);
+  color: rgba(255,255,255,.82);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 9px;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: background .15s, color .15s;
+}
+.modal-conf-chip:hover {
+  background: rgba(255,255,255,.28);
+  color: #fff;
+}
+.modal-venue {
+  font-size: 11px;
+  color: rgba(255,255,255,.36);
+}
+.modal-colors-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  margin-top: 8px;
+}
+.modal-color-cap {
+  height: 13px;
+  border-radius: 7px;
+  border: 1px solid rgba(255,255,255,.18);
+  box-shadow: 0 2px 6px rgba(0,0,0,.3);
+  flex-shrink: 0;
+}
+
+/* ── NCAA Tournament section ── */
+.palm-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 7px 12px;
+  background: #f8fafc;
+  border-bottom: 1px solid #f1f5f9;
+  cursor: pointer;
+  user-select: none;
+}
+.palm-toggle:hover { background: #f1f5f9; }
+.palm-toggle-label {
+  font-size: 10px;
+  font-weight: 800;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.palm-chevron {
+  font-size: 11px;
+  color: #94a3b8;
+  transition: transform .2s;
+  display: inline-block;
+}
+.palm-chevron.closed { transform: rotate(-90deg); }
+
+/* Hero card (title teams only) */
+.palm-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(148deg, #13294B 0%, #1a3f70 100%);
+  margin: 10px 12px 0;
+  border-radius: 10px;
+  padding: 11px 13px;
+  display: flex;
+  align-items: center;
+}
+.palm-trophy-wm {
+  position: absolute;
+  right: -2px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  mix-blend-mode: screen;
+  opacity: .22;
+  pointer-events: none;
+}
+.palm-hero-left { flex-shrink: 0; }
+.palm-hero-label {
+  font-size: 9px;
+  font-weight: 700;
+  color: rgba(255,255,255,.5);
+  text-transform: uppercase;
+  letter-spacing: .7px;
+  margin-bottom: 1px;
+}
+.palm-num-row { display: flex; align-items: baseline; gap: 6px; }
+.palm-num { font-size: 40px; font-weight: 900; color: #C8A227; line-height: 1; }
+.palm-unit { font-size: 14px; font-weight: 800; color: rgba(255,255,255,.55); }
+.palm-hero-divider {
+  width: 1px;
+  background: rgba(255,255,255,.1);
+  align-self: stretch;
+  margin: 0 11px;
+  flex-shrink: 0;
+}
+.palm-hero-years {
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255,255,255,.42);
+  line-height: 1.65;
+  padding-right: 55px;
+  flex: 1;
+}
+.palm-hero-years-extra {
+  font-size: 9px;
+  color: rgba(255,255,255,.25);
+  margin-top: 2px;
+  font-style: italic;
+}
+
+/* Stats grid — same style for ALL teams */
+.palm-stats {
+  display: grid;
+  gap: 5px;
+  padding: 6px 12px 10px;
+}
+.palm-stat {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 6px 5px;
+  text-align: center;
+}
+.palm-stat-val { font-size: 15px; font-weight: 900; color: #13294B; }
+.palm-stat-label {
+  font-size: 9px;
+  font-weight: 700;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+  margin-top: 1px;
+}
+.palm-stat-yrs {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 4px;
+  font-size: 9px;
+  font-weight: 600;
+  color: rgba(255,255,255,.52);
+  line-height: 1.5;
+}
+
+/* ── Tabs ── */
+.tab-bar {
+  display: flex;
+  border-bottom: 2px solid #f1f5f9;
+}
+.tab-btn {
+  flex: 1;
+  padding: 11px 6px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #94a3b8;
+  cursor: pointer;
+  background: none;
+  border: none;
+  position: relative;
+  font-family: inherit;
+  transition: color .15s;
+}
+.tab-btn:hover {
+  color: #475569;
+}
+.tab-btn.active {
+  color: var(--tab-accent, #4B9CD3);
+}
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 18%;
+  right: 18%;
+  height: 2.5px;
+  background: var(--tab-accent, #4B9CD3);
+  border-radius: 3px 3px 0 0;
+}
+.tab-content {
+  padding: 12px 14px 14px;
+}
+
+/* ══════════════════════════════════════════
+   Responsive — modal on small screens
+══════════════════════════════════════════ */
+@media (max-width: 540px) {
+  .modal-header { padding: 10px 11px; gap: 10px; }
+  .modal-logo { width: 62px; height: 62px; }
+  .modal-team-name { font-size: 14px; }
+  .modal-team-alt { font-size: 10px; margin-top: 2px; }
+  .modal-meta-row { gap: 5px; margin-top: 5px; }
+  .modal-conf-chip { font-size: 10px; padding: 2px 7px; }
+  .modal-venue { font-size: 10px; }
+  .modal-colors-row { gap: 5px; margin-top: 5px; }
+  .modal-color-cap { height: 11px; }
+
+  .palm-toggle { padding: 6px 10px; }
+  .palm-hero { margin: 8px 10px 0; padding: 9px 11px; border-radius: 9px; }
+  .palm-num { font-size: 32px; }
+  .palm-unit { font-size: 12px; }
+  .palm-hero-label { font-size: 8.5px; }
+  .palm-hero-divider { margin: 0 9px; }
+  .palm-hero-years { font-size: 10px; padding-right: 44px; line-height: 1.6; }
+  .palm-trophy-wm { width: 58px; height: 58px; }
+
+  .palm-stats { padding: 5px 10px 8px; gap: 4px; }
+  .palm-stat { padding: 5px 4px; border-radius: 7px; }
+  .palm-stat-val { font-size: 13px; }
+  .palm-stat-label { font-size: 8.5px; }
+
+  .tab-btn { font-size: 12px; padding: 9px 4px; }
+  .tab-content { padding: 10px 10px 12px; }
+}

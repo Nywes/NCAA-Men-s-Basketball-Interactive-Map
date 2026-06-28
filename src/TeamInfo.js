@@ -3,83 +3,43 @@ import TeamRoster from './TeamRoster';
 import TeamStanding from './TeamStanding';
 import TeamLegends from './TeamLegends';
 
-const TeamInfo = ({ roster, rosterLoading, team, isSmallScreen }) => {
-  const [activeButton, setActiveButton] = useState(null);
+const TABS = [
+  { id: 'legends', label: 'Legends' },
+  { id: 'roster', label: 'Roster' },
+  { id: 'standing', label: 'Standing' },
+];
 
-  const toggleButton = (buttonId) => {
-    if (activeButton === buttonId) {
-      setActiveButton(null);
-    } else {
-      setActiveButton(buttonId);
-    }
-  };
+const TeamInfo = ({ roster, rosterLoading, team, isSmallScreen }) => {
+  const [activeTab, setActiveTab] = useState('legends');
+
+  const accentColor =
+    team.color && !team.color.startsWith('#') ? `#${team.color}` : team.color || '#4B9CD3';
 
   return (
-    <div
-      style={{
-        width: '100%',
-      }}
-    >
-      <div
-        style={{
-          display: 'flex',
-          flexDirection: 'row',
-          justifyContent: 'space-evenly',
-          width: '100%',
-        }}
-      >
-        <button
-          onClick={() => toggleButton(1)}
-          style={{
-            cursor: 'pointer',
-            padding: '10px',
-            color: '#333',
-            backgroundColor: '#FFFF',
-            border: `2px solid #${team.color}`,
-            borderRadius: '5px',
-          }}
-        >
-          {activeButton === 1 ? 'Hide Roster' : 'Show Roster'}
-        </button>
-
-        <button
-          onClick={() => toggleButton(2)}
-          style={{
-            cursor: 'pointer',
-            padding: '10px',
-            color: '#333',
-            backgroundColor: '#FFFF',
-            border: `2px solid #${team.color}`,
-            borderRadius: '5px',
-          }}
-        >
-          {activeButton === 2 ? `Hide Standing` : `Show Standing`}
-        </button>
-
-        <button
-          onClick={() => toggleButton(3)}
-          style={{
-            cursor: 'pointer',
-            padding: '10px',
-            color: '#333',
-            backgroundColor: '#FFFF',
-            border: `2px solid #${team.color}`,
-            borderRadius: '5px',
-          }}
-        >
-          {activeButton === 3 ? `Hide Notable Players` : `Show Notable Players`}
-        </button>
+    <div style={{ '--tab-accent': accentColor }}>
+      <div className="tab-bar">
+        {TABS.map((tab) => (
+          <button
+            key={tab.id}
+            className={`tab-btn${activeTab === tab.id ? ' active' : ''}`}
+            onClick={() => setActiveTab(tab.id)}
+          >
+            {tab.label}
+          </button>
+        ))}
       </div>
-      {activeButton === 1 && (
-        <TeamRoster
-          roster={roster}
-          rosterLoading={rosterLoading}
-          team={team}
-          isSmallScreen={isSmallScreen}
-        />
-      )}
-      {activeButton === 2 && <TeamStanding team={team} isSmallScreen={isSmallScreen} />}
-      {activeButton === 3 && <TeamLegends team={team} isSmallScreen={isSmallScreen} />}
+      <div className="tab-content">
+        {activeTab === 'legends' && <TeamLegends team={team} isSmallScreen={isSmallScreen} />}
+        {activeTab === 'roster' && (
+          <TeamRoster
+            roster={roster}
+            rosterLoading={rosterLoading}
+            team={team}
+            isSmallScreen={isSmallScreen}
+          />
+        )}
+        {activeTab === 'standing' && <TeamStanding team={team} isSmallScreen={isSmallScreen} />}
+      </div>
     </div>
   );
 };

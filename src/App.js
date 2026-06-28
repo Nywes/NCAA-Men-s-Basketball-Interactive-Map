@@ -55,19 +55,20 @@ const customIcon = function (logo) {
   });
 };
 
-const adjustTextColor = (hexColor) => {
-  const hex = hexColor.replace('#', '');
-
+const getTeamGradient = (color) => {
+  if (!color) return undefined;
+  const hex = color.replace('#', '');
+  if (hex.length !== 6) return undefined;
   const r = parseInt(hex.substr(0, 2), 16);
   const g = parseInt(hex.substr(2, 2), 16);
   const b = parseInt(hex.substr(4, 2), 16);
-
-  const distanceFromWhite = Math.sqrt(
-    (255 - r) * (255 - r) + (255 - g) * (255 - g) + (255 - b) * (255 - b)
-  );
-
-  return distanceFromWhite < 50 ? '#000000' : `#${hexColor}`;
+  const h = (v) => Math.round(v).toString(16).padStart(2, '0');
+  // Base derived from team color (very dark) — no hardcoded navy blue
+  const dark = `#${h(r * 0.18)}${h(g * 0.18)}${h(b * 0.18)}`;
+  const mid = `#${h(r * 0.27)}${h(g * 0.27)}${h(b * 0.27)}`;
+  return `linear-gradient(140deg, rgba(${r},${g},${b},.45), rgba(${r},${g},${b},.25)), linear-gradient(140deg, ${dark} 0%, ${mid} 100%)`;
 };
+
 
 const fetchTeamInfo = async (teamId) => {
   try {
@@ -284,12 +285,12 @@ export default function App({ searchQuery }) {
 
           <FullscreenControl position="topleft" />
           {filteredTeams.map(
-            (team, index) =>
+            (team) =>
               team &&
               team.latitude &&
               team.longitude && (
                 <Marker
-                  key={index}
+                  key={team.id}
                   position={[team.latitude, team.longitude]}
                   icon={customIcon(team.logo)}
                   eventHandlers={{
@@ -299,51 +300,51 @@ export default function App({ searchQuery }) {
                   }}
                 >
                   <AutoPanPopup isSmallScreen={isSmallScreen} rosterLoading={rosterLoading}>
-                    <div
-                      style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-                        alignItems: 'center',
-                        gap: '4px',
-                      }}
-                    >
-                      <h1 style={{ color: adjustTextColor(team.color), textAlign: 'center' }}>
-                        {team.displayName}
-                      </h1>
-                      <img
-                        src={team.logo}
-                        alt={team.name}
-                        style={{ width: '100px', height: 'auto' }}
-                      />
-                      <h3>
-                        {team.shortDisplayName} / {team.abbreviation}
-                      </h3>
-                      <div>
-                        {team.color && (
-                          <div
-                            style={{
-                              display: 'inline-block',
-                              width: '75px',
-                              height: '25px',
-                              backgroundColor: `#${team.color}`,
-                              border: '1px solid #333',
-                              borderRadius: '4px',
-                            }}
-                          />
-                        )}
-                        {team.alternateColor && (
-                          <div
-                            style={{
-                              display: 'inline-block',
-                              width: '75px',
-                              height: '25px',
-                              backgroundColor: `#${team.alternateColor}`,
-                              border: '1px solid #333',
-                              marginLeft: '5px',
-                              borderRadius: '4px',
-                            }}
-                          />
-                        )}
+                    <div className="modal-wrapper">
+                      <div className="modal-header" style={{ background: getTeamGradient(team.color) }}>
+                        <img className="modal-logo" src={team.logo} alt={team.displayName} />
+                        <div className="modal-header-text">
+                          <div className="modal-team-name">{team.displayName}</div>
+                          {(team.location || team.abbreviation) && (
+                            <div className="modal-team-alt">
+                              {[team.location, team.abbreviation]
+                                .filter(Boolean)
+                                .join(' · ')}
+                            </div>
+                          )}
+                          <div className="modal-meta-row">
+                            {team.conference && (
+                              <span
+                                className="modal-conf-chip"
+                                style={{ cursor: 'pointer' }}
+                                onClick={() => setSelectedDivisions([team.division])}
+                              >
+                                {team.conference}
+                              </span>
+                            )}
+                            {team.venue && (
+                              <span className="modal-venue">{team.venue}</span>
+                            )}
+                          </div>
+                          <div className="modal-colors-row">
+                            {team.color && (
+                              <div
+                                className="modal-color-cap"
+                                style={{ width: 40, background: `#${team.color}` }}
+                              />
+                            )}
+                            {team.alternateColor && (
+                              <div
+                                className="modal-color-cap"
+                                style={{
+                                  width: 40,
+                                  background: `#${team.alternateColor}`,
+                                  borderColor: 'rgba(255,255,255,.28)',
+                                }}
+                              />
+                            )}
+                          </div>
+                        </div>
                       </div>
                       <TeamIdentity team={team} />
                       <TeamInfo
