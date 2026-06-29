@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/NCAA-Men-s-Basketball-Interactive-Map/static/css/main.16f94410.css",
-    "main.js": "/NCAA-Men-s-Basketball-Interactive-Map/static/js/main.7e500b80.js",
+    "main.css": "/NCAA-Men-s-Basketball-Interactive-Map/static/css/main.b9e3a075.css",
+    "main.js": "/NCAA-Men-s-Basketball-Interactive-Map/static/js/main.b85d3dec.js",
     "static/media/4432573.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/4432573.8619e9311b4b987de87b.jpg",
     "static/media/10000000.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/10000000.2c7503f965bebb22eee0.jpg",
     "static/media/336.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/336.029bcb4e3bcd5fd5403c.jpg",
@@ -169,6 +169,7 @@
     "static/media/3027.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/3027.a0965ad6a9818b1b386d.jpg",
     "static/media/3468.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/3468.c5eaf0b4d5c0aa89acaf.jpg",
     "static/media/788.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/788.500b8f7919cb62e9804c.jpg",
+    "static/media/hof.png": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/hof.37e66411426cf319d430.png",
     "static/media/61.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/61.ec0da226273b2ddee6b8.jpg",
     "static/media/4151.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/4151.19b356b1d79bd73b3e62.jpg",
     "static/media/3978.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/3978.e174f73b5a4fd2a2eaa3.jpg",
@@ -416,11 +417,11 @@
     "static/media/aboutme.png": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/aboutme.d4795439ab45292dd4c0.png",
     "static/media/4123.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/4123.cd93aace29f4467cddbb.jpg",
     "index.html": "/NCAA-Men-s-Basketball-Interactive-Map/index.html",
-    "main.16f94410.css.map": "/NCAA-Men-s-Basketball-Interactive-Map/static/css/main.16f94410.css.map",
-    "main.7e500b80.js.map": "/NCAA-Men-s-Basketball-Interactive-Map/static/js/main.7e500b80.js.map"
+    "main.b9e3a075.css.map": "/NCAA-Men-s-Basketball-Interactive-Map/static/css/main.b9e3a075.css.map",
+    "main.b85d3dec.js.map": "/NCAA-Men-s-Basketball-Interactive-Map/static/js/main.b85d3dec.js.map"
   },
   "entrypoints": [
-    "static/css/main.16f94410.css",
-    "static/js/main.7e500b80.js"
+    "static/css/main.b9e3a075.css",
+    "static/js/main.b85d3dec.js"
   ]
 }
