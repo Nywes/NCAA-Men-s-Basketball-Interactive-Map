@@ -1,117 +1,110 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import blankHeadshot from './assets/player.png';
-import trophy from './assets/ncaa-trophy.jpg';
+import hofLogo from './assets/hof.png';
 
-const TeamLegends = ({ team, isSmallScreen }) => {
-  const getImageSrc = (id) => {
-    try {
-      return require(`./assets/players/${id}.jpg`);
-    } catch {
-      return blankHeadshot;
-    }
-  };
+const getImageSrc = (id) => {
+  try {
+    return require(`./assets/players/${id}.jpg`);
+  } catch {
+    return blankHeadshot;
+  }
+};
+
+
+const PlayerCard = ({ player }) => {
+  const imgRef = useRef(null);
+  const hasTrophy = player.trophy && player.trophy.length > 0;
+  const isDrafted = player.draftPosition && player.draftTeam && player.draftYear;
+
+  useEffect(() => {
+    const img = imgRef.current;
+    if (!img) return;
+    const applyFit = () => {
+      const containerRatio = img.parentElement.offsetWidth / img.parentElement.offsetHeight;
+      const photoRatio = img.naturalWidth / img.naturalHeight;
+      if (photoRatio > containerRatio) {
+        // Photo wider than container → contain leaves empty space top/bottom → use cover
+        img.style.objectFit = 'cover';
+        img.style.objectPosition = 'center';
+      } else {
+        // Photo narrower than container → empty space on sides → keep contain
+        img.style.objectFit = 'contain';
+        img.style.objectPosition = 'top center';
+      }
+    };
+    if (img.complete && img.naturalWidth > 0) applyFit();
+    else img.addEventListener('load', applyFit);
+    return () => img.removeEventListener('load', applyFit);
+  }, [player.id]);
 
   return (
-    <div
-      style={{
-        marginTop: '8px',
-        gap: '8px',
-        display: 'flex',
-        flexDirection: 'column',
-        width: '100%',
-        maxHeight: '300px',
-        overflowY: 'auto',
-      }}
-    >
-      <h2>{team.shortDisplayName} Notable Players</h2>
-      {team.oldPlayers ? (
-        <>
-          {team.oldPlayers.length > 0 && !team.oldPlayers[0].id ? (
-            <h3 style={{ fontWeight: 500, textAlign: 'center', color: 'orange' }}>
-              WORK IN PROGRESS
-            </h3>
-          ) : (
-            <ul style={{ padding: 0 }}>
-              {team.oldPlayers
-                .filter((player) => player.id && player.name && player.years)
-                .reduce((rows, player, index) => {
-                  if (index % 2 === 0) {
-                    rows.push([]);
-                  }
-                  rows[rows.length - 1].push(player);
-                  return rows;
-                }, [])
-                .map((pair, index) => (
-                  <li
-                    key={index}
-                    style={{
-                      display: 'flex',
-                      justifyContent: 'space-between',
-                      marginBottom: '8px',
-                    }}
-                  >
-                    {pair.map((player) => (
-                      <div
-                        key={player.id}
-                        style={{
-                          flex: '1',
-                          marginRight: index % 2 === 0 ? '8px' : '0',
-                          display: 'flex',
-                          flexDirection: 'column',
-                          alignItems: 'center',
-                        }}
-                      >
-                        <img
-                          src={getImageSrc(player.id)}
-                          alt={player.name}
-                          style={{ height: '150px', maxWidth: '100%', objectFit: 'contain' }}
-                        />
-                        <h3 style={{ padding: '4px 0', textAlign: 'center' }}>{player.name}</h3>
-                        <h5 style={{ fontWeight: 500, textAlign: 'center' }}>
-                          Years: {player.years}
-                        </h5>
-                        {player.trophy && (
-                          <div style={{ display: 'flex', flexDirection: 'row', gap: '8px' }}>
-                            {player.trophy.map((year, index) => (
-                              <h5
-                                key={index}
-                                style={{
-                                  display: 'flex',
-                                  flexDirection: 'column',
-                                  alignItems: 'center',
-                                  fontWeight: 500,
-                                }}
-                              >
-                                <img
-                                  src={trophy}
-                                  alt="ncaa-trophy"
-                                  className="trophy-image"
-                                  width={isSmallScreen ? '20px' : '18px'}
-                                  height={isSmallScreen ? '20px' : '18px'}
-                                />{' '}
-                                {year}
-                              </h5>
-                            ))}
-                          </div>
-                        )}
-                        {player.draftPosition && player.draftTeam && player.draftYear ? (
-                          <h5 style={{ fontWeight: 500, textAlign: 'center' }}>
-                            Drafted {player.draftPosition} by the {player.draftTeam} in{' '}
-                            {player.draftYear}
-                          </h5>
-                        ) : (
-                          <h5 style={{ fontWeight: 500, textAlign: 'center' }}>Undrafted</h5>
-                        )}
-                      </div>
-                    ))}
-                  </li>
-                ))}
-            </ul>
+    <div className="lc">
+      <div className="lc-pbox">
+        <img
+          ref={imgRef}
+          src={getImageSrc(player.id)}
+          alt={player.name}
+          className="lc-photo"
+        />
+        <div className="lc-grad" />
+        <div className="lc-meta">
+          <div className="lc-meta-left">
+            <div className="lc-name">{player.name}</div>
+            <div className="lc-years">{player.years}</div>
+          </div>
+          {player.hof && (
+            <div className="lc-meta-right">
+              <img src={hofLogo} alt="HOF" className="lc-hof-img" />
+              <span className="lc-hof-lbl">Hall of Famer</span>
+            </div>
           )}
-        </>
-      ) : (
-        <h3 style={{ fontWeight: 500, textAlign: 'center' }}>No notable players</h3>
-      )}
+        </div>
+      </div>
+
+      <div className="lc-body">
+        <div className="lc-draft">
+          {isDrafted ? (
+            <>
+              <strong>Drafted #{player.draftPosition}</strong> by the {player.draftTeam} in {player.draftYear}
+            </>
+          ) : (
+            'Undrafted'
+          )}
+        </div>
+
+        {hasTrophy && (
+          <>
+            <div className="lc-cat lc-cat-ncaa">NCAA</div>
+            <div className="lc-brow">
+              <span className="lc-b lc-b3">
+                Champion {player.trophy.join(', ')}
+              </span>
+            </div>
+          </>
+        )}
+      </div>
+    </div>
+  );
+};
+
+const TeamLegends = ({ team }) => {
+  const players = (team.oldPlayers || []).filter(
+    (p) => p.id && p.name && p.years
+  );
+
+  if (players.length === 0) {
+    return (
+      <div style={{ textAlign: 'center', color: '#94a3b8', fontSize: 13, padding: '16px 0' }}>
+        No notable players
+      </div>
+    );
+  }
+
+  return (
+    <div className="lc-grid">
+      {players.map((player) => (
+        <PlayerCard key={player.id} player={player} />
+      ))}
     </div>
   );
 };
