@@ -2,8 +2,8 @@
   {
     "id": "103",
     "name": "Boston College Eagles",
-    "latitude": "42.33522",
-    "longitude": "-71.167568",
+    "latitude": "42.3351475",
+    "longitude": "-71.1677659",
     "oldPlayers": [
       {
         "id": "6443",
@@ -56,8 +56,8 @@
   {
     "id": "25",
     "name": "California Golden Bears",
-    "latitude": "37.8701701",
-    "longitude": "-122.2595628",
+    "latitude": "37.8693905",
+    "longitude": "-122.2622061",
     "oldPlayers": [
       {
         "id": "3917376",
@@ -110,13 +110,15 @@
         "1997"
       ],
       "appearances": 19
-    }
+    },
+    "conference": "ACC",
+    "venue": "Haas Pavilion"
   },
   {
     "id": "228",
     "name": "Clemson Tigers",
-    "latitude": "34.674997",
-    "longitude": "-82.8431933",
+    "latitude": "34.6801874",
+    "longitude": "-82.846473",
     "oldPlayers": [
       {
         "id": "4270",
@@ -149,13 +151,15 @@
         "2024"
       ],
       "appearances": 14
-    }
+    },
+    "conference": "ACC",
+    "venue": "Littlejohn Coliseum"
   },
   {
     "id": "150",
     "name": "Duke Blue Devils",
-    "latitude": "36.0014301",
-    "longitude": "-78.9408035",
+    "latitude": "35.9974496",
+    "longitude": "-78.9422669",
     "oldPlayers": [
       {
         "id": "453",
@@ -353,13 +357,15 @@
         "2025"
       ],
       "appearances": 48
-    }
+    },
+    "conference": "ACC",
+    "venue": "Cameron Indoor Stadium"
   },
   {
     "id": "52",
     "name": "Florida State Seminoles",
-    "latitude": "30.442087",
-    "longitude": "-84.2979579",
+    "latitude": "30.4377931",
+    "longitude": "-84.2866888",
     "oldPlayers": [
       {
         "id": "4132",
@@ -414,13 +420,15 @@
         "2021"
       ],
       "appearances": 18
-    }
+    },
+    "conference": "ACC",
+    "venue": "Donald L. Tucker Center"
   },
   {
     "id": "59",
     "name": "Georgia Tech Yellow Jackets",
-    "latitude": "33.7758135",
-    "longitude": "-84.4068353",
+    "latitude": "33.7806025",
+    "longitude": "-84.3927616",
     "oldPlayers": [
       {
         "id": "1977",
@@ -481,13 +489,15 @@
         "2004"
       ],
       "appearances": 17
-    }
+    },
+    "conference": "ACC",
+    "venue": "Hank McCamish Pavilion"
   },
   {
     "id": "97",
     "name": "Louisville Cardinals",
-    "latitude": "38.216716",
-    "longitude": "-85.758834",
+    "latitude": "38.2576964",
+    "longitude": "-85.7538599",
     "oldPlayers": [
       {
         "id": "4148",
@@ -564,13 +574,15 @@
         "2009"
       ],
       "appearances": 40
-    }
+    },
+    "conference": "ACC",
+    "venue": "KFC Yum! Center"
   },
   {
     "id": "2390",
     "name": "Miami Hurricanes",
-    "latitude": "25.7173278",
-    "longitude": "-80.2781823",
+    "latitude": "25.7153095",
+    "longitude": "-80.2793844",
     "oldPlayers": [
       {
         "id": "4122",
@@ -614,13 +626,15 @@
         "2023"
       ],
       "appearances": 12
-    }
+    },
+    "conference": "ACC",
+    "venue": "Watsco Center"
   },
   {
     "id": "152",
     "name": "NC State Wolfpack",
-    "latitude": "35.7850787",
-    "longitude": "-78.6838573",
+    "latitude": "35.8033981",
+    "longitude": "-78.7219166",
     "oldPlayers": [
       {
         "id": "6177",
@@ -677,8 +691,8 @@
   {
     "id": "153",
     "name": "North Carolina Tar Heels",
-    "latitude": "35.9049165",
-    "longitude": "-79.0494883",
+    "latitude": "35.8994837",
+    "longitude": "-79.0438119",
     "oldPlayers": [
       {
         "id": "1035",
@@ -822,8 +836,8 @@
   {
     "id": "87",
     "name": "Notre Dame Fighting Irish",
-    "latitude": "41.7051957",
-    "longitude": "-86.2377404",
+    "latitude": "41.6983619",
+    "longitude": "-86.2313156",
     "oldPlayers": [
       {
         "id": "4777",
@@ -900,13 +914,15 @@
         "2016"
       ],
       "appearances": 37
-    }
+    },
+    "conference": "ACC",
+    "venue": "Purcell Pavilion at the Edmund P. Joyce Center"
   },
   {
     "id": "221",
     "name": "Pittsburgh Panthers",
-    "latitude": "40.443853",
-    "longitude": "-79.962253",
+    "latitude": "40.4440003",
+    "longitude": "-79.9621193",
     "oldPlayers": [
       {
         "id": "3491",
@@ -950,13 +966,15 @@
         "2009"
       ],
       "appearances": 27
-    }
+    },
+    "conference": "ACC",
+    "venue": "Petersen Events Center"
   },
   {
     "id": "2567",
     "name": "SMU Mustangs",
-    "latitude": "32.843463",
-    "longitude": "-96.784926",
+    "latitude": "32.8403971",
+    "longitude": "-96.7806817",
     "oldPlayers": [
       {
         "id": "5387",
@@ -997,13 +1015,15 @@
         "1967"
       ],
       "appearances": 13
-    }
+    },
+    "conference": "ACC",
+    "venue": "Moody Coliseum"
   },
   {
     "id": "24",
     "name": "Stanford Cardinal",
-    "latitude": "37.4276642",
-    "longitude": "-122.1726349",
+    "latitude": "37.429523",
+    "longitude": "-122.1605789",
     "oldPlayers": [
       {
         "id": "3448",
@@ -1051,13 +1071,15 @@
         "2014"
       ],
       "appearances": 17
-    }
+    },
+    "conference": "ACC",
+    "venue": "Maples Pavilion"
   },
   {
     "id": "183",
     "name": "Syracuse Orange",
-    "latitude": "43.0386541",
-    "longitude": "-76.1362671",
+    "latitude": "43.0362837",
+    "longitude": "-76.1363603",
     "oldPlayers": [
       {
         "id": "1975",
@@ -1130,13 +1152,15 @@
         "2021"
       ],
       "appearances": 41
-    }
+    },
+    "conference": "ACC",
+    "venue": "JMA Wireless Dome"
   },
   {
     "id": "258",
     "name": "Virginia Cavaliers",
-    "latitude": "38.0335571",
-    "longitude": "-78.5105521",
+    "latitude": "38.0459828",
+    "longitude": "-78.5066437",
     "oldPlayers": [
       {
         "id": "5964",
@@ -1186,13 +1210,15 @@
         "2019"
       ],
       "appearances": 27
-    }
+    },
+    "conference": "ACC",
+    "venue": "John Paul Jones Arena"
   },
   {
     "id": "259",
     "name": "Virginia Tech Hokies",
-    "latitude": "37.2283885",
-    "longitude": "-80.4259916",
+    "latitude": "37.222507",
+    "longitude": "-80.4189121",
     "oldPlayers": [
       {
         "id": "175",
@@ -1226,13 +1252,15 @@
         "2019"
       ],
       "appearances": 13
-    }
+    },
+    "conference": "ACC",
+    "venue": "Cassell Coliseum"
   },
   {
     "id": "154",
     "name": "Wake Forest Demon Deacons",
-    "latitude": "36.135493",
-    "longitude": "-80.2818636",
+    "latitude": "36.1276288",
+    "longitude": "-80.2577972",
     "oldPlayers": [
       {
         "id": "215",
@@ -1303,8 +1331,8 @@
   {
     "id": "2046",
     "name": "Austin Peay Governors",
-    "latitude": "36.5353441",
-    "longitude": "-87.3607908",
+    "latitude": "36.528596",
+    "longitude": "-87.360618",
     "oldPlayers": [
       {
         "id": "10000000",
@@ -1314,19 +1342,37 @@
         "draftYear": "1976",
         "draftTeam": "Philadelphia Sixers"
       }
-    ]
+    ],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    },
+    "conference": "ASUN",
+    "venue": "F&M Bank Arena"
   },
   {
     "id": "91",
     "name": "Bellarmine Knights",
-    "latitude": "38.219473",
-    "longitude": "-85.705476"
+    "latitude": "38.2215511",
+    "longitude": "-85.705174",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    },
+    "conference": "ASUN",
+    "venue": "Knights Hall"
   },
   {
     "id": "2110",
     "name": "Central Arkansas Bears",
-    "latitude": "35.0780983",
-    "longitude": "-92.4604665",
+    "latitude": "35.0818836",
+    "longitude": "-92.4595613",
     "oldPlayers": [
       {
         "id": "663",
@@ -1336,13 +1382,22 @@
         "draftYear": "1987",
         "draftTeam": "Seattle SuperSonics"
       }
-    ]
+    ],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    },
+    "conference": "ASUN",
+    "venue": "Farris Center"
   },
   {
     "id": "2198",
     "name": "Eastern Kentucky Colonels",
-    "latitude": "37.7359886",
-    "longitude": "-84.3172022",
+    "latitude": "37.7372999",
+    "longitude": "-84.30133",
     "oldPlayers": [
       {
         "id": "4462",
@@ -1352,26 +1407,46 @@
         "draftYear": "1952",
         "draftTeam": "Baltimore Bullets"
       }
-    ]
+    ],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 8
+    },
+    "conference": "ASUN",
+    "venue": "Baptist Health Arena"
   },
   {
     "id": "526",
     "name": "Florida Gulf Coast Eagles",
-    "latitude": "26.4627015",
-    "longitude": "-81.7826497",
+    "latitude": "26.4710873",
+    "longitude": "-81.7645663",
     "oldPlayers": [
       {
         "id": "3057198",
         "name": "Brandon Goodwin",
         "years": "2016-2018"
       }
-    ]
+    ],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2013"
+      ],
+      "appearances": 3
+    },
+    "conference": "ASUN",
+    "venue": "Alico Arena"
   },
   {
     "id": "294",
     "name": "Jacksonville Dolphins",
-    "latitude": "30.3516324",
-    "longitude": "-81.6061034",
+    "latitude": "30.3502514",
+    "longitude": "-81.6050056",
     "oldPlayers": [
       {
         "id": "5008",
@@ -1389,13 +1464,28 @@
         "draftYear": "1990",
         "draftTeam": "Boston Celtics"
       }
-    ]
+    ],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1970"
+      ],
+      "eliteEights": [
+        "1970"
+      ],
+      "sweetSixteens": [
+        "1970"
+      ],
+      "appearances": 5
+    },
+    "conference": "ASUN",
+    "venue": "Swisher Gymnasium"
   },
   {
     "id": "288",
     "name": "Lipscomb Bisons",
-    "latitude": "36.1046474",
-    "longitude": "-86.8014477",
+    "latitude": "36.1037647",
+    "longitude": "-86.7989111",
     "oldPlayers": [
       {
         "id": "10000001",
@@ -1407,91 +1497,226 @@
         "name": "Garrison Mathews",
         "years": "2015-2019"
       }
-    ]
+    ],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    },
+    "conference": "ASUN",
+    "venue": "Allen Arena"
   },
   {
     "id": "2453",
     "name": "North Alabama Lions",
-    "latitude": "34.8078404",
-    "longitude": "-87.6830425"
+    "latitude": "34.8083949",
+    "longitude": "-87.6838221",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    },
+    "conference": "ASUN",
+    "venue": "CB&S Bank Arena at Flowers Hall"
   },
   {
     "id": "2454",
     "name": "North Florida Ospreys",
-    "latitude": "30.266125",
-    "longitude": "-81.5098063"
+    "latitude": "30.273461",
+    "longitude": "-81.5080614",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    },
+    "conference": "ASUN",
+    "venue": "UNF Arena"
   },
   {
     "id": "2511",
     "name": "Queens University Royals",
-    "latitude": "35.189298",
-    "longitude": "-80.833369"
+    "latitude": "35.1884862",
+    "longitude": "-80.8351312",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    },
+    "conference": "ASUN",
+    "venue": "Curry Arena"
   },
   {
     "id": "56",
     "name": "Stetson Hatters",
-    "latitude": "29.035386",
-    "longitude": "-81.300931"
+    "latitude": "29.0395413",
+    "longitude": "-81.3018214",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    },
+    "conference": "ASUN",
+    "venue": "Insight Credit Union Arena at Edmunds Center"
   },
   {
     "id": "2698",
     "name": "West Georgia Wolves",
-    "latitude": "33.5753504",
-    "longitude": "-85.1066968"
+    "latitude": "33.5759045",
+    "longitude": "-85.103896",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    },
+    "conference": "ASUN",
+    "venue": "The Coliseum"
   },
   {
     "id": "2066",
     "name": "Binghamton Bearcats",
-    "latitude": "42.0894328",
-    "longitude": "-75.9720634"
+    "latitude": "42.0933917",
+    "longitude": "-75.9719273",
+    "conference": "America East",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    },
+    "venue": "Binghamton University Events Center"
   },
   {
     "id": "2803",
     "name": "Bryant Bulldogs",
-    "latitude": "41.9175539",
-    "longitude": "-71.5784651"
+    "latitude": "41.9212156",
+    "longitude": "-71.5394511",
+    "conference": "America East",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    },
+    "venue": "Chace Athletic Center"
   },
   {
     "id": "311",
     "name": "Maine Black Bears",
-    "latitude": "44.901582",
-    "longitude": "-68.667908"
+    "latitude": "44.9036935",
+    "longitude": "-68.6698941",
+    "conference": "America East",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    },
+    "venue": "Memorial Gymnasium"
   },
   {
     "id": "2885",
     "name": "NJIT Highlanders",
-    "latitude": "40.743116",
-    "longitude": "-74.178266"
+    "latitude": "40.7422974",
+    "longitude": "-74.1804097",
+    "conference": "America East",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    },
+    "venue": "Joel and Diane Bloom Wellness and Events Center"
   },
   {
     "id": "160",
     "name": "New Hampshire Wildcats",
-    "latitude": "43.1389519",
-    "longitude": "-70.9396001"
+    "latitude": "43.1387533",
+    "longitude": "-70.9378995",
+    "conference": "America East",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    },
+    "venue": "Lundholm Gym"
   },
   {
     "id": "399",
     "name": "UAlbany Great Danes",
-    "latitude": "42.672607",
-    "longitude": "-73.8209055"
+    "latitude": "42.6821683",
+    "longitude": "-73.8282597",
+    "conference": "America East",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 5
+    },
+    "venue": "Broadview Center"
   },
   {
     "id": "2378",
     "name": "UMBC Retrievers",
-    "latitude": "39.2554091",
-    "longitude": "-76.7109206"
+    "latitude": "39.2519473",
+    "longitude": "-76.7070399",
+    "conference": "America East",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    },
+    "venue": "Chesapeake Employers Insurance Arena"
   },
   {
     "id": "2349",
     "name": "UMass Lowell River Hawks",
-    "latitude": "42.6552626",
-    "longitude": "-71.3272913"
+    "latitude": "42.6555426",
+    "longitude": "-71.3241431",
+    "conference": "America East",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    },
+    "venue": "Kennedy Family Athletic Complex"
   },
   {
     "id": "261",
     "name": "Vermont Catamounts",
-    "latitude": "44.4703886",
-    "longitude": "-73.1973891"
+    "latitude": "44.4700892",
+    "longitude": "-73.1947872",
+    "conference": "America East",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 10
+    },
+    "venue": "Patrick Gymnasium"
   },
   {
     "id": "2429",

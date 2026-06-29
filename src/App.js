@@ -97,6 +97,67 @@ function CustomAttribution() {
   return null;
 }
 
+// Recherche intelligente : on normalise (minuscules, sans accents/ponctuation) et on
+// gère "state" <-> "st" pour distinguer ex. "Michigan" (Wolverines) de "Michigan St".
+const normalize = (s) =>
+  (s || '')
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[.'`’]/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+function findBestTeam(teams, rawQuery) {
+  const q = normalize(rawQuery);
+  if (!q) return null;
+  let best = null;
+  let bestScore = 0;
+  for (const team of teams) {
+    if (!team || !team.latitude || !team.longitude) continue;
+    const fields = [
+      team.location,
+      team.displayName,
+      team.shortDisplayName,
+      team.name,
+      team.nickname,
+      team.abbreviation,
+    ];
+    let score = 0;
+    for (const f of fields) {
+      const nf = normalize(f);
+      if (!nf) continue;
+      const variants = nf.includes('state') ? [nf, nf.replace(/\bstate\b/g, 'st')] : [nf];
+      for (const v of variants) {
+        let s = 0;
+        if (v === q) s = 100;
+        else if (v.startsWith(q + ' ')) s = 80;
+        else if (v.startsWith(q)) s = 70;
+        else if (v.includes(' ' + q)) s = 50;
+        else if (v.includes(q)) s = 40;
+        if (s > 0) s -= Math.min(nf.length, 30) * 0.1; // à score égal, le nom le plus court gagne
+        if (s > score) score = s;
+      }
+    }
+    if (score > bestScore) {
+      bestScore = score;
+      best = team;
+    }
+  }
+  return bestScore > 0 ? best : null;
+}
+
+// Fait voler la carte vers la cible (zoom modéré) à chaque nouveau submit de recherche.
+function MapController({ target }) {
+  const map = useMap();
+  useEffect(() => {
+    if (target && target.lat != null && target.lng != null) {
+      map.flyTo([target.lat, target.lng], 11, { duration: 1.2 });
+    }
+  }, [target, map]);
+  return null;
+}
+
 function AutoPanPopup({ children, isSmallScreen, rosterLoading }) {
   const popupRef = useRef(null);
 
@@ -137,10 +198,11 @@ function AutoPanPopup({ children, isSmallScreen, rosterLoading }) {
   );
 }
 
-export default function App({ searchQuery }) {
+export default function App({ searchQuery, searchSubmit }) {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedDivisions, setSelectedDivisions] = useState([]);
+  const [flyTarget, setFlyTarget] = useState(null);
 
   const [roster, setRoster] = useState(null);
   const [rosterLoading, setRosterLoading] = useState(false);
@@ -157,6 +219,15 @@ export default function App({ searchQuery }) {
 
     return () => window.removeEventListener('resize', updateScreenSize);
   }, []);
+
+  // Sur soumission de la recherche (Entrée), on vole vers la meilleure équipe trouvée.
+  useEffect(() => {
+    if (!searchSubmit || !searchSubmit.q) return;
+    const t = findBestTeam(teams, searchSubmit.q);
+    if (t) {
+      setFlyTarget({ lat: parseFloat(t.latitude), lng: parseFloat(t.longitude), n: searchSubmit.n });
+    }
+  }, [searchSubmit, teams]);
 
   const toggleDivision = (division) => {
     if (selectedDivisions.includes(division)) {
@@ -280,8 +351,12 @@ export default function App({ searchQuery }) {
           <TileLayer
             attribution="Jawg Sunny"
             url="https://tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token=Lko8BbD9udqn97TlGKDf86gU5pvGzg1Tao375U3VUY0l0odxgtIsHzr2vVQIvX0B"
+            updateWhenZooming={false}
+            updateWhenIdle={true}
+            keepBuffer={2}
           />
           <CustomAttribution />
+          <MapController target={flyTarget} />
 
           <FullscreenControl position="topleft" />
           {filteredTeams.map(
@@ -317,7 +392,11 @@ export default function App({ searchQuery }) {
                               <span
                                 className="modal-conf-chip"
                                 style={{ cursor: 'pointer' }}
-                                onClick={() => setSelectedDivisions([team.division])}
+                                onClick={() =>
+                                  setSelectedDivisions((prev) =>
+                                    prev.includes(team.division) ? [] : [team.division]
+                                  )
+                                }
                               >
                                 {team.conference}
                               </span>
