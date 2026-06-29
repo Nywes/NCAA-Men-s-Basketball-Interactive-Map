@@ -30,9 +30,9 @@
 }
 
 .leaflet-popup-content {
-  width: 40vw;
-  min-width: 460px;
-  max-width: 760px;
+  width: 60vw;
+  min-width: 560px;
+  max-width: 1080px;
 }
 
 @media (max-width: 768px) {
@@ -348,14 +348,14 @@
   margin-top: 1px;
 }
 .palm-stat-yrs {
-  display: flex;
-  flex-direction: column;
-  gap: 1px;
   margin-top: 4px;
   font-size: 9px;
   font-weight: 600;
   color: rgba(255,255,255,.52);
-  line-height: 1.5;
+  line-height: 1.6;
+  text-align: center;
+  /* texte fluide : autant d'années que la largeur le permet (plus sur desktop) */
+  word-spacing: 1px;
 }
 
 /* ── Tabs ── */
