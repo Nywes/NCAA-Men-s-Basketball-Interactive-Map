@@ -25,16 +25,15 @@ const getAccentCardBg = (color) => {
   return `linear-gradient(135deg, rgb(${Math.round(r * 0.42)},${Math.round(g * 0.42)},${Math.round(b * 0.42)}), rgb(${Math.round(r * 0.58)},${Math.round(g * 0.58)},${Math.round(b * 0.58)}))`;
 };
 
-const formatYears = (years, max = 6) => {
-  if (!years || years.length === 0) return null;
-  const sorted = [...years].sort((a, b) => parseInt(a) - parseInt(b));
-  const display = sorted.slice(0, max);
-  const rows = [];
-  for (let i = 0; i < display.length; i += 3) {
-    rows.push(display.slice(i, i + 3).join(' · '));
-  }
-  return { rows, hasMore: sorted.length > max, extra: sorted.length - max };
-};
+// Toutes les années, triées. On laisse le CSS gérer le retour à la ligne
+// (plus d'années par ligne sur desktop, moins sur mobile).
+const sortYears = (years) =>
+  !years || years.length === 0 ? [] : [...years].sort((a, b) => parseInt(a) - parseInt(b));
+
+// Règle d'affichage des dates : on montre tout, mais au-dessus de 10 années on
+// n'affiche que le nombre — SAUF pour les titres et les Final Four (toujours datés).
+const DATE_LIMIT = 10;
+const showsDates = (key, count) => key === 'titles' || key === 'finalFours' || count <= DATE_LIMIT;
 
 const ALL_STATS = [
   {
@@ -42,6 +41,12 @@ const ALL_STATS = [
     label: 'Final Four',
     getVal: (t) => (t.finalFours || []).length,
     getYears: (t) => t.finalFours || [],
+  },
+  {
+    key: 'eliteEights',
+    label: 'Elite Eight',
+    getVal: (t) => (t.eliteEights || []).length,
+    getYears: (t) => t.eliteEights || [],
   },
   {
     key: 'sweetSixteens',
@@ -63,7 +68,7 @@ const TeamIdentity = ({ team }) => {
 
   const hasTitles = (tournament.titles || []).length > 0;
   const titleCount = (tournament.titles || []).length;
-  const titleYears = formatYears(tournament.titles);
+  const titleYears = sortYears(tournament.titles);
 
   const statsToShow = ALL_STATS.map((s) => ({ ...s, val: s.getVal(tournament) })).filter(
     (s) => s.val > 0
@@ -90,17 +95,10 @@ const TeamIdentity = ({ team }) => {
                   <span className="palm-unit">{titleCount === 1 ? 'title' : 'titles'}</span>
                 </div>
               </div>
-              {titleYears && (
+              {titleYears.length > 0 && (
                 <>
                   <div className="palm-hero-divider" />
-                  <div className="palm-hero-years">
-                    {titleYears.rows.map((row, i) => (
-                      <div key={i}>{row}</div>
-                    ))}
-                    {titleYears.hasMore && (
-                      <div className="palm-hero-years-extra">+{titleYears.extra} more</div>
-                    )}
-                  </div>
+                  <div className="palm-hero-years">{titleYears.join(' · ')}</div>
                 </>
               )}
             </div>
@@ -112,13 +110,14 @@ const TeamIdentity = ({ team }) => {
               style={
                 statsToShow.length === 1
                   ? { display: 'flex', justifyContent: 'center' }
-                  : { gridTemplateColumns: `repeat(${Math.min(statsToShow.length, 3)}, 1fr)` }
+                  : { gridTemplateColumns: `repeat(${Math.min(statsToShow.length, 4)}, 1fr)` }
               }
             >
               {statsToShow.map((stat, i) => {
                 // For non-title teams: first stat gets team-color accent + years
                 const isAccent = !hasTitles && i === 0;
-                const years = isAccent ? formatYears(stat.getYears(tournament)) : null;
+                const years = isAccent ? sortYears(stat.getYears(tournament)) : null;
+                const showYears = isAccent && years.length > 0 && showsDates(stat.key, stat.val);
 
                 if (isAccent) {
                   return (
@@ -137,13 +136,8 @@ const TeamIdentity = ({ team }) => {
                       <div className="palm-stat-label" style={{ color: 'rgba(255,255,255,.6)' }}>
                         {stat.label}
                       </div>
-                      {years && (
-                        <div className="palm-stat-yrs">
-                          {years.rows.map((row, ri) => (
-                            <span key={ri}>{row}</span>
-                          ))}
-                          {years.hasMore && <span>+{years.extra} more</span>}
-                        </div>
+                      {showYears && (
+                        <div className="palm-stat-yrs">{years.join(' · ')}</div>
                       )}
                     </div>
                   );
