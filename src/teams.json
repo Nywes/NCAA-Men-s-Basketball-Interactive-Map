@@ -41,7 +41,6 @@
         "1994"
       ],
       "sweetSixteens": [
-        "1967",
         "1975",
         "1981",
         "1982",
@@ -101,15 +100,10 @@
         "1960"
       ],
       "sweetSixteens": [
-        "1946",
-        "1957",
-        "1958",
-        "1959",
-        "1960",
         "1993",
         "1997"
       ],
-      "appearances": 19
+      "appearances": 18
     },
     "conference": "ACC",
     "venue": "Haas Pavilion"
@@ -150,7 +144,7 @@
         "2018",
         "2024"
       ],
-      "appearances": 14
+      "appearances": 15
     },
     "conference": "ACC",
     "venue": "Littlejohn Coliseum"
@@ -322,7 +316,8 @@
         "2019",
         "2022",
         "2024",
-        "2025"
+        "2025",
+        "2026"
       ],
       "sweetSixteens": [
         "1978",
@@ -354,7 +349,8 @@
         "2019",
         "2022",
         "2024",
-        "2025"
+        "2025",
+        "2026"
       ],
       "appearances": 48
     },
@@ -411,7 +407,6 @@
         "2018"
       ],
       "sweetSixteens": [
-        "1972",
         "1992",
         "1993",
         "2011",
@@ -553,8 +548,6 @@
         "2009"
       ],
       "sweetSixteens": [
-        "1959",
-        "1972",
         "1975",
         "1978",
         "1979",
@@ -573,7 +566,7 @@
         "2008",
         "2009"
       ],
-      "appearances": 40
+      "appearances": 41
     },
     "conference": "ACC",
     "venue": "KFC Yum! Center"
@@ -625,7 +618,7 @@
         "2022",
         "2023"
       ],
-      "appearances": 12
+      "appearances": 13
     },
     "conference": "ACC",
     "venue": "Watsco Center"
@@ -793,11 +786,6 @@
         "2022"
       ],
       "sweetSixteens": [
-        "1957",
-        "1967",
-        "1968",
-        "1969",
-        "1972",
         "1975",
         "1977",
         "1981",
@@ -830,7 +818,7 @@
         "2022",
         "2024"
       ],
-      "appearances": 54
+      "appearances": 55
     }
   },
   {
@@ -895,13 +883,6 @@
         "2016"
       ],
       "sweetSixteens": [
-        "1953",
-        "1954",
-        "1957",
-        "1958",
-        "1970",
-        "1971",
-        "1974",
         "1975",
         "1976",
         "1977",
@@ -957,8 +938,6 @@
         "2009"
       ],
       "sweetSixteens": [
-        "1957",
-        "1974",
         "2002",
         "2003",
         "2004",
@@ -1010,10 +989,7 @@
         "1956",
         "1967"
       ],
-      "sweetSixteens": [
-        "1956",
-        "1967"
-      ],
+      "sweetSixteens": [],
       "appearances": 13
     },
     "conference": "ACC",
@@ -1121,14 +1097,10 @@
         "1989",
         "1996",
         "2003",
-        "2012",
         "2013",
         "2016"
       ],
       "sweetSixteens": [
-        "1957",
-        "1966",
-        "1973",
         "1975",
         "1977",
         "1979",
@@ -1145,13 +1117,12 @@
         "2004",
         "2009",
         "2010",
-        "2012",
         "2013",
         "2016",
         "2018",
         "2021"
       ],
-      "appearances": 41
+      "appearances": 39
     },
     "conference": "ACC",
     "venue": "JMA Wireless Dome"
@@ -1311,6 +1282,7 @@
         "1962"
       ],
       "eliteEights": [
+        "1939",
         "1961",
         "1962",
         "1977",
@@ -1348,7 +1320,7 @@
       "finalFours": [],
       "eliteEights": [],
       "sweetSixteens": [],
-      "appearances": 7
+      "appearances": 6
     },
     "conference": "ASUN",
     "venue": "F&M Bank Arena"
@@ -1473,9 +1445,7 @@
       "eliteEights": [
         "1970"
       ],
-      "sweetSixteens": [
-        "1970"
-      ],
+      "sweetSixteens": [],
       "appearances": 5
     },
     "conference": "ASUN",
@@ -1548,7 +1518,7 @@
       "finalFours": [],
       "eliteEights": [],
       "sweetSixteens": [],
-      "appearances": 0
+      "appearances": 1
     },
     "conference": "ASUN",
     "venue": "Curry Arena"
@@ -1684,7 +1654,7 @@
       "finalFours": [],
       "eliteEights": [],
       "sweetSixteens": [],
-      "appearances": 2
+      "appearances": 3
     },
     "venue": "Chesapeake Employers Insurance Arena"
   },
@@ -1721,8 +1691,8 @@
   {
     "id": "2429",
     "name": "Charlotte 49ers",
-    "latitude": "35.307418",
-    "longitude": "-80.7358559",
+    "latitude": "35.3062558",
+    "longitude": "-80.734437",
     "oldPlayers": [
       {
         "id": "5524",
@@ -1732,13 +1702,28 @@
         "draftYear": "1977",
         "draftTeam": "Boston Celtics"
       }
-    ]
+    ],
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1977"
+      ],
+      "eliteEights": [
+        "1977"
+      ],
+      "sweetSixteens": [
+        "1977"
+      ],
+      "appearances": 11
+    },
+    "venue": "Dale F. Halton Arena"
   },
   {
     "id": "151",
     "name": "East Carolina Pirates",
-    "latitude": "35.6068849",
-    "longitude": "-77.3691113",
+    "latitude": "35.5989657",
+    "longitude": "-77.3677731",
     "oldPlayers": [
       {
         "id": "3695",
@@ -1748,19 +1733,43 @@
         "draftYear": "1989",
         "draftTeam": "Utah Jazz"
       }
-    ]
+    ],
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    },
+    "venue": "Williams Arena at Minges Coliseum"
   },
   {
     "id": "2226",
     "name": "Florida Atlantic Owls",
-    "latitude": "26.3736524",
-    "longitude": "-80.1019573"
+    "latitude": "26.37222",
+    "longitude": "-80.10917",
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2023"
+      ],
+      "eliteEights": [
+        "2023"
+      ],
+      "sweetSixteens": [
+        "2023"
+      ],
+      "appearances": 3
+    },
+    "venue": "Eleanor R. Baldwin Arena"
   },
   {
     "id": "235",
     "name": "Memphis Tigers",
-    "latitude": "35.118737",
-    "longitude": "-89.937148",
+    "latitude": "35.1382327",
+    "longitude": "-90.0507689",
     "oldPlayers": [
       {
         "id": "302",
@@ -1802,19 +1811,50 @@
         "draftYear": "2022",
         "draftTeam": "Charlotte Hornets"
       }
-    ]
+    ],
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1973"
+      ],
+      "eliteEights": [
+        "1973",
+        "1992",
+        "2006",
+        "2007"
+      ],
+      "sweetSixteens": [
+        "1992",
+        "1995",
+        "2006",
+        "2007",
+        "2009"
+      ],
+      "appearances": 23
+    },
+    "venue": "FedExForum"
   },
   {
     "id": "249",
     "name": "North Texas Mean Green",
-    "latitude": "33.2074925",
-    "longitude": "-97.1551611"
+    "latitude": "33.2076895",
+    "longitude": "-97.1542474",
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    },
+    "venue": "UNT Coliseum"
   },
   {
     "id": "242",
     "name": "Rice Owls",
-    "latitude": "29.7168363",
-    "longitude": "-95.4035531",
+    "latitude": "29.714983",
+    "longitude": "-95.4039871",
     "oldPlayers": [
       {
         "id": "4707",
@@ -1837,26 +1877,47 @@
         "draftYear": "2007",
         "draftTeam": "Utah Jazz"
       }
-    ]
+    ],
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1940",
+        "1942"
+      ],
+      "sweetSixteens": [],
+      "appearances": 4
+    },
+    "venue": "Tudor Fieldhouse"
   },
   {
     "id": "58",
     "name": "South Florida Bulls",
-    "latitude": "28.0587078",
-    "longitude": "-82.4164288",
+    "latitude": "28.0592444",
+    "longitude": "-82.4066241",
     "oldPlayers": [
       {
         "id": "26",
         "name": "Chucky Atkins",
         "years": "1992-1996"
       }
-    ]
+    ],
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    },
+    "venue": "Yuengling Center"
   },
   {
     "id": "218",
     "name": "Temple Owls",
-    "latitude": "39.9811952",
-    "longitude": "-75.1579312",
+    "latitude": "39.9798139",
+    "longitude": "-75.1585825",
     "oldPlayers": [
       {
         "id": "402",
@@ -1875,13 +1936,40 @@
         "draftTeam": "Philadelphia Warriors",
         "territorialPick": true
       }
-    ]
+    ],
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1956",
+        "1958"
+      ],
+      "eliteEights": [
+        "1944",
+        "1956",
+        "1958",
+        "1988",
+        "1991",
+        "1993",
+        "1999",
+        "2001"
+      ],
+      "sweetSixteens": [
+        "1988",
+        "1991",
+        "1993",
+        "1999",
+        "2001"
+      ],
+      "appearances": 33
+    },
+    "venue": "Liacouras Center"
   },
   {
     "id": "2655",
     "name": "Tulane Green Wave",
-    "latitude": "29.9407328",
-    "longitude": "-90.1228916",
+    "latitude": "29.9388112",
+    "longitude": "-90.1210881",
     "oldPlayers": [
       {
         "id": "918",
@@ -1891,13 +1979,22 @@
         "draftYear": "1985",
         "draftTeam": "Cleveland Cavaliers"
       }
-    ]
+    ],
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    },
+    "venue": "Avron B. Fogelman Arena in the Devlin Fieldhouse"
   },
   {
     "id": "202",
     "name": "Tulsa Golden Hurricane",
-    "latitude": "36.148896",
-    "longitude": "-95.942136",
+    "latitude": "36.1490016",
+    "longitude": "-95.9421785",
     "oldPlayers": [
       {
         "id": "5832",
@@ -1907,32 +2004,71 @@
         "draftYear": "1982",
         "draftTeam": "Milwaukee Bucks"
       }
-    ]
+    ],
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2000"
+      ],
+      "sweetSixteens": [
+        "1994",
+        "1995",
+        "2000"
+      ],
+      "appearances": 16
+    },
+    "venue": "Reynolds Center"
   },
   {
     "id": "5",
     "name": "UAB Blazers",
-    "latitude": "33.499507",
-    "longitude": "-86.805054"
+    "latitude": "33.502124",
+    "longitude": "-86.8092439",
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1982"
+      ],
+      "sweetSixteens": [
+        "1981",
+        "1982",
+        "2004"
+      ],
+      "appearances": 17
+    },
+    "venue": "Bartow Arena"
   },
   {
     "id": "2636",
     "name": "UTSA Roadrunners",
-    "latitude": "29.5830779",
-    "longitude": "-98.6224528",
+    "latitude": "29.5823847",
+    "longitude": "-98.6214961",
     "oldPlayers": [
       {
         "id": "1858",
         "name": "Devin Brown",
         "years": "1998-2002"
       }
-    ]
+    ],
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    },
+    "venue": "Convocation Center"
   },
   {
     "id": "2724",
     "name": "Wichita State Shockers",
-    "latitude": "37.7190824",
-    "longitude": "-97.2941009",
+    "latitude": "37.7218239",
+    "longitude": "-97.297425",
     "oldPlayers": [
       {
         "id": "2991230",
@@ -1963,13 +2099,35 @@
         "draftYear": "2018",
         "draftTeam": "Philadelphia Sixers"
       }
-    ]
+    ],
+    "conference": "American",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1965",
+        "2013"
+      ],
+      "eliteEights": [
+        "1964",
+        "1965",
+        "1981",
+        "2013"
+      ],
+      "sweetSixteens": [
+        "1981",
+        "2006",
+        "2013",
+        "2015"
+      ],
+      "appearances": 16
+    },
+    "venue": "Charles Koch Arena"
   },
   {
     "id": "2166",
     "name": "Davidson Wildcats",
-    "latitude": "35.5015528",
-    "longitude": "-81.4026275",
+    "latitude": "35.4992414",
+    "longitude": "-80.840296",
     "oldPlayers": [
       {
         "id": "3975",
@@ -1979,13 +2137,28 @@
         "draftYear": "2009",
         "draftTeam": "Golden State Warriors"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "John M. Belk Arena",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1968",
+        "1969",
+        "2008"
+      ],
+      "sweetSixteens": [
+        "2008"
+      ],
+      "appearances": 15
+    }
   },
   {
     "id": "2168",
     "name": "Dayton Flyers",
-    "latitude": "39.740171",
-    "longitude": "-84.1818585",
+    "latitude": "39.7355245",
+    "longitude": "-84.1998363",
     "oldPlayers": [
       {
         "id": "5788",
@@ -2003,13 +2176,31 @@
         "draftYear": "2020",
         "draftTeam": "New York Knicks"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "UD Arena",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1967"
+      ],
+      "eliteEights": [
+        "1967",
+        "1984",
+        "2014"
+      ],
+      "sweetSixteens": [
+        "1984",
+        "2014"
+      ],
+      "appearances": 19
+    }
   },
   {
     "id": "2184",
     "name": "Duquesne Dukes",
-    "latitude": "40.4369485",
-    "longitude": "-79.9902576",
+    "latitude": "40.4373665",
+    "longitude": "-79.9879242",
     "oldPlayers": [
       {
         "id": "5708",
@@ -2019,25 +2210,63 @@
         "draftYear": "1977",
         "draftTeam": "Los Angeles Lakers"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "UPMC Cooper Fieldhouse",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1940"
+      ],
+      "eliteEights": [
+        "1940",
+        "1952"
+      ],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
   },
   {
     "id": "2230",
     "name": "Fordham Rams",
-    "latitude": "40.8596583",
-    "longitude": "-73.8871048"
+    "latitude": "40.8621701",
+    "longitude": "-73.8838528",
+    "conference": "A-10",
+    "venue": "Rose Hill Gym",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
   },
   {
     "id": "2244",
     "name": "George Mason Patriots",
-    "latitude": "38.8314094",
-    "longitude": "-77.311153"
+    "latitude": "38.8268606",
+    "longitude": "-77.3096753",
+    "conference": "A-10",
+    "venue": "EagleBank Arena",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2006"
+      ],
+      "eliteEights": [
+        "2006"
+      ],
+      "sweetSixteens": [
+        "2006"
+      ],
+      "appearances": 6
+    }
   },
   {
     "id": "45",
     "name": "George Washington Revolutionaries",
-    "latitude": "38.899221",
-    "longitude": "-77.047518",
+    "latitude": "38.8978142",
+    "longitude": "-77.0493531",
     "oldPlayers": [
       {
         "id": "3133838",
@@ -2052,13 +2281,24 @@
         "draftYear": "1994",
         "draftTeam": "New Jersey Nets"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "Charles E. Smith Center",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1993"
+      ],
+      "appearances": 11
+    }
   },
   {
     "id": "2325",
     "name": "La Salle Explorers",
-    "latitude": "40.0390398",
-    "longitude": "-75.1580071",
+    "latitude": "40.0400029",
+    "longitude": "-75.1565785",
     "oldPlayers": [
       {
         "id": "5018",
@@ -2088,19 +2328,59 @@
         "draftYear": "1990",
         "draftTeam": "Sacramento Kings"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "John Glaser Arena",
+    "tournament": {
+      "titles": [
+        "1954"
+      ],
+      "finalFours": [
+        "1954",
+        "1955"
+      ],
+      "eliteEights": [
+        "1954",
+        "1955"
+      ],
+      "sweetSixteens": [
+        "2013"
+      ],
+      "appearances": 12
+    }
   },
   {
     "id": "2350",
     "name": "Loyola Chicago Ramblers",
-    "latitude": "41.999920",
-    "longitude": "-87.657366"
+    "latitude": "42.0017649",
+    "longitude": "-87.6606423",
+    "conference": "A-10",
+    "venue": "Gentile Arena",
+    "tournament": {
+      "titles": [
+        "1963"
+      ],
+      "finalFours": [
+        "1963",
+        "2018"
+      ],
+      "eliteEights": [
+        "1963",
+        "2018"
+      ],
+      "sweetSixteens": [
+        "1985",
+        "2018",
+        "2021"
+      ],
+      "appearances": 8
+    }
   },
   {
     "id": "113",
     "name": "Massachusetts Minutemen",
-    "latitude": "42.391155",
-    "longitude": "-72.526711",
+    "latitude": "42.3895203",
+    "longitude": "-72.5334498",
     "oldPlayers": [
       {
         "id": "4130",
@@ -2118,13 +2398,27 @@
         "draftYear": "1996",
         "draftTeam": "Toronto Raptors"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "Mullins Center",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1995"
+      ],
+      "sweetSixteens": [
+        "1992",
+        "1995"
+      ],
+      "appearances": 8
+    }
   },
   {
     "id": "227",
     "name": "Rhode Island Rams",
-    "latitude": "41.4862328",
-    "longitude": "-71.5306788",
+    "latitude": "41.4877769",
+    "longitude": "-71.5358626",
     "oldPlayers": [
       {
         "id": "617",
@@ -2142,13 +2436,27 @@
         "draftYear": "1998",
         "draftTeam": "Houston Rockets"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "Thomas M. Ryan Center",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1998"
+      ],
+      "sweetSixteens": [
+        "1988",
+        "1998"
+      ],
+      "appearances": 10
+    }
   },
   {
     "id": "257",
     "name": "Richmond Spiders",
-    "latitude": "37.5758243",
-    "longitude": "-77.5397192",
+    "latitude": "37.5806819",
+    "longitude": "-77.538943",
     "oldPlayers": [
       {
         "id": "602",
@@ -2158,13 +2466,25 @@
         "draftYear": "1986",
         "draftTeam": "Cleveland Cavaliers"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "Robins Center",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1988",
+        "2011"
+      ],
+      "appearances": 10
+    }
   },
   {
     "id": "2603",
     "name": "Saint Joseph's Hawks",
-    "latitude": "39.9951217",
-    "longitude": "-75.2399328",
+    "latitude": "39.9956149",
+    "longitude": "-75.234862",
     "oldPlayers": [
       {
         "id": "2439",
@@ -2174,13 +2494,30 @@
         "draftYear": "2004",
         "draftTeam": "Denver Nuggets"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "Michael J. Hagan '85 Arena",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1963",
+        "1981",
+        "2004"
+      ],
+      "sweetSixteens": [
+        "1981",
+        "1997",
+        "2004"
+      ],
+      "appearances": 20
+    }
   },
   {
     "id": "139",
     "name": "Saint Louis Billikens",
-    "latitude": "38.6356968",
-    "longitude": "-90.2370893",
+    "latitude": "38.6325255",
+    "longitude": "-90.2281769",
     "oldPlayers": [
       {
         "id": "356",
@@ -2190,13 +2527,24 @@
         "draftYear": "1998",
         "draftTeam": "Philadelphia Sixers"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "Chaifetz Arena",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1952"
+      ],
+      "sweetSixteens": [],
+      "appearances": 11
+    }
   },
   {
     "id": "179",
     "name": "St. Bonaventure Bonnies",
-    "latitude": "42.0785768",
-    "longitude": "-78.4829439",
+    "latitude": "42.0794954",
+    "longitude": "-78.4849716",
     "oldPlayers": [
       {
         "id": "5410",
@@ -2206,13 +2554,26 @@
         "draftYear": "1970",
         "draftTeam": "Detroit Pistons"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "Reilly Center",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1970"
+      ],
+      "eliteEights": [
+        "1970"
+      ],
+      "sweetSixteens": [],
+      "appearances": 8
+    }
   },
   {
     "id": "2670",
     "name": "VCU Rams",
-    "latitude": "37.5464394",
-    "longitude": "-77.4548304",
+    "latitude": "37.5528754",
+    "longitude": "-77.4528272",
     "oldPlayers": [
       {
         "id": "4001",
@@ -2243,13 +2604,28 @@
         "draftYear": "2021",
         "draftTeam": "Denver Nuggets"
       }
-    ]
+    ],
+    "conference": "A-10",
+    "venue": "Siegel Center",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2011"
+      ],
+      "eliteEights": [
+        "2011"
+      ],
+      "sweetSixteens": [
+        "2011"
+      ],
+      "appearances": 21
+    }
   },
   {
     "id": "9",
     "name": "Arizona State Sun Devils",
-    "latitude": "33.4229795",
-    "longitude": "-111.9279264",
+    "latitude": "33.4245079",
+    "longitude": "-111.93101",
     "oldPlayers": [
       {
         "id": "3992",
@@ -2280,13 +2656,28 @@
         "name": "Luguentz Dort",
         "years": "2018-2019"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Desert Financial Arena",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1961",
+        "1963",
+        "1975"
+      ],
+      "sweetSixteens": [
+        "1975"
+      ],
+      "appearances": 16
+    }
   },
   {
     "id": "12",
     "name": "Arizona Wildcats",
-    "latitude": "32.2322737",
-    "longitude": "-110.95925",
+    "latitude": "32.2304278",
+    "longitude": "-110.9459943",
     "oldPlayers": [
       {
         "id": "225",
@@ -2382,13 +2773,65 @@
         "draftYear": "2018",
         "draftTeam": "Phoenix Suns"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "McKale Center at ALKEME Arena",
+    "tournament": {
+      "titles": [
+        "1997"
+      ],
+      "finalFours": [
+        "1988",
+        "1994",
+        "1997",
+        "2001",
+        "2026"
+      ],
+      "eliteEights": [
+        "1976",
+        "1988",
+        "1994",
+        "1997",
+        "1998",
+        "2001",
+        "2003",
+        "2005",
+        "2011",
+        "2014",
+        "2015",
+        "2026"
+      ],
+      "sweetSixteens": [
+        "1976",
+        "1988",
+        "1989",
+        "1991",
+        "1994",
+        "1996",
+        "1997",
+        "1998",
+        "2001",
+        "2002",
+        "2003",
+        "2005",
+        "2009",
+        "2011",
+        "2013",
+        "2014",
+        "2015",
+        "2022",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "appearances": 36
+    }
   },
   {
     "id": "252",
     "name": "BYU Cougars",
-    "latitude": "40.253396",
-    "longitude": "-111.647337",
+    "latitude": "40.2540727",
+    "longitude": "-111.6493609",
     "oldPlayers": [
       {
         "id": "3622",
@@ -2398,13 +2841,30 @@
         "draftYear": "1981",
         "draftTeam": "Boston Celtics"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Marriott Center",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1950",
+        "1951",
+        "1981"
+      ],
+      "sweetSixteens": [
+        "1981",
+        "2011",
+        "2025"
+      ],
+      "appearances": 33
+    }
   },
   {
     "id": "239",
     "name": "Baylor Bears",
-    "latitude": "31.549685",
-    "longitude": "-97.116736",
+    "latitude": "31.5563786",
+    "longitude": "-97.1212122",
     "oldPlayers": [
       {
         "id": "4278053",
@@ -2452,13 +2912,41 @@
         "draftYear": "2025",
         "draftTeam": "Philadelphia Sixers"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Foster Pavilion",
+    "tournament": {
+      "titles": [
+        "2021"
+      ],
+      "finalFours": [
+        "1948",
+        "1950",
+        "2021"
+      ],
+      "eliteEights": [
+        "1946",
+        "1948",
+        "1950",
+        "2010",
+        "2012",
+        "2021"
+      ],
+      "sweetSixteens": [
+        "2010",
+        "2012",
+        "2014",
+        "2017",
+        "2021"
+      ],
+      "appearances": 17
+    }
   },
   {
     "id": "2132",
     "name": "Cincinnati Bearcats",
-    "latitude": "39.132126",
-    "longitude": "-84.515775",
+    "latitude": "39.1311038",
+    "longitude": "-84.5141165",
     "oldPlayers": [
       {
         "id": "4119",
@@ -2500,13 +2988,48 @@
         "draftYear": "2010",
         "draftTeam": "Indiana Pacers"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Fifth Third Arena",
+    "tournament": {
+      "titles": [
+        "1961",
+        "1962"
+      ],
+      "finalFours": [
+        "1959",
+        "1960",
+        "1961",
+        "1962",
+        "1963",
+        "1992"
+      ],
+      "eliteEights": [
+        "1959",
+        "1960",
+        "1961",
+        "1962",
+        "1963",
+        "1992",
+        "1993",
+        "1996"
+      ],
+      "sweetSixteens": [
+        "1975",
+        "1992",
+        "1993",
+        "1996",
+        "2001",
+        "2012"
+      ],
+      "appearances": 33
+    }
   },
   {
     "id": "38",
     "name": "Colorado Buffaloes",
-    "latitude": "40.0073659",
-    "longitude": "-105.2762868",
+    "latitude": "40.004687",
+    "longitude": "-105.2606067",
     "oldPlayers": [
       {
         "id": "63",
@@ -2564,13 +3087,32 @@
         "draftYear": "2011",
         "draftTeam": "Utah Jazz"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "CU Events Center",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1942",
+        "1955"
+      ],
+      "eliteEights": [
+        "1940",
+        "1942",
+        "1946",
+        "1955",
+        "1962",
+        "1963"
+      ],
+      "sweetSixteens": [],
+      "appearances": 16
+    }
   },
   {
     "id": "248",
     "name": "Houston Cougars",
-    "latitude": "29.720123",
-    "longitude": "-95.342819",
+    "latitude": "29.7247367",
+    "longitude": "-95.346961",
     "oldPlayers": [
       {
         "id": "619",
@@ -2604,13 +3146,50 @@
         "draftYear": "1977",
         "draftTeam": "Kansas City Kings"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Fertitta Center",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1967",
+        "1968",
+        "1982",
+        "1983",
+        "1984",
+        "2021",
+        "2025"
+      ],
+      "eliteEights": [
+        "1967",
+        "1968",
+        "1982",
+        "1983",
+        "1984",
+        "2021",
+        "2022",
+        "2025"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1983",
+        "1984",
+        "2019",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "appearances": 27
+    }
   },
   {
     "id": "66",
     "name": "Iowa State Cyclones",
-    "latitude": "42.0266728",
-    "longitude": "-93.6567513",
+    "latitude": "42.0210001",
+    "longitude": "-93.6347686",
     "oldPlayers": [
       {
         "id": "4396993",
@@ -2636,13 +3215,36 @@
         "draftYear": "2017",
         "draftTeam": "Denver Nuggets"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Hilton Coliseum",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1944"
+      ],
+      "eliteEights": [
+        "1944",
+        "2000"
+      ],
+      "sweetSixteens": [
+        "1986",
+        "1997",
+        "2000",
+        "2014",
+        "2016",
+        "2022",
+        "2024",
+        "2026"
+      ],
+      "appearances": 25
+    }
   },
   {
     "id": "2305",
     "name": "Kansas Jayhawks",
-    "latitude": "38.9543601",
-    "longitude": "-95.2660958",
+    "latitude": "38.9543125",
+    "longitude": "-95.2528214",
     "oldPlayers": [
       {
         "id": "4142",
@@ -2701,13 +3303,92 @@
         "draftYear": "2014",
         "draftTeam": "Cleveland Cavaliers"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Allen Fieldhouse",
+    "tournament": {
+      "titles": [
+        "1952",
+        "1988",
+        "2008",
+        "2022"
+      ],
+      "finalFours": [
+        "1940",
+        "1952",
+        "1953",
+        "1957",
+        "1971",
+        "1974",
+        "1986",
+        "1988",
+        "1991",
+        "1993",
+        "2002",
+        "2003",
+        "2008",
+        "2012",
+        "2022"
+      ],
+      "eliteEights": [
+        "1940",
+        "1942",
+        "1952",
+        "1953",
+        "1957",
+        "1960",
+        "1966",
+        "1971",
+        "1974",
+        "1986",
+        "1988",
+        "1991",
+        "1993",
+        "1996",
+        "2002",
+        "2003",
+        "2004",
+        "2007",
+        "2008",
+        "2011",
+        "2012",
+        "2016",
+        "2017",
+        "2022"
+      ],
+      "sweetSixteens": [
+        "1981",
+        "1986",
+        "1987",
+        "1988",
+        "1991",
+        "1993",
+        "1994",
+        "1995",
+        "1996",
+        "1997",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2007",
+        "2008",
+        "2009",
+        "2011",
+        "2012",
+        "2013",
+        "2016",
+        "2017",
+        "2022"
+      ],
+      "appearances": 53
+    }
   },
   {
     "id": "2306",
     "name": "Kansas State Wildcats",
-    "latitude": "39.1974599",
-    "longitude": "-96.5950246",
+    "latitude": "39.2003162",
+    "longitude": "-96.5938455",
     "oldPlayers": [
       {
         "id": "704",
@@ -2741,13 +3422,51 @@
         "draftYear": "1981",
         "draftTeam": "Dallas Mavericks"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Bramlage Coliseum",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1948",
+        "1951",
+        "1958",
+        "1964"
+      ],
+      "eliteEights": [
+        "1948",
+        "1951",
+        "1958",
+        "1959",
+        "1961",
+        "1964",
+        "1972",
+        "1973",
+        "1975",
+        "1981",
+        "1988",
+        "2010",
+        "2018",
+        "2023"
+      ],
+      "sweetSixteens": [
+        "1975",
+        "1977",
+        "1981",
+        "1982",
+        "1988",
+        "2010",
+        "2018",
+        "2023"
+      ],
+      "appearances": 32
+    }
   },
   {
     "id": "197",
     "name": "Oklahoma State Cowboys",
-    "latitude": "36.1265889",
-    "longitude": "-97.0837818",
+    "latitude": "36.1257346",
+    "longitude": "-97.0651529",
     "oldPlayers": [
       {
         "id": "638103945",
@@ -2799,13 +3518,51 @@
         "draftYear": "2000",
         "draftTeam": "Seattle SuperSonics"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Gallagher-Iba Arena",
+    "tournament": {
+      "titles": [
+        "1945",
+        "1946"
+      ],
+      "finalFours": [
+        "1945",
+        "1946",
+        "1949",
+        "1951",
+        "1995",
+        "2004"
+      ],
+      "eliteEights": [
+        "1945",
+        "1946",
+        "1949",
+        "1951",
+        "1953",
+        "1954",
+        "1958",
+        "1965",
+        "1995",
+        "2000",
+        "2004"
+      ],
+      "sweetSixteens": [
+        "1991",
+        "1992",
+        "1995",
+        "2000",
+        "2004",
+        "2005"
+      ],
+      "appearances": 29
+    }
   },
   {
     "id": "2628",
     "name": "TCU Horned Frogs",
-    "latitude": "32.709026",
-    "longitude": "-97.363264",
+    "latitude": "32.7088303",
+    "longitude": "-97.3666973",
     "oldPlayers": [
       {
         "id": "846",
@@ -2823,13 +3580,24 @@
         "draftYear": "2020",
         "draftTeam": "Boston Celtics"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Schollmaier Arena",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1968"
+      ],
+      "sweetSixteens": [],
+      "appearances": 12
+    }
   },
   {
     "id": "2641",
     "name": "Texas Tech Red Raiders",
-    "latitude": "33.5845696",
-    "longitude": "-101.884948",
+    "latitude": "33.5812506",
+    "longitude": "-101.886571",
     "oldPlayers": [
       {
         "id": "4277928",
@@ -2852,26 +3620,57 @@
         "name": "Darvin Ham",
         "years": "1993-1996"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "United Supermarkets Arena",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2019"
+      ],
+      "eliteEights": [
+        "2018",
+        "2019",
+        "2025"
+      ],
+      "sweetSixteens": [
+        "1976",
+        "2005",
+        "2018",
+        "2019",
+        "2022",
+        "2025"
+      ],
+      "appearances": 22
+    }
   },
   {
     "id": "2116",
     "name": "UCF Knights",
-    "latitude": "28.6024459",
-    "longitude": "-81.2103596",
+    "latitude": "28.6073409",
+    "longitude": "-81.1972969",
     "oldPlayers": [
       {
         "id": "3904625",
         "name": "Tacko Fall",
         "years": "2015-2019"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Addition Financial Arena",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
   },
   {
     "id": "254",
     "name": "Utah Utes",
-    "latitude": "40.7649368",
-    "longitude": "-111.8421021",
+    "latitude": "40.7620351",
+    "longitude": "-111.8387946",
     "oldPlayers": [
       {
         "id": "557",
@@ -2929,13 +3728,48 @@
         "draftYear": "2017",
         "draftTeam": "Brooklyn Nets"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Jon M. Huntsman Center",
+    "tournament": {
+      "titles": [
+        "1944"
+      ],
+      "finalFours": [
+        "1944",
+        "1961",
+        "1966",
+        "1998"
+      ],
+      "eliteEights": [
+        "1944",
+        "1945",
+        "1956",
+        "1961",
+        "1966",
+        "1997",
+        "1998"
+      ],
+      "sweetSixteens": [
+        "1977",
+        "1978",
+        "1981",
+        "1983",
+        "1991",
+        "1996",
+        "1997",
+        "1998",
+        "2005",
+        "2015"
+      ],
+      "appearances": 29
+    }
   },
   {
     "id": "277",
     "name": "West Virginia Mountaineers",
-    "latitude": "39.6449459",
-    "longitude": "-79.9714985",
+    "latitude": "39.6494459",
+    "longitude": "-79.9814036",
     "oldPlayers": [
       {
         "id": "4151",
@@ -2977,7 +3811,32 @@
         "draftYear": "1957",
         "draftTeam": "Cincinnati Royals"
       }
-    ]
+    ],
+    "conference": "Big 12",
+    "venue": "Hope Coliseum",
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1959",
+        "2010"
+      ],
+      "eliteEights": [
+        "1959",
+        "2005",
+        "2010"
+      ],
+      "sweetSixteens": [
+        "1998",
+        "2005",
+        "2006",
+        "2008",
+        "2010",
+        "2015",
+        "2017",
+        "2018"
+      ],
+      "appearances": 31
+    }
   },
   {
     "id": "2086",
