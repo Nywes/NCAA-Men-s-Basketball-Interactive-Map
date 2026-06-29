@@ -74,7 +74,15 @@ const TeamIdentity = ({ team }) => {
     (s) => s.val > 0
   );
 
-  if (!hasTitles && statsToShow.length === 0) return null;
+  // Si le palmarès tournoi a été renseigné mais que la fac n'a aucun résultat
+  // (0 participation), on affiche quand même une carte neutre "0 Appearances".
+  const hasTournamentData = team.tournament != null;
+  if (!hasTitles && statsToShow.length === 0 && !hasTournamentData) return null;
+
+  const displayStats =
+    statsToShow.length > 0
+      ? statsToShow
+      : [{ key: 'appearances', label: 'Appearances', getYears: () => [], val: tournament.appearances || 0 }];
 
   return (
     <div>
@@ -104,18 +112,19 @@ const TeamIdentity = ({ team }) => {
             </div>
           )}
 
-          {statsToShow.length > 0 && (
+          {displayStats.length > 0 && (
             <div
               className="palm-stats"
               style={
-                statsToShow.length === 1
+                displayStats.length === 1
                   ? { display: 'flex', justifyContent: 'center' }
-                  : { gridTemplateColumns: `repeat(${Math.min(statsToShow.length, 4)}, 1fr)` }
+                  : { gridTemplateColumns: `repeat(${Math.min(displayStats.length, 4)}, 1fr)` }
               }
             >
-              {statsToShow.map((stat, i) => {
-                // For non-title teams: first stat gets team-color accent + years
-                const isAccent = !hasTitles && i === 0;
+              {displayStats.map((stat, i) => {
+                // Accent (couleur de la fac) réservé au meilleur RÉSULTAT (un vrai
+                // tour atteint) — jamais sur "Appearances".
+                const isAccent = !hasTitles && i === 0 && stat.key !== 'appearances';
                 const years = isAccent ? sortYears(stat.getYears(tournament)) : null;
                 const showYears = isAccent && years.length > 0 && showsDates(stat.key, stat.val);
 
@@ -123,11 +132,10 @@ const TeamIdentity = ({ team }) => {
                   return (
                     <div
                       key={stat.key}
-                      className="palm-stat"
+                      className={`palm-stat${displayStats.length === 1 ? ' palm-stat-solo' : ''}`}
                       style={{
                         background: getAccentCardBg(team.color),
                         borderColor: 'transparent',
-                        ...(statsToShow.length === 1 ? { width: '50%' } : {}),
                       }}
                     >
                       <div className="palm-stat-val" style={{ color: 'rgba(255,255,255,.95)' }}>
@@ -146,8 +154,7 @@ const TeamIdentity = ({ team }) => {
                 return (
                   <div
                     key={stat.key}
-                    className="palm-stat"
-                    style={statsToShow.length === 1 ? { width: '50%' } : {}}
+                    className={`palm-stat${displayStats.length === 1 ? ' palm-stat-solo' : ''}`}
                   >
                     <div className="palm-stat-val">{stat.val}</div>
                     <div className="palm-stat-label">{stat.label}</div>

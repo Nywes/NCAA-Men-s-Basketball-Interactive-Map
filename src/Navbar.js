@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import './styles.css';
 import aboutMe from './assets/aboutme.png';
 
-export default function Navbar({ searchQuery, setSearchQuery }) {
+export default function Navbar({ searchQuery, setSearchQuery, onSubmit }) {
   const [text, setText] = useState("NCAA Division I Men's Basketball");
   const [hover, setHover] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
@@ -107,6 +107,9 @@ export default function Navbar({ searchQuery, setSearchQuery }) {
           placeholder="Search a team..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && onSubmit) onSubmit(searchQuery);
+          }}
           style={{
             padding: '8px',
             fontSize: '16px',
