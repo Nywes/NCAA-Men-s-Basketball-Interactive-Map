@@ -1,6 +1,23 @@
 import React, { useRef, useEffect } from 'react';
 import blankHeadshot from './assets/player.png';
 import hofLogo from './assets/hof.png';
+import medalGold from './assets/medals/medal-gold.svg';
+import medalSilver from './assets/medals/medal-silver.svg';
+import medalBronze from './assets/medals/medal-bronze.svg';
+
+const MEDAL_IMG = { gold: medalGold, silver: medalSilver, bronze: medalBronze };
+
+// Teinte claire (70% vers le blanc) de la couleur de la fac — même rendu que l'en-tête.
+const lightTint = (color) => {
+  if (!color) return '#2a2a2a';
+  const hex = color.replace('#', '');
+  if (hex.length !== 6) return '#2a2a2a';
+  const r = parseInt(hex.substr(0, 2), 16);
+  const g = parseInt(hex.substr(2, 2), 16);
+  const b = parseInt(hex.substr(4, 2), 16);
+  const t = (c) => Math.round(c + (255 - c) * 0.7);
+  return `rgb(${t(r)}, ${t(g)}, ${t(b)})`;
+};
 
 const getImageSrc = (id) => {
   try {
@@ -10,11 +27,78 @@ const getImageSrc = (id) => {
   }
 };
 
+const yrs = (v) => (Array.isArray(v) ? v.join(', ') : v);
 
-const PlayerCard = ({ player }) => {
+// Construit la liste des badges NCAA (du plus prestigieux au moins).
+const ncaaBadges = (player) => {
+  const a = (player.awards && player.awards.ncaa) || {};
+  const champ = a.champion || player.trophy; // rétro-compat: trophy = titres NCAA
+  const out = [];
+  if (champ && champ.length) out.push({ tier: 3, label: `Champion ${yrs(champ)}` });
+  if (a.naismithPOY) out.push({ tier: 3, label: `Naismith POY ${a.naismithPOY}` });
+  if (a.tournamentMOP) out.push({ tier: 2, label: `Tournament MOP ${a.tournamentMOP}` });
+  if (a.allAmerican)
+    out.push({ tier: 1, label: `All-American${typeof a.allAmerican === 'string' ? ` ${a.allAmerican}` : ''}` });
+  return out;
+};
+
+// Badges NBA.
+const nbaBadges = (player) => {
+  const a = (player.awards && player.awards.nba) || {};
+  const out = [];
+  if (a.champion && a.champion.length) out.push({ tier: 3, label: `Champion ${yrs(a.champion)}` });
+  if (a.mvp) out.push({ tier: 3, label: `MVP ${a.mvp}` });
+  if (a.finalsMVP && a.finalsMVP.length) out.push({ tier: 2, label: `Finals MVP ${yrs(a.finalsMVP)}` });
+  if (a.roty) out.push({ tier: 2, label: `ROY ${a.roty}` });
+  if (a.allStar) out.push({ tier: 1, label: `All-Star ×${a.allStar}` });
+  if (a.allNBA) out.push({ tier: 1, label: typeof a.allNBA === 'number' ? `All-NBA ×${a.allNBA}` : 'All-NBA' });
+  return out;
+};
+
+// Médailles internationales — regroupées par métal + épreuve, naming court.
+// Ex: "Olympic Gold 2020, 2024" · "World Cup Bronze 1990"
+const eventShort = (e) => {
+  const l = (e || '').toLowerCase();
+  if (l.includes('olymp')) return 'Olympic';
+  if (l.includes('world') || l.includes('fiba') || l.includes('monde')) return 'World Cup';
+  return e || '';
+};
+const metalWord = { gold: 'Gold', silver: 'Silver', bronze: 'Bronze' };
+
+const intlBadges = (player) => {
+  const list = (player.awards && player.awards.intl) || [];
+  const groups = {};
+  for (const m of list) {
+    const ev = eventShort(m.event);
+    const key = `${m.medal}|${ev}`;
+    if (!groups[key]) groups[key] = { medal: m.medal, event: ev, years: [] };
+    if (m.year) groups[key].years.push(m.year);
+  }
+  return Object.values(groups).map((g) => {
+    const cls = ['gold', 'silver', 'bronze'].includes(g.medal) ? `lc-${g.medal}` : 'lc-intl';
+    const years = g.years.sort((a, b) => parseInt(a) - parseInt(b)).join(', ');
+    const label = [g.event, metalWord[g.medal]].filter(Boolean).join(' ') + (years ? ` ${years}` : '');
+    return { medal: g.medal, cls, label };
+  });
+};
+
+const BadgeRow = ({ badges }) => (
+  <div className="lc-brow">
+    {badges.map((b, i) => (
+      <span key={i} className={`lc-b lc-b${b.tier}`}>
+        {b.label}
+      </span>
+    ))}
+  </div>
+);
+
+const PlayerCard = ({ player, tint }) => {
   const imgRef = useRef(null);
-  const hasTrophy = player.trophy && player.trophy.length > 0;
   const isDrafted = player.draftPosition && player.draftTeam && player.draftYear;
+
+  const ncaa = ncaaBadges(player);
+  const nba = nbaBadges(player);
+  const intl = intlBadges(player);
 
   useEffect(() => {
     const img = imgRef.current;
@@ -23,11 +107,9 @@ const PlayerCard = ({ player }) => {
       const containerRatio = img.parentElement.offsetWidth / img.parentElement.offsetHeight;
       const photoRatio = img.naturalWidth / img.naturalHeight;
       if (photoRatio > containerRatio) {
-        // Photo wider than container → contain leaves empty space top/bottom → use cover
         img.style.objectFit = 'cover';
         img.style.objectPosition = 'center';
       } else {
-        // Photo narrower than container → empty space on sides → keep contain
         img.style.objectFit = 'contain';
         img.style.objectPosition = 'top center';
       }
@@ -39,13 +121,8 @@ const PlayerCard = ({ player }) => {
 
   return (
     <div className="lc">
-      <div className="lc-pbox">
-        <img
-          ref={imgRef}
-          src={getImageSrc(player.id)}
-          alt={player.name}
-          className="lc-photo"
-        />
+      <div className="lc-pbox" style={{ background: tint }}>
+        <img ref={imgRef} src={getImageSrc(player.id)} alt={player.name} className="lc-photo" />
         <div className="lc-grad" />
         <div className="lc-meta">
           <div className="lc-meta-left">
@@ -65,20 +142,38 @@ const PlayerCard = ({ player }) => {
         <div className="lc-draft">
           {isDrafted ? (
             <>
-              <strong>Drafted #{player.draftPosition}</strong> by the {player.draftTeam} in {player.draftYear}
+              <strong>Drafted #{player.draftPosition}</strong> by the {player.draftTeam} in{' '}
+              {player.draftYear}
             </>
           ) : (
             'Undrafted'
           )}
         </div>
 
-        {hasTrophy && (
+        {ncaa.length > 0 && (
           <>
             <div className="lc-cat lc-cat-ncaa">NCAA</div>
+            <BadgeRow badges={ncaa} />
+          </>
+        )}
+        {nba.length > 0 && (
+          <>
+            <div className="lc-cat lc-cat-nba">NBA</div>
+            <BadgeRow badges={nba} />
+          </>
+        )}
+        {intl.length > 0 && (
+          <>
+            <div className="lc-cat lc-cat-intl">International</div>
             <div className="lc-brow">
-              <span className="lc-b lc-b3">
-                Champion {player.trophy.join(', ')}
-              </span>
+              {intl.map((b, i) => (
+                <span key={i} className={`lc-b ${b.cls}`}>
+                  {MEDAL_IMG[b.medal] && (
+                    <img className="lc-medal" src={MEDAL_IMG[b.medal]} alt="" />
+                  )}
+                  {b.label}
+                </span>
+              ))}
             </div>
           </>
         )}
@@ -88,9 +183,8 @@ const PlayerCard = ({ player }) => {
 };
 
 const TeamLegends = ({ team }) => {
-  const players = (team.oldPlayers || []).filter(
-    (p) => p.id && p.name && p.years
-  );
+  const players = (team.oldPlayers || []).filter((p) => p.id && p.name && p.years);
+  const tint = lightTint(team.color);
 
   if (players.length === 0) {
     return (
@@ -103,7 +197,7 @@ const TeamLegends = ({ team }) => {
   return (
     <div className="lc-grid">
       {players.map((player) => (
-        <PlayerCard key={player.id} player={player} />
+        <PlayerCard key={player.id} player={player} tint={tint} />
       ))}
     </div>
   );
