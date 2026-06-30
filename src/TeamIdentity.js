@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import ncaaTrophy from './assets/ncaa-trophy.jpg';
 
-const h = (v) => Math.round(v).toString(16).padStart(2, '0');
-
+// Bannière titre : teinte CLAIRE de la couleur de la fac (70% vers le blanc).
 const getHeroGradient = (color) => {
   if (!color) return undefined;
   const hex = color.replace('#', '');
@@ -10,19 +9,21 @@ const getHeroGradient = (color) => {
   const r = parseInt(hex.substr(0, 2), 16);
   const g = parseInt(hex.substr(2, 2), 16);
   const b = parseInt(hex.substr(4, 2), 16);
-  const dark = `#${h(r * 0.18)}${h(g * 0.18)}${h(b * 0.18)}`;
-  const mid = `#${h(r * 0.27)}${h(g * 0.27)}${h(b * 0.27)}`;
-  return `linear-gradient(148deg, rgba(${r},${g},${b},.52), rgba(${r},${g},${b},.28)), linear-gradient(148deg, ${dark} 0%, ${mid} 100%)`;
+  const t = (c) => Math.round(c + (255 - c) * 0.7);
+  return `rgb(${t(r)}, ${t(g)}, ${t(b)})`;
 };
 
+// Carte "meilleur résultat" : teinte CLAIRE de la couleur de la fac (70% vers le blanc),
+// cohérente avec l'en-tête de la modale.
 const getAccentCardBg = (color) => {
-  if (!color) return '#334155';
+  if (!color) return '#e8edf2';
   const hex = color.replace('#', '');
-  if (hex.length !== 6) return '#334155';
+  if (hex.length !== 6) return '#e8edf2';
   const r = parseInt(hex.substr(0, 2), 16);
   const g = parseInt(hex.substr(2, 2), 16);
   const b = parseInt(hex.substr(4, 2), 16);
-  return `linear-gradient(135deg, rgb(${Math.round(r * 0.42)},${Math.round(g * 0.42)},${Math.round(b * 0.42)}), rgb(${Math.round(r * 0.58)},${Math.round(g * 0.58)},${Math.round(b * 0.58)}))`;
+  const t = (c) => Math.round(c + (255 - c) * 0.7);
+  return `rgb(${t(r)}, ${t(g)}, ${t(b)})`;
 };
 
 // Toutes les années, triées. On laisse le CSS gérer le retour à la ligne
@@ -138,10 +139,10 @@ const TeamIdentity = ({ team }) => {
                         borderColor: 'transparent',
                       }}
                     >
-                      <div className="palm-stat-val" style={{ color: 'rgba(255,255,255,.95)' }}>
+                      <div className="palm-stat-val" style={{ color: '#13294b' }}>
                         {stat.val}
                       </div>
-                      <div className="palm-stat-label" style={{ color: 'rgba(255,255,255,.6)' }}>
+                      <div className="palm-stat-label" style={{ color: '#5b6470' }}>
                         {stat.label}
                       </div>
                       {showYears && (

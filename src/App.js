@@ -55,6 +55,7 @@ const customIcon = function (logo) {
   });
 };
 
+// En-tête de modale : teinte CLAIRE de la couleur de la fac (70% vers le blanc).
 const getTeamGradient = (color) => {
   if (!color) return undefined;
   const hex = color.replace('#', '');
@@ -62,11 +63,19 @@ const getTeamGradient = (color) => {
   const r = parseInt(hex.substr(0, 2), 16);
   const g = parseInt(hex.substr(2, 2), 16);
   const b = parseInt(hex.substr(4, 2), 16);
-  const h = (v) => Math.round(v).toString(16).padStart(2, '0');
-  // Base derived from team color (very dark) — no hardcoded navy blue
-  const dark = `#${h(r * 0.18)}${h(g * 0.18)}${h(b * 0.18)}`;
-  const mid = `#${h(r * 0.27)}${h(g * 0.27)}${h(b * 0.27)}`;
-  return `linear-gradient(140deg, rgba(${r},${g},${b},.45), rgba(${r},${g},${b},.25)), linear-gradient(140deg, ${dark} 0%, ${mid} 100%)`;
+  const t = (c) => Math.round(c + (255 - c) * 0.7);
+  return `rgb(${t(r)}, ${t(g)}, ${t(b)})`;
+};
+
+// Version foncée de la couleur (pour le chip conférence sur fond clair).
+const getDarkAccent = (color) => {
+  if (!color) return '#334155';
+  const hex = color.replace('#', '');
+  if (hex.length !== 6) return '#334155';
+  const r = parseInt(hex.substr(0, 2), 16);
+  const g = parseInt(hex.substr(2, 2), 16);
+  const b = parseInt(hex.substr(4, 2), 16);
+  return `rgb(${Math.round(r * 0.5)}, ${Math.round(g * 0.5)}, ${Math.round(b * 0.5)})`;
 };
 
 
@@ -391,7 +400,12 @@ export default function App({ searchQuery, searchSubmit }) {
                             {team.conference && (
                               <span
                                 className="modal-conf-chip"
-                                style={{ cursor: 'pointer' }}
+                                style={{
+                                  cursor: 'pointer',
+                                  background: getDarkAccent(team.color),
+                                  borderColor: 'transparent',
+                                  color: '#fff',
+                                }}
                                 onClick={() =>
                                   setSelectedDivisions((prev) =>
                                     prev.includes(team.division) ? [] : [team.division]
@@ -418,7 +432,7 @@ export default function App({ searchQuery, searchSubmit }) {
                                 style={{
                                   width: 40,
                                   background: `#${team.alternateColor}`,
-                                  borderColor: 'rgba(255,255,255,.28)',
+                                  borderColor: 'rgba(0,0,0,.18)',
                                 }}
                               />
                             )}

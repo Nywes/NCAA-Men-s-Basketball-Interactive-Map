@@ -159,7 +159,7 @@
 
 /* ── Header ── */
 .modal-header {
-  background: linear-gradient(140deg, #0c1f3a 0%, #13294B 100%);
+  background: #e8edf2;
   border-radius: 18px 18px 0 0;
   padding: 14px 16px;
   display: flex;
@@ -172,7 +172,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(ellipse at 92% 50%, rgba(255,255,255,.07) 0%, transparent 55%);
+  background: radial-gradient(ellipse at 92% 50%, rgba(255,255,255,.35) 0%, transparent 55%);
   pointer-events: none;
 }
 .modal-logo {
@@ -180,7 +180,7 @@
   height: 84px;
   object-fit: contain;
   flex-shrink: 0;
-  filter: drop-shadow(0 0 7px rgba(255,255,255,.38)) drop-shadow(0 4px 14px rgba(0,0,0,.5));
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,.22));
   position: relative;
   z-index: 1;
 }
@@ -193,12 +193,12 @@
 .modal-team-name {
   font-size: 17px;
   font-weight: 900;
-  color: #fff;
+  color: #161d29;
   line-height: 1.15;
 }
 .modal-team-alt {
   font-size: 11px;
-  color: rgba(255,255,255,.38);
+  color: #5b6470;
   margin-top: 3px;
 }
 .modal-meta-row {
@@ -209,23 +209,22 @@
   flex-wrap: wrap;
 }
 .modal-conf-chip {
-  background: rgba(255,255,255,.14);
-  border: 1px solid rgba(255,255,255,.28);
-  color: rgba(255,255,255,.82);
+  background: #334155;
+  border: 1px solid transparent;
+  color: #fff;
   font-size: 11px;
   font-weight: 700;
   padding: 2px 9px;
   border-radius: 8px;
   white-space: nowrap;
-  transition: background .15s, color .15s;
+  transition: filter .15s;
 }
 .modal-conf-chip:hover {
-  background: rgba(255,255,255,.28);
-  color: #fff;
+  filter: brightness(1.18);
 }
 .modal-venue {
   font-size: 11px;
-  color: rgba(255,255,255,.36);
+  color: #6b7280;
 }
 .modal-colors-row {
   display: flex;
@@ -236,7 +235,7 @@
 .modal-color-cap {
   height: 13px;
   border-radius: 7px;
-  border: 1px solid rgba(255,255,255,.18);
+  border: 1px solid rgba(0,0,0,.15);
   box-shadow: 0 2px 6px rgba(0,0,0,.3);
   flex-shrink: 0;
 }
@@ -272,7 +271,7 @@
 .palm-hero {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(148deg, #13294B 0%, #1a3f70 100%);
+  background: #e8edf2;
   margin: 10px 12px 0;
   border-radius: 10px;
   padding: 11px 13px;
@@ -287,25 +286,34 @@
   width: 72px;
   height: 72px;
   object-fit: contain;
-  mix-blend-mode: screen;
-  opacity: .22;
+  mix-blend-mode: multiply;
+  opacity: .14;
   pointer-events: none;
 }
 .palm-hero-left { flex-shrink: 0; }
 .palm-hero-label {
   font-size: 9px;
-  font-weight: 700;
-  color: rgba(255,255,255,.5);
+  font-weight: 800;
+  color: #5b6470;
   text-transform: uppercase;
   letter-spacing: .7px;
   margin-bottom: 1px;
 }
 .palm-num-row { display: flex; align-items: baseline; gap: 6px; }
-.palm-num { font-size: 40px; font-weight: 900; color: #C8A227; line-height: 1; }
-.palm-unit { font-size: 14px; font-weight: 800; color: rgba(255,255,255,.55); }
+.palm-num {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
+  /* dégradé or diagonal */
+  background: linear-gradient(135deg, #dab23c 0%, #a07c1a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.palm-unit { font-size: 14px; font-weight: 800; color: #5b6470; }
 .palm-hero-divider {
   width: 1px;
-  background: rgba(255,255,255,.1);
+  background: rgba(0,0,0,.12);
   align-self: stretch;
   margin: 0 11px;
   flex-shrink: 0;
@@ -313,7 +321,7 @@
 .palm-hero-years {
   font-size: 11px;
   font-weight: 600;
-  color: rgba(255,255,255,.42);
+  color: rgba(0,0,0,.5);
   line-height: 1.65;
   padding-right: 55px;
   flex: 1;
@@ -353,7 +361,7 @@
   margin-top: 4px;
   font-size: 9px;
   font-weight: 600;
-  color: rgba(255,255,255,.52);
+  color: rgba(0,0,0,.55);
   line-height: 1.6;
   text-align: center;
   /* texte fluide : autant d'années que la largeur le permet (plus sur desktop) */
@@ -471,8 +479,8 @@
 .lc-grad {
   position: absolute;
   bottom: 0; left: 0; right: 0;
-  height: 58px;
-  background: linear-gradient(to top, rgba(0,5,20,.96) 0%, rgba(0,5,20,.42) 62%, transparent 100%);
+  height: 48px;
+  background: linear-gradient(to top, rgba(0,5,20,.78) 0%, rgba(0,5,20,.28) 62%, transparent 100%);
   pointer-events: none;
 }
 .lc-meta {
@@ -550,7 +558,8 @@
   align-items: center;
   font-weight: 700;
   border-radius: 5px;
-  white-space: nowrap;
+  white-space: normal;
+  max-width: 100%;
   line-height: 1.4;
   font-size: 9.5px;
   padding: 2.5px 7px;
@@ -558,10 +567,12 @@
 .lc-b1 { background: #f1f5f9; color: #64748b; border: 1px solid #e2e8f0; }
 .lc-b2 { background: #e2e8f0; color: #334155; border: 1px solid #cbd5e1; font-weight: 800; }
 .lc-b3 { background: #334155; color: #fff; border: 1px solid #1e293b; font-weight: 800; }
-.lc-gold   { background: #d97706; color: #fff; border: 1px solid #b45309; font-weight: 800; }
-.lc-silver { background: #94a3b8; color: #fff; border: 1px solid #64748b; font-weight: 800; }
-.lc-bronze { background: #b45309; color: #fff; border: 1px solid #92400e; font-weight: 800; }
+/* Médailles — chip en teinte claire du métal, texte foncé, médaille colorée par-dessus */
+.lc-gold   { background: #f6ecc9; color: #7a5e10; border: 1px solid #e7d49a; font-weight: 800; }
+.lc-silver { background: #eef0f2; color: #4b5560; border: 1px solid #d3d8dd; font-weight: 800; }
+.lc-bronze { background: #f1ddc8; color: #7a4a1e; border: 1px solid #e0c3a3; font-weight: 800; }
 .lc-intl   { background: #fef3c7; color: #92400e; border: 1px solid #fde68a; }
+.lc-medal  { width: 13px; height: 13px; flex-shrink: 0; margin-right: 3px; }
 
 @media (max-width: 540px) {
   .lc-pbox { height: 110px; }
