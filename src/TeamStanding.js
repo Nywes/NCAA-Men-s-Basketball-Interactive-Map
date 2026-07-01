@@ -1,160 +1,184 @@
-import React, { useState, useEffect } from 'react';
-import adjustBrightness from './colorDetection';
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 
-const TeamStanding = ({ team }) => {
-  const [conferenceData, setConferenceData] = useState(null);
-  const [loading, setLoading] = useState(true);
+// Récupère le classement complet une seule fois par session (grosse réponse -> mise en cache).
+let STANDINGS_PROMISE = null;
+let STANDINGS_DATA = null; // enfants résolus -> permet un rendu synchrone (pas de flash "Loading")
+const getStandings = () => {
+  if (STANDINGS_DATA) return Promise.resolve(STANDINGS_DATA);
+  if (!STANDINGS_PROMISE) {
+    STANDINGS_PROMISE = fetch(
+      'https://site.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings'
+    )
+      .then((r) => r.json())
+      .then((d) => {
+        STANDINGS_DATA = (d && d.children) || [];
+        return STANDINGS_DATA;
+      })
+      .catch((e) => {
+        STANDINGS_PROMISE = null; // permet un nouvel essai après un échec
+        throw e;
+      });
+  }
+  return STANDINGS_PROMISE;
+};
+
+const toHex = (c) => (c ? (c[0] === '#' ? c : `#${c}`) : '#00539b');
+
+const rgbParts = (hex) => {
+  const h = toHex(hex).replace('#', '');
+  if (h.length !== 6) return null;
+  return [parseInt(h.substr(0, 2), 16), parseInt(h.substr(2, 2), 16), parseInt(h.substr(4, 2), 16)];
+};
+
+// Teinte très claire (90% vers le blanc) -> fond de la ligne de l'équipe courante.
+const veryLightTint = (hex) => {
+  const p = rgbParts(hex);
+  if (!p) return '#e7eff7';
+  const t = (v) => Math.round(v + (255 - v) * 0.9);
+  return `rgb(${t(p[0])}, ${t(p[1])}, ${t(p[2])})`;
+};
+
+// Version plus sombre (pour l'en-tête des colonnes).
+const darken = (hex, f) => {
+  const p = rgbParts(hex);
+  if (!p) return '#022f5c';
+  return `rgb(${Math.round(p[0] * f)}, ${Math.round(p[1] * f)}, ${Math.round(p[2] * f)})`;
+};
+
+const byType = (entry, type) => (entry.stats || []).find((s) => s.type === type);
+const dispOf = (entry, type) => {
+  const s = byType(entry, type);
+  return s ? s.displayValue : null;
+};
+const valOf = (entry, type) => {
+  const s = byType(entry, type);
+  return s && s.value != null ? s.value : null;
+};
+
+const diffFmt = (pf, pa) => {
+  if (pf == null || pa == null) return { txt: '—', cls: 'st-mut' };
+  const d = pf - pa;
+  return { txt: (d >= 0 ? '+' : '') + d.toFixed(1), cls: d >= 0 ? 'st-pos' : 'st-neg' };
+};
+
+const logoUrl = (id) =>
+  `https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/${id}.png&h=40&w=40`;
+
+const TeamStanding = ({ team, isSmallScreen }) => {
+  const confId = team.groups && team.groups.id;
+  // Rendu synchrone si le classement est déjà en cache -> pas d'état "Loading" au retour sur l'onglet.
+  const cachedConf = STANDINGS_DATA ? STANDINGS_DATA.find((x) => x.id === confId) : null;
+  const [conf, setConf] = useState(cachedConf);
+  const [loading, setLoading] = useState(!cachedConf);
   const [error, setError] = useState(null);
-
-  // Fonction pour récupérer les standings d'une conférence spécifique
-  const fetchStandingsByConferenceId = async (conferenceId) => {
-    try {
-      const response = await fetch(
-        'https://site.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings'
-      );
-      const data = await response.json();
-
-      // Vérifie si la donnée de standings existe
-      if (!data || !data.children) {
-        console.error('Data format is unexpected or missing');
-        setError('Unexpected data format');
-        return;
-      }
-
-      // Filtrer les données pour obtenir uniquement celles de la conférence souhaitée
-      const conferenceData = data.children.find((conference) => conference.id === conferenceId);
-
-      if (conferenceData) {
-        setConferenceData(conferenceData); // Met à jour l'état avec les données de la conférence
-      } else {
-        setError('Aucune conférence trouvée avec cet ID');
-      }
-    } catch (error) {
-      console.error('Erreur lors de la récupération des données:', error);
-      setError('Erreur lors de la récupération des données');
-    } finally {
-      setLoading(false); // Arrêter le chargement
-    }
-  };
+  const scrollRef = useRef(null);
+  const meRowRef = useRef(null);
 
   useEffect(() => {
-    const conferenceId = team.groups.id;
-    fetchStandingsByConferenceId(conferenceId);
-  }, [team.groups.id]);
-
-  //TODO, au lieu de ce texte faire en sorte que la border du boutton tourne, comme une course de nascar pour avoir l'illusion du chargement
-  if (loading) {
-    return <div style={{ marginTop: '8px', gap: '8px', display: 'flex', flexDirection: 'column' }}>Chargement des données de la conférence...</div>;
-  }
-
-  if (error) {
-    return <div style={{ marginTop: '8px', gap: '8px', display: 'flex', flexDirection: 'column' }}>{error}</div>;
-  }
-
-  // Extraire les entrées de classement
-  const entries = conferenceData.standings.entries;
-
-  // Fonction pour obtenir le bilan de la conférence et le bilan global
-  const getStats = (entry) => {
-    const conferenceStats = entry.stats.find((stat) => stat.name === 'vs. Conf.');
-    const overallStats = entry.stats.find((stat) => stat.name === 'overall');
-    return {
-      conferenceRecord: conferenceStats ? conferenceStats.displayValue : 'N/A',
-      overallRecord: overallStats ? overallStats.displayValue : 'N/A',
+    let cancelled = false;
+    if (!STANDINGS_DATA) {
+      setLoading(true);
+      setError(null);
+    }
+    getStandings()
+      .then((children) => {
+        if (cancelled) return;
+        const c = children.find((x) => x.id === confId);
+        if (c) setConf(c);
+        else setError('No standings available');
+        setLoading(false);
+      })
+      .catch(() => {
+        if (cancelled) return;
+        setError('Error loading standings');
+        setLoading(false);
+      });
+    return () => {
+      cancelled = true;
     };
-  };
+  }, [confId]);
 
-  // Trier les entrées d'abord par bilan de conférence, puis par bilan global
-  const getRecordNumbers = (record) => {
-    const [wins, losses] = record.split('-').map(Number);
-    return { wins, losses };
-  };
+  // Centre le tableau sur l'équipe courante à l'ouverture (clampé : #1 -> vue normale en haut).
+  useLayoutEffect(() => {
+    const c = scrollRef.current;
+    const m = meRowRef.current;
+    if (!c || !m) return;
+    const cRect = c.getBoundingClientRect();
+    const mRect = m.getBoundingClientRect();
+    c.scrollTop += mRect.top - cRect.top - (c.clientHeight - mRect.height) / 2;
+  }, [conf, isSmallScreen]);
 
-  const sortedEntries = entries.sort((a, b) => {
-    const { conferenceRecord: recordA, overallRecord: overallA } = getStats(a);
-    const { conferenceRecord: recordB, overallRecord: overallB } = getStats(b);
+  if (loading) return <div className="st-empty">Loading standings…</div>;
+  if (error) return <div className="st-empty">{error}</div>;
+  if (!conf || !conf.standings || !conf.standings.entries) return <div className="st-empty">No standings available</div>;
 
-    // Convertir les bilans en nombres
-    const { wins: confWinsA, losses: confLossesA } = getRecordNumbers(recordA);
-    const { wins: confWinsB, losses: confLossesB } = getRecordNumbers(recordB);
+  const teamHex = toHex(team.color);
+  const entries = conf.standings.entries
+    .slice()
+    .sort((a, b) => {
+      const sa = valOf(a, 'playoffseed');
+      const sb = valOf(b, 'playoffseed');
+      if (sa == null && sb == null) return 0;
+      if (sa == null) return 1;
+      if (sb == null) return -1;
+      return sa - sb;
+    });
 
-    // Comparer les bilans de conférence
-    if (confWinsA !== confWinsB) {
-      return confWinsB - confWinsA; // Tri par victoires
-    } else if (confLossesA !== confLossesB) {
-      return confLossesA - confLossesB; // Tri par défaites
-    }
-
-    // Convertir les bilans globaux en nombres
-    const { wins: overallWinsA, losses: overallLossesA } = getRecordNumbers(overallA);
-    const { wins: overallWinsB, losses: overallLossesB } = getRecordNumbers(overallB);
-
-    // Si les bilans de conférence sont égaux, comparer les bilans globaux
-    if (overallWinsA !== overallWinsB) {
-      return overallWinsB - overallWinsA; // Tri par victoires globales
-    } else {
-      return overallLossesA - overallLossesB; // Tri par défaites globales
-    }
-  });
-
-  // Affichage des données de la conférence
   return (
-    <div style={{ marginTop: '8px', gap: '8px', display: 'flex', flexDirection: 'column' }}>
-      <h2>
-        {conferenceData.name} - {conferenceData.standings.seasonDisplayName}
-      </h2>
-      <table
-        style={{
-          width: '100%',
-          borderCollapse: 'collapse',
-          boxSizing: 'border-box',
-          borderSpacing: '0',
-        }}
-      >
-        <thead>
-          <tr>
-            <th style={{ border: '1px solid #ccc', padding: '4px' }}>Équipe</th>
-            <th style={{ border: '1px solid #ccc', padding: '4px' }}>Conference</th>
-            <th style={{ border: '1px solid #ccc', padding: '4px' }}>Overall</th>
-          </tr>
-        </thead>
-        <tbody>
-          {sortedEntries.map((entry, index) => {
-            const { conferenceRecord, overallRecord } = getStats(entry);
-            const isCurrentTeamChecked = team.id === entry.team.id;
-            return (
-              <tr
-                key={index}
-                style={{
-                  backgroundColor: isCurrentTeamChecked
-                    ? adjustBrightness(team.color, 80)
-                    : 'inherit',
-                }}
-              >
-                <td
-                  style={{
-                    padding: '4px',
-                    display: 'flex',
-                    gap: '8px',
-                    alignItems: 'center',
-                    border: '1px solid #ccc',
-                  }}
-                >
-                  <img
-                    src={`https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/${entry.team.id}.png&h=40&w=40`}
-                    alt="logo"
-                    className="college-logo"
-                    style={{ width: '20px', height: '20px' }}
-                  />
-                  {entry.team.displayName}
-                </td>
-                <td style={{ padding: '4px', border: '1px solid #ccc' }}>{conferenceRecord}</td>
-                <td style={{ padding: '4px', border: '1px solid #ccc' }}>{overallRecord}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+    <div
+      className="st-wrap"
+      style={{ '--st-team': teamHex, '--st-teamd': darken(teamHex, 0.8), '--st-tint': veryLightTint(teamHex) }}
+    >
+      <div className="st-chead" style={{ background: teamHex }}>
+        <span className="t">{conf.name}</span>
+        <span className="s">{conf.standings.seasonDisplayName}</span>
+      </div>
+      <div className="st-scroll" ref={scrollRef}>
+        <table className="st">
+          <thead>
+            <tr>
+              <th style={{ background: darken(teamHex, 0.8) }}>#</th>
+              <th className="l" style={{ background: darken(teamHex, 0.8) }}>Team</th>
+              <th style={{ background: darken(teamHex, 0.8) }}>Conf</th>
+              {!isSmallScreen && <th style={{ background: darken(teamHex, 0.8) }}>Ovr</th>}
+              <th style={{ background: darken(teamHex, 0.8) }}>Strk</th>
+              <th style={{ background: darken(teamHex, 0.8) }}>Diff</th>
+            </tr>
+          </thead>
+          <tbody>
+            {entries.map((entry, index) => {
+              const isMe = String(entry.team.id) === String(team.id);
+              const rank = valOf(entry, 'playoffseed') != null ? valOf(entry, 'playoffseed') : index + 1;
+              const confRec = dispOf(entry, 'vsconf') || '—';
+              const overall = dispOf(entry, 'total') || '—';
+              const streak = dispOf(entry, 'streak');
+              const diff = diffFmt(valOf(entry, 'avgpointsfor'), valOf(entry, 'avgpointsagainst'));
+              const name = entry.team.shortDisplayName || entry.team.displayName;
+              return (
+                <tr key={entry.team.id} className={isMe ? 'st-me' : ''} ref={isMe ? meRowRef : null}>
+                  <td className="st-rk">{rank}</td>
+                  <td className="l">
+                    <div className="st-tm">
+                      <img className="st-logo" src={logoUrl(entry.team.id)} alt="" />
+                      <span title={name}>{name}</span>
+                    </div>
+                  </td>
+                  <td>{confRec}</td>
+                  {!isSmallScreen && <td className="st-mut">{overall}</td>}
+                  <td>
+                    {streak && streak !== '-' ? (
+                      <span className={`st-strk ${streak[0] === 'W' ? 'st-win' : 'st-los'}`}>{streak}</span>
+                    ) : (
+                      '—'
+                    )}
+                  </td>
+                  <td className={diff.cls}>{diff.txt}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };
