@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Standing — propositions de design</title>
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font:14px/1.4 -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#e9edf2;color:#1b2430;padding:24px}
+  h1{font-size:21px;margin-bottom:4px}
+  .sub{color:#64748b;font-size:13px;margin-bottom:22px;max-width:840px}
+  .prop{margin-bottom:32px}
+  .prop > h2{font-size:15px;font-weight:800;margin-bottom:2px}
+  .prop > .d{font-size:12px;color:#64748b;margin-bottom:11px;max-width:640px}
+  .frame{width:480px;max-width:100%;background:#fff;border-radius:12px;box-shadow:0 6px 24px rgba(0,0,0,.13);overflow:hidden}
+  .frame .bd{padding:12px}
+  img.logo{width:22px;height:22px;object-fit:contain;flex:none}
+  :root{--team:#00539b;--teamd:#022f5c;--tint:#e7eff7}
+  .pos{color:#16a34a}.neg{color:#dc2626}
+  .win{background:#e2f5e9;color:#15803d}.los{background:#fdeaea;color:#b91c1c}
+  .strk{font-weight:800;font-size:10px;border-radius:5px;padding:1px 6px;display:inline-block}
+
+  /* conf header */
+  .chead{background:var(--team);color:#fff;padding:10px 14px;display:flex;align-items:baseline;justify-content:space-between}
+  .chead .t{font-weight:800;font-size:14px}
+  .chead .s{font-size:10px;opacity:.8}
+
+  /* ---------- S1 modern clean ---------- */
+  .S1 table{width:100%;border-collapse:collapse;font-size:12.5px}
+  .S1 th{background:var(--team);color:#fff;font-size:9px;text-transform:uppercase;letter-spacing:.5px;padding:8px;text-align:left}
+  .S1 td{padding:7px 8px;border-bottom:1px solid #eef2f6}
+  .S1 tbody tr:nth-child(even){background:#fafbfd}
+  .S1 .tm{display:flex;align-items:center;gap:8px;font-weight:700}
+  .S1 .rk{color:#94a3b8;font-weight:800;width:18px}
+  .S1 .me{background:var(--tint)!important;box-shadow:inset 3px 0 0 var(--team)}
+  .S1 .me .tm{color:var(--teamd)}
+  .S1 .mut{color:#64748b}
+
+  /* ---------- S2 streak + diff ---------- */
+  .S2 table{width:100%;border-collapse:collapse;font-size:12px}
+  .S2 th{background:var(--teamd);color:#fff;font-size:8.5px;text-transform:uppercase;letter-spacing:.4px;padding:7px 6px;text-align:center}
+  .S2 th:nth-child(2){text-align:left}
+  .S2 td{padding:6px;border-bottom:1px solid #eef2f6;text-align:center}
+  .S2 td:nth-child(2){text-align:left}
+  .S2 .tm{display:flex;align-items:center;gap:7px;font-weight:700}
+  .S2 .rk{color:#94a3b8;font-weight:800}
+  .S2 .me{background:var(--tint)!important;box-shadow:inset 3px 0 0 var(--team)}
+  .S2 .mut{color:#64748b}
+
+  /* ---------- S3 podium ---------- */
+  .S3 .podium{display:flex;gap:8px;padding:12px 12px 6px}
+  .S3 .p{flex:1;border-radius:12px;padding:12px 6px 10px;text-align:center;color:#fff;position:relative}
+  .S3 .p1{background:linear-gradient(160deg,#e6c200,#a8880f)}
+  .S3 .p2{background:linear-gradient(160deg,#c2c9d2,#8b95a1)}
+  .S3 .p3{background:linear-gradient(160deg,#d69256,#9c5f28)}
+  .S3 .p .medal{font-size:16px}
+  .S3 .p img{width:34px;height:34px;background:#fff;border-radius:50%;padding:3px;margin:4px 0}
+  .S3 .p .nm{font-weight:800;font-size:11.5px}
+  .S3 .p .rec{font-size:11px;opacity:.95;margin-top:2px}
+  .S3 .rest{padding:6px 12px 12px}
+  .S3 .r{display:flex;align-items:center;gap:8px;padding:6px 4px;border-bottom:1px solid #f1f5f9;font-size:12.5px}
+  .S3 .rk{color:#94a3b8;font-weight:800;width:20px}
+  .S3 .nm{font-weight:700;flex:1}
+  .S3 .me{background:var(--tint);border-radius:6px;box-shadow:inset 3px 0 0 var(--team)}
+  .S3 .mut{color:#64748b}
+
+  /* ---------- S4 win% bars ---------- */
+  .S4 .bd{display:flex;flex-direction:column;gap:7px}
+  .S4 .r{display:flex;align-items:center;gap:9px}
+  .S4 .rk{color:#94a3b8;font-weight:800;width:16px;text-align:center;font-size:12px}
+  .S4 .nm{display:flex;align-items:center;gap:7px;width:150px;font-weight:700;font-size:12.5px}
+  .S4 .barw{flex:1;background:#eef2f6;border-radius:6px;height:20px;position:relative;overflow:hidden}
+  .S4 .bar{height:100%;background:var(--team);border-radius:6px 0 0 6px}
+  .S4 .rec{position:absolute;right:7px;top:0;line-height:20px;font-size:10.5px;font-weight:800;color:#334155}
+  .S4 .me .nm{color:var(--teamd)}
+  .S4 .me .bar{background:linear-gradient(90deg,var(--team),var(--teamd))}
+
+  /* ---------- S5 app dense ---------- */
+  .S5 table{width:100%;border-collapse:collapse;font-size:11.5px;font-variant-numeric:tabular-nums}
+  .S5 th{background:#1e293b;color:#cbd5e1;font-size:8.5px;text-transform:uppercase;letter-spacing:.3px;padding:6px 5px;text-align:right}
+  .S5 th:nth-child(1),.S5 th:nth-child(2){text-align:left}
+  .S5 td{padding:5px;border-bottom:1px solid #eef2f6;text-align:right}
+  .S5 td:nth-child(1),.S5 td:nth-child(2){text-align:left}
+  .S5 .tm{display:flex;align-items:center;gap:6px;font-weight:700}
+  .S5 .rk{color:#94a3b8;font-weight:800}
+  .S5 .me{background:var(--tint)!important;font-weight:800;box-shadow:inset 3px 0 0 var(--team)}
+
+  /* ---------- S6 spacious cards ---------- */
+  .S6 .bd{display:flex;flex-direction:column;gap:8px}
+  .S6 .c{display:flex;align-items:center;gap:11px;border:1px solid #e6ebf1;border-radius:11px;padding:9px 12px}
+  .S6 .rk{width:26px;height:26px;border-radius:50%;background:#eef2f6;color:#475569;font-weight:800;font-size:12px;display:flex;align-items:center;justify-content:center;flex:none}
+  .S6 .nm{font-weight:800;font-size:13.5px;flex:1}
+  .S6 .nm small{display:block;font-weight:600;font-size:10.5px;color:#94a3b8}
+  .S6 .big{text-align:right}
+  .S6 .big .v{font-weight:900;font-size:15px}
+  .S6 .big .l{font-size:9px;color:#94a3b8;text-transform:uppercase}
+  .S6 .me{border-color:var(--team);background:var(--tint)}
+  .S6 .me .rk{background:var(--team);color:#fff}
+
+  /* ---------- S7 minimalist ---------- */
+  .S7 .bd{padding:4px 2px}
+  .S7 .r{display:flex;align-items:center;gap:11px;padding:10px 8px;border-bottom:1px solid #f2f5f9}
+  .S7 .rk{font-size:13px;font-weight:800;color:#c3cbd6;width:20px}
+  .S7 .nm{font-weight:700;flex:1;font-size:13.5px}
+  .S7 .rec{font-weight:900;font-size:14px}
+  .S7 .ovr{font-size:11px;color:#94a3b8;margin-left:8px}
+  .S7 .me .rk{color:var(--team)}
+  .S7 .me{background:var(--tint);border-radius:8px}
+
+  /* ---------- S8 your-team focus ---------- */
+  .S8 .hero{background:linear-gradient(135deg,var(--team),var(--teamd));color:#fff;padding:14px;display:flex;align-items:center;gap:12px}
+  .S8 .hero img{width:46px;height:46px;background:#fff;border-radius:50%;padding:4px}
+  .S8 .hero .nm{font-weight:900;font-size:16px}
+  .S8 .hero .seed{font-size:11px;opacity:.85}
+  .S8 .hero .stats{margin-left:auto;display:flex;gap:14px;text-align:center}
+  .S8 .hero .stats .v{font-weight:900;font-size:16px}
+  .S8 .hero .stats .l{font-size:8.5px;opacity:.8;text-transform:uppercase}
+  .S8 .list{padding:6px 12px 12px}
+  .S8 .r{display:flex;align-items:center;gap:8px;padding:6px 4px;border-bottom:1px solid #f1f5f9;font-size:12.5px}
+  .S8 .rk{color:#94a3b8;font-weight:800;width:18px}
+  .S8 .nm{font-weight:600;flex:1}
+  .S8 .mut{color:#64748b}
+  .S8 .me{background:var(--tint);border-radius:6px;font-weight:800}
+
+  /* ===== Solutions "beaucoup d'équipes" ===== */
+  .divider{margin:34px 0 6px;font-size:18px;font-weight:800}
+  .divider + .sub{margin-bottom:20px}
+  .scroll{max-height:300px;overflow-y:auto}
+  .scroll::-webkit-scrollbar{width:6px}
+  .scroll::-webkit-scrollbar-thumb{background:#cfd8e3;border-radius:3px}
+  .S2 .scroll thead th{position:sticky;top:0;z-index:3}
+  .S2 .pin td{position:sticky;top:27px;z-index:2;background:var(--tint)}
+  .S2 .pin td:first-child{box-shadow:inset 3px 0 0 var(--team)}
+  .pinhint{font-size:10px;color:#94a3b8;padding:2px 8px 0}
+  .twocol{display:flex}
+  .twocol .col{flex:1;min-width:0}
+  .twocol .col:first-child{border-right:2px solid #eef2f6}
+  .compact td{padding:3px 6px!important}
+  .compact .logo{width:17px;height:17px}
+  .compact table{font-size:11px}
+  .sep td{text-align:center;color:#94a3b8;font-size:16px;letter-spacing:2px;padding:2px;background:#fafbfd}
+  .seeall{width:100%;border:none;background:#f1f5f9;color:var(--team);font-weight:800;padding:9px;cursor:pointer;font-size:12px;font-family:inherit}
+  .seeall:hover{background:#e6edf5}
+  .cnt{display:inline-block;background:rgba(255,255,255,.2);border-radius:10px;padding:0 8px;font-size:10px;font-weight:700;margin-left:6px}
+</style>
+</head>
+<body>
+<h1>Standing (Classement) — propositions de design</h1>
+<p class="sub">8 façons de rendre le classement plus joli. Logos ESPN réels, données ACC d'exemple, <b>équipe courante = Duke</b> (surlignée aux couleurs de la fac). Dis-moi le(s) design(s) préféré(s) — on peut mixer.</p>
+<div id="root"></div>
+
+<div class="divider">Conférences à beaucoup d'équipes (ex. ACC = 18) — comment gérer la hauteur ?</div>
+<p class="sub">Toutes ces solutions gardent le style <b>S2</b>. Ici l'équipe courante = <b>Pittsburgh</b> (9e, milieu de tableau) pour bien illustrer. Les solutions 1→5 <b>ne cachent aucune équipe</b> ; la 6 est le seul compromis qui en masque (dépliable).</p>
+<div id="sol"></div>
+
+<script>
+function logo(id){return "https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/"+id+".png&h=44&w=44";}
+var T=[
+ {rk:1,id:150,nm:'Duke',ab:'DUKE',conf:'19-1',ovr:'32-4',pct:'.889',strk:'W14',pf:83.2,pa:65.0,home:'18-0',away:'11-3',me:true},
+ {rk:2,id:228,nm:'Clemson',ab:'CLEM',conf:'15-5',ovr:'27-7',pct:'.794',strk:'W2',pf:79.5,pa:68.1,home:'16-1',away:'9-4'},
+ {rk:3,id:97,nm:'Louisville',ab:'LOU',conf:'15-5',ovr:'27-8',pct:'.771',strk:'L1',pf:81.0,pa:70.2,home:'15-2',away:'10-4'},
+ {rk:4,id:2567,nm:'SMU',ab:'SMU',conf:'13-7',ovr:'24-11',pct:'.686',strk:'W3',pf:76.9,pa:69.8,home:'14-2',away:'8-6'},
+ {rk:5,id:154,nm:'Wake Forest',ab:'WAKE',conf:'13-7',ovr:'21-11',pct:'.656',strk:'L2',pf:78.2,pa:71.0,home:'14-2',away:'6-7'},
+ {rk:6,id:153,nm:'North Carolina',ab:'UNC',conf:'13-7',ovr:'22-13',pct:'.629',strk:'W1',pf:79.8,pa:72.4,home:'13-3',away:'7-8'},
+ {rk:7,id:24,nm:'Stanford',ab:'STAN',conf:'11-9',ovr:'21-14',pct:'.600',strk:'L1',pf:74.5,pa:72.1,home:'13-3',away:'6-9'},
+ {rk:8,id:59,nm:'Georgia Tech',ab:'GT',conf:'9-11',ovr:'17-17',pct:'.500',strk:'W1',pf:72.3,pa:71.5,home:'12-4',away:'4-11'},
+ {rk:9,id:258,nm:'Virginia',ab:'UVA',conf:'9-11',ovr:'15-17',pct:'.469',strk:'L3',pf:66.8,pa:67.9,home:'11-5',away:'3-11'},
+ {rk:10,id:152,nm:'NC State',ab:'NCST',conf:'9-11',ovr:'12-19',pct:'.387',strk:'L2',pf:74.0,pa:76.2,home:'9-6',away:'2-12'},
+ {rk:11,id:2390,nm:'Miami',ab:'MIA',conf:'6-14',ovr:'15-17',pct:'.469',strk:'W1',pf:78.1,pa:79.0,home:'11-4',away:'3-12'},
+];
+function diff(t){var d=t.pf-t.pa;return {v:(d>0?'+':'')+d.toFixed(1),cls:d>=0?'pos':'neg'};}
+function strkPill(s){return '<span class="strk '+(s[0]==='W'?'win':'los')+'">'+s+'</span>';}
+function pctBar(t){return Math.round(parseFloat(t.pct)*100);}
+var HEADER='<div class="chead"><span class="t">ACC Conference</span><span class="s">2024-25</span></div>';
+
+function S1(){var r=T.map(function(t){return '<tr class="'+(t.me?'me':'')+'"><td><span class="rk">'+t.rk+'</span></td><td><div class="tm"><img class="logo" src="'+logo(t.id)+'">'+t.nm+'</div></td><td>'+t.conf+'</td><td class="mut">'+t.ovr+'</td><td class="mut">'+t.pct+'</td></tr>';}).join('');
+ return HEADER+'<table><thead><tr><th></th><th>Team</th><th>Conf</th><th>Overall</th><th>Pct</th></tr></thead><tbody>'+r+'</tbody></table>';}
+
+function S2(){var r=T.map(function(t){var d=diff(t);return '<tr class="'+(t.me?'me':'')+'"><td><span class="rk">'+t.rk+'</span></td><td><div class="tm"><img class="logo" src="'+logo(t.id)+'">'+t.nm+'</div></td><td>'+t.conf+'</td><td class="mut">'+t.ovr+'</td><td>'+strkPill(t.strk)+'</td><td class="'+d.cls+'">'+d.v+'</td></tr>';}).join('');
+ return HEADER+'<table><thead><tr><th></th><th>Team</th><th>Conf</th><th>Ovr</th><th>Strk</th><th>Diff</th></tr></thead><tbody>'+r+'</tbody></table>';}
+
+function S3(){var top=T.slice(0,3),rest=T.slice(3);
+ var med=['🥇','🥈','🥉'];
+ var pod=top.map(function(t,i){return '<div class="p p'+(i+1)+'"><div class="medal">'+med[i]+'</div><img src="'+logo(t.id)+'"><div class="nm">'+t.nm+'</div><div class="rec">'+t.conf+' · '+t.ovr+'</div></div>';}).join('');
+ var rr=rest.map(function(t){return '<div class="r '+(t.me?'me':'')+'"><span class="rk">'+t.rk+'</span><img class="logo" src="'+logo(t.id)+'"><span class="nm">'+t.nm+'</span><span>'+t.conf+'</span><span class="mut">'+t.ovr+'</span></div>';}).join('');
+ return HEADER+'<div class="podium">'+pod+'</div><div class="rest">'+rr+'</div>';}
+
+function S4(){var r=T.map(function(t){return '<div class="r '+(t.me?'me':'')+'"><span class="rk">'+t.rk+'</span><span class="nm"><img class="logo" src="'+logo(t.id)+'">'+t.nm+'</span><div class="barw"><div class="bar" style="width:'+pctBar(t)+'%"></div><span class="rec">'+t.conf+'</span></div></div>';}).join('');
+ return HEADER+'<div class="bd">'+r+'</div>';}
+
+function S5(){var r=T.map(function(t){var w=t.conf.split('-')[0],l=t.conf.split('-')[1],d=diff(t);return '<tr class="'+(t.me?'me':'')+'"><td><span class="rk">'+t.rk+'</span></td><td><div class="tm"><img class="logo" src="'+logo(t.id)+'">'+t.ab+'</div></td><td>'+w+'</td><td>'+l+'</td><td>'+t.pct+'</td><td>'+strkPill(t.strk)+'</td><td>'+t.pf.toFixed(1)+'</td><td class="'+d.cls+'">'+d.v+'</td></tr>';}).join('');
+ return HEADER+'<table><thead><tr><th></th><th>Team</th><th>W</th><th>L</th><th>Pct</th><th>Strk</th><th>PF</th><th>Diff</th></tr></thead><tbody>'+r+'</tbody></table>';}
+
+function S6(){var r=T.map(function(t){return '<div class="c '+(t.me?'me':'')+'"><div class="rk">'+t.rk+'</div><img class="logo" style="width:30px;height:30px" src="'+logo(t.id)+'"><div class="nm">'+t.nm+'<small>Overall '+t.ovr+' · '+strkPill(t.strk)+'</small></div><div class="big"><div class="v">'+t.conf+'</div><div class="l">Conf</div></div></div>';}).join('');
+ return HEADER+'<div class="bd" style="padding:12px">'+r+'</div>';}
+
+function S7(){var r=T.map(function(t){return '<div class="r '+(t.me?'me':'')+'"><span class="rk">'+t.rk+'</span><img class="logo" src="'+logo(t.id)+'"><span class="nm">'+t.nm+'</span><span class="rec">'+t.conf+'</span><span class="ovr">'+t.ovr+'</span></div>';}).join('');
+ return HEADER+'<div class="bd">'+r+'</div>';}
+
+function S8(){var me=T.find(function(t){return t.me;});var d=diff(me);
+ var hero='<div class="hero"><img src="'+logo(me.id)+'"><div><div class="nm">'+me.nm+'</div><div class="seed">#'+me.rk+' in ACC · '+me.strk+'</div></div><div class="stats"><div><div class="v">'+me.conf+'</div><div class="l">Conf</div></div><div><div class="v">'+me.ovr+'</div><div class="l">Overall</div></div><div><div class="v '+d.cls+'" style="color:#fff">'+d.v+'</div><div class="l">Diff</div></div></div></div>';
+ var r=T.map(function(t){return '<div class="r '+(t.me?'me':'')+'"><span class="rk">'+t.rk+'</span><img class="logo" src="'+logo(t.id)+'"><span class="nm">'+t.nm+'</span><span>'+t.conf+'</span><span class="mut">'+t.ovr+'</span></div>';}).join('');
+ return hero+'<div class="list">'+r+'</div>';}
+
+var P=[
+ ['S1 — Moderne épuré','En-tête couleur fac, colonnes Rang / Team / Conf / Overall / Pct. Ligne de l\'équipe surlignée (liseré + teinte).',S1],
+ ['S2 — Avec streak & différentiel','Ajoute la série en cours (pastille verte/rouge) et le différentiel de points (+/-).',S2],
+ ['S3 — Podium top 3','Les 3 premiers en cartes médaillées (or/argent/bronze), le reste en liste compacte.',S3],
+ ['S4 — Barres de win%','Le bilan conférence visualisé par une barre de progression.',S4],
+ ['S5 — Style appli (dense)','Beaucoup de colonnes serrées (W, L, Pct, Strk, PF, Diff), chiffres alignés — façon appli ESPN/NBA.',S5],
+ ['S6 — Cartes spacieuses','Chaque équipe = carte arrondie aérée : rang en pastille, logo, nom + overall, bilan conf en gros.',S6],
+ ['S7 — Minimaliste','Rang, logo, nom, bilan conf en gros, overall discret. Beaucoup de blanc.',S7],
+ ['S8 — Focus \"mon équipe\"','Carte résumé de l\'équipe courante en haut (plus de stats), puis le classement complet dessous.',S8],
+];
+document.getElementById('root').innerHTML=P.map(function(x){
+ return '<div class="prop"><h2>'+x[0]+'</h2><div class="d">'+x[1]+'</div><div class="frame '+x[0].split(' ')[0]+'">'+x[2]()+'</div></div>';
+}).join('');
+
+// ===== Section "beaucoup d'équipes" (18) =====
+var ACC18=[
+ {rk:1,id:150,nm:'Duke',conf:'19-1',ovr:'35-4',strk:'W15',pf:84.0,pa:66.5},
+ {rk:2,id:228,nm:'Clemson',conf:'16-4',ovr:'27-7',strk:'W2',pf:79.5,pa:68.1},
+ {rk:3,id:97,nm:'Louisville',conf:'16-4',ovr:'27-8',strk:'L1',pf:81.0,pa:70.2},
+ {rk:4,id:2567,nm:'SMU',conf:'14-6',ovr:'24-11',strk:'W3',pf:76.9,pa:69.8},
+ {rk:5,id:154,nm:'Wake Forest',conf:'13-7',ovr:'21-11',strk:'L2',pf:78.2,pa:71.0},
+ {rk:6,id:153,nm:'North Carolina',conf:'13-7',ovr:'23-14',strk:'W1',pf:79.8,pa:72.4},
+ {rk:7,id:24,nm:'Stanford',conf:'12-8',ovr:'21-14',strk:'L1',pf:74.5,pa:72.1},
+ {rk:8,id:59,nm:'Georgia Tech',conf:'11-9',ovr:'17-17',strk:'W1',pf:72.3,pa:71.5},
+ {rk:9,id:221,nm:'Pittsburgh',conf:'11-9',ovr:'17-15',strk:'W2',pf:75.6,pa:71.9},
+ {rk:10,id:258,nm:'Virginia',conf:'10-10',ovr:'15-17',strk:'L3',pf:66.8,pa:67.9},
+ {rk:11,id:183,nm:'Syracuse',conf:'10-10',ovr:'14-19',strk:'L1',pf:76.1,pa:77.3},
+ {rk:12,id:152,nm:'NC State',conf:'9-11',ovr:'12-19',strk:'L2',pf:74.0,pa:76.2},
+ {rk:13,id:52,nm:'Florida State',conf:'9-11',ovr:'17-16',strk:'W1',pf:77.2,pa:74.8},
+ {rk:14,id:87,nm:'Notre Dame',conf:'8-12',ovr:'14-18',strk:'L2',pf:73.4,pa:74.1},
+ {rk:15,id:25,nm:'California',conf:'8-12',ovr:'14-19',strk:'W1',pf:72.9,pa:75.0},
+ {rk:16,id:2390,nm:'Miami',conf:'6-14',ovr:'15-17',strk:'W1',pf:78.1,pa:79.0},
+ {rk:17,id:259,nm:'Virginia Tech',conf:'6-14',ovr:'13-19',strk:'L4',pf:71.7,pa:74.6},
+ {rk:18,id:103,nm:'Boston College',conf:'5-15',ovr:'13-20',strk:'L1',pf:70.2,pa:76.8},
+];
+var ME=221; // Pittsburgh (milieu de tableau) pour illustrer
+
+function s2rows(list,opts){opts=opts||{};return list.map(function(t){var d=diff(t);var cls=[];if(t.id===ME){cls.push('me');if(opts.pin)cls.push('pin');}return '<tr class="'+cls.join(' ')+'"><td><span class="rk">'+t.rk+'</span></td><td><div class="tm"><img class="logo" src="'+logo(t.id)+'">'+t.nm+'</div></td><td>'+t.conf+'</td><td class="mut">'+t.ovr+'</td><td>'+strkPill(t.strk)+'</td><td class="'+d.cls+'">'+d.v+'</td></tr>';}).join('');}
+function s2table(list,opts){return '<table><thead><tr><th></th><th>Team</th><th>Conf</th><th>Ovr</th><th>Strk</th><th>Diff</th></tr></thead><tbody>'+s2rows(list,opts)+'</tbody></table>';}
+var HEAD18='<div class="chead"><span class="t">ACC Conference<span class="cnt">18 équipes</span></span><span class="s">2024-25</span></div>';
+
+function SOL1(){return HEAD18+'<div class="scroll">'+s2table(ACC18)+'</div>';}
+function SOL2(){return HEAD18+'<div class="pinhint">La ligne de ton équipe reste collée sous l\'en-tête quand tu fais défiler ↓</div><div class="scroll">'+s2table(ACC18,{pin:true})+'</div>';}
+function SOL3(){return HEAD18+'<div class="scroll" id="ascroll">'+s2table(ACC18)+'</div>';}
+function SOL4(){var a=ACC18.slice(0,9),b=ACC18.slice(9);return HEAD18+'<div class="twocol"><div class="col">'+s2table(a)+'</div><div class="col">'+s2table(b)+'</div></div>';}
+function SOL5(){return HEAD18+'<div class="scroll compact">'+s2table(ACC18)+'</div>';}
+function SOL6(){
+ var meIdx=ACC18.findIndex(function(t){return t.id===ME;});
+ var coll='<table><thead><tr><th></th><th>Team</th><th>Conf</th><th>Ovr</th><th>Strk</th><th>Diff</th></tr></thead><tbody>'+s2rows(ACC18.slice(0,3))+'<tr class="sep"><td colspan="6">···</td></tr>'+s2rows(ACC18.slice(meIdx-1,meIdx+2))+'</tbody></table><button class="seeall" onclick="expandAll(this)">Voir les 18 équipes ▾</button>';
+ return HEAD18+'<div class="collapsed">'+coll+'</div><div class="full" style="display:none"><div class="scroll">'+s2table(ACC18)+'</div></div>';
+}
+
+var SOL=[
+ ['Solution 1 — Scroll interne (en-tête figé) ✅ recommandé','La modale garde une hauteur fixe (~300px) : on défile à l\'intérieur, l\'en-tête de colonnes reste visible. Cohérent avec le Roster. Aucune équipe cachée.',SOL1],
+ ['Solution 2 — Scroll + ligne "mon équipe" épinglée','Comme la 1, mais la ligne de ton équipe reste collée en haut quand elle sort de l\'écran → toujours visible. (Fais défiler pour voir l\'effet.)',SOL2],
+ ['Solution 3 — Scroll + auto-défilement vers mon équipe','À l\'ouverture, le classement est déjà centré sur ton équipe (ici Pittsburgh). Pratique quand elle est en bas de tableau.',SOL3],
+ ['Solution 4 — Deux colonnes (desktop large)','Sur grand écran, on répartit les équipes sur 2 colonnes → hauteur divisée par 2, tout est visible. (En mobile : 1 colonne + scroll.)',SOL4],
+ ['Solution 5 — Densité compacte (+ scroll)','Lignes plus fines : ~10-12 équipes visibles avant de devoir défiler.',SOL5],
+ ['Solution 6 — Recentré + "Voir tout" (compromis)','Par défaut : top 3 + ton équipe et ses voisines, bouton pour tout déplier. Seule option qui masque (temporairement).',SOL6],
+];
+document.getElementById('sol').innerHTML=SOL.map(function(x){
+ return '<div class="prop"><h2>'+x[0]+'</h2><div class="d">'+x[1]+'</div><div class="frame S2">'+x[2]()+'</div></div>';
+}).join('');
+
+(function(){var c=document.getElementById('ascroll');if(!c)return;var m=c.querySelector('.me');if(m){c.scrollTop=m.offsetTop-c.clientHeight/2+m.clientHeight/2;}})();
+window.expandAll=function(btn){var f=btn.closest('.frame');f.querySelector('.collapsed').style.display='none';f.querySelector('.full').style.display='';};
+</script>
+</body>
+</html>

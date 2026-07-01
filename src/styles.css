@@ -57,7 +57,7 @@
     margin: 2px 0 !important;
   }
   
-  .leaflet-popup-content img:not(.flag-image):not(.college-logo):not(.trophy-image):not(.lc-photo):not(.lc-hof-img):not(.lc-medal):not(.modal-logo):not(.palm-trophy-wm):not(.rt-av):not(.rt-flag) {
+  .leaflet-popup-content img:not(.flag-image):not(.college-logo):not(.trophy-image):not(.lc-photo):not(.lc-hof-img):not(.lc-medal):not(.modal-logo):not(.palm-trophy-wm):not(.rt-av):not(.rt-flag):not(.st-logo) {
     width: 60px !important;
     height: auto !important;
   }
@@ -390,7 +390,14 @@
   border-radius: 3px 3px 0 0;
 }
 .tab-content {
-  padding: 12px 14px 14px;
+  /* hauteur des listes, adaptative à la fenêtre -> la modale tient toujours à l'écran
+     (sous la navbar en haut, sans déborder en bas). Rétrécit sur écran court, 300px sur écran normal.
+     Ajuster le 500 si besoin : +grand = plus de sécurité anti-débordement, -grand = listes plus hautes. */
+  --list-h: clamp(160px, calc(100vh - 500px), 300px);
+  /* pas de padding vertical -> le contenu est collé en haut et en bas (aucun vide) */
+  padding: 0 14px;
+  /* hauteur mini = hauteur des listes -> onglets de même hauteur (pas de saut ni de clignotement) */
+  min-height: var(--list-h);
 }
 
 /* ══════════════════════════════════════════
@@ -423,7 +430,7 @@
   .palm-stat-label { font-size: 8.5px; }
 
   .tab-btn { font-size: 12px; padding: 9px 4px; }
-  .tab-content { padding: 10px 10px 12px; }
+  .tab-content { padding: 0 10px; }
 }
 
 /* ══════════════════════════════════════════
@@ -433,9 +440,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 8px;
-  max-height: 280px;
+  max-height: var(--list-h, 300px);
   overflow-y: auto;
-  padding-right: 2px;
+  padding: 6px 2px 14px 0px;
 }
 .lc-grid::-webkit-scrollbar { width: 3px; }
 .lc-grid::-webkit-scrollbar-thumb { background: #e2e8f0; border-radius: 2px; }
@@ -570,7 +577,8 @@
 
 /* ===== Roster (tableau + stats au clic) ===== */
 /* marges négatives = annule le padding de .tab-content -> le tableau prend toute la largeur */
-.rt-scroll { max-height: 320px; overflow-y: auto; margin: -12px -14px 0; }
+/* overscroll-behavior: none -> supprime l'effet rebond (rubber-band) en haut/bas */
+.rt-scroll { max-height: var(--list-h, 300px); overflow-y: auto; overscroll-behavior: none; margin: 0 -14px; }
 .rt { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 12.5px; }
 .rt thead th { color: #fff; font-size: 9px; text-transform: uppercase; letter-spacing: .6px; padding: 8px 10px; text-align: left; position: sticky; top: 0; z-index: 1; }
 .rt tbody td { padding: 7px 10px; border-bottom: 1px solid #eef2f6; vertical-align: middle; }
@@ -602,11 +610,46 @@ img.rt-flag { width: 15px; height: 11px; object-fit: cover; border-radius: 2px; 
 .rt-empty { font-size: 12px; color: #7c93ab; padding: 6px 0; text-align: center; }
 
 @media (max-width: 540px) {
-  .rt-scroll { margin: -10px -10px 0; }
+  .rt-scroll { margin: 0 -10px; }
   .rt thead th { padding: 7px 6px; }
   .rt tbody td { padding: 6px 6px; }
   .rt-hero .rt-v { font-size: 15px; }
   .rt-strip .rt-v { font-size: 10.5px; }
   .rt-strip .rt-l { font-size: 7px; }
   .rt-strip .rt-s { padding: 5px 1px; }
+}
+
+/* ===== Standing / Classement (style S2 : streak + différentiel) ===== */
+/* wrapper : marges négatives latérales -> pleine largeur (plus de vide vertical) */
+.st-wrap { margin: 0 -14px; }
+.st-chead { display: flex; align-items: baseline; justify-content: space-between; padding: 9px 12px; color: #fff; }
+.st-chead .t { font-weight: 800; font-size: 13px; }
+.st-chead .s { font-size: 10px; opacity: .82; }
+/* overscroll-behavior: none -> pas d'effet rebond en haut/bas ; -36px = hauteur de la barre conf */
+.st-scroll { max-height: calc(var(--list-h, 300px) - 36px); overflow-y: auto; overscroll-behavior: none; }
+.st { width: 100%; border-collapse: collapse; font-size: 12px; }
+.st thead th { color: #fff; font-size: 8.5px; text-transform: uppercase; letter-spacing: .4px; padding: 7px 6px; text-align: center; position: sticky; top: 0; z-index: 2; }
+.st thead th.l { text-align: left; }
+.st tbody td { padding: 6px; border-bottom: 1px solid #eef2f6; text-align: center; }
+.st tbody td.l { text-align: left; }
+.st tbody tr:nth-child(even) td { background: #fafbfd; }
+.st-rk { color: #94a3b8; font-weight: 800; }
+.st-mut { color: #64748b; }
+.st-tm { display: flex; align-items: center; gap: 7px; font-weight: 700; min-width: 0; }
+.st-tm span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+img.st-logo { width: 20px; height: 20px; object-fit: contain; flex: none; }
+.st-strk { font-weight: 800; font-size: 10px; border-radius: 5px; padding: 1px 6px; display: inline-block; }
+.st-win { background: #e2f5e9; color: #15803d; }
+.st-los { background: #fdeaea; color: #b91c1c; }
+.st-pos { color: #16a34a; font-weight: 700; }
+.st-neg { color: #dc2626; font-weight: 700; }
+.st-me td { background: var(--st-tint, #e7eff7) !important; }
+.st-me td:first-child { box-shadow: inset 3px 0 0 var(--st-team, #00539b); }
+.st-me .st-tm { color: var(--st-teamd, #022f5c); }
+.st-empty { padding: 14px; text-align: center; color: #7c93ab; font-size: 13px; }
+
+@media (max-width: 540px) {
+  .st-wrap { margin: 0 -10px; }
+  .st thead th { padding: 6px 5px; font-size: 8px; }
+  .st tbody td { padding: 6px 5px; }
 }

@@ -104,48 +104,28 @@ const StatsPanel = ({ entry }) => {
 
 const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen }) => {
   const [openId, setOpenId] = useState(null);
-  const [ordered, setOrdered] = useState(null); // joueurs triés par points (null tant que non prêt)
-  const [loadingStats, setLoadingStats] = useState(false);
+  const [, setTick] = useState(0); // force le re-render quand les stats async arrivent
 
   const athletes = roster && roster.athletes && roster.athletes.length ? roster.athletes : null;
+  // Toutes les stats déjà en cache -> on affiche le tableau dès le 1er rendu (aucun flash "Loading").
+  const allCached = athletes ? athletes.every((p) => STATS_CACHE[p.id]) : false;
 
-  // Charge les stats de tous les joueurs (parallèle, cache de session), puis trie par points.
+  // Charge les stats manquantes (parallèle, cache de session) puis re-rend.
   useEffect(() => {
     setOpenId(null);
-    if (!athletes) {
-      setOrdered(null);
-      return;
-    }
+    if (!athletes || allCached) return;
     let cancelled = false;
-
-    const sortByPoints = () => {
-      const sorted = athletes
-        .slice()
-        .sort((a, b) => ptsValue(STATS_CACHE[b.id]) - ptsValue(STATS_CACHE[a.id]));
-      setOrdered(sorted);
-    };
-
     const missing = athletes.filter((p) => !STATS_CACHE[p.id]);
-    if (missing.length === 0) {
-      setLoadingStats(false);
-      sortByPoints();
-      return;
-    }
-
-    setLoadingStats(true);
     Promise.all(missing.map((p) => fetchStats(p.id))).then((results) => {
       results.forEach((res) => {
         STATS_CACHE[res.id] = res.data ? { data: res.data } : { error: true };
       });
-      if (cancelled) return;
-      setLoadingStats(false);
-      sortByPoints();
+      if (!cancelled) setTick((t) => t + 1);
     });
-
     return () => {
       cancelled = true;
     };
-  }, [athletes]);
+  }, [athletes, allCached]);
 
   const teamHex =
     team && team.color ? (team.color[0] === '#' ? team.color : `#${team.color}`) : '#00539b';
@@ -153,10 +133,13 @@ const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen }) => {
 
   const toggle = (id) => setOpenId((cur) => (cur === id ? null : id));
 
-  if (rosterLoading) return <p>Loading the roster...</p>;
-  if (!athletes) return <p>No roster available</p>;
-  if (loadingStats || !ordered) return <p>Loading the roster...</p>;
+  if (rosterLoading) return <div className="rt-empty">Loading the roster…</div>;
+  if (!athletes) return <div className="rt-empty">No roster available</div>;
+  if (!allCached) return <div className="rt-empty">Loading the roster…</div>;
 
+  const ordered = athletes
+    .slice()
+    .sort((a, b) => ptsValue(STATS_CACHE[b.id]) - ptsValue(STATS_CACHE[a.id]));
   const cols = isSmallScreen ? 5 : 7;
 
   return (
