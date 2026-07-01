@@ -37,9 +37,10 @@
 
 @media (max-width: 768px) {
   .leaflet-popup-content {
-    min-width: 280px;
-    max-width: 360px;
-    padding: 8px;
+    width: 92vw;
+    min-width: 0;
+    max-width: 92vw;
+    padding: 0;
   }
   
   .leaflet-popup-content-wrapper {
@@ -56,7 +57,7 @@
     margin: 2px 0 !important;
   }
   
-  .leaflet-popup-content img:not(.flag-image):not(.college-logo):not(.trophy-image) {
+  .leaflet-popup-content img:not(.flag-image):not(.college-logo):not(.trophy-image):not(.lc-photo):not(.lc-hof-img):not(.lc-medal):not(.modal-logo):not(.palm-trophy-wm):not(.rt-av):not(.rt-flag) {
     width: 60px !important;
     height: auto !important;
   }
@@ -68,28 +69,13 @@
   }
   
   .mobile-popup .leaflet-popup-content-wrapper {
-    max-width: 320px !important;
+    max-width: 92vw !important;
   }
-  
+
   .mobile-popup .leaflet-popup-content {
-    max-width: 300px !important;
-    min-width: 280px !important;
-  }
-  
-  @media (max-width: 480px) {
-    .leaflet-popup-content {
-      min-width: 250px;
-      max-width: 280px;
-    }
-    
-    .mobile-popup .leaflet-popup-content-wrapper {
-      max-width: 280px !important;
-    }
-    
-    .mobile-popup .leaflet-popup-content {
-      max-width: 260px !important;
-      min-width: 250px !important;
-    }
+    width: 92vw !important;
+    max-width: 92vw !important;
+    min-width: 0 !important;
   }
 }
 
@@ -580,4 +566,47 @@
   .lc-years { font-size: 7.5px; }
   .lc-draft { font-size: 9px; }
   .lc-b { font-size: 8.5px; padding: 2px 5px; }
+}
+
+/* ===== Roster (tableau + stats au clic) ===== */
+/* marges négatives = annule le padding de .tab-content -> le tableau prend toute la largeur */
+.rt-scroll { max-height: 320px; overflow-y: auto; margin: -12px -14px 0; }
+.rt { width: 100%; border-collapse: separate; border-spacing: 0; font-size: 12.5px; }
+.rt thead th { color: #fff; font-size: 9px; text-transform: uppercase; letter-spacing: .6px; padding: 8px 10px; text-align: left; position: sticky; top: 0; z-index: 1; }
+.rt tbody td { padding: 7px 10px; border-bottom: 1px solid #eef2f6; vertical-align: middle; }
+.rt-row { cursor: pointer; }
+.rt-row:hover td { background: #f2f7fc; }
+.rt-row.rt-open td { background: var(--rt-tint, #eaf1f8); }
+.rt-pl { display: flex; align-items: center; gap: 8px; min-width: 0; }
+img.rt-av { width: 28px; height: 28px; border-radius: 6px; object-fit: cover; background: #dbe4f0; flex: none; }
+.rt-nm { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.rt-num { font-weight: 900; color: var(--rt-team, #00539b); }
+.rt-mut { color: #64748b; }
+img.rt-flag { width: 15px; height: 11px; object-fit: cover; border-radius: 2px; vertical-align: -1px; margin-right: 4px; flex: none; display: inline-block; }
+.rt-chev { color: #94a3b8; font-size: 11px; display: inline-block; transition: transform .28s ease; }
+.rt-row.rt-open .rt-chev { transform: rotate(90deg); color: var(--rt-team, #00539b); }
+.rt-exp > td { padding: 0 !important; border: none !important; }
+.rt-wrap { overflow: hidden; transition: max-height .34s ease; }
+.rt-panel { padding: 12px 14px; border-bottom: 1px solid #dbe7f3; text-align: left; background: var(--rt-tint, #eaf1f8); }
+.rt-season { font-size: 9.5px; text-transform: uppercase; letter-spacing: .5px; color: #7c93ab; margin-bottom: 9px; font-weight: 800; }
+.rt-hero { display: flex; gap: 7px; margin-bottom: 7px; }
+.rt-hero .rt-s { flex: 1; background: #fff; border-radius: 8px; padding: 6px 4px; text-align: center; box-shadow: 0 1px 3px rgba(0,40,90,.06); }
+.rt-hero .rt-v { font-size: 17px; font-weight: 900; line-height: 1; color: var(--rt-team, #00539b); }
+.rt-hero .rt-l { font-size: 8.5px; text-transform: uppercase; letter-spacing: .4px; color: #7c93ab; margin-top: 2px; }
+/* stats secondaires : une seule ligne horizontale */
+.rt-strip { display: flex; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,40,90,.06); }
+.rt-strip .rt-s { flex: 1; min-width: 0; text-align: center; padding: 6px 2px; border-right: 1px solid #eef2f6; }
+.rt-strip .rt-s:last-child { border-right: none; }
+.rt-strip .rt-v { font-size: 12px; font-weight: 800; color: #1b2430; }
+.rt-strip .rt-l { font-size: 8px; text-transform: uppercase; letter-spacing: .3px; color: #94a3b8; margin-top: 1px; }
+.rt-empty { font-size: 12px; color: #7c93ab; padding: 6px 0; text-align: center; }
+
+@media (max-width: 540px) {
+  .rt-scroll { margin: -10px -10px 0; }
+  .rt thead th { padding: 7px 6px; }
+  .rt tbody td { padding: 6px 6px; }
+  .rt-hero .rt-v { font-size: 15px; }
+  .rt-strip .rt-v { font-size: 10.5px; }
+  .rt-strip .rt-l { font-size: 7px; }
+  .rt-strip .rt-s { padding: 5px 1px; }
 }
