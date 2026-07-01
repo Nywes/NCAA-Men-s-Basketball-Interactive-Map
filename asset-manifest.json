@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/NCAA-Men-s-Basketball-Interactive-Map/static/css/main.e9bfa685.css",
-    "main.js": "/NCAA-Men-s-Basketball-Interactive-Map/static/js/main.4623b4ec.js",
+    "main.js": "/NCAA-Men-s-Basketball-Interactive-Map/static/js/main.8ef69d00.js",
     "static/media/4432573.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/4432573.8619e9311b4b987de87b.jpg",
     "static/media/10000000.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/10000000.2c7503f965bebb22eee0.jpg",
     "static/media/336.jpg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/336.029bcb4e3bcd5fd5403c.jpg",
@@ -421,10 +421,10 @@
     "static/media/medal-gold.svg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/medal-gold.d47500e99e11144e6dbc6da8756c60a4.svg",
     "static/media/medal-silver.svg": "/NCAA-Men-s-Basketball-Interactive-Map/static/media/medal-silver.45a122965714227bc99a9b19ac8f497d.svg",
     "main.e9bfa685.css.map": "/NCAA-Men-s-Basketball-Interactive-Map/static/css/main.e9bfa685.css.map",
-    "main.4623b4ec.js.map": "/NCAA-Men-s-Basketball-Interactive-Map/static/js/main.4623b4ec.js.map"
+    "main.8ef69d00.js.map": "/NCAA-Men-s-Basketball-Interactive-Map/static/js/main.8ef69d00.js.map"
   },
   "entrypoints": [
     "static/css/main.e9bfa685.css",
-    "static/js/main.4623b4ec.js"
+    "static/js/main.8ef69d00.js"
   ]
 }
