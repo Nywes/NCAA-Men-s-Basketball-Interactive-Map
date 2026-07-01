@@ -182,8 +182,53 @@ const PlayerCard = ({ player, tint }) => {
   );
 };
 
+// Score de "grandeur" d'une légende -> tri de la plus grande à la plus petite.
+// Pondérations ajustables : le pro (HOF/MVP/titres/All-Star) pèse le plus, puis le college, puis l'international.
+const MEDAL_PTS = { gold: 40, silver: 25, bronze: 15 };
+const legendScore = (p) => {
+  const a = p.awards || {};
+  const ncaa = a.ncaa || {};
+  const nba = a.nba || {};
+  const intl = a.intl || [];
+  let s = 0;
+  // NBA
+  if (p.hof) s += 1000;
+  if (nba.mvp) s += 400;
+  s += (Array.isArray(nba.finalsMVP) ? nba.finalsMVP.length : 0) * 200;
+  s += (Array.isArray(nba.champion) ? nba.champion.length : 0) * 60;
+  s += (typeof nba.allNBA === 'number' ? nba.allNBA : 0) * 50;
+  s += (typeof nba.allStar === 'number' ? nba.allStar : 0) * 45;
+  if (nba.roty) s += 60;
+  // College
+  if (ncaa.naismithPOY) s += 120;
+  const ncaaChamps =
+    Array.isArray(ncaa.champion) && ncaa.champion.length
+      ? ncaa.champion.length
+      : Array.isArray(p.trophy)
+      ? p.trophy.length
+      : 0;
+  s += ncaaChamps * 35;
+  if (ncaa.tournamentMOP) s += 60;
+  if (ncaa.allAmerican) s += 45;
+  // International
+  intl.forEach((m) => (s += MEDAL_PTS[m.medal] || 0));
+  // Départage : pick de draft plus haut = léger bonus
+  const dp = parseInt(p.draftPosition, 10);
+  if (!isNaN(dp) && dp > 0) s += Math.max(0, 61 - dp) * 0.5;
+  return s;
+};
+
 const TeamLegends = ({ team }) => {
-  const players = (team.oldPlayers || []).filter((p) => p.id && p.name && p.years);
+  // Ordre : joueurs "épinglés" (legendRank: 1, 2, 3…) d'abord dans cet ordre,
+  // puis les autres triés automatiquement par score de grandeur décroissant.
+  const players = (team.oldPlayers || [])
+    .filter((p) => p.id && p.name && p.years)
+    .sort((a, b) => {
+      const ra = typeof a.legendRank === 'number' ? a.legendRank : Infinity;
+      const rb = typeof b.legendRank === 'number' ? b.legendRank : Infinity;
+      if (ra !== rb) return ra - rb;
+      return legendScore(b) - legendScore(a);
+    });
   const tint = lightTint(team.color);
 
   if (players.length === 0) {
