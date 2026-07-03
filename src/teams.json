@@ -860,7 +860,7 @@
             }
           ]
         },
-        "legendRank": 3
+        "legendRank": 2
       },
       {
         "id": "3024",
@@ -887,7 +887,7 @@
           },
           "intl": []
         },
-        "legendRank": 2
+        "legendRank": 3
       },
       {
         "id": "976",
@@ -946,7 +946,7 @@
           },
           "intl": []
         },
-        "legendRank": 10
+        "legendRank": 5
       },
       {
         "id": "91",
@@ -973,7 +973,7 @@
           },
           "intl": []
         },
-        "legendRank": 11
+        "legendRank": 6
       },
       {
         "id": "4395628",
@@ -1000,7 +1000,7 @@
           },
           "intl": []
         },
-        "legendRank": 5
+        "legendRank": 7
       },
       {
         "id": "6442",
@@ -1040,7 +1040,7 @@
             }
           ]
         },
-        "legendRank": 9
+        "legendRank": 8
       },
       {
         "id": "4065648",
@@ -1080,7 +1080,7 @@
             }
           ]
         },
-        "legendRank": 7
+        "legendRank": 9
       },
       {
         "id": "3913176",
@@ -1107,7 +1107,7 @@
           },
           "intl": []
         },
-        "legendRank": 19
+        "legendRank": 10
       },
       {
         "id": "4432573",
@@ -1134,7 +1134,7 @@
           },
           "intl": []
         },
-        "legendRank": 17
+        "legendRank": 11
       },
       {
         "id": "5041939",
@@ -1161,7 +1161,7 @@
           },
           "intl": []
         },
-        "legendRank": 14
+        "legendRank": 12
       },
       {
         "id": "1703",
@@ -1228,7 +1228,7 @@
           },
           "intl": []
         },
-        "legendRank": 18
+        "legendRank": 14
       },
       {
         "id": "240",
@@ -1257,7 +1257,7 @@
           },
           "intl": []
         },
-        "legendRank": 12
+        "legendRank": 15
       },
       {
         "id": "361",
@@ -1287,7 +1287,7 @@
           },
           "intl": []
         },
-        "legendRank": 6
+        "legendRank": 16
       },
       {
         "id": "1733",
@@ -1316,7 +1316,7 @@
           },
           "intl": []
         },
-        "legendRank": 8
+        "legendRank": 17
       },
       {
         "id": "5157",
@@ -1343,7 +1343,7 @@
           },
           "intl": []
         },
-        "legendRank": 16
+        "legendRank": 18
       },
       {
         "id": "3713",
@@ -1370,7 +1370,7 @@
           },
           "intl": []
         },
-        "legendRank": 15
+        "legendRank": 19
       },
       {
         "id": "3056600",
@@ -1427,6 +1427,33 @@
           "intl": []
         },
         "legendRank": 21
+      },
+      {
+        "id": "9000230",
+        "name": "Cameron Boozer",
+        "years": "2025-2026",
+        "draftPosition": "3",
+        "draftYear": "2026",
+        "draftTeam": "Memphis Grizzlies",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "2026",
+            "tournamentMOP": "",
+            "allAmerican": "2026"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 22
       }
     ],
     "tournament": {
@@ -3111,7 +3138,7 @@
             }
           ]
         },
-        "legendRank": 4
+        "legendRank": 3
       },
       {
         "id": "3991",
@@ -3140,7 +3167,7 @@
           },
           "intl": []
         },
-        "legendRank": 3
+        "legendRank": 4
       },
       {
         "id": "5533",
@@ -3199,7 +3226,7 @@
           },
           "intl": []
         },
-        "legendRank": 7
+        "legendRank": 6
       },
       {
         "id": "3011",
@@ -3234,7 +3261,7 @@
             }
           ]
         },
-        "legendRank": 9
+        "legendRank": 7
       },
       {
         "id": "3678",
@@ -3294,7 +3321,7 @@
             }
           ]
         },
-        "legendRank": 6
+        "legendRank": 9
       },
       {
         "id": "883",
@@ -3324,6 +3351,33 @@
           "intl": []
         },
         "legendRank": 10
+      },
+      {
+        "id": "9000231",
+        "name": "Caleb Wilson",
+        "years": "2025-2026",
+        "draftPosition": "4",
+        "draftYear": "2026",
+        "draftTeam": "Chicago Bulls",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 11
       }
     ],
     "venue": "Dean E. Smith Center",
@@ -11891,7 +11945,70 @@
         "years": "2007-2009",
         "draftPosition": "3",
         "draftYear": "2009",
-        "draftTeam": "Oklahoma City Thunder"
+        "draftTeam": "Oklahoma City Thunder",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2009"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "2018",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 11,
+            "allNBA": 8
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "2012"
+            },
+            {
+              "medal": "gold",
+              "event": "FIBA World Cup",
+              "year": "2014"
+            }
+          ]
+        },
+        "legendRank": 1
+      },
+      {
+        "id": "9000200",
+        "name": "Joe Caldwell",
+        "years": "1961-1964",
+        "draftPosition": "2",
+        "draftYear": "1964",
+        "draftTeam": "Detroit Pistons",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 2,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1964"
+            }
+          ]
+        },
+        "legendRank": 2
       },
       {
         "id": "3483",
@@ -11899,20 +12016,213 @@
         "years": "1979-1983",
         "draftPosition": "4",
         "draftYear": "1983",
-        "draftTeam": "San Diego Clippers"
+        "draftTeam": "San Diego Clippers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "1985",
+              "1987",
+              "1988"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 3
       },
       {
         "id": "3763",
         "name": "Fat Lever",
-        "years": "1979-1982",
+        "years": "1978-1982",
         "draftPosition": "11",
         "draftYear": "1982",
-        "draftTeam": "Portland Trail Blazers"
+        "draftTeam": "Portland Trail Blazers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 2,
+            "allNBA": 1
+          },
+          "intl": []
+        },
+        "legendRank": 4
+      },
+      {
+        "id": "9000201",
+        "name": "Lionel Hollins",
+        "years": "1973-1975",
+        "draftPosition": "6",
+        "draftYear": "1975",
+        "draftTeam": "Portland Trail Blazers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "1977"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
+      },
+      {
+        "id": "9000202",
+        "name": "Freddie Lewis",
+        "years": "1964-1966",
+        "draftPosition": "88",
+        "draftYear": "1966",
+        "draftTeam": "Cincinnati Royals",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
+      },
+      {
+        "id": "9000203",
+        "name": "Ike Diogu",
+        "years": "2002-2005",
+        "draftPosition": "9",
+        "draftYear": "2005",
+        "draftTeam": "Golden State Warriors",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2005"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "AfroBasket",
+              "year": "2015"
+            },
+            {
+              "medal": "silver",
+              "event": "AfroBasket",
+              "year": "2017"
+            }
+          ]
+        },
+        "legendRank": 7
       },
       {
         "id": "4397020",
         "name": "Luguentz Dort",
-        "years": "2018-2019"
+        "years": "2018-2019",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "2025"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "bronze",
+              "event": "FIBA World Cup",
+              "year": "2023"
+            }
+          ]
+        },
+        "legendRank": 8
+      },
+      {
+        "id": "9000204",
+        "name": "Alton Lister",
+        "years": "1978-1981",
+        "draftPosition": "21",
+        "draftYear": "1981",
+        "draftTeam": "Milwaukee Bucks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 9
       }
     ],
     "conference": "Big 12",
@@ -11943,7 +12253,57 @@
         "years": "1985-1989",
         "draftPosition": "3",
         "draftYear": "1989",
-        "draftTeam": "San Antonio Spurs"
+        "draftTeam": "San Antonio Spurs",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "1989",
+            "tournamentMOP": "",
+            "allAmerican": "1988, 1989"
+          },
+          "nba": {
+            "champion": [
+              "1999"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 2,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 1
+      },
+      {
+        "id": "61",
+        "name": "Mike Bibby",
+        "years": "1996-1998",
+        "draftPosition": "2",
+        "draftYear": "1998",
+        "draftTeam": "Vancouver Grizzlies",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1997"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1998"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 2
       },
       {
         "id": "974",
@@ -11951,53 +12311,84 @@
         "years": "1999-2001",
         "draftPosition": "31",
         "draftYear": "2001",
-        "draftTeam": "Golden State Warriors"
-      },
-      {
-        "id": "61",
-        "name": "Mike Bibby",
-        "years": "1996-1998",
-        "trophy": [
-          "1997"
-        ],
-        "draftPosition": "2",
-        "draftYear": "1998",
-        "draftTeam": "Vancouver Grizzlies"
-      },
-      {
-        "id": "2386",
-        "name": "Andre Iguodala",
-        "years": "2002-2004",
-        "draftPosition": "9",
-        "draftYear": "2004",
-        "draftTeam": "Philadelphia Sixers"
-      },
-      {
-        "id": "817",
-        "name": "Damon Stoudemire",
-        "years": "1991-1995",
-        "draftPosition": "7",
-        "draftYear": "1995",
-        "draftTeam": "Toronto Raptors"
+        "draftTeam": "Golden State Warriors",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 3,
+            "allNBA": 3
+          },
+          "intl": []
+        },
+        "legendRank": 3
       },
       {
         "id": "841",
         "name": "Jason Terry",
         "years": "1995-1999",
-        "trophy": [
-          "1997"
-        ],
         "draftPosition": "10",
         "draftYear": "1999",
-        "draftTeam": "Atlanta Hawks"
+        "draftTeam": "Atlanta Hawks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1997"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1999"
+          },
+          "nba": {
+            "champion": [
+              "2011"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 4
       },
       {
-        "id": "1006",
-        "name": "Richard Jefferson",
-        "years": "1998-2001",
-        "draftPosition": "13",
-        "draftYear": "2001",
-        "draftTeam": "Houston Rockets"
+        "id": "817",
+        "name": "Damon Stoudamire",
+        "years": "1991-1995",
+        "draftPosition": "7",
+        "draftYear": "1995",
+        "draftTeam": "Toronto Raptors",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1995"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "1996",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
       },
       {
         "id": "425",
@@ -12005,23 +12396,106 @@
         "years": "1983-1988",
         "draftPosition": "50",
         "draftYear": "1988",
-        "draftTeam": "Phoenix Suns"
+        "draftTeam": "Phoenix Suns",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1988"
+          },
+          "nba": {
+            "champion": [
+              "1996",
+              "1997",
+              "1998",
+              "1999",
+              "2003"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
       },
       {
-        "id": "4066336",
-        "name": "Lauri Markkanen",
-        "years": "2016-2017",
-        "draftPosition": "7",
-        "draftYear": "2017",
-        "draftTeam": "Minnesota Timberwolves"
+        "id": "2386",
+        "name": "Andre Iguodala",
+        "years": "2002-2004",
+        "draftPosition": "9",
+        "draftYear": "2004",
+        "draftTeam": "Philadelphia 76ers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "2015",
+              "2017",
+              "2018",
+              "2022"
+            ],
+            "mvp": "",
+            "finalsMVP": [
+              "2015"
+            ],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "2012"
+            },
+            {
+              "medal": "gold",
+              "event": "FIBA World Cup",
+              "year": "2010"
+            }
+          ]
+        },
+        "legendRank": 7
       },
       {
-        "id": "3064290",
-        "name": "Aaron Gordon",
-        "years": "2013-2014",
-        "draftPosition": "4",
-        "draftYear": "2014",
-        "draftTeam": "Orlando Magic"
+        "id": "1041",
+        "name": "Miles Simon",
+        "years": "1994-1998",
+        "draftPosition": "42",
+        "draftYear": "1998",
+        "draftTeam": "Orlando Magic",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1997"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "1997",
+            "allAmerican": "1998"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 8
       },
       {
         "id": "4278129",
@@ -12029,7 +12503,173 @@
         "years": "2017-2018",
         "draftPosition": "1",
         "draftYear": "2018",
-        "draftTeam": "Phoenix Suns"
+        "draftTeam": "Phoenix Suns",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2018"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 9
+      },
+      {
+        "id": "3064290",
+        "name": "Aaron Gordon",
+        "years": "2013-2014",
+        "draftPosition": "4",
+        "draftYear": "2014",
+        "draftTeam": "Orlando Magic",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "2023"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 10
+      },
+      {
+        "id": "4066336",
+        "name": "Lauri Markkanen",
+        "years": "2016-2017",
+        "draftPosition": "7",
+        "draftYear": "2017",
+        "draftTeam": "Minnesota Timberwolves",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 11
+      },
+      {
+        "id": "1006",
+        "name": "Richard Jefferson",
+        "years": "1998-2001",
+        "draftPosition": "13",
+        "draftYear": "2001",
+        "draftTeam": "Houston Rockets",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "2016"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "bronze",
+              "event": "Olympics",
+              "year": "2004"
+            }
+          ]
+        },
+        "legendRank": 12
+      },
+      {
+        "id": "2754",
+        "name": "Channing Frye",
+        "years": "2001-2005",
+        "draftPosition": "8",
+        "draftYear": "2005",
+        "draftTeam": "New York Knicks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "2016"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 13
+      },
+      {
+        "id": "9000227",
+        "name": "Brayden Burries",
+        "years": "2025-2026",
+        "draftPosition": "10",
+        "draftYear": "2026",
+        "draftTeam": "Milwaukee Bucks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 14
       }
     ],
     "conference": "Big 12",
@@ -12092,12 +12732,247 @@
     "longitude": "-111.6493609",
     "oldPlayers": [
       {
+        "id": "6434",
+        "name": "Jimmer Fredette",
+        "years": "2007-2011",
+        "draftPosition": "10",
+        "draftYear": "2011",
+        "draftTeam": "Milwaukee Bucks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "2011",
+            "tournamentMOP": "",
+            "allAmerican": "2011"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 1
+      },
+      {
         "id": "3622",
         "name": "Danny Ainge",
         "years": "1977-1981",
         "draftPosition": "31",
         "draftYear": "1981",
-        "draftTeam": "Boston Celtics"
+        "draftTeam": "Boston Celtics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1981"
+          },
+          "nba": {
+            "champion": [
+              "1984",
+              "1986"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 2
+      },
+      {
+        "id": "9000206",
+        "name": "Kresimir Cosic",
+        "years": "1970-1973",
+        "draftPosition": "73",
+        "draftYear": "1973",
+        "draftTeam": "Los Angeles Lakers",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1980"
+            },
+            {
+              "medal": "silver",
+              "event": "Olympics",
+              "year": "1968"
+            },
+            {
+              "medal": "silver",
+              "event": "Olympics",
+              "year": "1976"
+            },
+            {
+              "medal": "gold",
+              "event": "FIBA World Cup",
+              "year": "1970"
+            },
+            {
+              "medal": "gold",
+              "event": "FIBA World Cup",
+              "year": "1978"
+            },
+            {
+              "medal": "silver",
+              "event": "FIBA World Cup",
+              "year": "1967"
+            },
+            {
+              "medal": "silver",
+              "event": "FIBA World Cup",
+              "year": "1974"
+            },
+            {
+              "medal": "gold",
+              "event": "EuroBasket",
+              "year": "1973"
+            },
+            {
+              "medal": "gold",
+              "event": "EuroBasket",
+              "year": "1975"
+            },
+            {
+              "medal": "gold",
+              "event": "EuroBasket",
+              "year": "1977"
+            }
+          ]
+        },
+        "legendRank": 3
+      },
+      {
+        "id": "5217",
+        "name": "Mel Hutchins",
+        "years": "1947-1951",
+        "draftPosition": "2",
+        "draftYear": "1951",
+        "draftTeam": "Tri-Cities Blackhawks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1951"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 4,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 4
+      },
+      {
+        "id": "88",
+        "name": "Shawn Bradley",
+        "years": "1990-1991",
+        "draftPosition": "2",
+        "draftYear": "1993",
+        "draftTeam": "Philadelphia 76ers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
+      },
+      {
+        "id": "4865",
+        "name": "Devin Durrant",
+        "years": "1980-1984",
+        "draftPosition": "25",
+        "draftYear": "1984",
+        "draftTeam": "Indiana Pacers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1984"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
+      },
+      {
+        "id": "9000229",
+        "name": "AJ Dybantsa",
+        "years": "2025-2026",
+        "draftPosition": "1",
+        "draftYear": "2026",
+        "draftTeam": "Washington Wizards",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2026"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 7
       }
     ],
     "conference": "Big 12",
@@ -12125,34 +13000,92 @@
     "longitude": "-97.1212122",
     "oldPlayers": [
       {
-        "id": "4278053",
-        "name": "Davion Mitchell",
-        "years": "2019-2021",
-        "trophy": [
-          "2021"
-        ],
-        "draftPosition": "9",
-        "draftYear": "2021",
-        "draftTeam": "Sacramento Kings"
-      },
-      {
-        "id": "4395695",
-        "name": "Jared Butler",
-        "years": "2018-2021",
-        "trophy": [
-          "2021"
-        ],
-        "draftPosition": "40",
-        "draftYear": "2021",
-        "draftTeam": "New Orleans Pelicans"
-      },
-      {
         "id": "5275",
         "name": "Vinnie Johnson",
         "years": "1977-1979",
         "draftPosition": "7",
         "draftYear": "1979",
-        "draftTeam": "Seattle SuperSonics"
+        "draftTeam": "Seattle SuperSonics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "1989",
+              "1990"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 1
+      },
+      {
+        "id": "4395695",
+        "name": "Jared Butler",
+        "years": "2018-2021",
+        "draftPosition": "40",
+        "draftYear": "2021",
+        "draftTeam": "New Orleans Pelicans",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "2021"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "2021",
+            "allAmerican": "2021"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 2
+      },
+      {
+        "id": "4278053",
+        "name": "Davion Mitchell",
+        "years": "2019-2021",
+        "draftPosition": "9",
+        "draftYear": "2021",
+        "draftTeam": "Sacramento Kings",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "2021"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2021"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 3
       },
       {
         "id": "6159",
@@ -12160,15 +13093,167 @@
         "years": "1978-1982",
         "draftPosition": "16",
         "draftYear": "1982",
-        "draftTeam": "Houston Rockets"
+        "draftTeam": "Houston Rockets",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 4
       },
       {
-        "id": "5124612",
-        "name": "V.J. Edgecombe",
-        "years": "2024-2025",
-        "draftPosition": "3",
-        "draftYear": "2025",
-        "draftTeam": "Philadelphia Sixers"
+        "id": "904",
+        "name": "David Wesley",
+        "years": "1990-1992",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
+      },
+      {
+        "id": "9000205",
+        "name": "Jack Robinson",
+        "years": "1945-1948",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1948"
+            }
+          ]
+        },
+        "legendRank": 6
+      },
+      {
+        "id": "4261",
+        "name": "Ekpe Udoh",
+        "years": "2008-2010",
+        "draftPosition": "6",
+        "draftYear": "2010",
+        "draftTeam": "Golden State Warriors",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 7
+      },
+      {
+        "id": "3059306",
+        "name": "Johnathan Motley",
+        "years": "2014-2017",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2017"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 8
+      },
+      {
+        "id": "2990962",
+        "name": "Taurean Prince",
+        "years": "2012-2016",
+        "draftPosition": "12",
+        "draftYear": "2016",
+        "draftTeam": "Utah Jazz",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 9
       }
     ],
     "conference": "Big 12",
@@ -12212,7 +13297,32 @@
         "years": "1957-1960",
         "draftPosition": "1",
         "draftYear": "1960",
-        "draftTeam": "Cincinnati Royals"
+        "draftTeam": "Cincinnati Royals",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "1960",
+            "tournamentMOP": "",
+            "allAmerican": "1958, 1959, 1960"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "1964",
+            "finalsMVP": [],
+            "roty": "1961",
+            "allStar": 12,
+            "allNBA": 11
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1960"
+            }
+          ]
+        },
+        "legendRank": 1
       },
       {
         "id": "515",
@@ -12220,7 +13330,26 @@
         "years": "1996-2000",
         "draftPosition": "1",
         "draftYear": "2000",
-        "draftTeam": "New Jersey Nets"
+        "draftTeam": "New Jersey Nets",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "2000",
+            "tournamentMOP": "",
+            "allAmerican": "2000"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 2
       },
       {
         "id": "6224",
@@ -12228,7 +13357,120 @@
         "years": "1952-1955",
         "draftPosition": "8",
         "draftYear": "1955",
-        "draftTeam": "Rochester Royals"
+        "draftTeam": "Rochester Royals",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 6,
+            "allNBA": 2
+          },
+          "intl": []
+        },
+        "legendRank": 3
+      },
+      {
+        "id": "9000207",
+        "name": "Paul Hogue",
+        "years": "1959-1962",
+        "draftPosition": "2",
+        "draftYear": "1962",
+        "draftTeam": "New York Knicks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1961",
+              "1962"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "1962",
+            "allAmerican": "1962"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 4
+      },
+      {
+        "id": "9000208",
+        "name": "Tom Thacker",
+        "years": "1960-1963",
+        "draftPosition": "5",
+        "draftYear": "1963",
+        "draftTeam": "Cincinnati Royals",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1961",
+              "1962"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1963"
+          },
+          "nba": {
+            "champion": [
+              "1968"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
+      },
+      {
+        "id": "9000209",
+        "name": "Ron Bonham",
+        "years": "1961-1964",
+        "draftPosition": "16",
+        "draftYear": "1964",
+        "draftTeam": "Boston Celtics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1962"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1963"
+          },
+          "nba": {
+            "champion": [
+              "1965",
+              "1966"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
       },
       {
         "id": "868",
@@ -12236,15 +13478,142 @@
         "years": "1991-1993",
         "draftPosition": "37",
         "draftYear": "1993",
-        "draftTeam": "Los Angeles Lakers"
+        "draftTeam": "Los Angeles Lakers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 7
       },
       {
-        "id": "4244",
-        "name": "Lance Stephenson",
-        "years": "2009-2010",
-        "draftPosition": "40",
-        "draftYear": "2010",
-        "draftTeam": "Indiana Pacers"
+        "id": "248",
+        "name": "Danny Fortson",
+        "years": "1994-1997",
+        "draftPosition": "10",
+        "draftYear": "1997",
+        "draftTeam": "Milwaukee Bucks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1997"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 8
+      },
+      {
+        "id": "9000210",
+        "name": "George Wilson",
+        "years": "1961-1964",
+        "draftPosition": "8",
+        "draftYear": "1964",
+        "draftTeam": "Cincinnati Royals",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1962"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1964"
+            }
+          ]
+        },
+        "legendRank": 9
+      },
+      {
+        "id": "9000211",
+        "name": "Steve Logan",
+        "years": "1998-2002",
+        "draftPosition": "30",
+        "draftYear": "2002",
+        "draftTeam": "Golden State Warriors",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2002"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 10
+      },
+      {
+        "id": "2488689",
+        "name": "Sean Kilpatrick",
+        "years": "2010-2014",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2014"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 11
       }
     ],
     "conference": "Big 12",
@@ -12295,7 +13664,30 @@
         "years": "1995-1997",
         "draftPosition": "3",
         "draftYear": "1997",
-        "draftTeam": "Boston Celtics"
+        "draftTeam": "Boston Celtics",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1997"
+          },
+          "nba": {
+            "champion": [
+              "2004"
+            ],
+            "mvp": "",
+            "finalsMVP": [
+              "2004"
+            ],
+            "roty": "",
+            "allStar": 5,
+            "allNBA": 3
+          },
+          "intl": []
+        },
+        "legendRank": 1
       },
       {
         "id": "6305",
@@ -12303,7 +13695,29 @@
         "years": "1971-1974",
         "draftPosition": "6",
         "draftYear": "1974",
-        "draftTeam": "Kansas City-Omaha Kings"
+        "draftTeam": "Kansas City-Omaha Kings",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "1984",
+              "1986"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 2,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 2
       },
       {
         "id": "3078576",
@@ -12311,31 +13725,72 @@
         "years": "2016-2017",
         "draftPosition": "29",
         "draftYear": "2017",
-        "draftTeam": "San Antonio Spurs"
+        "draftTeam": "San Antonio Spurs",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "2024"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "2024"
+            }
+          ]
+        },
+        "legendRank": 3
       },
       {
-        "id": "3740",
-        "name": "Jay Humphries",
-        "years": "1980-1984",
-        "draftPosition": "13",
-        "draftYear": "1984",
-        "draftTeam": "Phoenix Suns"
-      },
-      {
-        "id": "6346",
-        "name": "Chuck Williams",
-        "years": "1965-1968",
-        "draftPosition": "76",
-        "draftYear": "1968",
-        "draftTeam": "Philadelphia Sixers"
-      },
-      {
-        "id": "2580782",
-        "name": "Spencer Dinwiddie",
-        "years": "2011-2014",
-        "draftPosition": "38",
-        "draftYear": "2014",
-        "draftTeam": "Detroit Pistons"
+        "id": "9000212",
+        "name": "Burdette Haldorson",
+        "years": "1951-1955",
+        "draftPosition": "23",
+        "draftYear": "1955",
+        "draftTeam": "St. Louis Hawks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1955"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1956"
+            },
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1960"
+            }
+          ]
+        },
+        "legendRank": 4
       },
       {
         "id": "6429",
@@ -12343,7 +13798,53 @@
         "years": "2009-2011",
         "draftPosition": "12",
         "draftYear": "2011",
-        "draftTeam": "Utah Jazz"
+        "draftTeam": "Utah Jazz",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
+      },
+      {
+        "id": "2580782",
+        "name": "Spencer Dinwiddie",
+        "years": "2011-2014",
+        "draftPosition": "38",
+        "draftYear": "2014",
+        "draftTeam": "Detroit Pistons",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
       }
     ],
     "conference": "Big 12",
@@ -12378,7 +13879,38 @@
         "years": "1981-1984",
         "draftPosition": "1",
         "draftYear": "1984",
-        "draftTeam": "Houston Rockets"
+        "draftTeam": "Houston Rockets",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "1983",
+            "allAmerican": "1984"
+          },
+          "nba": {
+            "champion": [
+              "1994",
+              "1995"
+            ],
+            "mvp": "1994",
+            "finalsMVP": [
+              "1994",
+              "1995"
+            ],
+            "roty": "",
+            "allStar": 12,
+            "allNBA": 12
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1996"
+            }
+          ]
+        },
+        "legendRank": 1
       },
       {
         "id": "4134",
@@ -12386,7 +13918,28 @@
         "years": "1965-1968",
         "draftPosition": "1",
         "draftYear": "1968",
-        "draftTeam": "San Diego Rockets"
+        "draftTeam": "San Diego Rockets",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "1968",
+            "tournamentMOP": "",
+            "allAmerican": "1967, 1968"
+          },
+          "nba": {
+            "champion": [
+              "1978"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 12,
+            "allNBA": 6
+          },
+          "intl": []
+        },
+        "legendRank": 2
       },
       {
         "id": "3686",
@@ -12394,7 +13947,34 @@
         "years": "1980-1983",
         "draftPosition": "14",
         "draftYear": "1983",
-        "draftTeam": "Portland Trail Blazers"
+        "draftTeam": "Portland Trail Blazers",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1983"
+          },
+          "nba": {
+            "champion": [
+              "1995"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 10,
+            "allNBA": 5
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1992"
+            }
+          ]
+        },
+        "legendRank": 3
       },
       {
         "id": "4529",
@@ -12402,7 +13982,137 @@
         "years": "1973-1977",
         "draftPosition": "2",
         "draftYear": "1977",
-        "draftTeam": "Kansas City Kings"
+        "draftTeam": "Kansas City Kings",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1977"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 4,
+            "allNBA": 1
+          },
+          "intl": []
+        },
+        "legendRank": 4
+      },
+      {
+        "id": "9000213",
+        "name": "Don Chaney",
+        "years": "1965-1968",
+        "draftPosition": "12",
+        "draftYear": "1968",
+        "draftTeam": "Boston Celtics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "1969",
+              "1974"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
+      },
+      {
+        "id": "9000214",
+        "name": "Michael Young",
+        "years": "1980-1984",
+        "draftPosition": "24",
+        "draftYear": "1984",
+        "draftTeam": "Boston Celtics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
+      },
+      {
+        "id": "4432107",
+        "name": "Marcus Sasser",
+        "years": "2019-2023",
+        "draftPosition": "25",
+        "draftYear": "2023",
+        "draftTeam": "Detroit Pistons",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2023"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 7
+      },
+      {
+        "id": "4432241",
+        "name": "Jamal Shead",
+        "years": "2020-2024",
+        "draftPosition": "45",
+        "draftYear": "2024",
+        "draftTeam": "Toronto Raptors",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2024"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 8
       }
     ],
     "conference": "Big 12",
@@ -12455,7 +14165,32 @@
         "years": "2018-2020",
         "draftPosition": "12",
         "draftYear": "2020",
-        "draftTeam": "Sacramento Kings"
+        "draftTeam": "Sacramento Kings",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 2,
+            "allNBA": 2
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "2024"
+            }
+          ]
+        },
+        "legendRank": 1
       },
       {
         "id": "346",
@@ -12463,7 +14198,167 @@
         "years": "1982-1986",
         "draftPosition": "46",
         "draftYear": "1986",
-        "draftTeam": "Phoenix Suns"
+        "draftTeam": "Phoenix Suns",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 2
+      },
+      {
+        "id": "339",
+        "name": "Fred Hoiberg",
+        "years": "1991-1995",
+        "draftPosition": "52",
+        "draftYear": "1995",
+        "draftTeam": "Indiana Pacers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 3
+      },
+      {
+        "id": "247",
+        "name": "Marcus Fizer",
+        "years": "1997-2000",
+        "draftPosition": "4",
+        "draftYear": "2000",
+        "draftTeam": "Chicago Bulls",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2000"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 4
+      },
+      {
+        "id": "3720",
+        "name": "Jeff Grayer",
+        "years": "1984-1988",
+        "draftPosition": "13",
+        "draftYear": "1988",
+        "draftTeam": "Milwaukee Bucks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "bronze",
+              "event": "Olympics",
+              "year": "1988"
+            }
+          ]
+        },
+        "legendRank": 5
+      },
+      {
+        "id": "1024",
+        "name": "Jamaal Tinsley",
+        "years": "1999-2001",
+        "draftPosition": "27",
+        "draftYear": "2001",
+        "draftTeam": "Vancouver Grizzlies",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2001"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
+      },
+      {
+        "id": "2990969",
+        "name": "Georges Niang",
+        "years": "2012-2016",
+        "draftPosition": "50",
+        "draftYear": "2016",
+        "draftTeam": "Indiana Pacers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2016"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 7
       },
       {
         "id": "3059310",
@@ -12471,7 +14366,53 @@
         "years": "2013-2017",
         "draftPosition": "51",
         "draftYear": "2017",
-        "draftTeam": "Denver Nuggets"
+        "draftTeam": "Denver Nuggets",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 8
+      },
+      {
+        "id": "9000215",
+        "name": "Gary Thompson",
+        "years": "1954-1957",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1957"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 9
       }
     ],
     "conference": "Big 12",
@@ -12511,23 +14452,30 @@
         "draftPosition": "",
         "draftYear": "1959",
         "draftTeam": "Philadelphia Warriors",
-        "territorialPick": true
-      },
-      {
-        "id": "5468",
-        "name": "Clyde Lovellette",
-        "years": "1949-1952",
-        "draftPosition": "9",
-        "draftYear": "1952",
-        "draftTeam": "Minneapolis Lakers"
-      },
-      {
-        "id": "22124169",
-        "name": "Jo Jo White",
-        "years": "1965-1969",
-        "draftPosition": "9",
-        "draftYear": "1969",
-        "draftTeam": "Boston Celtics"
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1957, 1958"
+          },
+          "nba": {
+            "champion": [
+              "1967",
+              "1972"
+            ],
+            "mvp": "1960",
+            "finalsMVP": [
+              "1972"
+            ],
+            "roty": "1960",
+            "allStar": 13,
+            "allNBA": 10
+          },
+          "intl": []
+        },
+        "legendRank": 1
       },
       {
         "id": "662",
@@ -12535,15 +14483,30 @@
         "years": "1995-1998",
         "draftPosition": "10",
         "draftYear": "1998",
-        "draftTeam": "Boston Celtics"
-      },
-      {
-        "id": "3133601",
-        "name": "Devonte Graham",
-        "years": "2014-2018",
-        "draftPosition": "34",
-        "draftYear": "2018",
-        "draftTeam": "Atlanta Hawks"
+        "draftTeam": "Boston Celtics",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1998"
+          },
+          "nba": {
+            "champion": [
+              "2008"
+            ],
+            "mvp": "",
+            "finalsMVP": [
+              "2008"
+            ],
+            "roty": "",
+            "allStar": 10,
+            "allNBA": 4
+          },
+          "intl": []
+        },
+        "legendRank": 2
       },
       {
         "id": "3059318",
@@ -12551,7 +14514,165 @@
         "years": "2013-2014",
         "draftPosition": "3",
         "draftYear": "2014",
-        "draftTeam": "Philadelphia Sixers"
+        "draftTeam": "Philadelphia Sixers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "2023",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 7,
+            "allNBA": 5
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "2024"
+            }
+          ]
+        },
+        "legendRank": 3
+      },
+      {
+        "id": "22124169",
+        "name": "Jo Jo White",
+        "years": "1965-1969",
+        "draftPosition": "9",
+        "draftYear": "1969",
+        "draftTeam": "Boston Celtics",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1968, 1969"
+          },
+          "nba": {
+            "champion": [
+              "1974",
+              "1976"
+            ],
+            "mvp": "",
+            "finalsMVP": [
+              "1976"
+            ],
+            "roty": "",
+            "allStar": 7,
+            "allNBA": 2
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1968"
+            }
+          ]
+        },
+        "legendRank": 4
+      },
+      {
+        "id": "5468",
+        "name": "Clyde Lovellette",
+        "years": "1949-1952",
+        "draftPosition": "9",
+        "draftYear": "1952",
+        "draftTeam": "Minneapolis Lakers",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1952"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "1952",
+            "allAmerican": "1951, 1952"
+          },
+          "nba": {
+            "champion": [
+              "1954",
+              "1963",
+              "1964"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 4,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1952"
+            }
+          ]
+        },
+        "legendRank": 5
+      },
+      {
+        "id": "506",
+        "name": "Danny Manning",
+        "years": "1984-1988",
+        "draftPosition": "1",
+        "draftYear": "1988",
+        "draftTeam": "Los Angeles Clippers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1988"
+            ],
+            "naismithPOY": "1988",
+            "tournamentMOP": "1988",
+            "allAmerican": "1987, 1988"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 2,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
+      },
+      {
+        "id": "3059315",
+        "name": "Frank Mason III",
+        "years": "2013-2017",
+        "draftPosition": "34",
+        "draftYear": "2017",
+        "draftTeam": "Sacramento Kings",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "2017",
+            "tournamentMOP": "",
+            "allAmerican": "2017"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 7
       },
       {
         "id": "3059319",
@@ -12559,7 +14680,224 @@
         "years": "2013-2014",
         "draftPosition": "1",
         "draftYear": "2014",
-        "draftTeam": "Cleveland Cavaliers"
+        "draftTeam": "Cleveland Cavaliers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2014"
+          },
+          "nba": {
+            "champion": [
+              "2022"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "2015",
+            "allStar": 1,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 8
+      },
+      {
+        "id": "3419",
+        "name": "Mario Chalmers",
+        "years": "2005-2008",
+        "draftPosition": "34",
+        "draftYear": "2008",
+        "draftTeam": "Minnesota Timberwolves",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "2008"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "2008",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "2012",
+              "2013"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 9
+      },
+      {
+        "id": "454",
+        "name": "Raef LaFrentz",
+        "years": "1994-1998",
+        "draftPosition": "3",
+        "draftYear": "1998",
+        "draftTeam": "Denver Nuggets",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1997, 1998"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 10
+      },
+      {
+        "id": "1978",
+        "name": "Nick Collison",
+        "years": "1999-2003",
+        "draftPosition": "12",
+        "draftYear": "2003",
+        "draftTeam": "Seattle SuperSonics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "2003",
+            "tournamentMOP": "",
+            "allAmerican": "2003"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 11
+      },
+      {
+        "id": "1711",
+        "name": "Drew Gooden",
+        "years": "1999-2002",
+        "draftPosition": "4",
+        "draftYear": "2002",
+        "draftTeam": "Memphis Grizzlies",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "2002",
+            "tournamentMOP": "",
+            "allAmerican": "2002"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 12
+      },
+      {
+        "id": "1981",
+        "name": "Kirk Hinrich",
+        "years": "1999-2003",
+        "draftPosition": "7",
+        "draftYear": "2003",
+        "draftTeam": "Chicago Bulls",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 13
+      },
+      {
+        "id": "4397018",
+        "name": "Ochai Agbaji",
+        "years": "2018-2022",
+        "draftPosition": "14",
+        "draftYear": "2022",
+        "draftTeam": "Cleveland Cavaliers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "2022"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "2022",
+            "allAmerican": "2022"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 14
+      },
+      {
+        "id": "9000226",
+        "name": "Darryn Peterson",
+        "years": "2025-2026",
+        "draftPosition": "2",
+        "draftYear": "2026",
+        "draftTeam": "Utah Jazz",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 15
       }
     ],
     "conference": "Big 12",
@@ -12654,7 +14992,72 @@
         "years": "1986-1988",
         "draftPosition": "5",
         "draftYear": "1988",
-        "draftTeam": "Golden State Warriors"
+        "draftTeam": "Golden State Warriors",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1988"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "1989",
+            "allStar": 6,
+            "allNBA": 5
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1996"
+            },
+            {
+              "medal": "bronze",
+              "event": "Olympics",
+              "year": "1988"
+            }
+          ]
+        },
+        "legendRank": 1
+      },
+      {
+        "id": "4554",
+        "name": "Bob Boozer",
+        "years": "1955-1959",
+        "draftPosition": "1",
+        "draftYear": "1959",
+        "draftTeam": "Cincinnati Royals",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1958, 1959"
+          },
+          "nba": {
+            "champion": [
+              "1971"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1960"
+            }
+          ]
+        },
+        "legendRank": 2
       },
       {
         "id": "3418",
@@ -12662,15 +15065,26 @@
         "years": "2007-2008",
         "draftPosition": "2",
         "draftYear": "2008",
-        "draftTeam": "Miami Heat"
-      },
-      {
-        "id": "4554",
-        "name": "Bob Boozer",
-        "years": "1955-1958",
-        "draftPosition": "1",
-        "draftYear": "1959",
-        "draftTeam": "Cincinnati Royals"
+        "draftTeam": "Miami Heat",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2008"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 3
       },
       {
         "id": "3640",
@@ -12678,7 +15092,53 @@
         "years": "1977-1981",
         "draftPosition": "9",
         "draftYear": "1981",
-        "draftTeam": "Dallas Mavericks"
+        "draftTeam": "Dallas Mavericks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 4,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 4
+      },
+      {
+        "id": "9000220",
+        "name": "Ernie Barrett",
+        "years": "1948-1951",
+        "draftPosition": "7",
+        "draftYear": "1951",
+        "draftTeam": "Boston Celtics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1951"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
       }
     ],
     "conference": "Big 12",
@@ -12729,23 +15189,43 @@
       {
         "id": "638103945",
         "name": "Bob Kurland",
-        "years": "1942-1946"
-      },
-      {
-        "id": "2367",
-        "name": "Tony Allen",
-        "years": "2002-2004",
-        "draftPosition": "25",
-        "draftYear": "2004",
-        "draftTeam": "Boston Celtics"
-      },
-      {
-        "id": "2990992",
-        "name": "Marcus Smart",
-        "years": "2012-2014",
-        "draftPosition": "6",
-        "draftYear": "2014",
-        "draftTeam": "Boston Celtics"
+        "years": "1942-1946",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1945",
+              "1946"
+            ],
+            "naismithPOY": "1946",
+            "tournamentMOP": "1945",
+            "allAmerican": "1944, 1945, 1946"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1948"
+            },
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1952"
+            }
+          ]
+        },
+        "legendRank": 1
       },
       {
         "id": "4432166",
@@ -12753,7 +15233,109 @@
         "years": "2020-2021",
         "draftPosition": "1",
         "draftYear": "2021",
-        "draftTeam": "Detroit Pistons"
+        "draftTeam": "Detroit Pistons",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2021"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 2,
+            "allNBA": 2
+          },
+          "intl": []
+        },
+        "legendRank": 2
+      },
+      {
+        "id": "2990992",
+        "name": "Marcus Smart",
+        "years": "2012-2014",
+        "draftPosition": "6",
+        "draftYear": "2014",
+        "draftTeam": "Boston Celtics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2013"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 3
+      },
+      {
+        "id": "2367",
+        "name": "Tony Allen",
+        "years": "2002-2004",
+        "draftPosition": "25",
+        "draftYear": "2004",
+        "draftTeam": "Boston Celtics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "2008"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 4
+      },
+      {
+        "id": "1068",
+        "name": "Byron Houston",
+        "years": "1988-1992",
+        "draftPosition": "27",
+        "draftYear": "1992",
+        "draftTeam": "Chicago Bulls",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1992"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
       },
       {
         "id": "695",
@@ -12761,12 +15343,53 @@
         "years": "1991-1995",
         "draftPosition": "6",
         "draftYear": "1995",
-        "draftTeam": "Vancouver Grizzlies"
+        "draftTeam": "Vancouver Grizzlies",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
       },
       {
         "id": "804",
         "name": "John Starks",
-        "years": "1987-1988"
+        "years": "1987-1988",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 7
       },
       {
         "id": "518",
@@ -12774,7 +15397,86 @@
         "years": "1996-2000",
         "draftPosition": "17",
         "draftYear": "2000",
-        "draftTeam": "Seattle SuperSonics"
+        "draftTeam": "Seattle SuperSonics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 8
+      },
+      {
+        "id": "9000221",
+        "name": "Jesse Renick",
+        "years": "1938-1940",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1940"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1948"
+            }
+          ]
+        },
+        "legendRank": 9
+      },
+      {
+        "id": "9000222",
+        "name": "Gale McArthur",
+        "years": "1948-1951",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1951"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 10
       }
     ],
     "conference": "Big 12",
@@ -12828,7 +15530,26 @@
         "years": "1990-1995",
         "draftPosition": "10",
         "draftYear": "1995",
-        "draftTeam": "Miami Heat"
+        "draftTeam": "Miami Heat",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 1
       },
       {
         "id": "4066320",
@@ -12836,7 +15557,26 @@
         "years": "2016-2020",
         "draftPosition": "30",
         "draftYear": "2020",
-        "draftTeam": "Boston Celtics"
+        "draftTeam": "Boston Celtics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 2
       }
     ],
     "conference": "Big 12",
@@ -12858,25 +15598,118 @@
     "longitude": "-101.886571",
     "oldPlayers": [
       {
-        "id": "4277928",
-        "name": "Jarrett Culver",
-        "years": "2017-2019",
-        "draftPosition": "6",
-        "draftYear": "2019",
-        "draftTeam": "Phoenix Suns"
-      },
-      {
         "id": "2431",
         "name": "Andre Emmett",
         "years": "2000-2004",
         "draftPosition": "35",
         "draftYear": "2004",
-        "draftTeam": "Seattle SuperSonics"
+        "draftTeam": "Seattle SuperSonics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2004"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 1
       },
       {
-        "id": "291",
-        "name": "Darvin Ham",
-        "years": "1993-1996"
+        "id": "4277928",
+        "name": "Jarrett Culver",
+        "years": "2017-2019",
+        "draftPosition": "6",
+        "draftYear": "2019",
+        "draftTeam": "Phoenix Suns",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2019"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 2
+      },
+      {
+        "id": "45",
+        "name": "Tony Battie",
+        "years": "1993-1997",
+        "draftPosition": "5",
+        "draftYear": "1997",
+        "draftTeam": "Denver Nuggets",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 3
+      },
+      {
+        "id": "754",
+        "name": "Jason Sasser",
+        "years": "1992-1996",
+        "draftPosition": "41",
+        "draftYear": "1996",
+        "draftTeam": "Sacramento Kings",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1996"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": [
+            {
+              "medal": "bronze",
+              "event": "FIBA World Cup",
+              "year": "1998"
+            }
+          ]
+        },
+        "legendRank": 4
       }
     ],
     "conference": "Big 12",
@@ -12911,7 +15744,29 @@
       {
         "id": "3904625",
         "name": "Tacko Fall",
-        "years": "2015-2019"
+        "years": "2015-2019",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 1
       }
     ],
     "conference": "Big 12",
@@ -12931,28 +15786,36 @@
     "longitude": "-111.8387946",
     "oldPlayers": [
       {
-        "id": "557",
-        "name": "Andre Miller",
-        "years": "1995-1999",
-        "draftPosition": "8",
-        "draftYear": "1999",
-        "draftTeam": "Cleveland Cavaliers"
-      },
-      {
-        "id": "869",
-        "name": "Keith Van Horn",
-        "years": "1993-1997",
-        "draftPosition": "2",
-        "draftYear": "1997",
-        "draftTeam": "Philadelphia Sixers"
-      },
-      {
-        "id": "3662",
-        "name": "Tom Chambers",
-        "years": "1977-1981",
-        "draftPosition": "8",
-        "draftYear": "1981",
-        "draftTeam": "San Diego Clippers"
+        "id": "9000223",
+        "name": "Arnie Ferrin",
+        "years": "1943-1948",
+        "draftPosition": "9",
+        "draftYear": "1948",
+        "draftTeam": "Minneapolis Lakers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [
+              "1944"
+            ],
+            "naismithPOY": "",
+            "tournamentMOP": "1944",
+            "allAmerican": "1944, 1945, 1947, 1948"
+          },
+          "nba": {
+            "champion": [
+              "1949",
+              "1950"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 1
       },
       {
         "id": "2747",
@@ -12960,15 +15823,136 @@
         "years": "2003-2005",
         "draftPosition": "1",
         "draftYear": "2005",
-        "draftTeam": "Milwaukee Bucks"
+        "draftTeam": "Milwaukee Bucks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "2005",
+            "tournamentMOP": "",
+            "allAmerican": "2005"
+          },
+          "nba": {
+            "champion": [
+              "2015"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 2
       },
       {
-        "id": "3064447",
-        "name": "Delon Wright",
-        "years": "2013-2015",
-        "draftPosition": "20",
-        "draftYear": "2015",
-        "draftTeam": "Toronto Raptors"
+        "id": "869",
+        "name": "Keith Van Horn",
+        "years": "1993-1997",
+        "draftPosition": "2",
+        "draftYear": "1997",
+        "draftTeam": "Philadelphia Sixers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1996, 1997"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 3
+      },
+      {
+        "id": "3662",
+        "name": "Tom Chambers",
+        "years": "1977-1981",
+        "draftPosition": "8",
+        "draftYear": "1981",
+        "draftTeam": "San Diego Clippers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 4,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 4
+      },
+      {
+        "id": "557",
+        "name": "Andre Miller",
+        "years": "1995-1999",
+        "draftPosition": "8",
+        "draftYear": "1999",
+        "draftTeam": "Cleveland Cavaliers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1999"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
+      },
+      {
+        "id": "5559",
+        "name": "Billy McGill",
+        "years": "1959-1962",
+        "draftPosition": "1",
+        "draftYear": "1962",
+        "draftTeam": "Chicago Zephyrs",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1961, 1962"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
       },
       {
         "id": "3134908",
@@ -12976,7 +15960,53 @@
         "years": "2014-2016",
         "draftPosition": "9",
         "draftYear": "2016",
-        "draftTeam": "Toronto Raptors"
+        "draftTeam": "Toronto Raptors",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2016"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 7
+      },
+      {
+        "id": "4687",
+        "name": "Jerry Chambers",
+        "years": "1963-1966",
+        "draftPosition": "7",
+        "draftYear": "1966",
+        "draftTeam": "Los Angeles Lakers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "1966",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 8
       },
       {
         "id": "3134907",
@@ -12984,7 +16014,109 @@
         "years": "2014-2017",
         "draftPosition": "27",
         "draftYear": "2017",
-        "draftTeam": "Brooklyn Nets"
+        "draftTeam": "Brooklyn Nets",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "2020"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 9
+      },
+      {
+        "id": "3064447",
+        "name": "Delon Wright",
+        "years": "2013-2015",
+        "draftPosition": "20",
+        "draftYear": "2015",
+        "draftTeam": "Toronto Raptors",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2015"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 10
+      },
+      {
+        "id": "6253",
+        "name": "Danny Vranes",
+        "years": "1977-1981",
+        "draftPosition": "5",
+        "draftYear": "1981",
+        "draftTeam": "Seattle SuperSonics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1981"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 11
+      },
+      {
+        "id": "9000224",
+        "name": "Vern Gardner",
+        "years": "1945-1949",
+        "draftPosition": "6",
+        "draftYear": "1949",
+        "draftTeam": "Philadelphia Warriors",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1947, 1949"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 12
       }
     ],
     "conference": "Big 12",
@@ -13035,31 +16167,36 @@
         "years": "1957-1960",
         "draftPosition": "2",
         "draftYear": "1960",
-        "draftTeam": "Minneapolis Lakers"
-      },
-      {
-        "id": "3133635",
-        "name": "Jevon Carter",
-        "years": "2014-2018",
-        "draftPosition": "32",
-        "draftYear": "2018",
-        "draftTeam": "Memphis Grizzlies"
-      },
-      {
-        "id": "4271",
-        "name": "Da'Sean Butler",
-        "years": "2006-2010",
-        "draftPosition": "42",
-        "draftYear": "2010",
-        "draftTeam": "Miami Heat"
-      },
-      {
-        "id": "6184",
-        "name": "Rod Thorn",
-        "years": "1960-1963",
-        "draftPosition": "2",
-        "draftYear": "1963",
-        "draftTeam": "Baltimore Bullets"
+        "draftTeam": "Minneapolis Lakers",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "1959",
+            "allAmerican": "1959, 1960"
+          },
+          "nba": {
+            "champion": [
+              "1972"
+            ],
+            "mvp": "",
+            "finalsMVP": [
+              "1969"
+            ],
+            "roty": "",
+            "allStar": 14,
+            "allNBA": 12
+          },
+          "intl": [
+            {
+              "medal": "gold",
+              "event": "Olympics",
+              "year": "1960"
+            }
+          ]
+        },
+        "legendRank": 1
       },
       {
         "id": "5211",
@@ -13067,7 +16204,161 @@
         "years": "1954-1957",
         "draftPosition": "1",
         "draftYear": "1957",
-        "draftTeam": "Cincinnati Royals"
+        "draftTeam": "Cincinnati Royals",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1956, 1957"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 2,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 2
+      },
+      {
+        "id": "6184",
+        "name": "Rod Thorn",
+        "years": "1960-1963",
+        "draftPosition": "2",
+        "draftYear": "1963",
+        "draftTeam": "Baltimore Bullets",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1962"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 3
+      },
+      {
+        "id": "3133635",
+        "name": "Jevon Carter",
+        "years": "2014-2018",
+        "draftPosition": "32",
+        "draftYear": "2018",
+        "draftTeam": "Memphis Grizzlies",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2018"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 4
+      },
+      {
+        "id": "2326257",
+        "name": "Kevin Jones",
+        "years": "2008-2012",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2012"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 5
+      },
+      {
+        "id": "9000225",
+        "name": "Mark Workman",
+        "years": "1949-1952",
+        "draftPosition": "1",
+        "draftYear": "1952",
+        "draftTeam": "Milwaukee Hawks",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "1952"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 6
+      },
+      {
+        "id": "4271",
+        "name": "Da'Sean Butler",
+        "years": "2006-2010",
+        "draftPosition": "42",
+        "draftYear": "2010",
+        "draftTeam": "Miami Heat",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": "2010"
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": false
+          },
+          "intl": []
+        },
+        "legendRank": 7
       }
     ],
     "conference": "Big 12",
