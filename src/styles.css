@@ -393,7 +393,10 @@
   /* hauteur des listes, adaptative à la fenêtre -> la modale tient toujours à l'écran
      (sous la navbar en haut, sans déborder en bas). Rétrécit sur écran court, 300px sur écran normal.
      Ajuster le 500 si besoin : +grand = plus de sécurité anti-débordement, -grand = listes plus hautes. */
-  --list-h: clamp(160px, calc(100vh - 500px), 300px);
+  --list-h-base: clamp(160px, calc(100vh - 500px), 300px);
+  /* quand le palmarès est replié, sa hauteur (--palm-extra, posé en inline) est reversée
+     aux listes -> la modale garde la même taille, l'espace va au contenu des onglets. */
+  --list-h: calc(var(--list-h-base) + var(--palm-extra, 0px));
   /* pas de padding vertical -> le contenu est collé en haut et en bas (aucun vide) */
   padding: 0 14px;
   /* hauteur mini = hauteur des listes -> onglets de même hauteur (pas de saut ni de clignotement) */

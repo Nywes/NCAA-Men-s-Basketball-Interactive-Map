@@ -2317,33 +2317,6 @@
         "legendRank": 7
       },
       {
-        "id": "3074752",
-        "name": "Terry Rozier",
-        "years": "2013-2015",
-        "draftPosition": "16",
-        "draftYear": "2015",
-        "draftTeam": "Boston Celtics",
-        "hof": false,
-        "awards": {
-          "ncaa": {
-            "champion": [],
-            "naismithPOY": "",
-            "tournamentMOP": "",
-            "allAmerican": ""
-          },
-          "nba": {
-            "champion": [],
-            "mvp": "",
-            "finalsMVP": [],
-            "roty": "",
-            "allStar": 0,
-            "allNBA": false
-          },
-          "intl": []
-        },
-        "legendRank": 11
-      },
-      {
         "id": "2991055",
         "name": "Montrezl Harrell",
         "years": "2012-2015",

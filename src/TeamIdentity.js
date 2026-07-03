@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef } from 'react';
 import ncaaTrophy from './assets/ncaa-trophy.jpg';
 
 // Bannière titre : teinte CLAIRE de la couleur de la fac (70% vers le blanc).
@@ -63,9 +63,23 @@ const ALL_STATS = [
   },
 ];
 
-const TeamIdentity = ({ team }) => {
-  const [isOpen, setIsOpen] = useState(true);
+const TeamIdentity = ({ team, isOpen, setIsOpen, onMeasure }) => {
   const tournament = team.tournament || {};
+
+  // Mesure la hauteur du contenu du palmarès (déplié) et la remonte au parent,
+  // pour qu'elle soit reversée au contenu des onglets une fois replié.
+  const contentRef = useRef(null);
+  useEffect(() => {
+    const el = contentRef.current;
+    if (!el || !onMeasure) return undefined;
+    // getBoundingClientRect().height = hauteur fractionnaire (sous-pixel), plus précise
+    // qu'offsetHeight (arrondi à l'entier) -> compensation exacte, aucun micro-écart.
+    const report = () => onMeasure(el.getBoundingClientRect().height);
+    report();
+    const ro = new ResizeObserver(report);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [isOpen, team, onMeasure]);
 
   const hasTitles = (tournament.titles || []).length > 0;
   const titleCount = (tournament.titles || []).length;
@@ -93,7 +107,10 @@ const TeamIdentity = ({ team }) => {
       </div>
 
       {isOpen && (
-        <>
+        // display:flow-root -> la marge haute de .palm-hero reste interne au bloc,
+        // donc incluse dans offsetHeight : la hauteur reversée aux onglets est exacte
+        // et la modale ne bouge plus du tout au repli.
+        <div ref={contentRef} style={{ display: 'flow-root' }}>
           {hasTitles && (
             <div className="palm-hero" style={{ background: getHeroGradient(team.color) }}>
               <img src={ncaaTrophy} alt="" className="palm-trophy-wm" />
@@ -164,7 +181,7 @@ const TeamIdentity = ({ team }) => {
               })}
             </div>
           )}
-        </>
+        </div>
       )}
     </div>
   );

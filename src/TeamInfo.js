@@ -4,19 +4,19 @@ import TeamStanding from './TeamStanding';
 import TeamLegends from './TeamLegends';
 
 const TABS = [
-  { id: 'legends', label: 'Legends' },
   { id: 'roster', label: 'Roster' },
   { id: 'standing', label: 'Standing' },
+  { id: 'legends', label: 'Legends' },
 ];
 
-const TeamInfo = ({ roster, rosterLoading, team, isSmallScreen }) => {
-  const [activeTab, setActiveTab] = useState('legends');
+const TeamInfo = ({ roster, rosterLoading, team, isSmallScreen, extraListH = 0 }) => {
+  const [activeTab, setActiveTab] = useState('roster');
 
   const accentColor =
     team.color && !team.color.startsWith('#') ? `#${team.color}` : team.color || '#4B9CD3';
 
   return (
-    <div style={{ '--tab-accent': accentColor }}>
+    <div style={{ '--tab-accent': accentColor, '--palm-extra': `${extraListH}px` }}>
       <div className="tab-bar">
         {TABS.map((tab) => (
           <button

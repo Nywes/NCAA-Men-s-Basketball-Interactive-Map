@@ -11,8 +11,7 @@ import { useEffect, useState, useRef } from 'react';
 import teamsData from './teams.json';
 
 import ncaaLogo from './assets/icons/ncaa-logo.png';
-import TeamInfo from './TeamInfo';
-import TeamIdentity from './TeamIdentity';
+import TeamPanels from './TeamPanels';
 
 const divisions = [
   { id: '2', name: 'ACC', imgLinkName: 'Atlantic_Coast_Conference_ACC_logo.png' },
@@ -439,11 +438,10 @@ export default function App({ searchQuery, searchSubmit }) {
                           </div>
                         </div>
                       </div>
-                      <TeamIdentity team={team} />
-                      <TeamInfo
+                      <TeamPanels
+                        team={team}
                         roster={roster}
                         rosterLoading={rosterLoading}
-                        team={team}
                         isSmallScreen={isSmallScreen}
                       />
                     </div>
