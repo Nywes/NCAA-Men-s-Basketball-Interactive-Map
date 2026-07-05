@@ -8,6 +8,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   update:
@@ -38,17 +40,19 @@ jobs:
           fi
 
       # Redéploie le site GitHub Pages avec les nouvelles données
-      - name: Install dependencies
+      # (un commit fait avec GITHUB_TOKEN ne déclenche pas deploy.yml, donc on déploie ici aussi)
+      - name: Install & build
         if: steps.commit.outputs.changed == 'true'
-        run: npm ci
+        run: |
+          npm ci
+          npm run build
 
-      - name: Build
+      - name: Upload Pages artifact
         if: steps.commit.outputs.changed == 'true'
-        run: npm run build
-
-      - name: Deploy to gh-pages
-        if: steps.commit.outputs.changed == 'true'
-        uses: peaceiris/actions-gh-pages@v4
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          path: ./build
+
+      - name: Deploy to GitHub Pages
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/deploy-pages@v4
