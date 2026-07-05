@@ -1,0 +1,1054 @@
+[
+  {
+    "id": "136263",
+    "displayName": "AS Monaco Basket",
+    "shortDisplayName": "Monaco",
+    "division": "elite",
+    "latitude": 43.727905,
+    "longitude": 7.415,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/fl2ti01649168915.png",
+    "venue": "Salle Gaston Médecin",
+    "location": "Monaco",
+    "color": "FF0000",
+    "formedYear": "1928",
+    "website": "asmonaco.basketball",
+    "capacity": "5000",
+    "lnbId": 1791,
+    "honours": {
+      "titles": [
+        2023,
+        2024,
+        2026
+      ],
+      "cups": {
+        "count": 2,
+        "years": [
+          2023,
+          2026
+        ]
+      },
+      "leadersCup": {
+        "count": 4,
+        "years": [
+          2016,
+          2017,
+          2018,
+          2026
+        ]
+      },
+      "european": [
+        {
+          "label": "EuroCup",
+          "years": [
+            2021
+          ]
+        }
+      ]
+    },
+    "secondaryColor": "231F20",
+    "tertiaryColor": "D50909"
+  },
+  {
+    "id": "136264",
+    "displayName": "Boulazac Basket Dordogne",
+    "shortDisplayName": "Boulazac",
+    "division": "elite",
+    "latitude": 45.183826,
+    "longitude": 0.760785,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/68tu9p1570976593.png",
+    "venue": "Le Palio",
+    "location": "Boulazac",
+    "color": "01ACB5",
+    "formedYear": "1992",
+    "website": "boulazac-basket-dordogne.com",
+    "capacity": "5069",
+    "lnbId": 1781,
+    "honours": {},
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "0B8187"
+  },
+  {
+    "id": "135234",
+    "displayName": "Bourg-en-Bresse",
+    "shortDisplayName": "JL Bourg",
+    "division": "elite",
+    "latitude": 46.186483,
+    "longitude": 5.247713,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/643qz71523101349.png",
+    "venue": "Ekinox",
+    "location": "Bourg-en-Bresse",
+    "color": "D71A20",
+    "formedYear": "1910",
+    "website": "www.jlbourg-basket.com",
+    "capacity": "3548",
+    "lnbId": 1782,
+    "honours": {
+      "european": [
+        {
+          "label": "EuroCup",
+          "years": [
+            2026
+          ]
+        }
+      ]
+    },
+    "secondaryColor": "9D9D9C",
+    "tertiaryColor": "981D20"
+  },
+  {
+    "id": "135238",
+    "displayName": "Cholet",
+    "shortDisplayName": "Cholet Basket",
+    "division": "elite",
+    "latitude": 47.05533,
+    "longitude": -0.89796,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/rjb2631570976454.png",
+    "venue": "La Meilleraie",
+    "location": "Cholet",
+    "color": "E40421",
+    "formedYear": "1975",
+    "website": "www.cholet-basket.com",
+    "capacity": "5191",
+    "lnbId": 1784,
+    "honours": {
+      "titles": [
+        2010
+      ],
+      "cups": {
+        "count": 2,
+        "years": [
+          1998,
+          1999
+        ]
+      },
+      "leadersCup": {
+        "count": 1,
+        "years": [
+          2008
+        ]
+      }
+    },
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "B2091F"
+  },
+  {
+    "id": "135237",
+    "displayName": "Dijon",
+    "shortDisplayName": "JDA Dijon Basket",
+    "division": "elite",
+    "latitude": 47.33236,
+    "longitude": 5.055949,
+    "logo": "https://assets.altrstat.xyz/images/Basketball/Team/1785/logoBlack/md.png",
+    "venue": "Palais des sports Jean-Michel-Geoffroy",
+    "location": "Dijon",
+    "color": "892F5C",
+    "formedYear": "1880",
+    "website": "www.jdadijon.com",
+    "capacity": "5000",
+    "lnbId": 1785,
+    "honours": {
+      "cups": {
+        "count": 2,
+        "years": [
+          2006,
+          2024
+        ]
+      },
+      "leadersCup": {
+        "count": 2,
+        "years": [
+          2004,
+          2020
+        ]
+      }
+    },
+    "secondaryColor": "1D2749",
+    "tertiaryColor": "6C1D45"
+  },
+  {
+    "id": "136265",
+    "displayName": "ESSM Le Portel",
+    "shortDisplayName": "Le Portel",
+    "division": "elite",
+    "latitude": 50.71716,
+    "longitude": 1.584475,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/yhwnwu1649168935.png",
+    "venue": "Le Chaudron",
+    "location": "Le Portel",
+    "color": "2AA95B",
+    "formedYear": "1931",
+    "website": "",
+    "capacity": "3500",
+    "lnbId": 1788,
+    "honours": {
+      "elite2": {
+        "count": 1,
+        "years": [
+          2025
+        ]
+      }
+    },
+    "secondaryColor": "DC820C",
+    "tertiaryColor": "178942"
+  },
+  {
+    "id": "135239",
+    "displayName": "Gravelines-Dunkerque",
+    "shortDisplayName": "Basket Club Maritime Gravelines Dunkerque Grand Littoral",
+    "division": "elite",
+    "latitude": 51.035663,
+    "longitude": 2.391672,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/1mft2j1757606561.png",
+    "venue": "Stades de Flandres",
+    "location": "Dunkerque",
+    "color": "FE7613",
+    "formedYear": "1984",
+    "website": "www.bcmbasket.com",
+    "capacity": "2500",
+    "lnbId": 1786,
+    "honours": {
+      "leadersCup": {
+        "count": 2,
+        "years": [
+          2011,
+          2013
+        ]
+      }
+    },
+    "secondaryColor": "0A0B19",
+    "tertiaryColor": "CA671F"
+  },
+  {
+    "id": "135241",
+    "displayName": "Le Mans Sarthe Basket",
+    "shortDisplayName": "Le Mans",
+    "division": "elite",
+    "latitude": 47.956035,
+    "longitude": 0.226357,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/iouj5l1757607112.png",
+    "venue": "Antarès",
+    "location": "Le Mans",
+    "color": "FE5213",
+    "formedYear": "1939",
+    "website": "www.msb.fr",
+    "capacity": "6035",
+    "lnbId": 1787,
+    "honours": {
+      "titles": [
+        1978,
+        1979,
+        1982,
+        2006,
+        2018
+      ],
+      "cups": {
+        "count": 4,
+        "years": [
+          2004,
+          2009,
+          2016
+        ]
+      },
+      "leadersCup": {
+        "count": 4,
+        "years": [
+          2006,
+          2009,
+          2014,
+          2025
+        ]
+      }
+    },
+    "secondaryColor": "101820",
+    "tertiaryColor": "C04011"
+  },
+  {
+    "id": "135242",
+    "displayName": "Limoges",
+    "shortDisplayName": "Limoges Cercle Saint-Pierre",
+    "division": "elite",
+    "latitude": 45.847518,
+    "longitude": 1.243392,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/rryxux1423605495.png",
+    "venue": "Palais des sports de Beaublanc",
+    "location": "Limoges",
+    "color": "138A54",
+    "formedYear": "1929",
+    "website": "www.limogescsp.com",
+    "capacity": "5516",
+    "lnbId": 1789,
+    "honours": {
+      "titles": [
+        1983,
+        1984,
+        1985,
+        1988,
+        1989,
+        1990,
+        1993,
+        1994,
+        2000,
+        2014,
+        2015
+      ],
+      "cups": {
+        "count": 3,
+        "years": [
+          1994,
+          1995,
+          2000
+        ]
+      },
+      "european": [
+        {
+          "label": "Champion d'Europe",
+          "years": [
+            1993
+          ]
+        },
+        {
+          "label": "Coupe Korać",
+          "years": [
+            1982,
+            1983,
+            2000
+          ]
+        }
+      ]
+    },
+    "secondaryColor": "FFB90F",
+    "tertiaryColor": "0D663E"
+  },
+  {
+    "id": "135243",
+    "displayName": "Lyon-Villeurbanne",
+    "shortDisplayName": "ASVEL",
+    "division": "elite",
+    "latitude": 45.766422,
+    "longitude": 4.907364,
+    "logo": "https://assets.altrstat.xyz/images/Basketball/Team/1790/logoBlack/md.png",
+    "venue": "LDLC Arena",
+    "location": "Décines-Charpieu",
+    "color": "2D2D2D",
+    "formedYear": "1948",
+    "website": "ldlcasvel.com",
+    "capacity": "12523",
+    "lnbId": 1790,
+    "honours": {
+      "titles": [
+        1949,
+        1950,
+        1952,
+        1955,
+        1956,
+        1957,
+        1964,
+        1966,
+        1968,
+        1969,
+        1971,
+        1972,
+        1975,
+        1977,
+        1981,
+        2002,
+        2009,
+        2016,
+        2019,
+        2021,
+        2022
+      ],
+      "cups": {
+        "count": 10,
+        "years": []
+      },
+      "leadersCup": {
+        "count": 2,
+        "years": [
+          2010,
+          2023
+        ]
+      }
+    },
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "1D1D1D"
+  },
+  {
+    "id": "135245",
+    "displayName": "Nanterre",
+    "shortDisplayName": "Jeunesse sportive des Fontenelles de Nanterre",
+    "division": "elite",
+    "latitude": 48.892133,
+    "longitude": 2.212287,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/hdqr5m1523101484.png",
+    "venue": "Palais des sports Maurice-Thorez",
+    "location": "Nanterre",
+    "color": "147B38",
+    "formedYear": "1927",
+    "website": "www.jsfnanterre.com",
+    "capacity": "3000",
+    "lnbId": 1793,
+    "honours": {
+      "titles": [
+        2013
+      ],
+      "cups": {
+        "count": 2,
+        "years": [
+          2014,
+          2017
+        ]
+      },
+      "european": [
+        {
+          "label": "EuroChallenge",
+          "years": [
+            2015
+          ]
+        },
+        {
+          "label": "FIBA Europe Cup",
+          "years": [
+            2017
+          ]
+        }
+      ]
+    },
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "095122"
+  },
+  {
+    "id": "141489",
+    "displayName": "Paris Basketball",
+    "shortDisplayName": "Paris Basketball",
+    "division": "elite",
+    "latitude": 48.899599,
+    "longitude": 2.360749,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/9q0d6x1726681476.png",
+    "venue": "Adidas Arena",
+    "location": "Paris",
+    "color": "141414",
+    "formedYear": "2018",
+    "website": "",
+    "capacity": "8000",
+    "lnbId": 1794,
+    "honours": {
+      "titles": [
+        2025
+      ],
+      "cups": {
+        "count": 1,
+        "years": [
+          2025
+        ]
+      },
+      "leadersCup": {
+        "count": 1,
+        "years": [
+          2024
+        ]
+      },
+      "european": [
+        {
+          "label": "EuroCup",
+          "years": [
+            2024
+          ]
+        }
+      ]
+    },
+    "secondaryColor": "3273B8",
+    "tertiaryColor": "000000"
+  },
+  {
+    "id": "137296",
+    "displayName": "SLUC Nancy Basket",
+    "shortDisplayName": "Nancy",
+    "division": "elite",
+    "latitude": 48.699261,
+    "longitude": 6.139178,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/6zbuwh1666897360.png",
+    "venue": "Palais des sports Jean-Weille",
+    "location": "Nancy",
+    "color": "D33734",
+    "formedYear": "1967",
+    "website": "",
+    "capacity": "6043",
+    "lnbId": 1792,
+    "honours": {
+      "titles": [
+        2008,
+        2011
+      ],
+      "leadersCup": {
+        "count": 1,
+        "years": [
+          2005
+        ]
+      },
+      "european": [
+        {
+          "label": "Coupe Korać",
+          "years": [
+            2002
+          ]
+        }
+      ]
+    },
+    "secondaryColor": "161616",
+    "tertiaryColor": "B40604"
+  },
+  {
+    "id": "141490",
+    "displayName": "Saint-Quentin Basket-Ball",
+    "shortDisplayName": "Saint-Quentin Basket-Ball",
+    "division": "elite",
+    "latitude": 49.848711,
+    "longitude": 3.294276,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/x1jnik1697128652.png",
+    "venue": "Palais des sports Pierre-Ratte",
+    "location": "Saint-Quentin",
+    "color": "2367AE",
+    "formedYear": "1973",
+    "website": "",
+    "capacity": "3103",
+    "lnbId": 1795,
+    "honours": {
+      "elite2": {
+        "count": 1,
+        "years": [
+          2023
+        ]
+      }
+    },
+    "secondaryColor": "9DC10B",
+    "tertiaryColor": "014287"
+  },
+  {
+    "id": "135250",
+    "displayName": "Strasbourg",
+    "shortDisplayName": "Strasbourg Illkirch-Graffenstaden Basket",
+    "division": "elite",
+    "latitude": 48.6069,
+    "longitude": 7.7546,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/1opi561726732886.png",
+    "venue": "Rhénus Sport",
+    "location": "Strasbourg",
+    "color": "AA0001",
+    "formedYear": "1928",
+    "website": "sigbasket.fr",
+    "capacity": "6200",
+    "lnbId": 1796,
+    "honours": {
+      "titles": [
+        2005
+      ],
+      "cups": {
+        "count": 2,
+        "years": [
+          2015,
+          2018
+        ]
+      },
+      "leadersCup": {
+        "count": 2,
+        "years": [
+          2015,
+          2019
+        ]
+      }
+    },
+    "secondaryColor": "100D20",
+    "tertiaryColor": "841212"
+  },
+  {
+    "id": "135235",
+    "displayName": "Élan Chalon",
+    "shortDisplayName": "Chalon/Saone",
+    "division": "elite",
+    "latitude": 46.786585,
+    "longitude": 4.865025,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/f7jcdk1542825634.png",
+    "venue": "Le Colisée",
+    "location": "Chalon-sur-Saône",
+    "color": "B60E1D",
+    "formedYear": "1955",
+    "website": "www.elanchalon.com",
+    "capacity": "4948",
+    "lnbId": 1783,
+    "honours": {
+      "titles": [
+        2012,
+        2017
+      ],
+      "cups": {
+        "count": 2,
+        "years": [
+          2011,
+          2012
+        ]
+      },
+      "leadersCup": {
+        "count": 1,
+        "years": [
+          2012
+        ]
+      },
+      "european": [
+        {
+          "label": "EuroChallenge",
+          "years": [
+            2012
+          ]
+        }
+      ]
+    },
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "8B030C"
+  },
+  {
+    "id": "140468",
+    "displayName": "ADA Blois",
+    "shortDisplayName": "ADA Blois",
+    "division": "prob",
+    "latitude": 47.600728,
+    "longitude": 1.326703,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/d932t01666897352.png",
+    "venue": "Salle du Jeu de Paume",
+    "location": "Blois",
+    "color": "3D673E",
+    "formedYear": "1907",
+    "website": "",
+    "capacity": "2525",
+    "lnbId": 1799,
+    "honours": {
+      "elite2": {
+        "count": 1,
+        "years": [
+          2022
+        ]
+      }
+    },
+    "secondaryColor": "F7CF02",
+    "tertiaryColor": "024F24"
+  },
+  {
+    "id": "140014",
+    "displayName": "ALM Évreux Basket",
+    "shortDisplayName": "ALM Évreux Basket",
+    "division": "prob",
+    "latitude": 49.024,
+    "longitude": 1.151,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/7f1g611677760026.png",
+    "venue": "Salle Jean-Fourré",
+    "location": "Évreux",
+    "color": "FABF34",
+    "formedYear": "1962",
+    "website": "www.alm-evreux-basket.com",
+    "capacity": "3290",
+    "lnbId": 1804,
+    "honours": {},
+    "secondaryColor": "242454",
+    "tertiaryColor": "D49C04"
+  },
+  {
+    "id": "141484",
+    "displayName": "AMSB",
+    "shortDisplayName": "Aix Maurienne Savoie Basket",
+    "division": "prob",
+    "latitude": 45.666117,
+    "longitude": 5.912393,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/0ixh8r1623430799.png",
+    "venue": "Halle Marlioz",
+    "location": "Aix-les-Bains",
+    "color": "C41413",
+    "formedYear": "1969",
+    "website": "",
+    "capacity": "1500",
+    "lnbId": 1797,
+    "honours": {},
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "A00403"
+  },
+  {
+    "id": "143792",
+    "displayName": "Alliance Sport Alsace",
+    "shortDisplayName": "Alliance Sport Alsace",
+    "division": "prob",
+    "latitude": 48.631913,
+    "longitude": 7.739961,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/mgmy9v1631448672.png",
+    "venue": "Espace Sport La Forêt",
+    "location": "Souffelweyersheim",
+    "color": "661D33",
+    "formedYear": "2021",
+    "website": "www.asa-basket.fr",
+    "capacity": "1450",
+    "lnbId": 1805,
+    "honours": {},
+    "secondaryColor": "FF9700",
+    "tertiaryColor": "441826"
+  },
+  {
+    "id": "136262",
+    "displayName": "Antibes Sharks",
+    "shortDisplayName": "Antibes",
+    "division": "prob",
+    "latitude": 43.60348,
+    "longitude": 7.080668,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/zbxssr1542825084.png",
+    "venue": "Azur Arena",
+    "location": "Antibes",
+    "color": "00B4E4",
+    "formedYear": "1933",
+    "website": "",
+    "capacity": "5249",
+    "lnbId": 1798,
+    "honours": {
+      "titles": [
+        1970,
+        1991,
+        1995
+      ]
+    },
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "278ECA"
+  },
+  {
+    "id": "142407",
+    "displayName": "Caen Basket Calvados",
+    "shortDisplayName": "Caen Basket Calvados",
+    "division": "prob",
+    "latitude": 49.171276,
+    "longitude": -0.38519,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/n5tcu31692352520.png",
+    "venue": "Palais des sports Caen-la-Mer",
+    "location": "Caen",
+    "color": null,
+    "alternateColor": null,
+    "formedYear": "1959",
+    "website": "",
+    "capacity": "4200",
+    "lnbId": 1801,
+    "honours": {}
+  },
+  {
+    "id": "149348",
+    "displayName": "Challans Basket",
+    "shortDisplayName": "Vendée Challans Basket",
+    "division": "prob",
+    "latitude": 46.842774,
+    "longitude": -1.87912,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/96kngc1727034557.png",
+    "venue": "Salle Michel-Vrignaud",
+    "location": "Challans",
+    "color": null,
+    "alternateColor": null,
+    "formedYear": "0",
+    "website": "www.challans-basket.com",
+    "capacity": "2452",
+    "lnbId": 1800,
+    "honours": {}
+  },
+  {
+    "id": "137293",
+    "displayName": "Chorale Roanne Basket",
+    "shortDisplayName": "Roanne",
+    "division": "prob",
+    "latitude": 46.031185,
+    "longitude": 4.051548,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/0a27xu1697127574.png",
+    "venue": "Halle André-Vacheresse",
+    "location": "Roanne",
+    "color": "1379C0",
+    "formedYear": "1937",
+    "website": "www.chorale-roanne.com",
+    "capacity": "5020",
+    "lnbId": 1813,
+    "honours": {
+      "titles": [
+        1959,
+        2007
+      ],
+      "leadersCup": {
+        "count": 1,
+        "years": [
+          2007
+        ]
+      }
+    },
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "132952"
+  },
+  {
+    "id": "135236",
+    "displayName": "Châlons-Reims",
+    "shortDisplayName": "Champagne Basket",
+    "division": "prob",
+    "latitude": 49.264147,
+    "longitude": 4.032178,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/sxk1py1649170168.png",
+    "venue": "Reims Arena",
+    "location": "Reims",
+    "color": "19B5ED",
+    "formedYear": "2010",
+    "website": "www.ccrbasket.com",
+    "capacity": "5500",
+    "lnbId": 1802,
+    "honours": {},
+    "secondaryColor": "13100D",
+    "tertiaryColor": "1C86AE"
+  },
+  {
+    "id": "141485",
+    "displayName": "Denain Voltaire Basket",
+    "shortDisplayName": "Denain Voltaire Basket",
+    "division": "prob",
+    "latitude": 50.323315,
+    "longitude": 3.398063,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/j9eo131677760047.png",
+    "venue": "Complexe sportif Jean-Degros",
+    "location": "Denain",
+    "color": "D9262D",
+    "formedYear": "1947",
+    "website": "",
+    "capacity": "2500",
+    "lnbId": 1803,
+    "honours": {
+      "titles": [
+        1965
+      ]
+    },
+    "secondaryColor": "171716",
+    "tertiaryColor": "C20012"
+  },
+  {
+    "id": "137295",
+    "displayName": "HTV Basket",
+    "shortDisplayName": "Hyères Var Basket",
+    "division": "prob",
+    "latitude": 43.126101,
+    "longitude": 5.914919,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/w171kl1727004849.png",
+    "venue": "Palais des sports Jauréguiberry",
+    "location": "Toulon",
+    "color": null,
+    "alternateColor": null,
+    "formedYear": "1990",
+    "website": "",
+    "capacity": "4356",
+    "lnbId": 1806,
+    "honours": {}
+  },
+  {
+    "id": "141488",
+    "displayName": "Hermine Nantes Basket",
+    "shortDisplayName": "Hermine Nantes Basket",
+    "division": "prob",
+    "latitude": 47.181374,
+    "longitude": -1.572366,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/ok4nxk1623430937.png",
+    "venue": "La Trocardière",
+    "location": "Rezé",
+    "color": "34497B",
+    "formedYear": "1932",
+    "website": "",
+    "capacity": "4185",
+    "lnbId": 1808,
+    "honours": {},
+    "secondaryColor": "FEFEFF",
+    "tertiaryColor": "213462"
+  },
+  {
+    "id": "141492",
+    "displayName": "JA Vichy",
+    "shortDisplayName": "JA Vichy-Clermont Métropole Basket",
+    "division": "prob",
+    "latitude": 46.138834,
+    "longitude": 3.406466,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/ng150i1677760109.png",
+    "venue": "Palais des sports Pierre-Coulon",
+    "location": "Vichy",
+    "color": "A0D3F8",
+    "formedYear": "2015",
+    "website": "",
+    "capacity": "3300",
+    "lnbId": 1816,
+    "honours": {},
+    "secondaryColor": "022F63",
+    "tertiaryColor": "77B7E5"
+  },
+  {
+    "id": "137294",
+    "displayName": "Orléans Loiret Basket",
+    "shortDisplayName": "Orléans",
+    "division": "prob",
+    "latitude": 47.874665,
+    "longitude": 1.913177,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/dmaqqf1697128172.png",
+    "venue": "CO'Met Arena",
+    "location": "Orléans",
+    "color": "471425",
+    "formedYear": "1993",
+    "website": "",
+    "capacity": "10150",
+    "lnbId": 1809,
+    "honours": {},
+    "secondaryColor": "D28C27",
+    "tertiaryColor": "320C18"
+  },
+  {
+    "id": "137298",
+    "displayName": "Poitiers Basket 86",
+    "shortDisplayName": "Poitiers",
+    "division": "prob",
+    "latitude": 46.590963,
+    "longitude": 0.384967,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/3warz71631449430.png",
+    "venue": "Salle Jean-Pierre-Garnier",
+    "location": "Poitiers",
+    "color": "051A39",
+    "formedYear": "2004",
+    "website": "www.pb86.fr",
+    "capacity": "2270",
+    "lnbId": 1811,
+    "honours": {},
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "000F26"
+  },
+  {
+    "id": "135249",
+    "displayName": "Rouen Métropole Basket",
+    "shortDisplayName": "Rouen",
+    "division": "prob",
+    "latitude": 49.447852,
+    "longitude": 1.063275,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/f60nva1757442049.png",
+    "venue": "Kindarena",
+    "location": "Rouen",
+    "color": "212F7B",
+    "formedYear": "1892",
+    "website": "www.basketsporouenkinder.com",
+    "capacity": "5789",
+    "lnbId": 1814,
+    "honours": {},
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "16264E"
+  },
+  {
+    "id": "141491",
+    "displayName": "Saint-Chamond Basket",
+    "shortDisplayName": "Saint-Chamond-Andrézieux",
+    "division": "prob",
+    "latitude": 45.458101,
+    "longitude": 4.487368,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/3qebpj1757442198.png",
+    "venue": "Arena Saint-Étienne Métropole",
+    "location": "Saint-Chamond",
+    "color": "E55550",
+    "formedYear": "1973",
+    "website": "",
+    "capacity": "4200",
+    "lnbId": 1815,
+    "honours": {},
+    "secondaryColor": "FFFFFF",
+    "tertiaryColor": "E7302A"
+  },
+  {
+    "id": "146710",
+    "displayName": "Stade Rochelais Basket",
+    "shortDisplayName": "Stade Rochelais Basket",
+    "division": "prob",
+    "latitude": 46.167162,
+    "longitude": -1.153841,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/xpwql91697128774.png",
+    "venue": "Salle Gaston-Neveur",
+    "location": "La Rochelle",
+    "color": "2C2B2B",
+    "formedYear": "1932",
+    "website": "basket.staderochelais.com",
+    "capacity": "1677",
+    "lnbId": 1807,
+    "honours": {
+      "elite2": {
+        "count": 1,
+        "years": [
+          2024
+        ]
+      }
+    },
+    "secondaryColor": "FFCC00",
+    "tertiaryColor": "1C1818"
+  },
+  {
+    "id": "138332",
+    "displayName": "UJAP Quimper 29",
+    "shortDisplayName": "Union Jeanne d",
+    "division": "prob",
+    "latitude": 47.99544,
+    "longitude": -4.090736,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/flxdpu1677760132.png",
+    "venue": "Nouvelle salle de Quimper",
+    "location": "Quimper",
+    "color": "279CB9",
+    "formedYear": "1984",
+    "website": "www.ujap-quimper.bzh",
+    "capacity": "3500",
+    "lnbId": 1812,
+    "honours": {},
+    "secondaryColor": null,
+    "tertiaryColor": null
+  },
+  {
+    "id": "135248",
+    "displayName": "Élan Béarnais",
+    "shortDisplayName": "Élan Béarnais Pau-Lacq-Orthez",
+    "division": "prob",
+    "latitude": 43.334499,
+    "longitude": -0.362718,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/uc8eqt1720359216.png",
+    "venue": "Palais des sports de Pau",
+    "location": "Pau",
+    "color": "14A4A4",
+    "formedYear": "1931",
+    "website": "www.elan-bearnais.fr",
+    "capacity": "7707",
+    "lnbId": 1810,
+    "honours": {
+      "titles": [
+        1986,
+        1987,
+        1992,
+        1996,
+        1998,
+        1999,
+        2001,
+        2003,
+        2004
+      ],
+      "cups": {
+        "count": 4,
+        "years": [
+          2002,
+          2003,
+          2007,
+          2022
+        ]
+      },
+      "leadersCup": {
+        "count": 1,
+        "years": [
+          2003
+        ]
+      },
+      "elite2": {
+        "count": 1,
+        "years": [
+          2026
+        ]
+      }
+    },
+    "secondaryColor": "202A4E",
+    "tertiaryColor": "0F7474"
+  }
+]

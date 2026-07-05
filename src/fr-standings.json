@@ -1,0 +1,659 @@
+{
+  "updated": "2026-07-04",
+  "season": "2025-26",
+  "source": "api-prod.lnb.fr",
+  "standings": {
+    "elite": [
+      {
+        "rank": 1,
+        "teamId": "141489",
+        "name": "Paris Basketball",
+        "wins": 22,
+        "losses": 8,
+        "winPct": 73.33,
+        "lastFive": [
+          "W",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "pointsFor": 2973,
+        "pointsAgainst": 2577,
+        "diff": 396
+      },
+      {
+        "rank": 2,
+        "teamId": "136263",
+        "name": "AS Monaco Basket",
+        "wins": 22,
+        "losses": 7,
+        "winPct": 73.33,
+        "lastFive": [
+          "L",
+          "L",
+          "W",
+          "L",
+          "L"
+        ],
+        "pointsFor": 2830,
+        "pointsAgainst": 2622,
+        "diff": 208
+      },
+      {
+        "rank": 3,
+        "teamId": "135245",
+        "name": "Nanterre",
+        "wins": 21,
+        "losses": 9,
+        "winPct": 70,
+        "lastFive": [
+          "W",
+          "L",
+          "W",
+          "W",
+          "L"
+        ],
+        "pointsFor": 2599,
+        "pointsAgainst": 2431,
+        "diff": 168
+      },
+      {
+        "rank": 4,
+        "teamId": "135243",
+        "name": "Lyon-Villeurbanne",
+        "wins": 20,
+        "losses": 10,
+        "winPct": 66.67,
+        "lastFive": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "L"
+        ],
+        "pointsFor": 2625,
+        "pointsAgainst": 2399,
+        "diff": 226
+      },
+      {
+        "rank": 5,
+        "teamId": "135238",
+        "name": "Cholet",
+        "wins": 19,
+        "losses": 11,
+        "winPct": 63.33,
+        "lastFive": [
+          "W",
+          "L",
+          "W",
+          "W",
+          "W"
+        ],
+        "pointsFor": 2631,
+        "pointsAgainst": 2514,
+        "diff": 117
+      },
+      {
+        "rank": 6,
+        "teamId": "135241",
+        "name": "Le Mans Sarthe Basket",
+        "wins": 19,
+        "losses": 11,
+        "winPct": 63.33,
+        "lastFive": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "pointsFor": 2705,
+        "pointsAgainst": 2567,
+        "diff": 138
+      },
+      {
+        "rank": 7,
+        "teamId": "135234",
+        "name": "Bourg-en-Bresse",
+        "wins": 18,
+        "losses": 12,
+        "winPct": 60,
+        "lastFive": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "W"
+        ],
+        "pointsFor": 2622,
+        "pointsAgainst": 2515,
+        "diff": 107
+      },
+      {
+        "rank": 8,
+        "teamId": "135250",
+        "name": "Strasbourg",
+        "wins": 17,
+        "losses": 13,
+        "winPct": 56.67,
+        "lastFive": [
+          "L",
+          "W",
+          "L",
+          "L",
+          "L"
+        ],
+        "pointsFor": 2596,
+        "pointsAgainst": 2596,
+        "diff": 0
+      },
+      {
+        "rank": 9,
+        "teamId": "135235",
+        "name": "Élan Chalon",
+        "wins": 16,
+        "losses": 14,
+        "winPct": 53.33,
+        "lastFive": [
+          "L",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "pointsFor": 2597,
+        "pointsAgainst": 2554,
+        "diff": 43
+      },
+      {
+        "rank": 10,
+        "teamId": "137296",
+        "name": "SLUC Nancy Basket",
+        "wins": 13,
+        "losses": 17,
+        "winPct": 43.33,
+        "lastFive": [
+          "L",
+          "W",
+          "L",
+          "L",
+          "W"
+        ],
+        "pointsFor": 2571,
+        "pointsAgainst": 2607,
+        "diff": -36
+      },
+      {
+        "rank": 11,
+        "teamId": "135237",
+        "name": "Dijon",
+        "wins": 12,
+        "losses": 18,
+        "winPct": 40,
+        "lastFive": [
+          "L",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "pointsFor": 2704,
+        "pointsAgainst": 2721,
+        "diff": -17
+      },
+      {
+        "rank": 12,
+        "teamId": "136264",
+        "name": "Boulazac Basket Dordogne",
+        "wins": 12,
+        "losses": 18,
+        "winPct": 40,
+        "lastFive": [
+          "W",
+          "L",
+          "L",
+          "L",
+          "W"
+        ],
+        "pointsFor": 2474,
+        "pointsAgainst": 2524,
+        "diff": -50
+      },
+      {
+        "rank": 13,
+        "teamId": "135242",
+        "name": "Limoges",
+        "wins": 11,
+        "losses": 19,
+        "winPct": 36.67,
+        "lastFive": [
+          "L",
+          "W",
+          "W",
+          "W",
+          "L"
+        ],
+        "pointsFor": 2506,
+        "pointsAgainst": 2651,
+        "diff": -145
+      },
+      {
+        "rank": 14,
+        "teamId": "135239",
+        "name": "Gravelines-Dunkerque",
+        "wins": 8,
+        "losses": 22,
+        "winPct": 26.67,
+        "lastFive": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "pointsFor": 2478,
+        "pointsAgainst": 2709,
+        "diff": -231
+      },
+      {
+        "rank": 15,
+        "teamId": "141490",
+        "name": "Saint-Quentin Basket-Ball",
+        "wins": 8,
+        "losses": 22,
+        "winPct": 26.67,
+        "lastFive": [
+          "L",
+          "W",
+          "W",
+          "L",
+          "L"
+        ],
+        "pointsFor": 2426,
+        "pointsAgainst": 2596,
+        "diff": -170
+      },
+      {
+        "rank": 16,
+        "teamId": "136265",
+        "name": "ESSM Le Portel",
+        "wins": 0,
+        "losses": 29,
+        "winPct": 0,
+        "lastFive": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "pointsFor": 2174,
+        "pointsAgainst": 2928,
+        "diff": -754
+      }
+    ],
+    "prob": [
+      {
+        "rank": 1,
+        "teamId": "137293",
+        "name": "Chorale Roanne Basket",
+        "wins": 31,
+        "losses": 7,
+        "winPct": 81.58,
+        "lastFive": [
+          "W",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "pointsFor": 3384,
+        "pointsAgainst": 2994,
+        "diff": 390
+      },
+      {
+        "rank": 2,
+        "teamId": "135248",
+        "name": "Élan Béarnais",
+        "wins": 26,
+        "losses": 12,
+        "winPct": 68.42,
+        "lastFive": [
+          "L",
+          "W",
+          "W",
+          "W",
+          "L"
+        ],
+        "pointsFor": 3308,
+        "pointsAgainst": 3052,
+        "diff": 256
+      },
+      {
+        "rank": 3,
+        "teamId": "140468",
+        "name": "ADA Blois",
+        "wins": 24,
+        "losses": 14,
+        "winPct": 63.16,
+        "lastFive": [
+          "W",
+          "L",
+          "W",
+          "W",
+          "W"
+        ],
+        "pointsFor": 3137,
+        "pointsAgainst": 3031,
+        "diff": 106
+      },
+      {
+        "rank": 4,
+        "teamId": "137294",
+        "name": "Orléans Loiret Basket",
+        "wins": 24,
+        "losses": 14,
+        "winPct": 63.16,
+        "lastFive": [
+          "W",
+          "W",
+          "W",
+          "L",
+          "W"
+        ],
+        "pointsFor": 3137,
+        "pointsAgainst": 2997,
+        "diff": 140
+      },
+      {
+        "rank": 5,
+        "teamId": "137298",
+        "name": "Poitiers Basket 86",
+        "wins": 24,
+        "losses": 14,
+        "winPct": 63.16,
+        "lastFive": [
+          "W",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "pointsFor": 3194,
+        "pointsAgainst": 3079,
+        "diff": 115
+      },
+      {
+        "rank": 6,
+        "teamId": "141492",
+        "name": "JA Vichy",
+        "wins": 22,
+        "losses": 16,
+        "winPct": 57.89,
+        "lastFive": [
+          "L",
+          "W",
+          "L",
+          "L",
+          "L"
+        ],
+        "pointsFor": 3055,
+        "pointsAgainst": 2921,
+        "diff": 134
+      },
+      {
+        "rank": 7,
+        "teamId": "141488",
+        "name": "Hermine Nantes Basket",
+        "wins": 22,
+        "losses": 16,
+        "winPct": 57.89,
+        "lastFive": [
+          "L",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "pointsFor": 3234,
+        "pointsAgainst": 3136,
+        "diff": 98
+      },
+      {
+        "rank": 8,
+        "teamId": "146710",
+        "name": "Stade Rochelais Basket",
+        "wins": 21,
+        "losses": 17,
+        "winPct": 55.26,
+        "lastFive": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "W"
+        ],
+        "pointsFor": 3009,
+        "pointsAgainst": 3027,
+        "diff": -18
+      },
+      {
+        "rank": 9,
+        "teamId": "141485",
+        "name": "Denain Voltaire Basket",
+        "wins": 21,
+        "losses": 17,
+        "winPct": 55.26,
+        "lastFive": [
+          "W",
+          "W",
+          "L",
+          "L",
+          "W"
+        ],
+        "pointsFor": 3176,
+        "pointsAgainst": 3131,
+        "diff": 45
+      },
+      {
+        "rank": 10,
+        "teamId": "135236",
+        "name": "Châlons-Reims",
+        "wins": 21,
+        "losses": 17,
+        "winPct": 55.26,
+        "lastFive": [
+          "W",
+          "W",
+          "L",
+          "W",
+          "W"
+        ],
+        "pointsFor": 3097,
+        "pointsAgainst": 3068,
+        "diff": 29
+      },
+      {
+        "rank": 11,
+        "teamId": "143792",
+        "name": "Alliance Sport Alsace",
+        "wins": 19,
+        "losses": 19,
+        "winPct": 50,
+        "lastFive": [
+          "L",
+          "W",
+          "L",
+          "L",
+          "L"
+        ],
+        "pointsFor": 3159,
+        "pointsAgainst": 3167,
+        "diff": -8
+      },
+      {
+        "rank": 12,
+        "teamId": "137295",
+        "name": "HTV Basket",
+        "wins": 19,
+        "losses": 19,
+        "winPct": 50,
+        "lastFive": [
+          "W",
+          "L",
+          "W",
+          "W",
+          "L"
+        ],
+        "pointsFor": 3218,
+        "pointsAgainst": 3223,
+        "diff": -5
+      },
+      {
+        "rank": 13,
+        "teamId": "135249",
+        "name": "Rouen Métropole Basket",
+        "wins": 18,
+        "losses": 20,
+        "winPct": 47.37,
+        "lastFive": [
+          "L",
+          "W",
+          "W",
+          "W",
+          "W"
+        ],
+        "pointsFor": 3137,
+        "pointsAgainst": 3186,
+        "diff": -49
+      },
+      {
+        "rank": 14,
+        "teamId": "141484",
+        "name": "AMSB",
+        "wins": 18,
+        "losses": 20,
+        "winPct": 47.37,
+        "lastFive": [
+          "W",
+          "L",
+          "W",
+          "L",
+          "L"
+        ],
+        "pointsFor": 3165,
+        "pointsAgainst": 3171,
+        "diff": -6
+      },
+      {
+        "rank": 15,
+        "teamId": "136262",
+        "name": "Antibes Sharks",
+        "wins": 17,
+        "losses": 21,
+        "winPct": 44.74,
+        "lastFive": [
+          "L",
+          "L",
+          "W",
+          "L",
+          "L"
+        ],
+        "pointsFor": 3113,
+        "pointsAgainst": 3152,
+        "diff": -39
+      },
+      {
+        "rank": 16,
+        "teamId": "141491",
+        "name": "Saint-Chamond Basket",
+        "wins": 15,
+        "losses": 23,
+        "winPct": 39.47,
+        "lastFive": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "pointsFor": 3147,
+        "pointsAgainst": 3143,
+        "diff": 4
+      },
+      {
+        "rank": 17,
+        "teamId": "142407",
+        "name": "Caen Basket Calvados",
+        "wins": 13,
+        "losses": 25,
+        "winPct": 34.21,
+        "lastFive": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "W"
+        ],
+        "pointsFor": 2990,
+        "pointsAgainst": 3176,
+        "diff": -186
+      },
+      {
+        "rank": 18,
+        "teamId": "140014",
+        "name": "ALM Évreux Basket",
+        "wins": 11,
+        "losses": 27,
+        "winPct": 28.95,
+        "lastFive": [
+          "L",
+          "L",
+          "L",
+          "L",
+          "L"
+        ],
+        "pointsFor": 3027,
+        "pointsAgainst": 3280,
+        "diff": -253
+      },
+      {
+        "rank": 19,
+        "teamId": "138332",
+        "name": "UJAP Quimper 29",
+        "wins": 10,
+        "losses": 28,
+        "winPct": 26.32,
+        "lastFive": [
+          "L",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "pointsFor": 2793,
+        "pointsAgainst": 3141,
+        "diff": -348
+      },
+      {
+        "rank": 20,
+        "teamId": "149348",
+        "name": "Challans Basket",
+        "wins": 4,
+        "losses": 34,
+        "winPct": 10.53,
+        "lastFive": [
+          "W",
+          "L",
+          "L",
+          "W",
+          "L"
+        ],
+        "pointsFor": 2949,
+        "pointsAgainst": 3354,
+        "diff": -405
+      }
+    ]
+  }
+}
