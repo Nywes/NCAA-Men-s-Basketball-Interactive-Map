@@ -2,36 +2,39 @@ import { useEffect, useState } from 'react';
 import './styles.css';
 import aboutMe from './assets/aboutme.png';
 
-export default function Navbar({ searchQuery, setSearchQuery, onSubmit }) {
-  const [text, setText] = useState("NCAA Division I Men's Basketball");
+export default function Navbar({ league, searchQuery, setSearchQuery, onSubmit }) {
+  const titleFull = league?.title || "NCAA Division I Men's Basketball";
+  const titleShort = league?.shortTitle || 'NCAA';
+
+  const [text, setText] = useState(titleFull);
   const [hover, setHover] = useState(false);
   const [activeIndex, setActiveIndex] = useState(null);
   const [showText, setShowText] = useState(true);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  const updateText = () => {
-    const smallScreen = window.innerWidth < 600;
-    setIsSmallScreen(smallScreen);
-
-    if (smallScreen) {
-      setShowText(false);
-    } else if (window.innerWidth < 1000) {
-      setText('NCAA');
-      setShowText(true);
-    } else {
-      setText("NCAA Division I Men's Basketball");
-      setShowText(true);
-    }
-  };
-
   useEffect(() => {
+    const updateText = () => {
+      const smallScreen = window.innerWidth < 600;
+      setIsSmallScreen(smallScreen);
+
+      if (smallScreen) {
+        setShowText(false);
+      } else if (window.innerWidth < 1000) {
+        setText(titleShort);
+        setShowText(true);
+      } else {
+        setText(titleFull);
+        setShowText(true);
+      }
+    };
+
     updateText();
     window.addEventListener('resize', updateText);
 
     return () => {
       window.removeEventListener('resize', updateText);
     };
-  }, []);
+  }, [titleFull, titleShort]);
 
   useEffect(() => {
     let interval;
