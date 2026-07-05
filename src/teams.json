@@ -34226,16 +34226,7 @@
     "name": "Denver Pioneers",
     "latitude": "39.6824183",
     "longitude": "-104.9623912",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Summit League",
     "venue": "Hamilton Gymnasium",
     "tournament": {
@@ -34251,16 +34242,7 @@
     "name": "Kansas City Roos",
     "latitude": "39.0355454",
     "longitude": "-94.5787562",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Summit League",
     "venue": "Swinney Center",
     "tournament": {
@@ -34276,7 +34258,37 @@
     "name": "North Dakota Fighting Hawks",
     "latitude": "47.9275945",
     "longitude": "-97.0732545",
-    "oldPlayers": [],
+    "oldPlayers": [
+      {
+        "id": "sum-phil-jackson",
+        "name": "Phil Jackson",
+        "years": "1964-1967",
+        "draftPosition": "17",
+        "draftYear": "1967",
+        "draftTeam": "New York Knicks",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "1970",
+              "1973"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
+      }
+    ],
     "conference": "Summit League",
     "venue": "Betty Engelstad Sioux Center",
     "tournament": {
@@ -34308,16 +34320,7 @@
     "name": "Omaha Mavericks",
     "latitude": "41.2361165",
     "longitude": "-96.0130109",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Summit League",
     "venue": "Baxter Arena",
     "tournament": {
@@ -34335,12 +34338,30 @@
     "longitude": "-95.9556507",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
+        "id": "sum-max-abmas",
+        "name": "Max Abmas",
+        "years": "2019-2023",
         "draftPosition": "",
         "draftYear": "",
-        "draftTeam": ""
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
       }
     ],
     "conference": "Summit League",
@@ -34362,16 +34383,7 @@
     "name": "South Dakota Coyotes",
     "latitude": "42.7900965",
     "longitude": "-96.9278775",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Summit League",
     "venue": "Sanford Coyote Sports Center",
     "tournament": {
@@ -34389,12 +34401,56 @@
     "longitude": "-96.7791557",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
+        "id": "sum-mike-daum",
+        "name": "Mike Daum",
+        "years": "2015-2019",
         "draftPosition": "",
         "draftYear": "",
-        "draftTeam": ""
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
+      },
+      {
+        "id": "sum-nate-wolters",
+        "name": "Nate Wolters",
+        "years": "2009-2013",
+        "draftPosition": "38",
+        "draftYear": "2013",
+        "draftTeam": "Washington Wizards",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
       }
     ],
     "conference": "Summit League",
@@ -34412,16 +34468,7 @@
     "name": "St. Thomas-Minnesota Tommies",
     "latitude": "44.9396574",
     "longitude": "-93.194434",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Summit League",
     "venue": "Lee & Penny Anderson Arena",
     "tournament": {
@@ -34437,16 +34484,7 @@
     "name": "App State Mountaineers",
     "latitude": "36.2107135",
     "longitude": "-81.675873",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Sun Belt",
     "venue": "Holmes Convocation Center",
     "tournament": {
@@ -34462,16 +34500,7 @@
     "name": "Arkansas State Red Wolves",
     "latitude": "35.8453739",
     "longitude": "-90.6703443",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Sun Belt",
     "venue": "First National Bank Arena",
     "tournament": {
@@ -34489,12 +34518,30 @@
     "longitude": "-79.0156008",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
+        "id": "sb-tony-dunkin",
+        "name": "Tony Dunkin",
+        "years": "1989-1993",
         "draftPosition": "",
         "draftYear": "",
-        "draftTeam": ""
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
       }
     ],
     "conference": "Sun Belt",
@@ -34512,16 +34559,7 @@
     "name": "Georgia Southern Eagles",
     "latitude": "32.40625",
     "longitude": "-81.783056",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Sun Belt",
     "venue": "Jack and Ruth Ann Hill Convocation Center",
     "tournament": {
@@ -34539,12 +34577,30 @@
     "longitude": "-84.38869",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "sb-rj-hunter",
+        "name": "R.J. Hunter",
+        "years": "2012-2015",
+        "draftPosition": "28",
+        "draftYear": "2015",
+        "draftTeam": "Boston Celtics",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
       }
     ],
     "conference": "Sun Belt",
@@ -34562,16 +34618,7 @@
     "name": "James Madison Dukes",
     "latitude": "38.430437",
     "longitude": "-78.859574",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "venue": "Atlantic Union Bank Center",
     "conference": "Sun Belt",
     "tournament": {
@@ -34595,6 +34642,60 @@
         "draftPosition": "10",
         "draftYear": "2014",
         "draftTeam": "Philadelphia 76ers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
+      },
+      {
+        "id": "sb-andrew-toney",
+        "name": "Andrew Toney",
+        "years": "1976-1980",
+        "draftPosition": "8",
+        "draftYear": "1980",
+        "draftTeam": "Philadelphia 76ers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "1983"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 2,
+            "allNBA": 0
+          },
+          "intl": []
+        }
+      },
+      {
+        "id": "sb-bo-lamar",
+        "name": "Dwight 'Bo' Lamar",
+        "years": "1969-1973",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
         "hof": false,
         "awards": {
           "ncaa": {
@@ -34656,6 +34757,60 @@
           },
           "intl": []
         }
+      },
+      {
+        "id": "sb-hal-greer",
+        "name": "Hal Greer",
+        "years": "1954-1958",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": true,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "1967"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 10,
+            "allNBA": 7
+          },
+          "intl": []
+        }
+      },
+      {
+        "id": "sb-mike-dantoni",
+        "name": "Mike D'Antoni",
+        "years": "1970-1973",
+        "draftPosition": "20",
+        "draftYear": "1973",
+        "draftTeam": "Kansas City-Omaha Kings",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
       }
     ],
     "conference": "Sun Belt",
@@ -34675,12 +34830,84 @@
     "longitude": "-76.3012306",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
+        "id": "sb-dave-twardzik",
+        "name": "Dave Twardzik",
+        "years": "1968-1972",
         "draftPosition": "",
         "draftYear": "",
-        "draftTeam": ""
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [
+              "1977"
+            ],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
+      },
+      {
+        "id": "sb-chris-gatling",
+        "name": "Chris Gatling",
+        "years": "1988-1991",
+        "draftPosition": "16",
+        "draftYear": "1991",
+        "draftTeam": "Golden State Warriors",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": 0
+          },
+          "intl": []
+        }
+      },
+      {
+        "id": "sb-kent-bazemore",
+        "name": "Kent Bazemore",
+        "years": "2008-2012",
+        "draftPosition": "",
+        "draftYear": "",
+        "draftTeam": "",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
       }
     ],
     "conference": "Sun Belt",
@@ -34698,16 +34925,7 @@
     "name": "South Alabama Jaguars",
     "latitude": "30.69229",
     "longitude": "-88.17975",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Sun Belt",
     "venue": "Mitchell Center",
     "tournament": {
@@ -34725,12 +34943,30 @@
     "longitude": "-89.33778",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "sb-clarence-weatherspoon",
+        "name": "Clarence Weatherspoon",
+        "years": "1988-1992",
+        "draftPosition": "9",
+        "draftYear": "1992",
+        "draftTeam": "Philadelphia 76ers",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 0,
+            "allNBA": 0
+          },
+          "intl": []
+        }
       }
     ],
     "conference": "Sun Belt",
@@ -34748,16 +34984,7 @@
     "name": "Texas State Bobcats",
     "latitude": "29.8885359",
     "longitude": "-97.9324419",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Sun Belt",
     "venue": "Strahan Arena at the University Events Center",
     "tournament": {
@@ -34773,16 +35000,7 @@
     "name": "Troy Trojans",
     "latitude": "31.802287",
     "longitude": "-85.9524336",
-    "oldPlayers": [
-      {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
-      }
-    ],
+    "oldPlayers": [],
     "conference": "Sun Belt",
     "venue": "Trojan Arena",
     "tournament": {
@@ -34800,12 +35018,30 @@
     "longitude": "-92.069",
     "oldPlayers": [
       {
-        "id": "",
-        "name": "",
-        "years": "",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": ""
+        "id": "sb-calvin-natt",
+        "name": "Calvin Natt",
+        "years": "1975-1979",
+        "draftPosition": "8",
+        "draftYear": "1979",
+        "draftTeam": "New Jersey Nets",
+        "hof": false,
+        "awards": {
+          "ncaa": {
+            "champion": [],
+            "naismithPOY": "",
+            "tournamentMOP": "",
+            "allAmerican": ""
+          },
+          "nba": {
+            "champion": [],
+            "mvp": "",
+            "finalsMVP": [],
+            "roty": "",
+            "allStar": 1,
+            "allNBA": 0
+          },
+          "intl": []
+        }
       }
     ],
     "conference": "Sun Belt",
