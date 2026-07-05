@@ -1,5 +1,5 @@
 import ncaaLogo from './assets/icons/ncaa-logo.png';
-import lnbLogo from './assets/icons/Logo LNB 2024.jpg';
+import lnbLogo from './assets/icons/lnb-logo.png';
 
 // Config des "univers" disponibles. Ajouter une ligue = ajouter une entrée ici
 // (le LeaguePicker et les routes se construisent depuis cet objet).
@@ -9,7 +9,6 @@ export const LEAGUES = [
     path: '/usa',
     flag: '🇺🇸',
     name: 'NCAA Division I',
-    sub: '350+ American colleges',
     title: "NCAA Division I Men's Basketball",
     shortTitle: 'NCAA',
     logo: ncaaLogo,
@@ -19,7 +18,6 @@ export const LEAGUES = [
     path: '/france',
     flag: '🇫🇷',
     name: 'LNB — Élite & Pro B',
-    sub: '36 French pro clubs',
     title: 'French Pro Basketball — LNB',
     shortTitle: 'LNB',
     logo: lnbLogo,

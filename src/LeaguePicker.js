@@ -54,10 +54,7 @@ export default function LeaguePicker({ currentLeague }) {
           >
             <img className="lp-logo" src={league.logo} alt="" />
             <span className="lp-text">
-              <span className="lp-name">{league.name}</span>
-              <span className="lp-sub">
-                {league.flag} {league.sub}
-              </span>
+              <span className="lp-name">{league.name} {league.flag}</span>
             </span>
           </button>
         ))}
