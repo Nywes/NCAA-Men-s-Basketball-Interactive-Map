@@ -35,7 +35,7 @@ const ncaaBadges = (player) => {
   const champ = a.champion || player.trophy; // rétro-compat: trophy = titres NCAA
   const out = [];
   if (champ && champ.length) out.push({ tier: 3, label: `Champion ${yrs(champ)}` });
-  if (a.naismithPOY) out.push({ tier: 3, label: `Naismith POY ${a.naismithPOY}` });
+  if (a.naismithPOY) out.push({ tier: 3, label: `National POY ${a.naismithPOY}` });
   if (a.tournamentMOP) out.push({ tier: 2, label: `Tournament MOP ${a.tournamentMOP}` });
   if (a.allAmerican)
     out.push({ tier: 1, label: `All-American${typeof a.allAmerican === 'string' ? ` ${a.allAmerican}` : ''}` });
