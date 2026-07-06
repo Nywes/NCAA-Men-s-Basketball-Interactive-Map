@@ -9,9 +9,16 @@ import { Icon } from 'leaflet';
 import { useEffect, useState, useRef } from 'react';
 
 import teamsData from './teams.json';
+import teamsWomenData from './teams-women.json';
 
 import ncaaLogo from './assets/icons/ncaa-logo.png';
 import TeamPanels from './TeamPanels';
+import GenderSwitch from './GenderSwitch';
+import { sportPath } from './espn';
+
+// Résultats du fetch ESPN (couleurs/logos/division) mis en cache par genre,
+// pour ne pas re-télécharger tout le dataset à chaque bascule Men/Women.
+const TEAMS_CACHE = { men: null, women: null };
 
 const divisions = [
   { id: '2', name: 'ACC', imgLinkName: 'Atlantic_Coast_Conference_ACC_logo.png' },
@@ -78,10 +85,10 @@ const getDarkAccent = (color) => {
 };
 
 
-const fetchTeamInfo = async (teamId) => {
+const fetchTeamInfo = async (teamId, gender) => {
   try {
     const response = await fetch(
-      `https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/${teamId}`
+      `https://site.api.espn.com/apis/site/v2/sports/basketball/${sportPath(gender)}/teams/${teamId}`
     );
     const data = await response.json();
     return data;
@@ -206,7 +213,7 @@ function AutoPanPopup({ children, isSmallScreen, rosterLoading }) {
   );
 }
 
-export default function App({ searchQuery, searchSubmit }) {
+export default function App({ searchQuery, searchSubmit, gender = 'men', setGender }) {
   const [teams, setTeams] = useState([]);
   const [loading, setLoading] = useState(true);
   const [selectedDivisions, setSelectedDivisions] = useState([]);
@@ -214,6 +221,7 @@ export default function App({ searchQuery, searchSubmit }) {
 
   const [roster, setRoster] = useState(null);
   const [rosterLoading, setRosterLoading] = useState(false);
+  const [selectedTeamId, setSelectedTeamId] = useState(null);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   const updateScreenSize = () => {
@@ -249,7 +257,7 @@ export default function App({ searchQuery, searchSubmit }) {
     setRosterLoading(true);
     try {
       const response = await fetch(
-        `https://site.api.espn.com/apis/site/v2/sports/basketball/mens-college-basketball/teams/${teamId}/roster`
+        `https://site.api.espn.com/apis/site/v2/sports/basketball/${sportPath(gender)}/teams/${teamId}/roster`
       );
       const data = await response.json();
       setRoster(data);
@@ -261,6 +269,14 @@ export default function App({ searchQuery, searchSubmit }) {
     }
   };
 
+  // Au changement de genre avec une modale ouverte : on recharge le roster de
+  // l'équipe sélectionnée depuis le bon endpoint (sinon photos/stats cherchées
+  // avec des ids du mauvais genre -> rien ne charge).
+  useEffect(() => {
+    if (selectedTeamId) fetchTeamRoster(selectedTeamId);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gender]);
+
   const filteredTeams = teams.filter(
     (team) =>
       (selectedDivisions.length === 0 || selectedDivisions.includes(team.division)) &&
@@ -268,12 +284,22 @@ export default function App({ searchQuery, searchSubmit }) {
   );
 
   useEffect(() => {
+    let cancelled = false;
+    const source = gender === 'women' ? teamsWomenData : teamsData;
+
     const fetchAllTeams = async () => {
+      // Déjà en cache pour ce genre -> rendu immédiat, aucun re-fetch.
+      if (TEAMS_CACHE[gender]) {
+        setTeams(TEAMS_CACHE[gender]);
+        setLoading(false);
+        return;
+      }
+      setLoading(true);
       try {
         const updatedTeams = await Promise.all(
-          teamsData.map(async (team) => {
+          source.map(async (team) => {
             try {
-              const teamInfo = await fetchTeamInfo(team.id);
+              const teamInfo = await fetchTeamInfo(team.id, gender);
 
               return {
                 ...team,
@@ -300,19 +326,24 @@ export default function App({ searchQuery, searchSubmit }) {
           })
         );
 
+        if (cancelled) return;
+        TEAMS_CACHE[gender] = updatedTeams;
         setTeams(updatedTeams);
       } catch (error) {
         console.error('Error fetching teams:', error);
-        setTeams([]);
+        if (!cancelled) setTeams([]);
       } finally {
-        setLoading(false);
+        if (!cancelled) setLoading(false);
       }
     };
 
     fetchAllTeams();
-  }, []);
+    return () => {
+      cancelled = true;
+    };
+  }, [gender]);
 
-  if (loading) {
+  if (loading && teams.length === 0) {
     return (
       <div
         style={{
@@ -378,6 +409,7 @@ export default function App({ searchQuery, searchSubmit }) {
                   icon={customIcon(team.logo)}
                   eventHandlers={{
                     click: () => {
+                      setSelectedTeamId(team.id);
                       fetchTeamRoster(team.id);
                     },
                   }}
@@ -443,6 +475,7 @@ export default function App({ searchQuery, searchSubmit }) {
                         roster={roster}
                         rosterLoading={rosterLoading}
                         isSmallScreen={isSmallScreen}
+                        gender={gender}
                       />
                     </div>
                   </AutoPanPopup>
@@ -466,6 +499,8 @@ export default function App({ searchQuery, searchSubmit }) {
             </button>
           ))}
         </div>
+
+        <GenderSwitch gender={gender} onChange={setGender} />
       </div>
     </div>
   );

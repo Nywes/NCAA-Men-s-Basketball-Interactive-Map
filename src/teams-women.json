@@ -1,0 +1,7297 @@
+[
+  {
+    "id": "103",
+    "name": "Boston College Eagles",
+    "latitude": "42.3351475",
+    "longitude": "-71.1677659",
+    "venue": "Conte Forum",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2000",
+        "2003",
+        "2004",
+        "2006"
+      ],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "25",
+    "name": "California Golden Bears",
+    "latitude": "37.8693905",
+    "longitude": "-122.2622061",
+    "venue": "Haas Pavilion",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2013"
+      ],
+      "eliteEights": [
+        "2013"
+      ],
+      "sweetSixteens": [
+        "2009",
+        "2013",
+        "2014"
+      ],
+      "appearances": 15
+    }
+  },
+  {
+    "id": "228",
+    "name": "Clemson Tigers",
+    "latitude": "34.6801874",
+    "longitude": "-82.846473",
+    "venue": "Littlejohn Coliseum",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1990"
+      ],
+      "sweetSixteens": [
+        "1990",
+        "1991",
+        "1992",
+        "1996",
+        "1999"
+      ],
+      "appearances": 17
+    }
+  },
+  {
+    "id": "150",
+    "name": "Duke Blue Devils",
+    "latitude": "35.9974496",
+    "longitude": "-78.9422669",
+    "venue": "Cameron Indoor Stadium",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1999",
+        "2002",
+        "2003",
+        "2006"
+      ],
+      "eliteEights": [
+        "1998",
+        "1999",
+        "2002",
+        "2003",
+        "2005",
+        "2006",
+        "2011",
+        "2012",
+        "2013",
+        "2025",
+        "2026"
+      ],
+      "sweetSixteens": [
+        "1996",
+        "1998",
+        "1999",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2008",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2015",
+        "2018",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "appearances": 28
+    }
+  },
+  {
+    "id": "52",
+    "name": "Florida State Seminoles",
+    "latitude": "30.4377931",
+    "longitude": "-84.2866888",
+    "venue": "Donald L. Tucker Center",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2010",
+        "2015",
+        "2017"
+      ],
+      "sweetSixteens": [
+        "1991",
+        "2007",
+        "2010",
+        "2015",
+        "2016",
+        "2017",
+        "2018"
+      ],
+      "appearances": 23
+    }
+  },
+  {
+    "id": "59",
+    "name": "Georgia Tech Yellow Jackets",
+    "latitude": "33.7806025",
+    "longitude": "-84.3927616",
+    "venue": "Hank McCamish Pavilion",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2012"
+      ],
+      "appearances": 12
+    }
+  },
+  {
+    "id": "97",
+    "name": "Louisville Cardinals",
+    "latitude": "38.2576964",
+    "longitude": "-85.7538599",
+    "venue": "KFC Yum! Center",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2009",
+        "2013",
+        "2018",
+        "2022"
+      ],
+      "eliteEights": [
+        "2009",
+        "2013",
+        "2014",
+        "2018",
+        "2019",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "sweetSixteens": [
+        "2008",
+        "2009",
+        "2011",
+        "2013",
+        "2014",
+        "2015",
+        "2018",
+        "2019",
+        "2021",
+        "2022",
+        "2023",
+        "2026"
+      ],
+      "appearances": 28
+    }
+  },
+  {
+    "id": "2390",
+    "name": "Miami Hurricanes",
+    "latitude": "25.7153095",
+    "longitude": "-80.2793844",
+    "venue": "Watsco Center",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2023"
+      ],
+      "sweetSixteens": [
+        "2023"
+      ],
+      "appearances": 16
+    }
+  },
+  {
+    "id": "152",
+    "name": "NC State Wolfpack",
+    "latitude": "35.8033981",
+    "longitude": "-78.7219166",
+    "venue": "PNC Arena",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1998",
+        "2024"
+      ],
+      "eliteEights": [
+        "1982",
+        "1995",
+        "1998",
+        "2022",
+        "2024"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1984",
+        "1985",
+        "1987",
+        "1990",
+        "1995",
+        "1998",
+        "2001",
+        "2007",
+        "2018",
+        "2019",
+        "2021",
+        "2022",
+        "2024",
+        "2025"
+      ],
+      "appearances": 31
+    }
+  },
+  {
+    "id": "153",
+    "name": "North Carolina Tar Heels",
+    "latitude": "35.8994837",
+    "longitude": "-79.0438119",
+    "venue": "Dean E. Smith Center",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "1994"
+      ],
+      "finalFours": [
+        "1994",
+        "2006",
+        "2007"
+      ],
+      "eliteEights": [
+        "1994",
+        "1997",
+        "1998",
+        "2005",
+        "2006",
+        "2007",
+        "2008"
+      ],
+      "sweetSixteens": [
+        "1984",
+        "1986",
+        "1994",
+        "1995",
+        "1997",
+        "1998",
+        "1999",
+        "2000",
+        "2002",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2011",
+        "2014",
+        "2015",
+        "2022",
+        "2025",
+        "2026"
+      ],
+      "appearances": 33
+    }
+  },
+  {
+    "id": "87",
+    "name": "Notre Dame Fighting Irish",
+    "latitude": "41.6983619",
+    "longitude": "-86.2313156",
+    "venue": "Purcell Pavilion at the Edmund P. Joyce Center",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "2001",
+        "2018"
+      ],
+      "finalFours": [
+        "1997",
+        "2001",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2018",
+        "2019"
+      ],
+      "eliteEights": [
+        "1997",
+        "2001",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2017",
+        "2018",
+        "2019",
+        "2026"
+      ],
+      "sweetSixteens": [
+        "1997",
+        "1998",
+        "2001",
+        "2002",
+        "2004",
+        "2008",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2022",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "appearances": 31
+    }
+  },
+  {
+    "id": "221",
+    "name": "Pittsburgh Panthers",
+    "latitude": "40.4440003",
+    "longitude": "-79.9621193",
+    "venue": "Petersen Events Center",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2008",
+        "2009"
+      ],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2567",
+    "name": "SMU Mustangs",
+    "latitude": "32.8403971",
+    "longitude": "-96.7806817",
+    "venue": "Moody Coliseum",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1999"
+      ],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "24",
+    "name": "Stanford Cardinal",
+    "latitude": "37.429523",
+    "longitude": "-122.1605789",
+    "venue": "Maples Pavilion",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "1990",
+        "1992",
+        "2021"
+      ],
+      "finalFours": [
+        "1990",
+        "1991",
+        "1992",
+        "1995",
+        "1996",
+        "1997",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2014",
+        "2017",
+        "2021",
+        "2022"
+      ],
+      "eliteEights": [
+        "1989",
+        "1990",
+        "1991",
+        "1992",
+        "1994",
+        "1995",
+        "1996",
+        "1997",
+        "2004",
+        "2005",
+        "2006",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2016",
+        "2017",
+        "2019",
+        "2021",
+        "2022"
+      ],
+      "sweetSixteens": [
+        "1988",
+        "1989",
+        "1990",
+        "1991",
+        "1992",
+        "1994",
+        "1995",
+        "1996",
+        "1997",
+        "2002",
+        "2004",
+        "2005",
+        "2006",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2021",
+        "2022"
+      ],
+      "appearances": 37
+    }
+  },
+  {
+    "id": "183",
+    "name": "Syracuse Orange",
+    "latitude": "43.0362837",
+    "longitude": "-76.1363603",
+    "venue": "JMA Wireless Dome",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2016"
+      ],
+      "eliteEights": [
+        "2016"
+      ],
+      "sweetSixteens": [
+        "2016",
+        "2019"
+      ],
+      "appearances": 14
+    }
+  },
+  {
+    "id": "258",
+    "name": "Virginia Cavaliers",
+    "latitude": "38.0459828",
+    "longitude": "-78.5066437",
+    "venue": "John Paul Jones Arena",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1990",
+        "1991",
+        "1992"
+      ],
+      "eliteEights": [
+        "1988",
+        "1990",
+        "1991",
+        "1992",
+        "1993",
+        "1996"
+      ],
+      "sweetSixteens": [
+        "1987",
+        "1988",
+        "1990",
+        "1991",
+        "1992",
+        "1993",
+        "1995",
+        "1996",
+        "1997",
+        "2000",
+        "2003",
+        "2026"
+      ],
+      "appearances": 26
+    }
+  },
+  {
+    "id": "259",
+    "name": "Virginia Tech Hokies",
+    "latitude": "37.222507",
+    "longitude": "-80.4189121",
+    "venue": "Cassell Coliseum",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2023"
+      ],
+      "eliteEights": [
+        "2023"
+      ],
+      "sweetSixteens": [
+        "1999",
+        "2023"
+      ],
+      "appearances": 14
+    }
+  },
+  {
+    "id": "154",
+    "name": "Wake Forest Demon Deacons",
+    "latitude": "36.1276288",
+    "longitude": "-80.2577972",
+    "venue": "Joel Coliseum",
+    "conference": "ACC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2046",
+    "name": "Austin Peay Governors",
+    "latitude": "36.528596",
+    "longitude": "-87.360618",
+    "venue": "F&M Bank Arena",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "91",
+    "name": "Bellarmine Knights",
+    "latitude": "38.2215511",
+    "longitude": "-85.705174",
+    "venue": "Knights Hall",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2110",
+    "name": "Central Arkansas Bears",
+    "latitude": "35.0818836",
+    "longitude": "-92.4595613",
+    "venue": "Farris Center",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2198",
+    "name": "Eastern Kentucky Colonels",
+    "latitude": "37.7372999",
+    "longitude": "-84.30133",
+    "venue": "Baptist Health Arena",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "526",
+    "name": "Florida Gulf Coast Eagles",
+    "latitude": "26.4710873",
+    "longitude": "-81.7645663",
+    "venue": "Alico Arena",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "294",
+    "name": "Jacksonville Dolphins",
+    "latitude": "30.3502514",
+    "longitude": "-81.6050056",
+    "venue": "Swisher Gymnasium",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "288",
+    "name": "Lipscomb Bisons",
+    "latitude": "36.1037647",
+    "longitude": "-86.7989111",
+    "venue": "Allen Arena",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2453",
+    "name": "North Alabama Lions",
+    "latitude": "34.8083949",
+    "longitude": "-87.6838221",
+    "venue": "CB&S Bank Arena at Flowers Hall",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2454",
+    "name": "North Florida Ospreys",
+    "latitude": "30.273461",
+    "longitude": "-81.5080614",
+    "venue": "UNF Arena",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2511",
+    "name": "Queens University Royals",
+    "latitude": "35.1884862",
+    "longitude": "-80.8351312",
+    "venue": "Curry Arena",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "56",
+    "name": "Stetson Hatters",
+    "latitude": "29.0395413",
+    "longitude": "-81.3018214",
+    "venue": "Insight Credit Union Arena at Edmunds Center",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2698",
+    "name": "West Georgia Wolves",
+    "latitude": "33.5759045",
+    "longitude": "-85.103896",
+    "venue": "The Coliseum",
+    "conference": "ASUN",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2066",
+    "name": "Binghamton Bearcats",
+    "latitude": "42.0933917",
+    "longitude": "-75.9719273",
+    "venue": "Binghamton University Events Center",
+    "conference": "America East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2803",
+    "name": "Bryant Bulldogs",
+    "latitude": "41.9212156",
+    "longitude": "-71.5394511",
+    "venue": "Chace Athletic Center",
+    "conference": "America East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "311",
+    "name": "Maine Black Bears",
+    "latitude": "44.9036935",
+    "longitude": "-68.6698941",
+    "venue": "Memorial Gymnasium",
+    "conference": "America East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 10
+    }
+  },
+  {
+    "id": "2885",
+    "name": "NJIT Highlanders",
+    "latitude": "40.7422974",
+    "longitude": "-74.1804097",
+    "venue": "Joel and Diane Bloom Wellness and Events Center",
+    "conference": "America East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "160",
+    "name": "New Hampshire Wildcats",
+    "latitude": "43.1387533",
+    "longitude": "-70.9378995",
+    "venue": "Lundholm Gym",
+    "conference": "America East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "399",
+    "name": "UAlbany Great Danes",
+    "latitude": "42.6821683",
+    "longitude": "-73.8282597",
+    "venue": "Broadview Center",
+    "conference": "America East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "2378",
+    "name": "UMBC Retrievers",
+    "latitude": "39.2519473",
+    "longitude": "-76.7070399",
+    "venue": "Chesapeake Employers Insurance Arena",
+    "conference": "America East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2349",
+    "name": "UMass Lowell River Hawks",
+    "latitude": "42.6555426",
+    "longitude": "-71.3241431",
+    "venue": "Kennedy Family Athletic Complex",
+    "conference": "America East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "261",
+    "name": "Vermont Catamounts",
+    "latitude": "44.4700892",
+    "longitude": "-73.1947872",
+    "venue": "Patrick Gymnasium",
+    "conference": "America East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 9
+    }
+  },
+  {
+    "id": "2429",
+    "name": "Charlotte 49ers",
+    "latitude": "35.3062558",
+    "longitude": "-80.734437",
+    "venue": "Dale F. Halton Arena",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "151",
+    "name": "East Carolina Pirates",
+    "latitude": "35.5989657",
+    "longitude": "-77.3677731",
+    "venue": "Williams Arena at Minges Coliseum",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2226",
+    "name": "Florida Atlantic Owls",
+    "latitude": "26.37222",
+    "longitude": "-80.10917",
+    "venue": "Eleanor R. Baldwin Arena",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "235",
+    "name": "Memphis Tigers",
+    "latitude": "35.1382327",
+    "longitude": "-90.0507689",
+    "venue": "FedExForum",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1982"
+      ],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "249",
+    "name": "North Texas Mean Green",
+    "latitude": "33.2076895",
+    "longitude": "-97.1542474",
+    "venue": "UNT Coliseum",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "242",
+    "name": "Rice Owls",
+    "latitude": "29.714983",
+    "longitude": "-95.4039871",
+    "venue": "Tudor Fieldhouse",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "58",
+    "name": "South Florida Bulls",
+    "latitude": "28.0592444",
+    "longitude": "-82.4066241",
+    "venue": "Yuengling Center",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 10
+    }
+  },
+  {
+    "id": "218",
+    "name": "Temple Owls",
+    "latitude": "39.9798139",
+    "longitude": "-75.1585825",
+    "venue": "Liacouras Center",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1989"
+      ],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "2655",
+    "name": "Tulane Green Wave",
+    "latitude": "29.9388112",
+    "longitude": "-90.1210881",
+    "venue": "Avron B. Fogelman Arena in the Devlin Fieldhouse",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "202",
+    "name": "Tulsa Golden Hurricane",
+    "latitude": "36.1490016",
+    "longitude": "-95.9421785",
+    "venue": "Reynolds Center",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "5",
+    "name": "UAB Blazers",
+    "latitude": "33.502124",
+    "longitude": "-86.8092439",
+    "venue": "Bartow Arena",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2636",
+    "name": "UTSA Roadrunners",
+    "latitude": "29.5823847",
+    "longitude": "-98.6214961",
+    "venue": "Convocation Center",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2724",
+    "name": "Wichita State Shockers",
+    "latitude": "37.7218239",
+    "longitude": "-97.297425",
+    "venue": "Charles Koch Arena",
+    "conference": "American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2166",
+    "name": "Davidson Wildcats",
+    "latitude": "35.4992414",
+    "longitude": "-80.840296",
+    "venue": "John M. Belk Arena",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2168",
+    "name": "Dayton Flyers",
+    "latitude": "39.7355245",
+    "longitude": "-84.1998363",
+    "venue": "UD Arena",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2015"
+      ],
+      "sweetSixteens": [
+        "2010",
+        "2015"
+      ],
+      "appearances": 9
+    }
+  },
+  {
+    "id": "2184",
+    "name": "Duquesne Dukes",
+    "latitude": "40.4373665",
+    "longitude": "-79.9879242",
+    "venue": "UPMC Cooper Fieldhouse",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2230",
+    "name": "Fordham Rams",
+    "latitude": "40.8621701",
+    "longitude": "-73.8838528",
+    "venue": "Rose Hill Gym",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2244",
+    "name": "George Mason Patriots",
+    "latitude": "38.8268606",
+    "longitude": "-77.3096753",
+    "venue": "EagleBank Arena",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "45",
+    "name": "George Washington Revolutionaries",
+    "latitude": "38.8978142",
+    "longitude": "-77.0493531",
+    "venue": "Charles E. Smith Center",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1997",
+        "2007",
+        "2008"
+      ],
+      "appearances": 18
+    }
+  },
+  {
+    "id": "2325",
+    "name": "La Salle Explorers",
+    "latitude": "40.0400029",
+    "longitude": "-75.1565785",
+    "venue": "John Glaser Arena",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1989"
+      ],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2350",
+    "name": "Loyola Chicago Ramblers",
+    "latitude": "42.0017649",
+    "longitude": "-87.6606423",
+    "venue": "Gentile Arena",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "113",
+    "name": "Massachusetts Minutemen",
+    "latitude": "42.3895203",
+    "longitude": "-72.5334498",
+    "venue": "Mullins Center",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "227",
+    "name": "Rhode Island Rams",
+    "latitude": "41.4877769",
+    "longitude": "-71.5358626",
+    "venue": "Thomas M. Ryan Center",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "257",
+    "name": "Richmond Spiders",
+    "latitude": "37.5806819",
+    "longitude": "-77.538943",
+    "venue": "Robins Center",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "2603",
+    "name": "Saint Joseph's Hawks",
+    "latitude": "39.9956149",
+    "longitude": "-75.234862",
+    "venue": "Michael J. Hagan '85 Arena",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1989"
+      ],
+      "appearances": 13
+    }
+  },
+  {
+    "id": "139",
+    "name": "Saint Louis Billikens",
+    "latitude": "38.6325255",
+    "longitude": "-90.2281769",
+    "venue": "Chaifetz Arena",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "179",
+    "name": "St. Bonaventure Bonnies",
+    "latitude": "42.0794954",
+    "longitude": "-78.4849716",
+    "venue": "Reilly Center",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2012"
+      ],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2670",
+    "name": "VCU Rams",
+    "latitude": "37.5528754",
+    "longitude": "-77.4528272",
+    "venue": "Siegel Center",
+    "conference": "A-10",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "9",
+    "name": "Arizona State Sun Devils",
+    "latitude": "33.4245079",
+    "longitude": "-111.93101",
+    "venue": "Desert Financial Arena",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2007",
+        "2009"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1983",
+        "2005",
+        "2007",
+        "2009",
+        "2015",
+        "2019"
+      ],
+      "appearances": 18
+    }
+  },
+  {
+    "id": "12",
+    "name": "Arizona Wildcats",
+    "latitude": "32.2304278",
+    "longitude": "-110.9459943",
+    "venue": "McKale Center at ALKEME Arena",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2021"
+      ],
+      "eliteEights": [
+        "2021"
+      ],
+      "sweetSixteens": [
+        "1998",
+        "1999",
+        "2021",
+        "2023"
+      ],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "252",
+    "name": "BYU Cougars",
+    "latitude": "40.2540727",
+    "longitude": "-111.6493609",
+    "venue": "Marriott Center",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2014"
+      ],
+      "appearances": 15
+    }
+  },
+  {
+    "id": "239",
+    "name": "Baylor Bears",
+    "latitude": "31.5563786",
+    "longitude": "-97.1212122",
+    "venue": "Foster Pavilion",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "2005",
+        "2012",
+        "2019"
+      ],
+      "finalFours": [
+        "2005",
+        "2010",
+        "2012",
+        "2019"
+      ],
+      "eliteEights": [
+        "2005",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2019",
+        "2021"
+      ],
+      "sweetSixteens": [
+        "2004",
+        "2005",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2021",
+        "2024"
+      ],
+      "appearances": 24
+    }
+  },
+  {
+    "id": "2132",
+    "name": "Cincinnati Bearcats",
+    "latitude": "39.1311038",
+    "longitude": "-84.5141165",
+    "venue": "Fifth Third Arena",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "38",
+    "name": "Colorado Buffaloes",
+    "latitude": "40.004687",
+    "longitude": "-105.2606067",
+    "venue": "CU Events Center",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1993",
+        "2002"
+      ],
+      "sweetSixteens": [
+        "1993",
+        "1994",
+        "1995",
+        "1997",
+        "2002",
+        "2023"
+      ],
+      "appearances": 17
+    }
+  },
+  {
+    "id": "248",
+    "name": "Houston Cougars",
+    "latitude": "29.7247367",
+    "longitude": "-95.346961",
+    "venue": "Fertitta Center",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 5
+    }
+  },
+  {
+    "id": "66",
+    "name": "Iowa State Cyclones",
+    "latitude": "42.0210001",
+    "longitude": "-93.6347686",
+    "venue": "Hilton Coliseum",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1999",
+        "2009"
+      ],
+      "sweetSixteens": [
+        "1999",
+        "2000",
+        "2001",
+        "2007",
+        "2009",
+        "2010",
+        "2022"
+      ],
+      "appearances": 24
+    }
+  },
+  {
+    "id": "2305",
+    "name": "Kansas Jayhawks",
+    "latitude": "38.9543125",
+    "longitude": "-95.2528214",
+    "venue": "Allen Fieldhouse",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1996",
+        "1998",
+        "2012",
+        "2013"
+      ],
+      "appearances": 15
+    }
+  },
+  {
+    "id": "2306",
+    "name": "Kansas State Wildcats",
+    "latitude": "39.2003162",
+    "longitude": "-96.5938455",
+    "venue": "Bramlage Coliseum",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1982",
+        "1983",
+        "2002",
+        "2003",
+        "2024",
+        "2025"
+      ],
+      "appearances": 19
+    }
+  },
+  {
+    "id": "197",
+    "name": "Oklahoma State Cowboys",
+    "latitude": "36.1257346",
+    "longitude": "-97.0651529",
+    "venue": "Gallagher-Iba Arena",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1991",
+        "2008",
+        "2014"
+      ],
+      "appearances": 19
+    }
+  },
+  {
+    "id": "2628",
+    "name": "TCU Horned Frogs",
+    "latitude": "32.7088303",
+    "longitude": "-97.3666973",
+    "venue": "Schollmaier Arena",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2025",
+        "2026"
+      ],
+      "sweetSixteens": [
+        "2025",
+        "2026"
+      ],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "2641",
+    "name": "Texas Tech Red Raiders",
+    "latitude": "33.5812506",
+    "longitude": "-101.886571",
+    "venue": "United Supermarkets Arena",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "1993"
+      ],
+      "finalFours": [
+        "1993"
+      ],
+      "eliteEights": [
+        "1993",
+        "1994",
+        "1995",
+        "2000",
+        "2003"
+      ],
+      "sweetSixteens": [
+        "1992",
+        "1993",
+        "1994",
+        "1995",
+        "1996",
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2005"
+      ],
+      "appearances": 21
+    }
+  },
+  {
+    "id": "2116",
+    "name": "UCF Knights",
+    "latitude": "28.6073409",
+    "longitude": "-81.1972969",
+    "venue": "Addition Financial Arena",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "254",
+    "name": "Utah Utes",
+    "latitude": "40.7620351",
+    "longitude": "-111.8387946",
+    "venue": "Jon M. Huntsman Center",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2006"
+      ],
+      "sweetSixteens": [
+        "2001",
+        "2006",
+        "2023"
+      ],
+      "appearances": 21
+    }
+  },
+  {
+    "id": "277",
+    "name": "West Virginia Mountaineers",
+    "latitude": "39.6494459",
+    "longitude": "-79.9814036",
+    "venue": "Hope Coliseum",
+    "conference": "Big 12",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1992"
+      ],
+      "appearances": 17
+    }
+  },
+  {
+    "id": "2086",
+    "name": "Butler Bulldogs",
+    "latitude": "39.84361",
+    "longitude": "-86.16722",
+    "venue": "Hinkle Fieldhouse",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "156",
+    "name": "Creighton Bluejays",
+    "latitude": "41.26278",
+    "longitude": "-95.92806",
+    "venue": "CHI Health Center Omaha",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2022"
+      ],
+      "sweetSixteens": [
+        "2017",
+        "2022"
+      ],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "305",
+    "name": "DePaul Blue Demons",
+    "latitude": "41.85361",
+    "longitude": "-87.62139",
+    "venue": "Wintrust Arena",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2006",
+        "2014",
+        "2016"
+      ],
+      "appearances": 25
+    }
+  },
+  {
+    "id": "46",
+    "name": "Georgetown Hoyas",
+    "latitude": "38.89806",
+    "longitude": "-77.02083",
+    "venue": "Capital One Arena",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1993",
+        "2011"
+      ],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "269",
+    "name": "Marquette Golden Eagles",
+    "latitude": "43.045028",
+    "longitude": "-87.918167",
+    "venue": "Fiserv Forum",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2007"
+      ],
+      "appearances": 15
+    }
+  },
+  {
+    "id": "2507",
+    "name": "Providence Friars",
+    "latitude": "41.82361",
+    "longitude": "-71.41833",
+    "venue": "Amica Mutual Pavilion",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 5
+    }
+  },
+  {
+    "id": "2550",
+    "name": "Seton Hall Pirates",
+    "latitude": "40.73361",
+    "longitude": "-74.17111",
+    "venue": "Prudential Center",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1994"
+      ],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2599",
+    "name": "St. John's Red Storm",
+    "latitude": "40.72417",
+    "longitude": "-73.79444",
+    "venue": "Carnesecca Arena",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2012"
+      ],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "41",
+    "name": "UConn Huskies",
+    "latitude": "41.8052917",
+    "longitude": "-72.2541944",
+    "venue": "Harry A. Gampel Pavilion",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "1995",
+        "2000",
+        "2002",
+        "2003",
+        "2004",
+        "2009",
+        "2010",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2025"
+      ],
+      "finalFours": [
+        "1991",
+        "1995",
+        "1996",
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2021",
+        "2022",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "eliteEights": [
+        "1991",
+        "1995",
+        "1996",
+        "1997",
+        "1998",
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2021",
+        "2022",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "sweetSixteens": [
+        "1991",
+        "1994",
+        "1995",
+        "1996",
+        "1997",
+        "1998",
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "appearances": 37
+    }
+  },
+  {
+    "id": "222",
+    "name": "Villanova Wildcats",
+    "latitude": "40.034072",
+    "longitude": "-75.336553",
+    "venue": "Finneran Pavilion",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1986"
+      ],
+      "appearances": 14
+    }
+  },
+  {
+    "id": "2752",
+    "name": "Xavier Musketeers",
+    "latitude": "39.150148",
+    "longitude": "-84.471881",
+    "venue": "Cintas Center",
+    "conference": "Big East",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2001",
+        "2010"
+      ],
+      "sweetSixteens": [
+        "2001",
+        "2010"
+      ],
+      "appearances": 10
+    }
+  },
+  {
+    "id": "331",
+    "name": "Eastern Washington Eagles",
+    "latitude": "47.4914",
+    "longitude": "-117.5892",
+    "venue": "Reese Court",
+    "conference": "Big Sky",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "304",
+    "name": "Idaho State Bengals",
+    "latitude": "42.8645",
+    "longitude": "-112.429",
+    "venue": "Reed Gym",
+    "conference": "Big Sky",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "70",
+    "name": "Idaho Vandals",
+    "latitude": "46.72750",
+    "longitude": "-117.01806",
+    "venue": "Idaho Central Credit Union Arena",
+    "conference": "Big Sky",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 5
+    }
+  },
+  {
+    "id": "149",
+    "name": "Montana Grizzlies",
+    "latitude": "46.864",
+    "longitude": "-113.983",
+    "venue": "Dahlberg Arena",
+    "conference": "Big Sky",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1984"
+      ],
+      "appearances": 21
+    }
+  },
+  {
+    "id": "147",
+    "name": "Montana State Bobcats",
+    "latitude": "45.6633",
+    "longitude": "-111.0506",
+    "venue": "Worthington Arena at Brick Breeden Fieldhouse",
+    "conference": "Big Sky",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2464",
+    "name": "Northern Arizona Lumberjacks",
+    "latitude": "35.1805",
+    "longitude": "-111.6525",
+    "venue": "Walkup Skydome",
+    "conference": "Big Sky",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2458",
+    "name": "Northern Colorado Bears",
+    "latitude": "40.4022",
+    "longitude": "-104.7030",
+    "venue": "Bank of Colorado Arena",
+    "conference": "Big Sky",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2502",
+    "name": "Portland State Vikings",
+    "latitude": "45.510987",
+    "longitude": "-122.687471",
+    "venue": "Viking Pavilion",
+    "conference": "Big Sky",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "16",
+    "name": "Sacramento State Hornets",
+    "latitude": "38.561903",
+    "longitude": "-121.426878",
+    "venue": "Hornet Pavilion",
+    "conference": "Big Sky",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2692",
+    "name": "Weber State Wildcats",
+    "latitude": "41.18250",
+    "longitude": "-111.94500",
+    "venue": "Dee Events Center",
+    "conference": "Big Sky",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2127",
+    "name": "Charleston Southern Buccaneers",
+    "latitude": "32.980822",
+    "longitude": "-80.067125",
+    "venue": "Buccaneer Field House",
+    "conference": "Big South",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2241",
+    "name": "Gardner-Webb Runnin' Bulldogs",
+    "latitude": "35.246538",
+    "longitude": "-81.669518",
+    "venue": "Paul Porter Arena",
+    "conference": "Big South",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2272",
+    "name": "High Point Panthers",
+    "latitude": "35.978333",
+    "longitude": "-79.996667",
+    "venue": "Qubein Center",
+    "conference": "Big South",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2344",
+    "name": "Longwood Lancers",
+    "latitude": "37.298330",
+    "longitude": "-78.395560",
+    "venue": "Joan Perry Brock Center",
+    "conference": "Big South",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2506",
+    "name": "Presbyterian Blue Hose",
+    "latitude": "34.465000",
+    "longitude": "-81.869000",
+    "venue": "Templeton Physical Education Center",
+    "conference": "Big South",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2515",
+    "name": "Radford Highlanders",
+    "latitude": "37.138600",
+    "longitude": "-80.541769",
+    "venue": "Dedmon Center",
+    "conference": "Big South",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2908",
+    "name": "South Carolina Upstate Spartans",
+    "latitude": "34.996696",
+    "longitude": "-81.968774",
+    "venue": "G. B. Hodge Center",
+    "conference": "Big South",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2427",
+    "name": "UNC Asheville Bulldogs",
+    "latitude": "35.618100",
+    "longitude": "-82.568900",
+    "venue": "Kimmel Arena",
+    "conference": "Big South",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2737",
+    "name": "Winthrop Eagles",
+    "latitude": "34.947911",
+    "longitude": "-81.014972",
+    "venue": "Winthrop Coliseum",
+    "conference": "Big South",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "356",
+    "name": "Illinois Fighting Illini",
+    "latitude": "40.096259",
+    "longitude": "-88.235956",
+    "venue": "State Farm Center",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1997",
+        "1998"
+      ],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "84",
+    "name": "Indiana Hoosiers",
+    "latitude": "39.180830",
+    "longitude": "-86.522220",
+    "venue": "Simon Skjodt Assembly Hall",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1983",
+        "2021"
+      ],
+      "sweetSixteens": [
+        "1983",
+        "2021",
+        "2022",
+        "2024"
+      ],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "2294",
+    "name": "Iowa Hawkeyes",
+    "latitude": "41.663610",
+    "longitude": "-91.554440",
+    "venue": "Carver-Hawkeye Arena",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1993",
+        "2023",
+        "2024"
+      ],
+      "eliteEights": [
+        "1987",
+        "1988",
+        "1993",
+        "2019",
+        "2023",
+        "2024"
+      ],
+      "sweetSixteens": [
+        "1987",
+        "1988",
+        "1992",
+        "1993",
+        "1996",
+        "2015",
+        "2019",
+        "2021",
+        "2023",
+        "2024"
+      ],
+      "appearances": 32
+    }
+  },
+  {
+    "id": "120",
+    "name": "Maryland Terrapins",
+    "latitude": "38.995280",
+    "longitude": "-76.941390",
+    "venue": "Xfinity Center",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "2006"
+      ],
+      "finalFours": [
+        "1982",
+        "1989",
+        "2006",
+        "2014",
+        "2015"
+      ],
+      "eliteEights": [
+        "1982",
+        "1988",
+        "1989",
+        "1992",
+        "2006",
+        "2008",
+        "2009",
+        "2012",
+        "2014",
+        "2015",
+        "2017",
+        "2023"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1983",
+        "1988",
+        "1989",
+        "1992",
+        "2006",
+        "2007",
+        "2008",
+        "2009",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2017",
+        "2022",
+        "2023",
+        "2025"
+      ],
+      "appearances": 33
+    }
+  },
+  {
+    "id": "130",
+    "name": "Michigan Wolverines",
+    "latitude": "42.265037",
+    "longitude": "-83.746768",
+    "venue": "Crisler Center",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2022",
+        "2026"
+      ],
+      "sweetSixteens": [
+        "2021",
+        "2022",
+        "2026"
+      ],
+      "appearances": 14
+    }
+  },
+  {
+    "id": "127",
+    "name": "Michigan State Spartans",
+    "latitude": "42.728227",
+    "longitude": "-84.492396",
+    "venue": "Breslin Center",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2005"
+      ],
+      "eliteEights": [
+        "2005"
+      ],
+      "sweetSixteens": [
+        "2005",
+        "2006",
+        "2007",
+        "2009",
+        "2011"
+      ],
+      "appearances": 21
+    }
+  },
+  {
+    "id": "135",
+    "name": "Minnesota Golden Gophers",
+    "latitude": "44.976940",
+    "longitude": "-93.228330",
+    "venue": "Williams Arena",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2004"
+      ],
+      "eliteEights": [
+        "2004"
+      ],
+      "sweetSixteens": [
+        "2003",
+        "2004",
+        "2005",
+        "2026"
+      ],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "158",
+    "name": "Nebraska Cornhuskers",
+    "latitude": "40.817780",
+    "longitude": "-96.713330",
+    "venue": "Pinnacle Bank Arena",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2010",
+        "2013"
+      ],
+      "appearances": 18
+    }
+  },
+  {
+    "id": "77",
+    "name": "Northwestern Wildcats",
+    "latitude": "42.066940",
+    "longitude": "-87.692780",
+    "venue": "Welsh-Ryan Arena",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2021"
+      ],
+      "appearances": 8
+    }
+  },
+  {
+    "id": "194",
+    "name": "Ohio State Buckeyes",
+    "latitude": "40.007511",
+    "longitude": "-83.025102",
+    "venue": "Value City Arena",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1993"
+      ],
+      "eliteEights": [
+        "1987",
+        "1993",
+        "2023"
+      ],
+      "sweetSixteens": [
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1993",
+        "1996",
+        "2003",
+        "2005",
+        "2006",
+        "2009",
+        "2010",
+        "2011",
+        "2016",
+        "2017",
+        "2018",
+        "2022",
+        "2023"
+      ],
+      "appearances": 30
+    }
+  },
+  {
+    "id": "2483",
+    "name": "Oregon Ducks",
+    "latitude": "44.045000",
+    "longitude": "-123.066000",
+    "venue": "Matthew Knight Arena",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2019"
+      ],
+      "eliteEights": [
+        "2018",
+        "2019"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1994",
+        "2017",
+        "2018",
+        "2019",
+        "2021"
+      ],
+      "appearances": 19
+    }
+  },
+  {
+    "id": "213",
+    "name": "Penn State Nittany Lions",
+    "latitude": "40.808890",
+    "longitude": "-77.855830",
+    "venue": "Bryce Jordan Center",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2000"
+      ],
+      "eliteEights": [
+        "1983",
+        "1985",
+        "2000",
+        "2003",
+        "2004"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1983",
+        "1985",
+        "1990",
+        "1992",
+        "1994",
+        "1996",
+        "2000",
+        "2002",
+        "2003",
+        "2004",
+        "2011",
+        "2012",
+        "2014"
+      ],
+      "appearances": 26
+    }
+  },
+  {
+    "id": "2509",
+    "name": "Purdue Boilermakers",
+    "latitude": "40.433322",
+    "longitude": "-86.916144",
+    "venue": "Mackey Arena",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "1999"
+      ],
+      "finalFours": [
+        "1994",
+        "1999",
+        "2001"
+      ],
+      "eliteEights": [
+        "1994",
+        "1995",
+        "1998",
+        "1999",
+        "2001",
+        "2003",
+        "2007",
+        "2009"
+      ],
+      "sweetSixteens": [
+        "1989",
+        "1994",
+        "1995",
+        "1998",
+        "1999",
+        "2000",
+        "2001",
+        "2003",
+        "2004",
+        "2006",
+        "2007",
+        "2009"
+      ],
+      "appearances": 27
+    }
+  },
+  {
+    "id": "164",
+    "name": "Rutgers Scarlet Knights",
+    "latitude": "40.525280",
+    "longitude": "-74.441110",
+    "venue": "Jersey Mike's Arena",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2000",
+        "2007"
+      ],
+      "eliteEights": [
+        "1986",
+        "1987",
+        "1999",
+        "2000",
+        "2005",
+        "2007",
+        "2008"
+      ],
+      "sweetSixteens": [
+        "1986",
+        "1987",
+        "1988",
+        "1998",
+        "1999",
+        "2000",
+        "2005",
+        "2007",
+        "2008",
+        "2009"
+      ],
+      "appearances": 26
+    }
+  },
+  {
+    "id": "26",
+    "name": "UCLA Bruins",
+    "latitude": "34.070211",
+    "longitude": "-118.446775",
+    "venue": "Pauley Pavilion",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "2026"
+      ],
+      "finalFours": [
+        "2025",
+        "2026"
+      ],
+      "eliteEights": [
+        "1999",
+        "2018",
+        "2025",
+        "2026"
+      ],
+      "sweetSixteens": [
+        "1999",
+        "2006",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "appearances": 21
+    }
+  },
+  {
+    "id": "30",
+    "name": "USC Trojans",
+    "latitude": "34.021000",
+    "longitude": "-118.280000",
+    "venue": "Galen Center",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "1983",
+        "1984"
+      ],
+      "finalFours": [
+        "1983",
+        "1984",
+        "1986"
+      ],
+      "eliteEights": [
+        "1982",
+        "1983",
+        "1984",
+        "1986",
+        "1992",
+        "1994",
+        "2024",
+        "2025"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1983",
+        "1984",
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1991",
+        "1992",
+        "1993",
+        "1994",
+        "2024",
+        "2025"
+      ],
+      "appearances": 20
+    }
+  },
+  {
+    "id": "264",
+    "name": "Washington Huskies",
+    "latitude": "47.652000",
+    "longitude": "-122.302000",
+    "venue": "Alaska Airlines Arena at Hec Edmundson Pavilion",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2016"
+      ],
+      "eliteEights": [
+        "2001",
+        "2016"
+      ],
+      "sweetSixteens": [
+        "1985",
+        "1988",
+        "1990",
+        "1995",
+        "2001",
+        "2016",
+        "2017"
+      ],
+      "appearances": 21
+    }
+  },
+  {
+    "id": "275",
+    "name": "Wisconsin Badgers",
+    "latitude": "43.069420",
+    "longitude": "-89.396972",
+    "venue": "Kohl Center",
+    "conference": "Big Ten",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "13",
+    "name": "Cal Poly Mustangs",
+    "latitude": "35.29886",
+    "longitude": "-120.65855",
+    "venue": "Robert A. Mott Athletics Center",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2934",
+    "name": "Cal State Bakersfield Roadrunners",
+    "latitude": "35.37208",
+    "longitude": "-119.01372",
+    "venue": "Dignity Health Arena",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2239",
+    "name": "Cal State Fullerton Titans",
+    "latitude": "33.883046",
+    "longitude": "-117.886090",
+    "venue": "Titan Gym",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1991"
+      ],
+      "sweetSixteens": [
+        "1991"
+      ],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2463",
+    "name": "Cal State Northridge Matadors",
+    "latitude": "34.241974",
+    "longitude": "-118.526484",
+    "venue": "Premier America Credit Union Arena",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "62",
+    "name": "Hawai'i Rainbow Warriors",
+    "latitude": "21.29417",
+    "longitude": "-157.81889",
+    "venue": "Stan Sheriff Center",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 8
+    }
+  },
+  {
+    "id": "299",
+    "name": "Long Beach State Beach",
+    "latitude": "33.78722",
+    "longitude": "-118.11417",
+    "venue": "LBS Financial Credit Union Pyramid",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1987",
+        "1988"
+      ],
+      "eliteEights": [
+        "1983",
+        "1984",
+        "1985",
+        "1987",
+        "1988",
+        "1989"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1983",
+        "1984",
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1990"
+      ],
+      "appearances": 12
+    }
+  },
+  {
+    "id": "302",
+    "name": "UC Davis Aggies",
+    "latitude": "38.54167",
+    "longitude": "-121.75944",
+    "venue": "University Credit Union Center",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "300",
+    "name": "UC Irvine Anteaters",
+    "latitude": "33.64917",
+    "longitude": "-117.84694",
+    "venue": "Bren Events Center",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "27",
+    "name": "UC Riverside Highlanders",
+    "latitude": "33.97890",
+    "longitude": "-117.32813",
+    "venue": "SRC Arena",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "28",
+    "name": "UC San Diego Tritons",
+    "latitude": "32.885278",
+    "longitude": "-117.239223",
+    "venue": "LionTree Arena",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2540",
+    "name": "UC Santa Barbara Gauchos",
+    "latitude": "34.413792",
+    "longitude": "-119.851147",
+    "venue": "UCSB Events Center",
+    "conference": "Big West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1993",
+        "2003"
+      ],
+      "appearances": 14
+    }
+  },
+  {
+    "id": "2097",
+    "name": "Campbell Fighting Camels",
+    "latitude": "35.407905",
+    "longitude": "-78.736696",
+    "venue": "John W. Pope Jr. Convocation Center",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "232",
+    "name": "Charleston Cougars",
+    "latitude": "32.78556",
+    "longitude": "-79.93444",
+    "venue": "TD Arena",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "48",
+    "name": "Delaware Blue Hens",
+    "latitude": "39.660439",
+    "longitude": "-75.7487314",
+    "venue": "Bob Carpenter Center",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2013"
+      ],
+      "appearances": 5
+    }
+  },
+  {
+    "id": "2182",
+    "name": "Drexel Dragons",
+    "latitude": "39.956389",
+    "longitude": "-75.190833",
+    "venue": "Daskalakis Athletic Center",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2210",
+    "name": "Elon Phoenix",
+    "latitude": "36.1021",
+    "longitude": "-79.5020",
+    "venue": "Schar Center",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2261",
+    "name": "Hampton Pirates",
+    "latitude": "37.01974",
+    "longitude": "-76.33108",
+    "venue": "Hampton Convocation Center",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 9
+    }
+  },
+  {
+    "id": "2275",
+    "name": "Hofstra Pride",
+    "latitude": "40.719681",
+    "longitude": "-73.596865",
+    "venue": "David S. Mack Sports and Exhibition Complex",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2405",
+    "name": "Monmouth Hawks",
+    "latitude": "40.279475",
+    "longitude": "-74.007583",
+    "venue": "OceanFirst Bank Center",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2448",
+    "name": "North Carolina A&T Aggies",
+    "latitude": "36.076783",
+    "longitude": "-79.768849",
+    "venue": "Corbett Sports Center",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 5
+    }
+  },
+  {
+    "id": "111",
+    "name": "Northeastern Huskies",
+    "latitude": "42.3396",
+    "longitude": "-71.0898",
+    "venue": "Cabot Center",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2619",
+    "name": "Stony Brook Seawolves",
+    "latitude": "40.91741",
+    "longitude": "-73.125955",
+    "venue": "Island Federal Credit Union Arena",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "119",
+    "name": "Towson Tigers",
+    "latitude": "39.387361",
+    "longitude": "-76.617083",
+    "venue": "SECU Arena",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "350",
+    "name": "UNC Wilmington Seahawks",
+    "latitude": "34.225000",
+    "longitude": "-77.878333",
+    "venue": "Trask Coliseum",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2729",
+    "name": "William & Mary Tribe",
+    "latitude": "37.273472",
+    "longitude": "-76.719625",
+    "venue": "Kaplan Arena",
+    "conference": "CAA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2229",
+    "name": "Florida International Panthers",
+    "latitude": "25.7569394",
+    "longitude": "-80.3798026",
+    "venue": "Ocean Bank Convocation Center",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "55",
+    "name": "Jacksonville State Gamecocks",
+    "latitude": "33.8241454",
+    "longitude": "-85.7734926",
+    "venue": "Pete Mathews Coliseum",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "338",
+    "name": "Kennesaw State Owls",
+    "latitude": "34.036924",
+    "longitude": "-84.580329",
+    "venue": "VyStar Arena",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2335",
+    "name": "Liberty Flames",
+    "latitude": "37.3493449",
+    "longitude": "-79.1801903",
+    "venue": "Liberty Arena",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 18
+    }
+  },
+  {
+    "id": "2348",
+    "name": "Louisiana Tech Bulldogs",
+    "latitude": "32.5320734",
+    "longitude": "-92.6584855",
+    "venue": "Thomas Assembly Center",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "1982",
+        "1988"
+      ],
+      "finalFours": [
+        "1982",
+        "1983",
+        "1984",
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "1994",
+        "1998",
+        "1999"
+      ],
+      "eliteEights": [
+        "1982",
+        "1983",
+        "1984",
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "1993",
+        "1994",
+        "1996",
+        "1997",
+        "1998",
+        "1999",
+        "2000",
+        "2001",
+        "2003",
+        "2004"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1983",
+        "1984",
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "1993",
+        "1994",
+        "1995",
+        "1996",
+        "1997",
+        "1998",
+        "1999",
+        "2000",
+        "2001",
+        "2003",
+        "2004"
+      ],
+      "appearances": 27
+    }
+  },
+  {
+    "id": "2393",
+    "name": "Middle Tennessee Blue Raiders",
+    "latitude": "35.852395",
+    "longitude": "-86.3695467",
+    "venue": "Murphy Center",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 21
+    }
+  },
+  {
+    "id": "166",
+    "name": "New Mexico State Aggies",
+    "latitude": "32.283999",
+    "longitude": "-106.7422274",
+    "venue": "Pan American Center",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "2534",
+    "name": "Sam Houston Bearkats",
+    "latitude": "30.7129053",
+    "longitude": "-95.5462087",
+    "venue": "Bernard G. Johnson Coliseum",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2638",
+    "name": "UTEP Miners",
+    "latitude": "31.7776065",
+    "longitude": "-106.5056878",
+    "venue": "Don Haskins Center",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "98",
+    "name": "Western Kentucky Hilltoppers",
+    "latitude": "36.9865277",
+    "longitude": "-86.4578148",
+    "venue": "E.A. Diddle Arena",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1985",
+        "1986",
+        "1992"
+      ],
+      "eliteEights": [
+        "1985",
+        "1986",
+        "1992"
+      ],
+      "sweetSixteens": [
+        "1985",
+        "1986",
+        "1991",
+        "1992",
+        "1993",
+        "1995"
+      ],
+      "appearances": 20
+    }
+  },
+  {
+    "id": "325",
+    "name": "Cleveland State Vikings",
+    "latitude": "41.4992338",
+    "longitude": "-81.6766496",
+    "venue": "Wolstein Center",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2174",
+    "name": "Detroit Mercy Titans",
+    "latitude": "42.4143433",
+    "longitude": "-83.1359254",
+    "venue": "Calihan Hall",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2739",
+    "name": "Green Bay Phoenix",
+    "latitude": "44.4994911",
+    "longitude": "-88.0550423",
+    "venue": "Resch Center",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2011"
+      ],
+      "appearances": 21
+    }
+  },
+  {
+    "id": "85",
+    "name": "IU Indianapolis Jaguars",
+    "latitude": "39.7708552",
+    "longitude": "-86.1749711",
+    "venue": "The Jungle",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "270",
+    "name": "Milwaukee Panthers",
+    "latitude": "43.0422882",
+    "longitude": "-87.916952",
+    "venue": "UW-Milwaukee Panther Arena",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "94",
+    "name": "Northern Kentucky Norse",
+    "latitude": "39.0320132",
+    "longitude": "-84.4591054",
+    "venue": "Truist Arena",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2473",
+    "name": "Oakland Golden Grizzlies",
+    "latitude": "42.6741488",
+    "longitude": "-83.213305",
+    "venue": "OU Credit Union O'rena",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2870",
+    "name": "Purdue Fort Wayne Mastodons",
+    "latitude": "41.1154251",
+    "longitude": "-85.1242024",
+    "venue": "Memorial Coliseum",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2523",
+    "name": "Robert Morris Colonials",
+    "latitude": "40.5202688",
+    "longitude": "-80.2146739",
+    "venue": "UPMC Events Center",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "2750",
+    "name": "Wright State Raiders",
+    "latitude": "39.7821311",
+    "longitude": "-84.0523263",
+    "venue": "Nutter Center",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2754",
+    "name": "Youngstown State Penguins",
+    "latitude": "41.1082465",
+    "longitude": "-80.6490136",
+    "venue": "Zidian Family Arena at Beeghly Center",
+    "conference": "Horizon",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "225",
+    "name": "Brown Bears",
+    "latitude": "41.831743",
+    "longitude": "-71.398043",
+    "venue": "Pizzitola Sports Center",
+    "conference": "Ivy",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "171",
+    "name": "Columbia Lions",
+    "latitude": "40.8102392",
+    "longitude": "-73.9621497",
+    "venue": "Levien Gymnasium",
+    "conference": "Ivy",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "172",
+    "name": "Cornell Big Red",
+    "latitude": "42.4458296",
+    "longitude": "-76.4762843",
+    "venue": "Newman Arena",
+    "conference": "Ivy",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "159",
+    "name": "Dartmouth Big Green",
+    "latitude": "43.7029891",
+    "longitude": "-72.2828224",
+    "venue": "Leede Arena",
+    "conference": "Ivy",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "108",
+    "name": "Harvard Crimson",
+    "latitude": "42.368218",
+    "longitude": "-71.125291",
+    "venue": "Lavietes Pavilion",
+    "conference": "Ivy",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "219",
+    "name": "Pennsylvania Quakers",
+    "latitude": "39.9514018",
+    "longitude": "-75.1886362",
+    "venue": "The Palestra",
+    "conference": "Ivy",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "163",
+    "name": "Princeton Tigers",
+    "latitude": "40.3434086",
+    "longitude": "-74.6486474",
+    "venue": "Jadwin Gymnasium",
+    "conference": "Ivy",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2023"
+      ],
+      "appearances": 13
+    }
+  },
+  {
+    "id": "43",
+    "name": "Yale Bulldogs",
+    "latitude": "41.3137225",
+    "longitude": "-72.9310857",
+    "venue": "John J. Lee Amphitheater",
+    "conference": "Ivy",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2099",
+    "name": "Canisius Golden Griffins",
+    "latitude": "42.9209345",
+    "longitude": "-78.8576033",
+    "venue": "Koessler Athletic Center",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2217",
+    "name": "Fairfield Stags",
+    "latitude": "41.1606362",
+    "longitude": "-73.2558987",
+    "venue": "Leo D. Mahoney Arena",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 8
+    }
+  },
+  {
+    "id": "314",
+    "name": "Iona Gaels",
+    "latitude": "40.9252426",
+    "longitude": "-73.7882413",
+    "venue": "Hynes Athletics Center",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2363",
+    "name": "Manhattan Jaspers",
+    "latitude": "40.8907375",
+    "longitude": "-73.900273",
+    "venue": "Draddy Gymnasium",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2368",
+    "name": "Marist Red Foxes",
+    "latitude": "41.71746",
+    "longitude": "-73.935125",
+    "venue": "McCann Arena",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "2771",
+    "name": "Merrimack Warriors",
+    "latitude": "42.6679088",
+    "longitude": "-71.1200968",
+    "venue": "Lawler Arena",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "116",
+    "name": "Mount St. Mary's Mountaineers",
+    "latitude": "39.679492",
+    "longitude": "-77.346435",
+    "venue": "Knott Arena",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "315",
+    "name": "Niagara Purple Eagles",
+    "latitude": "43.137111",
+    "longitude": "-79.0380724",
+    "venue": "Gallagher Center",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2514",
+    "name": "Quinnipiac Bobcats",
+    "latitude": "41.4139878",
+    "longitude": "-72.9111709",
+    "venue": "M&T Bank Arena",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 5
+    }
+  },
+  {
+    "id": "2520",
+    "name": "Rider Broncs",
+    "latitude": "40.2788",
+    "longitude": "-74.7354",
+    "venue": "Alumni Gymnasium",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2529",
+    "name": "Sacred Heart Pioneers",
+    "latitude": "41.2225974",
+    "longitude": "-73.2444673",
+    "venue": "William H. Pitt Center",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 5
+    }
+  },
+  {
+    "id": "2612",
+    "name": "Saint Peter's Peacocks",
+    "latitude": "40.7277231",
+    "longitude": "-74.0731491",
+    "venue": "Yanitelli Center",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "2561",
+    "name": "Siena Saints",
+    "latitude": "42.6486276",
+    "longitude": "-73.754719",
+    "venue": "MVP Arena",
+    "conference": "MAAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2154",
+    "name": "Coppin State Eagles",
+    "latitude": "39.3095958",
+    "longitude": "-76.658768",
+    "venue": "Physical Education Complex",
+    "conference": "MEAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2169",
+    "name": "Delaware State Hornets",
+    "latitude": "39.1873006",
+    "longitude": "-75.542817",
+    "venue": "Memorial Hall",
+    "conference": "MEAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "47",
+    "name": "Howard Bison",
+    "latitude": "38.9263126",
+    "longitude": "-77.0222225",
+    "venue": "Burr Gymnasium",
+    "conference": "MEAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "2379",
+    "name": "Maryland Eastern Shore Hawks",
+    "latitude": "38.211184",
+    "longitude": "-75.687227",
+    "venue": "Hytche Center",
+    "conference": "MEAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2415",
+    "name": "Morgan State Bears",
+    "latitude": "39.3422775",
+    "longitude": "-76.5850612",
+    "venue": "Hill Field House",
+    "conference": "MEAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2450",
+    "name": "Norfolk State Spartans",
+    "latitude": "36.8479811",
+    "longitude": "-76.2581611",
+    "venue": "Joseph G. Echols Hall",
+    "conference": "MEAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2428",
+    "name": "North Carolina Central Eagles",
+    "latitude": "35.9763",
+    "longitude": "-78.897227",
+    "venue": "McDougald-McLendon Arena",
+    "conference": "MEAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2569",
+    "name": "South Carolina State Bulldogs",
+    "latitude": "33.5009432",
+    "longitude": "-80.8471644",
+    "venue": "Smith-Hammond-Middleton Memorial Center",
+    "conference": "MEAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2006",
+    "name": "Akron Zips",
+    "latitude": "41.0758937",
+    "longitude": "-81.508645",
+    "venue": "James A. Rhodes Arena",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2050",
+    "name": "Ball State Cardinals",
+    "latitude": "40.207118",
+    "longitude": "-85.40616",
+    "venue": "Worthen Arena",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "189",
+    "name": "Bowling Green Falcons",
+    "latitude": "41.375341",
+    "longitude": "-83.626312",
+    "venue": "Stroh Center",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2007"
+      ],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "2084",
+    "name": "Buffalo Bulls",
+    "latitude": "43.0001529",
+    "longitude": "-78.7812166",
+    "venue": "Broadview Arena",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2117",
+    "name": "Central Michigan Chippewas",
+    "latitude": "43.581566",
+    "longitude": "-84.774189",
+    "venue": "McGuirk Arena",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "2199",
+    "name": "Eastern Michigan Eagles",
+    "latitude": "42.2542969",
+    "longitude": "-83.6473661",
+    "venue": "Gervin GameAbove Center",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2309",
+    "name": "Kent State Golden Flashes",
+    "latitude": "41.148",
+    "longitude": "-81.344",
+    "venue": "M.A.C. Center",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "193",
+    "name": "Miami (OH) RedHawks",
+    "latitude": "39.5172372",
+    "longitude": "-84.7345539",
+    "venue": "Millett Hall",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2459",
+    "name": "Northern Illinois Huskies",
+    "latitude": "41.9351056",
+    "longitude": "-88.7855694",
+    "venue": "NIU Convocation Center",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1990"
+      ],
+      "appearances": 5
+    }
+  },
+  {
+    "id": "195",
+    "name": "Ohio Bobcats",
+    "latitude": "39.32306",
+    "longitude": "-82.10556",
+    "venue": "Convocation Center",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2649",
+    "name": "Toledo Rockets",
+    "latitude": "41.6601307",
+    "longitude": "-83.6100354",
+    "venue": "Savage Arena",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1991"
+      ],
+      "sweetSixteens": [
+        "1991"
+      ],
+      "appearances": 9
+    }
+  },
+  {
+    "id": "2711",
+    "name": "Western Michigan Broncos",
+    "latitude": "42.283358",
+    "longitude": "-85.60848",
+    "venue": "University Arena",
+    "conference": "Mid-American",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2057",
+    "name": "Belmont Bruins",
+    "latitude": "36.13222",
+    "longitude": "-86.79444",
+    "venue": "Curb Event Center Arena",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2022"
+      ],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "71",
+    "name": "Bradley Braves",
+    "latitude": "40.69167",
+    "longitude": "-89.59417",
+    "venue": "Carver Arena",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2181",
+    "name": "Drake Bulldogs",
+    "latitude": "41.6046965",
+    "longitude": "-93.6522534",
+    "venue": "Knapp Center",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1982"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1986",
+        "1995",
+        "2002"
+      ],
+      "appearances": 15
+    }
+  },
+  {
+    "id": "339",
+    "name": "Evansville Purple Aces",
+    "latitude": "37.9721866",
+    "longitude": "-87.5678291",
+    "venue": "Ford Center",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2287",
+    "name": "Illinois State Redbirds",
+    "latitude": "40.510684",
+    "longitude": "-88.9987907",
+    "venue": "CEFCU Arena",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1989"
+      ],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "282",
+    "name": "Indiana State Sycamores",
+    "latitude": "39.4685371",
+    "longitude": "-87.405126",
+    "venue": "Hulman Center",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2623",
+    "name": "Missouri State Bears",
+    "latitude": "37.2020781",
+    "longitude": "-93.2830663",
+    "venue": "Great Southern Bank Arena",
+    "conference": "Conference USA",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1992",
+        "2001"
+      ],
+      "eliteEights": [
+        "1992",
+        "2001"
+      ],
+      "sweetSixteens": [
+        "1992",
+        "1993",
+        "1994",
+        "2001",
+        "2019",
+        "2021"
+      ],
+      "appearances": 18
+    }
+  },
+  {
+    "id": "93",
+    "name": "Murray State Racers",
+    "latitude": "36.6226679",
+    "longitude": "-88.3198817",
+    "venue": "CFSB Center",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2460",
+    "name": "Northern Iowa Panthers",
+    "latitude": "42.5142358",
+    "longitude": "-92.4673032",
+    "venue": "McLeod Center",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "79",
+    "name": "Southern Illinois Salukis",
+    "latitude": "37.7082751",
+    "longitude": "-89.2187176",
+    "venue": "Banterra Center",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1987"
+      ],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "82",
+    "name": "UIC Flames",
+    "latitude": "41.8746993",
+    "longitude": "-87.6561358",
+    "venue": "Credit Union 1 Arena",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2674",
+    "name": "Valparaiso Beacons",
+    "latitude": "41.4642539",
+    "longitude": "-87.0483415",
+    "venue": "Athletics-Recreation Center",
+    "conference": "Missouri Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2005",
+    "name": "Air Force Falcons",
+    "latitude": "39.014",
+    "longitude": "-104.8833",
+    "venue": "Clune Arena",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "68",
+    "name": "Boise State Broncos",
+    "latitude": "43.6035694",
+    "longitude": "-116.1989476",
+    "venue": "ExtraMile Arena",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "36",
+    "name": "Colorado State Rams",
+    "latitude": "40.5756694",
+    "longitude": "-105.0934028",
+    "venue": "Moby Arena",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1999"
+      ],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "278",
+    "name": "Fresno State Bulldogs",
+    "latitude": "36.809722",
+    "longitude": "-119.738611",
+    "venue": "Save Mart Center",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "2440",
+    "name": "Nevada Wolf Pack",
+    "latitude": "39.5450694",
+    "longitude": "-119.8182694",
+    "venue": "Lawlor Events Center",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "167",
+    "name": "New Mexico Lobos",
+    "latitude": "35.067",
+    "longitude": "-106.632",
+    "venue": "The Pit",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 8
+    }
+  },
+  {
+    "id": "21",
+    "name": "San Diego State Aztecs",
+    "latitude": "32.77375",
+    "longitude": "-117.074583",
+    "venue": "Viejas Arena",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1984",
+        "1985"
+      ],
+      "appearances": 10
+    }
+  },
+  {
+    "id": "23",
+    "name": "San José State Spartans",
+    "latitude": "37.33536",
+    "longitude": "-121.87985",
+    "venue": "Provident Credit Union Event Center",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2439",
+    "name": "UNLV Rebels",
+    "latitude": "36.105",
+    "longitude": "-115.14417",
+    "venue": "Thomas & Mack Center",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1989"
+      ],
+      "appearances": 11
+    }
+  },
+  {
+    "id": "328",
+    "name": "Utah State Aggies",
+    "latitude": "41.748",
+    "longitude": "-111.812",
+    "venue": "Dee Glen Smith Spectrum",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2751",
+    "name": "Wyoming Cowboys",
+    "latitude": "41.31334",
+    "longitude": "-105.56942",
+    "venue": "Arena-Auditorium",
+    "conference": "Mountain West",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2115",
+    "name": "Central Connecticut Blue Devils",
+    "latitude": "41.6929277",
+    "longitude": "-72.765429",
+    "venue": "Detrick Gymnasium",
+    "conference": "Northeast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2130",
+    "name": "Chicago State Cougars",
+    "latitude": "41.7165483",
+    "longitude": "-87.6085078",
+    "venue": "Jones Convocation Center",
+    "conference": "Northeast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "161",
+    "name": "Fairleigh Dickinson Knights",
+    "latitude": "40.8966786",
+    "longitude": "-74.0323388",
+    "venue": "Bogota Savings Bank Center",
+    "conference": "Northeast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2330",
+    "name": "Le Moyne Dolphins",
+    "latitude": "43.0483412",
+    "longitude": "-76.0851761",
+    "venue": "Ted Grant Court",
+    "conference": "Northeast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "112358",
+    "name": "Long Island University Sharks",
+    "latitude": "40.6906439",
+    "longitude": "-73.9792953",
+    "venue": "Steinberg Wellness Center",
+    "conference": "Northeast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2385",
+    "name": "Mercyhurst Lakers",
+    "latitude": "42.1039449",
+    "longitude": "-80.055854",
+    "venue": "Mercyhurst Athletic Center",
+    "conference": "Northeast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2598",
+    "name": "St. Francis (PA) Red Flash",
+    "latitude": "40.504666",
+    "longitude": "-78.6411025",
+    "venue": "DeGol Arena",
+    "conference": "Northeast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 12
+    }
+  },
+  {
+    "id": "284",
+    "name": "Stonehill Skyhawks",
+    "latitude": "42.0574641",
+    "longitude": "-71.0788529",
+    "venue": "Merkert Gymnasium",
+    "conference": "Northeast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2681",
+    "name": "Wagner Seahawks",
+    "latitude": "40.615",
+    "longitude": "-74.0958333",
+    "venue": "Spiro Sports Center",
+    "conference": "Northeast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2197",
+    "name": "Eastern Illinois Panthers",
+    "latitude": "39.480403",
+    "longitude": "-88.178844",
+    "venue": "Groniger Arena",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2815",
+    "name": "Lindenwood Lions",
+    "latitude": "38.7891692",
+    "longitude": "-90.5035929",
+    "venue": "Hyland Arena",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2031",
+    "name": "Little Rock Trojans",
+    "latitude": "34.7284769",
+    "longitude": "-92.340457",
+    "venue": "Jack Stephens Center",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "2413",
+    "name": "Morehead State Eagles",
+    "latitude": "38.1893987",
+    "longitude": "-83.4310968",
+    "venue": "Ellis T. Johnson Arena",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2565",
+    "name": "SIU Edwardsville Cougars",
+    "latitude": "38.7959321",
+    "longitude": "-89.9998829",
+    "venue": "First Community Arena",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2546",
+    "name": "Southeast Missouri State Redhawks",
+    "latitude": "37.3201325",
+    "longitude": "-89.5274199",
+    "venue": "Show Me Center",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "88",
+    "name": "Southern Indiana Screaming Eagles",
+    "latitude": "37.962082",
+    "longitude": "-87.6747491",
+    "venue": "Liberty Arena",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2634",
+    "name": "Tennessee State Tigers",
+    "latitude": "36.1689456",
+    "longitude": "-86.8291663",
+    "venue": "Gentry Center",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2635",
+    "name": "Tennessee Tech Golden Eagles",
+    "latitude": "36.1784191",
+    "longitude": "-85.5098221",
+    "venue": "Hooper Eblen Center",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 12
+    }
+  },
+  {
+    "id": "2630",
+    "name": "UT Martin Skyhawks",
+    "latitude": "36.3435887",
+    "longitude": "-88.8679825",
+    "venue": "Kathleen and Tom Elam Center",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 5
+    }
+  },
+  {
+    "id": "2710",
+    "name": "Western Illinois Leathernecks",
+    "latitude": "40.4715145",
+    "longitude": "-90.6849474",
+    "venue": "Western Hall",
+    "conference": "Ohio Valley",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "44",
+    "name": "American University Eagles",
+    "latitude": "38.9377135",
+    "longitude": "-77.0899202",
+    "venue": "Bender Arena",
+    "conference": "Patriot League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "349",
+    "name": "Army Black Knights",
+    "latitude": "41.3857642",
+    "longitude": "-73.9653958",
+    "venue": "Christl Arena",
+    "conference": "Patriot League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "104",
+    "name": "Boston University Terriers",
+    "latitude": "42.3540666",
+    "longitude": "-71.1203071",
+    "venue": "Case Gym",
+    "conference": "Patriot League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2083",
+    "name": "Bucknell Bison",
+    "latitude": "40.9568967",
+    "longitude": "-76.8869428",
+    "venue": "Sojka Pavilion",
+    "conference": "Patriot League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2142",
+    "name": "Colgate Raiders",
+    "latitude": "42.8153344",
+    "longitude": "-75.542474",
+    "venue": "Cotterell Court",
+    "conference": "Patriot League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "107",
+    "name": "Holy Cross Crusaders",
+    "latitude": "42.2353403",
+    "longitude": "-71.8052064",
+    "venue": "Hart Center Arena",
+    "conference": "Patriot League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 15
+    }
+  },
+  {
+    "id": "322",
+    "name": "Lafayette Leopards",
+    "latitude": "40.7017003",
+    "longitude": "-75.209793",
+    "venue": "Kirby Sports Center",
+    "conference": "Patriot League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2329",
+    "name": "Lehigh Mountain Hawks",
+    "latitude": "40.5852915",
+    "longitude": "-75.3573986",
+    "venue": "Stabler Arena",
+    "conference": "Patriot League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 5
+    }
+  },
+  {
+    "id": "2352",
+    "name": "Loyola Maryland Greyhounds",
+    "latitude": "39.3468",
+    "longitude": "-76.61863",
+    "venue": "Reitz Arena",
+    "conference": "Patriot League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2426",
+    "name": "Navy Midshipmen",
+    "latitude": "38.98443",
+    "longitude": "-76.4878045",
+    "venue": "Alumni Hall",
+    "conference": "Patriot League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "333",
+    "name": "Alabama Crimson Tide",
+    "latitude": "33.2027042",
+    "longitude": "-87.5397128",
+    "venue": "Coleman Coliseum",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1994"
+      ],
+      "eliteEights": [
+        "1994",
+        "1995"
+      ],
+      "sweetSixteens": [
+        "1984",
+        "1992",
+        "1993",
+        "1994",
+        "1995",
+        "1996",
+        "1997",
+        "1998"
+      ],
+      "appearances": 15
+    }
+  },
+  {
+    "id": "8",
+    "name": "Arkansas Razorbacks",
+    "latitude": "36.0615698",
+    "longitude": "-94.1781075",
+    "venue": "Bud Walton Arena",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1998"
+      ],
+      "eliteEights": [
+        "1990",
+        "1998"
+      ],
+      "sweetSixteens": [
+        "1990",
+        "1991",
+        "1998"
+      ],
+      "appearances": 13
+    }
+  },
+  {
+    "id": "2",
+    "name": "Auburn Tigers",
+    "latitude": "32.6038",
+    "longitude": "-85.4866",
+    "venue": "Neville Arena",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1988",
+        "1989",
+        "1990"
+      ],
+      "eliteEights": [
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "1991",
+        "1996"
+      ],
+      "sweetSixteens": [
+        "1983",
+        "1985",
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "1991",
+        "1996",
+        "2004"
+      ],
+      "appearances": 22
+    }
+  },
+  {
+    "id": "57",
+    "name": "Florida Gators",
+    "latitude": "29.6498",
+    "longitude": "-82.349",
+    "venue": "Stephen C. O'Connell Center",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1997",
+        "1998"
+      ],
+      "appearances": 16
+    }
+  },
+  {
+    "id": "61",
+    "name": "Georgia Bulldogs",
+    "latitude": "33.9427717",
+    "longitude": "-83.3781357",
+    "venue": "Stegeman Coliseum",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1983",
+        "1985",
+        "1995",
+        "1996",
+        "1999"
+      ],
+      "eliteEights": [
+        "1983",
+        "1984",
+        "1985",
+        "1995",
+        "1996",
+        "1997",
+        "1999",
+        "2000",
+        "2004"
+      ],
+      "sweetSixteens": [
+        "1983",
+        "1984",
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1995",
+        "1996",
+        "1997",
+        "1999",
+        "2000",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2010",
+        "2013",
+        "2021"
+      ],
+      "appearances": 37
+    }
+  },
+  {
+    "id": "96",
+    "name": "Kentucky Wildcats",
+    "latitude": "38.0373",
+    "longitude": "-84.5035",
+    "venue": "Rupp Arena",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1982",
+        "2010",
+        "2012",
+        "2013"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "2010",
+        "2012",
+        "2013",
+        "2016",
+        "2026"
+      ],
+      "appearances": 19
+    }
+  },
+  {
+    "id": "99",
+    "name": "LSU Tigers",
+    "latitude": "30.4144753",
+    "longitude": "-91.1844894",
+    "venue": "Pete Maravich Assembly Center",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "2023"
+      ],
+      "finalFours": [
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2023"
+      ],
+      "eliteEights": [
+        "1986",
+        "2000",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "sweetSixteens": [
+        "1984",
+        "1986",
+        "1997",
+        "1999",
+        "2000",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2013",
+        "2014",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "appearances": 31
+    }
+  },
+  {
+    "id": "344",
+    "name": "Mississippi State Bulldogs",
+    "latitude": "33.4614846",
+    "longitude": "-88.7938995",
+    "venue": "Humphrey Coliseum",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2017",
+        "2018"
+      ],
+      "eliteEights": [
+        "2017",
+        "2018",
+        "2019"
+      ],
+      "sweetSixteens": [
+        "2000",
+        "2016",
+        "2017",
+        "2018",
+        "2019"
+      ],
+      "appearances": 13
+    }
+  },
+  {
+    "id": "142",
+    "name": "Missouri Tigers",
+    "latitude": "38.9324819",
+    "longitude": "-92.3337338",
+    "venue": "Mizzou Arena",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "2001",
+        "2017"
+      ],
+      "appearances": 13
+    }
+  },
+  {
+    "id": "201",
+    "name": "Oklahoma Sooners",
+    "latitude": "35.1870319",
+    "longitude": "-97.4442739",
+    "venue": "Lloyd Noble Center",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2002",
+        "2009",
+        "2010"
+      ],
+      "eliteEights": [
+        "2002",
+        "2009",
+        "2010"
+      ],
+      "sweetSixteens": [
+        "1986",
+        "2000",
+        "2001",
+        "2002",
+        "2006",
+        "2009",
+        "2010",
+        "2011",
+        "2013",
+        "2023",
+        "2025",
+        "2026"
+      ],
+      "appearances": 26
+    }
+  },
+  {
+    "id": "145",
+    "name": "Ole Miss Rebels",
+    "latitude": "34.3633845",
+    "longitude": "-89.5355582",
+    "venue": "The Sandy and John Black Pavilion at Ole Miss",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1985",
+        "1986",
+        "1989",
+        "1992",
+        "2007"
+      ],
+      "sweetSixteens": [
+        "1983",
+        "1984",
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "1992",
+        "2007",
+        "2025"
+      ],
+      "appearances": 22
+    }
+  },
+  {
+    "id": "2579",
+    "name": "South Carolina Gamecocks",
+    "latitude": "33.9947839",
+    "longitude": "-81.0373546",
+    "venue": "Colonial Life Arena",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "2017",
+        "2022",
+        "2024"
+      ],
+      "finalFours": [
+        "2015",
+        "2017",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "eliteEights": [
+        "1990",
+        "2002",
+        "2014",
+        "2015",
+        "2017",
+        "2018",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1990",
+        "2002",
+        "2003",
+        "2012",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2019",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "appearances": 22
+    }
+  },
+  {
+    "id": "2633",
+    "name": "Tennessee Volunteers",
+    "latitude": "35.9511756",
+    "longitude": "-83.925013",
+    "venue": "Thompson–Boling Arena",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "1987",
+        "1989",
+        "1991",
+        "1996",
+        "1997",
+        "1998",
+        "2007",
+        "2008"
+      ],
+      "finalFours": [
+        "1982",
+        "1984",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1991",
+        "1995",
+        "1996",
+        "1997",
+        "1998",
+        "2000",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2007",
+        "2008"
+      ],
+      "eliteEights": [
+        "1982",
+        "1984",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1991",
+        "1993",
+        "1995",
+        "1996",
+        "1997",
+        "1998",
+        "1999",
+        "2000",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2010",
+        "2011",
+        "2012",
+        "2015",
+        "2016"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1983",
+        "1984",
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "1991",
+        "1992",
+        "1993",
+        "1994",
+        "1995",
+        "1996",
+        "1997",
+        "1998",
+        "1999",
+        "2000",
+        "2001",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2006",
+        "2007",
+        "2008",
+        "2010",
+        "2011",
+        "2012",
+        "2013",
+        "2014",
+        "2015",
+        "2016",
+        "2017",
+        "2022",
+        "2023",
+        "2024",
+        "2025"
+      ],
+      "appearances": 44
+    }
+  },
+  {
+    "id": "245",
+    "name": "Texas A&M Aggies",
+    "latitude": "30.6056832",
+    "longitude": "-96.3462955",
+    "venue": "Reed Arena",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "2011"
+      ],
+      "finalFours": [
+        "2011"
+      ],
+      "eliteEights": [
+        "2008",
+        "2011",
+        "2014"
+      ],
+      "sweetSixteens": [
+        "2008",
+        "2009",
+        "2010",
+        "2011",
+        "2012",
+        "2014",
+        "2018",
+        "2019",
+        "2021"
+      ],
+      "appearances": 18
+    }
+  },
+  {
+    "id": "251",
+    "name": "Texas Longhorns",
+    "latitude": "30.2809367",
+    "longitude": "-97.7306522",
+    "venue": "Moody Center",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "1986"
+      ],
+      "finalFours": [
+        "1986",
+        "1987",
+        "2003",
+        "2025",
+        "2026"
+      ],
+      "eliteEights": [
+        "1983",
+        "1984",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "2003",
+        "2016",
+        "2021",
+        "2022",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "sweetSixteens": [
+        "1983",
+        "1984",
+        "1985",
+        "1986",
+        "1987",
+        "1988",
+        "1989",
+        "1990",
+        "2002",
+        "2003",
+        "2004",
+        "2005",
+        "2015",
+        "2016",
+        "2017",
+        "2018",
+        "2021",
+        "2022",
+        "2023",
+        "2024",
+        "2025",
+        "2026"
+      ],
+      "appearances": 38
+    }
+  },
+  {
+    "id": "238",
+    "name": "Vanderbilt Commodores",
+    "latitude": "36.1445214",
+    "longitude": "-86.8072775",
+    "venue": "Memorial Gymnasium",
+    "conference": "SEC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1993"
+      ],
+      "eliteEights": [
+        "1992",
+        "1993",
+        "1994",
+        "1996",
+        "2001",
+        "2002"
+      ],
+      "sweetSixteens": [
+        "1990",
+        "1992",
+        "1993",
+        "1994",
+        "1995",
+        "1996",
+        "1997",
+        "2001",
+        "2002",
+        "2004",
+        "2005",
+        "2008",
+        "2009",
+        "2026"
+      ],
+      "appearances": 30
+    }
+  },
+  {
+    "id": "2010",
+    "name": "Alabama A&M Bulldogs",
+    "latitude": "34.7842987",
+    "longitude": "-86.5701304",
+    "venue": "Event Center",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2011",
+    "name": "Alabama State Hornets",
+    "latitude": "32.3618436",
+    "longitude": "-86.2931798",
+    "venue": "Dunn-Oliver Acadome",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2016",
+    "name": "Alcorn State Braves",
+    "latitude": "31.8747584",
+    "longitude": "-91.1386681",
+    "venue": "Davey L. Whitney Complex",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2029",
+    "name": "Arkansas-Pine Bluff Golden Lions",
+    "latitude": "34.2510901",
+    "longitude": "-92.0289102",
+    "venue": "H.O. Clemmons Arena",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2065",
+    "name": "Bethune-Cookman Wildcats",
+    "latitude": "29.2118536",
+    "longitude": "-81.0319825",
+    "venue": "Moore Gymnasium",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "50",
+    "name": "Florida A&M Rattlers",
+    "latitude": "30.4237073",
+    "longitude": "-84.2874521",
+    "venue": "Al Lawson Center",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2755",
+    "name": "Grambling Tigers",
+    "latitude": "32.519349",
+    "longitude": "-92.717637",
+    "venue": "Fredrick C. Hobdy Assembly Center",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "2296",
+    "name": "Jackson State Tigers",
+    "latitude": "32.297781",
+    "longitude": "-90.207912",
+    "venue": "Lee E. Williams Athletics and Assembly Center",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 7
+    }
+  },
+  {
+    "id": "2400",
+    "name": "Mississippi Valley State Delta Devils",
+    "latitude": "33.4092",
+    "longitude": "-90.1595",
+    "venue": "R.W. Harrison HPER Complex",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2504",
+    "name": "Prairie View A&M Panthers",
+    "latitude": "30.0864",
+    "longitude": "-95.9784",
+    "venue": "William J. Nicks Building",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "2582",
+    "name": "Southern Jaguars",
+    "latitude": "30.523674",
+    "longitude": "-91.188805",
+    "venue": "F.G. Clark Activity Center",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 8
+    }
+  },
+  {
+    "id": "2640",
+    "name": "Texas Southern Tigers",
+    "latitude": "29.721565",
+    "longitude": "-95.359653",
+    "venue": "H&PE Arena",
+    "conference": "SWAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "236",
+    "name": "Chattanooga Mocs",
+    "latitude": "35.0504026",
+    "longitude": "-85.3009439",
+    "venue": "McKenzie Arena",
+    "conference": "Southern",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 17
+    }
+  },
+  {
+    "id": "2193",
+    "name": "East Tennessee State Buccaneers",
+    "latitude": "36.302915",
+    "longitude": "-82.369717",
+    "venue": "Freedom Hall",
+    "conference": "Southern",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "231",
+    "name": "Furman Paladins",
+    "latitude": "34.9180581",
+    "longitude": "-82.4373229",
+    "venue": "Timmons Arena",
+    "conference": "Southern",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2382",
+    "name": "Mercer Bears",
+    "latitude": "32.8289652",
+    "longitude": "-83.651787",
+    "venue": "Hawkins Arena",
+    "conference": "Southern",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2535",
+    "name": "Samford Bulldogs",
+    "latitude": "33.4638315",
+    "longitude": "-86.7971648",
+    "venue": "Pete Hanna Center",
+    "conference": "Southern",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2430",
+    "name": "UNC Greensboro Spartans",
+    "latitude": "36.05972",
+    "longitude": "-79.82556",
+    "venue": "First Horizon Coliseum",
+    "conference": "Southern",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2717",
+    "name": "Western Carolina Catamounts",
+    "latitude": "35.3036696",
+    "longitude": "-83.1822673",
+    "venue": "Ramsey Center",
+    "conference": "Southern",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2747",
+    "name": "Wofford Terriers",
+    "latitude": "34.9632234",
+    "longitude": "-81.9329384",
+    "venue": "Jerry Richardson Indoor Stadium",
+    "conference": "Southern",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2277",
+    "name": "Houston Christian Huskies",
+    "latitude": "29.6944292",
+    "longitude": "-95.5147559",
+    "venue": "Sharp Gymnasium",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2916",
+    "name": "Incarnate Word Cardinals",
+    "latitude": "29.46808",
+    "longitude": "-98.4693469",
+    "venue": "McDermott Center",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2320",
+    "name": "Lamar Cardinals",
+    "latitude": "30.0440591",
+    "longitude": "-94.0707212",
+    "venue": "Montagne Center",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "1991"
+      ],
+      "sweetSixteens": [
+        "1991"
+      ],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2377",
+    "name": "McNeese Cowboys",
+    "latitude": "30.175103",
+    "longitude": "-93.2096958",
+    "venue": "Townsley Law Arena",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2443",
+    "name": "New Orleans Privateers",
+    "latitude": "30.030105",
+    "longitude": "-90.0505067",
+    "venue": "Lakefront Arena",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2447",
+    "name": "Nicholls Colonels",
+    "latitude": "29.78859",
+    "longitude": "-90.80351",
+    "venue": "David R. Stopher Gymnasium",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2466",
+    "name": "Northwestern State Demons",
+    "latitude": "31.7439631",
+    "longitude": "-93.0951189",
+    "venue": "Prather Coliseum",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2545",
+    "name": "SE Louisiana Lions",
+    "latitude": "30.5201501",
+    "longitude": "-90.4731241",
+    "venue": "University Center",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2617",
+    "name": "Stephen F. Austin Lumberjacks",
+    "latitude": "31.6222614",
+    "longitude": "-94.6408794",
+    "venue": "William R. Johnson Coliseum",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1989",
+        "1991",
+        "1992",
+        "1993"
+      ],
+      "appearances": 22
+    }
+  },
+  {
+    "id": "2837",
+    "name": "East Texas A&M Lions",
+    "latitude": "33.2399911",
+    "longitude": "-95.9182528",
+    "venue": "The Field House",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "357",
+    "name": "Texas A&M-Corpus Christi Islanders",
+    "latitude": "27.7113644",
+    "longitude": "-97.3244337",
+    "venue": "Hilliard Center",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "292",
+    "name": "UT Rio Grande Valley Vaqueros",
+    "latitude": "26.31028",
+    "longitude": "-98.17806",
+    "venue": "UTRGV Fieldhouse",
+    "conference": "Southland",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2172",
+    "name": "Denver Pioneers",
+    "latitude": "39.6824183",
+    "longitude": "-104.9623912",
+    "venue": "Hamilton Gymnasium",
+    "conference": "Summit League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "140",
+    "name": "Kansas City Roos",
+    "latitude": "39.0355454",
+    "longitude": "-94.5787562",
+    "venue": "Swinney Center",
+    "conference": "Summit League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "155",
+    "name": "North Dakota Fighting Hawks",
+    "latitude": "47.9275945",
+    "longitude": "-97.0732545",
+    "venue": "Betty Engelstad Sioux Center",
+    "conference": "Summit League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2449",
+    "name": "North Dakota State Bison",
+    "latitude": "46.9004417",
+    "longitude": "-96.799025",
+    "venue": "Scheels Center",
+    "conference": "Summit League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2437",
+    "name": "Omaha Mavericks",
+    "latitude": "41.2361165",
+    "longitude": "-96.0130109",
+    "venue": "Baxter Arena",
+    "conference": "Summit League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "198",
+    "name": "Oral Roberts Golden Eagles",
+    "latitude": "36.04812",
+    "longitude": "-95.9556507",
+    "venue": "Mabee Center",
+    "conference": "Summit League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "233",
+    "name": "South Dakota Coyotes",
+    "latitude": "42.7900965",
+    "longitude": "-96.9278775",
+    "venue": "Sanford Coyote Sports Center",
+    "conference": "Summit League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2571",
+    "name": "South Dakota State Jackrabbits",
+    "latitude": "44.3183356",
+    "longitude": "-96.7791557",
+    "venue": "First Bank & Trust Arena",
+    "conference": "Summit League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 14
+    }
+  },
+  {
+    "id": "2900",
+    "name": "St. Thomas-Minnesota Tommies",
+    "latitude": "44.9396574",
+    "longitude": "-93.194434",
+    "venue": "Lee & Penny Anderson Arena",
+    "conference": "Summit League",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2026",
+    "name": "App State Mountaineers",
+    "latitude": "36.2107135",
+    "longitude": "-81.675873",
+    "venue": "Holmes Convocation Center",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2032",
+    "name": "Arkansas State Red Wolves",
+    "latitude": "35.8453739",
+    "longitude": "-90.6703443",
+    "venue": "First National Bank Arena",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "324",
+    "name": "Coastal Carolina Chanticleers",
+    "latitude": "33.7990544",
+    "longitude": "-79.0156008",
+    "venue": "The HTC Center",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "290",
+    "name": "Georgia Southern Eagles",
+    "latitude": "32.40625",
+    "longitude": "-81.783056",
+    "venue": "Jack and Ruth Ann Hill Convocation Center",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2247",
+    "name": "Georgia State Panthers",
+    "latitude": "33.7427",
+    "longitude": "-84.38869",
+    "venue": "GSU Convocation Center",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "256",
+    "name": "James Madison Dukes",
+    "latitude": "38.430437",
+    "longitude": "-78.859574",
+    "venue": "Atlantic Union Bank Center",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1986",
+        "1987",
+        "1988",
+        "1991"
+      ],
+      "appearances": 14
+    }
+  },
+  {
+    "id": "309",
+    "name": "Louisiana Ragin' Cajuns",
+    "latitude": "30.218444",
+    "longitude": "-92.039056",
+    "venue": "Cajundome",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "276",
+    "name": "Marshall Thundering Herd",
+    "latitude": "38.424517",
+    "longitude": "-82.425211",
+    "venue": "Cam Henderson Center",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "295",
+    "name": "Old Dominion Monarchs",
+    "latitude": "36.8841694",
+    "longitude": "-76.3012306",
+    "venue": "Chartway Arena",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [
+        "1985"
+      ],
+      "finalFours": [
+        "1983",
+        "1985",
+        "1997"
+      ],
+      "eliteEights": [
+        "1983",
+        "1984",
+        "1985",
+        "1997",
+        "2002"
+      ],
+      "sweetSixteens": [
+        "1982",
+        "1983",
+        "1984",
+        "1985",
+        "1987",
+        "1989",
+        "1993",
+        "1997",
+        "1998",
+        "1999",
+        "2000",
+        "2002",
+        "2008"
+      ],
+      "appearances": 25
+    }
+  },
+  {
+    "id": "6",
+    "name": "South Alabama Jaguars",
+    "latitude": "30.69229",
+    "longitude": "-88.17975",
+    "venue": "Mitchell Center",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2572",
+    "name": "Southern Miss Golden Eagles",
+    "latitude": "31.33083",
+    "longitude": "-89.33778",
+    "venue": "Reed Green Coliseum",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [
+        "1994"
+      ],
+      "appearances": 8
+    }
+  },
+  {
+    "id": "326",
+    "name": "Texas State Bobcats",
+    "latitude": "29.8885359",
+    "longitude": "-97.9324419",
+    "venue": "Strahan Arena at the University Events Center",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2653",
+    "name": "Troy Trojans",
+    "latitude": "31.802287",
+    "longitude": "-85.9524336",
+    "venue": "Trojan Arena",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2433",
+    "name": "UL Monroe Warhawks",
+    "latitude": "32.531",
+    "longitude": "-92.069",
+    "venue": "Fant-Ewing Coliseum",
+    "conference": "Sun Belt",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "1985"
+      ],
+      "eliteEights": [
+        "1985"
+      ],
+      "sweetSixteens": [
+        "1984",
+        "1985"
+      ],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2000",
+    "name": "Abilene Christian Wildcats",
+    "latitude": "32.4703537",
+    "longitude": "-99.7092155",
+    "venue": "Moody Coliseum",
+    "conference": "WAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2856",
+    "name": "California Baptist Lancers",
+    "latitude": "33.9271546",
+    "longitude": "-117.4228546",
+    "venue": "Dale E. and Sarah Ann Fowler Events Center",
+    "conference": "WAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "2253",
+    "name": "Grand Canyon Lopes",
+    "latitude": "33.5101486",
+    "longitude": "-112.1289216",
+    "venue": "Global Credit Union Arena",
+    "conference": "WAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2547",
+    "name": "Seattle U Redhawks",
+    "latitude": "47.609225",
+    "longitude": "-122.3178278",
+    "venue": "Redhawk Center",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "253",
+    "name": "Southern Utah Thunderbirds",
+    "latitude": "37.6755028",
+    "longitude": "-113.0728747",
+    "venue": "America First Events Center",
+    "conference": "WAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2627",
+    "name": "Tarleton State Texans",
+    "latitude": "32.215945",
+    "longitude": "-98.215921",
+    "venue": "ECCU Center",
+    "conference": "WAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "250",
+    "name": "UT Arlington Mavericks",
+    "latitude": "32.730505",
+    "longitude": "-97.108074",
+    "venue": "College Park Center",
+    "conference": "WAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "3101",
+    "name": "Utah Tech Trailblazers",
+    "latitude": "37.1015093",
+    "longitude": "-113.5670344",
+    "venue": "Burns Arena",
+    "conference": "WAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "3084",
+    "name": "Utah Valley Wolverines",
+    "latitude": "40.2786656",
+    "longitude": "-111.7170596",
+    "venue": "UCCU Center",
+    "conference": "WAC",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "2250",
+    "name": "Gonzaga Bulldogs",
+    "latitude": "47.6653904",
+    "longitude": "-117.3991159",
+    "venue": "McCarthey Athletic Center",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [
+        "2011"
+      ],
+      "sweetSixteens": [
+        "2011",
+        "2012",
+        "2015",
+        "2024"
+      ],
+      "appearances": 16
+    }
+  },
+  {
+    "id": "2351",
+    "name": "Loyola Marymount Lions",
+    "latitude": "33.9675",
+    "longitude": "-118.41556",
+    "venue": "Gersten Pavilion",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 1
+    }
+  },
+  {
+    "id": "204",
+    "name": "Oregon State Beavers",
+    "latitude": "44.5612668",
+    "longitude": "-123.2805799",
+    "venue": "Gill Coliseum",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [
+        "2016"
+      ],
+      "eliteEights": [
+        "2016",
+        "2018",
+        "2024"
+      ],
+      "sweetSixteens": [
+        "1983",
+        "2016",
+        "2018",
+        "2019",
+        "2024"
+      ],
+      "appearances": 14
+    }
+  },
+  {
+    "id": "279",
+    "name": "Pacific Tigers",
+    "latitude": "37.9766716",
+    "longitude": "-121.315117",
+    "venue": "Alex G. Spanos Center",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    }
+  },
+  {
+    "id": "2492",
+    "name": "Pepperdine Waves",
+    "latitude": "34.038571",
+    "longitude": "-118.709625",
+    "venue": "Firestone Fieldhouse",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2501",
+    "name": "Portland Pilots",
+    "latitude": "45.575",
+    "longitude": "-122.728",
+    "venue": "Chiles Center",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "2608",
+    "name": "Saint Mary's Gaels",
+    "latitude": "37.84127",
+    "longitude": "-122.106451",
+    "venue": "University Credit Union Pavilion",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 2
+    }
+  },
+  {
+    "id": "301",
+    "name": "San Diego Toreros",
+    "latitude": "32.7744602",
+    "longitude": "-117.183717",
+    "venue": "Jenny Craig Pavilion",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 3
+    }
+  },
+  {
+    "id": "2539",
+    "name": "San Francisco Dons",
+    "latitude": "37.77694",
+    "longitude": "-122.44944",
+    "venue": "The Sobrato Center",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  },
+  {
+    "id": "2541",
+    "name": "Santa Clara Broncos",
+    "latitude": "37.3491111",
+    "longitude": "-121.9353028",
+    "venue": "Leavey Center",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 6
+    }
+  },
+  {
+    "id": "265",
+    "name": "Washington State Cougars",
+    "latitude": "46.735244",
+    "longitude": "-117.1581126",
+    "venue": "Beasley Coliseum",
+    "conference": "West Coast",
+    "oldPlayers": [],
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 4
+    }
+  }
+]

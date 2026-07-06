@@ -1,25 +1,27 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
+import { sportPath } from './espn';
 
-// Récupère le classement complet une seule fois par session (grosse réponse -> mise en cache).
-let STANDINGS_PROMISE = null;
-let STANDINGS_DATA = null; // enfants résolus -> permet un rendu synchrone (pas de flash "Loading")
-const getStandings = () => {
-  if (STANDINGS_DATA) return Promise.resolve(STANDINGS_DATA);
-  if (!STANDINGS_PROMISE) {
-    STANDINGS_PROMISE = fetch(
-      'https://site.api.espn.com/apis/v2/sports/basketball/mens-college-basketball/standings'
+// Récupère le classement complet une seule fois par session ET PAR GENRE
+// (grosse réponse -> mise en cache séparée hommes/femmes).
+const STANDINGS_PROMISE = { men: null, women: null };
+const STANDINGS_DATA = { men: null, women: null }; // résolu -> rendu synchrone (pas de flash "Loading")
+const getStandings = (gender) => {
+  if (STANDINGS_DATA[gender]) return Promise.resolve(STANDINGS_DATA[gender]);
+  if (!STANDINGS_PROMISE[gender]) {
+    STANDINGS_PROMISE[gender] = fetch(
+      `https://site.api.espn.com/apis/v2/sports/basketball/${sportPath(gender)}/standings`
     )
       .then((r) => r.json())
       .then((d) => {
-        STANDINGS_DATA = (d && d.children) || [];
-        return STANDINGS_DATA;
+        STANDINGS_DATA[gender] = (d && d.children) || [];
+        return STANDINGS_DATA[gender];
       })
       .catch((e) => {
-        STANDINGS_PROMISE = null; // permet un nouvel essai après un échec
+        STANDINGS_PROMISE[gender] = null; // permet un nouvel essai après un échec
         throw e;
       });
   }
-  return STANDINGS_PROMISE;
+  return STANDINGS_PROMISE[gender];
 };
 
 const toHex = (c) => (c ? (c[0] === '#' ? c : `#${c}`) : '#00539b');
@@ -64,10 +66,10 @@ const diffFmt = (pf, pa) => {
 const logoUrl = (id) =>
   `https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/${id}.png&h=40&w=40`;
 
-const TeamStanding = ({ team, isSmallScreen }) => {
+const TeamStanding = ({ team, isSmallScreen, gender }) => {
   const confId = team.groups && team.groups.id;
   // Rendu synchrone si le classement est déjà en cache -> pas d'état "Loading" au retour sur l'onglet.
-  const cachedConf = STANDINGS_DATA ? STANDINGS_DATA.find((x) => x.id === confId) : null;
+  const cachedConf = STANDINGS_DATA[gender] ? STANDINGS_DATA[gender].find((x) => x.id === confId) : null;
   const [conf, setConf] = useState(cachedConf);
   const [loading, setLoading] = useState(!cachedConf);
   const [error, setError] = useState(null);
@@ -76,11 +78,11 @@ const TeamStanding = ({ team, isSmallScreen }) => {
 
   useEffect(() => {
     let cancelled = false;
-    if (!STANDINGS_DATA) {
+    if (!STANDINGS_DATA[gender]) {
       setLoading(true);
       setError(null);
     }
-    getStandings()
+    getStandings(gender)
       .then((children) => {
         if (cancelled) return;
         const c = children.find((x) => x.id === confId);
@@ -96,7 +98,7 @@ const TeamStanding = ({ team, isSmallScreen }) => {
     return () => {
       cancelled = true;
     };
-  }, [confId]);
+  }, [confId, gender]);
 
   // Centre le tableau sur l'équipe courante à l'ouverture (clampé : #1 -> vue normale en haut).
   useLayoutEffect(() => {
