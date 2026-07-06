@@ -18,19 +18,31 @@ const root = createRoot(rootElement);
 function Shell({ leagueId }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchSubmit, setSearchSubmit] = useState(null);
+  const [gender, setGender] = useState('men'); // 'men' | 'women' (USA uniquement)
 
   const league = LEAGUES.find((l) => l.id === leagueId);
   const Map = leagueId === 'france' ? FranceMap : App;
 
+  // Côté USA, le titre suit le genre sélectionné (Men's / Women's).
+  const navLeague =
+    league && leagueId === 'usa' && gender === 'women'
+      ? { ...league, title: "NCAA Division I Women's Basketball" }
+      : league;
+
   return (
     <>
       <Navbar
-        league={league}
+        league={navLeague}
         searchQuery={searchQuery}
         setSearchQuery={setSearchQuery}
         onSubmit={(q) => setSearchSubmit((prev) => ({ q, n: (prev?.n || 0) + 1 }))}
       />
-      <Map searchQuery={searchQuery} searchSubmit={searchSubmit} />
+      <Map
+        searchQuery={searchQuery}
+        searchSubmit={searchSubmit}
+        gender={gender}
+        setGender={setGender}
+      />
       <LeaguePicker currentLeague={leagueId} />
     </>
   );

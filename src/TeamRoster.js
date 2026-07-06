@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import blankHeadshot from './assets/player.png';
+import { sportPath } from './espn';
 
-// Cache de session : id joueur -> { data } | { error }. Évite de re-télécharger.
+// Cache de session : clé "genre:idJoueur" -> { data } | { error }. Évite de re-télécharger.
 const STATS_CACHE = {};
 
 // Teinte très claire (90% vers le blanc) de la couleur de la fac — fond du panneau/ligne ouverte.
@@ -13,11 +14,11 @@ const veryLightTint = (hex) => {
   return `rgb(${t(c(0))}, ${t(c(2))}, ${t(c(4))})`;
 };
 
-const headshotUrl = (id) =>
-  `https://a.espncdn.com/combiner/i?img=/i/headshots/mens-college-basketball/players/full/${id}.png&h=96&w=96&scale=crop`;
+const headshotUrl = (id, gender) =>
+  `https://a.espncdn.com/combiner/i?img=/i/headshots/${sportPath(gender)}/players/full/${id}.png&h=96&w=96&scale=crop`;
 
-const statsUrl = (id) =>
-  `https://site.web.api.espn.com/apis/common/v3/sports/basketball/mens-college-basketball/athletes/${id}/stats`;
+const statsUrl = (id, gender) =>
+  `https://site.web.api.espn.com/apis/common/v3/sports/basketball/${sportPath(gender)}/athletes/${id}/stats`;
 
 // Extrait les moyennes de la saison la plus récente (dernière ligne = plus récente).
 const parseStats = (json) => {
@@ -48,10 +49,10 @@ const parseStats = (json) => {
 };
 
 // Récupère les stats d'un joueur ; ne rejette jamais (timeout -> error) pour ne pas bloquer le tri.
-const fetchStats = (id) =>
+const fetchStats = (id, gender) =>
   new Promise((resolve) => {
     const to = setTimeout(() => resolve({ id, error: true }), 8000);
-    fetch(statsUrl(id))
+    fetch(statsUrl(id, gender))
       .then((r) => r.json())
       .then((j) => {
         clearTimeout(to);
@@ -102,30 +103,33 @@ const StatsPanel = ({ entry }) => {
   );
 };
 
-const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen }) => {
+const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen, gender }) => {
   const [openId, setOpenId] = useState(null);
   const [, setTick] = useState(0); // force le re-render quand les stats async arrivent
 
+  const ckey = (id) => `${gender}:${id}`; // stats hommes/femmes séparées dans le cache
+
   const athletes = roster && roster.athletes && roster.athletes.length ? roster.athletes : null;
   // Toutes les stats déjà en cache -> on affiche le tableau dès le 1er rendu (aucun flash "Loading").
-  const allCached = athletes ? athletes.every((p) => STATS_CACHE[p.id]) : false;
+  const allCached = athletes ? athletes.every((p) => STATS_CACHE[ckey(p.id)]) : false;
 
   // Charge les stats manquantes (parallèle, cache de session) puis re-rend.
   useEffect(() => {
     setOpenId(null);
     if (!athletes || allCached) return;
     let cancelled = false;
-    const missing = athletes.filter((p) => !STATS_CACHE[p.id]);
-    Promise.all(missing.map((p) => fetchStats(p.id))).then((results) => {
+    const missing = athletes.filter((p) => !STATS_CACHE[ckey(p.id)]);
+    Promise.all(missing.map((p) => fetchStats(p.id, gender))).then((results) => {
       results.forEach((res) => {
-        STATS_CACHE[res.id] = res.data ? { data: res.data } : { error: true };
+        STATS_CACHE[ckey(res.id)] = res.data ? { data: res.data } : { error: true };
       });
       if (!cancelled) setTick((t) => t + 1);
     });
     return () => {
       cancelled = true;
     };
-  }, [athletes, allCached]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [athletes, allCached, gender]);
 
   const teamHex =
     team && team.color ? (team.color[0] === '#' ? team.color : `#${team.color}`) : '#00539b';
@@ -139,7 +143,7 @@ const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen }) => {
 
   const ordered = athletes
     .slice()
-    .sort((a, b) => ptsValue(STATS_CACHE[b.id]) - ptsValue(STATS_CACHE[a.id]));
+    .sort((a, b) => ptsValue(STATS_CACHE[ckey(b.id)]) - ptsValue(STATS_CACHE[ckey(a.id)]));
   const cols = isSmallScreen ? 5 : 7;
 
   return (
@@ -175,7 +179,7 @@ const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen }) => {
                     <div className="rt-pl">
                       <img
                         className="rt-av"
-                        src={headshotUrl(id)}
+                        src={headshotUrl(id, gender)}
                         onError={(e) => {
                           e.target.onerror = null;
                           e.target.src = blankHeadshot;
@@ -219,7 +223,7 @@ const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen }) => {
                   <td colSpan={cols}>
                     <div className="rt-wrap" style={{ maxHeight: isOpen ? 200 : 0 }}>
                       <div className="rt-panel">
-                        <StatsPanel entry={STATS_CACHE[id]} />
+                        <StatsPanel entry={STATS_CACHE[ckey(id)]} />
                       </div>
                     </div>
                   </td>

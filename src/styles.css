@@ -728,6 +728,48 @@ img.st-logo { width: 20px; height: 20px; object-fit: contain; flex: none; }
 .lp-name { font-size: 12px; font-weight: 800; color: #1e293b; }
 .lp-sub { font-size: 9.5px; color: #64748b; margin-top: 1px; }
 
+/* ═══════════ Switch Men ⇄ Women : bouton flip 360, sous le globe ═══════════ */
+/* Même gabarit que .lp-globe (34px, coins 8px, bordure) — s'aligne juste dessous. */
+.gsw {
+  position: absolute;
+  top: 194px; /* lp-globe (top 152) + 34px + 8px de gouttière */
+  left: 10px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 0;
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+.gsw:hover { transform: scale(1.08); }
+.gsw-scene { display: block; width: 100%; height: 100%; perspective: 200px; }
+.gsw-inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.45, 0.05, 0.25, 1);
+}
+.gsw-face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  font-family: 'Montserrat', -apple-system, sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: #1e293b;
+  line-height: 1;
+}
+.gsw-back { transform: rotateX(180deg); }
+
 /* ═══════════ Sidebar France : 2 divisions (Élite / Pro B) ═══════════ */
 .fr-side {
   position: absolute;
