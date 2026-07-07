@@ -4,6 +4,8 @@ import lnbTrophy from './assets/lnb_trophy.png';
 import frRostersData from './fr-rosters.json';
 import frStandingsData from './fr-standings.json';
 import frTeamsData from './fr-teams.json';
+import frWomenStandingsData from './fr-women-standings.json';
+import frWomenTeamsData from './fr-women-teams.json';
 
 const TABS = [
   { id: 'roster', label: 'Roster' },
@@ -11,10 +13,20 @@ const TABS = [
   { id: 'club', label: 'Club' },
 ];
 
-const DIVISION_NAMES = { elite: 'Betclic ÉLITE', prob: 'ÉLITE 2' };
-const SEASON_LABEL = frStandingsData.season || '';
+const DIVISION_NAMES = {
+  elite: 'Betclic ÉLITE',
+  prob: 'ÉLITE 2',
+  d1: 'La Boulangère Wonderligue',
+  d2: 'Ligue Féminine 2',
+};
+const MEN_SEASON = frStandingsData.season || '';
 
-const LOGO_BY_ID = Object.fromEntries(frTeamsData.map((t) => [t.id, t.logo]));
+// Données de classement / logos selon le genre.
+const STANDINGS_BY_GENDER = { men: frStandingsData, women: frWomenStandingsData };
+const LOGO_BY_ID = {
+  men: Object.fromEntries(frTeamsData.map((t) => [t.id, t.logo])),
+  women: Object.fromEntries(frWomenTeamsData.map((t) => [t.id, t.logo])),
+};
 
 const toHex = (c) => (c ? (c[0] === '#' ? c : `#${c}`) : '#1d428a');
 
@@ -177,7 +189,7 @@ const StatBox = ({ v, l }) => (
 // taille, drapeau — sont déjà visibles sur la ligne repliée).
 const FrPlayerPanel = ({ p }) => (
   <>
-    <div className="rt-season">{SEASON_LABEL} · Season averages</div>
+    <div className="rt-season">{MEN_SEASON} · Season averages</div>
     <div className="rt-hero">
       <StatBox v={fmtAvg(p.ppg)} l="PPG" />
       <StatBox v={fmtAvg(p.rpg)} l="RPG" />
@@ -288,11 +300,14 @@ const FrTeamRoster = ({ team, isSmallScreen }) => {
 
 /* ═══════════════ Classement (snapshot officiel LNB) ═══════════════ */
 
-const FrTeamStanding = ({ team, isSmallScreen }) => {
+const FrTeamStanding = ({ team, isSmallScreen, gender = 'men' }) => {
   const scrollRef = useRef(null);
   const meRowRef = useRef(null);
 
-  const rows = frStandingsData.standings[team.division] || [];
+  const data = STANDINGS_BY_GENDER[gender] || frStandingsData;
+  const season = data.season || '';
+  const logoById = LOGO_BY_ID[gender] || LOGO_BY_ID.men;
+  const rows = data.standings[team.division] || [];
   const teamHex = toHex(team.color);
 
   // Centre le tableau sur l'équipe courante à l'ouverture.
@@ -319,7 +334,7 @@ const FrTeamStanding = ({ team, isSmallScreen }) => {
       <div className="st-chead" style={{ background: teamHex }}>
         <span className="t">{DIVISION_NAMES[team.division] || team.division}</span>
         <span className="s">
-          {SEASON_LABEL} · Regular season
+          {season} · Regular season
         </span>
       </div>
       <div className="st-scroll" ref={scrollRef}>
@@ -337,7 +352,7 @@ const FrTeamStanding = ({ team, isSmallScreen }) => {
           <tbody>
             {rows.map((r) => {
               const isMe = r.teamId === team.id;
-              const logo = r.teamId ? LOGO_BY_ID[r.teamId] : null;
+              const logo = r.teamId ? logoById[r.teamId] : null;
               return (
                 <tr key={r.rank} className={isMe ? 'st-me' : ''} ref={isMe ? meRowRef : null}>
                   <td className="st-rk">{r.rank}</td>
@@ -413,8 +428,11 @@ const FrTeamClub = ({ team }) => (
 
 /* ═══════════════ Assemblage : palmarès repliable + onglets ═══════════════ */
 
-const FrTeamPanels = ({ team, isSmallScreen }) => {
-  const [activeTab, setActiveTab] = useState('roster');
+const FrTeamPanels = ({ team, isSmallScreen, gender = 'men' }) => {
+  const isWomen = gender === 'women';
+  // Côté féminin : pas de roster/stats (aucune API JSON propre) -> onglet masqué.
+  const tabs = isWomen ? TABS.filter((t) => t.id !== 'roster') : TABS;
+  const [activeTab, setActiveTab] = useState(isWomen ? 'standing' : 'roster');
   const [palmOpen, setPalmOpen] = useState(true);
   const [palmH, setPalmH] = useState(0);
 
@@ -432,7 +450,7 @@ const FrTeamPanels = ({ team, isSmallScreen }) => {
         style={{ '--tab-accent': accentColor, '--palm-extra': `${palmOpen ? 0 : palmH}px` }}
       >
         <div className="tab-bar">
-          {TABS.map((tab) => (
+          {tabs.map((tab) => (
             <button
               key={tab.id}
               className={`tab-btn${activeTab === tab.id ? ' active' : ''}`}
@@ -443,9 +461,11 @@ const FrTeamPanels = ({ team, isSmallScreen }) => {
           ))}
         </div>
         <div className="tab-content">
-          {activeTab === 'roster' && <FrTeamRoster team={team} isSmallScreen={isSmallScreen} />}
+          {activeTab === 'roster' && !isWomen && (
+            <FrTeamRoster team={team} isSmallScreen={isSmallScreen} />
+          )}
           {activeTab === 'standing' && (
-            <FrTeamStanding team={team} isSmallScreen={isSmallScreen} />
+            <FrTeamStanding team={team} isSmallScreen={isSmallScreen} gender={gender} />
           )}
           {activeTab === 'club' && <FrTeamClub team={team} />}
         </div>

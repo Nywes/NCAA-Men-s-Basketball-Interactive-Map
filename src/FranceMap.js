@@ -9,13 +9,23 @@ import { Icon } from 'leaflet';
 import { useEffect, useState, useRef } from 'react';
 
 import frTeamsData from './fr-teams.json';
-import { FR_DIVISIONS } from './leagues';
+import frWomenTeamsData from './fr-women-teams.json';
+import { FR_DIVISIONS, FR_WOMEN_DIVISIONS } from './leagues';
 import FrTeamPanels from './FrTeamPanels';
+import GenderSwitch from './GenderSwitch';
 
-const DIVISION_LABELS = { elite: 'BETCLIC ÉLITE', prob: 'PRO B' };
+const DIVISION_LABELS = {
+  elite: 'BETCLIC ÉLITE',
+  prob: 'PRO B',
+  d1: 'LA BOULANGÈRE WONDERLIGUE',
+  d2: 'LIGUE FÉMININE 2',
+};
 
 // Couleur par défaut quand TheSportsDB n'a pas les couleurs du club.
 const DEFAULT_COLOR = '1d428a';
+
+// Logo de secours (ballon) pour les rares clubs sans badge disponible.
+const FALLBACK_LOGO = `${process.env.PUBLIC_URL}/basketball.png`;
 
 const customIcon = function (logo) {
   return new Icon({
@@ -151,12 +161,20 @@ function AutoPanPopup({ children, isSmallScreen }) {
   );
 }
 
-export default function FranceMap({ searchQuery, searchSubmit }) {
+export default function FranceMap({ searchQuery, searchSubmit, gender = 'men', setGender }) {
   const [selectedDivisions, setSelectedDivisions] = useState([]);
   const [flyTarget, setFlyTarget] = useState(null);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  const teams = frTeamsData;
+  const isWomen = gender === 'women';
+  const teams = isWomen ? frWomenTeamsData : frTeamsData;
+  const divisions = isWomen ? FR_WOMEN_DIVISIONS : FR_DIVISIONS;
+
+  // Les divisions masculines (elite/prob) et féminines (d1/d2) diffèrent :
+  // on réinitialise le filtre au changement de genre.
+  useEffect(() => {
+    setSelectedDivisions([]);
+  }, [gender]);
 
   const updateScreenSize = () => {
     setIsSmallScreen(window.innerWidth < 600);
@@ -220,12 +238,20 @@ export default function FranceMap({ searchQuery, searchSubmit }) {
               <Marker
                 key={team.id}
                 position={[team.latitude, team.longitude]}
-                icon={customIcon(team.logo)}
+                icon={customIcon(team.logo || FALLBACK_LOGO)}
               >
                 <AutoPanPopup isSmallScreen={isSmallScreen}>
                   <div className="modal-wrapper">
                     <div className="modal-header" style={{ background: getTeamGradient(color) }}>
-                      <img className="modal-logo" src={team.logo} alt={team.displayName} />
+                      <img
+                        className="modal-logo"
+                        src={team.logo || FALLBACK_LOGO}
+                        onError={(e) => {
+                          e.target.onerror = null;
+                          e.target.src = FALLBACK_LOGO;
+                        }}
+                        alt={team.displayName}
+                      />
                       <div className="modal-header-text">
                         <div className="modal-team-name">{team.displayName}</div>
                         {team.location && (
@@ -269,7 +295,11 @@ export default function FranceMap({ searchQuery, searchSubmit }) {
                         )}
                       </div>
                     </div>
-                    <FrTeamPanels team={{ ...team, color }} isSmallScreen={isSmallScreen} />
+                    <FrTeamPanels
+                      team={{ ...team, color }}
+                      isSmallScreen={isSmallScreen}
+                      gender={gender}
+                    />
                   </div>
                 </AutoPanPopup>
               </Marker>
@@ -277,9 +307,11 @@ export default function FranceMap({ searchQuery, searchSubmit }) {
           })}
         </MapContainer>
 
+        {setGender && <GenderSwitch gender={gender} onChange={setGender} />}
+
         {/* Sidebar adaptée : 2 divisions seulement, cartes larges avec logo + compteur */}
         <div className={`fr-side${isSmallScreen ? ' fr-side-mobile' : ''}`}>
-          {FR_DIVISIONS.map((division) => {
+          {divisions.map((division) => {
             const active =
               selectedDivisions.length === 0 || selectedDivisions.includes(division.id);
             const count = teams.filter((t) => t.division === division.id).length;
@@ -289,7 +321,11 @@ export default function FranceMap({ searchQuery, searchSubmit }) {
                 onClick={() => toggleDivision(division.id)}
                 className={`fr-div-btn${active ? '' : ' fr-div-off'}`}
               >
-                <img className="fr-div-badge" src={division.badge} alt={division.name} />
+                {division.badge ? (
+                  <img className="fr-div-badge" src={division.badge} alt={division.name} />
+                ) : (
+                  <span className="fr-div-badge fr-div-badge-empty">🏀</span>
+                )}
                 <span className="fr-div-name">{division.name}</span>
                 <span className="fr-div-count">{count} teams</span>
               </button>

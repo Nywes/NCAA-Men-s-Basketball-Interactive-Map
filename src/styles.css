@@ -770,6 +770,15 @@ img.st-logo { width: 20px; height: 20px; object-fit: contain; flex: none; }
 }
 .gsw-back { transform: rotateX(180deg); }
 
+/* Badge de division sans image (ex. LF2) : emoji centré au même gabarit. */
+.fr-div-badge-empty {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  line-height: 1;
+}
+
 /* ═══════════ Sidebar France : 2 divisions (Élite / Pro B) ═══════════ */
 .fr-side {
   position: absolute;

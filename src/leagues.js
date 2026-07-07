@@ -36,3 +36,17 @@ export const FR_DIVISIONS = [
     badge: 'https://r2.thesportsdb.com/images/media/league/badge/0yjbmz1754268940.png',
   },
 ];
+
+// Divisions féminines françaises (FFBB). La LF2 n'a pas de badge disponible.
+export const FR_WOMEN_DIVISIONS = [
+  {
+    id: 'd1',
+    name: 'LA BOULANGÈRE WONDERLIGUE',
+    badge: 'https://r2.thesportsdb.com/images/media/league/badge/o5r1we1746284587.png',
+  },
+  {
+    id: 'd2',
+    name: 'LIGUE FÉMININE 2',
+    badge: null,
+  },
+];
