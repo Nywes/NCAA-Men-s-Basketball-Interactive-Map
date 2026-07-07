@@ -92,7 +92,7 @@ const BadgeRow = ({ badges }) => (
   </div>
 );
 
-const PlayerCard = ({ player, tint }) => {
+const PlayerCard = ({ player, tint, gender }) => {
   const imgRef = useRef(null);
   const isDrafted = player.draftPosition && player.draftTeam && player.draftYear;
 
@@ -158,7 +158,7 @@ const PlayerCard = ({ player, tint }) => {
         )}
         {nba.length > 0 && (
           <>
-            <div className="lc-cat lc-cat-nba">NBA</div>
+            <div className="lc-cat lc-cat-nba">{gender === 'women' ? 'WNBA' : 'NBA'}</div>
             <BadgeRow badges={nba} />
           </>
         )}
@@ -218,7 +218,7 @@ const legendScore = (p) => {
   return s;
 };
 
-const TeamLegends = ({ team }) => {
+const TeamLegends = ({ team, gender }) => {
   // Ordre : joueurs "épinglés" (legendRank: 1, 2, 3…) d'abord dans cet ordre,
   // puis les autres triés automatiquement par score de grandeur décroissant.
   const players = (team.oldPlayers || [])
@@ -242,7 +242,7 @@ const TeamLegends = ({ team }) => {
   return (
     <div className="lc-grid">
       {players.map((player) => (
-        <PlayerCard key={player.id} player={player} tint={tint} />
+        <PlayerCard key={player.id} player={player} tint={tint} gender={gender} />
       ))}
     </div>
   );
