@@ -12,16 +12,13 @@ const TABS = [
 const TeamInfo = ({ roster, rosterLoading, team, isSmallScreen, gender, extraListH = 0 }) => {
   const [activeTab, setActiveTab] = useState('roster');
 
-  // Legends/palmarès ne concernent que le masculin pour l'instant.
-  const tabs = gender === 'women' ? TABS.filter((t) => t.id !== 'legends') : TABS;
-
   const accentColor =
     team.color && !team.color.startsWith('#') ? `#${team.color}` : team.color || '#4B9CD3';
 
   return (
     <div style={{ '--tab-accent': accentColor, '--palm-extra': `${extraListH}px` }}>
       <div className="tab-bar">
-        {tabs.map((tab) => (
+        {TABS.map((tab) => (
           <button
             key={tab.id}
             className={`tab-btn${activeTab === tab.id ? ' active' : ''}`}
@@ -32,8 +29,8 @@ const TeamInfo = ({ roster, rosterLoading, team, isSmallScreen, gender, extraLis
         ))}
       </div>
       <div className="tab-content">
-        {activeTab === 'legends' && gender !== 'women' && (
-          <TeamLegends team={team} isSmallScreen={isSmallScreen} />
+        {activeTab === 'legends' && (
+          <TeamLegends team={team} isSmallScreen={isSmallScreen} gender={gender} />
         )}
         {activeTab === 'roster' && (
           <TeamRoster
