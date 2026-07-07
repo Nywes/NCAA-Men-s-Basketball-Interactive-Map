@@ -23,11 +23,15 @@ function Shell({ leagueId }) {
   const league = LEAGUES.find((l) => l.id === leagueId);
   const Map = leagueId === 'france' ? FranceMap : App;
 
-  // Côté USA, le titre suit le genre sélectionné (Men's / Women's).
-  const navLeague =
-    league && leagueId === 'usa' && gender === 'women'
-      ? { ...league, title: "NCAA Division I Women's Basketball" }
-      : league;
+  // Le titre suit le genre sélectionné (Men's / Women's) selon l'univers.
+  let navLeague = league;
+  if (league && gender === 'women') {
+    if (leagueId === 'usa') {
+      navLeague = { ...league, title: "NCAA Division I Women's Basketball" };
+    } else if (leagueId === 'france') {
+      navLeague = { ...league, title: 'French Women’s Basketball — FFBB', shortTitle: 'FFBB' };
+    }
+  }
 
   return (
     <>
