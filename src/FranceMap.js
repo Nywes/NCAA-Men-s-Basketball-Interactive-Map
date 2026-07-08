@@ -314,7 +314,6 @@ export default function FranceMap({ searchQuery, searchSubmit, gender = 'men', s
           {divisions.map((division) => {
             const active =
               selectedDivisions.length === 0 || selectedDivisions.includes(division.id);
-            const count = teams.filter((t) => t.division === division.id).length;
             return (
               <button
                 key={division.id}
@@ -327,7 +326,6 @@ export default function FranceMap({ searchQuery, searchSubmit, gender = 'men', s
                   <span className="fr-div-badge fr-div-badge-empty">🏀</span>
                 )}
                 <span className="fr-div-name">{division.name}</span>
-                <span className="fr-div-count">{count} teams</span>
               </button>
             );
           })}

@@ -14,11 +14,11 @@ const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 
 // Un "univers" = navbar + carte + sélecteur de ligue. La recherche est locale
-// à chaque univers (elle se réinitialise quand on change de ligue).
-function Shell({ leagueId }) {
+// à chaque univers (elle se réinitialise quand on change de ligue), mais le genre
+// (Men/Women) est remonté dans Root pour PERSISTER quand on change de championnat.
+function Shell({ leagueId, gender, setGender }) {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchSubmit, setSearchSubmit] = useState(null);
-  const [gender, setGender] = useState('men'); // 'men' | 'women' (USA uniquement)
 
   const league = LEAGUES.find((l) => l.id === leagueId);
   const Map = leagueId === 'france' ? FranceMap : App;
@@ -47,18 +47,26 @@ function Shell({ leagueId }) {
         gender={gender}
         setGender={setGender}
       />
-      <LeaguePicker currentLeague={leagueId} />
+      <LeaguePicker currentLeague={leagueId} gender={gender} />
     </>
   );
 }
 
 function Root() {
+  // Genre partagé entre tous les univers (persiste au changement de championnat).
+  const [gender, setGender] = useState('men');
   return (
     <StrictMode>
       <HashRouter>
         <Routes>
-          <Route path="/usa" element={<Shell key="usa" leagueId="usa" />} />
-          <Route path="/france" element={<Shell key="france" leagueId="france" />} />
+          <Route
+            path="/usa"
+            element={<Shell key="usa" leagueId="usa" gender={gender} setGender={setGender} />}
+          />
+          <Route
+            path="/france"
+            element={<Shell key="france" leagueId="france" gender={gender} setGender={setGender} />}
+          />
           <Route path="*" element={<Navigate to="/usa" replace />} />
         </Routes>
       </HashRouter>
