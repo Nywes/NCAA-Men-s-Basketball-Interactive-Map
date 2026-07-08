@@ -64,27 +64,40 @@ const NAME_OVERRIDES = {
 const COORDS_OVERRIDES = {
   '200000002673011': { latitude: 43.7384, longitude: 7.4246 }, // Monaco
 };
-// Logos transparents de remplacement : soit le logo FFBB manque, soit il a un
-// FOND OPAQUE (carré/rond blanc disgracieux sur la carte). On préfère alors un
-// badge transparent TheSportsDB ; à défaut, le logo FFBB détouré du blanc (data-URI).
-const LOGO_FALLBACK_DIR = path.join(__dirname, 'women-logo-fallbacks');
-const dataUri = (id) =>
-  'data:image/png;base64,' + fs.readFileSync(path.join(LOGO_FALLBACK_DIR, `${id}.png`)).toString('base64');
-
-const LOGO_OVERRIDES = {
-  // Badges transparents TheSportsDB (logo FFBB absent ou à fond opaque)
-  '405001018666': 'https://r2.thesportsdb.com/images/media/team/badge/yhc22u1751793243.png', // Toulouse
-  '10276': 'https://r2.thesportsdb.com/images/media/team/badge/hw0e541757669637.png', // ESB Villeneuve-d'Ascq
-  '10596': 'https://r2.thesportsdb.com/images/media/team/badge/o6b03w1765449544.png', // BLMA
-  '9411': 'https://r2.thesportsdb.com/images/media/team/badge/1dbzxw1741173188.png', // Charnay
-  '9849': 'https://r2.thesportsdb.com/images/media/team/badge/qb31091756634235.png', // Chartres
-  '9196': 'https://r2.thesportsdb.com/images/media/team/badge/tqmjf51742042681.png', // Roche Vendée
-  '17001062691': 'https://r2.thesportsdb.com/images/media/team/badge/qq87qd1757667500.png', // Angers
-  // Logos FFBB détourés du blanc localement (aucune source transparente ailleurs)
-  '10710': dataUri('10710'), // Feytiat
-  '10108': dataUri('10108'), // Champagne / Reims
-  '8053': dataUri('8053'), // SI Graffenstaden
+// Logos officiels TRANSPARENTS via Proballers (source unique et cohérente pour
+// les 26 clubs). Clé = id FFBB (organisme) -> id Proballers (endpoint getTeamLogo,
+// ouvert, PNG transparent). Ids relevés sur basketlfb.com / lf2.ffbb.com (/equipe/{id}).
+const PROBALLERS_ID = {
+  // D1 Wonderligue
+  '492001004613': 2653, // Basket Landes
+  '9817': 2654, // Bourges
+  '10045': 2656, // Flammes Carolo (Charleville)
+  '9603': 13330, // Landerneau
+  '10596': 2658, // BLMA (Lattes-Montpellier)
+  '10276': 2664, // ESB Villeneuve-d'Ascq
+  '9411': 13378, // Charnay
+  '9849': 13659, // Chartres
+  '9196': 449, // Roche Vendée
+  '11158': 2659, // Lyon ASVEL Féminin
+  '405001018666': 446, // Toulouse Métropole
+  '17001062691': 2941, // UFAB Angers
+  // D2 Ligue Féminine 2
+  '7924': 13658, // BC La Tronche-Meylan
+  '200000002674033': 14708, // Voiron
+  '10938': 13657, // Montbrison
+  '10710': 14901, // Feytiat
+  '200000002673011': 14717, // Monaco
+  '10354': 2657, // Saint-Amand
+  '11415': 2660, // Mondeville
+  '10108': 13655, // Champagne (Reims)
+  '11347': 15455, // GCO Bihorel
+  '10210': 13660, // AS Aulnoye
+  '71001005255': 2662, // Cavigal Nice
+  '8053': 13653, // SI Graffenstaden (Illkirch)
+  '11282': 15342, // Aplemont Le Havre
+  '11521': 13656, // Centre Fédéral (INSEP)
 };
+const proballersLogo = (pbId) => `https://www.proballers.com/api/getTeamLogo?id=${pbId}&width=200`;
 
 const PARTICLES = new Set(['de', 'du', 'des', 'la', 'le', 'les', 'sur', 'sous', 'en', 'et', 'd', 'l', 'au', 'aux', 'a']);
 // Titre FR : capitalise chaque mot sauf les particules (garde -, ', espaces).
@@ -239,7 +252,11 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
         division,
         latitude: coords.latitude,
         longitude: coords.longitude,
-        logo: LOGO_OVERRIDES[orgId] || (org.logo ? `${API}assets/${org.logo}` : null),
+        logo: PROBALLERS_ID[orgId]
+          ? proballersLogo(PROBALLERS_ID[orgId])
+          : org.logo
+          ? `${API}assets/${org.logo}`
+          : null,
         venue,
         location: city,
         color: null, // FFBB ne fournit pas les couleurs -> défaut côté UI

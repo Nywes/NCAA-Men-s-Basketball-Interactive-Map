@@ -5,7 +5,7 @@ import './styles.css';
 
 // Bouton globe (style contrôle Leaflet) + panneau de sélection d'univers.
 // Positionné sous les contrôles zoom/fullscreen, à gauche de la carte.
-export default function LeaguePicker({ currentLeague }) {
+export default function LeaguePicker({ currentLeague, gender = 'men' }) {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const rootRef = useRef(null);
@@ -54,7 +54,9 @@ export default function LeaguePicker({ currentLeague }) {
           >
             <img className="lp-logo" src={league.logo} alt="" />
             <span className="lp-text">
-              <span className="lp-name">{league.name} {league.flag}</span>
+              <span className="lp-name">
+                {(league.names && league.names[gender]) || league.name} {league.flag}
+              </span>
             </span>
           </button>
         ))}

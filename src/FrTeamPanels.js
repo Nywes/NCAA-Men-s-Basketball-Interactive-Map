@@ -61,11 +61,11 @@ const darken = (hex, f) => {
 /* ═══════════════ Palmarès (même design que le panneau NCAA Tournament) ═══════════════ */
 
 // Choix de la bannière : Champion de France > Champion ÉLITE 2 > 1er titre européen.
-const heroOf = (honours) => {
+const heroOf = (honours, d2Label, allowD2Hero) => {
   if ((honours.titles || []).length > 0)
     return { label: 'Champion de France', years: honours.titles };
-  if (honours.elite2 && honours.elite2.count > 0)
-    return { label: 'Champion ÉLITE 2 / Pro B', years: honours.elite2.years || [] };
+  if (allowD2Hero && honours.elite2 && honours.elite2.count > 0)
+    return { label: `Champion ${d2Label}`, years: honours.elite2.years || [] };
   if ((honours.european || []).length > 0) {
     const e = honours.european[0];
     return { label: e.label, years: e.years || [] };
@@ -73,8 +73,10 @@ const heroOf = (honours) => {
   return null;
 };
 
-const FrTeamIdentity = ({ team, isOpen, setIsOpen, onMeasure }) => {
+const FrTeamIdentity = ({ team, isOpen, setIsOpen, onMeasure, gender = 'men' }) => {
   const honours = team.honours || {};
+  // Libellé de la 2e division selon le genre.
+  const d2Label = gender === 'women' ? 'LF2' : 'ÉLITE 2 / Pro B';
 
   const contentRef = useRef(null);
   useEffect(() => {
@@ -87,8 +89,10 @@ const FrTeamIdentity = ({ team, isOpen, setIsOpen, onMeasure }) => {
     return () => ro.disconnect();
   }, [isOpen, team, onMeasure]);
 
-  const hero = heroOf(honours);
+  // La 2e division (Pro B / LF2) n'est jamais la bannière -> toujours une petite carte.
+  const hero = heroOf(honours, d2Label, false);
   const heroIsTitles = hero && hero.label === 'Champion de France';
+  const heroIsD2 = false;
 
   // Cartes secondaires : tout ce qui n'est pas déjà dans la bannière.
   const cards = [];
@@ -96,8 +100,12 @@ const FrTeamIdentity = ({ team, isOpen, setIsOpen, onMeasure }) => {
     cards.push({ key: 'cups', label: 'Coupe de France', val: honours.cups.count });
   if (honours.leadersCup && honours.leadersCup.count > 0)
     cards.push({ key: 'lc', label: 'Leaders Cup', val: honours.leadersCup.count });
-  if (heroIsTitles && honours.elite2 && honours.elite2.count > 0)
-    cards.push({ key: 'e2', label: 'ÉLITE 2 / Pro B', val: honours.elite2.count });
+  if (honours.elite2 && honours.elite2.count > 0 && !heroIsD2)
+    cards.push({
+      key: 'e2',
+      label: gender === 'women' ? 'Titre LF2' : 'Titre Pro B',
+      val: honours.elite2.count,
+    });
   (honours.european || []).forEach((e, i) => {
     if (hero && !heroIsTitles && hero.label === e.label) return; // déjà en bannière
     cards.push({ key: `eu${i}`, label: e.label, val: (e.years || []).length || 1 });
@@ -118,7 +126,9 @@ const FrTeamIdentity = ({ team, isOpen, setIsOpen, onMeasure }) => {
         <div ref={contentRef} style={{ display: 'flow-root' }}>
           {hero && (
             <div className="palm-hero" style={{ background: lightTint(team.color) }}>
-              <img src={lnbTrophy} alt="" className="palm-trophy-wm" />
+              {gender !== 'women' && (
+                <img src={lnbTrophy} alt="" className="palm-trophy-wm" />
+              )}
               <div className="palm-hero-left">
                 <div className="palm-hero-label">{hero.label}</div>
                 <div className="palm-num-row">
@@ -445,6 +455,7 @@ const FrTeamPanels = ({ team, isSmallScreen, gender = 'men' }) => {
         isOpen={palmOpen}
         setIsOpen={setPalmOpen}
         onMeasure={setPalmH}
+        gender={gender}
       />
       <div
         style={{ '--tab-accent': accentColor, '--palm-extra': `${palmOpen ? 0 : palmH}px` }}
