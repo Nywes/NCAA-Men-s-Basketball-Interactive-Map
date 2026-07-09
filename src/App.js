@@ -12,8 +12,11 @@ import teamsData from './teams.json';
 import teamsWomenData from './teams-women.json';
 
 import ncaaLogo from './assets/icons/ncaa-logo.png';
+import mmLogo from './assets/march-madness-logo.png';
 import TeamPanels from './TeamPanels';
 import GenderSwitch from './GenderSwitch';
+import MarchMadnessOverlay from './MarchMadnessOverlay';
+import { fetchBracket, LATEST_SEASON } from './bracket';
 import { sportPath } from './espn';
 
 // Résultats du fetch ESPN (couleurs/logos/division) mis en cache par genre,
@@ -223,6 +226,41 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
   const [rosterLoading, setRosterLoading] = useState(false);
   const [selectedTeamId, setSelectedTeamId] = useState(null);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  // March Madness : overlay + équipe pré-surlignée + participantes de la
+  // dernière édition (pour afficher l'onglet dans la modale des équipes du tournoi).
+  const [bracketOpen, setBracketOpen] = useState(false);
+  const [bracketPreselect, setBracketPreselect] = useState(null);
+  const [bracketTeams, setBracketTeams] = useState(null);
+
+  useEffect(() => {
+    let cancelled = false;
+    setBracketTeams(null);
+    fetchBracket(gender, LATEST_SEASON)
+      .then((games) => {
+        if (cancelled) return;
+        const ids = new Set();
+        games.forEach((g) => g.teams.forEach((t) => ids.add(String(t.id))));
+        setBracketTeams(ids);
+      })
+      .catch(() => !cancelled && setBracketTeams(new Set()));
+    return () => {
+      cancelled = true;
+    };
+  }, [gender]);
+
+  const openBracket = (teamId) => {
+    setBracketPreselect(teamId || null);
+    setBracketOpen(true);
+  };
+  // « Show on map » depuis le bracket : ferme l'overlay et vole vers la fac.
+  const showTeamOnMap = (espnId) => {
+    setBracketOpen(false);
+    const t = teams.find((x) => String(x.id) === String(espnId));
+    if (t && t.latitude && t.longitude) {
+      setFlyTarget({ lat: parseFloat(t.latitude), lng: parseFloat(t.longitude), n: Date.now() });
+    }
+  };
 
   const updateScreenSize = () => {
     setIsSmallScreen(window.innerWidth < 600);
@@ -476,6 +514,8 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
                         rosterLoading={rosterLoading}
                         isSmallScreen={isSmallScreen}
                         gender={gender}
+                        inBracket={!!(bracketTeams && bracketTeams.has(String(team.id)))}
+                        onOpenBracket={openBracket}
                       />
                     </div>
                   </AutoPanPopup>
@@ -501,6 +541,19 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
         </div>
 
         <GenderSwitch gender={gender} onChange={setGender} />
+
+        <button className="mmb" onClick={() => openBracket(null)} title="March Madness">
+          <img src={mmLogo} alt="March Madness" />
+        </button>
+
+        <MarchMadnessOverlay
+          open={bracketOpen}
+          onClose={() => setBracketOpen(false)}
+          gender={gender}
+          preselect={bracketPreselect}
+          onShowOnMap={showTeamOnMap}
+          isSmallScreen={isSmallScreen}
+        />
       </div>
     </div>
   );

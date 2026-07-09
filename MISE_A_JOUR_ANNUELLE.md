@@ -15,6 +15,12 @@ Après toute édition : `npm run build` pour valider, puis `git push` sur `main`
 
 ## Calendrier de l'année
 
+### 🏆 Mars — Bracket March Madness (automatique, rien à faire)
+- Le **bracket interactif** (bouton sous le switch M/W) se nourrit **en direct de l'API ESPN** :
+  la nouvelle édition apparaît toute seule dans le sélecteur de saison dès avril.
+- 💡 **Idée notée pour mars** : activer le **mode LIVE** (scores en direct pendant le tournoi,
+  badge « LIVE » + rafraîchissement auto — l'API expose déjà les matchs en cours).
+
 ### 🏀 Mars–Avril — March Madness (le gros morceau)
 Dès la fin des deux tournois NCAA :
 - **Hommes** → `src/teams.json` · **Femmes** → `src/teams-women.json`
