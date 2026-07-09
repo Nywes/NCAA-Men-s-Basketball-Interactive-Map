@@ -23,38 +23,41 @@ import { sportPath } from './espn';
 // pour ne pas re-télécharger tout le dataset à chaque bascule Men/Women.
 const TEAMS_CACHE = { men: null, women: null };
 
+// Filtre par NOM de conférence (champ `conference` de teams.json, identique
+// hommes/femmes) — les ids de groupes ESPN diffèrent selon le genre
+// (ex. Summit League = 49 chez les hommes, 47 chez les femmes).
 const divisions = [
-  { id: '2', name: 'ACC', imgLinkName: 'Atlantic_Coast_Conference_ACC_logo.png' },
-  { id: '46', name: 'ASUN', imgLinkName: 'Atlantic-Sun-Conference-ASUN-logo.png' },
-  { id: '1', name: 'America East', imgLinkName: 'America-East-Conference-logo.png' },
-  { id: '62', name: 'American', imgLinkName: 'American_Athletic_Conference_logo.png' },
-  { id: '3', name: 'A-10', imgLinkName: 'Atlantic-10-Conference-logo.png' },
-  { id: '8', name: 'Big 12', imgLinkName: 'Big_12_Conference_logo.png' },
-  { id: '4', name: 'Big East', imgLinkName: 'Big-East-Conference-logo.png' },
-  { id: '5', name: 'Big Sky', imgLinkName: 'Big-Sky-Conference-logo.png' },
-  { id: '6', name: 'Big South', imgLinkName: 'Big-South-Conference-logo.png' },
-  { id: '7', name: 'Big Ten', imgLinkName: 'Big_Ten_Conference_logo.png' },
-  { id: '9', name: 'Big West', imgLinkName: 'Big-West-Conference-logo.png' },
-  { id: '10', name: 'Coastal', imgLinkName: 'Colonial-Athletic-Association-logo.png' },
-  { id: '11', name: 'Conference USA', imgLinkName: 'Conference_USA_logo.png' },
-  { id: '45', name: 'Horizon', imgLinkName: 'Horizon-League-logo.png' },
-  { id: '12', name: 'Ivy', imgLinkName: 'Ivy-League-logo.png' },
-  { id: '13', name: 'MAAC', imgLinkName: 'Metro-Atlantic-Athletic-Conference-MAAC-logo.png' },
-  { id: '16', name: 'MEAC', imgLinkName: 'Mid-Eastern-Athletic-Conference-MEAC-logo.png' },
-  { id: '14', name: 'Mid-American', imgLinkName: 'Mid-American_Conference_logo.png' },
-  { id: '18', name: 'Missouri Valley', imgLinkName: 'Missouri-Valley-Conference-logo.png' },
-  { id: '44', name: 'Mountain West', imgLinkName: 'Mountain_West_Conference_logo.png' },
-  { id: '19', name: 'Northeast', imgLinkName: 'Northeast-Conference-logo.png' },
-  { id: '20', name: 'Ohio Valley', imgLinkName: 'Ohio-Valley-Conference-logo.png' },
-  { id: '22', name: 'Patriot League', imgLinkName: 'Patriot-League-Conference-logo.png' },
-  { id: '23', name: 'SEC', imgLinkName: 'Southeastern_Conference_logo.png' },
-  { id: '26', name: 'SWAC', imgLinkName: 'Southwestern-Athletic-Conference-logo.png' },
-  { id: '24', name: 'Southern', imgLinkName: 'Southern-Conference-logo-1.png' },
-  { id: '25', name: 'Southland', imgLinkName: 'Southland-Conference-logo.png' },
-  { id: '49', name: 'Summit League', imgLinkName: 'Summit-League-logo.png' },
-  { id: '27', name: 'Sun Belt', imgLinkName: 'Sun_Belt_Conference_2020_logo.png' },
-  { id: '30', name: 'WAC', imgLinkName: 'Western-Athletic-Conference-logo.png' },
-  { id: '29', name: 'West Coast', imgLinkName: 'West-Coast-Conference-logo.png' },
+  { id: 'ACC', name: 'ACC', imgLinkName: 'Atlantic_Coast_Conference_ACC_logo.png' },
+  { id: 'ASUN', name: 'ASUN', imgLinkName: 'Atlantic-Sun-Conference-ASUN-logo.png' },
+  { id: 'America East', name: 'America East', imgLinkName: 'America-East-Conference-logo.png' },
+  { id: 'American', name: 'American', imgLinkName: 'American_Athletic_Conference_logo.png' },
+  { id: 'A-10', name: 'A-10', imgLinkName: 'Atlantic-10-Conference-logo.png' },
+  { id: 'Big 12', name: 'Big 12', imgLinkName: 'Big_12_Conference_logo.png' },
+  { id: 'Big East', name: 'Big East', imgLinkName: 'Big-East-Conference-logo.png' },
+  { id: 'Big Sky', name: 'Big Sky', imgLinkName: 'Big-Sky-Conference-logo.png' },
+  { id: 'Big South', name: 'Big South', imgLinkName: 'Big-South-Conference-logo.png' },
+  { id: 'Big Ten', name: 'Big Ten', imgLinkName: 'Big_Ten_Conference_logo.png' },
+  { id: 'Big West', name: 'Big West', imgLinkName: 'Big-West-Conference-logo.png' },
+  { id: 'CAA', name: 'Coastal', imgLinkName: 'Colonial-Athletic-Association-logo.png' },
+  { id: 'Conference USA', name: 'Conference USA', imgLinkName: 'Conference_USA_logo.png' },
+  { id: 'Horizon', name: 'Horizon', imgLinkName: 'Horizon-League-logo.png' },
+  { id: 'Ivy', name: 'Ivy', imgLinkName: 'Ivy-League-logo.png' },
+  { id: 'MAAC', name: 'MAAC', imgLinkName: 'Metro-Atlantic-Athletic-Conference-MAAC-logo.png' },
+  { id: 'MEAC', name: 'MEAC', imgLinkName: 'Mid-Eastern-Athletic-Conference-MEAC-logo.png' },
+  { id: 'Mid-American', name: 'Mid-American', imgLinkName: 'Mid-American_Conference_logo.png' },
+  { id: 'Missouri Valley', name: 'Missouri Valley', imgLinkName: 'Missouri-Valley-Conference-logo.png' },
+  { id: 'Mountain West', name: 'Mountain West', imgLinkName: 'Mountain_West_Conference_logo.png' },
+  { id: 'Northeast', name: 'Northeast', imgLinkName: 'Northeast-Conference-logo.png' },
+  { id: 'Ohio Valley', name: 'Ohio Valley', imgLinkName: 'Ohio-Valley-Conference-logo.png' },
+  { id: 'Patriot League', name: 'Patriot League', imgLinkName: 'Patriot-League-Conference-logo.png' },
+  { id: 'SEC', name: 'SEC', imgLinkName: 'Southeastern_Conference_logo.png' },
+  { id: 'SWAC', name: 'SWAC', imgLinkName: 'Southwestern-Athletic-Conference-logo.png' },
+  { id: 'Southern', name: 'Southern', imgLinkName: 'Southern-Conference-logo-1.png' },
+  { id: 'Southland', name: 'Southland', imgLinkName: 'Southland-Conference-logo.png' },
+  { id: 'Summit League', name: 'Summit League', imgLinkName: 'Summit-League-logo.png' },
+  { id: 'Sun Belt', name: 'Sun Belt', imgLinkName: 'Sun_Belt_Conference_2020_logo.png' },
+  { id: 'WAC', name: 'WAC', imgLinkName: 'Western-Athletic-Conference-logo.png' },
+  { id: 'West Coast', name: 'West Coast', imgLinkName: 'West-Coast-Conference-logo.png' },
 ];
 
 const customIcon = function (logo) {
@@ -317,7 +320,7 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
 
   const filteredTeams = teams.filter(
     (team) =>
-      (selectedDivisions.length === 0 || selectedDivisions.includes(team.division)) &&
+      (selectedDivisions.length === 0 || selectedDivisions.includes(team.conference)) &&
       team.displayName.toLowerCase().includes(searchQuery.toLowerCase())
   );
 
@@ -477,7 +480,7 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
                                 }}
                                 onClick={() =>
                                   setSelectedDivisions((prev) =>
-                                    prev.includes(team.division) ? [] : [team.division]
+                                    prev.includes(team.conference) ? [] : [team.conference]
                                   )
                                 }
                               >
