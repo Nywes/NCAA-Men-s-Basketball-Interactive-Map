@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>March Madness — V4</title>
+<style>
+  :root { --slate: #1e293b; --ink: #333; --east: #2563eb; --west: #dc2626; --south: #16a34a; --midwest: #d97706; --gold: #b45309; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--ink); background: #eef2f6; -webkit-font-smoothing: antialiased; }
+  .page { max-width: 1240px; margin: 0 auto; padding: 40px 24px 90px; }
+  h1 { font-size: 26px; margin: 0 0 6px; color: var(--slate); }
+  .sub { color: #64748b; font-size: 14px; margin: 0 0 24px; max-width: 880px; line-height: 1.55; }
+  .sub b { color: var(--slate); }
+  h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 1.2px; color: #94a3b8; margin: 44px 0 16px; font-weight: 800; }
+  .cap { font-size: 12px; color: #64748b; margin: 10px 2px 0; line-height: 1.55; }
+  .cap b { color: var(--slate); }
+  .tag { font-size: 10px; font-weight: 800; letter-spacing: .5px; text-transform: uppercase; color: #94a3b8; }
+  .card { background: #fff; border: 1px solid #e2e8f0; border-radius: 16px; padding: 20px; margin-bottom: 20px; }
+  .card h3 { margin: 4px 0 4px; font-size: 16px; color: var(--slate); }
+  .card p.desc { margin: 0 0 14px; font-size: 12.5px; color: #64748b; line-height: 1.5; }
+  .mmlogo { display: inline-block; vertical-align: middle; }
+
+  /* ── éléments bracket ── */
+  .tline { display: flex; align-items: center; gap: 5px; font-size: 11px; line-height: 1; padding: 3px 6px; cursor: pointer; transition: background .12s; }
+  .tline img { width: 15px; height: 15px; object-fit: contain; flex: 0 0 15px; pointer-events: none; }
+  .tline .seed { width: 13px; text-align: right; font-size: 9px; color: #94a3b8; font-weight: 700; flex: 0 0 13px; pointer-events: none; }
+  .tline .nm { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: #475569; pointer-events: none; }
+  .tline .sc { font-variant-numeric: tabular-nums; color: #94a3b8; font-weight: 600; pointer-events: none; }
+  .tline.w .nm, .tline.w .sc { color: var(--slate); font-weight: 800; }
+  .tline.hov { background: #f1f5f9; }
+  .match { background: #fff; border: 1px solid #e2e8f0; border-radius: 8px; overflow: hidden; width: 146px; }
+  .match .tline + .tline { border-top: 1px solid #f1f5f9; }
+
+  /* ── stage démo ── */
+  .stage { position: relative; height: 340px; border-radius: 16px; overflow: hidden; background: radial-gradient(900px 380px at 20% -10%, #cfe4f5, transparent), linear-gradient(160deg, #dce9f2, #e8eef2 55%, #dfe7dd); border: 1px solid #d7e0e8; }
+  .st-nav { position: absolute; top: 14px; left: 62px; right: 14px; height: 44px; backdrop-filter: blur(8px); background: rgba(240,240,240,.55); border-radius: 10px; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; font-size: 12px; color: #475569; box-shadow: 0 4px 6px rgba(0,0,0,.08); }
+  .b34 { width: 34px; height: 34px; border-radius: 8px; border: 2px solid rgba(0,0,0,.2); background: #fff; display: flex; align-items: center; justify-content: center; font-size: 16px; cursor: pointer; transition: transform .15s; padding: 0; }
+  .b34:hover { transform: scale(1.08); }
+  .b34 img { width: 100%; height: 100%; object-fit: contain; padding: 2px; }
+  .st-col { position: absolute; left: 12px; top: 14px; display: flex; flex-direction: column; gap: 7px; }
+  .st-col .gap { height: 12px; }
+  .mw { font-family: 'Montserrat', -apple-system, sans-serif; font-weight: 800; font-size: 14px; color: var(--slate); }
+  .pulse { box-shadow: 0 0 0 2px #f59e0b, 0 2px 10px rgba(245,158,11,.5); }
+  .st-hint { position: absolute; left: 58px; top: 208px; background: var(--slate); color: #fff; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 999px; box-shadow: 0 4px 10px rgba(0,0,0,.25); }
+  .st-hint::before { content: ''; position: absolute; left: -6px; top: 50%; transform: translateY(-50%); border: 6px solid transparent; border-right-color: var(--slate); border-left: 0; }
+
+  /* ── overlay ── */
+  .ov { position: fixed; inset: 0; z-index: 60; display: none; flex-direction: column; background: rgba(238,242,246,.93); backdrop-filter: blur(10px); }
+  .ov.open { display: flex; }
+  .ov-head { display: flex; align-items: center; gap: 12px; padding: 12px 18px; background: rgba(255,255,255,.78); border-bottom: 1px solid #e2e8f0; flex-wrap: wrap; }
+  .ov-title { display: flex; align-items: center; gap: 10px; }
+  .ov-title img.wordmark { height: 30px; }
+  .yr-sel { font: inherit; font-size: 12px; font-weight: 800; color: var(--slate); border: 1.5px solid #cbd5e1; background: #fff; border-radius: 8px; padding: 4px 6px; cursor: pointer; }
+  .gchip { font-size: 11px; color: #64748b; font-weight: 700; background: #eef2f6; border-radius: 999px; padding: 4px 10px; }
+  .ov-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin-left: auto; align-items: center; }
+  .rtab { border: none; border-radius: 999px; padding: 7px 13px; font-size: 12px; font-weight: 700; cursor: pointer; background: #eef2f6; color: #64748b; }
+  .rtab.on { background: var(--slate); color: #fff; }
+  .rtab.ghost { background: #fff; border: 1.5px solid #cbd5e1; color: #475569; margin-right: 10px; }
+  .rtab.ghost:hover { background: #f8fafc; }
+  .ov-x { margin-left: 6px; width: 34px; height: 34px; border-radius: 50%; border: none; background: var(--slate); color: #fff; font-size: 15px; cursor: pointer; }
+  .ov-body { flex: 1; overflow: auto; padding: 22px; }
+  .ov-foot { text-align: center; font-size: 11px; color: #94a3b8; padding: 8px; }
+  .ov-foot kbd { background: #fff; border: 1px solid #cbd5e1; border-bottom-width: 2px; border-radius: 5px; padding: 1px 6px; font-family: inherit; font-weight: 700; }
+
+  /* chip de sélection — sobre */
+  .selchip { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); display: none; align-items: center; gap: 8px; background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; box-shadow: 0 8px 24px rgba(0,0,0,.14); padding: 6px 8px 6px 10px; z-index: 5; }
+  .selchip.on { display: flex; }
+  .selchip img { width: 20px; height: 20px; }
+  .selchip .n { font-weight: 800; font-size: 12px; color: var(--slate); }
+  .selchip .act { border: 1px solid #cbd5e1; background: #fff; border-radius: 7px; font-size: 11px; font-weight: 600; color: var(--slate); padding: 5px 9px; cursor: pointer; }
+  .selchip .act:hover { background: #f8fafc; }
+  .selchip .clr { border: none; background: none; color: #94a3b8; font-size: 13px; cursor: pointer; padding: 2px 4px; }
+  .toast { position: fixed; bottom: 26px; left: 50%; transform: translateX(-50%); background: var(--slate); color: #fff; font-size: 13px; font-weight: 700; padding: 10px 18px; border-radius: 999px; box-shadow: 0 10px 30px rgba(0,0,0,.3); z-index: 99; opacity: 0; transition: opacity .25s; pointer-events: none; }
+  .toast.on { opacity: 1; }
+
+  /* about panel */
+  .about { position: absolute; top: 64px; left: 50%; transform: translateX(-50%); width: min(680px, 92vw); max-height: 74vh; overflow-y: auto; background: #fff; border: 1px solid #e2e8f0; border-radius: 14px; box-shadow: 0 16px 44px rgba(0,0,0,.18); padding: 20px 24px 14px; z-index: 6; display: none; font-size: 13px; line-height: 1.65; color: #475569; }
+  .about.on { display: block; }
+  .about h4 { margin: 0 0 12px; color: var(--slate); font-size: 15px; }
+  .about b { color: var(--slate); }
+  .about p { margin: 0 0 11px; }
+  .about .x { position: absolute; top: 10px; right: 12px; border: none; background: none; color: #94a3b8; font-size: 15px; cursor: pointer; }
+
+  /* broadcast */
+  .bcast-in { display: flex; gap: 14px; align-items: stretch; min-width: 1150px; justify-content: center; }
+  .bc-half { display: flex; flex-direction: column; gap: 20px; }
+  .bc-rtitle { font-size: 10px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin: 0 0 6px 4px; cursor: pointer; }
+  .bc-rtitle:hover { text-decoration: underline; }
+  .bc-cols { display: flex; gap: 10px; }
+  .bc-col { display: flex; flex-direction: column; justify-content: space-around; }
+  .bc-col .match { width: 130px; }
+  .bc-center { display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 26px; padding: 0 4px; }
+  .bc-champ { text-align: center; }
+  .bc-champ img { width: 58px; height: 58px; }
+  .bc-champ .lbl { font-size: 9px; letter-spacing: 1.5px; font-weight: 800; color: var(--gold); text-transform: uppercase; }
+  .bc-champ .nm { font-size: 14px; font-weight: 800; color: var(--slate); }
+  .bc-center .match { width: 150px; box-shadow: 0 4px 12px rgba(0,0,0,.08); }
+  .bc-lbl { font-size: 8.5px; font-weight: 800; letter-spacing: 1px; color: #b6c2d0; text-transform: uppercase; text-align: center; margin-bottom: 5px; }
+  .bc-final-block { text-align: center; }
+  .bc-final-block .match { border: 1.5px solid #e6c98a; }
+  .ff-strip { margin: 26px auto 0; text-align: center; }
+  .ff-strip .t { font-size: 10px; font-weight: 800; letter-spacing: 1px; color: #94a3b8; text-transform: uppercase; margin-bottom: 8px; }
+  .ff-strip .g { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .ff-strip .rg { font-size: 8.5px; font-weight: 800; margin-top: 4px; text-transform: uppercase; letter-spacing: .6px; }
+
+  /* zoom région */
+  .zr { display: flex; gap: 26px; justify-content: center; min-width: 900px; }
+  .zr-col { display: flex; flex-direction: column; }
+  .zr-col .hd { text-align: center; font-size: 10px; font-weight: 800; color: #94a3b8; text-transform: uppercase; letter-spacing: .8px; margin-bottom: 10px; }
+  .zr-slots { flex: 1; display: flex; flex-direction: column; }
+  .pairwrap { flex: 1; display: flex; flex-direction: column; justify-content: space-around; position: relative; }
+  .pairwrap.link::after { content: ''; position: absolute; right: -14px; top: 25%; height: 50%; width: 13px; border: 2px solid #cbd5e1; border-left: none; border-radius: 0 8px 8px 0; }
+  .zr .match { width: 190px; }
+  .zr .tline { font-size: 12.5px; padding: 5px 8px; }
+  .zr .tline img { width: 18px; height: 18px; flex-basis: 18px; }
+
+  /* ── Final Four stage (redesign) ── */
+  .ffstage { max-width: 960px; margin: 26px auto 0; background: #fff; border: 1px solid #e2e8f0; border-radius: 20px; padding: 34px 34px 30px; box-shadow: 0 10px 34px rgba(0,0,0,.07); }
+  .ff-top { text-align: center; margin-bottom: 26px; }
+  .ff-top img.wordmark { height: 34px; }
+  .ff-top .where { font-size: 11.5px; color: #94a3b8; font-weight: 600; margin-top: 6px; }
+  .ff-grid { display: flex; align-items: center; justify-content: center; gap: 34px; flex-wrap: wrap; }
+  .ff-colhd { font-size: 9.5px; font-weight: 800; color: #94a3b8; text-transform: uppercase; letter-spacing: 1.2px; text-align: center; margin-bottom: 12px; }
+  .ff-semis { display: flex; flex-direction: column; gap: 22px; position: relative; }
+  .ff-semis.linked::after { content: ''; position: absolute; right: -18px; top: 22%; height: 56%; width: 16px; border: 2px solid #e2e8f0; border-left: none; border-radius: 0 10px 10px 0; }
+  .ffm { width: 240px; }
+  .ffm .match { width: 100%; border-radius: 10px; }
+  .ffm .tline { font-size: 13.5px; padding: 8px 10px; }
+  .ffm .tline img { width: 20px; height: 20px; flex-basis: 20px; }
+  .ffm .sub2 { font-size: 10px; color: #b6c2d0; text-align: center; margin-top: 5px; }
+  .ffm.big .match { border: 1.5px solid #e6c98a; box-shadow: 0 6px 18px rgba(180,83,9,.10); }
+  .ff-champ { text-align: center; padding: 4px 8px; }
+  .ff-champ .ring { width: 128px; height: 128px; margin: 0 auto 10px; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at 50% 38%, #fff, #fdf7ec 62%, #f6e7c6); border: 2px solid #e6c98a; }
+  .ff-champ .ring img { width: 84px; height: 84px; }
+  .ff-champ .lbl { font-size: 9.5px; letter-spacing: 2px; font-weight: 800; color: var(--gold); text-transform: uppercase; }
+  .ff-champ .nm { font-size: 19px; font-weight: 800; color: var(--slate); margin-top: 2px; }
+  .ff-champ .rec { display: inline-block; margin-top: 7px; font-size: 11px; font-weight: 700; color: #64748b; background: #f8fafc; border: 1px solid #eef2f6; border-radius: 999px; padding: 4px 11px; }
+
+  /* ── mobile ── */
+  .phone { width: 320px; height: 520px; border-radius: 28px; border: 8px solid #1e293b; overflow: hidden; background: #f8fafc; margin: 0 auto; position: relative; display: flex; flex-direction: column; }
+  .ph-head { background: rgba(240,240,240,.9); backdrop-filter: blur(6px); padding: 10px 12px 8px; }
+  .ph-title { font-weight: 800; font-size: 13px; color: var(--slate); display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .ph-title img.wordmark { height: 18px; }
+  .ph-x { width: 24px; height: 24px; border-radius: 50%; border: none; background: var(--slate); color: #fff; font-size: 11px; }
+  .ph-tabs { display: flex; gap: 5px; overflow-x: auto; padding-bottom: 2px; }
+  .ph-tabs .rtab { padding: 5px 10px; font-size: 11px; flex: 0 0 auto; }
+  .ph-scroll { flex: 1; display: flex; overflow-x: auto; scroll-snap-type: x mandatory; }
+  .ph-col { min-width: 100%; scroll-snap-align: start; overflow-y: auto; padding: 10px 12px 30px; }
+  .ph-round { font-size: 10.5px; font-weight: 800; color: #94a3b8; text-transform: uppercase; letter-spacing: 1px; margin: 4px 0 8px; text-align: center; }
+  .ph-col .match { width: 100%; margin-bottom: 8px; }
+  .ph-col .tline { font-size: 12.5px; padding: 6px 9px; }
+  .ph-dots { position: absolute; bottom: 9px; left: 0; right: 0; display: flex; justify-content: center; gap: 5px; }
+  .ph-dots i { width: 6px; height: 6px; border-radius: 50%; background: #cbd5e1; }
+  .ph-dots i.on { background: var(--slate); }
+
+  /* ── modale équipe ── */
+  .tm { width: 330px; border-radius: 14px; overflow: hidden; background: #fff; box-shadow: 0 12px 34px rgba(0,0,0,.16); margin: 0 auto; }
+  .tm-head { padding: 14px; display: flex; gap: 10px; align-items: center; }
+  .tm-head img { width: 44px; height: 44px; }
+  .tm-head .n { font-weight: 800; color: var(--slate); font-size: 15px; }
+  .tm-head .v { font-size: 11px; color: #47556988; }
+  .tm-tabs { display: flex; border-bottom: 2px solid #eef2f6; }
+  .tm-tab { flex: 1; text-align: center; font-size: 10.5px; font-weight: 700; color: #94a3b8; padding: 9px 2px; border: none; background: none; cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -2px; white-space: nowrap; }
+  .tm-tab.on { color: var(--slate); border-bottom-color: var(--gold); }
+  .tm-body { padding: 12px 14px 16px; max-height: 330px; overflow-y: auto; }
+  .mm-season { text-align: center; font-size: 11px; font-weight: 800; letter-spacing: 1.2px; text-transform: uppercase; color: var(--gold); margin: 2px 0 10px; }
+  .vstep { display: flex; align-items: center; gap: 10px; padding: 8px 10px; border: 1px solid #eef2f6; border-radius: 10px; margin-bottom: 7px; }
+  .vstep .rd { width: 74px; font-size: 9px; font-weight: 800; color: #94a3b8; text-transform: uppercase; letter-spacing: .4px; line-height: 1.3; }
+  .vstep img { width: 26px; height: 26px; }
+  .vstep .op { flex: 1; font-size: 12.5px; font-weight: 700; color: var(--slate); }
+  .vstep .op small { display: block; font-weight: 600; color: #94a3b8; font-size: 10.5px; }
+  .vstep .wl { font-size: 11px; font-weight: 800; padding: 3px 8px; border-radius: 999px; }
+  .vstep.win .wl { background: #dcfce7; color: #15803d; }
+  .vstep.loss { background: #fef2f2; border-color: #fecaca; }
+  .vstep.loss .wl { background: #fee2e2; color: #b91c1c; }
+  .switch-chips { display: flex; gap: 8px; justify-content: center; margin-bottom: 14px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <h1>March Madness — V4</h1>
+  <p class="sub">
+    Ajustements : survol <b>gris discret</b> · <b>logo officiel</b> à la place de l'emoji (bouton, en-têtes) ·
+    chip de sélection <b>sobre</b> (« Show on map ») · <b>un seul bouton de fermeture</b> (✕) et <b>tout en anglais</b> ·
+    section <b>Final Four repensée</b> · panneau <b>« About the format »</b> (bouton ? dans l'en-tête) ·
+    et la réponse sur l'<b>historique disponible</b> en bas de page.
+  </p>
+
+  <h2>1 · Démo plein écran (V4)</h2>
+  <div class="card">
+    <span class="tag">clique 🏆 · survole (gris) · clique une équipe (couleurs + chip sobre) · onglet Final Four repensé · bouton « About the format »</span>
+    <div class="stage">
+      <div class="st-nav"><span style="font-family:Georgia,serif;font-size:15px;">NCAA Division I Men's Basketball</span><span style="background:#fff;border-radius:7px;padding:5px 10px;">Search a team…</span></div>
+      <div class="st-col" style="top:14px">
+        <button class="b34">＋</button><button class="b34">－</button><button class="b34">⛶</button>
+        <div class="gap"></div>
+        <button class="b34">🌍</button>
+        <button class="b34 mw">M</button>
+        <button class="b34 pulse" onclick="ovOpen()" title="March Madness"><img src="../src/assets/march-madness-logo.png" alt="March Madness"/></button>
+      </div>
+      <div class="st-hint">← clique ici</div>
+    </div>
+    <p class="cap"><b>Une seule sortie visible</b> : le ✕ (plus le clavier Échap et — en vrai — un clic hors du bracket si tu veux). Fini le doublon « ← Carte ».</p>
+  </div>
+
+  <h2>2 · Mobile — validé ✓ (logo intégré)</h2>
+  <div class="card">
+    <div class="phone">
+      <div class="ph-head">
+        <div class="ph-title"><img class="wordmark" src="../src/assets/march-madness-logo.png" alt="March Madness"/><span style="color:#94a3b8;font-size:10px;font-weight:700;">2026 · M</span><button class="ph-x">✕</button></div>
+        <div class="ph-tabs" id="phTabs"></div>
+      </div>
+      <div class="ph-scroll" id="phBody"></div>
+      <div class="ph-dots" id="phDots"></div>
+    </div>
+  </div>
+
+  <h2>3 · Modale équipe — validée ✓ (bouton en anglais)</h2>
+  <div class="card">
+    <div class="switch-chips">
+      <button class="rtab on" id="chipA" onclick="tmRender('champ')">Michigan (champion)</button>
+      <button class="rtab" id="chipB" onclick="tmRender('runner')">UConn (finaliste)</button>
+    </div>
+    <div class="tm" id="tmModal"></div>
+  </div>
+
+  <h2>4 · Réponse : quelles saisons sont disponibles ?</h2>
+  <div class="card">
+    <p class="desc" style="margin-bottom:8px;">Testé en direct sur l'API ESPN aujourd'hui :</p>
+    <p class="cap" style="margin:0;">
+      · <b>Hommes : 2009 → 2026</b> (18 éditions). 2009-2010 = 64 matchs (format pré-First Four, normal) ; 2011+ = 67. Seeds présents partout. <b>2008 et avant : rien</b> chez ESPN.<br/>
+      · <b>Femmes : au moins 2005 → 2026</b> (21+ éditions, 63 matchs par édition avant l'ère First Four).<br/>
+      → Le dropdown saison proposera donc <b>2009-2026 côté M</b> et <b>2005-2026 côté W</b>.
+    </p>
+  </div>
+
+  <p class="cap" style="margin-top:26px"><b>Si cette V4 te va, je passe à l'implémentation React.</b></p>
+</div>
+
+<!-- ═══════════ OVERLAY ═══════════ -->
+<div class="ov" id="ov">
+  <div class="ov-head">
+    <div class="ov-title">
+      <img class="wordmark" src="../src/assets/march-madness-logo.png" alt="March Madness"/>
+      <select class="yr-sel" id="yrSel" onchange="yrChange(this)"></select>
+      <span class="gchip" title="Follows the site's M/W switch">Men</span>
+    </div>
+    <div class="ov-tabs" id="ovTabs"></div>
+    <button class="ov-x" onclick="ovClose()" title="Close">✕</button>
+  </div>
+  <div class="ov-body" id="ovBody"></div>
+  <div class="ov-foot">Hover a team to preview its run · click to pin it · <kbd>Esc</kbd> to close</div>
+  <div class="selchip" id="selchip"></div>
+
+  <div class="about" id="about">
+    <button class="x" onclick="toggleAbout()">✕</button>
+    <h4>About the format</h4>
+    <p><b>68 teams, one Sunday.</b> On Selection Sunday (mid-March), the champions of the 31 conferences receive an automatic bid, and a selection committee awards 37 at-large bids to the best remaining teams.</p>
+    <p><b>East, West, South and Midwest are not conferences</b> — they are the four quarters of the bracket. To fill them, the committee first ranks all 68 teams from 1 to 68 (the "seed list"), then deals them out following an <b>S-curve</b>: the top four teams become the four No.&nbsp;1 seeds (one per region), the next four the No.&nbsp;2 seeds, and so on — snaking the order at each pass so the four regions end up as balanced as possible (on paper, the overall No.&nbsp;1 gets the weakest No.&nbsp;2, etc.).</p>
+    <p><b>Geography and separation rules</b> then adjust the placement: top seeds play their opening games as close to campus as possible (first-round sites are grouped in geographic "pods"), teams from the same conference are kept apart until the deep rounds, and regular-season rematches are avoided early.</p>
+    <p><b>First Four.</b> The four weakest automatic qualifiers and the four last at-large teams play four play-in games (in Dayton, Ohio) to trim the field from 68 to 64.</p>
+    <p><b>Then it's single elimination.</b> 1st Round → 2nd Round → Sweet 16 → Elite 8 crowns each region's champion; the four region champions meet at the Final Four — two semifinals and the National Championship, one weekend, one city. Lose once and you're out: that's the madness.</p>
+  </div>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const GAMES = [{"round":"First Four","region":"West","date":"2026-03-18","venue":"UD Arena","city":"Dayton","teams":[{"id":"251","seed":11,"name":"Texas","abbr":"TEX","score":68,"winner":true,"color":"af5c37"},{"id":"152","seed":11,"name":"NC State","abbr":"NCSU","score":66,"winner":false,"color":"cc0000"}]},{"round":"First Four","region":"Midwest","date":"2026-03-17","venue":"UD Arena","city":"Dayton","teams":[{"id":"2378","seed":16,"name":"UMBC","abbr":"UMBC","score":83,"winner":false,"color":"000000"},{"id":"47","seed":16,"name":"Howard","abbr":"HOW","score":86,"winner":true,"color":"003a63"}]},{"round":"First Four","region":"Midwest","date":"2026-03-19","venue":"UD Arena","city":"Dayton","teams":[{"id":"193","seed":11,"name":"Miami OH","abbr":"M-OH","score":89,"winner":true,"color":"c41230"},{"id":"2567","seed":11,"name":"SMU","abbr":"SMU","score":79,"winner":false,"color":"a80000"}]},{"round":"First Four","region":"South","date":"2026-03-18","venue":"UD Arena","city":"Dayton","teams":[{"id":"2504","seed":16,"name":"Prairie View","abbr":"PV","score":67,"winner":true,"color":"582c83"},{"id":"2329","seed":16,"name":"Lehigh","abbr":"LEH","score":55,"winner":false,"color":"6c2b2a"}]},{"round":"1st Round","region":"East","date":"2026-03-19","venue":"Bon Secours Wellness Arena","city":"Greenville","teams":[{"id":"2561","seed":16,"name":"Siena","abbr":"SIE","score":65,"winner":false,"color":"037961"},{"id":"150","seed":1,"name":"Duke","abbr":"DUKE","score":71,"winner":true,"color":"00539b"}]},{"round":"1st Round","region":"Midwest","date":"2026-03-19","venue":"KeyBank Center","city":"Buffalo","teams":[{"id":"47","seed":16,"name":"Howard","abbr":"HOW","score":80,"winner":false,"color":"003a63"},{"id":"130","seed":1,"name":"Michigan","abbr":"MICH","score":101,"winner":true,"color":"00274c"}]},{"round":"1st Round","region":"South","date":"2026-03-20","venue":"Paycom Center","city":"Oklahoma City","teams":[{"id":"70","seed":15,"name":"Idaho","abbr":"IDHO","score":47,"winner":false,"color":"000000"},{"id":"248","seed":2,"name":"Houston","abbr":"HOU","score":78,"winner":true,"color":"c8102e"}]},{"round":"1st Round","region":"East","date":"2026-03-19","venue":"KeyBank Center","city":"Buffalo","teams":[{"id":"2449","seed":14,"name":"N Dakota St","abbr":"NDSU","score":67,"winner":false,"color":"01402A"},{"id":"127","seed":3,"name":"Michigan St","abbr":"MSU","score":92,"winner":true,"color":"173f35"}]},{"round":"1st Round","region":"South","date":"2026-03-20","venue":"Bon Secours Wellness Arena","city":"Greenville","teams":[{"id":"219","seed":14,"name":"Penn","abbr":"PENN","score":70,"winner":false,"color":"082A74"},{"id":"356","seed":3,"name":"Illinois","abbr":"ILL","score":105,"winner":true,"color":"ff5f05"}]},{"round":"1st Round","region":"West","date":"2026-03-20","venue":"Moda Center","city":"Portland","teams":[{"id":"338","seed":14,"name":"Kennesaw St","abbr":"KENN","score":64,"winner":false,"color":"fdbb30"},{"id":"2250","seed":3,"name":"Gonzaga","abbr":"GONZ","score":73,"winner":true,"color":"041e42"}]},{"round":"1st Round","region":"South","date":"2026-03-19","venue":"Paycom Center","city":"Oklahoma City","teams":[{"id":"2653","seed":13,"name":"Troy","abbr":"TROY","score":47,"winner":false,"color":"862633"},{"id":"158","seed":4,"name":"Nebraska","abbr":"NEB","score":76,"winner":true,"color":"e31937"}]},{"round":"1st Round","region":"West","date":"2026-03-19","venue":"Moda Center","city":"Portland","teams":[{"id":"62","seed":13,"name":"Hawai'i","abbr":"HAW","score":78,"winner":false,"color":"005737"},{"id":"8","seed":4,"name":"Arkansas","abbr":"ARK","score":97,"winner":true,"color":"a32136"}]},{"round":"1st Round","region":"West","date":"2026-03-19","venue":"Moda Center","city":"Portland","teams":[{"id":"2272","seed":12,"name":"High Point","abbr":"HPU","score":83,"winner":true,"color":"330072"},{"id":"275","seed":5,"name":"Wisconsin","abbr":"WIS","score":82,"winner":false,"color":"a00000"}]},{"round":"1st Round","region":"South","date":"2026-03-19","venue":"Paycom Center","city":"Oklahoma City","teams":[{"id":"2377","seed":12,"name":"McNeese","abbr":"MCN","score":68,"winner":false,"color":"00529C"},{"id":"238","seed":5,"name":"Vanderbilt","abbr":"VAN","score":78,"winner":true,"color":"000000"}]},{"round":"1st Round","region":"East","date":"2026-03-19","venue":"KeyBank Center","city":"Buffalo","teams":[{"id":"58","seed":11,"name":"South Florida","abbr":"USF","score":79,"winner":false,"color":"006747"},{"id":"97","seed":6,"name":"Louisville","abbr":"LOU","score":83,"winner":true,"color":"c9001f"}]},{"round":"1st Round","region":"South","date":"2026-03-19","venue":"Bon Secours Wellness Arena","city":"Greenville","teams":[{"id":"2670","seed":11,"name":"VCU","abbr":"VCU","score":82,"winner":true,"color":"ffaf00"},{"id":"153","seed":6,"name":"North Carolina","abbr":"UNC","score":78,"winner":false,"color":"7bafd4"}]},{"round":"1st Round","region":"West","date":"2026-03-19","venue":"Moda Center","city":"Portland","teams":[{"id":"251","seed":11,"name":"Texas","abbr":"TEX","score":79,"winner":true,"color":"af5c37"},{"id":"252","seed":6,"name":"BYU","abbr":"BYU","score":71,"winner":false,"color":"0047ba"}]},{"round":"1st Round","region":"South","date":"2026-03-19","venue":"Paycom Center","city":"Oklahoma City","teams":[{"id":"245","seed":10,"name":"Texas A&M","abbr":"TA&M","score":63,"winner":true,"color":"500000"},{"id":"2608","seed":7,"name":"Saint Mary's","abbr":"SMC","score":50,"winner":false,"color":"d80024"}]},{"round":"1st Round","region":"East","date":"2026-03-19","venue":"Bon Secours Wellness Arena","city":"Greenville","teams":[{"id":"2628","seed":9,"name":"TCU","abbr":"TCU","score":66,"winner":true,"color":"4d1979"},{"id":"194","seed":8,"name":"Ohio State","abbr":"OSU","score":64,"winner":false,"color":"ba0c2f"}]},{"round":"1st Round","region":"Midwest","date":"2026-03-20","venue":"KeyBank Center","city":"Buffalo","teams":[{"id":"139","seed":9,"name":"Saint Louis","abbr":"SLU","score":102,"winner":true,"color":"00539C"},{"id":"61","seed":8,"name":"Georgia","abbr":"UGA","score":77,"winner":false,"color":"ba0c2f"}]},{"round":"1st Round","region":"West","date":"2026-03-20","venue":"Viejas Arena","city":"San Diego","teams":[{"id":"112358","seed":16,"name":"Long Island","abbr":"LIU","score":58,"winner":false,"color":"50c9f7"},{"id":"12","seed":1,"name":"Arizona","abbr":"ARIZ","score":92,"winner":true,"color":"cc0033"}]},{"round":"1st Round","region":"South","date":"2026-03-21","venue":"Benchmark International Arena","city":"Tampa","teams":[{"id":"2504","seed":16,"name":"Prairie View","abbr":"PV","score":55,"winner":false,"color":"582c83"},{"id":"57","seed":1,"name":"Florida","abbr":"FLA","score":114,"winner":true,"color":"0021a5"}]},{"round":"1st Round","region":"Midwest","date":"2026-03-20","venue":"Enterprise Center","city":"St. Louis","teams":[{"id":"2634","seed":15,"name":"Tennessee St","abbr":"TNST","score":74,"winner":false,"color":"171796"},{"id":"66","seed":2,"name":"Iowa State","abbr":"ISU","score":108,"winner":true,"color":"ae192d"}]},{"round":"1st Round","region":"West","date":"2026-03-20","venue":"Enterprise Center","city":"St. Louis","teams":[{"id":"2511","seed":15,"name":"Queens","abbr":"QUC","score":71,"winner":false,"color":"192C66"},{"id":"2509","seed":2,"name":"Purdue","abbr":"PUR","score":104,"winner":true,"color":"ceb888"}]},{"round":"1st Round","region":"East","date":"2026-03-21","venue":"Xfinity Mobile Arena","city":"Philadelphia","teams":[{"id":"231","seed":15,"name":"Furman","abbr":"FUR","score":71,"winner":false,"color":"582c83"},{"id":"41","seed":2,"name":"UConn","abbr":"CONN","score":82,"winner":true,"color":"0c2340"}]},{"round":"1st Round","region":"Midwest","date":"2026-03-20","venue":"Xfinity Mobile Arena","city":"Philadelphia","teams":[{"id":"2750","seed":14,"name":"Wright St","abbr":"WRST","score":73,"winner":false,"color":"cba052"},{"id":"258","seed":3,"name":"Virginia","abbr":"UVA","score":82,"winner":true,"color":"232d4b"}]},{"round":"1st Round","region":"Midwest","date":"2026-03-20","venue":"Benchmark International Arena","city":"Tampa","teams":[{"id":"2275","seed":13,"name":"Hofstra","abbr":"HOF","score":70,"winner":false,"color":"003594"},{"id":"333","seed":4,"name":"Alabama","abbr":"ALA","score":90,"winner":true,"color":"9e1b32"}]},{"round":"1st Round","region":"East","date":"2026-03-21","venue":"Viejas Arena","city":"San Diego","teams":[{"id":"2856","seed":13,"name":"CA Baptist","abbr":"CBU","score":60,"winner":false,"color":"000080"},{"id":"2305","seed":4,"name":"Kansas","abbr":"KU","score":68,"winner":true,"color":"0051ba"}]},{"round":"1st Round","region":"Midwest","date":"2026-03-20","venue":"Benchmark International Arena","city":"Tampa","teams":[{"id":"2006","seed":12,"name":"Akron","abbr":"AKR","score":71,"winner":false,"color":"041e42"},{"id":"2641","seed":5,"name":"Texas Tech","abbr":"TTU","score":91,"winner":true,"color":"da291c"}]},{"round":"1st Round","region":"East","date":"2026-03-20","venue":"Viejas Arena","city":"San Diego","teams":[{"id":"2460","seed":12,"name":"Northern Iowa","abbr":"UNI","score":53,"winner":false,"color":"473282"},{"id":"2599","seed":5,"name":"St John's","abbr":"SJU","score":79,"winner":true,"color":"d10000"}]},{"round":"1st Round","region":"Midwest","date":"2026-03-20","venue":"Xfinity Mobile Arena","city":"Philadelphia","teams":[{"id":"193","seed":11,"name":"Miami OH","abbr":"M-OH","score":56,"winner":false,"color":"c41230"},{"id":"2633","seed":6,"name":"Tennessee","abbr":"TENN","score":78,"winner":true,"color":"ff8200"}]},{"round":"1st Round","region":"Midwest","date":"2026-03-20","venue":"Enterprise Center","city":"St. Louis","teams":[{"id":"2541","seed":10,"name":"Santa Clara","abbr":"SCU","score":84,"winner":false,"color":"690b0b"},{"id":"96","seed":7,"name":"Kentucky","abbr":"UK","score":89,"winner":true,"color":"0033a0"}]},{"round":"1st Round","region":"East","date":"2026-03-20","venue":"Xfinity Mobile Arena","city":"Philadelphia","teams":[{"id":"2116","seed":10,"name":"UCF","abbr":"UCF","score":71,"winner":false,"color":"000000"},{"id":"26","seed":7,"name":"UCLA","abbr":"UCLA","score":75,"winner":true,"color":"2774ae"}]},{"round":"1st Round","region":"West","date":"2026-03-21","venue":"Enterprise Center","city":"St. Louis","teams":[{"id":"142","seed":10,"name":"Missouri","abbr":"MIZ","score":66,"winner":false,"color":"f1b82d"},{"id":"2390","seed":7,"name":"Miami","abbr":"MIA","score":80,"winner":true,"color":"f47423"}]},{"round":"1st Round","region":"West","date":"2026-03-20","venue":"Viejas Arena","city":"San Diego","teams":[{"id":"328","seed":9,"name":"Utah State","abbr":"USU","score":86,"winner":true,"color":"0f2439"},{"id":"222","seed":8,"name":"Villanova","abbr":"VILL","score":76,"winner":false,"color":"00205b"}]},{"round":"1st Round","region":"South","date":"2026-03-20","venue":"Benchmark International Arena","city":"Tampa","teams":[{"id":"2294","seed":9,"name":"Iowa","abbr":"IOWA","score":67,"winner":true,"color":"231f20"},{"id":"228","seed":8,"name":"Clemson","abbr":"CLEM","score":61,"winner":false,"color":"f56600"}]},{"round":"2nd Round","region":"Midwest","date":"2026-03-21","venue":"KeyBank Center","city":"Buffalo","teams":[{"id":"139","seed":9,"name":"Saint Louis","abbr":"SLU","score":72,"winner":false,"color":"00539C"},{"id":"130","seed":1,"name":"Michigan","abbr":"MICH","score":95,"winner":true,"color":"00274c"}]},{"round":"2nd Round","region":"East","date":"2026-03-21","venue":"Bon Secours Wellness Arena","city":"Greenville","teams":[{"id":"2628","seed":9,"name":"TCU","abbr":"TCU","score":58,"winner":false,"color":"4d1979"},{"id":"150","seed":1,"name":"Duke","abbr":"DUKE","score":81,"winner":true,"color":"00539b"}]},{"round":"2nd Round","region":"South","date":"2026-03-21","venue":"Paycom Center","city":"Oklahoma City","teams":[{"id":"245","seed":10,"name":"Texas A&M","abbr":"TA&M","score":57,"winner":false,"color":"500000"},{"id":"248","seed":2,"name":"Houston","abbr":"HOU","score":88,"winner":true,"color":"c8102e"}]},{"round":"2nd Round","region":"East","date":"2026-03-21","venue":"KeyBank Center","city":"Buffalo","teams":[{"id":"97","seed":6,"name":"Louisville","abbr":"LOU","score":69,"winner":false,"color":"c9001f"},{"id":"127","seed":3,"name":"Michigan St","abbr":"MSU","score":77,"winner":true,"color":"173f35"}]},{"round":"2nd Round","region":"West","date":"2026-03-21","venue":"Moda Center","city":"Portland","teams":[{"id":"251","seed":11,"name":"Texas","abbr":"TEX","score":74,"winner":true,"color":"af5c37"},{"id":"2250","seed":3,"name":"Gonzaga","abbr":"GONZ","score":68,"winner":false,"color":"041e42"}]},{"round":"2nd Round","region":"South","date":"2026-03-22","venue":"Bon Secours Wellness Arena","city":"Greenville","teams":[{"id":"2670","seed":11,"name":"VCU","abbr":"VCU","score":55,"winner":false,"color":"ffaf00"},{"id":"356","seed":3,"name":"Illinois","abbr":"ILL","score":76,"winner":true,"color":"ff5f05"}]},{"round":"2nd Round","region":"South","date":"2026-03-22","venue":"Paycom Center","city":"Oklahoma City","teams":[{"id":"238","seed":5,"name":"Vanderbilt","abbr":"VAN","score":72,"winner":false,"color":"000000"},{"id":"158","seed":4,"name":"Nebraska","abbr":"NEB","score":74,"winner":true,"color":"e31937"}]},{"round":"2nd Round","region":"West","date":"2026-03-22","venue":"Moda Center","city":"Portland","teams":[{"id":"2272","seed":12,"name":"High Point","abbr":"HPU","score":88,"winner":false,"color":"330072"},{"id":"8","seed":4,"name":"Arkansas","abbr":"ARK","score":94,"winner":true,"color":"a32136"}]},{"round":"2nd Round","region":"South","date":"2026-03-22","venue":"Benchmark International Arena","city":"Tampa","teams":[{"id":"2294","seed":9,"name":"Iowa","abbr":"IOWA","score":73,"winner":true,"color":"231f20"},{"id":"57","seed":1,"name":"Florida","abbr":"FLA","score":72,"winner":false,"color":"0021a5"}]},{"round":"2nd Round","region":"West","date":"2026-03-23","venue":"Viejas Arena","city":"San Diego","teams":[{"id":"328","seed":9,"name":"Utah State","abbr":"USU","score":66,"winner":false,"color":"0f2439"},{"id":"12","seed":1,"name":"Arizona","abbr":"ARIZ","score":78,"winner":true,"color":"cc0033"}]},{"round":"2nd Round","region":"West","date":"2026-03-22","venue":"Enterprise Center","city":"St. Louis","teams":[{"id":"2390","seed":7,"name":"Miami","abbr":"MIA","score":69,"winner":false,"color":"f47423"},{"id":"2509","seed":2,"name":"Purdue","abbr":"PUR","score":79,"winner":true,"color":"ceb888"}]},{"round":"2nd Round","region":"Midwest","date":"2026-03-22","venue":"Enterprise Center","city":"St. Louis","teams":[{"id":"96","seed":7,"name":"Kentucky","abbr":"UK","score":63,"winner":false,"color":"0033a0"},{"id":"66","seed":2,"name":"Iowa State","abbr":"ISU","score":82,"winner":true,"color":"ae192d"}]},{"round":"2nd Round","region":"East","date":"2026-03-23","venue":"Xfinity Mobile Arena","city":"Philadelphia","teams":[{"id":"26","seed":7,"name":"UCLA","abbr":"UCLA","score":57,"winner":false,"color":"2774ae"},{"id":"41","seed":2,"name":"UConn","abbr":"CONN","score":73,"winner":true,"color":"0c2340"}]},{"round":"2nd Round","region":"Midwest","date":"2026-03-22","venue":"Xfinity Mobile Arena","city":"Philadelphia","teams":[{"id":"2633","seed":6,"name":"Tennessee","abbr":"TENN","score":79,"winner":true,"color":"ff8200"},{"id":"258","seed":3,"name":"Virginia","abbr":"UVA","score":72,"winner":false,"color":"232d4b"}]},{"round":"2nd Round","region":"East","date":"2026-03-22","venue":"Viejas Arena","city":"San Diego","teams":[{"id":"2599","seed":5,"name":"St John's","abbr":"SJU","score":67,"winner":true,"color":"d10000"},{"id":"2305","seed":4,"name":"Kansas","abbr":"KU","score":65,"winner":false,"color":"0051ba"}]},{"round":"2nd Round","region":"Midwest","date":"2026-03-23","venue":"Benchmark International Arena","city":"Tampa","teams":[{"id":"2641","seed":5,"name":"Texas Tech","abbr":"TTU","score":65,"winner":false,"color":"da291c"},{"id":"333","seed":4,"name":"Alabama","abbr":"ALA","score":90,"winner":true,"color":"9e1b32"}]},{"round":"Sweet 16","region":"West","date":"2026-03-27","venue":"SAP Center at San Jose","city":"San Jose","teams":[{"id":"8","seed":4,"name":"Arkansas","abbr":"ARK","score":88,"winner":false,"color":"a32136"},{"id":"12","seed":1,"name":"Arizona","abbr":"ARIZ","score":109,"winner":true,"color":"cc0033"}]},{"round":"Sweet 16","region":"West","date":"2026-03-26","venue":"SAP Center at San Jose","city":"San Jose","teams":[{"id":"251","seed":11,"name":"Texas","abbr":"TEX","score":77,"winner":false,"color":"af5c37"},{"id":"2509","seed":2,"name":"Purdue","abbr":"PUR","score":79,"winner":true,"color":"ceb888"}]},{"round":"Sweet 16","region":"South","date":"2026-03-27","venue":"Toyota Center (Houston)","city":"Houston","teams":[{"id":"356","seed":3,"name":"Illinois","abbr":"ILL","score":65,"winner":true,"color":"ff5f05"},{"id":"248","seed":2,"name":"Houston","abbr":"HOU","score":55,"winner":false,"color":"c8102e"}]},{"round":"Sweet 16","region":"South","date":"2026-03-26","venue":"Toyota Center (Houston)","city":"Houston","teams":[{"id":"2294","seed":9,"name":"Iowa","abbr":"IOWA","score":77,"winner":true,"color":"231f20"},{"id":"158","seed":4,"name":"Nebraska","abbr":"NEB","score":71,"winner":false,"color":"e31937"}]},{"round":"Sweet 16","region":"East","date":"2026-03-27","venue":"Capital One Arena","city":"Washington","teams":[{"id":"2599","seed":5,"name":"St John's","abbr":"SJU","score":75,"winner":false,"color":"d10000"},{"id":"150","seed":1,"name":"Duke","abbr":"DUKE","score":80,"winner":true,"color":"00539b"}]},{"round":"Sweet 16","region":"Midwest","date":"2026-03-27","venue":"United Center","city":"Chicago","teams":[{"id":"333","seed":4,"name":"Alabama","abbr":"ALA","score":77,"winner":false,"color":"9e1b32"},{"id":"130","seed":1,"name":"Michigan","abbr":"MICH","score":90,"winner":true,"color":"00274c"}]},{"round":"Sweet 16","region":"East","date":"2026-03-28","venue":"Capital One Arena","city":"Washington","teams":[{"id":"127","seed":3,"name":"Michigan St","abbr":"MSU","score":63,"winner":false,"color":"173f35"},{"id":"41","seed":2,"name":"UConn","abbr":"CONN","score":67,"winner":true,"color":"0c2340"}]},{"round":"Sweet 16","region":"Midwest","date":"2026-03-28","venue":"United Center","city":"Chicago","teams":[{"id":"2633","seed":6,"name":"Tennessee","abbr":"TENN","score":76,"winner":true,"color":"ff8200"},{"id":"66","seed":2,"name":"Iowa State","abbr":"ISU","score":62,"winner":false,"color":"ae192d"}]},{"round":"Elite 8","region":"West","date":"2026-03-29","venue":"SAP Center at San Jose","city":"San Jose","teams":[{"id":"2509","seed":2,"name":"Purdue","abbr":"PUR","score":64,"winner":false,"color":"ceb888"},{"id":"12","seed":1,"name":"Arizona","abbr":"ARIZ","score":79,"winner":true,"color":"cc0033"}]},{"round":"Elite 8","region":"South","date":"2026-03-28","venue":"Toyota Center (Houston)","city":"Houston","teams":[{"id":"2294","seed":9,"name":"Iowa","abbr":"IOWA","score":59,"winner":false,"color":"231f20"},{"id":"356","seed":3,"name":"Illinois","abbr":"ILL","score":71,"winner":true,"color":"ff5f05"}]},{"round":"Elite 8","region":"Midwest","date":"2026-03-29","venue":"United Center","city":"Chicago","teams":[{"id":"2633","seed":6,"name":"Tennessee","abbr":"TENN","score":62,"winner":false,"color":"ff8200"},{"id":"130","seed":1,"name":"Michigan","abbr":"MICH","score":95,"winner":true,"color":"00274c"}]},{"round":"Elite 8","region":"East","date":"2026-03-29","venue":"Capital One Arena","city":"Washington","teams":[{"id":"41","seed":2,"name":"UConn","abbr":"CONN","score":73,"winner":true,"color":"0c2340"},{"id":"150","seed":1,"name":"Duke","abbr":"DUKE","score":72,"winner":false,"color":"00539b"}]},{"round":"Final Four","region":null,"date":"2026-04-05","venue":"Lucas Oil Stadium","city":"Indianapolis","teams":[{"id":"130","seed":1,"name":"Michigan","abbr":"MICH","score":91,"winner":true,"color":"00274c"},{"id":"12","seed":1,"name":"Arizona","abbr":"ARIZ","score":73,"winner":false,"color":"cc0033"}]},{"round":"Final Four","region":null,"date":"2026-04-04","venue":"Lucas Oil Stadium","city":"Indianapolis","teams":[{"id":"356","seed":3,"name":"Illinois","abbr":"ILL","score":62,"winner":false,"color":"ff5f05"},{"id":"41","seed":2,"name":"UConn","abbr":"CONN","score":71,"winner":true,"color":"0c2340"}]},{"round":"National Championship","region":null,"date":"2026-04-07","venue":"Lucas Oil Stadium","city":"Indianapolis","teams":[{"id":"41","seed":2,"name":"UConn","abbr":"CONN","score":63,"winner":false,"color":"0c2340"},{"id":"130","seed":1,"name":"Michigan","abbr":"MICH","score":69,"winner":true,"color":"00274c"}]}];
+const logo = (id, s=32) => `https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/${id}.png&h=${s}&w=${s}`;
+const RCOLOR = { East: '#2563eb', West: '#dc2626', South: '#16a34a', Midwest: '#d97706' };
+const ORDER = [1, 8, 5, 4, 6, 3, 7, 2];
+const REGIONS = ['East', 'West', 'South', 'Midwest'];
+const ROUNDS = ['1st Round', '2nd Round', 'Sweet 16', 'Elite 8'];
+
+const TEAM = {};
+GAMES.forEach(g => g.teams.forEach(t => (TEAM[t.id] = t)));
+const tint = (hex, f=0.78) => {
+  const h = (hex || '1e293b').replace('#','');
+  const c = (i) => Math.round(parseInt(h.substr(i,2),16) + (255-parseInt(h.substr(i,2),16))*f);
+  return `rgb(${c(0)}, ${c(2)}, ${c(4)})`;
+};
+
+const tline = (t, small) => `<div class="tline${t.winner ? ' w' : ''}" data-tid="${t.id}">
+  <span class="seed">${t.seed ?? ''}</span><img src="${logo(t.id)}" alt=""/>
+  <span class="nm">${small ? (t.abbr || t.name) : t.name}</span><span class="sc">${t.score || ''}</span></div>`;
+const matchBox = (g, small) => `<div class="match">${tline(g.teams[0], small)}${tline(g.teams[1], small)}</div>`;
+
+function regionRounds(region) {
+  const out = {};
+  const r1 = GAMES.filter(g => g.region === region && g.round === '1st Round');
+  r1.sort((a, b) => ORDER.indexOf(Math.min(...a.teams.map(t => t.seed))) - ORDER.indexOf(Math.min(...b.teams.map(t => t.seed))));
+  out['1st Round'] = r1;
+  let pos = {}; r1.forEach((g, i) => g.teams.forEach(t => (pos[t.id] = i)));
+  for (const cur of ['2nd Round', 'Sweet 16', 'Elite 8']) {
+    const gs = GAMES.filter(g => g.region === region && g.round === cur);
+    gs.forEach(g => (g._p = Math.min(...g.teams.map(t => pos[t.id] ?? 99)) >> 1));
+    gs.sort((a, b) => a._p - b._p);
+    out[cur] = gs;
+    const np = {}; gs.forEach((g, i) => g.teams.forEach(t => (np[t.id] = i)));
+    pos = np;
+  }
+  return out;
+}
+
+/* ── overlay ── */
+const VIEWS = ['Overview', ...REGIONS, 'Final Four'];
+let ovView = VIEWS[0];
+let selTeam = null;
+
+document.getElementById('yrSel').innerHTML = Array.from({length: 2026-2009+1}, (_,i)=>2026-i).map(y=>`<option>${y}</option>`).join('');
+
+function ovOpen(teamId) {
+  ovView = VIEWS[0];
+  selTeam = teamId || null;
+  document.getElementById('ov').classList.add('open');
+  ovRender();
+}
+function ovClose() { document.getElementById('ov').classList.remove('open'); document.getElementById('about').classList.remove('on'); }
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') ovClose(); });
+function ovGo(v) { ovView = v; ovRender(); }
+function toggleAbout() { document.getElementById('about').classList.toggle('on'); }
+// clic hors du panneau About -> fermeture
+document.addEventListener('click', (e) => {
+  const ab = document.getElementById('about');
+  if (!ab.classList.contains('on')) return;
+  if (e.target.closest('#about') || e.target.closest('.rtab.ghost')) return;
+  ab.classList.remove('on');
+});
+function yrChange(sel) {
+  if (sel.value !== '2026') {
+    toast(`Real app: refetches the ESPN API for ${sel.value}. (Demo: only 2026 is loaded)`);
+    sel.value = '2026';
+  }
+}
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg; t.classList.add('on');
+  clearTimeout(t._h); t._h = setTimeout(() => t.classList.remove('on'), 2600);
+}
+
+function applySelection() {
+  document.querySelectorAll('#ovBody .tline').forEach(el => { el.style.background = ''; el.style.boxShadow = ''; });
+  const chip = document.getElementById('selchip');
+  if (!selTeam) { chip.classList.remove('on'); return; }
+  const t = TEAM[selTeam];
+  document.querySelectorAll(`#ovBody .tline[data-tid="${selTeam}"]`).forEach(el => {
+    el.style.background = tint(t.color);
+    el.style.boxShadow = `inset 3px 0 0 #${t.color}`;
+  });
+  chip.innerHTML = `<img src="${logo(selTeam, 40)}"/><span class="n">${t.name}</span>
+    <button class="act" onclick="flyTo('${selTeam}')">Show on map</button>
+    <button class="clr" onclick="deselect()" title="Clear">✕</button>`;
+  chip.classList.add('on');
+}
+function deselect() { selTeam = null; applySelection(); }
+function flyTo(id) { ovClose(); toast(`Fly-to ${TEAM[id].name} on the map (demo)`); }
+
+document.addEventListener('mouseover', (e) => {
+  const el = e.target.closest('#ovBody .tline'); if (!el) return;
+  document.querySelectorAll(`#ovBody .tline[data-tid="${el.dataset.tid}"]`).forEach(x => x.classList.add('hov'));
+});
+document.addEventListener('mouseout', (e) => {
+  const el = e.target.closest('#ovBody .tline'); if (!el) return;
+  document.querySelectorAll('#ovBody .tline.hov').forEach(x => x.classList.remove('hov'));
+});
+document.addEventListener('click', (e) => {
+  const el = e.target.closest('#ovBody .tline'); if (!el) return;
+  selTeam = selTeam === el.dataset.tid ? null : el.dataset.tid;
+  applySelection();
+});
+
+function broadcastHTML() {
+  const half = (regions, mirror) => {
+    let h = '<div class="bc-half">';
+    for (const rg of regions) {
+      const rr = regionRounds(rg);
+      const cols = ROUNDS.map(rd => `<div class="bc-col">${rr[rd].map(g => matchBox(g, true)).join('')}</div>`);
+      if (mirror) cols.reverse();
+      h += `<div><div class="bc-rtitle" style="color:${RCOLOR[rg]};${mirror ? 'text-align:right;' : ''}" onclick="ovGo('${rg}')" title="Zoom on ${rg}">${rg} ⌕</div><div class="bc-cols">${cols.join('')}</div></div>`;
+    }
+    return h + '</div>';
+  };
+  const f4 = GAMES.filter(g => g.round === 'Final Four');
+  const fin = GAMES.find(g => g.round === 'National Championship');
+  const champ = fin.teams.find(t => t.winner);
+  // Région de chaque équipe (déduite du bracket) -> les moitiés gauche/droite
+  // correspondent aux VRAIES affiches des demi-finales (fini l'inversion).
+  const regionOf = {};
+  REGIONS.forEach(rg => GAMES.filter(g => g.region === rg).forEach(g => g.teams.forEach(t => { if (!(t.id in regionOf)) regionOf[t.id] = rg; })));
+  const leftRegions = f4[0].teams.map(t => regionOf[t.id]);
+  const rightRegions = f4[1].teams.map(t => regionOf[t.id]);
+  const ff = GAMES.filter(g => g.round === 'First Four');
+  const ffStrip = `<div class="ff-strip"><div class="t">First Four · Dayton</div><div class="g">${
+    ff.map(g => `<div>${matchBox(g, true)}<div class="rg" style="color:${RCOLOR[g.region]}">${g.region}</div></div>`).join('')
+  }</div></div>`;
+  return `<div style="overflow-x:auto;"><div class="bcast-in">` +
+    half(leftRegions, false) +
+    `<div class="bc-center">
+      <div><div class="bc-lbl">Semifinal</div>${matchBox(f4[0])}</div>
+      <div class="bc-final-block">
+        <div class="bc-champ"><div class="lbl">Champion</div><img src="${logo(champ.id, 116)}"/><div class="nm">${champ.name}</div></div>
+        <div class="bc-lbl" style="margin-top:12px;">National Championship</div>${matchBox(fin)}
+      </div>
+      <div><div class="bc-lbl">Semifinal</div>${matchBox(f4[1])}</div>
+    </div>` +
+    half(rightRegions, true) + `</div></div>` + ffStrip;
+}
+function regionZoomHTML(rg) {
+  const rr = regionRounds(rg);
+  const col = (rd, links) => {
+    const gs = rr[rd];
+    let inner = '';
+    for (let i = 0; i < gs.length; i += 2) {
+      const pair = gs.slice(i, i + 2).map(g => matchBox(g)).join('');
+      inner += `<div class="pairwrap${links && gs.length > 1 ? ' link' : ''}">${pair}</div>`;
+    }
+    if (gs.length === 1) inner = `<div class="pairwrap">${matchBox(gs[0])}</div>`;
+    return `<div class="zr-col"><div class="hd">${rd}</div><div class="zr-slots">${inner}</div></div>`;
+  };
+  const ff = GAMES.filter(g => g.round === 'First Four' && g.region === rg);
+  const ffStrip = ff.length
+    ? `<div class="ff-strip" style="margin:0 0 16px;"><div class="t">First Four (play-in) · ${rg}</div><div class="g">${ff.map(g => matchBox(g)).join('')}</div></div>`
+    : '';
+  return ffStrip + `<div style="overflow-x:auto;"><div class="zr" style="height:560px;">
+    ${col('1st Round', true)}${col('2nd Round', true)}${col('Sweet 16', true)}${col('Elite 8', false)}</div></div>`;
+}
+
+/* Final Four stage — semifinals › championship › champion */
+function finalFourHTML() {
+  const f4 = GAMES.filter(g => g.round === 'Final Four');
+  const fin = GAMES.find(g => g.round === 'National Championship');
+  const champ = fin.teams.find(t => t.winner);
+  const path = GAMES.filter(g => g.teams.some(t => t.id === champ.id));
+  const fmt = (d) => new Date(d).toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+  const semi = (g) => `<div class="ffm">${matchBox(g)}<div class="sub2">${fmt(g.date)}</div></div>`;
+  return `<div class="ffstage">
+    <div class="ff-top">
+      <img class="wordmark" src="../src/assets/march-madness-logo.png" alt="March Madness"/>
+      <div class="where">Final Four · ${fin.venue || ''}${fin.city ? ' — ' + fin.city : ''} · ${fmt(f4[0].date)}–${fmt(fin.date)}</div>
+    </div>
+    <div class="ff-grid">
+      <div>
+        <div class="ff-colhd">Semifinals</div>
+        <div class="ff-semis linked">${semi(f4[0])}${semi(f4[1])}</div>
+      </div>
+      <div>
+        <div class="ff-colhd">National Championship</div>
+        <div class="ffm big">${matchBox(fin)}<div class="sub2">${fmt(fin.date)}</div></div>
+      </div>
+      <div class="ff-champ">
+        <div class="ring"><img src="${logo(champ.id, 168)}"/></div>
+        <div class="lbl">National Champion</div>
+        <div class="nm">${champ.name}</div>
+        <div class="rec">${path.length}–0 in the tournament · seed ${champ.seed}</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function ovRender() {
+  document.getElementById('ovTabs').innerHTML =
+    `<button class="rtab ghost" onclick="toggleAbout()">About the format</button>` +
+    VIEWS.map(v =>
+    `<button class="rtab${v === ovView ? ' on' : ''}" onclick="ovGo('${v}')" style="${REGIONS.includes(v) && v === ovView ? `background:${RCOLOR[v]};` : ''}">${v}</button>`).join('');
+  const b = document.getElementById('ovBody');
+  if (ovView === VIEWS[0]) b.innerHTML = broadcastHTML();
+  else if (ovView === 'Final Four') b.innerHTML = finalFourHTML();
+  else b.innerHTML = regionZoomHTML(ovView);
+  applySelection();
+}
+
+/* ── mobile ── */
+let phView = 'East';
+function phGo(v) { phView = v; phRender(); }
+function phRender() {
+  document.getElementById('phTabs').innerHTML = [...REGIONS, 'Final Four'].map(v =>
+    `<button class="rtab${v === phView ? ' on' : ''}" onclick="phGo('${v}')" style="${REGIONS.includes(v) && v === phView ? `background:${RCOLOR[v]};` : ''}">${v}</button>`).join('');
+  const body = document.getElementById('phBody');
+  if (phView === 'Final Four') {
+    const f4 = GAMES.filter(g => g.round === 'Final Four');
+    const fin = GAMES.find(g => g.round === 'National Championship');
+    body.innerHTML = `<div class="ph-col"><div class="ph-round">Final Four</div>${f4.map(g => matchBox(g)).join('')}
+      <div class="ph-round" style="margin-top:14px;">Championship</div>${matchBox(fin)}</div>`;
+    document.getElementById('phDots').innerHTML = '<i class="on"></i>';
+    return;
+  }
+  const rr = regionRounds(phView);
+  const ff = GAMES.filter(g => g.round === 'First Four' && g.region === phView);
+  const cols = [...(ff.length ? [{ rd: 'First Four', gs: ff }] : []), ...ROUNDS.map(rd => ({ rd, gs: rr[rd] }))];
+  body.innerHTML = cols.map(c =>
+    `<div class="ph-col"><div class="ph-round" style="color:${RCOLOR[phView]}">${phView} · ${c.rd}</div>${c.gs.map(g => matchBox(g)).join('')}</div>`).join('');
+  document.getElementById('phDots').innerHTML = cols.map((c, i) => `<i class="${i === 0 ? 'on' : ''}"></i>`).join('');
+  const sc = body; sc.scrollLeft = 0;
+  sc.onscroll = () => {
+    const i = Math.round(sc.scrollLeft / sc.clientWidth);
+    document.getElementById('phDots').innerHTML = cols.map((c, k) => `<i class="${k === i ? 'on' : ''}"></i>`).join('');
+  };
+}
+phRender();
+
+/* ── modale équipe ── */
+function tmRender(mode) {
+  document.getElementById('chipA').className = 'rtab' + (mode === 'champ' ? ' on' : '');
+  document.getElementById('chipB').className = 'rtab' + (mode === 'runner' ? ' on' : '');
+  const fin = GAMES.find(g => g.round === 'National Championship');
+  const team = mode === 'champ' ? fin.teams.find(t => t.winner) : fin.teams.find(t => !t.winner);
+  const games = GAMES.filter(g => g.teams.some(t => t.id === team.id)).sort((a, b) => a.date.localeCompare(b.date));
+  const steps = games.map(g => {
+    const me = g.teams.find(t => t.id === team.id), op = g.teams.find(t => t.id !== team.id);
+    return `<div class="vstep ${me.winner ? 'win' : 'loss'}">
+      <div class="rd">${g.round}${g.region ? `<br><span style="color:${RCOLOR[g.region]}">${g.region}</span>` : ''}</div>
+      <img src="${logo(op.id, 52)}"/>
+      <div class="op">${op.seed} ${op.name}<small>${g.date}</small></div>
+      <div class="wl">${me.winner ? 'W' : 'L'} ${me.score}–${op.score}</div></div>`;
+  }).join('');
+  document.getElementById('tmModal').innerHTML = `
+    <div class="tm-head" style="background:${tint(team.color, 0.7)}"><img src="${logo(team.id, 88)}"/>
+      <div><div class="n">${team.name}</div><div class="v">seed ${team.seed}</div></div></div>
+    <div class="tm-tabs">
+      ${['Roster', 'Standing', 'Legends'].map(t => `<button class="tm-tab">${t}</button>`).join('')}
+      <button class="tm-tab on">March Madness</button>
+    </div>
+    <div class="tm-body">
+      <div class="mm-season">March Madness 2026</div>
+      ${steps}
+      <div style="text-align:center;margin-top:10px;"><button class="rtab" onclick="ovOpen('${team.id}')">View full bracket →</button></div>
+    </div>`;
+}
+tmRender('champ');
+</script>
+</body>
+</html>
