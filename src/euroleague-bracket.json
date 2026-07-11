@@ -1,0 +1,164 @@
+{
+  "season": "E2025",
+  "seasonLabel": "2025-26",
+  "updated": "2026-07-11T22:34:11.219Z",
+  "playoffs": [
+    {
+      "code": "A",
+      "label": "Playoff A",
+      "winner": {
+        "code": "OLY",
+        "name": "Olympiacos",
+        "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+        "wins": 3
+      },
+      "loser": {
+        "code": "MCO",
+        "name": "Monaco",
+        "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
+        "wins": 0
+      },
+      "dots": [
+        "w",
+        "w",
+        "w"
+      ]
+    },
+    {
+      "code": "B",
+      "label": "Playoff B",
+      "winner": {
+        "code": "ULK",
+        "name": "Fenerbahce",
+        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHN/c91466d1-a620-4c0c-b47b-4a0cd9eee944.png",
+        "wins": 3
+      },
+      "loser": {
+        "code": "ZAL",
+        "name": "Zalgiris",
+        "logo": "https://media-cdn.incrowdsports.com/0aa09358-3847-4c4e-b228-3582ee4e536d.png",
+        "wins": 1
+      },
+      "dots": [
+        "w",
+        "w",
+        "l",
+        "w"
+      ]
+    },
+    {
+      "code": "C",
+      "label": "Playoff C",
+      "winner": {
+        "code": "MAD",
+        "name": "Real Madrid",
+        "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+        "wins": 3
+      },
+      "loser": {
+        "code": "HTA",
+        "name": "Hapoel Tel Aviv",
+        "logo": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png",
+        "wins": 1
+      },
+      "dots": [
+        "w",
+        "w",
+        "l",
+        "w"
+      ]
+    },
+    {
+      "code": "D",
+      "label": "Playoff D",
+      "winner": {
+        "code": "PAM",
+        "name": "Valencia",
+        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png",
+        "wins": 3
+      },
+      "loser": {
+        "code": "PAN",
+        "name": "Panathinaikos",
+        "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+        "wins": 2
+      },
+      "dots": [
+        "l",
+        "l",
+        "w",
+        "w",
+        "w"
+      ]
+    }
+  ],
+  "semifinals": [
+    {
+      "code": "A",
+      "label": "Semifinal A",
+      "winner": {
+        "code": "OLY",
+        "name": "Olympiacos",
+        "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+        "score": 79
+      },
+      "loser": {
+        "code": "ULK",
+        "name": "Fenerbahce",
+        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHN/c91466d1-a620-4c0c-b47b-4a0cd9eee944.png",
+        "score": 61
+      },
+      "date": "2026-05-22T15:00:00Z",
+      "feeders": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "code": "B",
+      "label": "Semifinal B",
+      "winner": {
+        "code": "MAD",
+        "name": "Real Madrid",
+        "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+        "score": 105
+      },
+      "loser": {
+        "code": "PAM",
+        "name": "Valencia",
+        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png",
+        "score": 90
+      },
+      "date": "2026-05-22T18:00:00Z",
+      "feeders": [
+        "C",
+        "D"
+      ]
+    }
+  ],
+  "final": {
+    "code": null,
+    "label": "Final",
+    "winner": {
+      "code": "OLY",
+      "name": "Olympiacos",
+      "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+      "score": 92
+    },
+    "loser": {
+      "code": "MAD",
+      "name": "Real Madrid",
+      "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+      "score": 85
+    },
+    "date": "2026-05-24T18:00:00Z"
+  },
+  "finalFour": {
+    "venueName": "TELEKOM CENTER ATHENS",
+    "venue": "TELEKOM CENTER ATHENS",
+    "city": null,
+    "capacity": 18500,
+    "dateStart": "2026-05-22T15:00:00Z",
+    "dateEnd": "2026-05-24T18:00:00Z"
+  }
+}

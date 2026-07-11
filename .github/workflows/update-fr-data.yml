@@ -1,4 +1,4 @@
-name: Update French basketball data (LNB men + FFBB women)
+name: Update French & EuroLeague basketball data (LNB men + FFBB women + EuroLeague men)
 
 on:
   schedule:
@@ -27,17 +27,29 @@ jobs:
       - name: Fetch women's standings & clubs from api.ffbb.app
         run: node scripts/update-fr-women-data.js
 
+      - name: Fetch EuroLeague men's rosters & standings from api-live.euroleague.net
+        run: node scripts/update-euroleague-data.js
+
+      - name: Compute EuroLeague team analytics (Offense/Defense/Pace ranks)
+        run: node scripts/update-euroleague-analytics.js
+
+      - name: Compute EuroLeague rivalries head-to-head
+        run: node scripts/update-euroleague-rivalries.js
+
+      - name: Rebuild EuroLeague Playoffs & Final Four bracket
+        run: node scripts/update-euroleague-bracket.js
+
       - name: Commit updated data (if changed)
         id: commit
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/fr-rosters.json src/fr-standings.json src/fr-teams.json src/fr-women-teams.json src/fr-women-standings.json
+          git add src/fr-rosters.json src/fr-standings.json src/fr-teams.json src/fr-women-teams.json src/fr-women-standings.json src/euroleague-teams.json src/euroleague-rosters.json src/euroleague-standings.json src/euroleague-analytics.json src/euroleague-rivalries.json src/euroleague-bracket.json
           if git diff --cached --quiet; then
             echo "Pas de changement de données."
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "chore: mise à jour auto des données LNB (rosters + classements)"
+            git commit -m "chore: mise à jour auto des données LNB + EuroLeague (rosters + classements)"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi

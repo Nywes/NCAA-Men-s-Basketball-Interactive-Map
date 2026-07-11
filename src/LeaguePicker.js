@@ -55,7 +55,7 @@ export default function LeaguePicker({ currentLeague, gender = 'men' }) {
             <img className="lp-logo" src={league.logo} alt="" />
             <span className="lp-text">
               <span className="lp-name">
-                {(league.names && league.names[gender]) || league.name} {league.flag}
+                {(league.names && league.names[gender]) || league.name}
               </span>
             </span>
           </button>

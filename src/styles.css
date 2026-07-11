@@ -589,7 +589,7 @@
 .rt-row:hover td { background: #f2f7fc; }
 .rt-row.rt-open td { background: var(--rt-tint, #eaf1f8); }
 .rt-pl { display: flex; align-items: center; gap: 8px; min-width: 0; }
-img.rt-av { width: 28px; height: 28px; border-radius: 6px; object-fit: cover; background: #dbe4f0; flex: none; }
+img.rt-av { width: 28px; height: 28px; border-radius: 6px; object-fit: cover; object-position: 50% 0%; background: #dbe4f0; flex: none; }
 .rt-nm { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .rt-num { font-weight: 900; color: var(--rt-team, #00539b); }
 .rt-mut { color: #64748b; }
@@ -604,6 +604,9 @@ img.rt-flag { width: 15px; height: 11px; object-fit: cover; border-radius: 2px; 
 .rt-hero .rt-s { flex: 1; background: #fff; border-radius: 8px; padding: 6px 4px; text-align: center; box-shadow: 0 1px 3px rgba(0,40,90,.06); }
 .rt-hero .rt-v { font-size: 17px; font-weight: 900; line-height: 1; color: var(--rt-team, #00539b); }
 .rt-hero .rt-l { font-size: 8.5px; text-transform: uppercase; letter-spacing: .4px; color: #7c93ab; margin-top: 2px; }
+/* Ligne de rang ligue : hauteur TOUJOURS réservée (même vide) pour que les 3
+   cases PPG/RPG/APG restent alignées, que le joueur soit classé ou non. */
+.rt-hero .rt-rank { font-size: 8px; font-weight: 800; color: #f47216; margin-top: 3px; height: 10px; line-height: 10px; }
 /* stats secondaires : une seule ligne horizontale */
 .rt-strip { display: flex; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,40,90,.06); }
 .rt-strip .rt-s { flex: 1; min-width: 0; text-align: center; padding: 6px 2px; border-right: 1px solid #eef2f6; }
@@ -1050,4 +1053,164 @@ img.st-logo { width: 20px; height: 20px; object-fit: contain; flex: none; }
   height: 24px;
   object-fit: contain;
   display: block;
+}
+
+.meta-updated { font-size: 9.5px; color: #cbd5e1; text-align: right; margin-top: 4px; }
+
+/* Onglet Analytics (EuroLeague) : chips d'en-tête + tableau détaillé */
+.an-wrap { padding: 12px 14px; max-height: 280px; overflow-y: auto; }
+.an-headline { display: flex; gap: 8px; margin-bottom: 14px; }
+.an-chip { flex: 1; text-align: center; border-radius: 10px; padding: 9px 6px; }
+.an-chip-num { font-size: 19px; font-weight: 900; line-height: 1; }
+.an-chip-lbl { font-size: 8.5px; font-weight: 800; text-transform: uppercase; letter-spacing: .3px; margin-top: 3px; }
+.an-chip-top { background: #f0fdf4; } .an-chip-top .an-chip-num { color: #15803d; } .an-chip-top .an-chip-lbl { color: #16a34a; }
+.an-chip-mid { background: #fffbeb; } .an-chip-mid .an-chip-num { color: #b45309; } .an-chip-mid .an-chip-lbl { color: #d97706; }
+.an-chip-low { background: #fef2f2; } .an-chip-low .an-chip-num { color: #b91c1c; } .an-chip-low .an-chip-lbl { color: #dc2626; }
+.an-chip-neutral { background: #f1f5f9; } .an-chip-neutral .an-chip-num { color: #334155; } .an-chip-neutral .an-chip-lbl { color: #64748b; }
+table.an-table { width: 100%; border-collapse: collapse; }
+.an-table td { padding: 5px 4px; border-bottom: 1px solid #f8fafc; font-size: 11px; vertical-align: middle; }
+.an-mlbl { color: #64748b; white-space: nowrap; }
+.an-mval { font-weight: 800; color: #1e293b; text-align: right; white-space: nowrap; width: 1%; }
+.an-mbar { width: 100%; padding: 0 8px !important; }
+.an-bar-track { display: block; height: 5px; background: #f1f5f9; border-radius: 3px; overflow: hidden; }
+.an-bar-fill { display: block; height: 100%; background: linear-gradient(90deg,#16a34a,#f47216); border-radius: 3px; }
+.an-mrank { color: #94a3b8; font-weight: 700; font-size: 10px; white-space: nowrap; text-align: right; }
+
+/* Photo de la salle (onglet Club) — même carte que .frc-fact, pleine largeur du bloc */
+.frc-photo-card {
+  background: #f6f8fb;
+  border-radius: 9px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+.frc-photo { width: 100%; height: 130px; object-fit: cover; display: block; }
+
+/* Rivalité historique (onglet Club) */
+.frc-rivalry { margin-top: 14px; background: #f8fafc; border-radius: 10px; padding: 12px 14px; }
+.frc-rivalry-title { font-size: 11px; font-weight: 800; color: #334155; margin-bottom: 9px; }
+.frc-rivalry-row { display: flex; align-items: center; justify-content: center; gap: 14px; }
+.frc-rivalry-logo { width: 34px; height: 34px; object-fit: contain; }
+.frc-rivalry-score { font-size: 22px; font-weight: 900; color: #0f172a; }
+.frc-rivalry-score .sep { color: #cbd5e1; margin: 0 4px; }
+.frc-rivalry-opp { text-align: center; font-size: 10.5px; color: #64748b; margin-top: 5px; font-weight: 700; }
+.frc-rivalry-meta { text-align: center; font-size: 9.5px; color: #94a3b8; margin-top: 2px; }
+.frc-rivalry-last { text-align: center; font-size: 9.5px; color: #475569; margin-top: 7px; padding-top: 7px; border-top: 1px solid #e2e8f0; }
+
+/* ═══════════ Bracket EuroLeague (Playoffs + Final Four) ═══════════ */
+.brk-trigger {
+  position: absolute;
+  top: 194px; /* .lp-globe (152) + 34px + 8px de gouttière — pas de .gsw sur la carte EuroLeague (pas de féminin) */
+  left: 10px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b45309;
+  transition: transform 0.15s ease;
+}
+.brk-trigger:hover { transform: scale(1.08); }
+
+.brk-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 6, 4, 0.78);
+  z-index: 4000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.brk-panel {
+  position: relative;
+  max-width: 96vw;
+  max-height: 92vh;
+  overflow: auto;
+  border-radius: 18px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+.brk-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brk-close:hover { background: rgba(0, 0, 0, 0.6); }
+
+.brk-canvas {
+  position: relative;
+  background:
+    radial-gradient(circle at 10% 10%, rgba(255,255,255,.10), transparent 40%),
+    linear-gradient(155deg, #ff8a00 0%, #ff5b1f 32%, #d92a1f 65%, #7a1414 100%);
+}
+
+.brk-title-wrap { position: absolute; left: 0; width: 100%; top: 22px; text-align: center; }
+.brk-title-main {
+  font-size: 44px; font-weight: 900; letter-spacing: 1px; text-transform: uppercase;
+  color: #ffe14d; text-shadow: 0 2px 0 #a83a00, 0 4px 14px rgba(0,0,0,.35);
+  transform: skewX(-4deg); font-style: italic;
+}
+.brk-title-sub { font-size: 12.5px; font-weight: 800; letter-spacing: 4px; color: #fff; text-transform: uppercase; margin-top: 4px; opacity: .9; }
+
+.brk-ff-label { position: absolute; text-align: center; font-size: 11px; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 2px; opacity: .85; }
+.brk-ff-line { position: absolute; height: 2px; background: rgba(255,255,255,.35); }
+.brk-ff-tick { position: absolute; width: 2px; height: 10px; background: rgba(255,255,255,.35); }
+
+.brk-ln-h { position: absolute; height: 3px; background: #ffd400; box-shadow: 0 0 6px rgba(255,212,0,.55); }
+.brk-ln-v { position: absolute; width: 3px; background: #ffd400; box-shadow: 0 0 6px rgba(255,212,0,.55); }
+
+.brk-card {
+  position: absolute;
+  padding: 12px 22px;
+  background: rgba(55,12,10,.6);
+  border: 1px solid rgba(255,255,255,.16);
+  box-sizing: border-box;
+  clip-path: polygon(16px 0, 100% 0, calc(100% - 16px) 100%, 0% 100%);
+}
+.brk-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 9px; }
+.brk-round { font-size: 10px; font-weight: 800; color: #ffd400; text-transform: uppercase; letter-spacing: .6px; }
+.brk-team { display: flex; align-items: center; gap: 9px; font-size: 14px; font-weight: 800; color: #fff; padding: 2px 0; }
+.brk-team img { width: 26px; height: 26px; object-fit: contain; flex-shrink: 0; filter: drop-shadow(0 1px 2px rgba(0,0,0,.4)); }
+.brk-team.brk-lose { color: rgba(255,255,255,.5); font-weight: 600; }
+.brk-team .brk-sc { margin-left: auto; font-weight: 900; color: #ffd400; }
+.brk-team.brk-lose .brk-sc { color: rgba(255,255,255,.55); }
+.brk-card-final .brk-team { font-size: 15.5px; }
+.brk-card-final .brk-team img { width: 32px; height: 32px; }
+
+.brk-dots { display: flex; justify-content: flex-end; gap: 5px; }
+.brk-dots i { width: 6px; height: 6px; border-radius: 50%; display: block; background: rgba(255,255,255,.25); }
+.brk-dots i.w { background: #4ade80; }
+.brk-dots i.l { background: #f87171; }
+
+/* Fallback mobile : liste empilée, pas d'arbre ni de connecteurs */
+.brk-panel-mobile { width: 100%; max-width: 420px; }
+.brk-mobile {
+  background: linear-gradient(155deg, #ff8a00 0%, #ff5b1f 32%, #d92a1f 65%, #7a1414 100%);
+  padding: 20px 16px 28px;
+}
+.brk-mobile .brk-title-wrap { position: static; margin-bottom: 18px; }
+.brk-mobile .brk-title-main { font-size: 30px; }
+.brk-mobile-list { display: flex; flex-direction: column; gap: 12px; }
+.brk-mobile-list .brk-card { position: static; width: 100%; }
+.brk-mobile-sep {
+  text-align: center; font-size: 10px; font-weight: 800; color: rgba(255,255,255,.75);
+  text-transform: uppercase; letter-spacing: 1.5px; margin: 4px 0;
 }
