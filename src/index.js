@@ -6,6 +6,7 @@ import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import App from './App';
 import FranceMap from './FranceMap';
+import EuroleagueMap from './EuroleagueMap';
 import Navbar from './Navbar';
 import LeaguePicker from './LeaguePicker';
 import { LEAGUES } from './leagues';
@@ -21,7 +22,7 @@ function Shell({ leagueId, gender, setGender }) {
   const [searchSubmit, setSearchSubmit] = useState(null);
 
   const league = LEAGUES.find((l) => l.id === leagueId);
-  const Map = leagueId === 'france' ? FranceMap : App;
+  const Map = leagueId === 'france' ? FranceMap : leagueId === 'europe' ? EuroleagueMap : App;
 
   // Le titre suit le genre sélectionné (Men's / Women's) selon l'univers.
   let navLeague = league;
@@ -66,6 +67,10 @@ function Root() {
           <Route
             path="/france"
             element={<Shell key="france" leagueId="france" gender={gender} setGender={setGender} />}
+          />
+          <Route
+            path="/europe"
+            element={<Shell key="europe" leagueId="europe" gender={gender} setGender={setGender} />}
           />
           <Route path="*" element={<Navigate to="/usa" replace />} />
         </Routes>

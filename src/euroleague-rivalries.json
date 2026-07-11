@@ -1,0 +1,207 @@
+{
+  "updated": "2026-07-11",
+  "seasonsRange": "E2018–E2025",
+  "source": "api-live.euroleague.net (résultats agrégés localement)",
+  "byClub": {
+    "OLY": {
+      "label": "Derby of the Eternal Enemies (Athens)",
+      "opponent": {
+        "id": "PAN",
+        "name": "Panathinaikos AKTOR Athens",
+        "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png"
+      },
+      "wins": 14,
+      "losses": 3,
+      "totalMeetings": 17,
+      "lastMeeting": {
+        "date": "2026-03-06T20:15:00",
+        "season": "E2025",
+        "phase": "RS",
+        "homeCode": "OLY",
+        "homeScore": 86,
+        "awayCode": "PAN",
+        "awayScore": 80
+      }
+    },
+    "PAN": {
+      "label": "Derby of the Eternal Enemies (Athens)",
+      "opponent": {
+        "id": "OLY",
+        "name": "Olympiacos Piraeus",
+        "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png"
+      },
+      "wins": 3,
+      "losses": 14,
+      "totalMeetings": 17,
+      "lastMeeting": {
+        "date": "2026-03-06T20:15:00",
+        "season": "E2025",
+        "phase": "RS",
+        "homeCode": "OLY",
+        "homeScore": 86,
+        "awayCode": "PAN",
+        "awayScore": 80
+      }
+    },
+    "MAD": {
+      "label": "El Clásico",
+      "opponent": {
+        "id": "BAR",
+        "name": "FC Barcelona",
+        "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png"
+      },
+      "wins": 10,
+      "losses": 7,
+      "totalMeetings": 17,
+      "lastMeeting": {
+        "date": "2026-01-16T20:45:00",
+        "season": "E2025",
+        "phase": "RS",
+        "homeCode": "MAD",
+        "homeScore": 80,
+        "awayCode": "BAR",
+        "awayScore": 61
+      }
+    },
+    "BAR": {
+      "label": "El Clásico",
+      "opponent": {
+        "id": "MAD",
+        "name": "Real Madrid",
+        "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png"
+      },
+      "wins": 7,
+      "losses": 10,
+      "totalMeetings": 17,
+      "lastMeeting": {
+        "date": "2026-01-16T20:45:00",
+        "season": "E2025",
+        "phase": "RS",
+        "homeCode": "MAD",
+        "homeScore": 80,
+        "awayCode": "BAR",
+        "awayScore": 61
+      }
+    },
+    "PAR": {
+      "label": "Eternal Derby (Belgrade)",
+      "opponent": {
+        "id": "RED",
+        "name": "Crvena Zvezda Meridianbet Belgrade",
+        "logo": "https://media-cdn.incrowdsports.com/d2eef4a8-62df-4fdd-9076-276004268515.png"
+      },
+      "wins": 5,
+      "losses": 3,
+      "totalMeetings": 8,
+      "lastMeeting": {
+        "date": "2026-04-02T20:00:00",
+        "season": "E2025",
+        "phase": "RS",
+        "homeCode": "RED",
+        "homeScore": 82,
+        "awayCode": "PAR",
+        "awayScore": 89
+      }
+    },
+    "RED": {
+      "label": "Eternal Derby (Belgrade)",
+      "opponent": {
+        "id": "PAR",
+        "name": "Partizan Mozzart Bet Belgrade",
+        "logo": "https://media-cdn.incrowdsports.com/2681304e-77dd-4331-88b1-683078c0fb49.png"
+      },
+      "wins": 3,
+      "losses": 5,
+      "totalMeetings": 8,
+      "lastMeeting": {
+        "date": "2026-04-02T20:00:00",
+        "season": "E2025",
+        "phase": "RS",
+        "homeCode": "RED",
+        "homeScore": 82,
+        "awayCode": "PAR",
+        "awayScore": 89
+      }
+    },
+    "TEL": {
+      "label": "Tel Aviv Derby",
+      "opponent": {
+        "id": "HTA",
+        "name": "Hapoel IBI Tel Aviv",
+        "logo": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png"
+      },
+      "wins": 1,
+      "losses": 1,
+      "totalMeetings": 2,
+      "lastMeeting": {
+        "date": "2026-04-12T21:15:00",
+        "season": "E2025",
+        "phase": "RS",
+        "homeCode": "TEL",
+        "homeScore": 88,
+        "awayCode": "HTA",
+        "awayScore": 99
+      }
+    },
+    "HTA": {
+      "label": "Tel Aviv Derby",
+      "opponent": {
+        "id": "TEL",
+        "name": "Maccabi Rapyd Tel Aviv",
+        "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png"
+      },
+      "wins": 1,
+      "losses": 1,
+      "totalMeetings": 2,
+      "lastMeeting": {
+        "date": "2026-04-12T21:15:00",
+        "season": "E2025",
+        "phase": "RS",
+        "homeCode": "TEL",
+        "homeScore": 88,
+        "awayCode": "HTA",
+        "awayScore": 99
+      }
+    },
+    "ULK": {
+      "label": "Istanbul Derby",
+      "opponent": {
+        "id": "IST",
+        "name": "Anadolu Efes Istanbul",
+        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png"
+      },
+      "wins": 9,
+      "losses": 7,
+      "totalMeetings": 16,
+      "lastMeeting": {
+        "date": "2026-01-29T18:45:00",
+        "season": "E2025",
+        "phase": "RS",
+        "homeCode": "ULK",
+        "homeScore": 79,
+        "awayCode": "IST",
+        "awayScore": 62
+      }
+    },
+    "IST": {
+      "label": "Istanbul Derby",
+      "opponent": {
+        "id": "ULK",
+        "name": "Fenerbahce Beko Istanbul",
+        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHN/c91466d1-a620-4c0c-b47b-4a0cd9eee944.png"
+      },
+      "wins": 7,
+      "losses": 9,
+      "totalMeetings": 16,
+      "lastMeeting": {
+        "date": "2026-01-29T18:45:00",
+        "season": "E2025",
+        "phase": "RS",
+        "homeCode": "ULK",
+        "homeScore": 79,
+        "awayCode": "IST",
+        "awayScore": 62
+      }
+    }
+  }
+}

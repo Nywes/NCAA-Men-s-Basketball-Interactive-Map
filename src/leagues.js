@@ -1,5 +1,6 @@
 import ncaaLogo from './assets/icons/ncaa-logo.png';
 import ffbbLogo from './assets/icons/ffbb-logo.png';
+import euroleagueLogo from './assets/icons/euroleague-logo.png';
 
 // Config des "univers" disponibles. Ajouter une ligue = ajouter une entrée ici
 // (le LeaguePicker et les routes se construisent depuis cet objet).
@@ -9,7 +10,6 @@ export const LEAGUES = [
   {
     id: 'usa',
     path: '/usa',
-    flag: '🇺🇸',
     name: 'NCAA Division I',
     names: {
       men: "NCAA Division I Men's Basketball",
@@ -22,7 +22,6 @@ export const LEAGUES = [
   {
     id: 'france',
     path: '/france',
-    flag: '🇫🇷',
     name: 'French Basketball Championship',
     names: {
       men: "French Men's Basketball Championship",
@@ -31,6 +30,14 @@ export const LEAGUES = [
     title: 'French Pro Basketball — LNB',
     shortTitle: 'LNB',
     logo: ffbbLogo,
+  },
+  {
+    id: 'europe',
+    path: '/europe',
+    name: 'Turkish Airlines EuroLeague',
+    title: 'Turkish Airlines EuroLeague',
+    shortTitle: 'EuroLeague',
+    logo: euroleagueLogo,
   },
 ];
 
