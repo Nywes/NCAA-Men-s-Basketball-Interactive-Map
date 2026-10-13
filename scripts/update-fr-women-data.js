@@ -8,20 +8,39 @@
  * Le token FFBB est PUBLIC mais récupéré dynamiquement (il peut tourner).
  * Coords : géocodage via la Base Adresse Nationale (api-adresse.data.gouv.fr, sans clé).
  *
+ * Les poules changent chaque saison : elles sont retrouvées via les compétitions
+ * pro féminines de la saison en cours (D1 = Wonderligue, D2 = LF2). Le palmarès
+ * (ajouté à la main) est conservé ; un club qui quitte D1/D2 part dans
+ * scripts/fr-women-teams-archive.json et revient s'il réapparaît.
+ *
  * Usage : node scripts/update-fr-women-data.js
  */
 const fs = require('fs');
 const path = require('path');
 
 const API = 'https://api.ffbb.app/';
-const SEASON = '2025-26';
-const DIVISIONS = [
-  { division: 'd1', pouleId: '200000003017633' }, // La Boulangère Wonderligue
-  { division: 'd2', pouleId: '200000003017634' }, // Ligue Féminine 2
-];
+// Saison sportive : à partir de juillet on bascule sur la suivante.
+const now = new Date();
+const startYear = now.getMonth() >= 6 ? now.getFullYear() : now.getFullYear() - 1;
+const SEASON = `${startYear}-${String(startYear + 1).slice(2)}`;
 
 const TEAMS_PATH = path.join(__dirname, '..', 'src', 'fr-women-teams.json');
 const STANDINGS_PATH = path.join(__dirname, '..', 'src', 'fr-women-standings.json');
+const ARCHIVE_PATH = path.join(__dirname, 'fr-women-teams-archive.json');
+// Champs corrigés/saisis à la main : pour un club déjà connu, la valeur
+// existante l'emporte sur l'API (qui ne fait que combler les manques).
+const KEEP_FIELDS = [
+  'displayName',
+  'shortDisplayName',
+  'latitude',
+  'longitude',
+  'logo',
+  'venue',
+  'location',
+  'capacity',
+  'website',
+  'honours',
+];
 const OUT_DIR = process.env.FRW_OUT || path.join(__dirname, '..', 'src');
 const outTeams = path.join(OUT_DIR, 'fr-women-teams.json');
 const outStandings = path.join(OUT_DIR, 'fr-women-standings.json');
@@ -46,6 +65,8 @@ const NAME_OVERRIDES = {
   '17001062691': { name: 'Union Féminine Angers Basket 49', short: 'Angers' },
   // D2 — Ligue Féminine 2
   '7924': { name: 'BC La Tronche-Meylan', short: 'Meylan' },
+  '10357': { name: 'CO Trith Basket Porte du Hainaut', short: 'Trith-Saint-Léger' },
+  '8112': { name: 'CJS Geispolsheim', short: 'Geispolsheim' },
   '200000002674033': { name: 'Pays Voironnais Basket', short: 'Voiron' },
   '10938': { name: 'Montbrison Féminines Basket', short: 'Montbrison' },
   '10710': { name: 'Feytiat Basket 87', short: 'Feytiat' },
@@ -96,6 +117,8 @@ const PROBALLERS_ID = {
   '8053': 13653, // SI Graffenstaden (Illkirch)
   '11282': 15342, // Aplemont Le Havre
   '11521': 13656, // Centre Fédéral (INSEP)
+  '10357': 15708, // Trith
+  '8112': 15707, // Geispolsheim
 };
 const proballersLogo = (pbId) => `https://www.proballers.com/api/getTeamLogo?id=${pbId}&width=200`;
 
@@ -168,14 +191,40 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
   const token = await getToken();
   console.log('Token FFBB OK.');
 
-  // Réutilise les coords déjà géocodées (évite de re-géocoder à chaque run).
-  let prevCoords = {};
-  try {
-    const prev = JSON.parse(fs.readFileSync(TEAMS_PATH, 'utf8'));
-    prev.forEach((t) => (prevCoords[t.id] = { latitude: t.latitude, longitude: t.longitude }));
-  } catch (e) {
-    /* premier run */
-  }
+  // Réutilise les fiches précédentes (coords déjà géocodées, palmarès).
+  const readJson = (p) => {
+    try {
+      return JSON.parse(fs.readFileSync(p, 'utf8'));
+    } catch (e) {
+      return [];
+    }
+  };
+  const prevActive = readJson(TEAMS_PATH);
+  const prevById = {};
+  [...readJson(ARCHIVE_PATH), ...prevActive].forEach((t) => (prevById[t.id] = t));
+  const prevCoords = {};
+  Object.values(prevById).forEach(
+    (t) => (prevCoords[t.id] = { latitude: t.latitude, longitude: t.longitude })
+  );
+
+  // Poules D1/D2 de la saison en cours (l'API ne liste que la saison courante).
+  const comps = (
+    await ffbb(
+      'items/ffbbserver_competitions?limit=50&fields=id,nom,code,poules' +
+        '&filter[sexe][_eq]=F&filter[pro][_eq]=true&filter[typeCompetition][_eq]=DIV',
+      token
+    )
+  ).data;
+  const isD2 = (c) => c.code === 'LF2' || /FEMININE 2/i.test(c.nom);
+  const d1 = comps.filter((c) => !isD2(c));
+  const d2 = comps.filter(isD2);
+  if (d1.length !== 1 || d2.length !== 1 || !d1[0].poules?.length || !d2[0].poules?.length)
+    throw new Error('Compétitions D1/D2 ambiguës : ' + comps.map((c) => `${c.code} ${c.nom}`).join(' | '));
+  const DIVISIONS = [
+    { division: 'd1', pouleId: d1[0].poules[0] },
+    { division: 'd2', pouleId: d2[0].poules[0] },
+  ];
+  console.log(`Saison ${SEASON} : D1 ${d1[0].nom} (${DIVISIONS[0].pouleId}), D2 ${d2[0].nom} (${DIVISIONS[1].pouleId})`);
 
   const teams = [];
   const standings = {};
@@ -263,11 +312,14 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
         capacity: capacity ? String(capacity) : null,
         website,
       });
+      const team = teams[teams.length - 1];
+      const prev = prevById[orgId];
+      if (prev) KEEP_FIELDS.forEach((f) => prev[f] != null && (team[f] = prev[f]));
 
       standings[division].push({
         rank: +r.position,
         teamId: orgId,
-        name: displayName,
+        name: team.displayName,
         wins,
         losses,
         winPct: gp ? (wins / gp) * 100 : null,
@@ -276,9 +328,15 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
         diff: r.difference != null ? +r.difference : null,
         lastFive: [],
       });
-      console.log(`  ${r.position}. ${displayName} (${wins}-${losses}) ${venue || '—'} @ ${city || '?'} [${coords.latitude ? '📍' : 'no geo'}]`);
+      console.log(`  ${r.position}. ${team.displayName} (${wins}-${losses}) ${venue || '—'} @ ${city || '?'} [${coords.latitude ? '📍' : 'no geo'}]`);
     }
   }
+
+  if (teams.length < 20) throw new Error(`Seulement ${teams.length} clubs : réponse API suspecte, rien n'est écrit.`);
+  const ids = new Set(teams.map((t) => t.id));
+  const archive = Object.values(prevById).filter((t) => !ids.has(t.id));
+  prevActive.filter((t) => !ids.has(t.id)).forEach((t) => console.log(`  ↓ quitte D1/D2 (archivé) : ${t.displayName}`));
+  fs.writeFileSync(ARCHIVE_PATH, JSON.stringify(archive, null, 2) + '\n');
 
   const meta = { updated: new Date().toISOString().slice(0, 10), season: SEASON, source: 'api.ffbb.app' };
   fs.writeFileSync(outTeams, JSON.stringify(teams, null, 2) + '\n');

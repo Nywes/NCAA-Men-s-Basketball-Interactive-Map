@@ -1,0 +1,95 @@
+[
+  {
+    "id": "136263",
+    "displayName": "AS Monaco Basket",
+    "shortDisplayName": "Monaco",
+    "division": "elite",
+    "latitude": 43.727905,
+    "longitude": 7.415,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/fl2ti01649168915.png",
+    "venue": "Salle Gaston Médecin",
+    "location": "Monaco",
+    "color": "FF0000",
+    "formedYear": "1928",
+    "website": "asmonaco.basketball",
+    "capacity": "5000",
+    "lnbId": 1791,
+    "honours": {
+      "titles": [
+        2023,
+        2024,
+        2026
+      ],
+      "cups": {
+        "count": 2,
+        "years": [
+          2023,
+          2026
+        ]
+      },
+      "leadersCup": {
+        "count": 4,
+        "years": [
+          2016,
+          2017,
+          2018,
+          2026
+        ]
+      },
+      "european": [
+        {
+          "label": "EuroCup",
+          "years": [
+            2021
+          ]
+        }
+      ]
+    },
+    "secondaryColor": "231F20",
+    "tertiaryColor": "D50909"
+  },
+  {
+    "id": "136265",
+    "displayName": "ESSM Le Portel",
+    "shortDisplayName": "Le Portel",
+    "division": "elite",
+    "latitude": 50.71716,
+    "longitude": 1.584475,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/yhwnwu1649168935.png",
+    "venue": "Le Chaudron",
+    "location": "Le Portel",
+    "color": "2AA95B",
+    "formedYear": "1931",
+    "website": "",
+    "capacity": "3500",
+    "lnbId": 1788,
+    "honours": {
+      "elite2": {
+        "count": 1,
+        "years": [
+          2025
+        ]
+      }
+    },
+    "secondaryColor": "DC820C",
+    "tertiaryColor": "178942"
+  },
+  {
+    "id": "149348",
+    "displayName": "Challans Basket",
+    "shortDisplayName": "Vendée Challans Basket",
+    "division": "prob",
+    "latitude": 46.842774,
+    "longitude": -1.87912,
+    "logo": "https://r2.thesportsdb.com/images/media/team/badge/96kngc1727034557.png",
+    "venue": "Salle Michel-Vrignaud",
+    "location": "Challans",
+    "color": null,
+    "alternateColor": null,
+    "formedYear": "0",
+    "website": "www.challans-basket.com",
+    "capacity": "2452",
+    "lnbId": 1800,
+    "honours": {}
+  }
+]

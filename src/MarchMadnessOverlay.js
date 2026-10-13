@@ -436,7 +436,11 @@ export default function MarchMadnessOverlay({
         {error && <div className="mm-empty">Couldn't load the bracket — try again later.</div>}
         {!error && !games && <div className="mm-empty">Loading bracket…</div>}
         {games && games.length === 0 && (
-          <div className="mm-empty">No tournament data for {year}.</div>
+          <div className="mm-empty">
+            {+year === 2020
+              ? 'The 2020 tournament was cancelled (COVID-19).'
+              : `No tournament data for ${year}.`}
+          </div>
         )}
         {games && games.length > 0 && !isSmallScreen && (
           <>

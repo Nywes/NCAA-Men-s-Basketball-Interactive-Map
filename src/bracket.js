@@ -35,6 +35,8 @@ export const shortRegion = (name) =>
 function parseEvent(e) {
   const c = e.competitions && e.competitions[0];
   if (!c) return null;
+  // 2020 (tournoi annulé) : ESPN renvoie des matchs fantômes "TBD"
+  if (((c.status || {}).type || {}).name === 'STATUS_CANCELED') return null;
   const head = ((c.notes || [])[0] || {}).headline || '';
   const parts = head.split(' - ');
   const round = normRound(parts[parts.length - 1]);
@@ -68,7 +70,8 @@ export function fetchBracket(gender, year) {
   if (!CACHE[key]) {
     const url = `https://site.api.espn.com/apis/site/v2/sports/basketball/${sportPath(
       gender
-    )}/scoreboard?dates=${year}0310-${year}0415&groups=100&limit=120`;
+    )}/scoreboard?dates=${year}&seasontype=3&groups=100&limit=120`;
+    // NB : ESPN refuse désormais les plages de dates (400) -> saison + postseason.
     CACHE[key] = fetch(url)
       .then((r) => r.json())
       .then((d) => (d.events || []).map(parseEvent).filter(Boolean))

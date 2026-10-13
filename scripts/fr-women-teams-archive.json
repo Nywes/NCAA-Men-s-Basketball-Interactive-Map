@@ -1,0 +1,30 @@
+[
+  {
+    "id": "8053",
+    "displayName": "SI Graffenstaden",
+    "shortDisplayName": "Graffenstaden",
+    "division": "d2",
+    "latitude": 48.520513,
+    "longitude": 7.726281,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=13653&width=200",
+    "venue": "Salle de la S.i.g.",
+    "location": "Illkirch-Graffenstaden",
+    "color": null,
+    "capacity": null,
+    "website": "www.sigassociation.alsace"
+  },
+  {
+    "id": "11282",
+    "displayName": "Aplemont Le Havre Basket",
+    "shortDisplayName": "Le Havre",
+    "division": "d2",
+    "latitude": 49.50835,
+    "longitude": 0.162952,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=15342&width=200",
+    "venue": "Salle Pierre de Coubertin",
+    "location": "Le Havre",
+    "color": null,
+    "capacity": null,
+    "website": "www.aplemontlehavrebasket.com"
+  }
+]

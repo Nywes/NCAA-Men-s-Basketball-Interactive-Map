@@ -95,6 +95,11 @@ Dès la fin des deux tournois NCAA :
 - **Renommage / rebranding** d'une fac (ex. George Washington → Revolutionaries, IUPUI → IU Indianapolis) → champ `name`.
 - **Nouvelles équipes D1 / passages en D2** → ajout/retrait d'équipe (rappel : The Citadel & VMI n'ont **pas** d'équipe féminine).
 
+## 🇫🇷 France — rentrée (septembre)
+- Les scripts (workflow quotidien) détectent **seuls** la nouvelle saison LNB/FFBB, déplacent les clubs sortants (relégués, engagement refusé…) dans `scripts/fr-teams-archive.json` / `scripts/fr-women-teams-archive.json` (palmarès conservé, retour auto s'ils remontent).
+- **Hommes : un club promu jamais vu fait échouer le workflow** (« Clubs sans fiche ») → l'ajouter à la main dans `src/fr-teams.json` (id libre, `displayName`, coords, salle, logo, `honours`) + au besoin une entrée `NAME_OVERRIDES` dans `scripts/update-fr-data.js`, puis relancer.
+- Femmes : un nouveau club est créé automatiquement (coords géocodées) → ajouter juste son nom propre (`NAME_OVERRIDES`) et son logo Proballers (`PROBALLERS_ID`) dans `scripts/update-fr-women-data.js`. Les champs déjà remplis (salle, nom, coords, palmarès) ne sont jamais écrasés par l'API.
+
 ---
 
 ## ✅ Checklist express « après March Madness »

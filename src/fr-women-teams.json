@@ -11,49 +11,22 @@
     "location": "Mont-de-Marsan",
     "color": null,
     "capacity": null,
-    "website": "www.basket-landes.com"
-  },
-  {
-    "id": "9817",
-    "displayName": "Bourges Basket",
-    "shortDisplayName": "Bourges",
-    "division": "d1",
-    "latitude": 47.082785,
-    "longitude": 2.385387,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=2654&width=200",
-    "venue": "Palais des Sports Prado",
-    "location": "Bourges",
-    "color": null,
-    "capacity": null,
-    "website": "cjmbb.fr"
-  },
-  {
-    "id": "10045",
-    "displayName": "Flammes Carolo Basket",
-    "shortDisplayName": "Charleville",
-    "division": "d1",
-    "latitude": 49.757464,
-    "longitude": 4.706943,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=2656&width=200",
-    "venue": "Guinguette Arena",
-    "location": "Charleville-Mezieres",
-    "color": null,
-    "capacity": null,
-    "website": "fan.lesflammes.com/index.html"
-  },
-  {
-    "id": "9603",
-    "displayName": "Landerneau Bretagne Basket",
-    "shortDisplayName": "Landerneau",
-    "division": "d1",
-    "latitude": 48.444727,
-    "longitude": -4.263135,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=13330&width=200",
-    "venue": "Salle Multisports de Lavallot",
-    "location": "Landerneau",
-    "color": null,
-    "capacity": null,
-    "website": "www.landerneau-bretagne-basket.fr"
+    "website": "www.basket-landes.com",
+    "honours": {
+      "titles": [
+        2021,
+        2025,
+        2026
+      ],
+      "cups": {
+        "count": 3,
+        "years": [
+          2022,
+          2023,
+          2026
+        ]
+      }
+    }
   },
   {
     "id": "10596",
@@ -67,21 +40,23 @@
     "location": "Lattes",
     "color": null,
     "capacity": null,
-    "website": "www.blma.fr"
-  },
-  {
-    "id": "10276",
-    "displayName": "ESB Villeneuve-d'Ascq",
-    "shortDisplayName": "Villeneuve-d'Ascq",
-    "division": "d1",
-    "latitude": 50.627176,
-    "longitude": 3.135095,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=2664&width=200",
-    "venue": "Voltaire",
-    "location": "Villeneuve-d'Ascq",
-    "color": null,
-    "capacity": null,
-    "website": null
+    "website": "www.blma.fr",
+    "honours": {
+      "titles": [
+        2014,
+        2016
+      ],
+      "cups": {
+        "count": 5,
+        "years": [
+          2011,
+          2013,
+          2015,
+          2016,
+          2021
+        ]
+      }
+    }
   },
   {
     "id": "9411",
@@ -95,35 +70,16 @@
     "location": "Charnay-les-Macon",
     "color": null,
     "capacity": null,
-    "website": "\"charnaybasket.fr\""
-  },
-  {
-    "id": "9849",
-    "displayName": "C'Chartres Basket Féminin",
-    "shortDisplayName": "Chartres",
-    "division": "d1",
-    "latitude": 48.450595,
-    "longitude": 1.504583,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=13659&width=200",
-    "venue": "Halle Jean Cochet",
-    "location": "Chartres",
-    "color": null,
-    "capacity": null,
-    "website": "www.cchartresbasketfeminin.com"
-  },
-  {
-    "id": "9196",
-    "displayName": "Roche Vendée Basket",
-    "shortDisplayName": "La Roche-sur-Yon",
-    "division": "d1",
-    "latitude": 46.671235,
-    "longitude": -1.404553,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=449&width=200",
-    "venue": "Salle des Oudairies",
-    "location": "La Roche-sur-Yon",
-    "color": null,
-    "capacity": null,
-    "website": "rvbc.fr"
+    "website": "\"charnaybasket.fr\"",
+    "honours": {
+      "elite2": {
+        "count": 2,
+        "years": [
+          2019,
+          2023
+        ]
+      }
+    }
   },
   {
     "id": "11158",
@@ -133,11 +89,216 @@
     "latitude": 45.724135,
     "longitude": 4.828259,
     "logo": "https://www.proballers.com/api/getTeamLogo?id=2659&width=200",
-    "venue": "Gymnase Victor Grignard",
+    "venue": "Palais des Sports",
     "location": "Lyon",
     "color": null,
     "capacity": null,
-    "website": "fclyonasvelfeminin.com"
+    "website": "fclyonasvelfeminin.com",
+    "honours": {
+      "titles": [
+        2019,
+        2023
+      ],
+      "european": [
+        {
+          "label": "EuroCup Women",
+          "years": [
+            2023
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "10045",
+    "displayName": "Flammes Carolo Basket",
+    "shortDisplayName": "Charleville",
+    "division": "d1",
+    "latitude": 49.757464,
+    "longitude": 4.706943,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=2656&width=200",
+    "venue": "Guinguette Arena",
+    "location": "Charleville-Mezieres",
+    "color": null,
+    "capacity": null,
+    "website": "fan.lesflammes.com/index.html",
+    "honours": {
+      "cups": {
+        "count": 1,
+        "years": [
+          2025
+        ]
+      }
+    }
+  },
+  {
+    "id": "9817",
+    "displayName": "Bourges Basket",
+    "shortDisplayName": "Bourges",
+    "division": "d1",
+    "latitude": 47.082785,
+    "longitude": 2.385387,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=2654&width=200",
+    "venue": "Palais des Sports Prado",
+    "location": "Bourges",
+    "color": null,
+    "capacity": null,
+    "website": "cjmbb.fr",
+    "honours": {
+      "titles": [
+        1995,
+        1996,
+        1997,
+        1998,
+        1999,
+        2000,
+        2006,
+        2008,
+        2009,
+        2011,
+        2012,
+        2013,
+        2015,
+        2018,
+        2022
+      ],
+      "cups": {
+        "count": 12,
+        "years": [
+          1990,
+          1991,
+          2005,
+          2006,
+          2008,
+          2009,
+          2010,
+          2014,
+          2017,
+          2018,
+          2019,
+          2024
+        ]
+      },
+      "european": [
+        {
+          "label": "EuroLeague Women",
+          "years": [
+            1997,
+            1998,
+            2001
+          ]
+        },
+        {
+          "label": "EuroCup Women",
+          "years": [
+            2016,
+            2022
+          ]
+        },
+        {
+          "label": "Ronchetti Cup",
+          "years": [
+            1995
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "10276",
+    "displayName": "ESB Villeneuve-d'Ascq",
+    "shortDisplayName": "Villeneuve-d'Ascq",
+    "division": "d1",
+    "latitude": 50.627176,
+    "longitude": 3.135095,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=2664&width=200",
+    "venue": "Palacium",
+    "location": "Villeneuve-d'Ascq",
+    "color": null,
+    "capacity": null,
+    "website": null,
+    "honours": {
+      "titles": [
+        2017,
+        2024
+      ],
+      "european": [
+        {
+          "label": "EuroCup Women",
+          "years": [
+            2015,
+            2025
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "9603",
+    "displayName": "Landerneau Bretagne Basket",
+    "shortDisplayName": "Landerneau",
+    "division": "d1",
+    "latitude": 48.444727,
+    "longitude": -4.263135,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=13330&width=200",
+    "venue": "La Cimenterie",
+    "location": "Landerneau",
+    "color": null,
+    "capacity": null,
+    "website": "www.landerneau-bretagne-basket.fr",
+    "honours": {
+      "elite2": {
+        "count": 1,
+        "years": [
+          2018
+        ]
+      }
+    }
+  },
+  {
+    "id": "7924",
+    "displayName": "BC La Tronche-Meylan",
+    "shortDisplayName": "Meylan",
+    "division": "d1",
+    "latitude": 45.2108,
+    "longitude": 5.799018,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=13658&width=200",
+    "venue": "Gymnase Charlaix Maupertuis",
+    "location": "Meylan",
+    "color": null,
+    "capacity": null,
+    "website": "bctm-feminin.fr",
+    "honours": {
+      "elite2": {
+        "count": 1,
+        "years": [
+          2026
+        ]
+      }
+    }
+  },
+  {
+    "id": "17001062691",
+    "displayName": "Union Féminine Angers Basket 49",
+    "shortDisplayName": "Angers",
+    "division": "d1",
+    "latitude": 47.459887,
+    "longitude": -0.531725,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=2941&width=200",
+    "venue": "Salle Jean Bouin",
+    "location": "Angers",
+    "color": null,
+    "capacity": null,
+    "website": "ufab49.com",
+    "honours": {
+      "elite2": {
+        "count": 2,
+        "years": [
+          2013,
+          2021
+        ]
+      }
+    }
   },
   {
     "id": "405001018666",
@@ -151,35 +312,52 @@
     "location": "Toulouse",
     "color": null,
     "capacity": null,
-    "website": "www.tmb-basket.com"
+    "website": "www.tmb-basket.com",
+    "honours": {
+      "elite2": {
+        "count": 2,
+        "years": [
+          2022,
+          2025
+        ]
+      }
+    }
   },
   {
-    "id": "17001062691",
-    "displayName": "Union Féminine Angers Basket 49",
-    "shortDisplayName": "Angers",
+    "id": "9849",
+    "displayName": "C'Chartres Basket Féminin",
+    "shortDisplayName": "Chartres",
     "division": "d1",
-    "latitude": 47.459887,
-    "longitude": -0.531725,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=2941&width=200",
-    "venue": "Salle de l'Europe",
-    "location": "Angers",
+    "latitude": 48.450595,
+    "longitude": 1.504583,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=13659&width=200",
+    "venue": "Halle Jean Cochet",
+    "location": "Chartres",
     "color": null,
     "capacity": null,
-    "website": "ufab49.com"
+    "website": "www.cchartresbasketfeminin.com",
+    "honours": {
+      "elite2": {
+        "count": 1,
+        "years": [
+          2024
+        ]
+      }
+    }
   },
   {
-    "id": "7924",
-    "displayName": "BC La Tronche-Meylan",
-    "shortDisplayName": "Meylan",
+    "id": "200000002673011",
+    "displayName": "Monaco Basket",
+    "shortDisplayName": "Monaco",
     "division": "d2",
-    "latitude": 45.2108,
-    "longitude": 5.799018,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=13658&width=200",
-    "venue": "Gymnase Charlaix Maupertuis",
-    "location": "Meylan",
+    "latitude": 43.747002,
+    "longitude": 7.430189,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=14717&width=200",
+    "venue": "Gymnase l'Annonciade",
+    "location": "Monaco",
     "color": null,
     "capacity": null,
-    "website": "bctm-feminin.fr"
+    "website": "www.mba-monacobasket.com"
   },
   {
     "id": "200000002674033",
@@ -196,18 +374,116 @@
     "website": "www.pvbc.fr"
   },
   {
-    "id": "10938",
-    "displayName": "Montbrison Féminines Basket",
-    "shortDisplayName": "Montbrison",
+    "id": "71001005255",
+    "displayName": "Cavigal Nice Basket 06",
+    "shortDisplayName": "Nice",
     "division": "d2",
-    "latitude": 45.608845,
-    "longitude": 4.059212,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=13657&width=200",
-    "venue": "Complexe Andre Dubruc",
-    "location": "Montbrison",
+    "latitude": 43.714815,
+    "longitude": 7.291419,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=2662&width=200",
+    "venue": "Complexe Sportif Serge Leyrit",
+    "location": "Nice",
     "color": null,
     "capacity": null,
-    "website": "www.montbrison-forezbasketfeminin.com"
+    "website": "www.cavigalnicebasket06.com",
+    "honours": {
+      "titles": [
+        1939,
+        1943
+      ],
+      "cups": {
+        "count": 1,
+        "years": [
+          1986
+        ]
+      },
+      "elite2": {
+        "count": 2,
+        "years": [
+          2011,
+          2015
+        ]
+      }
+    }
+  },
+  {
+    "id": "11415",
+    "displayName": "USO Mondeville",
+    "shortDisplayName": "Mondeville",
+    "division": "d2",
+    "latitude": 49.178691,
+    "longitude": -0.316898,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=2660&width=200",
+    "venue": "La Halle Bérégovoy",
+    "location": "Mondeville",
+    "color": null,
+    "capacity": null,
+    "website": "mondevillebasket.com",
+    "honours": {
+      "cups": {
+        "count": 2,
+        "years": [
+          1995,
+          1999
+        ]
+      }
+    }
+  },
+  {
+    "id": "10108",
+    "displayName": "Champagne Basket Féminin",
+    "shortDisplayName": "Reims",
+    "division": "d2",
+    "latitude": 49.24355,
+    "longitude": 4.025529,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=13655&width=200",
+    "venue": "Complexe René Tys",
+    "location": "Reims",
+    "color": null,
+    "capacity": null,
+    "website": "champagne-basket-feminin.fr"
+  },
+  {
+    "id": "10357",
+    "displayName": "CO Trith Basket Porte du Hainaut",
+    "shortDisplayName": "Trith-Saint-Léger",
+    "division": "d2",
+    "latitude": 50.323996,
+    "longitude": 3.485017,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=15708&width=200",
+    "venue": "Salle Gilbert Huguet",
+    "location": "Trith-Saint-Léger",
+    "color": null,
+    "capacity": null,
+    "website": "cotrithbasketporteduhainaut.kalisport.com"
+  },
+  {
+    "id": "8112",
+    "displayName": "CJS Geispolsheim",
+    "shortDisplayName": "Geispolsheim",
+    "division": "d2",
+    "latitude": 48.516657,
+    "longitude": 7.652864,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=15707&width=200",
+    "venue": "Complexe sportif de Geispolsheim",
+    "location": "Geispolsheim",
+    "color": null,
+    "capacity": null,
+    "website": "cjs-geispolsheim.fr"
+  },
+  {
+    "id": "10210",
+    "displayName": "AS Aulnoye",
+    "shortDisplayName": "Aulnoye",
+    "division": "d2",
+    "latitude": 50.196791,
+    "longitude": 3.836415,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=13660&width=200",
+    "venue": "Salle Nelson Mandela",
+    "location": "Bavay",
+    "color": null,
+    "capacity": null,
+    "website": "www.aulnoye-basket.fr"
   },
   {
     "id": "10710",
@@ -224,18 +500,18 @@
     "website": "www.feytiatbasket87.com"
   },
   {
-    "id": "200000002673011",
-    "displayName": "Monaco Basket",
-    "shortDisplayName": "Monaco",
+    "id": "10938",
+    "displayName": "Montbrison Féminines Basket",
+    "shortDisplayName": "Montbrison",
     "division": "d2",
-    "latitude": 43.7384,
-    "longitude": 7.4246,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=14717&width=200",
-    "venue": "Gymnase l'Annonciade",
-    "location": "Monaco",
+    "latitude": 45.608845,
+    "longitude": 4.059212,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=13657&width=200",
+    "venue": "Complexe Andre Dubruc",
+    "location": "Montbrison",
     "color": null,
     "capacity": null,
-    "website": "www.mba-monacobasket.com"
+    "website": "www.montbrison-forezbasketfeminin.com"
   },
   {
     "id": "10354",
@@ -252,102 +528,40 @@
     "website": "club.quomodo.com/usaph/accueil/bienvenue.html"
   },
   {
-    "id": "11415",
-    "displayName": "USO Mondeville",
-    "shortDisplayName": "Mondeville",
+    "id": "9196",
+    "displayName": "Roche Vendée Basket",
+    "shortDisplayName": "La Roche-sur-Yon",
     "division": "d2",
-    "latitude": 49.178691,
-    "longitude": -0.316898,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=2660&width=200",
-    "venue": "Halle des Sports P Beregovoy",
-    "location": "Mondeville",
+    "latitude": 46.671235,
+    "longitude": -1.404553,
+    "logo": "https://www.proballers.com/api/getTeamLogo?id=449&width=200",
+    "venue": "Salle des Oudairies",
+    "location": "La Roche-sur-Yon",
     "color": null,
     "capacity": null,
-    "website": "mondevillebasket.com"
-  },
-  {
-    "id": "10108",
-    "displayName": "Champagne Basket Féminin",
-    "shortDisplayName": "Reims",
-    "division": "d2",
-    "latitude": 49.24355,
-    "longitude": 4.025529,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=13655&width=200",
-    "venue": "Gymnase Roland Bourgoin",
-    "location": "Reims",
-    "color": null,
-    "capacity": null,
-    "website": "champagne-basket-feminin.fr"
+    "website": "rvbc.fr",
+    "honours": {
+      "elite2": {
+        "count": 1,
+        "years": [
+          2017
+        ]
+      }
+    }
   },
   {
     "id": "11347",
-    "displayName": "GCO Bihorel",
-    "shortDisplayName": "Bihorel",
+    "displayName": "Rouen Métropole Bihorel Basket",
+    "shortDisplayName": "Rouen",
     "division": "d2",
     "latitude": 49.447852,
     "longitude": 1.063275,
     "logo": "https://www.proballers.com/api/getTeamLogo?id=15455&width=200",
-    "venue": "Salle Pierre de Coubertin",
-    "location": "Critot",
+    "venue": "Kindarena",
+    "location": "Rouen",
     "color": null,
     "capacity": null,
     "website": null
-  },
-  {
-    "id": "10210",
-    "displayName": "AS Aulnoye",
-    "shortDisplayName": "Aulnoye",
-    "division": "d2",
-    "latitude": 50.196791,
-    "longitude": 3.836415,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=13660&width=200",
-    "venue": "Mandela",
-    "location": "Bavay",
-    "color": null,
-    "capacity": null,
-    "website": "www.aulnoye-basket.fr"
-  },
-  {
-    "id": "71001005255",
-    "displayName": "Cavigal Nice Basket 06",
-    "shortDisplayName": "Nice",
-    "division": "d2",
-    "latitude": 43.714815,
-    "longitude": 7.291419,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=2662&width=200",
-    "venue": "Complexe Sportif Serge Leyrit",
-    "location": "Nice",
-    "color": null,
-    "capacity": null,
-    "website": "www.cavigalnicebasket06.com"
-  },
-  {
-    "id": "8053",
-    "displayName": "SI Graffenstaden",
-    "shortDisplayName": "Graffenstaden",
-    "division": "d2",
-    "latitude": 48.520513,
-    "longitude": 7.726281,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=13653&width=200",
-    "venue": "Salle de la S.i.g.",
-    "location": "Illkirch-Graffenstaden",
-    "color": null,
-    "capacity": null,
-    "website": "www.sigassociation.alsace"
-  },
-  {
-    "id": "11282",
-    "displayName": "Aplemont Le Havre Basket",
-    "shortDisplayName": "Le Havre",
-    "division": "d2",
-    "latitude": 49.50835,
-    "longitude": 0.162952,
-    "logo": "https://www.proballers.com/api/getTeamLogo?id=15342&width=200",
-    "venue": "Salle Pierre de Coubertin",
-    "location": "Le Havre",
-    "color": null,
-    "capacity": null,
-    "website": "www.aplemontlehavrebasket.com"
   },
   {
     "id": "11521",
@@ -357,7 +571,7 @@
     "latitude": 48.831905,
     "longitude": 2.449235,
     "logo": "https://www.proballers.com/api/getTeamLogo?id=13656&width=200",
-    "venue": "Insep C.s Nelson Paillou (1)",
+    "venue": "Complexe Nelson Paillou",
     "location": "Paris 12e  Arrondissement",
     "color": null,
     "capacity": null,

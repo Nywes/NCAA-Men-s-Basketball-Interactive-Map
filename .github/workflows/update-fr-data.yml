@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/fr-rosters.json src/fr-standings.json src/fr-teams.json src/fr-women-teams.json src/fr-women-standings.json src/euroleague-teams.json src/euroleague-rosters.json src/euroleague-standings.json src/euroleague-analytics.json src/euroleague-rivalries.json src/euroleague-bracket.json
+          git add scripts/fr-teams-archive.json scripts/fr-women-teams-archive.json src/fr-rosters.json src/fr-standings.json src/fr-teams.json src/fr-women-teams.json src/fr-women-standings.json src/euroleague-teams.json src/euroleague-rosters.json src/euroleague-standings.json src/euroleague-analytics.json src/euroleague-rivalries.json src/euroleague-bracket.json
           if git diff --cached --quiet; then
             echo "Pas de changement de données."
             echo "changed=false" >> "$GITHUB_OUTPUT"
