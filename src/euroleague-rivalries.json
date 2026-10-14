@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-15",
+  "updated": "2026-10-14",
   "seasonsRange": "E2018–E2025",
   "source": "api-live.euroleague.net (résultats agrégés localement)",
   "byClub": {
@@ -188,7 +188,7 @@
       "opponent": {
         "id": "ULK",
         "name": "Fenerbahce Beko Istanbul",
-        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHN/c91466d1-a620-4c0c-b47b-4a0cd9eee944.png"
+        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png"
       },
       "wins": 7,
       "losses": 9,

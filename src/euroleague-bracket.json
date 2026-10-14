@@ -1,7 +1,7 @@
 {
   "season": "E2025",
   "seasonLabel": "2025-26",
-  "updated": "2026-07-15T07:20:51.881Z",
+  "updated": "2026-10-14T10:00:39.462Z",
   "playoffs": [
     {
       "code": "A",
@@ -30,7 +30,7 @@
       "winner": {
         "code": "ULK",
         "name": "Fenerbahce",
-        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHN/c91466d1-a620-4c0c-b47b-4a0cd9eee944.png",
+        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
         "wins": 3
       },
       "loser": {
@@ -105,7 +105,7 @@
       "loser": {
         "code": "ULK",
         "name": "Fenerbahce",
-        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHN/c91466d1-a620-4c0c-b47b-4a0cd9eee944.png",
+        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
         "score": 61
       },
       "date": "2026-05-22T15:00:00Z",
