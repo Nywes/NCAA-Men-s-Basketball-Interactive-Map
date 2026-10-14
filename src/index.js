@@ -45,14 +45,30 @@ const PAGE_META = {
   },
 };
 
+// Méta statiques de la page d'entrée (/, /fr/, /france/, /europe/ — cf.
+// scripts/seo-pages.js), capturées au chargement avant toute modification.
+const descTag = document.querySelector('meta[name="description"]');
+const ENTRY_META = {
+  section: document.documentElement.dataset.entry,
+  title: document.title,
+  description: descTag ? descTag.getAttribute('content') : '',
+  lang: document.documentElement.lang,
+};
+
 function usePageMeta(leagueId, gender) {
   useEffect(() => {
-    const meta = PAGE_META[`${leagueId}:${gender}`] || PAGE_META[leagueId];
-    if (!meta) return;
+    // Dans la section d'entrée : on garde (ou restaure) les méta statiques de la page.
+    const meta =
+      ENTRY_META.section === leagueId
+        ? ENTRY_META
+        : {
+            ...(PAGE_META[`${leagueId}:${gender}`] || PAGE_META[leagueId]),
+            lang: leagueId === 'france' ? 'fr' : 'en',
+          };
+    if (!meta.title) return;
     document.title = meta.title;
-    const desc = document.querySelector('meta[name="description"]');
-    if (desc) desc.setAttribute('content', meta.description);
-    document.documentElement.lang = leagueId === 'france' ? 'fr' : 'en';
+    if (descTag) descTag.setAttribute('content', meta.description);
+    document.documentElement.lang = meta.lang;
   }, [leagueId, gender]);
 }
 
