@@ -1,6 +1,6 @@
 {
-  "short_name": "NCAA Basketball",
-  "name": "NCAA College Men Basketball Interactive Map",
+  "short_name": "Basketball Map",
+  "name": "Interactive Basketball Map — NCAA, French LNB & EuroLeague",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,11 +10,12 @@
     {
       "src": "basketball.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "Interactive map of NCAA Division I college basketball, French pro basketball and EuroLeague teams: rosters, standings, legends and March Madness brackets."
 }

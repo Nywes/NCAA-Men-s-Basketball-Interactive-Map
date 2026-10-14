@@ -1,6 +1,12 @@
-# NCAA Men's Basketball — Interactive Map
+# Interactive Basketball Map — NCAA, French LNB & EuroLeague
 
-Carte interactive (Leaflet) des programmes de basket NCAA D1 masculin : chaque fac est un marqueur sur la carte, avec son roster, son classement et ses joueurs notables (anciens passés en NBA, palmarès, maillots retirés…).
+### 👉 **[Open the live map](https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/)**
+
+[![Interactive NCAA basketball map](public/og-image.jpg)](https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/)
+
+An interactive map of **every NCAA Division I men's and women's college basketball team**, every **French professional club** (Betclic ÉLITE, ÉLITE 2, Wonderligue, LF2) and every **EuroLeague** team: rosters, player stats, standings, arenas, NBA/WNBA legends, honours and the full **March Madness** bracket history.
+
+Carte interactive (Leaflet) des programmes de basket NCAA D1 (hommes et femmes), des clubs pro français et de l'EuroLeague : chaque équipe est un marqueur sur la carte, avec son roster, son classement et ses joueurs notables (anciens passés en NBA, palmarès…).
 
 App **React** (Create React App) + **react-leaflet**, déployée sur GitHub Pages.
 

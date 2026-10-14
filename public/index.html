@@ -5,42 +5,83 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="theme-color" content="#000000">
-	<!--
-      manifest.json provides metadata used when your web app is added to the
-      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
-    -->
+	<meta name="google-site-verification" content="MBm0Fs3yHEW6juI_DKguYHbFrBA9Lq-d2kYwQBFH8PM" />
+
+	<!-- ═══ SEO ═══ -->
+	<title>Interactive Basketball Map — NCAA, French LNB & EuroLeague | Rosters, Standings, Legends</title>
+	<meta name="description" content="Explore every NCAA Division I men's and women's college basketball team, French Betclic ÉLITE, ÉLITE 2, Wonderligue & LF2 clubs and EuroLeague teams on an interactive map: rosters, player stats, standings, arenas, NBA legends, honours and the full March Madness bracket.">
+	<meta name="keywords" content="NCAA basketball map, college basketball map, interactive basketball map, NCAA Division I teams map, women's college basketball, March Madness bracket, NCAA tournament history, college basketball rosters, NBA players by college, carte basket France, carte clubs Betclic Elite, Elite 2, LNB, Wonderligue, LF2, EuroLeague map">
+	<meta name="robots" content="index, follow, max-image-preview:large">
+	<meta name="author" content="Nywes">
+	<link rel="canonical" href="https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/">
+
+	<!-- Aperçu de partage (Facebook, LinkedIn, Discord, WhatsApp…) -->
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="Interactive Basketball Map">
+	<meta property="og:title" content="Interactive Basketball Map — NCAA, French LNB & EuroLeague">
+	<meta property="og:description" content="Every NCAA D1 college basketball program, French pro club and EuroLeague team on one interactive map: rosters, standings, legends, honours and March Madness brackets.">
+	<meta property="og:url" content="https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/">
+	<meta property="og:image" content="https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/og-image.jpg">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:image:alt" content="Map of the United States covered with NCAA Division I basketball team logos">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:locale:alternate" content="fr_FR">
+	<!-- Aperçu X / Twitter -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Interactive Basketball Map — NCAA, French LNB & EuroLeague">
+	<meta name="twitter:description" content="Every NCAA D1 college basketball program, French pro club and EuroLeague team on one interactive map.">
+	<meta name="twitter:image" content="https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/og-image.jpg">
+
+	<!-- Données structurées (schema.org) -->
+	<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "WebApplication",
+		"name": "Interactive Basketball Map",
+		"alternateName": ["NCAA Basketball Interactive Map", "Carte interactive du basket"],
+		"url": "https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/",
+		"image": "https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/og-image.jpg",
+		"description": "Interactive map of NCAA Division I men's and women's college basketball teams, French professional basketball clubs (Betclic ÉLITE, ÉLITE 2, Wonderligue, LF2) and EuroLeague teams, with rosters, player stats, standings, arenas, legends, honours and March Madness brackets.",
+		"applicationCategory": "SportsApplication",
+		"operatingSystem": "Any",
+		"browserRequirements": "Requires JavaScript",
+		"inLanguage": "en",
+		"isAccessibleForFree": true,
+		"offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+		"about": [
+			{ "@type": "SportsOrganization", "name": "NCAA Division I Basketball" },
+			{ "@type": "SportsOrganization", "name": "Ligue Nationale de Basket (LNB)" },
+			{ "@type": "SportsOrganization", "name": "Fédération Française de Basketball (FFBB)" },
+			{ "@type": "SportsOrganization", "name": "EuroLeague" }
+		],
+		"keywords": "NCAA basketball map, college basketball, March Madness, women's college basketball, Betclic Elite, LNB, Wonderligue, EuroLeague"
+	}
+	</script>
+
 	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
 	<link rel="shortcut icon" href="%PUBLIC_URL%/basketball.png">
+	<link rel="apple-touch-icon" href="%PUBLIC_URL%/basketball.png">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
-	<!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-	<title>NCAA Basketball</title>
 </head>
 
 <body>
+	<!-- Contenu texte lisible par les moteurs de recherche et sans JavaScript
+	     (jamais affiché aux visiteurs dont le navigateur exécute JS). -->
 	<noscript>
-		You need to enable JavaScript to run this app.
+		<h1>Interactive Basketball Map — NCAA, French LNB &amp; EuroLeague</h1>
+		<p>You need to enable JavaScript to run this app.</p>
+		<p>An interactive map of basketball teams: every NCAA Division I men's and women's college basketball program in the United States, every French professional club and every EuroLeague team. Click a team to see its roster and player stats, current standings, arena, history, legends (NBA and WNBA alumni, Hall of Famers) and honours.</p>
+		<h2>NCAA Division I college basketball</h2>
+		<p>More than 360 men's and women's programs across all 31 conferences: ACC, Big Ten, Big 12, SEC, Big East, American, Atlantic 10, Mountain West, West Coast, Missouri Valley, Ivy League, Patriot League and more. Includes the full NCAA tournament (March Madness) bracket for every season since 2009 (men) and 2005 (women), with each team's tournament run, Final Four and national championships.</p>
+		<h2>French basketball (France)</h2>
+		<p>Carte interactive du basket français : tous les clubs de Betclic ÉLITE et d'ÉLITE 2 (LNB) avec effectifs, statistiques des joueurs et classements, ainsi que les clubs féminins de La Boulangère Wonderligue et de Ligue Féminine 2 (LF2). Salles, palmarès (titres de champion de France, Coupe de France, Leaders Cup, coupes d'Europe) et localisation de chaque club.</p>
+		<h2>EuroLeague</h2>
+		<p>Every Turkish Airlines EuroLeague team on the map of Europe, with rosters, standings, team analytics, rivalries and the playoffs and Final Four bracket.</p>
 	</noscript>
 	<div id="root"></div>
-	<!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
 </body>
 
 </html>

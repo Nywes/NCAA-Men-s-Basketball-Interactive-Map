@@ -1,3 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
+# NB : sur un sous-dossier github.io, Google lit le robots.txt de la racine
+# (nywes.github.io/robots.txt), pas celui-ci -> le sitemap est à soumettre
+# dans Google Search Console. Utile si le site passe un jour sur un domaine.
 User-agent: *
 Disallow:
+
+Sitemap: https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/sitemap.xml
