@@ -10,6 +10,10 @@ import { useEffect, useState, useRef } from 'react';
 
 import teamsData from './teams.json';
 import teamsWomenData from './teams-women.json';
+// Fiches ESPN (nom, couleurs, logo, conférence) : snapshot généré par
+// scripts/update-espn-teams.js — l'endpoint teams/{id} n'est plus appelable
+// depuis le navigateur (plus d'en-tête CORS depuis oct. 2026).
+import espnTeams from './espn-teams.json';
 
 import ncaaLogo from './assets/icons/ncaa-logo.png';
 import mmLogo from './assets/march-madness-logo.png';
@@ -91,17 +95,7 @@ const getDarkAccent = (color) => {
 };
 
 
-const fetchTeamInfo = async (teamId, gender) => {
-  try {
-    const response = await fetch(
-      `https://site.api.espn.com/apis/site/v2/sports/basketball/${sportPath(gender)}/teams/${teamId}`
-    );
-    const data = await response.json();
-    return data;
-  } catch (error) {
-    console.error('Error fetching team info:', error);
-  }
-};
+const fetchTeamInfo = async (teamId, gender) => ({ team: espnTeams[gender]?.[teamId] });
 
 function CustomAttribution() {
   const map = useMap();
@@ -352,7 +346,7 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
                 shortDisplayName: teamInfo?.team?.shortDisplayName || 'Unknown shortDisplayName',
                 color: teamInfo?.team?.color || '#000000',
                 alternateColor: teamInfo?.team?.alternateColor,
-                logo: teamInfo?.team?.logos?.[0]?.href || '/default-logo.png',
+                logo: teamInfo?.team?.logo || `https://a.espncdn.com/i/teamlogos/ncaa/500/${team.id}.png`,
                 groups: teamInfo?.team?.groups || 'No groups info',
                 standingSummary: teamInfo?.team?.standingSummary || 'No standing info',
                 division: teamInfo?.team?.groups?.id || 'No division info',
