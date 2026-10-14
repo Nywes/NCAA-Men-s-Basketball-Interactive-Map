@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Quiz « Quelle fac ? » — propositions d'interface</title>
+<style>
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #e2e8f0; color: #0f172a; }
+  h1 { font-size: 20px; margin: 24px 24px 4px; }
+  h2 { font-size: 15px; margin: 28px 24px 10px; color: #334155; }
+  p.note { margin: 0 24px 16px; color: #64748b; font-size: 13px; max-width: 900px; }
+  .shot { position: relative; width: 1100px; height: 560px; margin: 0 24px 8px; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 30px rgba(15,23,42,.18); background: url('../public/og-image.jpg') center/cover; }
+  .shot.dim::before { content: ""; position: absolute; inset: 0; background: rgba(241,245,249,.25); }
+  .row { display: flex; gap: 16px; margin: 0 24px; flex-wrap: wrap; }
+  .row .shot { width: 540px; height: 330px; margin: 0; background-position: 30% 40%; }
+  .cap { font-size: 12px; color: #64748b; margin: 6px 24px 0; }
+
+  /* éléments existants simulés */
+  .navbar { position: absolute; top: 14px; left: 60px; right: 200px; height: 52px; border-radius: 14px; background: rgba(255,255,255,.55); backdrop-filter: blur(6px); }
+  .btns { position: absolute; left: 10px; top: 150px; display: flex; flex-direction: column; gap: 8px; }
+  .btns span { width: 34px; height: 34px; border-radius: 8px; background: #fff; border: 2px solid rgba(0,0,0,.2); box-sizing: border-box; display: grid; place-items: center; font-weight: 800; font-size: 13px; }
+  .btns span.q { background: #1e293b; color: #fff; border-color: #1e293b; }
+
+  /* ── HUD du quiz ── */
+  .hud { position: absolute; z-index: 5; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border: 1px solid #e2e8f0; border-radius: 16px; box-shadow: 0 10px 30px rgba(15,23,42,.14); }
+  .hud .kicker { font-size: 10px; letter-spacing: 1.6px; text-transform: uppercase; font-weight: 800; color: #b45309; }
+  .hud .name { white-space: nowrap; font-size: 24px; font-weight: 900; letter-spacing: -.3px; line-height: 1.1; margin: 2px 0 4px; }
+  .hud .hint { display: flex; gap: 6px; flex-wrap: wrap; }
+  .hud .chip { font-size: 11px; font-weight: 700; color: #64748b; background: #eef2f6; border-radius: 999px; padding: 3px 9px; }
+  .hud .chip.hot { color: #b45309; background: #fef3c7; }
+  .hud .actions { display: flex; gap: 6px; }
+  .hud .btn { border: none; border-radius: 999px; padding: 7px 12px; font-size: 12px; font-weight: 700; cursor: pointer; background: #eef2f6; color: #475569; font-family: inherit; }
+  .hud .btn.dark { background: #1e293b; color: #fff; }
+  .hud .x { width: 30px; height: 30px; border-radius: 50%; border: none; background: #1e293b; color: #fff; font-size: 13px; cursor: pointer; display: grid; place-items: center; }
+  .hud .score { text-align: center; min-width: 54px; }
+  .hud .score b { display: block; font-size: 22px; line-height: 1; }
+  .hud .score small { font-size: 10px; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+  .hud .score.best b { color: #b45309; }
+
+  /* V1 : barre horizontale centrée sous la navbar */
+  .hud.top { top: 80px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 18px; padding: 12px 16px 12px 20px; }
+  .hud.top .sep { width: 1px; height: 38px; background: #e2e8f0; }
+
+  /* V2 : carte verticale à gauche, sous les boutons */
+  .hud.side { top: 150px; left: 54px; width: 230px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
+  .hud.side .scores { display: flex; justify-content: space-around; border-top: 1px solid #eef2f6; padding-top: 10px; }
+  .hud.side .actions { justify-content: space-between; }
+
+  /* états */
+  .hud.ok { border-color: #16a34a; box-shadow: 0 0 0 3px rgba(22,163,74,.18), 0 10px 30px rgba(15,23,42,.14); }
+  .hud.ko { border-color: #dc2626; box-shadow: 0 0 0 3px rgba(220,38,38,.16), 0 10px 30px rgba(15,23,42,.14); }
+  .verdict { font-size: 13px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
+  .verdict img { width: 26px; height: 26px; object-fit: contain; }
+  .verdict.ok { color: #15803d; }
+  .verdict.ko { color: #b91c1c; }
+  .ring { position: absolute; width: 56px; height: 56px; border-radius: 50%; border: 3px solid #16a34a; box-shadow: 0 0 0 6px rgba(22,163,74,.25); animation: pulse 1s ease-out infinite; }
+  .ring.ko { border-color: #dc2626; box-shadow: 0 0 0 6px rgba(220,38,38,.22); }
+  @keyframes pulse { 0% { transform: scale(.8); opacity: 1 } 100% { transform: scale(1.25); opacity: .35 } }
+
+  /* mode 4 choix */
+  .choices { position: absolute; top: 200px; left: 50%; transform: translateX(-50%); display: grid; grid-template-columns: repeat(4, 150px); gap: 12px; z-index: 5; }
+  .choice { background: rgba(255,255,255,.94); border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 14px 10px 12px; text-align: center; cursor: pointer; box-shadow: 0 6px 18px rgba(15,23,42,.12); }
+  .choice:hover { border-color: #1e293b; transform: translateY(-2px); }
+  .choice img { width: 54px; height: 54px; object-fit: contain; }
+  .choice div { font-size: 12px; font-weight: 800; margin-top: 6px; color: #1e293b; }
+  .choice small { display: block; font-size: 10px; color: #94a3b8; font-weight: 700; }
+
+  /* écran de fin / stats (localStorage) */
+  .stats { position: absolute; top: 90px; left: 50%; transform: translateX(-50%); width: 360px; }
+  .stats .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 12px 0; }
+  .stats .cell { background: #f8fafc; border-radius: 10px; padding: 10px; text-align: center; }
+  .stats .cell b { display: block; font-size: 20px; }
+  .stats .cell small { font-size: 10px; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+</style>
+</head>
+<body>
+<h1>Quiz « Quelle fac ? » — propositions d'interface</h1>
+<p class="note">Principe : un bouton « ? » sous le bouton March Madness lance le quiz. Le nom du joueur s'affiche, on clique sur le logo de sa fac sur la carte (les popups d'équipe sont désactivées pendant le quiz). Bonne réponse = série +1. Mauvaise réponse = la carte vole vers la bonne fac, la série repart à 0. Le bouton « 4 choix » affiche 4 facs possibles. Score (série en cours, record, total) conservé dans le navigateur.</p>
+
+<h2>V1 — Barre centrée sous la recherche (recommandée)</h2>
+<p class="note">Tout tient sur une ligne, la carte reste entièrement visible. Les indices (année de draft, nombre de saisons) sont optionnels : on peut les cacher par défaut et ne les montrer qu'après une erreur.</p>
+<div class="shot dim">
+  <div class="navbar"></div>
+  <div class="btns" style="top:150px;left:10px"><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span class="q">?</span></div>
+  <div class="hud top">
+    <div>
+      <div class="kicker">Quelle fac ?</div>
+      <div class="name">Carmelo Anthony</div>
+      <div class="hint"><span class="chip">Draft 2003 · #3</span><span class="chip">19 saisons NBA</span></div>
+    </div>
+    <div class="sep"></div>
+    <div class="score"><b>7</b><small>série</small></div>
+    <div class="score best"><b>23</b><small>record</small></div>
+    <div class="sep"></div>
+    <div class="actions"><button class="btn dark">4 choix</button><button class="btn">Passer</button></div>
+    <button class="x">✕</button>
+  </div>
+</div>
+<p class="cap">Le joueur à trouver est bien lisible, les actions sont à droite. Le « ✕ » quitte le quiz et rend la carte normale.</p>
+
+<h2>Les états de jeu (V1)</h2>
+<div class="row">
+  <div class="shot dim">
+    <div class="hud top ok" style="top: 60px; gap: 14px; padding: 10px 14px 10px 18px;">
+      <div>
+        <div class="kicker">Quelle fac ?</div>
+        <div class="name" style="font-size:20px">Carmelo Anthony</div>
+        <div class="verdict ok"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/183.png" alt=""> Syracuse ✓ &nbsp;<span class="chip hot">série 8</span></div>
+      </div>
+      <div class="sep"></div>
+      <div class="score"><b>8</b><small>série</small></div>
+      <div class="actions"><button class="btn dark">Suivant →</button></div>
+    </div>
+    <div class="ring" style="left: 390px; top: 185px;"></div>
+  </div>
+  <div class="shot dim">
+    <div class="hud top ko" style="top: 60px; gap: 14px; padding: 10px 14px 10px 18px;">
+      <div>
+        <div class="kicker">Quelle fac ?</div>
+        <div class="name" style="font-size:20px">Carmelo Anthony</div>
+        <div class="verdict ko">✗ Kentucky — c'était <img src="https://a.espncdn.com/i/teamlogos/ncaa/500/183.png" alt=""> Syracuse</div>
+      </div>
+      <div class="sep"></div>
+      <div class="score"><b>0</b><small>série</small></div>
+      <div class="actions"><button class="btn dark">Suivant →</button></div>
+    </div>
+    <div class="ring ko" style="left: 390px; top: 185px;"></div>
+  </div>
+</div>
+<p class="cap">Gauche : bonne réponse, le logo cliqué pulse en vert. Droite : mauvaise réponse, la carte vole vers la bonne fac et son logo pulse en rouge. « Suivant » (ou Entrée) passe au joueur suivant.</p>
+
+<h2>Mode « 4 choix » (V1)</h2>
+<div class="shot dim">
+  <div class="navbar"></div>
+  <div class="btns" style="top:150px;left:10px"><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span class="q">?</span></div>
+  <div class="hud top">
+    <div>
+      <div class="kicker">Quelle fac ?</div>
+      <div class="name">Stephen Curry</div>
+      <div class="hint"><span class="chip">Draft 2009 · #7</span></div>
+    </div>
+    <div class="sep"></div>
+    <div class="score"><b>3</b><small>série</small></div>
+    <div class="score best"><b>23</b><small>record</small></div>
+    <div class="sep"></div>
+    <div class="actions"><button class="btn">Sur la carte</button><button class="btn">Passer</button></div>
+    <button class="x">✕</button>
+  </div>
+  <div class="choices">
+    <div class="choice"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/150.png" alt=""><div>Duke</div><small>ACC</small></div>
+    <div class="choice"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2166.png" alt=""><div>Davidson</div><small>Atlantic 10</small></div>
+    <div class="choice"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/153.png" alt=""><div>North Carolina</div><small>ACC</small></div>
+    <div class="choice"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/258.png" alt=""><div>Virginia</div><small>ACC</small></div>
+  </div>
+</div>
+<p class="cap">Les 3 mauvaises propositions sont tirées de préférence dans la même région ou conférence que la bonne, pour que ce ne soit pas trop facile. On peut toujours cliquer sur la carte à la place.</p>
+
+<h2>V2 — Carte verticale à gauche</h2>
+<p class="note">Variante compacte alignée sous les boutons existants. Libère le haut de la carte, mais le nom du joueur est moins mis en avant.</p>
+<div class="shot dim">
+  <div class="navbar"></div>
+  <div class="btns" style="top:150px;left:10px"><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span class="q">?</span></div>
+  <div class="hud side" style="left: 54px;">
+    <div class="kicker">Quelle fac ?</div>
+    <div class="name" style="font-size:21px">Carmelo Anthony</div>
+    <div class="hint"><span class="chip">Draft 2003 · #3</span><span class="chip">19 saisons</span></div>
+    <div class="actions"><button class="btn dark">4 choix</button><button class="btn">Passer</button><button class="x">✕</button></div>
+    <div class="scores">
+      <div class="score"><b>7</b><small>série</small></div>
+      <div class="score best"><b>23</b><small>record</small></div>
+      <div class="score"><b>142</b><small>total</small></div>
+    </div>
+  </div>
+</div>
+
+<h2>Récap à la fin d'une série (commun aux deux)</h2>
+<p class="note">Quand la série se termine (mauvaise réponse), un petit récap peut s'afficher avant de continuer. Les chiffres viennent du localStorage.</p>
+<div class="shot dim" style="height: 330px;">
+  <div class="hud stats" style="padding: 16px 18px;">
+    <div class="kicker">Série terminée</div>
+    <div class="name" style="font-size:20px">7 bonnes réponses d'affilée</div>
+    <div class="grid">
+      <div class="cell"><b>23</b><small>record</small></div>
+      <div class="cell"><b>142</b><small>trouvés</small></div>
+      <div class="cell"><b>68%</b><small>réussite</small></div>
+    </div>
+    <div class="actions"><button class="btn dark">Rejouer</button><button class="btn">Quitter</button></div>
+  </div>
+</div>
+<p style="height: 40px"></p>
+</body>
+</html>
