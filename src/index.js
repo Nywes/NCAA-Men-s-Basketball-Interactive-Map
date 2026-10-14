@@ -1,15 +1,18 @@
 // index.js
-import { StrictMode, useEffect, useState } from 'react';
+import { StrictMode, Suspense, lazy, useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 // HashRouter (URLs en /#/usa, /#/france) : compatible GitHub Pages sans config serveur.
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 import App from './App';
-import FranceMap from './FranceMap';
-import EuroleagueMap from './EuroleagueMap';
 import Navbar from './Navbar';
 import LeaguePicker from './LeaguePicker';
 import { LEAGUES } from './leagues';
+
+// France / EuroLeague (code + JSON effectifs) chargés seulement à l'ouverture
+// de leur univers : la page NCAA (entrée du site) s'affiche plus vite.
+const FranceMap = lazy(() => import('./FranceMap'));
+const EuroleagueMap = lazy(() => import('./EuroleagueMap'));
 
 // Titre d'onglet + méta-description propres à chaque univers/genre (SEO et
 // lisibilité des onglets). Le titre par défaut est dans public/index.html.
@@ -85,12 +88,14 @@ function Shell({ leagueId, gender, setGender }) {
         setSearchQuery={setSearchQuery}
         onSubmit={(q) => setSearchSubmit((prev) => ({ q, n: (prev?.n || 0) + 1 }))}
       />
-      <Map
-        searchQuery={searchQuery}
-        searchSubmit={searchSubmit}
-        gender={gender}
-        setGender={setGender}
-      />
+      <Suspense fallback={null}>
+        <Map
+          searchQuery={searchQuery}
+          searchSubmit={searchSubmit}
+          gender={gender}
+          setGender={setGender}
+        />
+      </Suspense>
       <LeaguePicker currentLeague={leagueId} gender={gender} />
     </>
   );

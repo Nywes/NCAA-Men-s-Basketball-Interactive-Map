@@ -64,6 +64,14 @@ const divisions = [
   { id: 'West Coast', name: 'West Coast', imgLinkName: 'West-Coast-Conference-logo.png' },
 ];
 
+// Marqueurs : logo redimensionné par le CDN ESPN (96 px = 3x l'affichage, net
+// en Retina). Les originaux font 500 px (jusqu'à 600 Ko) -> ~17 Mo économisés.
+const ESPN_CDN = 'https://a.espncdn.com/';
+const markerLogo = (logo) =>
+  logo && logo.startsWith(ESPN_CDN + 'i/')
+    ? `${ESPN_CDN}combiner/i?img=/${logo.slice(ESPN_CDN.length)}&h=96&w=96`
+    : logo;
+
 const customIcon = function (logo) {
   return new Icon({
     iconUrl: logo,
@@ -441,7 +449,7 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
                 <Marker
                   key={team.id}
                   position={[team.latitude, team.longitude]}
-                  icon={customIcon(team.logo)}
+                  icon={customIcon(markerLogo(team.logo))}
                   eventHandlers={{
                     click: () => {
                       setSelectedTeamId(team.id);
@@ -529,7 +537,8 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
               style={styles.divisionButton(selectedDivisions, division, isSmallScreen)}
             >
               <img
-                src={`https://loodibee.com/wp-content/uploads/${division.imgLinkName}`}
+                // Logos loodibee redimensionnés (300 px) + WebP, servis avec le site
+                src={`${process.env.PUBLIC_URL}/conferences/${division.imgLinkName.replace(/\.png$/, '.webp')}`}
                 alt={division.name}
                 style={styles.divisionButtonImg(selectedDivisions, division)}
               />
