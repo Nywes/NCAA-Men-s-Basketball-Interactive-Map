@@ -15,8 +15,12 @@
  *     et pour trier les anciens dont ESPN n'a pas les stats.
  *
  * Filtre : fac en D1 (teams.json) ET (>= 82 matchs NBA, OU stats inconnues
- * mais joueur notoire). Les joueurs sans fac (LeBron, internationaux) ou passés
- * par une fac hors D1 (Ben Wallace) sortent naturellement.
+ * mais joueur notoire, OU joueur actuellement sous contrat NBA s'il a été
+ * drafté ou a déjà joué une demi-saison — les rookies comptent, pas les
+ * simples invités de camp). Les joueurs sans fac (LeBron, internationaux) ou
+ * passés par une fac hors D1 (Ben Wallace) sortent naturellement.
+ * Les joueurs actifs absents de Wikidata (rookies) sont ajoutés depuis la
+ * liste ESPN des effectifs, avec la fac ESPN.
  *
  * Usage : node scripts/update-quiz-players.js   (~15 min, à relancer 1x/an)
  * Les appels ESPN/pageviews sont mis en cache dans $TMPDIR pour les relances.
@@ -31,6 +35,7 @@ const CACHE_PATH = path.join(process.env.QUIZ_CACHE_DIR || os.tmpdir(), 'quiz-pl
 const UA = 'NCAA-interactive-map quiz builder/1.0 (https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/)';
 
 const MIN_GAMES = 82; // "au moins une saison complète"
+const MIN_GAMES_ACTIVE_UNDRAFTED = 41; // joueur actif non drafté : une demi-saison
 const MIN_VIEWS_IF_UNKNOWN = 5000; // vues Wikipédia/an si ESPN n'a pas les stats (anciens)
 
 // Nom de catégorie Wikipédia quand il diffère du nom teams.json. Plusieurs
@@ -174,8 +179,14 @@ async function searchCategories(name) {
 
 // ── 3. ESPN ──────────────────────────────────────────────────────────────────
 const ESPN = 'https://sports.core.api.espn.com/v2/sports/basketball/leagues/nba/athletes/';
+// Ids des joueurs actuellement sous contrat NBA (une page suffit).
+async function fetchActiveIds() {
+  const d = await getJson(ESPN.replace(/\/$/, '') + '?limit=1000&active=true');
+  return (d.items || []).map((i) => (i.$ref.match(/\/athletes\/(\d+)/) || [])[1]).filter(Boolean);
+}
 async function fetchEspn(id) {
   const a = (await getJson(ESPN + id)) || {};
+  const col = (a.college && a.college.$ref) || '';
   const st = (await getJson(ESPN + id + '/statistics')) || {};
   const gp = (st.splits?.categories || []).flatMap((c) => c.stats).find((s) => s.name === 'gamesPlayed');
   let photo = false;
@@ -185,6 +196,8 @@ async function fetchEspn(id) {
     /* pas de photo */
   }
   return {
+    name: a.displayName || null,
+    college: col.includes('/colleges/') ? col.split('/colleges/')[1].split('?')[0] : null,
     debut: a.debutYear || null,
     draft: a.draft?.year || null,
     pick: a.draft?.selection || null,
@@ -283,6 +296,23 @@ async function fetchViewsBatch(titles) {
   });
   saveCache();
 
+  // ── 3b. Joueurs actuellement en NBA : marquage + ajout des absents (rookies…) ──
+  const activeIds = await fetchActiveIds();
+  const inPool = new Set(pool.map((p) => p.id));
+  const teamIds = new Set(teams.map((t) => t.id));
+  let added = 0;
+  await mapPool(activeIds.filter((id) => !inPool.has(id)), 8, async (id) => {
+    if (!cache['espn:' + id] || cache['espn:' + id].college === undefined) cache['espn:' + id] = await fetchEspn(id);
+    const e = cache['espn:' + id];
+    if (!e.name || !e.college || !teamIds.has(e.college)) return;
+    pool.push({ id, name: e.name, title: e.name, img: null, colleges: [e.college], ...e });
+    added += 1;
+  });
+  saveCache();
+  const activeSet = new Set(activeIds);
+  for (const p of pool) p.active = activeSet.has(p.id);
+  console.log(`   actifs NBA : ${activeIds.length}, dont ${added} ajoutés via ESPN (fac ESPN en D1)`);
+
   console.log('4/4 Pageviews Wikipédia…');
   const todo = pool.filter((p) => !cache['views:' + p.title]).map((p) => p.title);
   for (let i = 0; i < todo.length; i += 50) {
@@ -293,13 +323,18 @@ async function fetchViewsBatch(titles) {
   for (const p of pool) p.views = cache['views:' + p.title];
   saveCache();
 
-  const keep = pool.filter((p) => (p.gp != null ? p.gp >= MIN_GAMES : p.views >= MIN_VIEWS_IF_UNKNOWN));
+  const keep = pool.filter(
+    (p) =>
+      (p.active && (p.draft || (p.gp || 0) >= MIN_GAMES_ACTIVE_UNDRAFTED)) ||
+      (p.gp != null ? p.gp >= MIN_GAMES : p.views >= MIN_VIEWS_IF_UNKNOWN)
+  );
   const decade = (p) => (p.debut ? `${Math.floor(p.debut / 10) * 10}s` : 'inconnu');
   const stats = {};
   for (const p of keep) stats[decade(p)] = (stats[decade(p)] || 0) + 1;
   console.log(`\nRetenus : ${keep.length}/${pool.length} (>= ${MIN_GAMES} matchs, ou anciens notoires)`);
   console.log('   par décennie de début :', JSON.stringify(stats));
   console.log(`   avec photo ESPN : ${keep.filter((p) => p.photo).length} | photo Wikimedia : ${keep.filter((p) => p.img).length}`);
+  console.log(`   actifs NBA retenus : ${keep.filter((p) => p.active).length} (dont rookies 2025+ : ${keep.filter((p) => p.active && (p.draft || 0) >= 2025).length})`);
 
   const out = {
     updated: new Date().toISOString().slice(0, 10),
@@ -316,6 +351,7 @@ async function fetchViewsBatch(titles) {
         gp: p.gp,
         views: p.views,
         photo: p.photo || undefined,
+        active: p.active || undefined,
         img: p.img ? p.img.replace('http://commons.wikimedia.org/wiki/Special:FilePath/', '') : undefined,
       })),
   };

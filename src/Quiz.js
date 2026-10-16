@@ -75,10 +75,16 @@ export function useQuiz({ teams, onFly }) {
     const unseen = players.filter((p) => !seen.current.has(p.id));
     if (!unseen.length) seen.current.clear();
     const pool = unseen.length ? unseen : players;
-    // Tirage pondéré par la notoriété (vues Wikipédia) : sans pondération, la
-    // moitié des tirages seraient des joueurs très obscurs. log³ donne environ
-    // un tiers de stars, un tiers de joueurs confirmés, un tiers de rôle players.
-    const weights = pool.map((p) => Math.pow(Math.log10((p.views || 0) + 10), 3));
+    // Tirage pondéré : notoriété (vues Wikipédia, log³), joueurs actuellement
+    // en NBA favorisés (x3, rookies compris), anciens peu connus freinés (x0,4).
+    // Résultat : ~36 % de stars, ~52 % de joueurs confirmés, ~13 % de rôle
+    // players ; ~58 % de joueurs en activité dont ~10 % de rookies.
+    const weights = pool.map(
+      (p) =>
+        Math.pow(Math.log10((p.views || 0) + 10), 3) *
+        (p.active ? 3 : 1) *
+        (!p.active && (p.views || 0) < 20000 ? 0.4 : 1)
+    );
     let r = Math.random() * weights.reduce((a, b) => a + b, 0);
     let idx = 0;
     while (idx < pool.length - 1 && (r -= weights[idx]) > 0) idx++;
