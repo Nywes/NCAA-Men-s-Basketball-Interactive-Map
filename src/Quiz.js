@@ -76,13 +76,19 @@ export function useQuiz({ teams, onFly }) {
     if (!unseen.length) seen.current.clear();
     const pool = unseen.length ? unseen : players;
     // Tirage pondéré : notoriété (vues Wikipédia, log³), joueurs actuellement
-    // en NBA favorisés (x3, rookies compris), anciens peu connus freinés (x0,4).
-    // Résultat : ~36 % de stars, ~52 % de joueurs confirmés, ~13 % de rôle
-    // players ; ~58 % de joueurs en activité dont ~10 % de rookies.
+    // en NBA favorisés (x1,8), rookies et sophomores de la saison en cours
+    // encore plus (x2 : draftés lors des deux dernières drafts, calculé à la
+    // volée), anciens peu connus freinés (x0,4). Résultat : ~50 % de joueurs
+    // en activité dont ~15 % de rookies/sophomores ; ~34 % de stars, ~52 % de
+    // joueurs confirmés, ~14 % de rôle players.
+    const now = new Date();
+    const season = now.getMonth() >= 6 ? now.getFullYear() : now.getFullYear() - 1; // 2026-27 -> 2026
+    const isYoung = (p) => p.active && (p.draft || p.debut || 0) >= season - 1;
     const weights = pool.map(
       (p) =>
         Math.pow(Math.log10((p.views || 0) + 10), 3) *
-        (p.active ? 3 : 1) *
+        (p.active ? 1.8 : 1) *
+        (isYoung(p) ? 2 : 1) *
         (!p.active && (p.views || 0) < 20000 ? 0.4 : 1)
     );
     let r = Math.random() * weights.reduce((a, b) => a + b, 0);

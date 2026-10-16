@@ -334,7 +334,10 @@ async function fetchViewsBatch(titles) {
   console.log(`\nRetenus : ${keep.length}/${pool.length} (>= ${MIN_GAMES} matchs, ou anciens notoires)`);
   console.log('   par décennie de début :', JSON.stringify(stats));
   console.log(`   avec photo ESPN : ${keep.filter((p) => p.photo).length} | photo Wikimedia : ${keep.filter((p) => p.img).length}`);
-  console.log(`   actifs NBA retenus : ${keep.filter((p) => p.active).length} (dont rookies 2025+ : ${keep.filter((p) => p.active && (p.draft || 0) >= 2025).length})`);
+  const now = new Date();
+  const season = now.getMonth() >= 6 ? now.getFullYear() : now.getFullYear() - 1;
+  const young = keep.filter((p) => p.active && (p.draft || p.debut || 0) >= season - 1).length;
+  console.log(`   actifs NBA retenus : ${keep.filter((p) => p.active).length} (dont rookies/sophomores ${season - 1}-${season} : ${young})`);
 
   const out = {
     updated: new Date().toISOString().slice(0, 10),
