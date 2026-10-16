@@ -1255,7 +1255,7 @@ table.an-table { width: 100%; border-collapse: collapse; }
 .qz-panel.failed { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 0 2px #d7263d; }
 .qz-head { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px 6px; border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
 .qz-title { font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
-.qz-x { font: 700 12px inherit; font-family: inherit; background: none; border: none; cursor: pointer; color: inherit; padding: 2px 4px; }
+.qz-x { font-weight: 700; font-size: 12px; font-family: inherit; background: none; border: none; cursor: pointer; color: inherit; padding: 2px 4px; }
 .qz-loading { padding: 18px 12px; font-size: 12px; color: #5b6470; }
 .qz-who { padding: 10px 12px 8px; }
 .qz-lbl { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; color: #5b6470; }
@@ -1277,10 +1277,10 @@ table.an-table { width: 100%; border-collapse: collapse; }
 .qz-hint.locked .v { color: #9aa3ad; }
 .qz-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 6px 12px 4px; }
 .qz-choices { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
-.qz-choice { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 4px; min-width: 0; min-height: 86px; padding: 8px 4px 7px; border: none; border-radius: 12px; background: rgba(240, 240, 240, 0.95); cursor: pointer; font: 700 10px inherit; font-family: inherit; letter-spacing: .3px; text-transform: uppercase; color: #161d29; }
+.qz-choice { display: flex; flex-direction: column; align-items: center; justify-content: flex-start; gap: 4px; min-width: 0; min-height: 86px; padding: 8px 4px 7px; border: none; border-radius: 12px; background: rgba(240, 240, 240, 0.95); cursor: pointer; font-weight: 700; font-size: 10px; font-family: inherit; letter-spacing: .3px; text-transform: uppercase; color: #161d29; }
 .qz-choice img { width: 40px; height: 40px; object-fit: contain; flex: none; }
 /* libellé sur 2 lignes max (« Texas A&M-Corpus Christi »), sans élargir la tuile */
-.qz-choice span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-width: 100%; line-height: 1.2; text-align: center; overflow-wrap: anywhere; }
+.qz-choice span { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; max-width: 100%; line-height: 1.2; text-align: center; overflow-wrap: break-word; }
 .qz-choice:hover:not(:disabled) { background: #fff; }
 .qz-choice.out { background: transparent; cursor: default; }
 .qz-choice.out img { filter: grayscale(100%); opacity: .5; }
@@ -1290,7 +1290,7 @@ table.an-table { width: 100%; border-collapse: collapse; }
 .qz-sc b { display: block; font-weight: 700; font-size: 20px; line-height: 1; font-variant-numeric: tabular-nums; }
 .qz-sc small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; color: #5b6470; }
 .qz-act { display: flex; gap: 6px; padding: 10px 12px 12px; }
-.qz-b { flex: 1; font: 700 11px inherit; font-family: inherit; letter-spacing: 1px; text-transform: uppercase; padding: 8px 0; cursor: pointer; background: rgba(255, 255, 255, 0.7); color: #161d29; border: none; border-radius: 8px; }
+.qz-b { flex: 1; font-weight: 700; font-size: 11px; font-family: inherit; letter-spacing: 1px; text-transform: uppercase; padding: 8px 0; cursor: pointer; background: rgba(255, 255, 255, 0.7); color: #161d29; border: none; border-radius: 8px; }
 .qz-b:hover { background: #fff; }
 .qz-b.main { background: #161d29; color: #fff; }
 .qz-b.main:hover { background: #0b1120; }
