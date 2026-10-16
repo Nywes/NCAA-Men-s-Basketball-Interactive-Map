@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>Quiz « Which college? » — galerie de 8 variantes (barre verticale)</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&family=Barlow+Condensed:wght@600;700&family=Playfair+Display:ital,wght@0,700;1,900&family=IBM+Plex+Mono:wght@500;700&display=swap" rel="stylesheet">
+<title>Quiz « Which college? » — feuille de stats et 7 déclinaisons « site »</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   @font-face { font-family: 'MasqueFont'; src: url('../src/assets/MASQUE.ttf') format('truetype'); }
   body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #d9dee6; color: #111; }
@@ -12,188 +12,126 @@
   .grid { display: grid; grid-template-columns: repeat(4, 290px); gap: 18px 16px; margin: 0 24px 40px; }
   .cell h3 { font-size: 14px; margin: 0 0 2px; }
   .cell p { font-size: 12px; color: #555; margin: 0 0 8px; min-height: 46px; line-height: 1.4; }
-  .shot { position: relative; width: 290px; height: 540px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.16); background: url('../public/og-image.jpg') 22% 42% / cover no-repeat; }
+  .shot { position: relative; width: 290px; height: 470px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.16); background: url('../public/og-image.jpg') 22% 42% / cover no-repeat; }
   .shot::before { content: ""; position: absolute; inset: 0; background: rgba(241,245,249,.18); }
-  .q { position: absolute; left: 10px; top: 14px; width: 34px; height: 34px; border-radius: 8px; display: grid; place-items: center; font: 900 15px 'Montserrat', sans-serif; box-sizing: border-box; }
+  /* bouton d'entrée : identique aux boutons existants de la carte (34px, blanc, bordure grise) */
+  .q { position: absolute; left: 10px; top: 14px; width: 34px; height: 34px; border-radius: 8px; background: #fff; border: 2px solid rgba(0,0,0,.2); box-sizing: border-box; display: grid; place-items: center; font: 700 15px 'IBM Plex Mono', monospace; color: #111; }
 
-  /* ── squelette commun ── */
-  .card { position: absolute; left: 54px; top: 14px; width: 222px; font-family: 'Montserrat', sans-serif; box-sizing: border-box; }
+  /* ── squelette commun (contenu mono = ADN de la feuille de stats) ── */
+  .card { position: absolute; left: 54px; top: 14px; width: 222px; box-sizing: border-box; font-family: 'IBM Plex Mono', monospace; color: #111; }
   .head { display: flex; justify-content: space-between; align-items: center; }
-  .title { text-transform: uppercase; }
-  .x { font: 900 12px 'Montserrat', sans-serif; background: none; border: none; cursor: pointer; color: inherit; }
-  .lbl { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 800; }
-  .name { font-size: 26px; line-height: 1; text-transform: uppercase; margin-top: 4px; }
+  .title { font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+  .x { font: 700 12px 'IBM Plex Mono', monospace; background: none; border: none; cursor: pointer; color: inherit; }
+  .lbl { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; color: #666; }
+  .name { font-family: 'MasqueFont', sans-serif; font-size: 26px; line-height: 1; text-transform: uppercase; margin-top: 4px; }
   .tries { display: flex; gap: 5px; align-items: center; margin-top: 8px; }
-  .tries i { width: 10px; height: 10px; border-radius: 50%; box-sizing: border-box; }
-  .tries small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; margin-left: 4px; opacity: .65; }
-  .hint { display: flex; align-items: baseline; font-size: 13px; padding: 5px 0; }
-  .hint .k { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 800; opacity: .7; }
-  .hint .dots { flex: 1; margin: 0 6px 3px; }
-  .hint .v { font-weight: 800; }
-  .hint.locked .v { opacity: .35; letter-spacing: 1px; }
-  .scores { display: flex; }
-  .sc { flex: 1; text-align: center; }
-  .sc b { display: block; font-weight: 900; font-size: 20px; line-height: 1; font-variant-numeric: tabular-nums; }
-  .sc small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 700; opacity: .65; }
-  .act { display: flex; gap: 6px; }
-  .b { flex: 1; font: 800 11px 'Montserrat', sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 8px 0; cursor: pointer; }
+  .tries i { width: 10px; height: 10px; box-sizing: border-box; border: 1px solid #111; }
+  .tries i.used { background: #111; }
+  .tries small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; margin-left: 4px; color: #666; }
+  .hint { display: flex; align-items: baseline; font-size: 13px; padding: 5px 0; border-top: 1px solid #111; }
+  .hint .k { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; color: #666; }
+  .hint .v { margin-left: auto; font-weight: 700; }
+  .hint.locked .v { color: #bbb; }
+  .scores { display: flex; margin: 6px 12px 0; border: 1px solid #111; }
+  .sc { flex: 1; text-align: center; padding: 6px 0 5px; }
+  .sc + .sc { border-left: 1px solid #111; }
+  .sc b { display: block; font-weight: 700; font-size: 20px; line-height: 1; font-variant-numeric: tabular-nums; }
+  .sc small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; color: #666; }
+  .act { display: flex; gap: 6px; padding: 10px 12px 12px; }
+  .b { flex: 1; font: 700 11px 'IBM Plex Mono', monospace; letter-spacing: 1px; text-transform: uppercase; padding: 8px 0; cursor: pointer; background: #fff; color: #111; border: 1px solid #111; }
+  .b.main { background: #111; color: #fff; }
+  .who { padding: 10px 12px 8px; }
+  .hints { padding: 0 12px 4px; }
 
-  /* 1 ─ Ticket, allégé */
-  .v1 { background: #fbf7ee; color: #1a1a1a; border: 1.5px solid #1a1a1a; }
-  .v1 .head { padding: 7px 12px 5px; border-bottom: 1.5px solid #1a1a1a; }
-  .v1 .title { font-family: 'MasqueFont', sans-serif; font-size: 14px; }
-  .v1 .who { padding: 10px 12px 10px; border-bottom: 1.5px dashed #1a1a1a; }
-  .v1 .lbl { color: #b3261e; }
-  .v1 .name { font-family: 'MasqueFont', sans-serif; }
-  .v1 .tries i { border: 1.5px solid #1a1a1a; } .v1 .tries i.used { background: #1a1a1a; }
-  .v1 .hints { padding: 8px 12px 4px; }
-  .v1 .hint .dots { border-bottom: 1.5px dotted #999; }
-  .v1 .scores { margin: 8px 12px 0; border-top: 1.5px solid #1a1a1a; border-bottom: 1.5px solid #1a1a1a; padding: 7px 0; }
-  .v1 .sc + .sc { border-left: 1.5px solid #1a1a1a; }
-  .v1 .act { padding: 10px 12px 12px; }
-  .v1 .b { background: #fbf7ee; color: #1a1a1a; border: 1.5px solid #1a1a1a; } .v1 .b.main { background: #1a1a1a; color: #fbf7ee; }
-  .q.v1q { background: #fbf7ee; color: #1a1a1a; border: 1.5px solid #1a1a1a; }
+  /* 1 ─ Feuille de stats (référence) */
+  .v1 { background: #fff; border: 1px solid #111; }
+  .v1 .head { padding: 7px 12px 5px; border-bottom: 1px solid #111; }
 
-  /* 2 ─ Ardoise */
-  .v2 { background: #2a2e35; color: #f2f3f5; border: 1px solid rgba(255,255,255,.3); }
-  .v2 .head { padding: 8px 12px 6px; border-bottom: 1px solid rgba(255,255,255,.2); }
-  .v2 .title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 1.5px; }
-  .v2 .who { padding: 10px 12px 8px; }
-  .v2 .lbl { color: #c9ced8; }
-  .v2 .name { font-family: 'MasqueFont', sans-serif; }
-  .v2 .tries i { border: 1.5px solid #f2f3f5; } .v2 .tries i.used { background: #f2f3f5; }
-  .v2 .hints { padding: 2px 12px 4px; }
-  .v2 .hint { border-bottom: 1px solid rgba(255,255,255,.18); }
-  .v2 .hint .dots { border: none; }
-  .v2 .hint .v { margin-left: auto; }
-  .v2 .scores { margin: 8px 12px 0; gap: 6px; }
-  .v2 .sc { background: rgba(255,255,255,.07); padding: 6px 0 5px; }
-  .v2 .act { padding: 10px 12px 12px; }
-  .v2 .b { background: transparent; color: #f2f3f5; border: 1px solid rgba(255,255,255,.5); } .v2 .b.main { background: #f2f3f5; color: #2a2e35; border-color: #f2f3f5; }
-  .q.v2q { background: #2a2e35; color: #f2f3f5; border: 1px solid rgba(255,255,255,.3); }
+  /* 2 ─ Coins du site : rayon 12, bordure grise des boutons, ombre légère */
+  .v2 { background: #fff; border: 2px solid rgba(0,0,0,.2); border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,.1); overflow: hidden; }
+  .v2 .head { padding: 8px 12px 6px; border-bottom: 1px solid #ddd; }
+  .v2 .hint { border-top-color: #ddd; }
+  .v2 .scores { border-color: #ddd; border-radius: 8px; } .v2 .sc + .sc { border-left-color: #ddd; }
+  .v2 .tries i { border-radius: 2px; }
+  .v2 .b { border-radius: 8px; border-color: rgba(0,0,0,.25); } .v2 .b.main { border-color: #111; }
 
-  /* 3 ─ Programme (serif) */
-  .v3 { background: #fff; color: #111; border-top: 3px solid #111; border-bottom: 1px solid #111; }
-  .v3 .head { padding: 7px 12px 5px; border-bottom: 1px solid #111; }
-  .v3 .title { font-family: 'Playfair Display', serif; font-style: italic; font-weight: 900; font-size: 15px; text-transform: none; }
-  .v3 .who { padding: 10px 12px 8px; }
-  .v3 .lbl { color: #777; }
-  .v3 .name { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 24px; text-transform: none; letter-spacing: -.3px; }
-  .v3 .tries i { border: 1px solid #111; } .v3 .tries i.used { background: #111; }
-  .v3 .hints { padding: 0 12px 4px; }
-  .v3 .hint { border-top: 1px solid #ddd; font-family: 'Playfair Display', serif; }
-  .v3 .hint .dots { border: none; } .v3 .hint .v { margin-left: auto; font-weight: 700; }
-  .v3 .scores { margin: 6px 12px 0; border-top: 1px solid #111; padding-top: 8px; }
-  .v3 .sc b { font-family: 'Playfair Display', serif; font-weight: 700; font-size: 22px; }
-  .v3 .act { padding: 10px 12px 12px; }
-  .v3 .b { background: #fff; color: #111; border: 1px solid #111; } .v3 .b.main { background: #111; color: #fff; }
-  .q.v3q { background: #fff; color: #111; border: 1px solid #111; }
+  /* 3 ─ Translucide comme le bandeau */
+  .v3 { background: rgba(240,240,240,.62); backdrop-filter: blur(8px); border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,.1); color: #161d29; }
+  .v3 .head { padding: 8px 12px 6px; border-bottom: 1px solid rgba(0,0,0,.15); }
+  .v3 .hint { border-top-color: rgba(0,0,0,.15); }
+  .v3 .scores { border: none; gap: 6px; } .v3 .sc { background: rgba(255,255,255,.7); border-radius: 8px; } .v3 .sc + .sc { border-left: none; }
+  .v3 .b { background: rgba(255,255,255,.7); border: none; border-radius: 8px; } .v3 .b.main { background: #161d29; color: #fff; }
 
-  /* 4 ─ Maillot */
-  .v4 { background: #fff; color: #10203a; border-left: 9px solid #10203a; box-shadow: 0 2px 10px rgba(0,0,0,.12); }
-  .v4 .head { padding: 8px 12px 0; }
-  .v4 .title { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 13px; letter-spacing: 1.5px; color: #6b7280; }
-  .v4 .who { padding: 8px 12px 6px; display: grid; grid-template-columns: 1fr auto; align-items: end; }
-  .v4 .lbl { color: #6b7280; }
-  .v4 .name { font-family: 'MasqueFont', sans-serif; font-size: 24px; }
-  .v4 .num { font: 900 46px 'Montserrat', sans-serif; line-height: .85; color: #10203a; grid-column: 2; grid-row: 1; align-self: start; margin: 2px 0 0 8px; }
-  .v4 .who > div:first-child { grid-column: 1; grid-row: 1; min-width: 0; }
-  .v4 .tries { grid-column: 1 / -1; } .v4 .tries i { border-radius: 0; border: 1.5px solid #10203a; } .v4 .tries i.used { background: #10203a; }
-  .v4 .hints { padding: 2px 12px 4px; }
-  .v4 .hint { border-top: 1px solid #e5e7eb; } .v4 .hint .dots { border: none; } .v4 .hint .v { margin-left: auto; }
-  .v4 .scores { margin: 6px 12px 0; }
-  .v4 .sc small { color: #6b7280; }
-  .v4 .act { padding: 10px 12px 12px; }
-  .v4 .b { background: #fff; color: #10203a; border: 1.5px solid #10203a; } .v4 .b.main { background: #10203a; color: #fff; }
-  .q.v4q { background: #fff; color: #10203a; border-left: 5px solid #10203a; box-shadow: 0 2px 8px rgba(0,0,0,.14); }
+  /* 4 ─ Titre en MASQUE, panneau du sélecteur de ligue */
+  .v4 { background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-radius: 14px; box-shadow: 0 10px 32px rgba(0,0,0,.25); overflow: hidden; }
+  .v4 .head { padding: 9px 12px 6px; border-bottom: 1px solid #e5e7eb; }
+  .v4 .title { font-family: 'MasqueFont', sans-serif; font-size: 14px; letter-spacing: .5px; }
+  .v4 .hint { border-top-color: #e5e7eb; }
+  .v4 .scores { border-color: #e5e7eb; border-radius: 8px; } .v4 .sc + .sc { border-left-color: #e5e7eb; }
+  .v4 .b { border-radius: 8px; border-color: #cbd5e1; } .v4 .b.main { background: #1e293b; border-color: #1e293b; }
 
-  /* 5 ─ Clipboard */
-  .v5 { background: #f5f5f2; color: #222; border: 1px solid #c9c9c4; border-radius: 4px; margin-top: 10px; }
-  .v5::before { content: ""; position: absolute; left: 50%; top: -10px; width: 70px; height: 18px; transform: translateX(-50%); background: #3a3a3a; border-radius: 4px; }
-  .v5 .head { padding: 16px 12px 4px; }
-  .v5 .title { font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 12px; letter-spacing: 1px; }
-  .v5 .who { padding: 6px 12px 8px; border-bottom: 1px solid #c9c9c4; }
-  .v5 .lbl { color: #777; font-family: 'IBM Plex Mono', monospace; }
-  .v5 .name { font-family: 'MasqueFont', sans-serif; font-size: 24px; }
-  .v5 .tries i { border-radius: 2px; border: 1.5px solid #222; } .v5 .tries i.used { background: #222; }
-  .v5 .hints { padding: 6px 12px 4px; font-family: 'IBM Plex Mono', monospace; }
-  .v5 .hint .k { font-family: inherit; } .v5 .hint .dots { border: none; } .v5 .hint .v { margin-left: auto; font-weight: 700; }
-  .v5 .hint::before { content: "☐"; margin-right: 6px; font-size: 12px; }
-  .v5 .hint:not(.locked)::before { content: "☑"; }
-  .v5 .scores { margin: 4px 12px 0; border-top: 1px dashed #aaa; padding-top: 8px; font-family: 'IBM Plex Mono', monospace; }
-  .v5 .sc b { font-family: 'IBM Plex Mono', monospace; font-weight: 700; }
-  .v5 .act { padding: 10px 12px 12px; }
-  .v5 .b { background: #fff; color: #222; border: 1px solid #999; border-radius: 3px; } .v5 .b.main { background: #3a3a3a; color: #fff; border-color: #3a3a3a; }
-  .q.v5q { background: #f5f5f2; color: #222; border: 1px solid #c9c9c4; }
+  /* 5 ─ Palette ardoise du bracket, boutons en pilules */
+  .v5 { background: #fff; border-radius: 14px; box-shadow: 0 10px 32px rgba(0,0,0,.18); color: #1e293b; overflow: hidden; }
+  .v5 .head { padding: 9px 12px 6px; background: rgba(255,255,255,.78); border-bottom: 1px solid #e2e8f0; }
+  .v5 .title { color: #1e293b; }
+  .v5 .lbl, .v5 .hint .k, .v5 .sc small, .v5 .tries small { color: #64748b; }
+  .v5 .tries i { border-color: #1e293b; border-radius: 50%; } .v5 .tries i.used { background: #1e293b; }
+  .v5 .hint { border-top-color: #e2e8f0; } .v5 .hint.locked .v { color: #cbd5e1; }
+  .v5 .scores { border: none; gap: 6px; } .v5 .sc { background: #eef2f6; border-radius: 10px; } .v5 .sc + .sc { border-left: none; }
+  .v5 .b { border: none; border-radius: 999px; background: #eef2f6; color: #64748b; } .v5 .b.main { background: #1e293b; color: #fff; }
 
-  /* 6 ─ Parquet */
-  .v6 { background: linear-gradient(180deg, #f3e3c6, #ecd6b1); color: #3b2a16; border-top: 4px solid #d9792b; box-shadow: 0 2px 10px rgba(59,42,22,.18); }
-  .v6 .head { padding: 8px 12px 4px; }
-  .v6 .title { font-family: 'MasqueFont', sans-serif; font-size: 14px; color: #3b2a16; }
-  .v6 .who { padding: 6px 12px 8px; }
-  .v6 .lbl { color: #b35f1f; }
-  .v6 .name { font-family: 'MasqueFont', sans-serif; }
-  .v6 .tries i { border: 1.5px solid #3b2a16; } .v6 .tries i.used { background: #d9792b; border-color: #d9792b; }
-  .v6 .hints { margin: 0 12px; background: rgba(255,255,255,.55); padding: 2px 10px; }
-  .v6 .hint + .hint { border-top: 1px solid rgba(59,42,22,.15); } .v6 .hint .dots { border: none; } .v6 .hint .v { margin-left: auto; }
-  .v6 .scores { margin: 8px 12px 0; gap: 6px; }
-  .v6 .sc { background: rgba(255,255,255,.55); padding: 6px 0 5px; }
-  .v6 .act { padding: 10px 12px 12px; }
-  .v6 .b { background: transparent; color: #3b2a16; border: 1.5px solid #3b2a16; } .v6 .b.main { background: #3b2a16; color: #f3e3c6; }
-  .q.v6q { background: #f3e3c6; color: #3b2a16; border-top: 3px solid #d9792b; }
+  /* 6 ─ Façon modale d'équipe : rayon 18, en-tête teinté, nom en gras */
+  .v6 { background: #fff; border-radius: 18px; box-shadow: 0 10px 32px rgba(0,0,0,.18); overflow: hidden; color: #161d29; }
+  .v6 .head { padding: 12px 14px 10px; background: #e8edf2; }
+  .v6 .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 900; font-size: 15px; text-transform: none; letter-spacing: 0; color: #161d29; }
+  .v6 .x { font-family: inherit; color: #5b6470; }
+  .v6 .lbl { color: #5b6470; }
+  .v6 .tries i { border-color: #161d29; border-radius: 50%; } .v6 .tries i.used { background: #161d29; }
+  .v6 .hint { border-top-color: #e5e7eb; }
+  .v6 .scores { border-color: #e5e7eb; border-radius: 10px; } .v6 .sc + .sc { border-left-color: #e5e7eb; }
+  .v6 .b { border-radius: 10px; border-color: #cbd5e1; } .v6 .b.main { background: #161d29; border-color: #161d29; }
 
-  /* 7 ─ Tableau (bandeau marine) */
-  .v7 { background: #fff; color: #14213d; box-shadow: 0 2px 10px rgba(0,0,0,.14); }
-  .v7 .head { padding: 8px 12px 6px; background: #14213d; color: #fff; }
-  .v7 .title { font-family: 'MasqueFont', sans-serif; font-size: 14px; }
-  .v7 .who { padding: 10px 12px 8px; }
-  .v7 .lbl { color: #6b7280; }
-  .v7 .name { font-family: 'MasqueFont', sans-serif; }
-  .v7 .tries i { border: 1.5px solid #14213d; } .v7 .tries i.used { background: #14213d; }
-  .v7 .hints { padding: 0 12px 4px; }
-  .v7 .hint { border-top: 1px solid #e5e7eb; } .v7 .hint .dots { border: none; } .v7 .hint .v { margin-left: auto; }
-  .v7 .scores { margin: 6px 12px 0; background: #f3f4f6; padding: 7px 0 6px; }
-  .v7 .act { padding: 10px 12px 12px; }
-  .v7 .b { background: #fff; color: #14213d; border: 1.5px solid #14213d; } .v7 .b.main { background: #14213d; color: #fff; }
-  .q.v7q { background: #14213d; color: #fff; }
+  /* 7 ─ Façon tableau d'effectif : filets bleu pâle, lignes teintées, bleu équipe */
+  .v7 { background: #fff; border-radius: 18px; box-shadow: 0 10px 32px rgba(0,0,0,.18); overflow: hidden; color: #161d29; }
+  .v7 .head { padding: 9px 12px 7px; border-bottom: 1px solid #dbe7f3; }
+  .v7 .title { color: #00539b; }
+  .v7 .lbl, .v7 .hint .k, .v7 .sc small, .v7 .tries small { color: #64748b; }
+  .v7 .tries i { border-color: #00539b; border-radius: 2px; } .v7 .tries i.used { background: #00539b; }
+  .v7 .hints { padding: 0; }
+  .v7 .hint { padding: 7px 12px; border-top: 1px solid #dbe7f3; }
+  .v7 .hint:not(.locked) { background: #eaf1f8; }
+  .v7 .hint .v { color: #00539b; }
+  .v7 .scores { border-color: #dbe7f3; border-radius: 10px; margin-top: 10px; } .v7 .sc + .sc { border-left-color: #dbe7f3; }
+  .v7 .sc b { color: #00539b; }
+  .v7 .b { border-radius: 10px; border-color: #dbe7f3; color: #00539b; } .v7 .b.main { background: #00539b; border-color: #00539b; color: #fff; }
 
-  /* 8 ─ Feuille de stats (mono) */
-  .v8 { background: #fff; color: #111; border: 1px solid #111; font-family: 'IBM Plex Mono', monospace; }
-  .v8 .head { padding: 7px 12px 5px; border-bottom: 1px solid #111; }
-  .v8 .title { font-family: inherit; font-weight: 700; font-size: 12px; letter-spacing: 1px; }
-  .v8 .who { padding: 10px 12px 8px; }
-  .v8 .lbl { font-family: inherit; color: #666; }
-  .v8 .name { font-family: 'MasqueFont', sans-serif; }
-  .v8 .tries i { border-radius: 0; border: 1px solid #111; } .v8 .tries i.used { background: #111; }
-  .v8 .tries small { font-family: inherit; }
-  .v8 .hints { padding: 0 12px 4px; }
-  .v8 .hint { border-top: 1px solid #111; font-family: inherit; } .v8 .hint .k { font-family: inherit; } .v8 .hint .dots { border: none; } .v8 .hint .v { margin-left: auto; }
-  .v8 .scores { margin: 6px 12px 0; border: 1px solid #111; }
-  .v8 .sc { padding: 6px 0 5px; } .v8 .sc + .sc { border-left: 1px solid #111; }
-  .v8 .sc b { font-family: inherit; font-weight: 700; } .v8 .sc small { font-family: inherit; }
-  .v8 .act { padding: 10px 12px 12px; }
-  .v8 .b { font-family: inherit; background: #fff; color: #111; border: 1px solid #111; } .v8 .b.main { background: #111; color: #fff; }
-  .q.v8q { background: #fff; color: #111; border: 1px solid #111; font-family: 'IBM Plex Mono', monospace; }
+  /* 8 ─ Tout le vocabulaire du site : panneau flouté, titre MASQUE, ardoise, pilules — la mono reste pour les chiffres */
+  .v8 { background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-radius: 14px; box-shadow: 0 10px 32px rgba(0,0,0,.25); overflow: hidden; color: #1e293b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  .v8 .head { padding: 9px 12px 6px; border-bottom: 1px solid #e2e8f0; }
+  .v8 .title { font-family: 'MasqueFont', sans-serif; font-size: 14px; letter-spacing: .5px; }
+  .v8 .x { font-family: inherit; font-weight: 900; }
+  .v8 .lbl, .v8 .hint .k, .v8 .sc small, .v8 .tries small { font-family: inherit; font-weight: 800; color: #64748b; }
+  .v8 .tries i { border-color: #1e293b; border-radius: 50%; } .v8 .tries i.used { background: #1e293b; }
+  .v8 .hint { border-top-color: #e2e8f0; } .v8 .hint .v { font-family: 'IBM Plex Mono', monospace; } .v8 .hint.locked .v { color: #cbd5e1; }
+  .v8 .scores { border: none; gap: 6px; } .v8 .sc { background: #eef2f6; border-radius: 10px; } .v8 .sc + .sc { border-left: none; }
+  .v8 .sc b { font-family: 'IBM Plex Mono', monospace; }
+  .v8 .b { font-family: inherit; font-weight: 800; letter-spacing: .3px; text-transform: none; font-size: 12px; border: none; border-radius: 999px; background: #eef2f6; color: #64748b; } .v8 .b.main { background: #1e293b; color: #fff; }
 </style>
 </head>
 <body>
-<h1>Quiz « Which college? » — 8 variantes, même contenu, même état</h1>
-<p class="note">Toutes en barre verticale à gauche, sous les boutons de la carte. Même état partout pour comparer : Carmelo Anthony, une erreur commise, l'indice n°1 débloqué, l'indice n°2 encore verrouillé, série 7, record 23, 142 trouvés. Le petit bouton « ? » en haut à gauche est le bouton d'entrée du quiz, aux couleurs de chaque variante. Mécanique inchangée : 3 tentatives, un indice par erreur, 3/2/1 points, révélation à la 3<sup>e</sup> erreur.</p>
+<h1>Quiz « Which college? » — la feuille de stats et 7 déclinaisons rapprochées du site</h1>
+<p class="note">La n°1 est la feuille de stats retenue, inchangée. Les sept autres gardent son ADN (chiffres et indices en chasse fixe, filets, boîte de scores) et reprennent, de plus en plus, le vocabulaire graphique déjà présent sur le site : coins arrondis du bandeau (12 px) et des boutons, panneau translucide, panneau flouté du sélecteur de ligue (14 px, grande ombre), titre en police MASQUE, palette ardoise et pilules du bracket, modale d'équipe (18 px, en-tête teinté), tableau d'effectif (filets bleu pâle, bleu équipe). Le bouton d'entrée « ? » est le même partout : identique aux boutons existants de la carte. Même état partout : une erreur, indice n°1 débloqué.</p>
 
 <div class="grid">
 
   <div class="cell">
-    <h3>1 · Ticket allégé</h3>
-    <p>Le style B sans les tampons ni les trous : papier crème, traits noirs fins, une seule ligne perforée, pointillés de talon.</p>
-    <div class="shot">
-      <div class="q v1q">?</div>
+    <h3>1 · Feuille de stats</h3>
+    <p>La référence : blanc, filets noirs, chasse fixe, angles droits.</p>
+    <div class="shot"><div class="q">?</div>
       <div class="card v1">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
         <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints">
-          <div class="hint"><span class="k">Draft</span><span class="dots"></span><span class="v">2003 · #3</span></div>
-          <div class="hint locked"><span class="k">Hint 2</span><span class="dots"></span><span class="v">· · · ·</span></div>
-        </div>
+        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
         <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
         <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
       </div>
@@ -201,17 +139,13 @@
   </div>
 
   <div class="cell">
-    <h3>2 · Ardoise</h3>
-    <p>Gris anthracite mat, texte blanc, traits fins. Discret sur la carte claire, comme un tableau de vestiaire.</p>
-    <div class="shot">
-      <div class="q v2q">?</div>
+    <h3>2 · Coins du site</h3>
+    <p>La même feuille avec le rayon 12 px du bandeau, la bordure grise des boutons de la carte et une ombre légère. Filets adoucis.</p>
+    <div class="shot"><div class="q">?</div>
       <div class="card v2">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
         <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints">
-          <div class="hint"><span class="k">Draft</span><span class="dots"></span><span class="v">2003 · #3</span></div>
-          <div class="hint locked"><span class="k">Hint 2</span><span class="dots"></span><span class="v">locked</span></div>
-        </div>
+        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
         <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
         <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
       </div>
@@ -219,17 +153,13 @@
   </div>
 
   <div class="cell">
-    <h3>3 · Programme</h3>
-    <p>Blanc, filets noirs, serif pour le nom et les chiffres : l'esprit d'un programme de match ou d'une feuille de score de journal.</p>
-    <div class="shot">
-      <div class="q v3q">?</div>
+    <h3>3 · Translucide</h3>
+    <p>Le gris translucide et flouté du bandeau de titre, sans bordure. La carte transparaît légèrement derrière.</p>
+    <div class="shot"><div class="q">?</div>
       <div class="card v3">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
         <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints">
-          <div class="hint"><span class="k">Draft</span><span class="dots"></span><span class="v">2003 · #3</span></div>
-          <div class="hint locked"><span class="k">Hint 2</span><span class="dots"></span><span class="v">locked</span></div>
-        </div>
+        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
         <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
         <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
       </div>
@@ -237,35 +167,13 @@
   </div>
 
   <div class="cell">
-    <h3>4 · Maillot</h3>
-    <p>Blanc, bande marine à gauche, la série affichée en gros comme un numéro de maillot. Après la révélation, la bande peut prendre la couleur de la fac.</p>
-    <div class="shot">
-      <div class="q v4q">?</div>
+    <h3>4 · Titre MASQUE</h3>
+    <p>Le panneau du sélecteur de ligue (blanc flouté, 14 px, grande ombre) et le titre dans la police du bandeau.</p>
+    <div class="shot"><div class="q">?</div>
       <div class="card v4">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
-        <div class="who"><div><div class="lbl">Player</div><div class="name">Carmelo Anthony</div></div><div class="num">7</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints">
-          <div class="hint"><span class="k">Draft</span><span class="dots"></span><span class="v">2003 · #3</span></div>
-          <div class="hint locked"><span class="k">Hint 2</span><span class="dots"></span><span class="v">locked</span></div>
-        </div>
-        <div class="scores"><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div><div class="sc"><b>68%</b><small>Accuracy</small></div></div>
-        <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="cell">
-    <h3>5 · Clipboard</h3>
-    <p>Feuille grise à pince, cases à cocher pour les indices, chasse fixe pour les chiffres : la fiche du coach.</p>
-    <div class="shot">
-      <div class="q v5q">?</div>
-      <div class="card v5">
-        <div class="head"><span class="title">WHICH COLLEGE?</span><button class="x">✕</button></div>
         <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints">
-          <div class="hint"><span class="k">Draft</span><span class="dots"></span><span class="v">2003 · #3</span></div>
-          <div class="hint locked"><span class="k">Hint 2</span><span class="dots"></span><span class="v">----</span></div>
-        </div>
+        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
         <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
         <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
       </div>
@@ -273,17 +181,27 @@
   </div>
 
   <div class="cell">
-    <h3>6 · Parquet</h3>
-    <p>Teinte bois très légère et un trait de peinture orange en haut, comme une ligne de terrain. Chaleureux sans être criard.</p>
-    <div class="shot">
-      <div class="q v6q">?</div>
+    <h3>5 · Ardoise du bracket</h3>
+    <p>La palette gris-bleu du bracket March Madness : scores en boîtes claires, boutons en pilules, actif en ardoise foncée.</p>
+    <div class="shot"><div class="q">?</div>
+      <div class="card v5">
+        <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
+        <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
+        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
+        <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
+        <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cell">
+    <h3>6 · Modale d'équipe</h3>
+    <p>Les codes de la fiche d'équipe : 18 px, en-tête gris-bleu, titre en gras système. Après la révélation, l'en-tête prend la couleur de la fac.</p>
+    <div class="shot"><div class="q">?</div>
       <div class="card v6">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
         <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints">
-          <div class="hint"><span class="k">Draft</span><span class="dots"></span><span class="v">2003 · #3</span></div>
-          <div class="hint locked"><span class="k">Hint 2</span><span class="dots"></span><span class="v">locked</span></div>
-        </div>
+        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
         <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
         <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
       </div>
@@ -291,17 +209,13 @@
   </div>
 
   <div class="cell">
-    <h3>7 · Tableau</h3>
-    <p>Blanc avec un simple bandeau marine en tête. Le plus proche des panneaux existants du site (modale d'équipe, bracket).</p>
-    <div class="shot">
-      <div class="q v7q">?</div>
+    <h3>7 · Tableau d'effectif</h3>
+    <p>Les codes de l'onglet Roster : filets bleu pâle, ligne d'indice teintée quand elle est débloquée, chiffres en bleu équipe.</p>
+    <div class="shot"><div class="q">?</div>
       <div class="card v7">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
         <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints">
-          <div class="hint"><span class="k">Draft</span><span class="dots"></span><span class="v">2003 · #3</span></div>
-          <div class="hint locked"><span class="k">Hint 2</span><span class="dots"></span><span class="v">locked</span></div>
-        </div>
+        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
         <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
         <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
       </div>
@@ -309,17 +223,13 @@
   </div>
 
   <div class="cell">
-    <h3>8 · Feuille de stats</h3>
-    <p>Tout en chasse fixe, filets noirs, tableau de chiffres : l'austérité d'une box score imprimée.</p>
-    <div class="shot">
-      <div class="q v8q">?</div>
+    <h3>8 · Tout le site</h3>
+    <p>Panneau flouté, titre MASQUE, libellés ardoise, pilules : le plus intégré. La chasse fixe ne reste que pour les chiffres et les indices.</p>
+    <div class="shot"><div class="q">?</div>
       <div class="card v8">
-        <div class="head"><span class="title">WHICH COLLEGE?</span><button class="x">✕</button></div>
+        <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
         <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints">
-          <div class="hint"><span class="k">Draft</span><span class="dots"></span><span class="v">2003 · #3</span></div>
-          <div class="hint locked"><span class="k">Hint 2</span><span class="dots"></span><span class="v">----</span></div>
-        </div>
+        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
         <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
         <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
       </div>
