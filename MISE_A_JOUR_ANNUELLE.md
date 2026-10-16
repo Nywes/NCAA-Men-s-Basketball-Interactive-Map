@@ -91,7 +91,7 @@ Dès la fin des deux tournois NCAA :
 ---
 
 ## 🔧 Cas ponctuels (pas annuels, mais à surveiller)
-- **Réalignement de conférences** (ex. effondrement Pac-12) → champ `conference` (badge) des équipes concernées, dans les **deux** fichiers.
+- **Réalignement de conférences** (chaque été, effectif au 1er juillet) → champ `conference` des équipes concernées, dans les **deux** fichiers. Source fiable : `src/espn-teams.json` (`groups.id` ESPN, régénéré chaque jour) — attention, ESPN marque parfois un groupe bidon (`isConference: false`, ex. l'American en 2026) : garder la conférence existante dans ce cas. Les ids de conférence doivent exister dans `divisions` (App.js) et chaque badge avoir son `.webp` dans `public/conferences/`. Fait pour 2026-27 (Pac-12 relancé, WAC → UAC, MAAC → Metro, Saint Francis parti en D3, West Florida arrivé).
 - **Renommage / rebranding** d'une fac (ex. George Washington → Revolutionaries, IUPUI → IU Indianapolis) → champ `name`.
 - **Nouvelles équipes D1 / passages en D2** → ajout/retrait d'équipe (rappel : The Citadel & VMI n'ont **pas** d'équipe féminine).
 

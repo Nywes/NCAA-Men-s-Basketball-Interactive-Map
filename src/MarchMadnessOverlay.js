@@ -475,7 +475,7 @@ export default function MarchMadnessOverlay({
         <div className="mm-about">
           <button className="x" onClick={() => setAboutOpen(false)}>✕</button>
           <h4>About the format</h4>
-          <p><b>68 teams, one Sunday.</b> On Selection Sunday (mid-March), the champions of the 31 conferences receive an automatic bid, and a selection committee awards 37 at-large bids to the best remaining teams.</p>
+          <p><b>68 teams, one Sunday.</b> On Selection Sunday (mid-March), the champions of the 32 conferences receive an automatic bid, and a selection committee awards 36 at-large bids to the best remaining teams.</p>
           <p><b>The four regions are not conferences</b> — they are the four quarters of the bracket. The committee first ranks all 68 teams from 1 to 68 (the "seed list"), then deals them out following an <b>S-curve</b>: the top four teams become the four No. 1 seeds (one per region), the next four the No. 2 seeds, and so on — snaking the order at each pass so the four regions end up as balanced as possible.</p>
           <p><b>Geography and separation rules</b> then adjust the placement: top seeds play their opening games as close to campus as possible, teams from the same conference are kept apart until the deep rounds, and regular-season rematches are avoided early.</p>
           <p><b>First Four.</b> The four weakest automatic qualifiers and the four last at-large teams play four play-in games to trim the field from 68 to 64.</p>

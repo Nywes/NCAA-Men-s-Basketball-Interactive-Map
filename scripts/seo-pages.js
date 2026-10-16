@@ -32,7 +32,7 @@ const PAGES = [
 		<h1>Carte des équipes NCAA de basket</h1>
 		<p>Activez JavaScript pour utiliser la carte.</p>
 		<p>Carte interactive de toutes les équipes de basket universitaire américain NCAA Division I, chez les hommes comme chez les femmes : plus de 360 universités placées sur la carte des États-Unis. Cliquez sur une équipe pour voir son effectif et les statistiques des joueurs, son classement, sa salle, son histoire, ses légendes (anciens joueurs NBA et WNBA, membres du Hall of Fame) et son palmarès.</p>
-		<h2>Les 31 conférences NCAA</h2>
+		<h2>Les 32 conférences NCAA</h2>
 		<p>ACC, Big Ten, Big 12, SEC, Big East, American, Atlantic 10, Mountain West, West Coast, Missouri Valley, Ivy League, Patriot League et toutes les autres conférences de Division I, filtrables sur la carte.</p>
 		<h2>March Madness</h2>
 		<p>Le tableau complet du tournoi NCAA (March Madness) pour chaque saison depuis 2009 chez les hommes et 2005 chez les femmes : parcours de chaque équipe, Final Four et titres nationaux.</p>

@@ -5830,7 +5830,7 @@
       "sweetSixteens": [],
       "appearances": 6
     },
-    "conference": "ASUN",
+    "conference": "UAC",
     "venue": "F&M Bank Arena"
   },
   {
@@ -5963,7 +5963,7 @@
       "sweetSixteens": [],
       "appearances": 0
     },
-    "conference": "ASUN",
+    "conference": "UAC",
     "venue": "Farris Center"
   },
   {
@@ -6007,7 +6007,7 @@
       "sweetSixteens": [],
       "appearances": 8
     },
-    "conference": "ASUN",
+    "conference": "UAC",
     "venue": "Baptist Health Arena"
   },
   {
@@ -6376,7 +6376,7 @@
       "sweetSixteens": [],
       "appearances": 0
     },
-    "conference": "ASUN",
+    "conference": "UAC",
     "venue": "CB&S Bank Arena at Flowers Hall",
     "oldPlayers": [
       {
@@ -6633,7 +6633,7 @@
       "sweetSixteens": [],
       "appearances": 0
     },
-    "conference": "ASUN",
+    "conference": "UAC",
     "venue": "The Coliseum",
     "oldPlayers": [
       {
@@ -11111,7 +11111,7 @@
         "legendRank": 3
       }
     ],
-    "conference": "A-10",
+    "conference": "Mid-American",
     "venue": "Mullins Center",
     "tournament": {
       "titles": [],
@@ -19603,7 +19603,7 @@
     "latitude": "38.561903",
     "longitude": "-121.426878",
     "venue": "Hornet Pavilion",
-    "conference": "Big Sky",
+    "conference": "Big West",
     "tournament": {
       "titles": [],
       "finalFours": [],
@@ -26367,7 +26367,7 @@
       }
     ],
     "venue": "Stan Sheriff Center",
-    "conference": "Big West",
+    "conference": "Mountain West",
     "tournament": {
       "titles": [],
       "finalFours": [],
@@ -26603,7 +26603,7 @@
       }
     ],
     "venue": "University Credit Union Center",
-    "conference": "Big West",
+    "conference": "Mountain West",
     "tournament": {
       "titles": [],
       "finalFours": [],
@@ -27882,7 +27882,7 @@
         }
       }
     ],
-    "conference": "Conference USA",
+    "conference": "Sun Belt",
     "venue": "Thomas Assembly Center",
     "tournament": {
       "titles": [],
@@ -28226,7 +28226,7 @@
         }
       }
     ],
-    "conference": "Conference USA",
+    "conference": "Mountain West",
     "venue": "Don Haskins Center",
     "tournament": {
       "titles": [
@@ -29545,7 +29545,7 @@
         }
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "Koessler Athletic Center",
     "tournament": {
       "titles": [],
@@ -29592,7 +29592,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "Leo D. Mahoney Arena",
     "tournament": {
       "titles": [],
@@ -29661,7 +29661,7 @@
         }
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "Hynes Athletics Center",
     "tournament": {
       "titles": [],
@@ -29704,7 +29704,7 @@
         }
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "Draddy Gymnasium",
     "tournament": {
       "titles": [],
@@ -29747,7 +29747,7 @@
         }
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "McCann Arena",
     "tournament": {
       "titles": [],
@@ -29791,7 +29791,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "Lawler Arena",
     "tournament": {
       "titles": [],
@@ -29835,7 +29835,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "Knott Arena",
     "tournament": {
       "titles": [],
@@ -29878,7 +29878,7 @@
         }
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "Gallagher Center",
     "tournament": {
       "titles": [],
@@ -29922,7 +29922,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "M&T Bank Arena",
     "tournament": {
       "titles": [],
@@ -29965,7 +29965,7 @@
         }
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "Alumni Gymnasium",
     "tournament": {
       "titles": [],
@@ -30009,7 +30009,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "William H. Pitt Center",
     "tournament": {
       "titles": [],
@@ -30052,7 +30052,7 @@
         }
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "Yanitelli Center",
     "tournament": {
       "titles": [],
@@ -30099,7 +30099,7 @@
         }
       }
     ],
-    "conference": "MAAC",
+    "conference": "Metro",
     "venue": "MVP Arena",
     "tournament": {
       "titles": [],
@@ -31038,7 +31038,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "Mid-American",
+    "conference": "Horizon",
     "venue": "NIU Convocation Center",
     "tournament": {
       "titles": [],
@@ -32005,7 +32005,7 @@
         "legendRank": 2
       }
     ],
-    "conference": "Mountain West",
+    "conference": "Pac-12",
     "venue": "ExtraMile Arena",
     "tournament": {
       "titles": [],
@@ -32076,7 +32076,7 @@
         "legendRank": 2
       }
     ],
-    "conference": "Mountain West",
+    "conference": "Pac-12",
     "venue": "Moby Arena",
     "tournament": {
       "titles": [],
@@ -32153,7 +32153,7 @@
         }
       }
     ],
-    "conference": "Mountain West",
+    "conference": "Pac-12",
     "venue": "Save Mart Center",
     "tournament": {
       "titles": [],
@@ -32417,7 +32417,7 @@
         }
       }
     ],
-    "conference": "Mountain West",
+    "conference": "Pac-12",
     "venue": "Viejas Arena",
     "tournament": {
       "titles": [],
@@ -32734,7 +32734,7 @@
         }
       }
     ],
-    "conference": "Mountain West",
+    "conference": "Pac-12",
     "venue": "Dee Glen Smith Spectrum",
     "tournament": {
       "titles": [],
@@ -33122,75 +33122,6 @@
     }
   },
   {
-    "id": "2598",
-    "name": "St. Francis (PA) Red Flash",
-    "latitude": "40.504666",
-    "longitude": "-78.6411025",
-    "oldPlayers": [
-      {
-        "id": "nec-maurice-stokes",
-        "name": "Maurice Stokes",
-        "years": "1951-1955",
-        "draftPosition": "2",
-        "draftYear": "1955",
-        "draftTeam": "Rochester Royals",
-        "hof": true,
-        "awards": {
-          "ncaa": {
-            "champion": [],
-            "naismithPOY": "",
-            "tournamentMOP": "",
-            "allAmerican": ""
-          },
-          "nba": {
-            "champion": [],
-            "mvp": "",
-            "finalsMVP": [],
-            "roty": "1956",
-            "allStar": 3,
-            "allNBA": 3
-          },
-          "intl": []
-        }
-      },
-      {
-        "id": "nec-norm-van-lier",
-        "name": "Norm Van Lier",
-        "years": "1966-1969",
-        "draftPosition": "",
-        "draftYear": "",
-        "draftTeam": "",
-        "hof": false,
-        "awards": {
-          "ncaa": {
-            "champion": [],
-            "naismithPOY": "",
-            "tournamentMOP": "",
-            "allAmerican": ""
-          },
-          "nba": {
-            "champion": [],
-            "mvp": "",
-            "finalsMVP": [],
-            "roty": "",
-            "allStar": 3,
-            "allNBA": 0
-          },
-          "intl": []
-        }
-      }
-    ],
-    "conference": "Northeast",
-    "venue": "DeGol Arena",
-    "tournament": {
-      "titles": [],
-      "finalFours": [],
-      "eliteEights": [],
-      "sweetSixteens": [],
-      "appearances": 2
-    }
-  },
-  {
     "id": "284",
     "name": "Stonehill Skyhawks",
     "latitude": "42.0574641",
@@ -33414,7 +33345,7 @@
         }
       }
     ],
-    "conference": "Ohio Valley",
+    "conference": "UAC",
     "venue": "Jack Stephens Center",
     "tournament": {
       "titles": [],
@@ -33757,7 +33688,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "Ohio Valley",
+    "conference": "Southern",
     "venue": "Hooper Eblen Center",
     "tournament": {
       "titles": [],
@@ -38741,7 +38672,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "Summit League",
+    "conference": "West Coast",
     "venue": "Hamilton Gymnasium",
     "tournament": {
       "titles": [],
@@ -39807,7 +39738,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "Sun Belt",
+    "conference": "Pac-12",
     "venue": "Strahan Arena at the University Events Center",
     "tournament": {
       "titles": [],
@@ -39965,7 +39896,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "WAC",
+    "conference": "UAC",
     "venue": "Moody Coliseum",
     "tournament": {
       "titles": [],
@@ -40036,7 +39967,7 @@
         "legendRank": 2
       }
     ],
-    "conference": "WAC",
+    "conference": "Big West",
     "venue": "Dale E. and Sarah Ann Fowler Events Center",
     "tournament": {
       "titles": [],
@@ -40080,7 +40011,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "WAC",
+    "conference": "Mountain West",
     "venue": "Global Credit Union Arena",
     "tournament": {
       "titles": [],
@@ -40282,7 +40213,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "WAC",
+    "conference": "Big Sky",
     "venue": "America First Events Center",
     "tournament": {
       "titles": [],
@@ -40326,7 +40257,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "WAC",
+    "conference": "UAC",
     "venue": "ECCU Center",
     "tournament": {
       "titles": [],
@@ -40370,7 +40301,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "WAC",
+    "conference": "UAC",
     "venue": "College Park Center",
     "tournament": {
       "titles": [],
@@ -40414,7 +40345,7 @@
         "legendRank": 1
       }
     ],
-    "conference": "WAC",
+    "conference": "Big Sky",
     "venue": "Burns Arena",
     "tournament": {
       "titles": [],
@@ -40485,7 +40416,7 @@
         "legendRank": 2
       }
     ],
-    "conference": "WAC",
+    "conference": "Big West",
     "venue": "UCCU Center",
     "tournament": {
       "titles": [],
@@ -40872,7 +40803,7 @@
         "legendRank": 12
       }
     ],
-    "conference": "West Coast",
+    "conference": "Pac-12",
     "venue": "McCarthey Athletic Center",
     "tournament": {
       "titles": [],
@@ -41227,7 +41158,7 @@
         "legendRank": 8
       }
     ],
-    "conference": "West Coast",
+    "conference": "Pac-12",
     "venue": "Gill Coliseum",
     "tournament": {
       "titles": [],
@@ -42278,7 +42209,7 @@
         "legendRank": 5
       }
     ],
-    "conference": "West Coast",
+    "conference": "Pac-12",
     "venue": "Beasley Coliseum",
     "tournament": {
       "titles": [],
@@ -42293,5 +42224,21 @@
       ],
       "appearances": 7
     }
+  },
+  {
+    "id": "2697",
+    "name": "West Florida Argonauts",
+    "latitude": "30.5479646",
+    "longitude": "-87.2162015",
+    "tournament": {
+      "titles": [],
+      "finalFours": [],
+      "eliteEights": [],
+      "sweetSixteens": [],
+      "appearances": 0
+    },
+    "conference": "ASUN",
+    "venue": "UWF Field House",
+    "oldPlayers": []
   }
 ]

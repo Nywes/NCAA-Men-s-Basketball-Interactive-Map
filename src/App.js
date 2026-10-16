@@ -47,13 +47,14 @@ const divisions = [
   { id: 'Conference USA', name: 'Conference USA', imgLinkName: 'Conference_USA_logo.png' },
   { id: 'Horizon', name: 'Horizon', imgLinkName: 'Horizon-League-logo.png' },
   { id: 'Ivy', name: 'Ivy', imgLinkName: 'Ivy-League-logo.png' },
-  { id: 'MAAC', name: 'MAAC', imgLinkName: 'Metro-Atlantic-Athletic-Conference-MAAC-logo.png' },
   { id: 'MEAC', name: 'MEAC', imgLinkName: 'Mid-Eastern-Athletic-Conference-MEAC-logo.png' },
+  { id: 'Metro', name: 'Metro', imgLinkName: 'METRO_Primary_LtBG.png' }, // ex-MAAC (depuis juillet 2026)
   { id: 'Mid-American', name: 'Mid-American', imgLinkName: 'Mid-American_Conference_logo.png' },
   { id: 'Missouri Valley', name: 'Missouri Valley', imgLinkName: 'Missouri-Valley-Conference-logo.png' },
   { id: 'Mountain West', name: 'Mountain West', imgLinkName: 'Mountain_West_Conference_logo.png' },
   { id: 'Northeast', name: 'Northeast', imgLinkName: 'Northeast-Conference-logo.png' },
   { id: 'Ohio Valley', name: 'Ohio Valley', imgLinkName: 'Ohio-Valley-Conference-logo.png' },
+  { id: 'Pac-12', name: 'Pac-12', imgLinkName: 'Pac-12_logo.png' }, // relancé en 2026-27
   { id: 'Patriot League', name: 'Patriot League', imgLinkName: 'Patriot-League-Conference-logo.png' },
   { id: 'SEC', name: 'SEC', imgLinkName: 'Southeastern_Conference_logo.png' },
   { id: 'SWAC', name: 'SWAC', imgLinkName: 'Southwestern-Athletic-Conference-logo.png' },
@@ -61,7 +62,7 @@ const divisions = [
   { id: 'Southland', name: 'Southland', imgLinkName: 'Southland-Conference-logo.png' },
   { id: 'Summit League', name: 'Summit League', imgLinkName: 'Summit-League-logo.png' },
   { id: 'Sun Belt', name: 'Sun Belt', imgLinkName: 'Sun_Belt_Conference_2020_logo.png' },
-  { id: 'WAC', name: 'WAC', imgLinkName: 'Western-Athletic-Conference-logo.png' },
+  { id: 'UAC', name: 'UAC', imgLinkName: 'United-Athletic-Conference.png' }, // ex-WAC (United Athletic Conference)
   { id: 'West Coast', name: 'West Coast', imgLinkName: 'West-Coast-Conference-logo.png' },
 ];
 
