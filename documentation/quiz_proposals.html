@@ -2,188 +2,330 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>Quiz « Quelle fac ? » — propositions d'interface</title>
+<title>Quiz « Which college? » — propositions V2 (barre verticale)</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Barlow+Condensed:wght@600;800&display=swap" rel="stylesheet">
 <style>
-  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #e2e8f0; color: #0f172a; }
+  @font-face { font-family: 'MasqueFont'; src: url('../src/assets/MASQUE.ttf') format('truetype'); }
+  body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #d9dee6; color: #111; }
   h1 { font-size: 20px; margin: 24px 24px 4px; }
-  h2 { font-size: 15px; margin: 28px 24px 10px; color: #334155; }
-  p.note { margin: 0 24px 16px; color: #64748b; font-size: 13px; max-width: 900px; }
-  .shot { position: relative; width: 1100px; height: 560px; margin: 0 24px 8px; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 30px rgba(15,23,42,.18); background: url('../public/og-image.jpg') center/cover; }
-  .shot.dim::before { content: ""; position: absolute; inset: 0; background: rgba(241,245,249,.25); }
-  .row { display: flex; gap: 16px; margin: 0 24px; flex-wrap: wrap; }
-  .row .shot { width: 540px; height: 330px; margin: 0; background-position: 30% 40%; }
-  .cap { font-size: 12px; color: #64748b; margin: 6px 24px 0; }
-
-  /* éléments existants simulés */
-  .navbar { position: absolute; top: 14px; left: 60px; right: 200px; height: 52px; border-radius: 14px; background: rgba(255,255,255,.55); backdrop-filter: blur(6px); }
+  h2 { font-size: 16px; margin: 30px 24px 8px; }
+  p.note { margin: 0 24px 14px; color: #444; font-size: 13px; max-width: 980px; line-height: 1.45; }
+  .row { display: flex; gap: 16px; margin: 0 24px; flex-wrap: wrap; align-items: flex-start; }
+  .shot { position: relative; width: 760px; height: 620px; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 24px rgba(0,0,0,.18); background: url('../public/og-image.jpg') 20% 40% / cover; flex: none; }
+  .shot.sm { width: 370px; height: 620px; background-position: 35% 40%; }
+  .shot::before { content: ""; position: absolute; inset: 0; background: rgba(241,245,249,.22); }
+  .cap { font-size: 12px; color: #555; margin: 6px 24px 0; max-width: 980px; }
   .btns { position: absolute; left: 10px; top: 150px; display: flex; flex-direction: column; gap: 8px; }
   .btns span { width: 34px; height: 34px; border-radius: 8px; background: #fff; border: 2px solid rgba(0,0,0,.2); box-sizing: border-box; display: grid; place-items: center; font-weight: 800; font-size: 13px; }
-  .btns span.q { background: #1e293b; color: #fff; border-color: #1e293b; }
+  .btns span.ghost { visibility: hidden; }
 
-  /* ── HUD du quiz ── */
-  .hud { position: absolute; z-index: 5; background: rgba(255,255,255,.92); backdrop-filter: blur(10px); border: 1px solid #e2e8f0; border-radius: 16px; box-shadow: 0 10px 30px rgba(15,23,42,.14); }
-  .hud .kicker { font-size: 10px; letter-spacing: 1.6px; text-transform: uppercase; font-weight: 800; color: #b45309; }
-  .hud .name { white-space: nowrap; font-size: 24px; font-weight: 900; letter-spacing: -.3px; line-height: 1.1; margin: 2px 0 4px; }
-  .hud .hint { display: flex; gap: 6px; flex-wrap: wrap; }
-  .hud .chip { font-size: 11px; font-weight: 700; color: #64748b; background: #eef2f6; border-radius: 999px; padding: 3px 9px; }
-  .hud .chip.hot { color: #b45309; background: #fef3c7; }
-  .hud .actions { display: flex; gap: 6px; }
-  .hud .btn { border: none; border-radius: 999px; padding: 7px 12px; font-size: 12px; font-weight: 700; cursor: pointer; background: #eef2f6; color: #475569; font-family: inherit; }
-  .hud .btn.dark { background: #1e293b; color: #fff; }
-  .hud .x { width: 30px; height: 30px; border-radius: 50%; border: none; background: #1e293b; color: #fff; font-size: 13px; cursor: pointer; display: grid; place-items: center; }
-  .hud .score { text-align: center; min-width: 54px; }
-  .hud .score b { display: block; font-size: 22px; line-height: 1; }
-  .hud .score small { font-size: 10px; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
-  .hud .score.best b { color: #b45309; }
+  /* ═══════════ STYLE A — SCOREBOARD ═══════════ */
+  .sb { position: absolute; left: 54px; top: 150px; width: 236px; background: #14213d; color: #fff; border: 2px solid #fca311; box-shadow: 7px 7px 0 #0b1226; font-family: 'Barlow Condensed', 'Montserrat', sans-serif; }
+  .sb .band { background: #fca311; color: #14213d; font-family: 'MasqueFont', 'Montserrat', sans-serif; font-size: 17px; letter-spacing: .5px; padding: 7px 12px 5px; display: flex; justify-content: space-between; align-items: center; text-transform: uppercase; }
+  .sb .band .x { font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 13px; }
+  .sb .who { padding: 12px 12px 6px; }
+  .sb .lbl { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: #fca311; font-weight: 800; }
+  .sb .name { font-family: 'MasqueFont', 'Montserrat', sans-serif; font-size: 28px; line-height: 1; margin-top: 4px; text-transform: uppercase; }
+  .sb .tries { display: flex; gap: 5px; margin-top: 8px; }
+  .sb .tries i { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #fca311; box-sizing: border-box; background: #fca311; }
+  .sb .tries i.used { background: transparent; opacity: .55; }
+  .sb .hints { margin: 8px 12px 0; border-top: 1px solid rgba(255,255,255,.15); }
+  .sb .hint { display: flex; gap: 8px; align-items: center; padding: 7px 0; border-bottom: 1px solid rgba(255,255,255,.15); font-size: 14px; font-weight: 600; }
+  .sb .hint b { font-family: 'Montserrat', sans-serif; font-size: 10px; color: #14213d; background: #fca311; padding: 2px 5px; }
+  .sb .hint.locked { color: rgba(255,255,255,.4); }
+  .sb .hint.locked b { background: rgba(255,255,255,.15); color: rgba(255,255,255,.5); }
+  .sb .hint.locked span { background: repeating-linear-gradient(135deg, rgba(255,255,255,.18) 0 4px, transparent 4px 9px); color: transparent; border-radius: 2px; }
+  .sb .scores { display: flex; margin: 10px 12px 0; gap: 6px; }
+  .sb .sc { flex: 1; background: #0b1226; padding: 7px 6px 6px; text-align: center; }
+  .sb .sc b { display: block; font-family: 'Montserrat', sans-serif; font-weight: 900; font-size: 24px; line-height: 1; color: #fca311; font-variant-numeric: tabular-nums; }
+  .sb .sc.best b { color: #fff; }
+  .sb .sc small { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; color: #9fb0d0; font-weight: 700; }
+  .sb .act { display: flex; gap: 6px; padding: 10px 12px 12px; }
+  .sb .b { flex: 1; font: 800 13px 'Barlow Condensed', sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 9px 0; border: 2px solid #fca311; background: transparent; color: #fca311; cursor: pointer; clip-path: polygon(6px 0, 100% 0, calc(100% - 6px) 100%, 0 100%); }
+  .sb .b.main { background: #fca311; color: #14213d; }
+  .sb .verdict { margin: 8px 12px 0; padding: 8px 10px; font-weight: 800; font-size: 15px; display: flex; align-items: center; gap: 8px; text-transform: uppercase; letter-spacing: .5px; }
+  .sb .verdict img { width: 28px; height: 28px; object-fit: contain; background: #fff; padding: 2px; }
+  .sb .verdict.ok { background: #1f9d55; color: #fff; }
+  .sb .verdict.ko { background: #d7263d; color: #fff; }
+  .sb.ok { border-color: #2ecc71; } .sb.ko { border-color: #ff4d5e; }
 
-  /* V1 : barre horizontale centrée sous la navbar */
-  .hud.top { top: 80px; left: 50%; transform: translateX(-50%); display: flex; align-items: center; gap: 18px; padding: 12px 16px 12px 20px; }
-  .hud.top .sep { width: 1px; height: 38px; background: #e2e8f0; }
-
-  /* V2 : carte verticale à gauche, sous les boutons */
-  .hud.side { top: 150px; left: 54px; width: 230px; padding: 14px 16px; display: flex; flex-direction: column; gap: 10px; }
-  .hud.side .scores { display: flex; justify-content: space-around; border-top: 1px solid #eef2f6; padding-top: 10px; }
-  .hud.side .actions { justify-content: space-between; }
-
-  /* états */
-  .hud.ok { border-color: #16a34a; box-shadow: 0 0 0 3px rgba(22,163,74,.18), 0 10px 30px rgba(15,23,42,.14); }
-  .hud.ko { border-color: #dc2626; box-shadow: 0 0 0 3px rgba(220,38,38,.16), 0 10px 30px rgba(15,23,42,.14); }
-  .verdict { font-size: 13px; font-weight: 800; display: flex; align-items: center; gap: 8px; }
-  .verdict img { width: 26px; height: 26px; object-fit: contain; }
-  .verdict.ok { color: #15803d; }
-  .verdict.ko { color: #b91c1c; }
-  .ring { position: absolute; width: 56px; height: 56px; border-radius: 50%; border: 3px solid #16a34a; box-shadow: 0 0 0 6px rgba(22,163,74,.25); animation: pulse 1s ease-out infinite; }
-  .ring.ko { border-color: #dc2626; box-shadow: 0 0 0 6px rgba(220,38,38,.22); }
-  @keyframes pulse { 0% { transform: scale(.8); opacity: 1 } 100% { transform: scale(1.25); opacity: .35 } }
+  /* ═══════════ STYLE B — TICKET / ADMISSION ═══════════ */
+  .tk { position: absolute; left: 54px; top: 150px; width: 232px; background: #fbf5e6; color: #161616; border: 2px solid #161616; box-shadow: 5px 5px 0 #161616; font-family: 'Barlow Condensed', 'Montserrat', sans-serif; }
+  .tk .top { background: #161616; color: #fbf5e6; padding: 8px 12px 6px; display: flex; justify-content: space-between; align-items: center; }
+  .tk .top .t { font-family: 'MasqueFont', sans-serif; font-size: 16px; text-transform: uppercase; letter-spacing: .5px; }
+  .tk .top .x { font: 900 13px 'Montserrat', sans-serif; }
+  .tk .who { padding: 12px 12px 8px; border-bottom: 2px dashed #161616; position: relative; }
+  .tk .who::before, .tk .who::after { content: ""; position: absolute; bottom: -9px; width: 16px; height: 16px; border-radius: 50%; background: #d9dee6; border: 2px solid #161616; }
+  .tk .who::before { left: -10px; } .tk .who::after { right: -10px; }
+  .tk .lbl { font: 800 10px 'Montserrat', sans-serif; letter-spacing: 2px; text-transform: uppercase; color: #d7263d; }
+  .tk .name { font-family: 'MasqueFont', sans-serif; font-size: 27px; line-height: 1; margin-top: 4px; text-transform: uppercase; }
+  .tk .punch { display: flex; gap: 6px; margin-top: 9px; align-items: center; }
+  .tk .punch i { width: 13px; height: 13px; border-radius: 50%; border: 2px solid #161616; box-sizing: border-box; }
+  .tk .punch i.used { background: #161616; }
+  .tk .punch small { font: 800 9px 'Montserrat', sans-serif; letter-spacing: 1.5px; text-transform: uppercase; color: #666; margin-left: 4px; }
+  .tk .stub { padding: 10px 12px 4px; }
+  .tk .line { display: flex; align-items: baseline; font-size: 14px; font-weight: 600; padding: 4px 0; text-transform: uppercase; letter-spacing: .3px; }
+  .tk .line .k { color: #555; font-weight: 800; font-size: 11px; letter-spacing: 1.5px; }
+  .tk .line .dots { flex: 1; border-bottom: 2px dotted #999; margin: 0 6px 4px; }
+  .tk .line .v { font-weight: 800; }
+  .tk .line.locked .v { color: #aaa; letter-spacing: 2px; }
+  .tk .scores { display: flex; margin: 6px 12px 0; border: 2px solid #161616; }
+  .tk .sc { flex: 1; text-align: center; padding: 6px 4px 5px; border-right: 2px solid #161616; }
+  .tk .sc:last-child { border-right: none; }
+  .tk .sc b { display: block; font: 900 22px 'Montserrat', sans-serif; line-height: 1; color: #1d3557; }
+  .tk .sc.best b { color: #d7263d; }
+  .tk .sc small { font: 800 9px 'Montserrat', sans-serif; letter-spacing: 1.5px; text-transform: uppercase; color: #555; }
+  .tk .act { display: flex; gap: 6px; padding: 10px 12px 12px; }
+  .tk .b { flex: 1; font: 800 12px 'Montserrat', sans-serif; letter-spacing: 1px; text-transform: uppercase; padding: 9px 0; border: 2px solid #161616; background: #fbf5e6; color: #161616; cursor: pointer; box-shadow: 3px 3px 0 #161616; }
+  .tk .b.main { background: #1d3557; color: #fff; }
+  .stamp { position: absolute; right: -10px; top: 84px; transform: rotate(-10deg); border: 3px solid; padding: 4px 10px; font: 900 18px 'Montserrat', sans-serif; letter-spacing: 2px; text-transform: uppercase; background: rgba(251,245,230,.85); }
+  .stamp.ok { color: #1f9d55; border-color: #1f9d55; } .stamp.ko { color: #d7263d; border-color: #d7263d; }
+  .tk .reveal { margin: 6px 12px 0; display: flex; align-items: center; gap: 8px; font-weight: 800; font-size: 14px; text-transform: uppercase; }
+  .tk .reveal img { width: 28px; height: 28px; object-fit: contain; }
 
   /* mode 4 choix */
-  .choices { position: absolute; top: 200px; left: 50%; transform: translateX(-50%); display: grid; grid-template-columns: repeat(4, 150px); gap: 12px; z-index: 5; }
-  .choice { background: rgba(255,255,255,.94); border: 1.5px solid #e2e8f0; border-radius: 14px; padding: 14px 10px 12px; text-align: center; cursor: pointer; box-shadow: 0 6px 18px rgba(15,23,42,.12); }
-  .choice:hover { border-color: #1e293b; transform: translateY(-2px); }
-  .choice img { width: 54px; height: 54px; object-fit: contain; }
-  .choice div { font-size: 12px; font-weight: 800; margin-top: 6px; color: #1e293b; }
-  .choice small { display: block; font-size: 10px; color: #94a3b8; font-weight: 700; }
+  .choices { position: absolute; left: 310px; top: 160px; display: grid; grid-template-columns: repeat(2, 132px); gap: 10px; }
+  .ch { text-align: center; padding: 10px 8px 9px; cursor: pointer; }
+  .ch img { width: 46px; height: 46px; object-fit: contain; }
+  .ch div { font: 800 13px 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .5px; margin-top: 4px; }
+  .ch small { display: block; font: 700 9px 'Montserrat', sans-serif; letter-spacing: 1.5px; text-transform: uppercase; opacity: .6; }
+  .choices.A .ch { background: #14213d; color: #fff; border: 2px solid #fca311; box-shadow: 5px 5px 0 #0b1226; }
+  .choices.A .ch img { background: #fff; padding: 3px; }
+  .choices.A .ch.out { opacity: .35; text-decoration: line-through; }
+  .choices.B .ch { background: #fbf5e6; color: #161616; border: 2px solid #161616; box-shadow: 4px 4px 0 #161616; }
+  .choices.B .ch.out { opacity: .4; }
+  .choices.B .ch.out div { text-decoration: line-through; }
+  .ring { position: absolute; width: 56px; height: 56px; pointer-events: none; border-radius: 50%; border: 3px solid #1f9d55; box-shadow: 0 0 0 6px rgba(31,157,85,.3); }
+  .ring.ko { border-color: #d7263d; box-shadow: 0 0 0 6px rgba(215,38,61,.25); }
 
-  /* écran de fin / stats (localStorage) */
-  .stats { position: absolute; top: 90px; left: 50%; transform: translateX(-50%); width: 360px; }
-  .stats .grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 8px; margin: 12px 0; }
-  .stats .cell { background: #f8fafc; border-radius: 10px; padding: 10px; text-align: center; }
-  .stats .cell b { display: block; font-size: 20px; }
-  .stats .cell small { font-size: 10px; color: #94a3b8; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+  /* mobile */
+  .phone { position: relative; width: 300px; height: 470px; border-radius: 10px; overflow: hidden; box-shadow: 0 6px 24px rgba(0,0,0,.18); background: url('../public/og-image.jpg') 55% 45% / 220% auto; flex: none; }
+  .phone::before { content: ""; position: absolute; inset: 0; background: rgba(241,245,249,.22); }
+  .mb { position: absolute; left: 0; right: 0; bottom: 0; }
+  .mb.A { background: #14213d; color: #fff; border-top: 3px solid #fca311; padding: 10px 12px 12px; font-family: 'Barlow Condensed', sans-serif; }
+  .mb.B { background: #fbf5e6; color: #161616; border-top: 2px solid #161616; padding: 10px 12px 12px; font-family: 'Barlow Condensed', sans-serif; }
+  .mb .r1 { display: flex; justify-content: space-between; align-items: center; }
+  .mb .nm { font-family: 'MasqueFont', sans-serif; font-size: 22px; text-transform: uppercase; }
+  .mb .st { font: 900 20px 'Montserrat', sans-serif; }
+  .mb.A .st { color: #fca311; } .mb.B .st { color: #1d3557; }
+  .mb .r2 { display: flex; gap: 6px; margin-top: 8px; align-items: center; font-size: 13px; font-weight: 700; text-transform: uppercase; }
+  .mb .r2 .b { margin-left: auto; font: 800 11px 'Montserrat', sans-serif; letter-spacing: 1px; padding: 6px 10px; }
+  .mb.A .b { background: #fca311; color: #14213d; } .mb.B .b { background: #1d3557; color: #fff; }
 </style>
 </head>
 <body>
-<h1>Quiz « Quelle fac ? » — propositions d'interface</h1>
-<p class="note">Principe : un bouton « ? » sous le bouton March Madness lance le quiz. Le nom du joueur s'affiche, on clique sur le logo de sa fac sur la carte (les popups d'équipe sont désactivées pendant le quiz). Bonne réponse = série +1. Mauvaise réponse = la carte vole vers la bonne fac, la série repart à 0. Le bouton « 4 choix » affiche 4 facs possibles. Score (série en cours, record, total) conservé dans le navigateur.</p>
+<h1>Quiz « Which college? » — barre verticale (V2), deux styles</h1>
+<p class="note"><b>Mécanique retenue :</b> le nom du joueur s'affiche, tu cliques sur le logo de sa fac. <b>3 tentatives par joueur</b> : après la 1<sup>re</sup> erreur, l'indice n°1 se débloque (année de draft et rang, ou année de début), après la 2<sup>e</sup> l'indice n°2 (la conférence de la fac). À la 3<sup>e</sup> erreur, la bonne fac est révélée (la carte vole dessus) et la série repart à zéro. Trouvé du 1<sup>er</sup> coup = 3 points, après 1 indice = 2, après 2 indices = 1. « 4 choices » affiche quatre facs ; une mauvaise est barrée à chaque erreur. Série, record et total sont gardés dans le navigateur. L'interface du site étant en anglais, les textes le sont aussi.</p>
 
-<h2>V1 — Barre centrée sous la recherche (recommandée)</h2>
-<p class="note">Tout tient sur une ligne, la carte reste entièrement visible. Les indices (année de draft, nombre de saisons) sont optionnels : on peut les cacher par défaut et ne les montrer qu'après une erreur.</p>
-<div class="shot dim">
-  <div class="navbar"></div>
-  <div class="btns" style="top:150px;left:10px"><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span class="q">?</span></div>
-  <div class="hud top">
-    <div>
-      <div class="kicker">Quelle fac ?</div>
-      <div class="name">Carmelo Anthony</div>
-      <div class="hint"><span class="chip">Draft 2003 · #3</span><span class="chip">19 saisons NBA</span></div>
-    </div>
-    <div class="sep"></div>
-    <div class="score"><b>7</b><small>série</small></div>
-    <div class="score best"><b>23</b><small>record</small></div>
-    <div class="sep"></div>
-    <div class="actions"><button class="btn dark">4 choix</button><button class="btn">Passer</button></div>
-    <button class="x">✕</button>
-  </div>
-</div>
-<p class="cap">Le joueur à trouver est bien lisible, les actions sont à droite. Le « ✕ » quitte le quiz et rend la carte normale.</p>
-
-<h2>Les états de jeu (V1)</h2>
+<h2>Style A — « Scoreboard » : panneau d'affichage de salle</h2>
+<p class="note">Bleu nuit et orange, typo condensée, angles droits, ombre portée dure. Les indices verrouillés apparaissent hachurés, comme des cases encore éteintes sur un tableau de score.</p>
 <div class="row">
-  <div class="shot dim">
-    <div class="hud top ok" style="top: 60px; gap: 14px; padding: 10px 14px 10px 18px;">
-      <div>
-        <div class="kicker">Quelle fac ?</div>
-        <div class="name" style="font-size:20px">Carmelo Anthony</div>
-        <div class="verdict ok"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/183.png" alt=""> Syracuse ✓ &nbsp;<span class="chip hot">série 8</span></div>
+  <div class="shot">
+    <div class="btns"><span class="ghost"></span><span class="ghost"></span><span class="ghost"></span><span style="background:#14213d;color:#fca311;border-color:#14213d">?</span></div>
+    <div class="sb">
+      <div class="band"><span>Which college?</span><span class="x">✕</span></div>
+      <div class="who">
+        <div class="lbl">Player</div>
+        <div class="name">Carmelo Anthony</div>
+        <div class="tries"><i></i><i></i><i></i></div>
       </div>
-      <div class="sep"></div>
-      <div class="score"><b>8</b><small>série</small></div>
-      <div class="actions"><button class="btn dark">Suivant →</button></div>
-    </div>
-    <div class="ring" style="left: 390px; top: 185px;"></div>
-  </div>
-  <div class="shot dim">
-    <div class="hud top ko" style="top: 60px; gap: 14px; padding: 10px 14px 10px 18px;">
-      <div>
-        <div class="kicker">Quelle fac ?</div>
-        <div class="name" style="font-size:20px">Carmelo Anthony</div>
-        <div class="verdict ko">✗ Kentucky — c'était <img src="https://a.espncdn.com/i/teamlogos/ncaa/500/183.png" alt=""> Syracuse</div>
+      <div class="hints">
+        <div class="hint locked"><b>01</b><span>Draft 2003 · #3 pick</span></div>
+        <div class="hint locked"><b>02</b><span>Conference · ACC</span></div>
       </div>
-      <div class="sep"></div>
-      <div class="score"><b>0</b><small>série</small></div>
-      <div class="actions"><button class="btn dark">Suivant →</button></div>
+      <div class="scores">
+        <div class="sc"><b>7</b><small>Streak</small></div>
+        <div class="sc best"><b>23</b><small>Best</small></div>
+        <div class="sc"><b>142</b><small>Found</small></div>
+      </div>
+      <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
     </div>
-    <div class="ring ko" style="left: 390px; top: 185px;"></div>
   </div>
-</div>
-<p class="cap">Gauche : bonne réponse, le logo cliqué pulse en vert. Droite : mauvaise réponse, la carte vole vers la bonne fac et son logo pulse en rouge. « Suivant » (ou Entrée) passe au joueur suivant.</p>
-
-<h2>Mode « 4 choix » (V1)</h2>
-<div class="shot dim">
-  <div class="navbar"></div>
-  <div class="btns" style="top:150px;left:10px"><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span class="q">?</span></div>
-  <div class="hud top">
-    <div>
-      <div class="kicker">Quelle fac ?</div>
-      <div class="name">Stephen Curry</div>
-      <div class="hint"><span class="chip">Draft 2009 · #7</span></div>
-    </div>
-    <div class="sep"></div>
-    <div class="score"><b>3</b><small>série</small></div>
-    <div class="score best"><b>23</b><small>record</small></div>
-    <div class="sep"></div>
-    <div class="actions"><button class="btn">Sur la carte</button><button class="btn">Passer</button></div>
-    <button class="x">✕</button>
-  </div>
-  <div class="choices">
-    <div class="choice"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/150.png" alt=""><div>Duke</div><small>ACC</small></div>
-    <div class="choice"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2166.png" alt=""><div>Davidson</div><small>Atlantic 10</small></div>
-    <div class="choice"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/153.png" alt=""><div>North Carolina</div><small>ACC</small></div>
-    <div class="choice"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/258.png" alt=""><div>Virginia</div><small>ACC</small></div>
-  </div>
-</div>
-<p class="cap">Les 3 mauvaises propositions sont tirées de préférence dans la même région ou conférence que la bonne, pour que ce ne soit pas trop facile. On peut toujours cliquer sur la carte à la place.</p>
-
-<h2>V2 — Carte verticale à gauche</h2>
-<p class="note">Variante compacte alignée sous les boutons existants. Libère le haut de la carte, mais le nom du joueur est moins mis en avant.</p>
-<div class="shot dim">
-  <div class="navbar"></div>
-  <div class="btns" style="top:150px;left:10px"><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span style="visibility:hidden"></span><span class="q">?</span></div>
-  <div class="hud side" style="left: 54px;">
-    <div class="kicker">Quelle fac ?</div>
-    <div class="name" style="font-size:21px">Carmelo Anthony</div>
-    <div class="hint"><span class="chip">Draft 2003 · #3</span><span class="chip">19 saisons</span></div>
-    <div class="actions"><button class="btn dark">4 choix</button><button class="btn">Passer</button><button class="x">✕</button></div>
-    <div class="scores">
-      <div class="score"><b>7</b><small>série</small></div>
-      <div class="score best"><b>23</b><small>record</small></div>
-      <div class="score"><b>142</b><small>total</small></div>
+  <div class="shot sm">
+    <div class="sb ko">
+      <div class="band"><span>Which college?</span><span class="x">✕</span></div>
+      <div class="who">
+        <div class="lbl">Player</div>
+        <div class="name">Carmelo Anthony</div>
+        <div class="tries"><i class="used"></i><i class="used"></i><i></i></div>
+      </div>
+      <div class="verdict ko">✕ Not Kentucky</div>
+      <div class="hints">
+        <div class="hint"><b>01</b><span>Draft 2003 · #3 pick</span></div>
+        <div class="hint"><b>02</b><span>Conference · ACC</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><b>7</b><small>Streak</small></div>
+        <div class="sc best"><b>23</b><small>Best</small></div>
+        <div class="sc"><b>142</b><small>Found</small></div>
+      </div>
+      <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
     </div>
   </div>
 </div>
+<p class="cap">Gauche : début de tour, 3 tentatives pleines, indices verrouillés. Droite : deux erreurs, les deux indices sont débloqués, il reste une tentative.</p>
 
-<h2>Récap à la fin d'une série (commun aux deux)</h2>
-<p class="note">Quand la série se termine (mauvaise réponse), un petit récap peut s'afficher avant de continuer. Les chiffres viennent du localStorage.</p>
-<div class="shot dim" style="height: 330px;">
-  <div class="hud stats" style="padding: 16px 18px;">
-    <div class="kicker">Série terminée</div>
-    <div class="name" style="font-size:20px">7 bonnes réponses d'affilée</div>
-    <div class="grid">
-      <div class="cell"><b>23</b><small>record</small></div>
-      <div class="cell"><b>142</b><small>trouvés</small></div>
-      <div class="cell"><b>68%</b><small>réussite</small></div>
+<div class="row" style="margin-top:14px">
+  <div class="shot sm">
+    <div class="sb ok">
+      <div class="band"><span>Which college?</span><span class="x">✕</span></div>
+      <div class="who">
+        <div class="lbl">Player</div>
+        <div class="name">Carmelo Anthony</div>
+        <div class="tries"><i class="used"></i><i></i><i></i></div>
+      </div>
+      <div class="verdict ok"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/183.png" alt="">Syracuse · +2</div>
+      <div class="scores">
+        <div class="sc"><b>8</b><small>Streak</small></div>
+        <div class="sc best"><b>23</b><small>Best</small></div>
+        <div class="sc"><b>143</b><small>Found</small></div>
+      </div>
+      <div class="act"><button class="b main">Next player →</button></div>
     </div>
-    <div class="actions"><button class="btn dark">Rejouer</button><button class="btn">Quitter</button></div>
+    <div class="ring" style="left: 262px; top: 300px;"></div>
+  </div>
+  <div class="shot">
+    <div class="sb">
+      <div class="band"><span>Which college?</span><span class="x">✕</span></div>
+      <div class="who">
+        <div class="lbl">Player</div>
+        <div class="name">Stephen Curry</div>
+        <div class="tries"><i class="used"></i><i></i><i></i></div>
+      </div>
+      <div class="hints">
+        <div class="hint"><b>01</b><span>Draft 2009 · #7 pick</span></div>
+        <div class="hint locked"><b>02</b><span>Conference · Atlantic 10</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><b>3</b><small>Streak</small></div>
+        <div class="sc best"><b>23</b><small>Best</small></div>
+        <div class="sc"><b>142</b><small>Found</small></div>
+      </div>
+      <div class="act"><button class="b main">On the map</button><button class="b">Skip</button></div>
+    </div>
+    <div class="choices A">
+      <div class="ch out"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/150.png" alt=""><div>Duke</div><small>ACC</small></div>
+      <div class="ch"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2166.png" alt=""><div>Davidson</div><small>Atlantic 10</small></div>
+      <div class="ch"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/153.png" alt=""><div>North Carolina</div><small>ACC</small></div>
+      <div class="ch"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/258.png" alt=""><div>Virginia</div><small>ACC</small></div>
+    </div>
+  </div>
+</div>
+<p class="cap">Gauche : trouvé après un indice, +2 points, le logo cliqué est cerclé de vert sur la carte. Droite : mode « 4 choices », Duke a été tenté et barré, l'indice n°1 s'est débloqué.</p>
+
+<h2>Style B — « Ticket » : billet de match / fiche d'admission</h2>
+<p class="note">Papier crème, noir, bleu et rouge, bord perforé entre le joueur et les indices, tentatives poinçonnées. La bonne réponse reçoit un tampon « ADMITTED », l'échec un tampon « DENIED » — clin d'œil à l'admission en fac.</p>
+<div class="row">
+  <div class="shot">
+    <div class="btns"><span class="ghost"></span><span class="ghost"></span><span class="ghost"></span><span style="background:#161616;color:#fbf5e6;border-color:#161616">?</span></div>
+    <div class="tk">
+      <div class="top"><span class="t">Which college?</span><span class="x">✕</span></div>
+      <div class="who">
+        <div class="lbl">Player</div>
+        <div class="name">Carmelo Anthony</div>
+        <div class="punch"><i></i><i></i><i></i><small>3 tries</small></div>
+      </div>
+      <div class="stub">
+        <div class="line locked"><span class="k">Hint 1</span><span class="dots"></span><span class="v">■ ■ ■ ■</span></div>
+        <div class="line locked"><span class="k">Hint 2</span><span class="dots"></span><span class="v">■ ■ ■ ■</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><b>7</b><small>Streak</small></div>
+        <div class="sc best"><b>23</b><small>Best</small></div>
+        <div class="sc"><b>142</b><small>Found</small></div>
+      </div>
+      <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
+    </div>
+  </div>
+  <div class="shot sm">
+    <div class="tk">
+      <div class="top"><span class="t">Which college?</span><span class="x">✕</span></div>
+      <div class="who">
+        <div class="lbl">Player</div>
+        <div class="name">Carmelo Anthony</div>
+        <div class="punch"><i class="used"></i><i class="used"></i><i></i><small>1 try left</small></div>
+        <div class="stamp ko">Denied</div>
+      </div>
+      <div class="stub">
+        <div class="line"><span class="k">Draft</span><span class="dots"></span><span class="v">2003 · #3</span></div>
+        <div class="line"><span class="k">Conf.</span><span class="dots"></span><span class="v">ACC</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><b>7</b><small>Streak</small></div>
+        <div class="sc best"><b>23</b><small>Best</small></div>
+        <div class="sc"><b>142</b><small>Found</small></div>
+      </div>
+      <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
+    </div>
+  </div>
+</div>
+<p class="cap">Gauche : début de tour. Droite : deux erreurs (deux trous poinçonnés), les deux indices sont imprimés sur le talon, tampon « DENIED » sur la dernière erreur.</p>
+
+<div class="row" style="margin-top:14px">
+  <div class="shot sm">
+    <div class="tk">
+      <div class="top"><span class="t">Which college?</span><span class="x">✕</span></div>
+      <div class="who">
+        <div class="lbl">Player</div>
+        <div class="name">Carmelo Anthony</div>
+        <div class="punch"><i class="used"></i><i></i><i></i></div>
+        <div class="stamp ok">Admitted</div>
+      </div>
+      <div class="stub">
+        <div class="reveal"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/183.png" alt="">Syracuse · +2 pts</div>
+      </div>
+      <div class="scores">
+        <div class="sc"><b>8</b><small>Streak</small></div>
+        <div class="sc best"><b>23</b><small>Best</small></div>
+        <div class="sc"><b>143</b><small>Found</small></div>
+      </div>
+      <div class="act"><button class="b main">Next player →</button></div>
+    </div>
+    <div class="ring" style="left: 262px; top: 300px;"></div>
+  </div>
+  <div class="shot">
+    <div class="tk">
+      <div class="top"><span class="t">Which college?</span><span class="x">✕</span></div>
+      <div class="who">
+        <div class="lbl">Player</div>
+        <div class="name">Stephen Curry</div>
+        <div class="punch"><i class="used"></i><i></i><i></i><small>2 tries left</small></div>
+      </div>
+      <div class="stub">
+        <div class="line"><span class="k">Draft</span><span class="dots"></span><span class="v">2009 · #7</span></div>
+        <div class="line locked"><span class="k">Hint 2</span><span class="dots"></span><span class="v">■ ■ ■ ■</span></div>
+      </div>
+      <div class="scores">
+        <div class="sc"><b>3</b><small>Streak</small></div>
+        <div class="sc best"><b>23</b><small>Best</small></div>
+        <div class="sc"><b>142</b><small>Found</small></div>
+      </div>
+      <div class="act"><button class="b main">On the map</button><button class="b">Skip</button></div>
+    </div>
+    <div class="choices B">
+      <div class="ch out"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/150.png" alt=""><div>Duke</div><small>ACC</small></div>
+      <div class="ch"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2166.png" alt=""><div>Davidson</div><small>Atlantic 10</small></div>
+      <div class="ch"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/153.png" alt=""><div>North Carolina</div><small>ACC</small></div>
+      <div class="ch"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/258.png" alt=""><div>Virginia</div><small>ACC</small></div>
+    </div>
+  </div>
+</div>
+<p class="cap">Gauche : trouvé après un indice, tampon « ADMITTED ». Droite : mode « 4 choices », Duke barré après une erreur.</p>
+
+<h2>Sur téléphone (les deux styles)</h2>
+<p class="note">Sous 600 px, la barre verticale n'a pas la place : le quiz devient une bande en bas de l'écran, avec le nom du joueur, la série, les tentatives et le dernier indice débloqué. On clique sur la carte au-dessus.</p>
+<div class="row">
+  <div class="phone">
+    <div class="mb A">
+      <div class="r1"><span class="nm">Carmelo Anthony</span><span class="st">7</span></div>
+      <div class="r2"><span>●●○</span><span style="color:#fca311">Draft 2003 · #3</span><span class="b">4 choices</span></div>
+    </div>
+  </div>
+  <div class="phone">
+    <div class="mb B">
+      <div class="r1"><span class="nm">Carmelo Anthony</span><span class="st">7</span></div>
+      <div class="r2"><span>●●○</span><span style="color:#d7263d">Draft 2003 · #3</span><span class="b">4 choices</span></div>
+    </div>
   </div>
 </div>
 <p style="height: 40px"></p>
