@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
 <meta charset="utf-8">
-<title>Quiz « Which college? » — feuille de stats et 7 déclinaisons « site »</title>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;900&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<title>Quiz « Which college? » — 8 déclinaisons du style translucide</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
   @font-face { font-family: 'MasqueFont'; src: url('../src/assets/MASQUE.ttf') format('truetype'); }
   body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #d9dee6; color: #111; }
@@ -11,124 +11,110 @@
   p.note { margin: 0 24px 18px; color: #444; font-size: 13px; max-width: 1180px; line-height: 1.45; }
   .grid { display: grid; grid-template-columns: repeat(4, 290px); gap: 18px 16px; margin: 0 24px 40px; }
   .cell h3 { font-size: 14px; margin: 0 0 2px; }
-  .cell p { font-size: 12px; color: #555; margin: 0 0 8px; min-height: 46px; line-height: 1.4; }
-  .shot { position: relative; width: 290px; height: 470px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.16); background: url('../public/og-image.jpg') 22% 42% / cover no-repeat; }
-  .shot::before { content: ""; position: absolute; inset: 0; background: rgba(241,245,249,.18); }
-  /* bouton d'entrée : identique aux boutons existants de la carte (34px, blanc, bordure grise) */
-  .q { position: absolute; left: 10px; top: 14px; width: 34px; height: 34px; border-radius: 8px; background: #fff; border: 2px solid rgba(0,0,0,.2); box-sizing: border-box; display: grid; place-items: center; font: 700 15px 'IBM Plex Mono', monospace; color: #111; }
+  .cell p { font-size: 12px; color: #555; margin: 0 0 8px; min-height: 60px; line-height: 1.4; }
+  .shot { position: relative; width: 290px; height: 470px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 16px rgba(0,0,0,.16); background: url('../public/og-image.jpg') 30% 48% / 200% auto no-repeat; }
+  /* bouton d'entrée = boutons existants de la carte */
+  .q { position: absolute; left: 10px; top: 14px; width: 34px; height: 34px; border-radius: 8px; background: #fff; border: 2px solid rgba(0,0,0,.2); box-sizing: border-box; display: grid; place-items: center; font: 700 15px 'IBM Plex Mono', monospace; color: #111; z-index: 3; }
 
-  /* ── squelette commun (contenu mono = ADN de la feuille de stats) ── */
-  .card { position: absolute; left: 54px; top: 14px; width: 222px; box-sizing: border-box; font-family: 'IBM Plex Mono', monospace; color: #111; }
-  .head { display: flex; justify-content: space-between; align-items: center; }
+  /* ── matériaux du site ── */
+  /* bandeau de titre : rgba(240,240,240,.5), rayon 12, ombre 0 4px 6px */
+  /* colonne des conférences : zone floutée 8px sans fond ; tuiles rgba(240,240,240,.9) rayon 12, gap 8 */
+  .card { position: absolute; left: 54px; top: 14px; width: 222px; box-sizing: border-box; font-family: 'IBM Plex Mono', monospace; color: #161d29; }
+  .glass { background: rgba(240,240,240,.62); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,.1); }
+  .head { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px 6px; border-bottom: 1px solid rgba(0,0,0,.15); }
   .title { font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
   .x { font: 700 12px 'IBM Plex Mono', monospace; background: none; border: none; cursor: pointer; color: inherit; }
-  .lbl { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; color: #666; }
+  .who { padding: 10px 12px 8px; }
+  .lbl { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; color: #5b6470; }
   .name { font-family: 'MasqueFont', sans-serif; font-size: 26px; line-height: 1; text-transform: uppercase; margin-top: 4px; }
   .tries { display: flex; gap: 5px; align-items: center; margin-top: 8px; }
-  .tries i { width: 10px; height: 10px; box-sizing: border-box; border: 1px solid #111; }
-  .tries i.used { background: #111; }
-  .tries small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; margin-left: 4px; color: #666; }
-  .hint { display: flex; align-items: baseline; font-size: 13px; padding: 5px 0; border-top: 1px solid #111; }
-  .hint .k { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; color: #666; }
-  .hint .v { margin-left: auto; font-weight: 700; }
-  .hint.locked .v { color: #bbb; }
-  .scores { display: flex; margin: 6px 12px 0; border: 1px solid #111; }
-  .sc { flex: 1; text-align: center; padding: 6px 0 5px; }
-  .sc + .sc { border-left: 1px solid #111; }
-  .sc b { display: block; font-weight: 700; font-size: 20px; line-height: 1; font-variant-numeric: tabular-nums; }
-  .sc small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; color: #666; }
-  .act { display: flex; gap: 6px; padding: 10px 12px 12px; }
-  .b { flex: 1; font: 700 11px 'IBM Plex Mono', monospace; letter-spacing: 1px; text-transform: uppercase; padding: 8px 0; cursor: pointer; background: #fff; color: #111; border: 1px solid #111; }
-  .b.main { background: #111; color: #fff; }
-  .who { padding: 10px 12px 8px; }
+  .tries i { width: 10px; height: 10px; box-sizing: border-box; border: 1px solid #161d29; }
+  .tries i.used { background: #161d29; }
+  .tries small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; margin-left: 4px; color: #5b6470; }
   .hints { padding: 0 12px 4px; }
+  .hint { display: flex; align-items: baseline; font-size: 13px; padding: 5px 0; border-top: 1px solid rgba(0,0,0,.15); }
+  .hint .k { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; color: #5b6470; }
+  .hint .v { margin-left: auto; font-weight: 700; }
+  .hint.locked .v { color: #9aa3ad; }
+  .scores { display: flex; gap: 6px; margin: 6px 12px 0; }
+  .sc { flex: 1; text-align: center; padding: 6px 0 5px; background: rgba(255,255,255,.7); border-radius: 8px; }
+  .sc b { display: block; font-weight: 700; font-size: 20px; line-height: 1; font-variant-numeric: tabular-nums; }
+  .sc small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; color: #5b6470; }
+  .act { display: flex; gap: 6px; padding: 10px 12px 12px; }
+  .b { flex: 1; font: 700 11px 'IBM Plex Mono', monospace; letter-spacing: 1px; text-transform: uppercase; padding: 8px 0; cursor: pointer; background: rgba(255,255,255,.7); color: #161d29; border: none; border-radius: 8px; }
+  .b.main { background: #161d29; color: #fff; }
 
-  /* 1 ─ Feuille de stats (référence) */
-  .v1 { background: #fff; border: 1px solid #111; }
-  .v1 .head { padding: 7px 12px 5px; border-bottom: 1px solid #111; }
+  /* 2 ─ Tuiles : zone floutée sans fond + blocs en tuiles (structure de la colonne des conférences) */
+  .v2 { background: none; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 8px; border-radius: 12px; display: flex; flex-direction: column; gap: 8px; }
+  .v2 > div { background: rgba(240,240,240,.9); border-radius: 12px; }
+  .v2 .head { border: none; padding: 8px 12px; }
+  .v2 .hints { padding: 2px 12px; }
+  .v2 .hint:first-child { border-top: none; }
+  .v2 .scores { margin: 0; background: none !important; gap: 8px; }
+  .v2 .sc { background: rgba(240,240,240,.9); border-radius: 12px; padding: 8px 0 7px; }
+  .v2 .act { padding: 0; background: none !important; gap: 8px; }
+  .v2 .b { background: rgba(240,240,240,.9); border-radius: 12px; padding: 10px 0; } .v2 .b.main { background: #161d29; }
 
-  /* 2 ─ Coins du site : rayon 12, bordure grise des boutons, ombre légère */
-  .v2 { background: #fff; border: 2px solid rgba(0,0,0,.2); border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,.1); overflow: hidden; }
-  .v2 .head { padding: 8px 12px 6px; border-bottom: 1px solid #ddd; }
-  .v2 .hint { border-top-color: #ddd; }
-  .v2 .scores { border-color: #ddd; border-radius: 8px; } .v2 .sc + .sc { border-left-color: #ddd; }
-  .v2 .tries i { border-radius: 2px; }
-  .v2 .b { border-radius: 8px; border-color: rgba(0,0,0,.25); } .v2 .b.main { border-color: #111; }
+  /* 3 ─ Colonne miroir : pleine hauteur, collée au bord gauche, comme la colonne de droite */
+  .col { position: absolute; left: 0; top: 0; bottom: 0; width: 150px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); padding: 8px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px; font-family: 'IBM Plex Mono', monospace; color: #161d29; z-index: 2; }
+  .col > div { background: rgba(240,240,240,.9); border-radius: 12px; padding: 8px 10px; }
+  .col .title { font-size: 10px; }
+  .col .name { font-size: 20px; }
+  .col .lbl { font-size: 8px; }
+  .col .hint { padding: 4px 0; font-size: 11px; }
+  .col .hint .k { font-size: 8px; letter-spacing: 1px; }
+  .col .sc { padding: 4px 0; } .col .sc b { font-size: 16px; } .col .sc small { font-size: 8px; letter-spacing: 1px; }
+  .col .stack { display: flex; flex-direction: column; gap: 6px; background: none !important; padding: 0 !important; }
+  .col .b { padding: 8px 0; font-size: 10px; background: rgba(240,240,240,.9); border-radius: 12px; }
+  .col .b.main { background: #161d29; }
+  .col .spacer { flex: 1; background: none !important; }
 
-  /* 3 ─ Translucide comme le bandeau */
-  .v3 { background: rgba(240,240,240,.62); backdrop-filter: blur(8px); border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,.1); color: #161d29; }
-  .v3 .head { padding: 8px 12px 6px; border-bottom: 1px solid rgba(0,0,0,.15); }
-  .v3 .hint { border-top-color: rgba(0,0,0,.15); }
-  .v3 .scores { border: none; gap: 6px; } .v3 .sc { background: rgba(255,255,255,.7); border-radius: 8px; } .v3 .sc + .sc { border-left: none; }
-  .v3 .b { background: rgba(255,255,255,.7); border: none; border-radius: 8px; } .v3 .b.main { background: #161d29; color: #fff; }
+  /* 4 ─ titre MASQUE */
+  .v4 .title { font-family: 'MasqueFont', sans-serif; font-size: 14px; letter-spacing: .5px; text-transform: uppercase; }
 
-  /* 4 ─ Titre en MASQUE, panneau du sélecteur de ligue */
-  .v4 { background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-radius: 14px; box-shadow: 0 10px 32px rgba(0,0,0,.25); overflow: hidden; }
-  .v4 .head { padding: 9px 12px 6px; border-bottom: 1px solid #e5e7eb; }
-  .v4 .title { font-family: 'MasqueFont', sans-serif; font-size: 14px; letter-spacing: .5px; }
-  .v4 .hint { border-top-color: #e5e7eb; }
-  .v4 .scores { border-color: #e5e7eb; border-radius: 8px; } .v4 .sc + .sc { border-left-color: #e5e7eb; }
-  .v4 .b { border-radius: 8px; border-color: #cbd5e1; } .v4 .b.main { background: #1e293b; border-color: #1e293b; }
+  /* 5 ─ deux pièces : bandeau-titre séparé + carte */
+  .bar { position: absolute; left: 54px; top: 14px; width: 222px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; background: rgba(240,240,240,.5); border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,.1); font-family: 'IBM Plex Mono', monospace; color: #161d29; }
+  .bar .title { font-family: 'MasqueFont', sans-serif; font-size: 14px; letter-spacing: .5px; text-transform: uppercase; }
+  .bar .x { font: 700 12px 'IBM Plex Mono', monospace; background: none; border: none; }
+  .v5 { top: 58px; }
+  .v5 .who { padding-top: 12px; }
 
-  /* 5 ─ Palette ardoise du bracket, boutons en pilules */
-  .v5 { background: #fff; border-radius: 14px; box-shadow: 0 10px 32px rgba(0,0,0,.18); color: #1e293b; overflow: hidden; }
-  .v5 .head { padding: 9px 12px 6px; background: rgba(255,255,255,.78); border-bottom: 1px solid #e2e8f0; }
-  .v5 .title { color: #1e293b; }
-  .v5 .lbl, .v5 .hint .k, .v5 .sc small, .v5 .tries small { color: #64748b; }
-  .v5 .tries i { border-color: #1e293b; border-radius: 50%; } .v5 .tries i.used { background: #1e293b; }
-  .v5 .hint { border-top-color: #e2e8f0; } .v5 .hint.locked .v { color: #cbd5e1; }
-  .v5 .scores { border: none; gap: 6px; } .v5 .sc { background: #eef2f6; border-radius: 10px; } .v5 .sc + .sc { border-left: none; }
-  .v5 .b { border: none; border-radius: 999px; background: #eef2f6; color: #64748b; } .v5 .b.main { background: #1e293b; color: #fff; }
+  /* 6 ─ verre sombre */
+  .v6 { background: rgba(30,41,59,.74); color: #f8fafc; }
+  .v6 .head, .v6 .hint { border-color: rgba(255,255,255,.18); }
+  .v6 .lbl, .v6 .hint .k, .v6 .sc small, .v6 .tries small { color: #b6c0cf; }
+  .v6 .tries i { border-color: #f8fafc; } .v6 .tries i.used { background: #f8fafc; }
+  .v6 .hint.locked .v { color: #7c8795; }
+  .v6 .sc { background: rgba(255,255,255,.12); }
+  .v6 .b { background: rgba(255,255,255,.12); color: #f8fafc; } .v6 .b.main { background: #f8fafc; color: #1e293b; }
 
-  /* 6 ─ Façon modale d'équipe : rayon 18, en-tête teinté, nom en gras */
-  .v6 { background: #fff; border-radius: 18px; box-shadow: 0 10px 32px rgba(0,0,0,.18); overflow: hidden; color: #161d29; }
-  .v6 .head { padding: 12px 14px 10px; background: #e8edf2; }
-  .v6 .title { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; font-weight: 900; font-size: 15px; text-transform: none; letter-spacing: 0; color: #161d29; }
-  .v6 .x { font-family: inherit; color: #5b6470; }
-  .v6 .lbl { color: #5b6470; }
-  .v6 .tries i { border-color: #161d29; border-radius: 50%; } .v6 .tries i.used { background: #161d29; }
-  .v6 .hint { border-top-color: #e5e7eb; }
-  .v6 .scores { border-color: #e5e7eb; border-radius: 10px; } .v6 .sc + .sc { border-left-color: #e5e7eb; }
-  .v6 .b { border-radius: 10px; border-color: #cbd5e1; } .v6 .b.main { background: #161d29; border-color: #161d29; }
+  /* 7 ─ 4 choix en tuiles-logos (comme les conférences) */
+  .tiles { position: absolute; left: 54px; top: 250px; width: 222px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 8px; box-sizing: border-box; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); border-radius: 12px; }
+  .tile { aspect-ratio: 1 / 0.8; border-radius: 12px; background: rgba(240,240,240,.9); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; font: 700 10px 'IBM Plex Mono', monospace; letter-spacing: .5px; text-transform: uppercase; color: #161d29; cursor: pointer; }
+  .tile img { width: 54%; height: 54%; object-fit: contain; }
+  .tile.out { background: transparent; } .tile.out img { filter: grayscale(100%); opacity: .55; } .tile.out span { color: #9aa3ad; text-decoration: line-through; }
+  .v7 .act .b.main { background: rgba(255,255,255,.7); color: #161d29; }
 
-  /* 7 ─ Façon tableau d'effectif : filets bleu pâle, lignes teintées, bleu équipe */
-  .v7 { background: #fff; border-radius: 18px; box-shadow: 0 10px 32px rgba(0,0,0,.18); overflow: hidden; color: #161d29; }
-  .v7 .head { padding: 9px 12px 7px; border-bottom: 1px solid #dbe7f3; }
-  .v7 .title { color: #00539b; }
-  .v7 .lbl, .v7 .hint .k, .v7 .sc small, .v7 .tries small { color: #64748b; }
-  .v7 .tries i { border-color: #00539b; border-radius: 2px; } .v7 .tries i.used { background: #00539b; }
-  .v7 .hints { padding: 0; }
-  .v7 .hint { padding: 7px 12px; border-top: 1px solid #dbe7f3; }
-  .v7 .hint:not(.locked) { background: #eaf1f8; }
-  .v7 .hint .v { color: #00539b; }
-  .v7 .scores { border-color: #dbe7f3; border-radius: 10px; margin-top: 10px; } .v7 .sc + .sc { border-left-color: #dbe7f3; }
-  .v7 .sc b { color: #00539b; }
-  .v7 .b { border-radius: 10px; border-color: #dbe7f3; color: #00539b; } .v7 .b.main { background: #00539b; border-color: #00539b; color: #fff; }
-
-  /* 8 ─ Tout le vocabulaire du site : panneau flouté, titre MASQUE, ardoise, pilules — la mono reste pour les chiffres */
-  .v8 { background: rgba(255,255,255,.94); backdrop-filter: blur(10px); border-radius: 14px; box-shadow: 0 10px 32px rgba(0,0,0,.25); overflow: hidden; color: #1e293b; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
-  .v8 .head { padding: 9px 12px 6px; border-bottom: 1px solid #e2e8f0; }
-  .v8 .title { font-family: 'MasqueFont', sans-serif; font-size: 14px; letter-spacing: .5px; }
-  .v8 .x { font-family: inherit; font-weight: 900; }
-  .v8 .lbl, .v8 .hint .k, .v8 .sc small, .v8 .tries small { font-family: inherit; font-weight: 800; color: #64748b; }
-  .v8 .tries i { border-color: #1e293b; border-radius: 50%; } .v8 .tries i.used { background: #1e293b; }
-  .v8 .hint { border-top-color: #e2e8f0; } .v8 .hint .v { font-family: 'IBM Plex Mono', monospace; } .v8 .hint.locked .v { color: #cbd5e1; }
-  .v8 .scores { border: none; gap: 6px; } .v8 .sc { background: #eef2f6; border-radius: 10px; } .v8 .sc + .sc { border-left: none; }
-  .v8 .sc b { font-family: 'IBM Plex Mono', monospace; }
-  .v8 .b { font-family: inherit; font-weight: 800; letter-spacing: .3px; text-transform: none; font-size: 12px; border: none; border-radius: 999px; background: #eef2f6; color: #64748b; } .v8 .b.main { background: #1e293b; color: #fff; }
+  /* 8 ─ réponse révélée : la fac en tuile-logo, carte ok/ko */
+  .v8.ok { box-shadow: 0 4px 6px rgba(0,0,0,.1), 0 0 0 2px #1f9d55; }
+  .found { margin: 0 12px; display: flex; align-items: center; gap: 10px; background: rgba(240,240,240,.9); border-radius: 12px; padding: 8px 10px; }
+  .found img { width: 40px; height: 40px; object-fit: contain; }
+  .found .n { font-weight: 700; font-size: 13px; text-transform: uppercase; }
+  .found .p { font-size: 10px; color: #1f9d55; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+  .ring { position: absolute; width: 54px; height: 54px; border-radius: 50%; border: 3px solid #1f9d55; box-shadow: 0 0 0 6px rgba(31,157,85,.28); pointer-events: none; }
 </style>
 </head>
 <body>
-<h1>Quiz « Which college? » — la feuille de stats et 7 déclinaisons rapprochées du site</h1>
-<p class="note">La n°1 est la feuille de stats retenue, inchangée. Les sept autres gardent son ADN (chiffres et indices en chasse fixe, filets, boîte de scores) et reprennent, de plus en plus, le vocabulaire graphique déjà présent sur le site : coins arrondis du bandeau (12 px) et des boutons, panneau translucide, panneau flouté du sélecteur de ligue (14 px, grande ombre), titre en police MASQUE, palette ardoise et pilules du bracket, modale d'équipe (18 px, en-tête teinté), tableau d'effectif (filets bleu pâle, bleu équipe). Le bouton d'entrée « ? » est le même partout : identique aux boutons existants de la carte. Même état partout : une erreur, indice n°1 débloqué.</p>
+<h1>Quiz « Which college? » — 8 déclinaisons du style translucide</h1>
+<p class="note">Même matériau que le site : le gris translucide à coins 12 px du bandeau de titre, et le flou sans fond de la colonne des conférences avec ses tuiles gris clair (<code>rgba(240,240,240,0.9)</code>, coins 12 px, grisées quand elles sont inactives). Chiffres et indices restent en chasse fixe. Le bouton d'entrée « ? » est identique aux boutons de la carte. Même état partout sauf mention contraire : une erreur, indice n°1 débloqué.</p>
 
 <div class="grid">
 
   <div class="cell">
-    <h3>1 · Feuille de stats</h3>
-    <p>La référence : blanc, filets noirs, chasse fixe, angles droits.</p>
+    <h3>1 · Translucide</h3>
+    <p>La référence de la galerie précédente : une seule plaque gris translucide floutée, scores et boutons sur fond blanc léger.</p>
     <div class="shot"><div class="q">?</div>
-      <div class="card v1">
+      <div class="card glass">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
         <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
         <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
@@ -139,8 +125,8 @@
   </div>
 
   <div class="cell">
-    <h3>2 · Coins du site</h3>
-    <p>La même feuille avec le rayon 12 px du bandeau, la bordure grise des boutons de la carte et une ombre légère. Filets adoucis.</p>
+    <h3>2 · Tuiles</h3>
+    <p>La structure exacte de la colonne des conférences : une zone floutée sans fond, et chaque bloc (titre, joueur, indices, scores, boutons) est une tuile gris clair à coins 12 px, espacées de 8 px.</p>
     <div class="shot"><div class="q">?</div>
       <div class="card v2">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
@@ -153,24 +139,26 @@
   </div>
 
   <div class="cell">
-    <h3>3 · Translucide</h3>
-    <p>Le gris translucide et flouté du bandeau de titre, sans bordure. La carte transparaît légèrement derrière.</p>
-    <div class="shot"><div class="q">?</div>
-      <div class="card v3">
-        <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
-        <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
-        <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
-        <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
+    <h3>3 · Colonne miroir</h3>
+    <p>Le quiz devient une colonne pleine hauteur collée au bord gauche, symétrique de la colonne des conférences à droite, avec les mêmes tuiles. Les boutons de la carte passeraient à sa droite.</p>
+    <div class="shot">
+      <div class="col">
+        <div><span class="title">Which college?</span></div>
+        <div><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i></div></div>
+        <div><div class="hint" style="border-top:none"><span class="k">Draft</span><span class="v">2003·#3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
+        <div class="stack"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
+        <div class="stack"><button class="b main">4 choices</button><button class="b">Skip</button></div>
+        <div class="spacer"></div>
+        <div style="text-align:center;font-size:10px;font-weight:700">✕ Quit</div>
       </div>
     </div>
   </div>
 
   <div class="cell">
     <h3>4 · Titre MASQUE</h3>
-    <p>Le panneau du sélecteur de ligue (blanc flouté, 14 px, grande ombre) et le titre dans la police du bandeau.</p>
+    <p>La plaque translucide de la n°1, avec « Which college? » dans la police du bandeau de titre.</p>
     <div class="shot"><div class="q">?</div>
-      <div class="card v4">
+      <div class="card glass v4">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
         <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
         <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
@@ -181,10 +169,24 @@
   </div>
 
   <div class="cell">
-    <h3>5 · Ardoise du bracket</h3>
-    <p>La palette gris-bleu du bracket March Madness : scores en boîtes claires, boutons en pilules, actif en ardoise foncée.</p>
+    <h3>5 · Deux pièces</h3>
+    <p>Un petit bandeau-titre séparé, copie du bandeau du site (gris à 50 %, ombre), et la plaque du jeu en dessous.</p>
     <div class="shot"><div class="q">?</div>
-      <div class="card v5">
+      <div class="bar"><span class="title">Which college?</span><button class="x">✕</button></div>
+      <div class="card glass v5">
+        <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
+        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
+        <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
+        <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="cell">
+    <h3>6 · Verre sombre</h3>
+    <p>Le même verre flouté, mais en ardoise foncée avec texte blanc : la plaque se détache de la carte claire.</p>
+    <div class="shot"><div class="q">?</div>
+      <div class="card glass v6">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
         <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
         <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
@@ -195,44 +197,36 @@
   </div>
 
   <div class="cell">
-    <h3>6 · Modale d'équipe</h3>
-    <p>Les codes de la fiche d'équipe : 18 px, en-tête gris-bleu, titre en gras système. Après la révélation, l'en-tête prend la couleur de la fac.</p>
+    <h3>7 · Quatre choix en tuiles</h3>
+    <p>État « 4 choices » : les quatre facs s'affichent sous la plaque comme des tuiles de conférence, logo et nom ; une tuile tentée passe en gris, comme une conférence désactivée.</p>
     <div class="shot"><div class="q">?</div>
-      <div class="card v6">
+      <div class="card glass v7">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
-        <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
-        <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
-        <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
+        <div class="who"><div class="lbl">Player</div><div class="name">Stephen Curry</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
+        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2009 · #7</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
+        <div class="act" style="padding-top:8px"><button class="b main">On the map</button><button class="b">Skip</button></div>
+      </div>
+      <div class="tiles">
+        <div class="tile out"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/150.png" alt=""><span>Duke</span></div>
+        <div class="tile"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/2166.png" alt=""><span>Davidson</span></div>
+        <div class="tile"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/153.png" alt=""><span>N. Carolina</span></div>
+        <div class="tile"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/258.png" alt=""><span>Virginia</span></div>
       </div>
     </div>
   </div>
 
   <div class="cell">
-    <h3>7 · Tableau d'effectif</h3>
-    <p>Les codes de l'onglet Roster : filets bleu pâle, ligne d'indice teintée quand elle est débloquée, chiffres en bleu équipe.</p>
+    <h3>8 · Réponse révélée</h3>
+    <p>État « trouvé » : la fac apparaît en tuile-logo dans la plaque avec les points gagnés, liseré vert, et le logo cliqué est cerclé sur la carte. En cas d'échec final : liseré rouge et la carte vole vers la fac.</p>
     <div class="shot"><div class="q">?</div>
-      <div class="card v7">
+      <div class="card glass v8 ok">
         <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
-        <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
-        <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
-        <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
+        <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i></div></div>
+        <div class="found"><img src="https://a.espncdn.com/i/teamlogos/ncaa/500/183.png" alt=""><div><div class="n">Syracuse</div><div class="p">Correct · +2 pts</div></div></div>
+        <div class="scores"><div class="sc"><b>8</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>143</b><small>Found</small></div></div>
+        <div class="act"><button class="b main">Next player →</button></div>
       </div>
-    </div>
-  </div>
-
-  <div class="cell">
-    <h3>8 · Tout le site</h3>
-    <p>Panneau flouté, titre MASQUE, libellés ardoise, pilules : le plus intégré. La chasse fixe ne reste que pour les chiffres et les indices.</p>
-    <div class="shot"><div class="q">?</div>
-      <div class="card v8">
-        <div class="head"><span class="title">Which college?</span><button class="x">✕</button></div>
-        <div class="who"><div class="lbl">Player</div><div class="name">Carmelo Anthony</div><div class="tries"><i class="used"></i><i></i><i></i><small>2 tries left</small></div></div>
-        <div class="hints"><div class="hint"><span class="k">Draft</span><span class="v">2003 · #3</span></div><div class="hint locked"><span class="k">Hint 2</span><span class="v">----</span></div></div>
-        <div class="scores"><div class="sc"><b>7</b><small>Streak</small></div><div class="sc"><b>23</b><small>Best</small></div><div class="sc"><b>142</b><small>Found</small></div></div>
-        <div class="act"><button class="b main">4 choices</button><button class="b">Skip</button></div>
-      </div>
+      <div class="ring" style="left: 236px; top: 318px;"></div>
     </div>
   </div>
 
