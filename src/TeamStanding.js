@@ -66,10 +66,39 @@ const diffFmt = (pf, pa) => {
 const logoUrl = (id) =>
   `https://a.espncdn.com/combiner/i?img=/i/teamlogos/ncaa/500/${id}.png&h=40&w=40`;
 
+// Classement d'un seul groupe (ex. conférence absente de la liste générale,
+// comme le Pac-12 relancé en 2026-27 avant que ses classements soient publiés).
+const GROUP_PROMISE = { men: {}, women: {} };
+const getGroupStandings = (gender, groupId) => {
+  if (!GROUP_PROMISE[gender][groupId]) {
+    GROUP_PROMISE[gender][groupId] = fetch(
+      `https://site.api.espn.com/apis/v2/sports/basketball/${sportPath(gender)}/standings?group=${groupId}`
+    )
+      .then((r) => r.json())
+      .catch(() => null);
+  }
+  return GROUP_PROMISE[gender][groupId];
+};
+
+const hasEntries = (c) => !!(c && c.standings && c.standings.entries && c.standings.entries.length);
+
+// Conférence de l'équipe : d'abord par APPARTENANCE (le classement qui contient
+// l'équipe), car le champ `groups` renvoyé par ESPN est parfois faux (en 2026-27
+// les équipes de l'American pointent vers un groupe "50" qui n'est pas une
+// conférence). Repli sur groups.id s'il est marqué comme conférence.
+const findConf = (children, team) => {
+  const id = String(team.id);
+  const byMembership = children.find((c) =>
+    (c.standings && c.standings.entries ? c.standings.entries : []).some((e) => e.team && String(e.team.id) === id)
+  );
+  if (byMembership) return byMembership;
+  const g = team.groups;
+  return (g && g.isConference && children.find((c) => c.id === g.id)) || null;
+};
+
 const TeamStanding = ({ team, isSmallScreen, gender }) => {
-  const confId = team.groups && team.groups.id;
   // Rendu synchrone si le classement est déjà en cache -> pas d'état "Loading" au retour sur l'onglet.
-  const cachedConf = STANDINGS_DATA[gender] ? STANDINGS_DATA[gender].find((x) => x.id === confId) : null;
+  const cachedConf = STANDINGS_DATA[gender] ? findConf(STANDINGS_DATA[gender], team) : null;
   const [conf, setConf] = useState(cachedConf);
   const [loading, setLoading] = useState(!cachedConf);
   const [error, setError] = useState(null);
@@ -83,9 +112,20 @@ const TeamStanding = ({ team, isSmallScreen, gender }) => {
       setError(null);
     }
     getStandings(gender)
-      .then((children) => {
+      .then(async (children) => {
         if (cancelled) return;
-        const c = children.find((x) => x.id === confId);
+        let c = findConf(children, team);
+        if (!c && team.groups && team.groups.id) {
+          // Groupe absent de la liste générale : on l'interroge directement.
+          const g = await getGroupStandings(gender, team.groups.id);
+          if (cancelled) return;
+          if (hasEntries(g)) c = g;
+          else if (g && g.name) {
+            setError(`${g.name} standings aren't available yet`);
+            setLoading(false);
+            return;
+          }
+        }
         if (c) setConf(c);
         else setError('No standings available');
         setLoading(false);
@@ -98,7 +138,8 @@ const TeamStanding = ({ team, isSmallScreen, gender }) => {
     return () => {
       cancelled = true;
     };
-  }, [confId, gender]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [team.id, gender]);
 
   // Centre le tableau sur l'équipe courante à l'ouverture (clampé : #1 -> vue normale en haut).
   useLayoutEffect(() => {
