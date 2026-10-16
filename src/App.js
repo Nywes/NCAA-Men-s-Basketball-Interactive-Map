@@ -6,7 +6,7 @@ import { FullscreenControl } from 'react-leaflet-fullscreen';
 import 'react-leaflet-fullscreen/styles.css';
 
 import { Icon } from 'leaflet';
-import { useEffect, useState, useRef } from 'react';
+import { useCallback, useEffect, useState, useRef } from 'react';
 
 import teamsData from './teams.json';
 import teamsWomenData from './teams-women.json';
@@ -20,6 +20,7 @@ import mmLogo from './assets/march-madness-logo.png';
 import TeamPanels from './TeamPanels';
 import GenderSwitch from './GenderSwitch';
 import MarchMadnessOverlay from './MarchMadnessOverlay';
+import { useQuiz, QuizButton, QuizPanel, QuizRings } from './Quiz';
 import { fetchBracket, LATEST_SEASON } from './bracket';
 import { sportPath } from './espn';
 
@@ -175,7 +176,7 @@ function MapController({ target }) {
   const map = useMap();
   useEffect(() => {
     if (target && target.lat != null && target.lng != null) {
-      map.flyTo([target.lat, target.lng], 11, { duration: 1.2 });
+      map.flyTo([target.lat, target.lng], target.zoom ?? 11, { duration: 1.2 });
     }
   }, [target, map]);
   return null;
@@ -238,6 +239,15 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
   const [bracketPreselect, setBracketPreselect] = useState(null);
   const [bracketTeams, setBracketTeams] = useState(null);
 
+  // Quiz « Which college? » (joueurs NBA -> fac). En mode quiz, cliquer un logo
+  // répond au lieu d'ouvrir la fiche d'équipe.
+  const flyTo = useCallback(({ lat, lng, zoom }) => setFlyTarget({ lat, lng, zoom, n: Date.now() }), []);
+  const quiz = useQuiz({ teams, onFly: flyTo });
+  const openQuiz = () => {
+    setSelectedDivisions([]); // toutes les facs doivent être cliquables
+    quiz.open();
+  };
+
   useEffect(() => {
     let cancelled = false;
     setBracketTeams(null);
@@ -266,6 +276,11 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
       setFlyTarget({ lat: parseFloat(t.latitude), lng: parseFloat(t.longitude), n: Date.now() });
     }
   };
+
+  useEffect(() => {
+    if (gender !== 'men' && quiz.active) quiz.close();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [gender]);
 
   const updateScreenSize = () => {
     setIsSmallScreen(window.innerWidth < 600);
@@ -439,6 +454,7 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
           />
           <CustomAttribution />
           <MapController target={flyTarget} />
+          <QuizRings rings={quiz.rings} />
 
           <FullscreenControl position="topleft" />
           {filteredTeams.map(
@@ -452,11 +468,13 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
                   icon={customIcon(markerLogo(team.logo))}
                   eventHandlers={{
                     click: () => {
+                      if (quiz.active) return quiz.answer(team.id);
                       setSelectedTeamId(team.id);
                       fetchTeamRoster(team.id);
                     },
                   }}
                 >
+                  {!quiz.active && (
                   <AutoPanPopup isSmallScreen={isSmallScreen} rosterLoading={rosterLoading}>
                     <div className="modal-wrapper">
                       <div className="modal-header" style={{ background: getTeamGradient(team.color) }}>
@@ -524,6 +542,7 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
                       />
                     </div>
                   </AutoPanPopup>
+                  )}
                 </Marker>
               )
           )}
@@ -551,6 +570,8 @@ export default function App({ searchQuery, searchSubmit, gender = 'men', setGend
         <button className="mmb" onClick={() => openBracket(null)} title="March Madness">
           <img src={mmLogo} alt="March Madness" />
         </button>
+        {gender === 'men' && <QuizButton quiz={quiz} onOpen={openQuiz} />}
+        <QuizPanel quiz={quiz} isSmallScreen={isSmallScreen} />
 
         <MarchMadnessOverlay
           open={bracketOpen}

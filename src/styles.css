@@ -1214,3 +1214,96 @@ table.an-table { width: 100%; border-collapse: collapse; }
   text-align: center; font-size: 10px; font-weight: 800; color: rgba(255,255,255,.75);
   text-transform: uppercase; letter-spacing: 1.5px; margin: 4px 0;
 }
+
+/* ── Quiz « Which college? » ─────────────────────────────────────────────── */
+/* Matériau du site : gris translucide flouté à coins 12 px (bandeau de titre). */
+.qzb {
+  position: absolute;
+  top: 278px; /* mmb (236) + 34 + 8 */
+  left: 10px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  background: #fff;
+  color: #161d29;
+  padding: 0;
+  cursor: pointer;
+  font: 700 16px 'IBM Plex Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
+  transition: transform 0.15s ease;
+}
+.qzb:hover { transform: scale(1.08); }
+.qzb.on { background: #161d29; color: #fff; border-color: #161d29; }
+
+.qz-panel {
+  position: absolute;
+  left: 54px;
+  top: 108px; /* sous le bandeau de titre (20 + 76 + marge) */
+  width: 226px;
+  z-index: 3;
+  box-sizing: border-box;
+  background: rgba(240, 240, 240, 0.62);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #161d29;
+  font-family: 'IBM Plex Mono', 'SFMono-Regular', Menlo, Consolas, monospace;
+}
+.qz-panel.found { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 0 2px #1f9d55; }
+.qz-panel.failed { box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 0 0 2px #d7263d; }
+.qz-head { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px 6px; border-bottom: 1px solid rgba(0, 0, 0, 0.15); }
+.qz-title { font-weight: 700; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.qz-x { font: 700 12px inherit; font-family: inherit; background: none; border: none; cursor: pointer; color: inherit; padding: 2px 4px; }
+.qz-loading { padding: 18px 12px; font-size: 12px; color: #5b6470; }
+.qz-who { padding: 10px 12px 8px; }
+.qz-lbl { font-size: 9px; letter-spacing: 2px; text-transform: uppercase; font-weight: 600; color: #5b6470; }
+.qz-name { font-family: 'MasqueFont', 'Montserrat', sans-serif; font-size: 26px; line-height: 1; text-transform: uppercase; margin-top: 4px; word-break: break-word; }
+.qz-tries { display: flex; gap: 5px; align-items: center; margin-top: 8px; }
+.qz-tries i { width: 10px; height: 10px; box-sizing: border-box; border: 1px solid #161d29; }
+.qz-tries i.used { background: #161d29; }
+.qz-tries small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; margin-left: 4px; color: #5b6470; }
+.qz-miss { margin: 0 12px 6px; font-size: 11px; font-weight: 700; color: #d7263d; text-transform: uppercase; letter-spacing: .5px; }
+.qz-found { margin: 0 12px 6px; display: flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.7); border-radius: 8px; padding: 8px 10px; }
+.qz-found img { width: 38px; height: 38px; object-fit: contain; flex: none; }
+.qz-found-n { font-weight: 700; font-size: 13px; text-transform: uppercase; }
+.qz-found-p { font-size: 10px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #1f9d55; }
+.qz-found.failed .qz-found-p { color: #d7263d; }
+.qz-hints { padding: 0 12px 4px; }
+.qz-hint { display: flex; align-items: baseline; font-size: 13px; padding: 5px 0; border-top: 1px solid rgba(0, 0, 0, 0.15); }
+.qz-hint .k { font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; color: #5b6470; }
+.qz-hint .v { margin-left: auto; font-weight: 700; text-align: right; }
+.qz-hint.locked .v { color: #9aa3ad; }
+.qz-choices { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; padding: 6px 12px 4px; }
+.qz-choice { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; padding: 8px 4px 7px; border: none; border-radius: 12px; background: rgba(240, 240, 240, 0.95); cursor: pointer; font: 700 10px inherit; font-family: inherit; letter-spacing: .3px; text-transform: uppercase; color: #161d29; }
+.qz-choice img { width: 40px; height: 40px; object-fit: contain; }
+.qz-choice span { max-width: 100%; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.qz-choice:hover:not(:disabled) { background: #fff; }
+.qz-choice.out { background: transparent; cursor: default; }
+.qz-choice.out img { filter: grayscale(100%); opacity: .5; }
+.qz-choice.out span { color: #9aa3ad; text-decoration: line-through; }
+.qz-scores { display: flex; gap: 6px; margin: 6px 12px 0; }
+.qz-sc { flex: 1; text-align: center; padding: 6px 0 5px; background: rgba(255, 255, 255, 0.7); border-radius: 8px; }
+.qz-sc b { display: block; font-weight: 700; font-size: 20px; line-height: 1; font-variant-numeric: tabular-nums; }
+.qz-sc small { font-size: 9px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 600; color: #5b6470; }
+.qz-act { display: flex; gap: 6px; padding: 10px 12px 12px; }
+.qz-b { flex: 1; font: 700 11px inherit; font-family: inherit; letter-spacing: 1px; text-transform: uppercase; padding: 8px 0; cursor: pointer; background: rgba(255, 255, 255, 0.7); color: #161d29; border: none; border-radius: 8px; }
+.qz-b:hover { background: #fff; }
+.qz-b.main { background: #161d29; color: #fff; }
+.qz-b.main:hover { background: #0b1120; }
+
+/* anneaux de feedback autour des logos */
+.qz-ring-wrap { background: none; border: none; }
+.qz-ring { width: 56px; height: 56px; border-radius: 50%; box-sizing: border-box; border: 3px solid #1f9d55; box-shadow: 0 0 0 6px rgba(31, 157, 85, 0.28); animation: qz-pulse 1s ease-out infinite; }
+.qz-ring.ko { border-color: #d7263d; box-shadow: 0 0 0 6px rgba(215, 38, 61, 0.25); }
+@keyframes qz-pulse { 0% { transform: scale(0.85); opacity: 1; } 100% { transform: scale(1.2); opacity: 0.4; } }
+
+/* téléphone : bande en bas, au-dessus de la barre des conférences (100 px) */
+@media (max-width: 600px) {
+  .qzb { top: 278px; }
+  .qz-panel.qz-mobile { left: 8px; right: 8px; top: auto; bottom: 108px; width: auto; max-height: 60vh; overflow: auto; }
+  .qz-panel.qz-mobile .qz-name { font-size: 22px; }
+  .qz-panel.qz-mobile .qz-choices { grid-template-columns: repeat(4, 1fr); }
+  .qz-panel.qz-mobile .qz-choice img { width: 32px; height: 32px; }
+}
