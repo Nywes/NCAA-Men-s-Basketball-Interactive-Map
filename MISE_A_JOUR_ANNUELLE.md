@@ -90,6 +90,11 @@ Dès la fin des deux tournois NCAA :
 
 ---
 
+## 🇪🇺 EuroLeague — rentrée (octobre)
+- Les scripts détectent **seuls** la saison en cours (`scripts/euroleague-common.js`, `resolveSeason`) : clubs sortants archivés dans `scripts/euroleague-teams-archive.json`, nouveaux clubs créés automatiquement (salle/capacité via leur 1er match à domicile, coordonnées géocodées — sinon ajouter une entrée `COORDS_OVERRIDES` dans `update-euroleague-data.js`, et les couleurs dans `COLOR_OVERRIDES`).
+- **Une seule chose à faire à la main, dès l'annonce officielle** : le lieu et les dates du prochain Final Four dans `UPCOMING_FINAL_FOUR` (euroleague-common.js), affichés tant que les playoffs ne sont pas joués. Si une nouvelle salle de Final Four apparaît, ajouter sa ville dans `FINAL_FOUR_CITIES` (l'API ne la donne pas ; le script signale « ville inconnue »).
+- Le tableau conserve l'historique de toutes les saisons depuis 2004-05 (sélecteur dans l'overlay).
+
 ## 🔧 Cas ponctuels (pas annuels, mais à surveiller)
 - **Réalignement de conférences** (chaque été, effectif au 1er juillet) → champ `conference` des équipes concernées, dans les **deux** fichiers. Source fiable : `src/espn-teams.json` (`groups.id` ESPN, régénéré chaque jour) — attention, ESPN marque parfois un groupe bidon (`isConference: false`, ex. l'American en 2026) : garder la conférence existante dans ce cas. Les ids de conférence doivent exister dans `divisions` (App.js) et chaque badge avoir son `.webp` dans `public/conferences/`. Fait pour 2026-27 (Pac-12 relancé, WAC → UAC, MAAC → Metro, Saint Francis parti en D3, West Florida arrivé).
 - **Renommage / rebranding** d'une fac (ex. George Washington → Revolutionaries, IUPUI → IU Indianapolis) → champ `name`.

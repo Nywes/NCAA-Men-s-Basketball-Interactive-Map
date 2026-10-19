@@ -1,164 +1,3406 @@
 {
-  "season": "E2025",
-  "seasonLabel": "2025-26",
-  "updated": "2026-10-18T09:25:01.918Z",
-  "playoffs": [
-    {
-      "code": "A",
-      "label": "Playoff A",
-      "winner": {
-        "code": "OLY",
-        "name": "Olympiacos",
-        "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
-        "wins": 3
+  "current": "E2026",
+  "updated": "2026-10-19T09:35:02.595Z",
+  "seasons": {
+    "E2004": {
+      "season": "E2004",
+      "seasonLabel": "2004-05",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "PES",
+            "name": "Scavolini Pesaro",
+            "logo": "https://media-cdn.incrowdsports.com/4ea03b00-c6e0-455c-88a6-cf86640a8dd8.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "TRE",
+            "name": "Benetton Basket",
+            "logo": "https://media-cdn.incrowdsports.com/0636c1b0-de3e-4ca9-bd2c-e30a4f485114.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "score": 91
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "score": 82
+          },
+          "date": "2005-05-06T16:10:00Z",
+          "feeders": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "score": 85
+          },
+          "loser": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 78
+          },
+          "date": "2005-05-06T18:40:00Z",
+          "feeders": [
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "TEL",
+          "name": "Maccabi Tel Aviv",
+          "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+          "score": 90
+        },
+        "loser": {
+          "code": "BAS",
+          "name": "Baskonia",
+          "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+          "score": 78
+        },
+        "date": "2005-05-08T15:40:00Z"
       },
-      "loser": {
-        "code": "MCO",
-        "name": "Monaco",
-        "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
-        "wins": 0
-      },
-      "dots": [
-        "w",
-        "w",
-        "w"
-      ]
+      "finalFour": {
+        "venue": "OLYMPIYSKY ARENA",
+        "city": "Moscow",
+        "capacity": 13607,
+        "dateStart": "2005-05-06T16:10:00Z",
+        "dateEnd": "2005-05-08T15:40:00Z"
+      }
     },
-    {
-      "code": "B",
-      "label": "Playoff B",
-      "winner": {
-        "code": "ULK",
-        "name": "Fenerbahce",
-        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
-        "wins": 3
+    "E2005": {
+      "season": "E2005",
+      "seasonLabel": "2005-06",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 1
+          },
+          "dots": [
+            "l",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "score": 85
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "score": 70
+          },
+          "date": "2006-04-28T15:30:00Z",
+          "feeders": [
+            "B",
+            "D"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 84
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "score": 75
+          },
+          "date": "2006-04-28T18:30:00Z",
+          "feeders": [
+            "A",
+            "C"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "CSK",
+          "name": "CSKA Moscow",
+          "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+          "score": 73
+        },
+        "loser": {
+          "code": "TEL",
+          "name": "Maccabi Tel Aviv",
+          "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+          "score": 69
+        },
+        "date": "2006-04-30T18:30:00Z"
       },
-      "loser": {
-        "code": "ZAL",
-        "name": "Zalgiris",
-        "logo": "https://media-cdn.incrowdsports.com/0aa09358-3847-4c4e-b228-3582ee4e536d.png",
-        "wins": 1
-      },
-      "dots": [
-        "w",
-        "w",
-        "l",
-        "w"
-      ]
+      "finalFour": {
+        "venue": "SAZKA ARENA",
+        "city": "Prague",
+        "capacity": 18000,
+        "dateStart": "2006-04-28T15:30:00Z",
+        "dateEnd": "2006-04-30T18:30:00Z"
+      }
     },
-    {
-      "code": "C",
-      "label": "Playoff C",
-      "winner": {
-        "code": "MAD",
-        "name": "Real Madrid",
-        "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
-        "wins": 3
+    "E2006": {
+      "season": "E2006",
+      "seasonLabel": "2006-07",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "DYN",
+            "name": "Dynamo Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/22ab0314-9deb-407c-97aa-4032f4017564.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "MAL",
+            "name": "Unicaja",
+            "logo": "https://media-cdn.incrowdsports.com/6342214b-684b-421f-8960-5d20354458da.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "score": 67
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "score": 53
+          },
+          "date": "2007-05-04T18:30:00Z",
+          "feeders": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 62
+          },
+          "loser": {
+            "code": "MAL",
+            "name": "Unicaja",
+            "logo": "https://media-cdn.incrowdsports.com/6342214b-684b-421f-8960-5d20354458da.png",
+            "score": 50
+          },
+          "date": "2007-05-04T15:30:00Z",
+          "feeders": [
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "PAN",
+          "name": "Panathinaikos",
+          "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+          "score": 93
+        },
+        "loser": {
+          "code": "CSK",
+          "name": "CSKA Moscow",
+          "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+          "score": 91
+        },
+        "date": "2007-05-06T18:30:00Z"
       },
-      "loser": {
-        "code": "HTA",
-        "name": "Hapoel Tel Aviv",
-        "logo": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png",
-        "wins": 1
-      },
-      "dots": [
-        "w",
-        "w",
-        "l",
-        "w"
-      ]
+      "finalFour": {
+        "venue": "OAKA",
+        "city": "Athens",
+        "capacity": 18310,
+        "dateStart": "2007-05-04T15:30:00Z",
+        "dateEnd": "2007-05-06T18:30:00Z"
+      }
     },
-    {
-      "code": "D",
-      "label": "Playoff D",
-      "winner": {
-        "code": "PAM",
-        "name": "Valencia",
-        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png",
-        "wins": 3
+    "E2007": {
+      "season": "E2007",
+      "seasonLabel": "2007-08",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "SIE",
+            "name": "Montepaschi",
+            "logo": "https://media-cdn.incrowdsports.com/1d94a55f-b8c7-459c-951e-8177f5f3eebe.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "PAR",
+            "name": "Partizan",
+            "logo": "https://media-cdn.incrowdsports.com/2681304e-77dd-4331-88b1-683078c0fb49.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 2
+          },
+          "loser": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 1
+          },
+          "dots": [
+            "l",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "score": 92
+          },
+          "loser": {
+            "code": "SIE",
+            "name": "Montepaschi",
+            "logo": "https://media-cdn.incrowdsports.com/1d94a55f-b8c7-459c-951e-8177f5f3eebe.png",
+            "score": 85
+          },
+          "date": "2008-05-02T16:00:00Z",
+          "feeders": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 83
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "score": 79
+          },
+          "date": "2008-05-02T19:00:00Z",
+          "feeders": [
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "CSK",
+          "name": "CSKA Moscow",
+          "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+          "score": 91
+        },
+        "loser": {
+          "code": "TEL",
+          "name": "Maccabi Tel Aviv",
+          "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+          "score": 77
+        },
+        "date": "2008-05-04T19:00:00Z"
       },
-      "loser": {
-        "code": "PAN",
-        "name": "Panathinaikos",
-        "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
-        "wins": 2
+      "finalFour": {
+        "venue": "PALACIO DE DEPORTES COMUNIDAD DE MADRID",
+        "city": "Madrid",
+        "capacity": 14000,
+        "dateStart": "2008-05-02T16:00:00Z",
+        "dateEnd": "2008-05-04T19:00:00Z"
+      }
+    },
+    "E2008": {
+      "season": "E2008",
+      "seasonLabel": "2008-09",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 2
+          },
+          "dots": [
+            "l",
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "SIE",
+            "name": "Montepaschi",
+            "logo": "https://media-cdn.incrowdsports.com/1d94a55f-b8c7-459c-951e-8177f5f3eebe.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAR",
+            "name": "Partizan",
+            "logo": "https://media-cdn.incrowdsports.com/2681304e-77dd-4331-88b1-683078c0fb49.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "score": 84
+          },
+          "loser": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 82
+          },
+          "date": "2009-05-01T19:00:00Z",
+          "feeders": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 82
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "score": 78
+          },
+          "date": "2009-05-01T16:00:00Z",
+          "feeders": [
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "PAN",
+          "name": "Panathinaikos",
+          "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+          "score": 73
+        },
+        "loser": {
+          "code": "CSK",
+          "name": "CSKA Moscow",
+          "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+          "score": 71
+        },
+        "date": "2009-05-03T18:00:00Z"
       },
-      "dots": [
-        "l",
-        "l",
-        "w",
-        "w",
-        "w"
-      ]
+      "finalFour": {
+        "venue": "O2 WORLD",
+        "city": "Berlin",
+        "capacity": 14800,
+        "dateStart": "2009-05-01T16:00:00Z",
+        "dateEnd": "2009-05-03T18:00:00Z"
+      }
+    },
+    "E2009": {
+      "season": "E2009",
+      "seasonLabel": "2009-10",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "PAR",
+            "name": "Partizan",
+            "logo": "https://media-cdn.incrowdsports.com/2681304e-77dd-4331-88b1-683078c0fb49.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "SOP",
+            "name": "Asseco Prokom",
+            "logo": "https://media-cdn.incrowdsports.com/210fa2fa-3529-400d-8d3f-9174a22ad1a8.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "score": 64
+          },
+          "loser": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 54
+          },
+          "date": "2010-05-07T16:00:00Z",
+          "feeders": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 83
+          },
+          "loser": {
+            "code": "PAR",
+            "name": "Partizan",
+            "logo": "https://media-cdn.incrowdsports.com/2681304e-77dd-4331-88b1-683078c0fb49.png",
+            "score": 80
+          },
+          "date": "2010-05-07T19:00:00Z",
+          "feeders": [
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "BAR",
+          "name": "Barcelona",
+          "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+          "score": 86
+        },
+        "loser": {
+          "code": "OLY",
+          "name": "Olympiacos",
+          "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+          "score": 68
+        },
+        "date": "2010-05-09T19:00:00Z"
+      },
+      "finalFour": {
+        "venue": "PALAIS OMNISPORTS DE PARIS-BERCY",
+        "city": "Paris",
+        "capacity": 15705,
+        "dateStart": "2010-05-07T16:00:00Z",
+        "dateEnd": "2010-05-09T19:00:00Z"
+      }
+    },
+    "E2010": {
+      "season": "E2010",
+      "seasonLabel": "2010-11",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 1
+          },
+          "dots": [
+            "l",
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 1
+          },
+          "dots": [
+            "l",
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAM",
+            "name": "Valencia",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "SIE",
+            "name": "Montepaschi",
+            "logo": "https://media-cdn.incrowdsports.com/1d94a55f-b8c7-459c-951e-8177f5f3eebe.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 1
+          },
+          "dots": [
+            "l",
+            "w",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "score": 82
+          },
+          "loser": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 63
+          },
+          "date": "2011-05-06T19:00:00Z",
+          "feeders": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "score": 77
+          },
+          "loser": {
+            "code": "SIE",
+            "name": "Montepaschi",
+            "logo": "https://media-cdn.incrowdsports.com/1d94a55f-b8c7-459c-951e-8177f5f3eebe.png",
+            "score": 69
+          },
+          "date": "2011-05-06T16:00:00Z",
+          "feeders": [
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "PAN",
+          "name": "Panathinaikos",
+          "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+          "score": 78
+        },
+        "loser": {
+          "code": "TEL",
+          "name": "Maccabi Tel Aviv",
+          "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+          "score": 70
+        },
+        "date": "2011-05-08T14:30:00Z"
+      },
+      "finalFour": {
+        "venue": "PALAU SANT JORDI",
+        "city": "Barcelona",
+        "capacity": 16500,
+        "dateStart": "2011-05-06T16:00:00Z",
+        "dateEnd": "2011-05-08T14:30:00Z"
+      }
+    },
+    "E2011": {
+      "season": "E2011",
+      "seasonLabel": "2011-12",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BIL",
+            "name": "Bilbao Basket",
+            "logo": "https://media-cdn.incrowdsports.com/eedb87e1-f3d1-46d4-bbf8-bbb25b932d6d.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "SIE",
+            "name": "Montepaschi",
+            "logo": "https://media-cdn.incrowdsports.com/1d94a55f-b8c7-459c-951e-8177f5f3eebe.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "UNK",
+            "name": "Unics Kazan",
+            "logo": "https://media-cdn.incrowdsports.com/70b00b96-e98a-42ba-9997-39d70a895157.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 66
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "score": 64
+          },
+          "date": "2012-05-11T15:00:00Z",
+          "feeders": [
+            "A",
+            "C"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 68
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "score": 64
+          },
+          "date": "2012-05-11T18:00:00Z",
+          "feeders": [
+            "B",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "OLY",
+          "name": "Olympiacos",
+          "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+          "score": 62
+        },
+        "loser": {
+          "code": "CSK",
+          "name": "CSKA Moscow",
+          "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+          "score": 61
+        },
+        "date": "2012-05-13T18:00:00Z"
+      },
+      "finalFour": {
+        "venue": "SINAN ERDEM DOME",
+        "city": "Istanbul",
+        "capacity": 14868,
+        "dateStart": "2012-05-11T15:00:00Z",
+        "dateEnd": "2012-05-13T18:00:00Z"
+      }
+    },
+    "E2012": {
+      "season": "E2012",
+      "seasonLabel": "2012-13",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 69
+          },
+          "loser": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 52
+          },
+          "date": "2013-05-10T16:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 74
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "score": 67
+          },
+          "date": "2013-05-10T19:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "OLY",
+          "name": "Olympiacos",
+          "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+          "score": 100
+        },
+        "loser": {
+          "code": "MAD",
+          "name": "Real Madrid",
+          "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+          "score": 88
+        },
+        "date": "2013-05-12T19:00:00Z"
+      },
+      "finalFour": {
+        "venue": "O2 ARENA",
+        "city": "London",
+        "capacity": 16029,
+        "dateStart": "2013-05-10T16:00:00Z",
+        "dateEnd": "2013-05-12T19:00:00Z"
+      }
+    },
+    "E2013": {
+      "season": "E2013",
+      "seasonLabel": "2013-14",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "GAL",
+            "name": "Galatasaray",
+            "logo": "https://media-cdn.cortextech.io/95056dbe-7949-4b65-921d-ed9b59c0791c.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MIL",
+            "name": "Olimpia Milano",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 100
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "score": 62
+          },
+          "date": "2014-05-16T19:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "score": 68
+          },
+          "loser": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 67
+          },
+          "date": "2014-05-16T16:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "TEL",
+          "name": "Maccabi Tel Aviv",
+          "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+          "score": 98
+        },
+        "loser": {
+          "code": "MAD",
+          "name": "Real Madrid",
+          "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+          "score": 86
+        },
+        "date": "2014-05-18T18:00:00Z"
+      },
+      "finalFour": {
+        "venue": "MEDIOLANUM FORUM",
+        "city": "Milan",
+        "capacity": 11318,
+        "dateStart": "2014-05-16T16:00:00Z",
+        "dateEnd": "2014-05-18T18:00:00Z"
+      }
+    },
+    "E2014": {
+      "season": "E2014",
+      "seasonLabel": "2014-15",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 1
+          },
+          "dots": [
+            "l",
+            "w",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 96
+          },
+          "loser": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "score": 87
+          },
+          "date": "2015-05-15T19:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 70
+          },
+          "loser": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 68
+          },
+          "date": "2015-05-15T16:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "MAD",
+          "name": "Real Madrid",
+          "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+          "score": 78
+        },
+        "loser": {
+          "code": "OLY",
+          "name": "Olympiacos",
+          "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+          "score": 59
+        },
+        "date": "2015-05-17T18:00:00Z"
+      },
+      "finalFour": {
+        "venue": "BARCLAYCARD CENTER",
+        "city": "Madrid",
+        "capacity": 13109,
+        "dateStart": "2015-05-15T16:00:00Z",
+        "dateEnd": "2015-05-17T18:00:00Z"
+      }
+    },
+    "E2015": {
+      "season": "E2015",
+      "seasonLabel": "2015-16",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "RED",
+            "name": "Crvena Zvezda",
+            "logo": "https://media-cdn.incrowdsports.com/d2eef4a8-62df-4fdd-9076-276004268515.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "TIV",
+            "name": "Lokomotiv Kuban",
+            "logo": "https://media-cdn.incrowdsports.com/10d99d78-4206-411d-83d2-db7abc63c6ae.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "l",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "score": 88
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "score": 77
+          },
+          "date": "2016-05-13T19:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 88
+          },
+          "loser": {
+            "code": "TIV",
+            "name": "Lokomotiv Kuban",
+            "logo": "https://media-cdn.incrowdsports.com/10d99d78-4206-411d-83d2-db7abc63c6ae.png",
+            "score": 81
+          },
+          "date": "2016-05-13T16:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "CSK",
+          "name": "CSKA Moscow",
+          "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+          "score": 101
+        },
+        "loser": {
+          "code": "ULK",
+          "name": "Fenerbahce",
+          "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+          "score": 96
+        },
+        "date": "2016-05-15T18:00:00Z"
+      },
+      "finalFour": {
+        "venue": "MERCEDES-BENZ ARENA",
+        "city": "Berlin",
+        "capacity": 13276,
+        "dateStart": "2016-05-13T16:00:00Z",
+        "dateEnd": "2016-05-15T18:00:00Z"
+      }
+    },
+    "E2016": {
+      "season": "E2016",
+      "seasonLabel": "2016-17",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "DAR",
+            "name": "Darussafaka Dogus",
+            "logo": "https://media-cdn.incrowdsports.com/9ceb124a-7ee1-4db5-8d8c-7d485980b989.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "score": 84
+          },
+          "loser": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 75
+          },
+          "date": "2017-05-19T18:30:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 82
+          },
+          "loser": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 78
+          },
+          "date": "2017-05-19T15:30:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "ULK",
+          "name": "Fenerbahce",
+          "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+          "score": 80
+        },
+        "loser": {
+          "code": "OLY",
+          "name": "Olympiacos",
+          "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+          "score": 64
+        },
+        "date": "2017-05-21T18:00:00Z"
+      },
+      "finalFour": {
+        "venue": "SINAN ERDEM DOME",
+        "city": "Istanbul",
+        "capacity": 14868,
+        "dateStart": "2017-05-19T15:30:00Z",
+        "dateEnd": "2017-05-21T18:00:00Z"
+      }
+    },
+    "E2017": {
+      "season": "E2017",
+      "seasonLabel": "2017-18",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "KHI",
+            "name": "Khimki",
+            "logo": "https://media-cdn.incrowdsports.com/04bd9ac1-e8ed-4b35-8878-272596e5c7d6.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 1
+          },
+          "dots": [
+            "l",
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "ZAL",
+            "name": "Zalgiris",
+            "logo": "https://media-cdn.incrowdsports.com/0aa09358-3847-4c4e-b228-3582ee4e536d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 92
+          },
+          "loser": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 83
+          },
+          "date": "2018-05-18T19:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "score": 76
+          },
+          "loser": {
+            "code": "ZAL",
+            "name": "Zalgiris",
+            "logo": "https://media-cdn.incrowdsports.com/0aa09358-3847-4c4e-b228-3582ee4e536d.png",
+            "score": 67
+          },
+          "date": "2018-05-18T16:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "MAD",
+          "name": "Real Madrid",
+          "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+          "score": 85
+        },
+        "loser": {
+          "code": "ULK",
+          "name": "Fenerbahce",
+          "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+          "score": 80
+        },
+        "date": "2018-05-20T18:00:00Z"
+      },
+      "finalFour": {
+        "venue": "STARK ARENA",
+        "city": "Belgrade",
+        "capacity": 18340,
+        "dateStart": "2018-05-18T16:00:00Z",
+        "dateEnd": "2018-05-20T18:00:00Z"
+      }
+    },
+    "E2018": {
+      "season": "E2018",
+      "seasonLabel": "2018-19",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "ZAL",
+            "name": "Zalgiris",
+            "logo": "https://media-cdn.incrowdsports.com/0aa09358-3847-4c4e-b228-3582ee4e536d.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "score": 92
+          },
+          "loser": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "score": 73
+          },
+          "date": "2019-05-17T16:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 95
+          },
+          "loser": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 90
+          },
+          "date": "2019-05-17T19:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "CSK",
+          "name": "CSKA Moscow",
+          "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+          "score": 91
+        },
+        "loser": {
+          "code": "IST",
+          "name": "Anadolu Efes",
+          "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+          "score": 83
+        },
+        "date": "2019-05-19T18:30:00Z"
+      },
+      "finalFour": {
+        "venue": "FERNANDO BUESA ARENA",
+        "city": "Vitoria-Gasteiz",
+        "capacity": 15716,
+        "dateStart": "2019-05-17T16:00:00Z",
+        "dateEnd": "2019-05-19T18:30:00Z"
+      }
+    },
+    "E2020": {
+      "season": "E2020",
+      "seasonLabel": "2020-21",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "DYR",
+            "name": "Zenit St Petersburg",
+            "logo": "https://media-cdn.incrowdsports.com/4c571fd6-52f1-428c-94a5-9143fbbb4fe3.png",
+            "wins": 2
+          },
+          "dots": [
+            "l",
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "MIL",
+            "name": "Olimpia Milano",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MUN",
+            "name": "Bayern Munich",
+            "logo": "https://media-cdn.incrowdsports.com/817b0e58-d595-4b09-ab0b-1e7cc26249ff.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "score": 84
+          },
+          "loser": {
+            "code": "MIL",
+            "name": "Olimpia Milano",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
+            "score": 82
+          },
+          "date": "2021-05-28T19:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "score": 89
+          },
+          "loser": {
+            "code": "CSK",
+            "name": "CSKA Moscow",
+            "logo": "https://media-cdn.incrowdsports.com/b6a59212-7feb-4f8c-86c2-5e8f07625e3e.png",
+            "score": 86
+          },
+          "date": "2021-05-28T16:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "IST",
+          "name": "Anadolu Efes",
+          "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+          "score": 86
+        },
+        "loser": {
+          "code": "BAR",
+          "name": "Barcelona",
+          "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+          "score": 81
+        },
+        "date": "2021-05-30T18:30:00Z"
+      },
+      "finalFour": {
+        "venue": "LANXESS ARENA",
+        "city": "Cologne",
+        "capacity": 14270,
+        "dateStart": "2021-05-28T16:00:00Z",
+        "dateEnd": "2021-05-30T18:30:00Z"
+      }
+    },
+    "E2021": {
+      "season": "E2021",
+      "seasonLabel": "2021-22",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MUN",
+            "name": "Bayern Munich",
+            "logo": "https://media-cdn.incrowdsports.com/817b0e58-d595-4b09-ab0b-1e7cc26249ff.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MIL",
+            "name": "Olimpia Milano",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/5c2f0ab6-f86a-4df0-b2f3-f9ab92f7267b.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MCO",
+            "name": "AS Monaco",
+            "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "l",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 86
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "score": 83
+          },
+          "date": "2022-05-19T19:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "score": 77
+          },
+          "loser": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 74
+          },
+          "date": "2022-05-19T16:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "IST",
+          "name": "Anadolu Efes",
+          "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+          "score": 58
+        },
+        "loser": {
+          "code": "MAD",
+          "name": "Real Madrid",
+          "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+          "score": 57
+        },
+        "date": "2022-05-21T17:00:00Z"
+      },
+      "finalFour": {
+        "venue": "STARK ARENA",
+        "city": "Belgrade",
+        "capacity": 18340,
+        "dateStart": "2022-05-19T16:00:00Z",
+        "dateEnd": "2022-05-21T17:00:00Z"
+      }
+    },
+    "E2022": {
+      "season": "E2022",
+      "seasonLabel": "2022-23",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "MCO",
+            "name": "AS Monaco",
+            "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 2
+          },
+          "dots": [
+            "l",
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAR",
+            "name": "Partizan",
+            "logo": "https://media-cdn.incrowdsports.com/2681304e-77dd-4331-88b1-683078c0fb49.png",
+            "wins": 2
+          },
+          "dots": [
+            "l",
+            "l",
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "ZAL",
+            "name": "Zalgiris",
+            "logo": "https://media-cdn.incrowdsports.com/0aa09358-3847-4c4e-b228-3582ee4e536d.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 76
+          },
+          "loser": {
+            "code": "MCO",
+            "name": "AS Monaco",
+            "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
+            "score": 62
+          },
+          "date": "2023-05-19T15:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 78
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "score": 66
+          },
+          "date": "2023-05-19T18:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "MAD",
+          "name": "Real Madrid",
+          "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+          "score": 79
+        },
+        "loser": {
+          "code": "OLY",
+          "name": "Olympiacos",
+          "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+          "score": 78
+        },
+        "date": "2023-05-21T17:00:00Z"
+      },
+      "finalFour": {
+        "venue": "ZALGIRIO ARENA",
+        "city": "Kaunas",
+        "capacity": 15415,
+        "dateStart": "2023-05-19T15:00:00Z",
+        "dateEnd": "2023-05-21T17:00:00Z"
+      }
+    },
+    "E2023": {
+      "season": "E2023",
+      "seasonLabel": "2023-24",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAS",
+            "name": "Baskonia",
+            "logo": "https://media-cdn.cortextech.io/cbc49cb0-99ce-4462-bdb7-56983ee03cf4.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "l",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MCO",
+            "name": "Monaco",
+            "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "TEL",
+            "name": "Maccabi Tel Aviv",
+            "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png",
+            "wins": 2
+          },
+          "dots": [
+            "l",
+            "w",
+            "l",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 87
+          },
+          "loser": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 76
+          },
+          "date": "2024-05-24T19:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "score": 73
+          },
+          "loser": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "score": 57
+          },
+          "date": "2024-05-24T16:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "PAN",
+          "name": "Panathinaikos",
+          "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+          "score": 95
+        },
+        "loser": {
+          "code": "MAD",
+          "name": "Real Madrid",
+          "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+          "score": 80
+        },
+        "date": "2024-05-26T18:00:00Z"
+      },
+      "finalFour": {
+        "venue": "UBER ARENA",
+        "city": "Berlin",
+        "capacity": 14500,
+        "dateStart": "2024-05-24T16:00:00Z",
+        "dateEnd": "2024-05-26T18:00:00Z"
+      }
+    },
+    "E2024": {
+      "season": "E2024",
+      "seasonLabel": "2024-25",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "MCO",
+            "name": "Monaco",
+            "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "BAR",
+            "name": "Barcelona",
+            "logo": "https://media-cdn.incrowdsports.com/35dfa503-e417-481f-963a-bdf6f013763e.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "IST",
+            "name": "Anadolu Efes",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCgOCxM/a844756c-a58d-4666-93b8-48f7337bc79d.png",
+            "wins": 2
+          },
+          "dots": [
+            "w",
+            "l",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PRS",
+            "name": "Paris",
+            "logo": "https://media-cdn.incrowdsports.com/a033e5b3-0de7-48a3-98d9-d9a4b9df1f39.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "MCO",
+            "name": "Monaco",
+            "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
+            "score": 78
+          },
+          "loser": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 68
+          },
+          "date": "2025-05-23T18:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "score": 82
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "score": 76
+          },
+          "date": "2025-05-23T15:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "ULK",
+          "name": "Fenerbahce",
+          "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+          "score": 81
+        },
+        "loser": {
+          "code": "MCO",
+          "name": "Monaco",
+          "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
+          "score": 70
+        },
+        "date": "2025-05-25T17:00:00Z"
+      },
+      "finalFour": {
+        "venue": "ETIHAD ARENA",
+        "city": "Abu Dhabi",
+        "capacity": 12000,
+        "dateStart": "2025-05-23T15:00:00Z",
+        "dateEnd": "2025-05-25T17:00:00Z"
+      }
+    },
+    "E2025": {
+      "season": "E2025",
+      "seasonLabel": "2025-26",
+      "playoffs": [
+        {
+          "code": "A",
+          "label": "Playoff A",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "MCO",
+            "name": "Monaco",
+            "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
+            "wins": 0
+          },
+          "dots": [
+            "w",
+            "w",
+            "w"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Playoff B",
+          "winner": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "ZAL",
+            "name": "Zalgiris",
+            "logo": "https://media-cdn.incrowdsports.com/0aa09358-3847-4c4e-b228-3582ee4e536d.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "C",
+          "label": "Playoff C",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "HTA",
+            "name": "Hapoel Tel Aviv",
+            "logo": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png",
+            "wins": 1
+          },
+          "dots": [
+            "w",
+            "w",
+            "l",
+            "w"
+          ]
+        },
+        {
+          "code": "D",
+          "label": "Playoff D",
+          "winner": {
+            "code": "PAM",
+            "name": "Valencia",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png",
+            "wins": 3
+          },
+          "loser": {
+            "code": "PAN",
+            "name": "Panathinaikos",
+            "logo": "https://media-cdn.incrowdsports.com/e3dff28a-9ec6-4faf-9d96-ecbc68f75780.png",
+            "wins": 2
+          },
+          "dots": [
+            "l",
+            "l",
+            "w",
+            "w",
+            "w"
+          ]
+        }
+      ],
+      "semifinals": [
+        {
+          "code": "A",
+          "label": "Semifinal A",
+          "winner": {
+            "code": "OLY",
+            "name": "Olympiacos",
+            "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+            "score": 79
+          },
+          "loser": {
+            "code": "ULK",
+            "name": "Fenerbahce",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
+            "score": 61
+          },
+          "date": "2026-05-22T15:00:00Z",
+          "feeders": [
+            "A",
+            "B"
+          ]
+        },
+        {
+          "code": "B",
+          "label": "Semifinal B",
+          "winner": {
+            "code": "MAD",
+            "name": "Real Madrid",
+            "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+            "score": 105
+          },
+          "loser": {
+            "code": "PAM",
+            "name": "Valencia",
+            "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png",
+            "score": 90
+          },
+          "date": "2026-05-22T18:00:00Z",
+          "feeders": [
+            "C",
+            "D"
+          ]
+        }
+      ],
+      "final": {
+        "code": null,
+        "label": "Final",
+        "winner": {
+          "code": "OLY",
+          "name": "Olympiacos",
+          "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
+          "score": 92
+        },
+        "loser": {
+          "code": "MAD",
+          "name": "Real Madrid",
+          "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
+          "score": 85
+        },
+        "date": "2026-05-24T18:00:00Z"
+      },
+      "finalFour": {
+        "venue": "TELEKOM CENTER ATHENS",
+        "city": "Athens",
+        "capacity": 18500,
+        "dateStart": "2026-05-22T15:00:00Z",
+        "dateEnd": "2026-05-24T18:00:00Z"
+      }
+    },
+    "E2026": {
+      "season": "E2026",
+      "seasonLabel": "2026-27",
+      "playoffs": [],
+      "semifinals": [],
+      "final": null,
+      "finalFour": null,
+      "upcoming": {
+        "venue": "Etihad Arena",
+        "city": "Abu Dhabi",
+        "dates": "21–23 May 2027",
+        "playoffsStart": "April 2027"
+      }
     }
-  ],
-  "semifinals": [
-    {
-      "code": "A",
-      "label": "Semifinal A",
-      "winner": {
-        "code": "OLY",
-        "name": "Olympiacos",
-        "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
-        "score": 79
-      },
-      "loser": {
-        "code": "ULK",
-        "name": "Fenerbahce",
-        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCiezrk/aa39750a-6203-49ee-a87d-edd0c6f0397d.png",
-        "score": 61
-      },
-      "date": "2026-05-22T15:00:00Z",
-      "feeders": [
-        "A",
-        "B"
-      ]
-    },
-    {
-      "code": "B",
-      "label": "Semifinal B",
-      "winner": {
-        "code": "MAD",
-        "name": "Real Madrid",
-        "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
-        "score": 105
-      },
-      "loser": {
-        "code": "PAM",
-        "name": "Valencia",
-        "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHL/bc3e00b2-fea4-40be-a7ec-1e633129bde3.png",
-        "score": 90
-      },
-      "date": "2026-05-22T18:00:00Z",
-      "feeders": [
-        "C",
-        "D"
-      ]
-    }
-  ],
-  "final": {
-    "code": null,
-    "label": "Final",
-    "winner": {
-      "code": "OLY",
-      "name": "Olympiacos",
-      "logo": "https://media-cdn.incrowdsports.com/789423ac-3cdf-4b89-b11c-b458aa5f59a6.png",
-      "score": 92
-    },
-    "loser": {
-      "code": "MAD",
-      "name": "Real Madrid",
-      "logo": "https://media-cdn.incrowdsports.com/371b0d9b-9250-4c09-bda7-0686cf024657.png",
-      "score": 85
-    },
-    "date": "2026-05-24T18:00:00Z"
-  },
-  "finalFour": {
-    "venueName": "TELEKOM CENTER ATHENS",
-    "venue": "TELEKOM CENTER ATHENS",
-    "city": null,
-    "capacity": 18500,
-    "dateStart": "2026-05-22T15:00:00Z",
-    "dateEnd": "2026-05-24T18:00:00Z"
   }
 }

@@ -7,45 +7,95 @@
  *   - src/euroleague-teams.json     : logo + site web rafraîchis
  *
  * Usage : node scripts/update-euroleague-data.js
- * SEASON_CODE à incrémenter chaque été (E2025 -> E2026...).
+ * La saison en cours est détectée automatiquement (euroleague-common.js).
  */
 const fs = require('fs');
 const path = require('path');
 
-const BASE = 'https://api-live.euroleague.net';
-const COMPETITION = 'E'; // E = EuroLeague, U = EuroCup
-const SEASON_CODE = 'E2025';
-const UA = 'Mozilla/5.0 (compatible; ncaa-basket-map/1.0)';
+const { BASE, COMPETITION, get, resolveSeason } = require('./euroleague-common');
+let SEASON_CODE = null; // résolu au lancement (saison en cours)
+const ARCHIVE_PATH = path.join(__dirname, '..', 'scripts', 'euroleague-teams-archive.json');
+
+// Coordonnées des salles que le géocodage ne trouve pas (nouveaux clubs).
+const COORDS_OVERRIDES = {
+  BES: { latitude: 40.9925, longitude: 28.919 }, // Turkcell Basketball Development Center, Zeytinburnu (Istanbul)
+};
+const COLOR_OVERRIDES = { BES: { color: '000000', secondaryColor: 'FFFFFF' } };
 
 const TEAMS_PATH = path.join(__dirname, '..', 'src', 'euroleague-teams.json');
 const ROSTERS_PATH = path.join(__dirname, '..', 'src', 'euroleague-rosters.json');
 const STANDINGS_PATH = path.join(__dirname, '..', 'src', 'euroleague-standings.json');
 
-async function get(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
-  if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`);
-  return res.json();
+// Géocodage (Nominatim, sans clé) pour un nouveau club dont la salle n'est pas dans COORDS_OVERRIDES.
+async function geocode(q) {
+  try {
+    const r = await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + encodeURIComponent(q), {
+      headers: { 'User-Agent': 'ncaa-basket-map/1.0 (team@enemat.fr)' },
+    });
+    const j = await r.json();
+    return j[0] ? { latitude: +j[0].lat, longitude: +j[0].lon } : null;
+  } catch (e) {
+    return null;
+  }
 }
 
 (async () => {
-  const teams = JSON.parse(fs.readFileSync(TEAMS_PATH, 'utf8'));
+  const active = JSON.parse(fs.readFileSync(TEAMS_PATH, 'utf8'));
+  let archive = [];
+  try {
+    archive = JSON.parse(fs.readFileSync(ARCHIVE_PATH, 'utf8'));
+  } catch (e) {
+    /* pas encore d'archive */
+  }
+  // clubs actifs + archivés (un club peut revenir en EuroLeague)
+  const teams = [...active, ...archive];
   const byCode = Object.fromEntries(teams.map((t) => [t.id, t]));
 
-  // ── saison (libellé "2025-26") ──
-  const season = await get(`${BASE}/v2/competitions/${COMPETITION}/seasons/${SEASON_CODE}`);
+  // ── saison en cours (libellé "2026-27") ──
+  const season = await resolveSeason();
+  SEASON_CODE = season.code;
   const seasonLabel = season.alias || '';
-  console.log('Saison:', seasonLabel);
+  console.log('Saison:', SEASON_CODE, seasonLabel);
 
-  // ── clubs (logo + site web) ──
+  // ── clubs : logo, et création de la fiche des nouveaux venus ──
   const { data: clubs } = await get(`${BASE}/v2/competitions/${COMPETITION}/seasons/${SEASON_CODE}/clubs`);
+  let rsGamesForVenues = null;
   for (const c of clubs) {
-    const team = byCode[c.code];
+    let team = byCode[c.code];
     if (!team) {
-      console.warn(`  ⚠ club non trouvé en local: ${c.code} (${c.name})`);
-      continue;
+      // nouveau club : salle + capacité via son premier match à domicile, coords via overrides/géocodage
+      if (!rsGamesForVenues) rsGamesForVenues = (await get(`${BASE}/v2/competitions/${COMPETITION}/seasons/${SEASON_CODE}/games?phaseTypeCode=RS`)).data || [];
+      const home = rsGamesForVenues.find((g) => g.local.club.code === c.code && g.venue);
+      const venue = home && home.venue;
+      const detail = await get(`${BASE}/v2/competitions/${COMPETITION}/seasons/${SEASON_CODE}/clubs/${c.code}`, { optional: true });
+      const city = detail && detail.city ? detail.city.charAt(0) + detail.city.slice(1).toLowerCase() : null;
+      const coords = COORDS_OVERRIDES[c.code] || (venue && (await geocode(`${venue.name}, ${city || ''}`))) || (city && (await geocode(city))) || { latitude: null, longitude: null };
+      team = {
+        id: c.code,
+        displayName: c.editorialName || c.abbreviatedName || c.name,
+        shortDisplayName: c.abbreviatedName || c.editorialName || c.name,
+        division: 'euroleague',
+        latitude: coords.latitude,
+        longitude: coords.longitude,
+        logo: c.images?.crest || null,
+        venue: venue ? toTitle(venue.name) : null,
+        location: city,
+        color: (COLOR_OVERRIDES[c.code] || {}).color || null,
+        secondaryColor: (COLOR_OVERRIDES[c.code] || {}).secondaryColor || null,
+        capacity: venue ? venue.capacity || null : null,
+        website: (detail && detail.website) || null,
+        honours: {},
+        arenaPhoto: null,
+      };
+      teams.push(team);
+      byCode[c.code] = team;
+      console.log(`  + nouveau club : ${team.displayName} — ${team.venue || '?'} @ ${city || '?'} [${coords.latitude ? 'coords ok' : '⚠ SANS COORDS'}]`);
     }
     team.logo = c.images?.crest || team.logo;
   }
+  const engaged = new Set(clubs.map((c) => c.code));
+  for (const t of active.filter((t) => !engaged.has(t.id))) console.log(`  ↓ quitte l'EuroLeague (archivé) : ${t.displayName}`);
+  for (const t of archive.filter((t) => engaged.has(t.id))) console.log(`  ↑ revient en EuroLeague : ${t.displayName}`);
   // détail par club (site web) — un appel par club, léger
   for (const c of clubs) {
     const team = byCode[c.code];
@@ -173,8 +223,11 @@ async function get(url) {
   const meta = { updated: new Date().toISOString().slice(0, 10), season: seasonLabel, source: 'api-live.euroleague.net' };
   fs.writeFileSync(ROSTERS_PATH, JSON.stringify({ ...meta, rosters }, null, 2));
   fs.writeFileSync(STANDINGS_PATH, JSON.stringify({ ...meta, standings }, null, 2));
-  fs.writeFileSync(TEAMS_PATH, JSON.stringify(teams, null, 2));
-  console.log(`\n→ ${ROSTERS_PATH}\n→ ${STANDINGS_PATH}\n→ logos/sites écrits dans euroleague-teams.json`);
+  const nextActive = teams.filter((t) => engaged.has(t.id));
+  const nextArchive = teams.filter((t) => !engaged.has(t.id));
+  fs.writeFileSync(TEAMS_PATH, JSON.stringify(nextActive, null, 2));
+  fs.writeFileSync(ARCHIVE_PATH, JSON.stringify(nextArchive, null, 2) + '\n');
+  console.log(`\n→ ${ROSTERS_PATH}\n→ ${STANDINGS_PATH}\n→ ${TEAMS_PATH} (${nextActive.length} clubs)\n→ ${ARCHIVE_PATH} (${nextArchive.length} archivés)`);
 })();
 
 // L'API renvoie les pourcentages en chaîne ("54.5%") -> nombre nu (54.5).

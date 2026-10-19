@@ -1309,3 +1309,12 @@ table.an-table { width: 100%; border-collapse: collapse; }
   .qz-panel.qz-mobile .qz-choices { grid-template-columns: repeat(4, 1fr); }
   .qz-panel.qz-mobile .qz-choice img { width: 32px; height: 32px; }
 }
+
+/* ── bracket EuroLeague : sélecteur de saison + Final Four à venir ── */
+.brk-yrsel { font: inherit; font-size: 12px; font-weight: 800; letter-spacing: 1px; color: #fff; background: rgba(255, 255, 255, 0.14); border: 1px solid rgba(255, 255, 255, 0.45); border-radius: 8px; padding: 3px 8px; cursor: pointer; vertical-align: middle; }
+.brk-yrsel option { color: #111; }
+.brk-upcoming { max-width: 420px; margin: 24px auto 0; color: #fff; }
+.brk-up-row { display: flex; justify-content: space-between; gap: 16px; padding: 9px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.18); font-size: 13px; }
+.brk-up-row span { opacity: .7; text-transform: uppercase; letter-spacing: 1.5px; font-size: 11px; font-weight: 700; }
+.brk-up-row b { font-weight: 800; text-align: right; }
+.brk-upcoming p, .brk-upcoming-txt { color: #fff; opacity: .8; text-align: center; font-size: 13px; line-height: 1.5; margin: 18px 0 0; }

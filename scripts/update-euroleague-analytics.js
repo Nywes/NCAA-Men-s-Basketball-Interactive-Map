@@ -22,18 +22,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE = 'https://api-live.euroleague.net';
-const COMPETITION = 'E';
-const SEASON_CODE = 'E2025';
-const UA = 'Mozilla/5.0 (compatible; ncaa-basket-map/1.0)';
+const { BASE, COMPETITION, get, resolveSeason } = require('./euroleague-common');
+let SEASON_CODE = null; // résolu au lancement (saison en cours)
 
 const OUT_PATH = path.join(__dirname, '..', 'src', 'euroleague-analytics.json');
 
-async function get(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
-  if (!res.ok) throw new Error(`${url} -> HTTP ${res.status}`);
-  return res.json();
-}
 const pct = (v) => {
   if (v == null) return null;
   const n = parseFloat(String(v).replace('%', ''));
@@ -66,6 +59,8 @@ function rankBy(rows, getValue, lowerIsBetter = false) {
 }
 
 (async () => {
+  SEASON_CODE = (await resolveSeason()).code;
+  console.log('Saison:', SEASON_CODE);
   console.log('Chargement des statistiques équipes (traditional, opponents, advanced)…');
   const traditional = await fetchTeamStats('traditional');
   const opponents = await fetchTeamStats('opponentsTraditional');

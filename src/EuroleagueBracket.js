@@ -1,5 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import bracketData from './euroleague-bracket.json';
+
+// Arbre Playoffs + Final Four EuroLeague, avec historique des saisons
+// (euroleague-bracket.json = { current, seasons: { E2026: {...}, ... } }).
+// La saison en cours sans playoffs affiche le Final Four à venir (`upcoming`).
 
 function toTitle(str) {
   if (!str) return '';
@@ -42,8 +46,31 @@ function SeriesCard({ round, winner, loser, dots, style, big }) {
   );
 }
 
+const SEASON_CODES = Object.keys(bracketData.seasons || {}).sort().reverse(); // récentes d'abord
+
+function Title({ data, season, onSeason }) {
+  const city = (data.finalFour && data.finalFour.city) || (data.upcoming && data.upcoming.city);
+  return (
+    <div className="brk-title-wrap">
+      <div className="brk-title-main">{city ? `Road to ${city}` : 'Playoffs'}</div>
+      <div className="brk-title-sub">
+        Playoffs ·{' '}
+        <select className="brk-yrsel" value={season} onChange={(e) => onSeason(e.target.value)} aria-label="Season">
+          {SEASON_CODES.map((c) => (
+            <option key={c} value={c}>
+              {bracketData.seasons[c].seasonLabel}
+            </option>
+          ))}
+        </select>
+      </div>
+    </div>
+  );
+}
+
 export default function EuroleagueBracket({ onClose, isSmallScreen }) {
-  const { playoffs, semifinals, final, finalFour } = bracketData;
+  const [season, setSeason] = useState(bracketData.current || SEASON_CODES[0]);
+  const data = bracketData.seasons[season] || {};
+  const { playoffs, semifinals, final, finalFour, upcoming } = data;
   const ready = playoffs?.length === 4 && semifinals?.length === 2 && final;
 
   const stopClick = (e) => e.stopPropagation();
@@ -54,13 +81,17 @@ export default function EuroleagueBracket({ onClose, isSmallScreen }) {
         <div className="brk-panel brk-panel-mobile" onClick={stopClick}>
           <button className="brk-close" onClick={onClose}>×</button>
           <div className="brk-mobile">
-            <div className="brk-title-wrap">
-              <div className="brk-title-main">Road to Athens</div>
-              <div className="brk-title-sub">Playoffs</div>
-            </div>
-            <p style={{ color: '#fff', textAlign: 'center', fontSize: 13 }}>
-              Le bracket n'est pas encore disponible pour cette saison.
-            </p>
+            <Title data={data} season={season} onSeason={setSeason} />
+            {upcoming ? (
+              <div className="brk-upcoming">
+                <div className="brk-up-row"><span>Playoffs</span><b>{upcoming.playoffsStart}</b></div>
+                <div className="brk-up-row"><span>Final Four</span><b>{upcoming.venue}, {upcoming.city}</b></div>
+                <div className="brk-up-row"><span>Dates</span><b>{upcoming.dates}</b></div>
+                <p>The {data.seasonLabel} bracket will fill in as the playoffs are played. Pick a previous season above to browse past brackets.</p>
+              </div>
+            ) : (
+              <p className="brk-upcoming-txt">The bracket isn't available for this season.</p>
+            )}
           </div>
         </div>
       </div>
@@ -81,10 +112,7 @@ export default function EuroleagueBracket({ onClose, isSmallScreen }) {
         <div className="brk-panel brk-panel-mobile" onClick={stopClick}>
           <button className="brk-close" onClick={onClose}>×</button>
           <div className="brk-mobile">
-            <div className="brk-title-wrap">
-              <div className="brk-title-main">Road to Athens</div>
-              <div className="brk-title-sub">Playoffs</div>
-            </div>
+            <Title data={data} season={season} onSeason={setSeason} />
             <div className="brk-mobile-list">
               <SeriesCard round={pA1.label} winner={pA1.winner} loser={pA1.loser} dots={pA1.dots} />
               <SeriesCard round={pA2.label} winner={pA2.winner} loser={pA2.loser} dots={pA2.dots} />
@@ -108,10 +136,7 @@ export default function EuroleagueBracket({ onClose, isSmallScreen }) {
       <div className="brk-panel" onClick={stopClick}>
         <button className="brk-close" onClick={onClose}>×</button>
         <div className="brk-canvas" style={{ width: 1124, height: 720 }}>
-          <div className="brk-title-wrap">
-            <div className="brk-title-main">Road to Athens</div>
-            <div className="brk-title-sub">Playoffs</div>
-          </div>
+          <Title data={data} season={season} onSeason={setSeason} />
 
           <div className="brk-ff-label" style={{ left: 380, top: 110, width: 704 }}>
             {venueLabel ? `Final Four — ${venueLabel}` : 'Final Four'}

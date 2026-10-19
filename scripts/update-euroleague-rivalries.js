@@ -13,12 +13,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE = 'https://api-live.euroleague.net';
-const COMPETITION = 'E';
-const UA = 'Mozilla/5.0 (compatible; ncaa-basket-map/1.0)';
+const { BASE, COMPETITION, get: apiGet, resolveSeason } = require('./euroleague-common');
 
-// Saisons agrégées pour le bilan (7 dernières saisons complètes).
-const SEASONS = ['E2018', 'E2019', 'E2020', 'E2021', 'E2022', 'E2023', 'E2024', 'E2025'];
+// Saisons agrégées pour le bilan : la saison en cours + les 7 précédentes (rempli au lancement).
+let SEASONS = [];
 
 // Rivalités réelles et notoires parmi les clubs actuellement en EuroLeague.
 const RIVALRIES = [
@@ -32,13 +30,12 @@ const RIVALRIES = [
 const TEAMS_PATH = path.join(__dirname, '..', 'src', 'euroleague-teams.json');
 const OUT_PATH = path.join(__dirname, '..', 'src', 'euroleague-rivalries.json');
 
-async function get(url) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
-  if (!res.ok) return null;
-  return res.json();
-}
+const get = (url) => apiGet(url, { optional: true });
 
 (async () => {
+  const current = await resolveSeason();
+  SEASONS = Array.from({ length: 8 }, (_, i) => `E${current.year - 7 + i}`);
+  console.log('Saisons:', SEASONS.join(' '));
   const teams = JSON.parse(fs.readFileSync(TEAMS_PATH, 'utf8'));
   const byId = Object.fromEntries(teams.map((t) => [t.id, t]));
 

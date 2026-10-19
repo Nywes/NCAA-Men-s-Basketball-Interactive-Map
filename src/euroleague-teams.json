@@ -1,22 +1,5 @@
 [
   {
-    "id": "MCO",
-    "displayName": "AS Monaco",
-    "shortDisplayName": "Monaco",
-    "division": "euroleague",
-    "latitude": 43.727905,
-    "longitude": 7.415,
-    "logo": "https://media-cdn.incrowdsports.com/89ed276a-2ba3-413f-8ea2-b3be209ca129.png",
-    "venue": "Salle Gaston Médecin",
-    "location": "Monaco",
-    "color": "ED1C24",
-    "secondaryColor": "231F20",
-    "capacity": 5000,
-    "website": "https://asmonaco.basketball/",
-    "honours": {},
-    "arenaPhoto": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/Salle_Gaston_M%C3%A9decin.JPG/1280px-Salle_Gaston_M%C3%A9decin.JPG"
-  },
-  {
     "id": "IST",
     "displayName": "Anadolu Efes Istanbul",
     "shortDisplayName": "Anadolu Efes",
@@ -404,5 +387,22 @@
     "website": "http://www.zalgiris.lt",
     "honours": {},
     "arenaPhoto": "https://upload.wikimedia.org/wikipedia/en/thumb/3/38/%C5%BDalgirio_Arena_in_2023_by_Augustas_Did%C5%BEgalvis.jpg/1280px-%C5%BDalgirio_Arena_in_2023_by_Augustas_Did%C5%BEgalvis.jpg"
+  },
+  {
+    "id": "BES",
+    "displayName": "Besiktas",
+    "shortDisplayName": "Besiktas",
+    "division": "euroleague",
+    "latitude": 40.9925,
+    "longitude": 28.919,
+    "logo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjChWbHH/b05e3c54-e672-4b31-9f86-c91e9de7715c.png",
+    "venue": "Turkcell Basketball Development Center",
+    "location": "Istanbul",
+    "color": "000000",
+    "secondaryColor": "FFFFFF",
+    "capacity": 10000,
+    "website": "http://www.bjk.com.tr",
+    "honours": {},
+    "arenaPhoto": null
   }
 ]
