@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -2330,7 +2330,7 @@
         "code": "012158",
         "firstName": "Niko",
         "lastName": "Jerkic",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4tl/226923ab-b47c-4196-bc20-17dd373ce38b.png",
         "height": 203,
         "nationality": "GER",
         "position": "Guard",
