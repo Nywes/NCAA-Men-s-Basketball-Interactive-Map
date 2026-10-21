@@ -1,12 +1,12 @@
-# Interactive Basketball Map — NCAA, French LNB, EuroLeague, EuroCup, Liga ACB & Serie A
+# Interactive Basketball Map — NCAA, French LNB, EuroLeague, EuroCup, Liga ACB, Serie A & Bundesliga
 
 ### 👉 **[Open the live map](https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/)**
 
 [![Interactive NCAA basketball map](public/og-image.jpg)](https://nywes.github.io/NCAA-Men-s-Basketball-Interactive-Map/)
 
-An interactive map of **every NCAA Division I men's and women's college basketball team**, every **French professional club** (Betclic ÉLITE, ÉLITE 2, Wonderligue, LF2), every **EuroLeague** and **EuroCup** team, the 18 **Liga ACB** clubs and the 16 **Serie A (LBA)** clubs: rosters, player stats, standings, arenas, NBA/WNBA legends, honours and the full **March Madness** bracket history.
+An interactive map of **every NCAA Division I men's and women's college basketball team**, every **French professional club** (Betclic ÉLITE, ÉLITE 2, Wonderligue, LF2), every **EuroLeague** and **EuroCup** team, the 18 **Liga ACB** clubs, the 16 **Serie A (LBA)** clubs and the 18 **Basketball Bundesliga (BBL)** clubs: rosters, player stats, standings, arenas, NBA/WNBA legends, honours and the full **March Madness** bracket history.
 
-Carte interactive (Leaflet) des programmes de basket NCAA D1 (hommes et femmes), des clubs pro français, de l'EuroLeague, de l'EuroCup, de la Liga ACB et de la Serie A italienne : chaque équipe est un marqueur sur la carte, avec son roster, son classement et ses joueurs notables (anciens passés en NBA, palmarès…).
+Carte interactive (Leaflet) des programmes de basket NCAA D1 (hommes et femmes), des clubs pro français, de l'EuroLeague, de l'EuroCup, de la Liga ACB, de la Serie A italienne et de la Bundesliga allemande : chaque équipe est un marqueur sur la carte, avec son roster, son classement et ses joueurs notables (anciens passés en NBA, palmarès…).
 
 App **React** (Create React App) + **react-leaflet**, déployée sur GitHub Pages.
 

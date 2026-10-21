@@ -4,6 +4,7 @@ import euroleagueLogo from './assets/icons/euroleague-logo.png';
 import eurocupLogo from './assets/icons/eurocup-logo.png';
 import acbLogo from './assets/icons/acb-logo.svg';
 import lbaLogo from './assets/icons/lba-logo.png';
+import bblLogo from './assets/icons/bbl-logo.png';
 
 // Config des "univers" disponibles. Ajouter une ligue = ajouter une entrée ici
 // (le LeaguePicker et les routes se construisent depuis cet objet).
@@ -65,6 +66,14 @@ export const LEAGUES = [
     title: 'Lega Basket Serie A',
     shortTitle: 'LBA',
     logo: lbaLogo,
+  },
+  {
+    id: 'germany',
+    path: '/germany',
+    name: 'Basketball Bundesliga — Germany',
+    title: 'easyCredit Basketball Bundesliga',
+    shortTitle: 'BBL',
+    logo: bblLogo,
   },
 ];
 

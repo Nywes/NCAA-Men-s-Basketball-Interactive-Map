@@ -1,0 +1,345 @@
+{
+  "updated": "2026-10-21",
+  "season": "2026-27",
+  "source": "easycredit-bbl.de",
+  "standings": [
+    {
+      "rank": 1,
+      "group": null,
+      "teamId": "486",
+      "name": "FC Bayern München Basketball",
+      "wins": 4,
+      "losses": 0,
+      "winPct": 100,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 403,
+      "pointsAgainst": 276,
+      "diff": 127
+    },
+    {
+      "rank": 2,
+      "group": null,
+      "teamId": "414",
+      "name": "VET-CONCEPT Gladiators Trier",
+      "wins": 4,
+      "losses": 1,
+      "winPct": 80,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 500,
+      "pointsAgainst": 436,
+      "diff": 64
+    },
+    {
+      "rank": 3,
+      "group": null,
+      "teamId": "426",
+      "name": "SKYLINERS",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 358,
+      "pointsAgainst": 341,
+      "diff": 17
+    },
+    {
+      "rank": 4,
+      "group": null,
+      "teamId": "422",
+      "name": "Basketball Löwen Braunschweig",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 390,
+      "pointsAgainst": 383,
+      "diff": 7
+    },
+    {
+      "rank": 5,
+      "group": null,
+      "teamId": "430",
+      "name": "EWE Baskets Oldenburg",
+      "wins": 3,
+      "losses": 2,
+      "winPct": 60,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 386,
+      "pointsAgainst": 423,
+      "diff": -37
+    },
+    {
+      "rank": 6,
+      "group": null,
+      "teamId": "415",
+      "name": "Telekom Baskets Bonn",
+      "wins": 3,
+      "losses": 2,
+      "winPct": 60,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 444,
+      "pointsAgainst": 401,
+      "diff": 43
+    },
+    {
+      "rank": 7,
+      "group": null,
+      "teamId": "433",
+      "name": "MHP RIESEN Ludwigsburg",
+      "wins": 3,
+      "losses": 2,
+      "winPct": 60,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 448,
+      "pointsAgainst": 452,
+      "diff": -4
+    },
+    {
+      "rank": 8,
+      "group": null,
+      "teamId": "551",
+      "name": "ROSTOCK SEAWOLVES",
+      "wins": 3,
+      "losses": 2,
+      "winPct": 60,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 454,
+      "pointsAgainst": 402,
+      "diff": 52
+    },
+    {
+      "rank": 9,
+      "group": null,
+      "teamId": "428",
+      "name": "SYNTAINICS MBC",
+      "wins": 3,
+      "losses": 2,
+      "winPct": 60,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 404,
+      "pointsAgainst": 381,
+      "diff": 23
+    },
+    {
+      "rank": 10,
+      "group": null,
+      "teamId": "540",
+      "name": "Fitness First Würzburg Baskets",
+      "wins": 2,
+      "losses": 2,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 303,
+      "pointsAgainst": 321,
+      "diff": -18
+    },
+    {
+      "rank": 11,
+      "group": null,
+      "teamId": "420",
+      "name": "BMA365 Bamberg Baskets",
+      "wins": 2,
+      "losses": 3,
+      "winPct": 40,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 448,
+      "pointsAgainst": 446,
+      "diff": 2
+    },
+    {
+      "rank": 12,
+      "group": null,
+      "teamId": "418",
+      "name": "ratiopharm ulm",
+      "wins": 2,
+      "losses": 3,
+      "winPct": 40,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 410,
+      "pointsAgainst": 431,
+      "diff": -21
+    },
+    {
+      "rank": 13,
+      "group": null,
+      "teamId": "483",
+      "name": "Science City Jena",
+      "wins": 2,
+      "losses": 3,
+      "winPct": 40,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 376,
+      "pointsAgainst": 437,
+      "diff": -61
+    },
+    {
+      "rank": 14,
+      "group": null,
+      "teamId": "413",
+      "name": "ALBA BERLIN",
+      "wins": 2,
+      "losses": 3,
+      "winPct": 40,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 402,
+      "pointsAgainst": 453,
+      "diff": -51
+    },
+    {
+      "rank": 15,
+      "group": null,
+      "teamId": "554",
+      "name": "Veolia Towers Hamburg",
+      "wins": 1,
+      "losses": 4,
+      "winPct": 20,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 402,
+      "pointsAgainst": 441,
+      "diff": -39
+    },
+    {
+      "rank": 16,
+      "group": null,
+      "teamId": "485",
+      "name": "NINERS Chemnitz",
+      "wins": 1,
+      "losses": 4,
+      "winPct": 20,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 425,
+      "pointsAgainst": 445,
+      "diff": -20
+    },
+    {
+      "rank": 17,
+      "group": null,
+      "teamId": "541",
+      "name": "RASTA Vechta",
+      "wins": 1,
+      "losses": 4,
+      "winPct": 20,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 403,
+      "pointsAgainst": 465,
+      "diff": -62
+    },
+    {
+      "rank": 18,
+      "group": null,
+      "teamId": "473",
+      "name": "Phoenix Hagen",
+      "wins": 1,
+      "losses": 4,
+      "winPct": 20,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 438,
+      "pointsAgainst": 460,
+      "diff": -22
+    }
+  ]
+}

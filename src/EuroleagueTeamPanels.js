@@ -138,7 +138,9 @@ const NAT_TO_ISO2 = {
   SSD: 'ss', ETH: 'et', KEN: 'ke', UGA: 'ug', RWA: 'rw',
 };
 const flagUrl = (code) => {
-  const c2 = code && NAT_TO_ISO2[code.trim()];
+  const c = code && code.trim();
+  // codes FIBA / ISO3 via la table, codes ISO2 (BBL) tels quels
+  const c2 = c && (NAT_TO_ISO2[c] || (c.length === 2 ? c.toLowerCase() : null));
   return c2 ? `https://flagcdn.com/w20/${c2}.png` : null;
 };
 

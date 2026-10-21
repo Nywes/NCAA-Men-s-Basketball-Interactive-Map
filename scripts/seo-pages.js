@@ -86,6 +86,20 @@ const PAGES = [
 		<p>An interactive map of the 16 Lega Basket Serie A (LBA) basketball clubs in Italy. Click a club to see its roster and player stats, the standings, its arena and city.</p>`,
   },
   {
+    dir: 'germany',
+    lang: 'en',
+    locale: 'en_US',
+    entry: 'germany',
+    hash: '#/germany',
+    title: 'Basketball Bundesliga (BBL) Teams Map — Rosters, Standings & Arenas | Interactive Basketball Map',
+    description:
+      'Interactive map of the 18 easyCredit Basketball Bundesliga (BBL) clubs in Germany: rosters with player stats, standings and arenas, updated daily.',
+    noscript: `
+		<h1>Basketball Bundesliga (BBL) Teams Map</h1>
+		<p>You need to enable JavaScript to run this app.</p>
+		<p>An interactive map of the 18 easyCredit Basketball Bundesliga (BBL) clubs in Germany. Click a club to see its roster and player stats, the standings, its arena and city.</p>`,
+  },
+  {
     dir: 'eurocup',
     lang: 'en',
     locale: 'en_US',

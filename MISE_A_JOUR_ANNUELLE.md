@@ -108,6 +108,11 @@ Dès la fin des deux tournois NCAA :
 - Nationalités en codes ISO3 (`SVN`, `HRV`, `DEU`…) : un drapeau manquant → ajouter l'alias dans `NAT_TO_ISO2` (`src/EuroleagueTeamPanels.js`). Nouveau poste italien → `POSITIONS` (le script liste « postes inconnus »).
 - L'API ne donne ni couleurs ni capacités : l'accent de la compétition sert de couleur ; `color` / `capacity` / `website` / `honours` peuvent être remplis à la main dans `src/lba-teams.json` (jamais écrasés).
 
+## 🇩🇪 Bundesliga (BBL) — rentrée (septembre / octobre)
+- `scripts/update-bbl-data.js` (workflow quotidien) lit le JSON serveur `__NEXT_DATA__` des pages `easycredit-bbl.de` (pas d'API publique) : `/saison/tabelle` (saison active, classement, liste des clubs avec salle/capacité/adresse) puis `/teams/<id>/<saison>` (effectif, stats, couleurs de maillot). Promus créés automatiquement (coords géocodées Photon puis Nominatim, résultat hors d'Allemagne rejeté), relégués archivés dans `scripts/bbl-teams-archive.json`. Ville mal libellée (adresse du club ≠ salle) → `TEAM_OVERRIDES` (ex. Bamberg).
+- Si le site change de structure (widget `acf/bbl-standings-table` ou `teamNavigatorData` absents), le script échoue proprement : ouvrir la page, chercher `__NEXT_DATA__` et adapter les chemins.
+- Nationalités en ISO2 (`DE`, `US`…) : acceptées telles quelles par le panneau. Couleurs = noms allemands des maillots (`SHIRT_COLORS`) ; une couleur déjà présente dans `src/bbl-teams.json` n'est jamais écrasée (corriger à la main si besoin).
+
 ## 🔧 Cas ponctuels (pas annuels, mais à surveiller)
 - **Réalignement de conférences** (chaque été, effectif au 1er juillet) → champ `conference` des équipes concernées, dans les **deux** fichiers. Source fiable : `src/espn-teams.json` (`groups.id` ESPN, régénéré chaque jour) — attention, ESPN marque parfois un groupe bidon (`isConference: false`, ex. l'American en 2026) : garder la conférence existante dans ce cas. Les ids de conférence doivent exister dans `divisions` (App.js) et chaque badge avoir son `.webp` dans `public/conferences/`. Fait pour 2026-27 (Pac-12 relancé, WAC → UAC, MAAC → Metro, Saint Francis parti en D3, West Florida arrivé).
 - **Renommage / rebranding** d'une fac (ex. George Washington → Revolutionaries, IUPUI → IU Indianapolis) → champ `name`.
