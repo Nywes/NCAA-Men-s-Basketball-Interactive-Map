@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useLayoutEffect, useRef } from 'react';
 import blankHeadshot from './assets/player.png';
+import { readableTeamColor } from './teamColors';
 import euroleagueLogo from './assets/icons/euroleague-logo.png';
 import euroleagueRostersData from './euroleague-rosters.json';
 import euroleagueStandingsData from './euroleague-standings.json';
@@ -31,23 +32,6 @@ const DataCtx = createContext(EUROLEAGUE_DATA);
 
 // Couleur du club, sinon celle de la compétition (orange EuroLeague, bleu EuroCup).
 const toHex = (c, fallback = '#F47216') => (c ? (c[0] === '#' ? c : `#${c}`) : fallback);
-// Luminance approximative (0 = noir, 1 = blanc) d'une couleur hex.
-const luminance = (hex) => {
-  const h = hex.replace('#', '');
-  const [r, g, b] = [0, 2, 4].map((i) => parseInt(h.slice(i, i + 2), 16) / 255);
-  return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-};
-const isLight = (hex) => luminance(hex) > 0.72;
-// Couleur d'habillage du panneau (onglets, en-têtes de tableaux à texte blanc) :
-// couleur du club, sauf si elle est trop claire (blanc du Real Madrid, jaune vif…)
-// → couleur secondaire si elle est assez foncée, sinon accent de la compétition.
-const teamAccent = (team, fallback) => {
-  const p = team.color ? toHex(team.color) : null;
-  const sec = team.secondaryColor ? toHex(team.secondaryColor) : null;
-  if (p && !isLight(p)) return p;
-  if (sec && !isLight(sec)) return sec;
-  return fallback;
-};
 
 const rgbParts = (hex) => {
   const h = toHex(hex).replace('#', '');
@@ -109,7 +93,7 @@ const EuroleagueTeamIdentity = ({ team, isOpen, setIsOpen, onMeasure }) => {
 
       {isOpen && (
         <div ref={contentRef} style={{ display: 'flow-root' }}>
-          <div className="palm-hero" style={{ background: lightTint(teamAccent(team, data.accent)) }}>
+          <div className="palm-hero" style={{ background: lightTint(readableTeamColor(team, data.accent)) }}>
             <img src={data.logo} alt="" className="palm-trophy-wm" />
             <div className="palm-hero-left">
               <div className="palm-hero-label">{data.label} Champion</div>
@@ -216,7 +200,7 @@ const EuroleagueRoster = ({ team, isSmallScreen }) => {
 
   const data = useContext(DataCtx);
   const players = data.rosters.rosters[team.id] || [];
-  const teamHex = teamAccent(team, data.accent);
+  const teamHex = readableTeamColor(team, data.accent);
   const tint = veryLightTint(teamHex);
 
   if (!players.length) return <div className="rt-empty">No roster available</div>;
@@ -308,7 +292,7 @@ const EuroleagueStanding = ({ team, isSmallScreen }) => {
   // EuroCup : 4 groupes (A-D) -> un intertitre par groupe ; poule unique -> aucun.
   const groups = [...new Set(rows.map((r) => r.group).filter(Boolean))];
   const grouped = groups.length > 1;
-  const teamHex = teamAccent(team, data.accent);
+  const teamHex = readableTeamColor(team, data.accent);
 
   useLayoutEffect(() => {
     const c = scrollRef.current;
@@ -550,7 +534,7 @@ const EuroleagueTeamPanels = ({ team, isSmallScreen, data = EUROLEAGUE_DATA }) =
   const [palmOpen, setPalmOpen] = useState(true);
   const [palmH, setPalmH] = useState(0);
 
-  const accentColor = teamAccent(team, data.accent);
+  const accentColor = readableTeamColor(team, data.accent);
 
   return (
     <DataCtx.Provider value={data}>

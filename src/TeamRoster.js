@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import blankHeadshot from './assets/player.png';
 import { sportPath } from './espn';
+import { readableTeamColor } from './teamColors';
 
 // Cache de session : clé "genre:idJoueur" -> { data } | { error }. Évite de re-télécharger.
 const STATS_CACHE = {};
@@ -131,8 +132,7 @@ const TeamRoster = ({ roster, rosterLoading, team, isSmallScreen, gender }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [athletes, allCached, gender]);
 
-  const teamHex =
-    team && team.color ? (team.color[0] === '#' ? team.color : `#${team.color}`) : '#00539b';
+  const teamHex = team ? readableTeamColor(team, '#00539b') : '#00539b';
   const tint = veryLightTint(teamHex);
 
   const toggle = (id) => setOpenId((cur) => (cur === id ? null : id));

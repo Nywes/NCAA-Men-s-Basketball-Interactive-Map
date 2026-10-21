@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import { sportPath } from './espn';
+import { readableTeamColor } from './teamColors';
 
 // Récupère le classement complet une seule fois par session ET PAR GENRE
 // (grosse réponse -> mise en cache séparée hommes/femmes).
@@ -155,7 +156,7 @@ const TeamStanding = ({ team, isSmallScreen, gender }) => {
   if (error) return <div className="st-empty">{error}</div>;
   if (!conf || !conf.standings || !conf.standings.entries) return <div className="st-empty">No standings available</div>;
 
-  const teamHex = toHex(team.color);
+  const teamHex = readableTeamColor(team, toHex());
   const entries = conf.standings.entries
     .slice()
     .sort((a, b) => {

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { readableTeamColor } from './teamColors';
 import TeamRoster from './TeamRoster';
 import TeamStanding from './TeamStanding';
 import TeamLegends from './TeamLegends';
@@ -25,8 +26,7 @@ const TeamInfo = ({
   // Onglet March Madness : seulement pour les équipes du dernier tournoi.
   const tabs = inBracket ? [...TABS, { id: 'madness', label: 'March Madness' }] : TABS;
 
-  const accentColor =
-    team.color && !team.color.startsWith('#') ? `#${team.color}` : team.color || '#4B9CD3';
+  const accentColor = readableTeamColor(team, '#4B9CD3');
 
   return (
     <div style={{ '--tab-accent': accentColor, '--palm-extra': `${extraListH}px` }}>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
 import blankHeadshot from './assets/player.png';
+import { readableTeamColor } from './teamColors';
 import lnbTrophy from './assets/lnb_trophy.png';
 import frRostersData from './fr-rosters.json';
 import frStandingsData from './fr-standings.json';
@@ -28,7 +29,8 @@ const LOGO_BY_ID = {
   women: Object.fromEntries(frWomenTeamsData.map((t) => [t.id, t.logo])),
 };
 
-const toHex = (c) => (c ? (c[0] === '#' ? c : `#${c}`) : '#1d428a');
+const DEFAULT_ACCENT = '#1d428a';
+const toHex = (c) => (c ? (c[0] === '#' ? c : `#${c}`) : DEFAULT_ACCENT);
 
 const rgbParts = (hex) => {
   const h = toHex(hex).replace('#', '');
@@ -125,7 +127,7 @@ const FrTeamIdentity = ({ team, isOpen, setIsOpen, onMeasure, gender = 'men' }) 
       {isOpen && (
         <div ref={contentRef} style={{ display: 'flow-root' }}>
           {hero && (
-            <div className="palm-hero" style={{ background: lightTint(team.color) }}>
+            <div className="palm-hero" style={{ background: lightTint(readableTeamColor(team, DEFAULT_ACCENT)) }}>
               {gender !== 'women' && (
                 <img src={lnbTrophy} alt="" className="palm-trophy-wm" />
               )}
@@ -222,7 +224,7 @@ const FrTeamRoster = ({ team, isSmallScreen }) => {
   const [openIdx, setOpenIdx] = useState(null);
 
   const players = frRostersData.rosters[team.id] || [];
-  const teamHex = toHex(team.color);
+  const teamHex = readableTeamColor(team, DEFAULT_ACCENT);
   const tint = veryLightTint(teamHex);
 
   if (!players.length) return <div className="rt-empty">No roster available</div>;
@@ -318,7 +320,7 @@ const FrTeamStanding = ({ team, isSmallScreen, gender = 'men' }) => {
   const season = data.season || '';
   const logoById = LOGO_BY_ID[gender] || LOGO_BY_ID.men;
   const rows = data.standings[team.division] || [];
-  const teamHex = toHex(team.color);
+  const teamHex = readableTeamColor(team, DEFAULT_ACCENT);
 
   // Centre le tableau sur l'équipe courante à l'ouverture.
   useLayoutEffect(() => {
@@ -446,7 +448,7 @@ const FrTeamPanels = ({ team, isSmallScreen, gender = 'men' }) => {
   const [palmOpen, setPalmOpen] = useState(true);
   const [palmH, setPalmH] = useState(0);
 
-  const accentColor = toHex(team.color);
+  const accentColor = readableTeamColor(team, DEFAULT_ACCENT);
 
   return (
     <>
