@@ -103,6 +103,11 @@ Dès la fin des deux tournois NCAA :
 - Palmarès (`honours`) des clubs : vides pour l'instant, à remplir à la main si souhaité (même format que l'EuroLeague).
 - La carte (`src/AcbMap.js`) est une configuration de `src/ClubLeagueMap.js`, commune à l'Europe : nouvelle ligue nationale = même schéma de données + un wrapper.
 
+## 🇮🇹 Serie A (LBA) — rentrée (septembre / octobre)
+- `scripts/update-lba-data.js` (workflow quotidien, API interne `legabasket.it/api`, sans clé) détecte **seul** la saison (championnat « Regular Season » courant), archive les relégués dans `scripts/lba-teams-archive.json` et crée les promus automatiquement (logo via le CDN `lba-media`, salle et ville via le calendrier, coordonnées géocodées Photon puis Nominatim — un résultat hors d'Italie est rejeté). Les ids d'équipe changent chaque saison : nos clubs sont indexés par `club_id`. Point aberrant ou ville mal libellée → `TEAM_OVERRIDES` (clé = `club_id`, ex. Reyer Venezia).
+- Nationalités en codes ISO3 (`SVN`, `HRV`, `DEU`…) : un drapeau manquant → ajouter l'alias dans `NAT_TO_ISO2` (`src/EuroleagueTeamPanels.js`). Nouveau poste italien → `POSITIONS` (le script liste « postes inconnus »).
+- L'API ne donne ni couleurs ni capacités : l'accent de la compétition sert de couleur ; `color` / `capacity` / `website` / `honours` peuvent être remplis à la main dans `src/lba-teams.json` (jamais écrasés).
+
 ## 🔧 Cas ponctuels (pas annuels, mais à surveiller)
 - **Réalignement de conférences** (chaque été, effectif au 1er juillet) → champ `conference` des équipes concernées, dans les **deux** fichiers. Source fiable : `src/espn-teams.json` (`groups.id` ESPN, régénéré chaque jour) — attention, ESPN marque parfois un groupe bidon (`isConference: false`, ex. l'American en 2026) : garder la conférence existante dans ce cas. Les ids de conférence doivent exister dans `divisions` (App.js) et chaque badge avoir son `.webp` dans `public/conferences/`. Fait pour 2026-27 (Pac-12 relancé, WAC → UAC, MAAC → Metro, Saint Francis parti en D3, West Florida arrivé).
 - **Renommage / rebranding** d'une fac (ex. George Washington → Revolutionaries, IUPUI → IU Indianapolis) → champ `name`.

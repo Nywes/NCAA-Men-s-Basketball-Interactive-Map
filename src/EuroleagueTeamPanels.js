@@ -131,6 +131,11 @@ const NAT_TO_ISO2 = {
   BUL: 'bg', JAM: 'jm', NOR: 'no', ISL: 'is', EST: 'ee', ROU: 'ro', BAR: 'bb', SVK: 'sk', AZE: 'az', POR: 'pt',
   URU: 'uy', ARM: 'am', RSA: 'za', COD: 'cd', GBR: 'gb', MEX: 'mx', AUT: 'at', GHA: 'gh', EGY: 'eg', PAN: 'pa',
   LUX: 'lu', MAR: 'ma', HAI: 'ht', TTO: 'tt', PHI: 'ph', CHN: 'cn', KOR: 'kr', CIV: 'ci',
+  // alias ISO 3166-1 alpha-3 (LBA) quand ils diffèrent des codes FIBA
+  SVN: 'si', HRV: 'hr', LVA: 'lv', NGA: 'ng', DEU: 'de', GMB: 'gm', NLD: 'nl', BGR: 'bg', GRC: 'gr', PRT: 'pt',
+  CHE: 'ch', DNK: 'dk', PRI: 'pr', URY: 'uy', CHL: 'cl', ZAF: 'za', AGO: 'ao', GIN: 'gn', BFA: 'bf', PHL: 'ph',
+  KAZ: 'kz', LBN: 'lb', IRN: 'ir', BHS: 'bs', BRB: 'bb', HTI: 'ht', TGO: 'tg', BEN: 'bj', COG: 'cg', SDN: 'sd',
+  SSD: 'ss', ETH: 'et', KEN: 'ke', UGA: 'ug', RWA: 'rw',
 };
 const flagUrl = (code) => {
   const c2 = code && NAT_TO_ISO2[code.trim()];
@@ -179,13 +184,9 @@ const EuroPlayerPanel = ({ p }) => {
 );
 };
 
-const posShort = (pos) => {
-  if (!pos) return '—';
-  if (pos === 'Guard') return 'G';
-  if (pos === 'Forward') return 'F';
-  if (pos === 'Center') return 'C';
-  return pos;
-};
+const POS_SHORT = { Guard: 'G', Forward: 'F', Center: 'C' };
+// « Guard-Forward » (LBA) → « G/F »
+const posShort = (pos) => (pos ? pos.split(/[-/]/).map((p) => POS_SHORT[p.trim()] || p.trim()).join('/') : '—');
 
 const EuroleagueRoster = ({ team, isSmallScreen }) => {
   const [openIdx, setOpenIdx] = useState(null);

@@ -1,0 +1,295 @@
+{
+  "updated": "2026-10-21",
+  "season": "2026-27",
+  "source": "legabasket.it",
+  "standings": [
+    {
+      "rank": 1,
+      "group": null,
+      "teamId": "6",
+      "name": "Virtus Costa Bologna",
+      "wins": 4,
+      "losses": 0,
+      "winPct": 100,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 389,
+      "pointsAgainst": 327,
+      "diff": 62
+    },
+    {
+      "rank": 2,
+      "group": null,
+      "teamId": "28",
+      "name": "Armani Olimpia Milano",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 359,
+      "pointsAgainst": 313,
+      "diff": 46
+    },
+    {
+      "rank": 3,
+      "group": null,
+      "teamId": "63",
+      "name": "Tezenis Verona",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 351,
+      "pointsAgainst": 336,
+      "diff": 15
+    },
+    {
+      "rank": 4,
+      "group": null,
+      "teamId": "107",
+      "name": "Nutribullet Treviso Basket",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 381,
+      "pointsAgainst": 376,
+      "diff": 5
+    },
+    {
+      "rank": 5,
+      "group": null,
+      "teamId": "61",
+      "name": "Umana Reyer Venezia",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 362,
+      "pointsAgainst": 346,
+      "diff": 16
+    },
+    {
+      "rank": 6,
+      "group": null,
+      "teamId": "42",
+      "name": "Napoli Basketball",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 374,
+      "pointsAgainst": 346,
+      "diff": 28
+    },
+    {
+      "rank": 7,
+      "group": null,
+      "teamId": "104",
+      "name": "Dolomiti Energia Trentino",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 334,
+      "pointsAgainst": 322,
+      "diff": 12
+    },
+    {
+      "rank": 8,
+      "group": null,
+      "teamId": "57",
+      "name": "APU Old Wild West Udine",
+      "wins": 2,
+      "losses": 2,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 324,
+      "pointsAgainst": 323,
+      "diff": 1
+    },
+    {
+      "rank": 9,
+      "group": null,
+      "teamId": "247",
+      "name": "Maxima Roma",
+      "wins": 2,
+      "losses": 2,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 349,
+      "pointsAgainst": 362,
+      "diff": -13
+    },
+    {
+      "rank": 10,
+      "group": null,
+      "teamId": "60",
+      "name": "Openjobmetis Varese",
+      "wins": 2,
+      "losses": 2,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 324,
+      "pointsAgainst": 338,
+      "diff": -14
+    },
+    {
+      "rank": 11,
+      "group": null,
+      "teamId": "246",
+      "name": "BC Roma",
+      "wins": 1,
+      "losses": 3,
+      "winPct": 25,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 395,
+      "pointsAgainst": 379,
+      "diff": 16
+    },
+    {
+      "rank": 12,
+      "group": null,
+      "teamId": "44",
+      "name": "UNA Hotels Reggio Emilia",
+      "wins": 1,
+      "losses": 3,
+      "winPct": 25,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 345,
+      "pointsAgainst": 362,
+      "diff": -17
+    },
+    {
+      "rank": 13,
+      "group": null,
+      "teamId": "106",
+      "name": "Pallacanestro Trieste",
+      "wins": 1,
+      "losses": 3,
+      "winPct": 25,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 337,
+      "pointsAgainst": 327,
+      "diff": 10
+    },
+    {
+      "rank": 14,
+      "group": null,
+      "teamId": "111",
+      "name": "Bertram Derthona Tortona",
+      "wins": 1,
+      "losses": 3,
+      "winPct": 25,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 332,
+      "pointsAgainst": 383,
+      "diff": -51
+    },
+    {
+      "rank": 15,
+      "group": null,
+      "teamId": "12",
+      "name": "Acqua S.Bernardo Cantù",
+      "wins": 0,
+      "losses": 4,
+      "winPct": 0,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 309,
+      "pointsAgainst": 361,
+      "diff": -52
+    },
+    {
+      "rank": 16,
+      "group": null,
+      "teamId": "50",
+      "name": "Longobardi Scafati Basket",
+      "wins": 0,
+      "losses": 4,
+      "winPct": 0,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 305,
+      "pointsAgainst": 369,
+      "diff": -64
+    }
+  ]
+}

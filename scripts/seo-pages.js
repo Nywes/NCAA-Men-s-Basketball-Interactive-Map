@@ -72,6 +72,20 @@ const PAGES = [
 		<p>An interactive map of the 18 Liga ACB (Liga Endesa) basketball clubs in Spain. Click a club to see its roster and player stats, the standings, its arena and city.</p>`,
   },
   {
+    dir: 'italy',
+    lang: 'en',
+    locale: 'en_US',
+    entry: 'italy',
+    hash: '#/italy',
+    title: 'Serie A (LBA) Teams Map — Rosters, Standings & Arenas | Interactive Basketball Map',
+    description:
+      'Interactive map of the 16 Lega Basket Serie A (LBA) basketball clubs in Italy: rosters with player stats, standings and arenas, updated daily.',
+    noscript: `
+		<h1>Serie A (LBA) Teams Map</h1>
+		<p>You need to enable JavaScript to run this app.</p>
+		<p>An interactive map of the 16 Lega Basket Serie A (LBA) basketball clubs in Italy. Click a club to see its roster and player stats, the standings, its arena and city.</p>`,
+  },
+  {
     dir: 'eurocup',
     lang: 'en',
     locale: 'en_US',

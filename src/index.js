@@ -14,6 +14,9 @@ import { LEAGUES } from './leagues';
 const FranceMap = lazy(() => import('./FranceMap'));
 const EuroleagueMap = lazy(() => import('./EuroleagueMap'));
 const AcbMap = lazy(() => import('./AcbMap'));
+const LbaMap = lazy(() => import('./LbaMap'));
+// Championnats nationaux de clubs (une carte = une configuration de ClubLeagueMap)
+const NATIONAL_MAPS = { spain: AcbMap, italy: LbaMap };
 
 // Titre d'onglet + méta-description propres à chaque univers/genre (SEO et
 // lisibilité des onglets). Le titre par défaut est dans public/index.html.
@@ -38,6 +41,11 @@ const PAGE_META = {
     title: `Carte du basket féminin français — Wonderligue & LF2 | ${SITE}`,
     description:
       'Carte interactive des clubs de La Boulangère Wonderligue et de Ligue Féminine 2 : classements, salles et palmarès du basket féminin français.',
+  },
+  italy: {
+    title: `Serie A (LBA) Map — Teams, Rosters & Standings | ${SITE}`,
+    description:
+      'Interactive map of the 16 Lega Basket Serie A (LBA) clubs in Italy: rosters, player stats, standings and arenas, updated daily.',
   },
   spain: {
     title: `Liga Endesa (ACB) Map — Teams, Rosters & Standings | ${SITE}`,
@@ -96,7 +104,7 @@ function Shell({ leagueId, gender, setGender }) {
   const league = LEAGUES.find((l) => l.id === leagueId);
   usePageMeta(leagueId, gender);
   const Map =
-    leagueId === 'france' ? FranceMap : leagueId === 'europe' || leagueId === 'eurocup' ? EuroleagueMap : leagueId === 'spain' ? AcbMap : App;
+    leagueId === 'france' ? FranceMap : leagueId === 'europe' || leagueId === 'eurocup' ? EuroleagueMap : NATIONAL_MAPS[leagueId] || App;
   // Titre imposé par la carte (Europe : EuroLeague / EuroCup / les deux selon le filtre).
   const [titleOverride, setTitleOverride] = useState(null);
 
@@ -160,6 +168,10 @@ function Root() {
           <Route
             path="/spain"
             element={<Shell key="spain" leagueId="spain" gender={gender} setGender={setGender} />}
+          />
+          <Route
+            path="/italy"
+            element={<Shell key="italy" leagueId="italy" gender={gender} setGender={setGender} />}
           />
           <Route path="*" element={<Navigate to="/usa" replace />} />
         </Routes>

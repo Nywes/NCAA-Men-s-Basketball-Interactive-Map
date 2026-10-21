@@ -3,6 +3,7 @@ import ffbbLogo from './assets/icons/ffbb-logo.png';
 import euroleagueLogo from './assets/icons/euroleague-logo.png';
 import eurocupLogo from './assets/icons/eurocup-logo.png';
 import acbLogo from './assets/icons/acb-logo.svg';
+import lbaLogo from './assets/icons/lba-logo.png';
 
 // Config des "univers" disponibles. Ajouter une ligue = ajouter une entrée ici
 // (le LeaguePicker et les routes se construisent depuis cet objet).
@@ -56,6 +57,14 @@ export const LEAGUES = [
     title: 'Liga Endesa — ACB',
     shortTitle: 'ACB',
     logo: acbLogo,
+  },
+  {
+    id: 'italy',
+    path: '/italy',
+    name: 'Serie A — Italy',
+    title: 'Lega Basket Serie A',
+    shortTitle: 'LBA',
+    logo: lbaLogo,
   },
 ];
 
