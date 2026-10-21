@@ -135,7 +135,7 @@ const NAT_TO_ISO2 = {
   SVN: 'si', HRV: 'hr', LVA: 'lv', NGA: 'ng', DEU: 'de', GMB: 'gm', NLD: 'nl', BGR: 'bg', GRC: 'gr', PRT: 'pt',
   CHE: 'ch', DNK: 'dk', PRI: 'pr', URY: 'uy', CHL: 'cl', ZAF: 'za', AGO: 'ao', GIN: 'gn', BFA: 'bf', PHL: 'ph',
   KAZ: 'kz', LBN: 'lb', IRN: 'ir', BHS: 'bs', BRB: 'bb', HTI: 'ht', TGO: 'tg', BEN: 'bj', COG: 'cg', SDN: 'sd',
-  SSD: 'ss', ETH: 'et', KEN: 'ke', UGA: 'ug', RWA: 'rw',
+  SSD: 'ss', ETH: 'et', KEN: 'ke', UGA: 'ug', RWA: 'rw', SUD: 'sd', IND: 'in', NZ: 'nz', FIJ: 'fj', SAM: 'ws', TGA: 'to', TRI: 'tt',
 };
 const flagUrl = (code) => {
   const c = code && code.trim();

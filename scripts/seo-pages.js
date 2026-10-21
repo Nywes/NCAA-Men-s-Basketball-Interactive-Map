@@ -100,6 +100,20 @@ const PAGES = [
 		<p>An interactive map of the 18 easyCredit Basketball Bundesliga (BBL) clubs in Germany. Click a club to see its roster and player stats, the standings, its arena and city.</p>`,
   },
   {
+    dir: 'australia',
+    lang: 'en',
+    locale: 'en_US',
+    entry: 'australia',
+    hash: '#/australia',
+    title: 'NBL Teams Map — Rosters, Ladder & Arenas | Interactive Basketball Map',
+    description:
+      'Interactive map of the 10 NBL basketball clubs in Australia and New Zealand: rosters with player stats, ladder and arenas, updated daily.',
+    noscript: `
+		<h1>NBL Teams Map</h1>
+		<p>You need to enable JavaScript to run this app.</p>
+		<p>An interactive map of the 10 NBL basketball clubs in Australia and New Zealand. Click a club to see its roster and player stats, the ladder, its arena and city.</p>`,
+  },
+  {
     dir: 'eurocup',
     lang: 'en',
     locale: 'en_US',

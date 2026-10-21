@@ -53,6 +53,10 @@ jobs:
         continue-on-error: true
         run: node scripts/update-bbl-data.js
 
+      - name: Fetch NBL (Australia) clubs, rosters & ladder from nbl.com.au
+        continue-on-error: true
+        run: node scripts/update-nbl-data.js
+
       - name: Compute EuroLeague team analytics (Offense/Defense/Pace ranks)
         continue-on-error: true # une source en panne ne bloque pas les autres
         run: node scripts/update-euroleague-analytics.js
@@ -70,7 +74,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add src/espn-teams.json scripts/fr-teams-archive.json scripts/fr-women-teams-archive.json src/fr-rosters.json src/fr-standings.json src/fr-teams.json src/fr-women-teams.json src/fr-women-standings.json scripts/acb-teams-archive.json src/acb-teams.json src/acb-rosters.json src/acb-standings.json scripts/lba-teams-archive.json src/lba-teams.json src/lba-rosters.json src/lba-standings.json scripts/bbl-teams-archive.json src/bbl-teams.json src/bbl-rosters.json src/bbl-standings.json scripts/eurocup-teams-archive.json src/eurocup-teams.json src/eurocup-rosters.json src/eurocup-standings.json src/euroleague-teams.json src/euroleague-rosters.json src/euroleague-standings.json src/euroleague-analytics.json src/euroleague-rivalries.json src/euroleague-bracket.json
+          git add src/espn-teams.json scripts/fr-teams-archive.json scripts/fr-women-teams-archive.json src/fr-rosters.json src/fr-standings.json src/fr-teams.json src/fr-women-teams.json src/fr-women-standings.json scripts/acb-teams-archive.json src/acb-teams.json src/acb-rosters.json src/acb-standings.json scripts/lba-teams-archive.json src/lba-teams.json src/lba-rosters.json src/lba-standings.json scripts/bbl-teams-archive.json src/bbl-teams.json src/bbl-rosters.json src/bbl-standings.json scripts/nbl-teams-archive.json src/nbl-teams.json src/nbl-rosters.json src/nbl-standings.json scripts/eurocup-teams-archive.json src/eurocup-teams.json src/eurocup-rosters.json src/eurocup-standings.json src/euroleague-teams.json src/euroleague-rosters.json src/euroleague-standings.json src/euroleague-analytics.json src/euroleague-rivalries.json src/euroleague-bracket.json
           if git diff --cached --quiet; then
             echo "Pas de changement de données."
             echo "changed=false" >> "$GITHUB_OUTPUT"

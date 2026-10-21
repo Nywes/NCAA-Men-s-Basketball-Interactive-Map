@@ -5,6 +5,7 @@ import eurocupLogo from './assets/icons/eurocup-logo.png';
 import acbLogo from './assets/icons/acb-logo.svg';
 import lbaLogo from './assets/icons/lba-logo.png';
 import bblLogo from './assets/icons/bbl-logo.png';
+import nblLogo from './assets/icons/nbl-logo.svg';
 
 // Config des "univers" disponibles. Ajouter une ligue = ajouter une entrée ici
 // (le LeaguePicker et les routes se construisent depuis cet objet).
@@ -74,6 +75,14 @@ export const LEAGUES = [
     title: 'easyCredit Basketball Bundesliga',
     shortTitle: 'BBL',
     logo: bblLogo,
+  },
+  {
+    id: 'australia',
+    path: '/australia',
+    name: 'NBL — Australia & New Zealand',
+    title: "Hungry Jack's NBL",
+    shortTitle: 'NBL',
+    logo: nblLogo,
   },
 ];
 

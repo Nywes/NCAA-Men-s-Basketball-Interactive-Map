@@ -16,8 +16,9 @@ const EuroleagueMap = lazy(() => import('./EuroleagueMap'));
 const AcbMap = lazy(() => import('./AcbMap'));
 const LbaMap = lazy(() => import('./LbaMap'));
 const BblMap = lazy(() => import('./BblMap'));
+const NblMap = lazy(() => import('./NblMap'));
 // Championnats nationaux de clubs (une carte = une configuration de ClubLeagueMap)
-const NATIONAL_MAPS = { spain: AcbMap, italy: LbaMap, germany: BblMap };
+const NATIONAL_MAPS = { spain: AcbMap, italy: LbaMap, germany: BblMap, australia: NblMap };
 
 // Titre d'onglet + méta-description propres à chaque univers/genre (SEO et
 // lisibilité des onglets). Le titre par défaut est dans public/index.html.
@@ -42,6 +43,11 @@ const PAGE_META = {
     title: `Carte du basket féminin français — Wonderligue & LF2 | ${SITE}`,
     description:
       'Carte interactive des clubs de La Boulangère Wonderligue et de Ligue Féminine 2 : classements, salles et palmarès du basket féminin français.',
+  },
+  australia: {
+    title: `NBL Map — Teams, Rosters & Standings | ${SITE}`,
+    description:
+      'Interactive map of the 10 NBL basketball clubs in Australia and New Zealand: rosters, player stats, ladder and arenas, updated daily.',
   },
   germany: {
     title: `Basketball Bundesliga (BBL) Map — Teams, Rosters & Standings | ${SITE}`,
@@ -182,6 +188,10 @@ function Root() {
           <Route
             path="/germany"
             element={<Shell key="germany" leagueId="germany" gender={gender} setGender={setGender} />}
+          />
+          <Route
+            path="/australia"
+            element={<Shell key="australia" leagueId="australia" gender={gender} setGender={setGender} />}
           />
           <Route path="*" element={<Navigate to="/usa" replace />} />
         </Routes>

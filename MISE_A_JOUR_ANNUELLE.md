@@ -113,6 +113,11 @@ Dès la fin des deux tournois NCAA :
 - Si le site change de structure (widget `acf/bbl-standings-table` ou `teamNavigatorData` absents), le script échoue proprement : ouvrir la page, chercher `__NEXT_DATA__` et adapter les chemins.
 - Nationalités en ISO2 (`DE`, `US`…) : acceptées telles quelles par le panneau. Couleurs = noms allemands des maillots (`SHIRT_COLORS`) ; une couleur déjà présente dans `src/bbl-teams.json` n'est jamais écrasée (corriger à la main si besoin).
 
+## 🇦🇺 NBL — rentrée (septembre)
+- `scripts/update-nbl-data.js` (workflow quotidien, API « rosetta » `prod.rosetta.nbl.com.au`, sans clé mais en-têtes `Origin`/`Referer` nbl.com.au obligatoires) détecte **seul** la saison (`seasons/current`), lit le classement (`running_ladder`), les clubs (`teams`) et l'effectif de chaque équipe via ses stats de saison (`stats/leaders/.../team/<code>`) complétées par les fiches `players`. Un joueur n'ayant encore joué aucun match peut manquer tant qu'il n'a pas de ligne de stats.
+- **Nouveau club (expansion)** : ajouter sa ville dans `CITIES` (code d'équipe → ville, pays) pour un géocodage correct (l'API ne donne que le nom de la salle) ; sinon le script géocode la salle seule.
+- Codes de nationalité mélangés (FIBA et ISO3, ex. `GRC`, `SUD`) : un drapeau manquant → alias dans `NAT_TO_ISO2` (`src/EuroleagueTeamPanels.js`).
+
 ## 🔧 Cas ponctuels (pas annuels, mais à surveiller)
 - **Réalignement de conférences** (chaque été, effectif au 1er juillet) → champ `conference` des équipes concernées, dans les **deux** fichiers. Source fiable : `src/espn-teams.json` (`groups.id` ESPN, régénéré chaque jour) — attention, ESPN marque parfois un groupe bidon (`isConference: false`, ex. l'American en 2026) : garder la conférence existante dans ce cas. Les ids de conférence doivent exister dans `divisions` (App.js) et chaque badge avoir son `.webp` dans `public/conferences/`. Fait pour 2026-27 (Pac-12 relancé, WAC → UAC, MAAC → Metro, Saint Francis parti en D3, West Florida arrivé).
 - **Renommage / rebranding** d'une fac (ex. George Washington → Revolutionaries, IUPUI → IU Indianapolis) → champ `name`.
