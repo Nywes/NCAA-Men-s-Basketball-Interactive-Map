@@ -127,6 +127,10 @@ const NAT_TO_ISO2 = {
   ANG: 'ao', BAH: 'bs', BUR: 'bf', CHI: 'cl', COL: 'co', CPV: 'cv', CUB: 'cu',
   DEN: 'dk', GAB: 'ga', GUI: 'gn', HUN: 'hu', IRL: 'ie', IVO: 'ci', NGR: 'ng',
   'UK ': 'gb', UK: 'gb',
+  // ajouts Liga ACB
+  BUL: 'bg', JAM: 'jm', NOR: 'no', ISL: 'is', EST: 'ee', ROU: 'ro', BAR: 'bb', SVK: 'sk', AZE: 'az', POR: 'pt',
+  URU: 'uy', ARM: 'am', RSA: 'za', COD: 'cd', GBR: 'gb', MEX: 'mx', AUT: 'at', GHA: 'gh', EGY: 'eg', PAN: 'pa',
+  LUX: 'lu', MAR: 'ma', HAI: 'ht', TTO: 'tt', PHI: 'ph', CHN: 'cn', KOR: 'kr', CIV: 'ci',
 };
 const flagUrl = (code) => {
   const c2 = code && NAT_TO_ISO2[code.trim()];

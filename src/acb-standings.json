@@ -1,0 +1,331 @@
+{
+  "updated": "2026-10-21",
+  "season": "2026-27",
+  "source": "api2.acb.com",
+  "standings": [
+    {
+      "rank": 1,
+      "group": null,
+      "teamId": "9",
+      "name": "Real Madrid",
+      "wins": 4,
+      "losses": 0,
+      "winPct": 100,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 442,
+      "pointsAgainst": 361,
+      "diff": 81
+    },
+    {
+      "rank": 2,
+      "group": null,
+      "teamId": "3",
+      "name": "Kosner Baskonia",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 386,
+      "pointsAgainst": 330,
+      "diff": 56
+    },
+    {
+      "rank": 3,
+      "group": null,
+      "teamId": "25",
+      "name": "Río Breogán",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 428,
+      "pointsAgainst": 399,
+      "diff": 29
+    },
+    {
+      "rank": 4,
+      "group": null,
+      "teamId": "28",
+      "name": "La Laguna Tenerife",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 332,
+      "pointsAgainst": 310,
+      "diff": 22
+    },
+    {
+      "rank": 5,
+      "group": null,
+      "teamId": "16",
+      "name": "Casademont Zaragoza",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 364,
+      "pointsAgainst": 346,
+      "diff": 18
+    },
+    {
+      "rank": 6,
+      "group": null,
+      "teamId": "57",
+      "name": "Monbus Obradoiro",
+      "wins": 3,
+      "losses": 1,
+      "winPct": 75,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 367,
+      "pointsAgainst": 360,
+      "diff": 7
+    },
+    {
+      "rank": 7,
+      "group": null,
+      "teamId": "13",
+      "name": "Valencia Basket",
+      "wins": 2,
+      "losses": 2,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 399,
+      "pointsAgainst": 369,
+      "diff": 30
+    },
+    {
+      "rank": 8,
+      "group": null,
+      "teamId": "8",
+      "name": "Asisa Joventut",
+      "wins": 2,
+      "losses": 2,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 386,
+      "pointsAgainst": 367,
+      "diff": 19
+    },
+    {
+      "rank": 9,
+      "group": null,
+      "teamId": "14",
+      "name": "Unicaja",
+      "wins": 2,
+      "losses": 2,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 338,
+      "pointsAgainst": 325,
+      "diff": 13
+    },
+    {
+      "rank": 10,
+      "group": null,
+      "teamId": "2",
+      "name": "Barça",
+      "wins": 2,
+      "losses": 2,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 391,
+      "pointsAgainst": 400,
+      "diff": -9
+    },
+    {
+      "rank": 11,
+      "group": null,
+      "teamId": "4",
+      "name": "Surne Bilbao",
+      "wins": 2,
+      "losses": 2,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 388,
+      "pointsAgainst": 402,
+      "diff": -14
+    },
+    {
+      "rank": 12,
+      "group": null,
+      "teamId": "591",
+      "name": "FIATC Girona",
+      "wins": 2,
+      "losses": 2,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 364,
+      "pointsAgainst": 400,
+      "diff": -36
+    },
+    {
+      "rank": 13,
+      "group": null,
+      "teamId": "549",
+      "name": "Recoletas Salud San Pablo Burgos",
+      "wins": 1,
+      "losses": 3,
+      "winPct": 25,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 350,
+      "pointsAgainst": 354,
+      "diff": -4
+    },
+    {
+      "rank": 14,
+      "group": null,
+      "teamId": "658",
+      "name": "iLERNA Lleida",
+      "wins": 1,
+      "losses": 3,
+      "winPct": 25,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 373,
+      "pointsAgainst": 394,
+      "diff": -21
+    },
+    {
+      "rank": 15,
+      "group": null,
+      "teamId": "22",
+      "name": "MoraBanc Andorra",
+      "wins": 1,
+      "losses": 3,
+      "winPct": 25,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 352,
+      "pointsAgainst": 380,
+      "diff": -28
+    },
+    {
+      "rank": 16,
+      "group": null,
+      "teamId": "12",
+      "name": "UCAM Murcia",
+      "wins": 1,
+      "losses": 3,
+      "winPct": 25,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 347,
+      "pointsAgainst": 384,
+      "diff": -37
+    },
+    {
+      "rank": 17,
+      "group": null,
+      "teamId": "657",
+      "name": "Leyma Coruña",
+      "wins": 1,
+      "losses": 3,
+      "winPct": 25,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 366,
+      "pointsAgainst": 422,
+      "diff": -56
+    },
+    {
+      "rank": 18,
+      "group": null,
+      "teamId": "10",
+      "name": "Kids&Us Manresa",
+      "wins": 0,
+      "losses": 4,
+      "winPct": 0,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 342,
+      "pointsAgainst": 412,
+      "diff": -70
+    }
+  ]
+}

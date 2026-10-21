@@ -58,6 +58,20 @@ const PAGES = [
 		<p>Les équipes de basket universitaire américain NCAA Division I et les équipes de l'EuroLeague.</p>`,
   },
   {
+    dir: 'spain',
+    lang: 'en',
+    locale: 'en_US',
+    entry: 'spain',
+    hash: '#/spain',
+    title: 'Liga Endesa (ACB) Teams Map — Rosters, Standings & Arenas | Interactive Basketball Map',
+    description:
+      'Interactive map of the 18 Liga Endesa (ACB) basketball clubs in Spain: rosters with player stats, standings and arenas, updated daily.',
+    noscript: `
+		<h1>Liga Endesa (ACB) Teams Map</h1>
+		<p>You need to enable JavaScript to run this app.</p>
+		<p>An interactive map of the 18 Liga ACB (Liga Endesa) basketball clubs in Spain. Click a club to see its roster and player stats, the standings, its arena and city.</p>`,
+  },
+  {
     dir: 'eurocup',
     lang: 'en',
     locale: 'en_US',

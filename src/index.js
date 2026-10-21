@@ -13,6 +13,7 @@ import { LEAGUES } from './leagues';
 // de leur univers : la page NCAA (entrée du site) s'affiche plus vite.
 const FranceMap = lazy(() => import('./FranceMap'));
 const EuroleagueMap = lazy(() => import('./EuroleagueMap'));
+const AcbMap = lazy(() => import('./AcbMap'));
 
 // Titre d'onglet + méta-description propres à chaque univers/genre (SEO et
 // lisibilité des onglets). Le titre par défaut est dans public/index.html.
@@ -37,6 +38,11 @@ const PAGE_META = {
     title: `Carte du basket féminin français — Wonderligue & LF2 | ${SITE}`,
     description:
       'Carte interactive des clubs de La Boulangère Wonderligue et de Ligue Féminine 2 : classements, salles et palmarès du basket féminin français.',
+  },
+  spain: {
+    title: `Liga Endesa (ACB) Map — Teams, Rosters & Standings | ${SITE}`,
+    description:
+      'Interactive map of the 18 Liga Endesa (ACB) basketball clubs in Spain: rosters, player stats, standings and arenas, updated daily.',
   },
   eurocup: {
     title: `EuroCup Map — Teams, Rosters & Standings | ${SITE}`,
@@ -89,7 +95,8 @@ function Shell({ leagueId, gender, setGender }) {
 
   const league = LEAGUES.find((l) => l.id === leagueId);
   usePageMeta(leagueId, gender);
-  const Map = leagueId === 'france' ? FranceMap : leagueId === 'europe' || leagueId === 'eurocup' ? EuroleagueMap : App;
+  const Map =
+    leagueId === 'france' ? FranceMap : leagueId === 'europe' || leagueId === 'eurocup' ? EuroleagueMap : leagueId === 'spain' ? AcbMap : App;
   // Titre imposé par la carte (Europe : EuroLeague / EuroCup / les deux selon le filtre).
   const [titleOverride, setTitleOverride] = useState(null);
 
@@ -149,6 +156,10 @@ function Root() {
           <Route
             path="/eurocup"
             element={<Shell key="eurocup" leagueId="eurocup" gender={gender} setGender={setGender} />}
+          />
+          <Route
+            path="/spain"
+            element={<Shell key="spain" leagueId="spain" gender={gender} setGender={setGender} />}
           />
           <Route path="*" element={<Navigate to="/usa" replace />} />
         </Routes>

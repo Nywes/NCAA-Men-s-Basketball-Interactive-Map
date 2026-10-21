@@ -96,6 +96,13 @@ Dès la fin des deux tournois NCAA :
 - Le tableau conserve l'historique de toutes les saisons depuis 2004-05 (sélecteur dans l'overlay).
 - **EuroCup** : mêmes scripts, compétition `U` (`node scripts/update-euroleague-data.js U`) → `src/eurocup-*.json`. Nouveaux clubs géocodés automatiquement (Photon puis Nominatim) ; en cas de point aberrant ou de salle délocalisée, ajouter une entrée `TEAM_OVERRIDES` dans `update-euroleague-data.js` (ex. Derthona, Hapoel Jerusalem). Le filtre EuroLeague / EuroCup et le titre de la carte Europe sont dans `EURO_COMPETITIONS` (`src/leagues.js`).
 
+## 🇪🇸 Liga ACB — rentrée (septembre / octobre)
+- `scripts/update-acb-data.js` (workflow quotidien, API `api2.acb.com`) détecte **seul** la saison (dernier `editionId` listé), archive les relégués dans `scripts/acb-teams-archive.json` et crée les promus automatiquement (logo, couleur, salle, capacité, site via l'API ; coordonnées géocodées Photon puis Nominatim). Point aberrant → entrée `TEAM_OVERRIDES` (clé = `clubId`, ex. Real Madrid, Andorra).
+- Joueur **sans drapeau** : l'API donne les pays en espagnol ; le script liste « pays sans code » → ajouter le nom dans `COUNTRIES` (→ code FIBA) et, si le code est nouveau, dans `NAT_TO_ISO2` (`src/EuroleagueTeamPanels.js`).
+- Si l'API répond 401/403 : la clé publique `X-APIKEY` du site a changé → la relire dans le JS de acb.com (onglet réseau).
+- Palmarès (`honours`) des clubs : vides pour l'instant, à remplir à la main si souhaité (même format que l'EuroLeague).
+- La carte (`src/AcbMap.js`) est une configuration de `src/ClubLeagueMap.js`, commune à l'Europe : nouvelle ligue nationale = même schéma de données + un wrapper.
+
 ## 🔧 Cas ponctuels (pas annuels, mais à surveiller)
 - **Réalignement de conférences** (chaque été, effectif au 1er juillet) → champ `conference` des équipes concernées, dans les **deux** fichiers. Source fiable : `src/espn-teams.json` (`groups.id` ESPN, régénéré chaque jour) — attention, ESPN marque parfois un groupe bidon (`isConference: false`, ex. l'American en 2026) : garder la conférence existante dans ce cas. Les ids de conférence doivent exister dans `divisions` (App.js) et chaque badge avoir son `.webp` dans `public/conferences/`. Fait pour 2026-27 (Pac-12 relancé, WAC → UAC, MAAC → Metro, Saint Francis parti en D3, West Florida arrivé).
 - **Renommage / rebranding** d'une fac (ex. George Washington → Revolutionaries, IUPUI → IU Indianapolis) → champ `name`.

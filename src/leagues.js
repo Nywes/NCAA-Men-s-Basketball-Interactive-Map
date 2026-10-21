@@ -2,6 +2,7 @@ import ncaaLogo from './assets/icons/ncaa-logo.png';
 import ffbbLogo from './assets/icons/ffbb-logo.png';
 import euroleagueLogo from './assets/icons/euroleague-logo.png';
 import eurocupLogo from './assets/icons/eurocup-logo.png';
+import acbLogo from './assets/icons/acb-logo.svg';
 
 // Config des "univers" disponibles. Ajouter une ligue = ajouter une entrée ici
 // (le LeaguePicker et les routes se construisent depuis cet objet).
@@ -47,6 +48,14 @@ export const LEAGUES = [
     title: 'BKT EuroCup',
     shortTitle: 'EuroCup',
     logo: eurocupLogo,
+  },
+  {
+    id: 'spain',
+    path: '/spain',
+    name: 'Liga Endesa — Spain',
+    title: 'Liga Endesa — ACB',
+    shortTitle: 'ACB',
+    logo: acbLogo,
   },
 ];
 
