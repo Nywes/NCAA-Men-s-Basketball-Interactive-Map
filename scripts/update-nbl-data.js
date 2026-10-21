@@ -84,11 +84,36 @@ async function geocode(q) {
     return null;
   }
 }
-// Logo de club : PNG transparent du CDN NBL de préférence (le logo sportradar a un fond
+// Logos du menu « Teams » de nbl.com.au (SVG/webp officiels, fond transparent), par
+// slug d'équipe : <a href="/teams/<slug>"><img src="…"></a>. Vide si le site change.
+async function fetchMenuLogos() {
+  try {
+    const html = await (await fetch('https://www.nbl.com.au/', { headers: { 'User-Agent': UA, Accept: 'text/html' } })).text();
+    const logos = {};
+    const seen = new Set();
+    for (const m of html.matchAll(/<a[^>]+href="\/teams\/([a-z0-9-]+)"[^>]*>([\s\S]*?)<\/a>/g)) {
+      const src = (m[2].match(/src="([^"]+)"/) || [])[1];
+      if (!src || seen.has(m[1])) continue; // 1re occurrence = menu (les suivantes : vignettes à fond blanc)
+      seen.add(m[1]);
+      if (!/\.avif(\?|$)/i.test(src)) logos[m[1]] = src; // avif : pas partout supporté → candidats suivants
+    }
+    return logos;
+  } catch (e) {
+    return {};
+  }
+}
+// Slug du menu correspondant à une équipe : même dernier mot (« breakers », « united »…).
+const menuLogoFor = (menu, name) => {
+  const last = String(name || '').toLowerCase().split(/\s+/).pop();
+  const slug = Object.keys(menu).find((k) => k.split('-').pop() === last);
+  return slug ? menu[slug] : null;
+};
+
+// Logo de club : menu du site, puis PNG transparent du CDN NBL (le logo sportradar a un fond
 // blanc) ; on vérifie qu'il répond et pèse < 150 Ko (ex. Perth : PNG de 580 Ko sur un autre hôte).
 const MAX_LOGO_BYTES = 150000;
 async function pickLogo(code, candidates) {
-  const urls = [`https://cdn.nbl.com.au/app_assets/transparent_logos/${code}.png`, ...candidates].filter(Boolean);
+  const urls = [...candidates].filter(Boolean);
   for (const u of urls) {
     try {
       const r = await fetch(u, { method: 'HEAD', headers: { 'User-Agent': UA } });
@@ -152,6 +177,9 @@ const photo = (p) => (p.external_player_image || p.image || null) && String(p.ex
   }
   console.log(`${Object.keys(master).length} fiches joueur`);
 
+  const menuLogos = await fetchMenuLogos();
+  console.log(`${Object.keys(menuLogos).length} logos trouvés dans le menu du site`);
+
   // ── clubs : fiche, géocodage des nouveaux, effectif + stats ──
   const rosters = {};
   const allPlayers = [];
@@ -176,7 +204,15 @@ const photo = (p) => (p.external_player_image || p.image || null) && String(p.ex
       shortDisplayName: lt.name || at.name,
       division: 'nbl',
       code,
-      logo: await pickLogo(code, [lt.team_logo_transparent, at.team_logo_transparent, lt.external_team_logo, at.external_team_logo, lt.team_logo]),
+      logo: await pickLogo(code, [
+        menuLogoFor(menuLogos, lt.name || at.name),
+        `https://cdn.nbl.com.au/app_assets/transparent_logos/${code}.png`,
+        lt.team_logo_transparent,
+        at.team_logo_transparent,
+        lt.external_team_logo,
+        at.external_team_logo,
+        lt.team_logo,
+      ]),
       color: hex(lt.color_primary || at.color_primary),
       secondaryColor: hex(lt.color_secondary || at.color_secondary),
       venue: venue || team.venue || null,

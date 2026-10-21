@@ -16,21 +16,21 @@
         "position": "Guard",
         "number": "1",
         "gp": 8,
-        "min": 30.9,
-        "ppg": 19.3,
+        "min": 32.6,
+        "ppg": 20.8,
         "rpg": 3,
-        "apg": 4.9,
-        "spg": 0.6,
+        "apg": 5.3,
+        "spg": 0.9,
         "bpg": 0.1,
-        "tov": 1.4,
-        "p2": 63.4,
-        "p3": 29.4,
-        "ft": 75.6,
-        "pir": 18.9,
+        "tov": 1.8,
+        "p2": 63.6,
+        "p3": 31.4,
+        "ft": 76.1,
+        "pir": 20.4,
         "leagueRank": {
-          "pts": 7,
+          "pts": 6,
           "reb": null,
-          "ast": 10
+          "ast": 9
         }
       },
       {
@@ -44,19 +44,19 @@
         "position": "Guard",
         "number": "7",
         "gp": 8,
-        "min": 20.7,
-        "ppg": 16.3,
-        "rpg": 3.3,
-        "apg": 2.1,
+        "min": 22.5,
+        "ppg": 17.4,
+        "rpg": 3.5,
+        "apg": 2.3,
         "spg": 0.5,
-        "bpg": 0.4,
+        "bpg": 0.5,
         "tov": 1.8,
-        "p2": 65.8,
-        "p3": 46.5,
+        "p2": 66.7,
+        "p3": 46.7,
         "ft": 76.9,
-        "pir": 15.5,
+        "pir": 16.9,
         "leagueRank": {
-          "pts": 16,
+          "pts": 12,
           "reb": null,
           "ast": null
         }
@@ -72,21 +72,21 @@
         "position": "Center",
         "number": "22",
         "gp": 8,
-        "min": 27,
-        "ppg": 14.5,
-        "rpg": 6.9,
-        "apg": 4.5,
-        "spg": 0.8,
+        "min": 28.8,
+        "ppg": 15.5,
+        "rpg": 7.3,
+        "apg": 4.9,
+        "spg": 1,
         "bpg": 2.1,
-        "tov": 1.6,
-        "p2": 61.2,
+        "tov": 1.8,
+        "p2": 60.4,
         "p3": 50,
-        "ft": 74.6,
-        "pir": 22.4,
+        "ft": 76.2,
+        "pir": 24,
         "leagueRank": {
-          "pts": null,
-          "reb": 11,
-          "ast": 12
+          "pts": 20,
+          "reb": 7,
+          "ast": 11
         }
       },
       {
@@ -100,21 +100,21 @@
         "position": "Forward",
         "number": "33",
         "gp": 6,
-        "min": 25.3,
-        "ppg": 12.5,
-        "rpg": 6,
-        "apg": 2.8,
+        "min": 27.8,
+        "ppg": 14.3,
+        "rpg": 7,
+        "apg": 3.5,
         "spg": 0.8,
         "bpg": 0,
-        "tov": 1.8,
-        "p2": 48.1,
-        "p3": 23.8,
-        "ft": 55.6,
-        "pir": 11.8,
+        "tov": 2,
+        "p2": 50.9,
+        "p3": 22.7,
+        "ft": 59.1,
+        "pir": 14.7,
         "leagueRank": {
           "pts": null,
-          "reb": 18,
-          "ast": null
+          "reb": 11,
+          "ast": 20
         }
       },
       {
@@ -128,17 +128,17 @@
         "position": "Guard",
         "number": "31",
         "gp": 8,
-        "min": 29.5,
-        "ppg": 12.4,
+        "min": 31.7,
+        "ppg": 13.5,
         "rpg": 4.1,
-        "apg": 1.3,
+        "apg": 1.6,
         "spg": 0.8,
         "bpg": 0.1,
         "tov": 1.3,
-        "p2": 44.8,
-        "p3": 40,
-        "ft": 92.9,
-        "pir": 11.5,
+        "p2": 45.2,
+        "p3": 40.7,
+        "ft": 87.5,
+        "pir": 12.5,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -156,17 +156,17 @@
         "position": "Guard",
         "number": "11",
         "gp": 8,
-        "min": 27,
-        "ppg": 7.4,
-        "rpg": 3.8,
+        "min": 28.4,
+        "ppg": 8.4,
+        "rpg": 4,
         "apg": 2.3,
         "spg": 0.6,
         "bpg": 0,
-        "tov": 0.9,
-        "p2": 48.1,
-        "p3": 37.5,
+        "tov": 1,
+        "p2": 50,
+        "p3": 40.7,
         "ft": 75,
-        "pir": 9.3,
+        "pir": 10.3,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -184,17 +184,17 @@
         "position": "Forward",
         "number": "12",
         "gp": 8,
-        "min": 16.5,
-        "ppg": 6.6,
-        "rpg": 3.9,
-        "apg": 0.6,
+        "min": 17.5,
+        "ppg": 6.9,
+        "rpg": 4,
+        "apg": 0.8,
         "spg": 0.3,
-        "bpg": 0.8,
+        "bpg": 0.9,
         "tov": 1.1,
         "p2": 64.7,
         "p3": 42.1,
-        "ft": 53.8,
-        "pir": 8.1,
+        "ft": 60,
+        "pir": 8.8,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -422,8 +422,8 @@
         "ft": 66.7,
         "pir": 16,
         "leagueRank": {
-          "pts": 13,
-          "reb": 16,
+          "pts": 15,
+          "reb": 17,
           "ast": null
         }
       },
@@ -450,7 +450,7 @@
         "ft": 75,
         "pir": 18.5,
         "leagueRank": {
-          "pts": 18,
+          "pts": 19,
           "reb": null,
           "ast": null
         }
@@ -479,7 +479,7 @@
         "pir": 18.8,
         "leagueRank": {
           "pts": null,
-          "reb": 17,
+          "reb": 18,
           "ast": null
         }
       },
@@ -564,7 +564,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 9
+          "ast": 10
         }
       },
       {
@@ -760,7 +760,7 @@
         "ft": 80,
         "pir": 15,
         "leagueRank": {
-          "pts": 6,
+          "pts": 7,
           "reb": null,
           "ast": null
         }
@@ -789,7 +789,7 @@
         "pir": 21.5,
         "leagueRank": {
           "pts": 10,
-          "reb": 9,
+          "reb": 10,
           "ast": null
         }
       },
@@ -816,8 +816,8 @@
         "ft": 70,
         "pir": 21.4,
         "leagueRank": {
-          "pts": 20,
-          "reb": 13,
+          "pts": null,
+          "reb": 14,
           "ast": 5
         }
       },
@@ -845,7 +845,7 @@
         "pir": 15.7,
         "leagueRank": {
           "pts": null,
-          "reb": 12,
+          "reb": 13,
           "ast": null
         }
       },
@@ -902,7 +902,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 19
+          "ast": null
         }
       },
       {
@@ -1526,34 +1526,6 @@
         }
       },
       {
-        "code": "aeb4d203-4032-44a5-a412-584f007d6dfb",
-        "firstName": "Nate",
-        "lastName": "Hinton",
-        "photo": "https://images.dc.connect.sportradar.com/b1sjj/536606aed60f426f949a8c383d33a00c?size=200&format=webp",
-        "height": 196,
-        "age": 27,
-        "nationality": "USA",
-        "position": "Guard",
-        "number": "4",
-        "gp": 7,
-        "min": 28.2,
-        "ppg": 16,
-        "rpg": 5.7,
-        "apg": 3,
-        "spg": 2.3,
-        "bpg": 0.3,
-        "tov": 2.4,
-        "p2": 55,
-        "p3": 30.3,
-        "ft": 64,
-        "pir": 16.4,
-        "leagueRank": {
-          "pts": 17,
-          "reb": 20,
-          "ast": null
-        }
-      },
-      {
         "code": "9b04b8b2-c234-4c8e-8653-d896d66267a9",
         "firstName": "Max",
         "lastName": "Mackinnon",
@@ -1564,20 +1536,48 @@
         "position": "Guard",
         "number": "3",
         "gp": 7,
-        "min": 27.5,
-        "ppg": 15.4,
+        "min": 29.1,
+        "ppg": 17.3,
         "rpg": 7,
         "apg": 2.4,
         "spg": 0.4,
         "bpg": 0.1,
         "tov": 1.6,
-        "p2": 48.8,
-        "p3": 41.3,
+        "p2": 47.8,
+        "p3": 44,
         "ft": 91.7,
-        "pir": 16.9,
+        "pir": 18.1,
         "leagueRank": {
-          "pts": 19,
-          "reb": 10,
+          "pts": 13,
+          "reb": 12,
+          "ast": null
+        }
+      },
+      {
+        "code": "aeb4d203-4032-44a5-a412-584f007d6dfb",
+        "firstName": "Nate",
+        "lastName": "Hinton",
+        "photo": "https://images.dc.connect.sportradar.com/b1sjj/536606aed60f426f949a8c383d33a00c?size=200&format=webp",
+        "height": 196,
+        "age": 27,
+        "nationality": "USA",
+        "position": "Guard",
+        "number": "4",
+        "gp": 7,
+        "min": 29.9,
+        "ppg": 17,
+        "rpg": 5.9,
+        "apg": 3.3,
+        "spg": 2.4,
+        "bpg": 0.3,
+        "tov": 2.6,
+        "p2": 56.3,
+        "p3": 29.4,
+        "ft": 65.4,
+        "pir": 17.6,
+        "leagueRank": {
+          "pts": 16,
+          "reb": 19,
           "ast": null
         }
       },
@@ -1620,17 +1620,17 @@
         "position": "Forward",
         "number": "2",
         "gp": 7,
-        "min": 23.6,
-        "ppg": 10.1,
-        "rpg": 4.9,
-        "apg": 1.9,
+        "min": 25.6,
+        "ppg": 11,
+        "rpg": 5,
+        "apg": 2,
         "spg": 0.4,
-        "bpg": 0.7,
-        "tov": 1,
-        "p2": 66.7,
-        "p3": 34.4,
+        "bpg": 0.9,
+        "tov": 1.1,
+        "p2": 67.7,
+        "p3": 33.3,
         "ft": 66.7,
-        "pir": 12.6,
+        "pir": 13.4,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -1666,6 +1666,62 @@
         }
       },
       {
+        "code": "006371b2-9a3f-4d04-8057-723db3ee6042",
+        "firstName": "Raul",
+        "lastName": "Neto",
+        "photo": "https://images.dc.connect.sportradar.com/b1sjj/b8e6235a56aa463bb71d84e75ad65dfc?size=200&format=webp",
+        "height": 185,
+        "age": 34,
+        "nationality": "BRA",
+        "position": "Guard",
+        "number": null,
+        "gp": 1,
+        "min": 9.5,
+        "ppg": 7,
+        "rpg": 2,
+        "apg": 4,
+        "spg": 1,
+        "bpg": 0,
+        "tov": 3,
+        "p2": 100,
+        "p3": 100,
+        "ft": 0,
+        "pir": 11,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": 16
+        }
+      },
+      {
+        "code": "bf2ff692-c8a9-4e97-bf5e-907ee38b9af1",
+        "firstName": "Taine",
+        "lastName": "Murray",
+        "photo": "https://images.dc.connect.sportradar.com/b1sjj/aa8e6f8da5584485af169c3ccd3bc0cf?size=200&format=webp",
+        "height": 196,
+        "age": 24,
+        "nationality": "NZL",
+        "position": "Guard",
+        "number": "0",
+        "gp": 1,
+        "min": 11.1,
+        "ppg": 6,
+        "rpg": 1,
+        "apg": 0,
+        "spg": 0,
+        "bpg": 0,
+        "tov": 0,
+        "p2": 50,
+        "p3": 33.3,
+        "ft": 33.3,
+        "pir": 2,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "2337cf0e-9ee7-439d-8aec-770b3876368c",
         "firstName": "Lat",
         "lastName": "Mayen",
@@ -1676,45 +1732,17 @@
         "position": "Forward",
         "number": "2",
         "gp": 7,
-        "min": 15.9,
-        "ppg": 5.3,
-        "rpg": 3.9,
+        "min": 17.3,
+        "ppg": 5.9,
+        "rpg": 4,
         "apg": 0.6,
         "spg": 0.3,
         "bpg": 0.3,
-        "tov": 1.3,
-        "p2": 61.5,
-        "p3": 26.7,
-        "ft": 90,
-        "pir": 6.6,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "2e2291aa-36b6-4928-b348-0f5951fbc3b4",
-        "firstName": "Mitch",
-        "lastName": "Norton",
-        "photo": "https://images.dc.connect.sportradar.com/b1sjj/d27433ef96a84ccf932d58fade27e798?size=200&format=webp",
-        "height": 184,
-        "age": 33,
-        "nationality": "AUS",
-        "position": "Guard",
-        "number": "8",
-        "gp": 7,
-        "min": 13.1,
-        "ppg": 3.3,
-        "rpg": 1.3,
-        "apg": 2.3,
-        "spg": 0.3,
-        "bpg": 0.1,
-        "tov": 0.9,
-        "p2": 45.5,
-        "p3": 23.1,
-        "ft": 80,
-        "pir": 4,
+        "tov": 1.4,
+        "p2": 62.5,
+        "p3": 25,
+        "ft": 81.8,
+        "pir": 6.7,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -1732,17 +1760,17 @@
         "position": "Guard",
         "number": "3",
         "gp": 2,
-        "min": 11.7,
-        "ppg": 2,
+        "min": 14.4,
+        "ppg": 4,
         "rpg": 1.5,
         "apg": 0,
         "spg": 0.5,
         "bpg": 0.5,
         "tov": 1,
-        "p2": 50,
+        "p2": 60,
         "p3": 0,
-        "ft": 0,
-        "pir": 0.5,
+        "ft": 66.7,
+        "pir": 2.5,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -1750,24 +1778,52 @@
         }
       },
       {
-        "code": "bf2ff692-c8a9-4e97-bf5e-907ee38b9af1",
-        "firstName": "Taine",
-        "lastName": "Murray",
-        "photo": "https://images.dc.connect.sportradar.com/b1sjj/aa8e6f8da5584485af169c3ccd3bc0cf?size=200&format=webp",
-        "height": 196,
-        "age": 24,
-        "nationality": "NZL",
+        "code": "2e2291aa-36b6-4928-b348-0f5951fbc3b4",
+        "firstName": "Mitch",
+        "lastName": "Norton",
+        "photo": "https://images.dc.connect.sportradar.com/b1sjj/d27433ef96a84ccf932d58fade27e798?size=200&format=webp",
+        "height": 184,
+        "age": 33,
+        "nationality": "AUS",
         "position": "Guard",
-        "number": "0",
+        "number": "8",
+        "gp": 7,
+        "min": 14.5,
+        "ppg": 3.3,
+        "rpg": 1.4,
+        "apg": 2.6,
+        "spg": 0.3,
+        "bpg": 0.3,
+        "tov": 0.9,
+        "p2": 41.7,
+        "p3": 21.4,
+        "ft": 80,
+        "pir": 4.3,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "c18d40cc-7977-4b30-a1b8-f0fcc14e98ab",
+        "firstName": "Archie",
+        "lastName": "Woodhill",
+        "photo": "https://images.dc.connect.sportradar.com/b1sjj/84b5b9f5be5b493d950e09d8f8cf5607?size=200&format=webp",
+        "height": 206,
+        "age": 24,
+        "nationality": "AUS",
+        "position": "Forward",
+        "number": "15",
         "gp": 1,
-        "min": 3.2,
+        "min": 12.9,
         "ppg": 2,
-        "rpg": 1,
+        "rpg": 4,
         "apg": 0,
         "spg": 0,
-        "bpg": 0,
-        "tov": 0,
-        "p2": 50,
+        "bpg": 1,
+        "tov": 1,
+        "p2": 20,
         "p3": 0,
         "ft": 0,
         "pir": 1,
@@ -1778,27 +1834,27 @@
         }
       },
       {
-        "code": "006371b2-9a3f-4d04-8057-723db3ee6042",
-        "firstName": "Raul",
-        "lastName": "Neto",
-        "photo": "https://images.dc.connect.sportradar.com/b1sjj/b8e6235a56aa463bb71d84e75ad65dfc?size=200&format=webp",
-        "height": 185,
-        "age": 34,
-        "nationality": "BRA",
-        "position": "Guard",
-        "number": null,
-        "gp": 1,
-        "min": 2.8,
-        "ppg": 2,
-        "rpg": 2,
-        "apg": 1,
-        "spg": 0,
-        "bpg": 0,
-        "tov": 1,
-        "p2": 100,
-        "p3": 0,
-        "ft": 0,
-        "pir": 4,
+        "code": "2d1e9f7f-e241-4797-8b2f-70472f07f4c8",
+        "firstName": "Harry",
+        "lastName": "Rouhliadeff",
+        "photo": "https://images.dc.connect.sportradar.com/b1sjj/ee2404c1e6da49449b013d9be2dc2868?size=200&format=webp",
+        "height": 206,
+        "age": 23,
+        "nationality": "AUS",
+        "position": "Forward",
+        "number": "14",
+        "gp": 7,
+        "min": 11.5,
+        "ppg": 1,
+        "rpg": 1.7,
+        "apg": 0.3,
+        "spg": 0.1,
+        "bpg": 0.3,
+        "tov": 0.3,
+        "p2": 9.1,
+        "p3": 11.1,
+        "ft": 100,
+        "pir": 0.6,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -1834,34 +1890,6 @@
         }
       },
       {
-        "code": "2d1e9f7f-e241-4797-8b2f-70472f07f4c8",
-        "firstName": "Harry",
-        "lastName": "Rouhliadeff",
-        "photo": "https://images.dc.connect.sportradar.com/b1sjj/ee2404c1e6da49449b013d9be2dc2868?size=200&format=webp",
-        "height": 206,
-        "age": 23,
-        "nationality": "AUS",
-        "position": "Forward",
-        "number": "14",
-        "gp": 7,
-        "min": 10.1,
-        "ppg": 0.7,
-        "rpg": 1.4,
-        "apg": 0.3,
-        "spg": 0.1,
-        "bpg": 0.1,
-        "tov": 0.3,
-        "p2": 11.1,
-        "p3": 11.1,
-        "ft": 0,
-        "pir": 0.1,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
         "code": "f36a7c02-4846-4a7d-a778-f8910383c455",
         "firstName": "Sam",
         "lastName": "McDaniel",
@@ -1883,34 +1911,6 @@
         "p3": 0,
         "ft": 0,
         "pir": 1,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "c18d40cc-7977-4b30-a1b8-f0fcc14e98ab",
-        "firstName": "Archie",
-        "lastName": "Woodhill",
-        "photo": "https://images.dc.connect.sportradar.com/b1sjj/84b5b9f5be5b493d950e09d8f8cf5607?size=200&format=webp",
-        "height": 206,
-        "age": 24,
-        "nationality": "AUS",
-        "position": "Forward",
-        "number": "15",
-        "gp": 1,
-        "min": 3.6,
-        "ppg": 0,
-        "rpg": 1,
-        "apg": 0,
-        "spg": 0,
-        "bpg": 0,
-        "tov": 0,
-        "p2": 0,
-        "p3": 0,
-        "ft": 0,
-        "pir": -1,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -1999,7 +1999,7 @@
         "pir": 19.3,
         "leagueRank": {
           "pts": null,
-          "reb": 7,
+          "reb": 8,
           "ast": 13
         }
       },
@@ -2280,7 +2280,7 @@
         "ft": 94.4,
         "pir": 13.6,
         "leagueRank": {
-          "pts": 14,
+          "pts": 17,
           "reb": null,
           "ast": null
         }
@@ -2310,7 +2310,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 20
+          "ast": null
         }
       },
       {
@@ -2648,7 +2648,7 @@
         "leagueRank": {
           "pts": 3,
           "reb": null,
-          "ast": 17
+          "ast": 18
         }
       },
       {
@@ -2674,7 +2674,7 @@
         "ft": 74.4,
         "pir": 22.3,
         "leagueRank": {
-          "pts": 12,
+          "pts": 14,
           "reb": 6,
           "ast": null
         }
@@ -2703,8 +2703,8 @@
         "pir": 16,
         "leagueRank": {
           "pts": null,
-          "reb": 15,
-          "ast": 18
+          "reb": 16,
+          "ast": 19
         }
       },
       {
@@ -2760,7 +2760,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 16
+          "ast": 17
         }
       },
       {
@@ -3042,7 +3042,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 11
+          "ast": 12
         }
       },
       {
@@ -3125,7 +3125,7 @@
         "pir": 13.4,
         "leagueRank": {
           "pts": null,
-          "reb": 14,
+          "reb": 15,
           "ast": null
         }
       },
@@ -3406,7 +3406,7 @@
         "ft": 89.3,
         "pir": 14.5,
         "leagueRank": {
-          "pts": 15,
+          "pts": 18,
           "reb": null,
           "ast": null
         }
@@ -3435,7 +3435,7 @@
         "pir": 17.5,
         "leagueRank": {
           "pts": null,
-          "reb": 19,
+          "reb": 20,
           "ast": null
         }
       },
@@ -3463,7 +3463,7 @@
         "pir": 17.3,
         "leagueRank": {
           "pts": null,
-          "reb": 8,
+          "reb": 9,
           "ast": null
         }
       },
