@@ -1,7 +1,8 @@
 // Couleur d'habillage lisible d'un club (onglet actif, en-têtes de tableaux à
 // texte blanc) : sa couleur principale, sauf si elle est trop claire (blanc du
 // Real Madrid, jaune des Metropolitans, or de Purdue…) → couleur secondaire /
-// alternative / tertiaire si assez foncée, sinon `fallback` (accent de la ligue).
+// alternative / tertiaire si assez foncée, sinon du noir. Club sans aucune
+// couleur : `fallback` (accent de la ligue, ex. bleu EuroCup).
 const toHex = (c) => (c[0] === '#' ? c : `#${c}`);
 
 // Luminance approximative (0 = noir, 1 = blanc) d'une couleur hex « RRGGBB ».
@@ -14,8 +15,8 @@ const luminance = (hex) => {
 
 export const isLight = (hex) => luminance(hex) > 0.72;
 
-export const readableTeamColor = (team, fallback) =>
-  [team.color, team.secondaryColor, team.alternateColor, team.tertiaryColor]
-    .filter(Boolean)
-    .map(toHex)
-    .find((c) => !isLight(c)) || fallback;
+export const readableTeamColor = (team, fallback) => {
+  const colors = [team.color, team.secondaryColor, team.alternateColor, team.tertiaryColor].filter(Boolean).map(toHex);
+  if (!colors.length) return fallback;
+  return colors.find((c) => !isLight(c)) || '#000000';
+};
