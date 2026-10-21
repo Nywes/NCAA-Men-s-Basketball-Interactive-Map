@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-20",
+  "updated": "2026-10-21",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -755,6 +755,21 @@
       }
     ],
     "BES": [
+      {
+        "code": "013403",
+        "firstName": "Lonnie",
+        "lastName": "Walker Iv",
+        "photo": null,
+        "height": 196,
+        "nationality": "USA",
+        "position": "Guard",
+        "number": "4",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "014786",
         "firstName": "Jaylen",
