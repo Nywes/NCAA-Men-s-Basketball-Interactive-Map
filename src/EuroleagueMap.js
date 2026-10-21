@@ -27,6 +27,7 @@ const COMP_DATA = {
   euroleague: EUROLEAGUE_DATA,
   eurocup: {
     label: 'EuroCup',
+    accent: `#${COMP_BY_ID.eurocup.color}`,
     logo: COMP_BY_ID.eurocup.badge,
     rosters: eurocupRostersData,
     standings: eurocupStandingsData,
@@ -297,7 +298,7 @@ export default function EuroleagueMap({ searchQuery, searchSubmit, leagueId, onT
             >
               <AutoPanPopup isSmallScreen={isSmallScreen}>
                 <div className="modal-wrapper">
-                  <div className="modal-header" style={{ background: getTeamGradient(team.color) }}>
+                  <div className="modal-header" style={{ background: getTeamGradient(team.color || COMP_BY_ID[team.competition].color) }}>
                     <img
                       className="modal-logo"
                       src={team.logo || FALLBACK_LOGO}

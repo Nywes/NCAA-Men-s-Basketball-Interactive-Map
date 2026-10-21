@@ -18,6 +18,7 @@ const TABS = [
 // fournit celles de l'EuroCup (même format, sans analytics ni rivalités) via `data`.
 export const EUROLEAGUE_DATA = {
   label: 'EuroLeague',
+  accent: '#F47216',
   logo: euroleagueLogo,
   rosters: euroleagueRostersData,
   standings: euroleagueStandingsData,
@@ -27,7 +28,8 @@ export const EUROLEAGUE_DATA = {
 };
 const DataCtx = createContext(EUROLEAGUE_DATA);
 
-const toHex = (c) => (c ? (c[0] === '#' ? c : `#${c}`) : '#F47216');
+// Couleur du club, sinon celle de la compétition (orange EuroLeague, bleu EuroCup).
+const toHex = (c, fallback = '#F47216') => (c ? (c[0] === '#' ? c : `#${c}`) : fallback);
 
 const rgbParts = (hex) => {
   const h = toHex(hex).replace('#', '');
@@ -89,7 +91,7 @@ const EuroleagueTeamIdentity = ({ team, isOpen, setIsOpen, onMeasure }) => {
 
       {isOpen && (
         <div ref={contentRef} style={{ display: 'flow-root' }}>
-          <div className="palm-hero" style={{ background: lightTint(team.color) }}>
+          <div className="palm-hero" style={{ background: lightTint(toHex(team.color, data.accent)) }}>
             <img src={data.logo} alt="" className="palm-trophy-wm" />
             <div className="palm-hero-left">
               <div className="palm-hero-label">{data.label} Champion</div>
@@ -186,7 +188,7 @@ const EuroleagueRoster = ({ team, isSmallScreen }) => {
 
   const data = useContext(DataCtx);
   const players = data.rosters.rosters[team.id] || [];
-  const teamHex = toHex(team.color);
+  const teamHex = toHex(team.color, data.accent);
   const tint = veryLightTint(teamHex);
 
   if (!players.length) return <div className="rt-empty">No roster available</div>;
@@ -278,7 +280,7 @@ const EuroleagueStanding = ({ team, isSmallScreen }) => {
   // EuroCup : 4 groupes (A-D) -> un intertitre par groupe ; poule unique -> aucun.
   const groups = [...new Set(rows.map((r) => r.group).filter(Boolean))];
   const grouped = groups.length > 1;
-  const teamHex = toHex(team.color);
+  const teamHex = toHex(team.color, data.accent);
 
   useLayoutEffect(() => {
     const c = scrollRef.current;
@@ -520,7 +522,7 @@ const EuroleagueTeamPanels = ({ team, isSmallScreen, data = EUROLEAGUE_DATA }) =
   const [palmOpen, setPalmOpen] = useState(true);
   const [palmH, setPalmH] = useState(0);
 
-  const accentColor = toHex(team.color);
+  const accentColor = toHex(team.color, data.accent);
 
   return (
     <DataCtx.Provider value={data}>
