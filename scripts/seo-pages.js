@@ -58,6 +58,20 @@ const PAGES = [
 		<p>Les équipes de basket universitaire américain NCAA Division I et les équipes de l'EuroLeague.</p>`,
   },
   {
+    dir: 'eurocup',
+    lang: 'en',
+    locale: 'en_US',
+    entry: 'eurocup',
+    hash: '#/eurocup',
+    title: 'EuroCup Teams Map — Rosters, Standings & Arenas | Interactive Basketball Map',
+    description:
+      'Interactive map of every BKT EuroCup basketball team: rosters, player stats, group standings and arenas, updated daily. Toggle the EuroLeague teams on the same map of Europe.',
+    noscript: `
+		<h1>EuroCup Teams Map</h1>
+		<p>You need to enable JavaScript to run this app.</p>
+		<p>An interactive map of the 32 BKT EuroCup basketball teams across Europe. Click a team to see its roster and player stats, the standings of its group, its arena and city. The EuroLeague teams can be displayed on the same map.</p>`,
+  },
+  {
     dir: 'europe',
     lang: 'en',
     locale: 'en_US',

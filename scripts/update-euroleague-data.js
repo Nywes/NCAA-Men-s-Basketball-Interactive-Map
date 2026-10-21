@@ -12,26 +12,44 @@
 const fs = require('fs');
 const path = require('path');
 
-const { BASE, COMPETITION, get, resolveSeason } = require('./euroleague-common');
+const { BASE, get, resolveSeason } = require('./euroleague-common');
+// Compétition : E = EuroLeague (défaut), U = EuroCup -> `node update-euroleague-data.js U`
+const COMPETITION = (process.argv[2] || process.env.EL_COMPETITION || 'E').toUpperCase();
+const PREFIX = COMPETITION === 'U' ? 'eurocup' : 'euroleague';
 let SEASON_CODE = null; // résolu au lancement (saison en cours)
-const ARCHIVE_PATH = path.join(__dirname, '..', 'scripts', 'euroleague-teams-archive.json');
+const ARCHIVE_PATH = path.join(__dirname, '..', 'scripts', `${PREFIX}-teams-archive.json`);
 
 // Coordonnées des salles que le géocodage ne trouve pas (nouveaux clubs).
 const COORDS_OVERRIDES = {
   BES: { latitude: 40.9925, longitude: 28.919 }, // Turkcell Basketball Development Center, Zeytinburnu (Istanbul)
 };
 const COLOR_OVERRIDES = { BES: { color: '000000', secondaryColor: 'FFFFFF' } };
+// Corrections appliquées à chaque run (géocodage aberrant, salle temporaire à l'étranger).
+const TEAM_OVERRIDES = {
+  TRT: { latitude: 44.894, longitude: 8.866, venue: 'Cittadella dello Sport', location: 'Tortona' }, // Derthona (géocodé au Brésil)
+  JER: { latitude: 31.7495, longitude: 35.195, venue: 'Pais Arena', location: 'Jerusalem', capacity: 11600 }, // Hapoel Jerusalem (matchs délocalisés)
+};
 
-const TEAMS_PATH = path.join(__dirname, '..', 'src', 'euroleague-teams.json');
-const ROSTERS_PATH = path.join(__dirname, '..', 'src', 'euroleague-rosters.json');
-const STANDINGS_PATH = path.join(__dirname, '..', 'src', 'euroleague-standings.json');
+const TEAMS_PATH = path.join(__dirname, '..', 'src', `${PREFIX}-teams.json`);
+const ROSTERS_PATH = path.join(__dirname, '..', 'src', `${PREFIX}-rosters.json`);
+const STANDINGS_PATH = path.join(__dirname, '..', 'src', `${PREFIX}-standings.json`);
 
 // Géocodage (Nominatim, sans clé) pour un nouveau club dont la salle n'est pas dans COORDS_OVERRIDES.
+// Photon (komoot, sans clé, tolérant) en premier ; Nominatim en secours (1 req/s).
 async function geocode(q) {
+  const UA = { 'User-Agent': 'ncaa-basket-map/1.0 (team@enemat.fr)' };
   try {
-    const r = await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + encodeURIComponent(q), {
-      headers: { 'User-Agent': 'ncaa-basket-map/1.0 (team@enemat.fr)' },
-    });
+    await new Promise((r) => setTimeout(r, 400));
+    const r = await fetch('https://photon.komoot.io/api/?limit=1&q=' + encodeURIComponent(q), { headers: UA });
+    const j = await r.json();
+    const c = j.features && j.features[0] && j.features[0].geometry && j.features[0].geometry.coordinates;
+    if (c) return { latitude: c[1], longitude: c[0] };
+  } catch (e) {
+    /* on tente Nominatim */
+  }
+  try {
+    await new Promise((r) => setTimeout(r, 1100));
+    const r = await fetch('https://nominatim.openstreetmap.org/search?format=json&limit=1&q=' + encodeURIComponent(q), { headers: UA });
     const j = await r.json();
     return j[0] ? { latitude: +j[0].lat, longitude: +j[0].lon } : null;
   } catch (e) {
@@ -40,7 +58,12 @@ async function geocode(q) {
 }
 
 (async () => {
-  const active = JSON.parse(fs.readFileSync(TEAMS_PATH, 'utf8'));
+  let active = [];
+  try {
+    active = JSON.parse(fs.readFileSync(TEAMS_PATH, 'utf8'));
+  } catch (e) {
+    console.log(`(pas encore de ${path.basename(TEAMS_PATH)} : les clubs seront créés depuis l'API)`);
+  }
   let archive = [];
   try {
     archive = JSON.parse(fs.readFileSync(ARCHIVE_PATH, 'utf8'));
@@ -52,7 +75,7 @@ async function geocode(q) {
   const byCode = Object.fromEntries(teams.map((t) => [t.id, t]));
 
   // ── saison en cours (libellé "2026-27") ──
-  const season = await resolveSeason();
+  const season = await resolveSeason(COMPETITION);
   SEASON_CODE = season.code;
   const seasonLabel = season.alias || '';
   console.log('Saison:', SEASON_CODE, seasonLabel);
@@ -72,8 +95,8 @@ async function geocode(q) {
       const coords = COORDS_OVERRIDES[c.code] || (venue && (await geocode(`${venue.name}, ${city || ''}`))) || (city && (await geocode(city))) || { latitude: null, longitude: null };
       team = {
         id: c.code,
-        displayName: c.editorialName || c.abbreviatedName || c.name,
-        shortDisplayName: c.abbreviatedName || c.editorialName || c.name,
+        displayName: (c.editorialName || c.abbreviatedName || c.name || '').trim(),
+        shortDisplayName: (c.abbreviatedName || c.editorialName || c.name || '').trim(),
         division: 'euroleague',
         latitude: coords.latitude,
         longitude: coords.longitude,
@@ -93,7 +116,9 @@ async function geocode(q) {
     }
     team.logo = c.images?.crest || team.logo;
   }
+  for (const t of teams) if (TEAM_OVERRIDES[t.id]) Object.assign(t, TEAM_OVERRIDES[t.id]);
   const engaged = new Set(clubs.map((c) => c.code));
+  fs.writeFileSync(TEAMS_PATH, JSON.stringify(teams.filter((t) => engaged.has(t.id)), null, 2));
   for (const t of active.filter((t) => !engaged.has(t.id))) console.log(`  ↓ quitte l'EuroLeague (archivé) : ${t.displayName}`);
   for (const t of archive.filter((t) => engaged.has(t.id))) console.log(`  ↑ revient en EuroLeague : ${t.displayName}`);
   // détail par club (site web) — un appel par club, léger
@@ -128,6 +153,7 @@ async function geocode(q) {
       number: p.dorsal || null,
     }));
     console.log(`  ${team.displayName}: ${rosters[c.code].length} joueurs`);
+    await new Promise((r) => setTimeout(r, 1200)); // l'API tolère ~1 appel/s
     await new Promise((r) => setTimeout(r, 150));
   }
 
@@ -208,6 +234,7 @@ async function geocode(q) {
   );
   const standings = (standingsRes.teams || []).map((r) => ({
     rank: r.position,
+    group: r.groupName || null, // EuroCup : 4 groupes (A-D) ; EuroLeague : poule unique
     teamId: byCode[r.club.code] ? r.club.code : null,
     name: byCode[r.club.code] ? byCode[r.club.code].displayName : r.club.name,
     wins: r.gamesWon,

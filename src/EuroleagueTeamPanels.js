@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useLayoutEffect, useRef } from 'react';
+import React, { createContext, useContext, useState, useEffect, useLayoutEffect, useRef } from 'react';
 import blankHeadshot from './assets/player.png';
 import euroleagueLogo from './assets/icons/euroleague-logo.png';
 import euroleagueRostersData from './euroleague-rosters.json';
@@ -14,8 +14,18 @@ const TABS = [
   { id: 'club', label: 'Club' },
 ];
 
-const SEASON = euroleagueStandingsData.season || '';
-const LOGO_BY_ID = Object.fromEntries(euroleagueTeamsData.map((t) => [t.id, t.logo]));
+// Données de la compétition affichée. EuroLeague par défaut ; la carte Europe
+// fournit celles de l'EuroCup (même format, sans analytics ni rivalités) via `data`.
+export const EUROLEAGUE_DATA = {
+  label: 'EuroLeague',
+  logo: euroleagueLogo,
+  rosters: euroleagueRostersData,
+  standings: euroleagueStandingsData,
+  analytics: euroleagueAnalyticsData,
+  rivalries: euroleagueRivalriesData,
+  logoById: Object.fromEntries(euroleagueTeamsData.map((t) => [t.id, t.logo])),
+};
+const DataCtx = createContext(EUROLEAGUE_DATA);
 
 const toHex = (c) => (c ? (c[0] === '#' ? c : `#${c}`) : '#F47216');
 
@@ -51,6 +61,7 @@ const darken = (hex, f) => {
 /* ═══════════════ Palmarès (titres EuroLeague) ═══════════════ */
 
 const EuroleagueTeamIdentity = ({ team, isOpen, setIsOpen, onMeasure }) => {
+  const data = useContext(DataCtx);
   const honours = team.honours || {};
   const titles = honours.titles || [];
 
@@ -79,9 +90,9 @@ const EuroleagueTeamIdentity = ({ team, isOpen, setIsOpen, onMeasure }) => {
       {isOpen && (
         <div ref={contentRef} style={{ display: 'flow-root' }}>
           <div className="palm-hero" style={{ background: lightTint(team.color) }}>
-            <img src={euroleagueLogo} alt="" className="palm-trophy-wm" />
+            <img src={data.logo} alt="" className="palm-trophy-wm" />
             <div className="palm-hero-left">
-              <div className="palm-hero-label">EuroLeague Champion</div>
+              <div className="palm-hero-label">{data.label} Champion</div>
               <div className="palm-num-row">
                 <span className="palm-num">{years.length}</span>
                 <span className="palm-unit">{years.length === 1 ? 'title' : 'titles'}</span>
@@ -138,9 +149,11 @@ const HeroStatBox = ({ v, l, rank }) => (
   </div>
 );
 
-const EuroPlayerPanel = ({ p }) => (
+const EuroPlayerPanel = ({ p }) => {
+  const data = useContext(DataCtx);
+  return (
   <>
-    <div className="rt-season">{SEASON} · Season averages</div>
+    <div className="rt-season">{data.standings.season} · Season averages</div>
     <div className="rt-hero">
       <HeroStatBox v={fmtAvg(p.ppg)} l="PPG" rank={p.leagueRank?.pts} />
       <HeroStatBox v={fmtAvg(p.rpg)} l="RPG" rank={p.leagueRank?.reb} />
@@ -158,6 +171,7 @@ const EuroPlayerPanel = ({ p }) => (
     </div>
   </>
 );
+};
 
 const posShort = (pos) => {
   if (!pos) return '—';
@@ -170,7 +184,8 @@ const posShort = (pos) => {
 const EuroleagueRoster = ({ team, isSmallScreen }) => {
   const [openIdx, setOpenIdx] = useState(null);
 
-  const players = euroleagueRostersData.rosters[team.id] || [];
+  const data = useContext(DataCtx);
+  const players = data.rosters.rosters[team.id] || [];
   const teamHex = toHex(team.color);
   const tint = veryLightTint(teamHex);
 
@@ -258,7 +273,11 @@ const EuroleagueStanding = ({ team, isSmallScreen }) => {
   const scrollRef = useRef(null);
   const meRowRef = useRef(null);
 
-  const rows = euroleagueStandingsData.standings || [];
+  const data = useContext(DataCtx);
+  const rows = data.standings.standings || [];
+  // EuroCup : 4 groupes (A-D) -> un intertitre par groupe ; poule unique -> aucun.
+  const groups = [...new Set(rows.map((r) => r.group).filter(Boolean))];
+  const grouped = groups.length > 1;
   const teamHex = toHex(team.color);
 
   useLayoutEffect(() => {
@@ -282,8 +301,8 @@ const EuroleagueStanding = ({ team, isSmallScreen }) => {
       }}
     >
       <div className="st-chead" style={{ background: teamHex }}>
-        <span className="t">EuroLeague</span>
-        <span className="s">{SEASON} · Regular season</span>
+        <span className="t">{data.label}</span>
+        <span className="s">{data.standings.season} · Regular season</span>
       </div>
       <div className="st-scroll" ref={scrollRef}>
         <table className="st">
@@ -298,11 +317,18 @@ const EuroleagueStanding = ({ team, isSmallScreen }) => {
             </tr>
           </thead>
           <tbody>
-            {rows.map((r) => {
+            {rows.map((r, idx) => {
               const isMe = r.teamId === team.id;
-              const logo = r.teamId ? LOGO_BY_ID[r.teamId] : null;
+              const logo = r.teamId ? data.logoById[r.teamId] : null;
+              const newGroup = grouped && (idx === 0 || rows[idx - 1].group !== r.group);
               return (
-                <tr key={r.rank} className={isMe ? 'st-me' : ''} ref={isMe ? meRowRef : null}>
+                <React.Fragment key={`${r.group || ''}-${r.rank}`}>
+                {newGroup && (
+                  <tr className="st-group">
+                    <td colSpan={isSmallScreen ? 5 : 6}>Group {r.group}</td>
+                  </tr>
+                )}
+                <tr className={isMe ? 'st-me' : ''} ref={isMe ? meRowRef : null}>
                   <td className="st-rk">{r.rank}</td>
                   <td className="l">
                     <div className="st-tm">
@@ -329,6 +355,7 @@ const EuroleagueStanding = ({ team, isSmallScreen }) => {
                     )}
                   </td>
                 </tr>
+                </React.Fragment>
               );
             })}
           </tbody>
@@ -369,7 +396,8 @@ const HeadlineChip = ({ label, rank, neutral }) => {
 };
 
 const EuroleagueAnalytics = ({ team }) => {
-  const data = euroleagueAnalyticsData.byClub[team.id];
+  const ctx = useContext(DataCtx);
+  const data = ctx.analytics && ctx.analytics.byClub[team.id];
   if (!data) return <div className="rt-empty">No analytics available</div>;
 
   return (
@@ -401,7 +429,7 @@ const EuroleagueAnalytics = ({ team }) => {
         </tbody>
       </table>
       <div className="meta-updated">
-        {euroleagueAnalyticsData.season} · updated {euroleagueAnalyticsData.updated}
+        {ctx.analytics.season} · updated {ctx.analytics.updated}
       </div>
     </div>
   );
@@ -423,7 +451,8 @@ const ClubFact = ({ label, value }) => {
 // concerne) : bilan cumulé sur plusieurs saisons + dernière confrontation,
 // calculé à partir des vrais résultats de matchs (pas d'estimation).
 const RivalryCard = ({ team }) => {
-  const r = euroleagueRivalriesData.byClub[team.id];
+  const ctx = useContext(DataCtx);
+  const r = ctx.rivalries && ctx.rivalries.byClub[team.id];
   if (!r) return null;
 
   const last = r.lastMeeting;
@@ -443,7 +472,7 @@ const RivalryCard = ({ team }) => {
       </div>
       <div className="frc-rivalry-opp">vs {r.opponent.name}</div>
       <div className="frc-rivalry-meta">
-        {r.totalMeetings} meetings · {euroleagueRivalriesData.seasonsRange}
+        {r.totalMeetings} meetings · {ctx.rivalries.seasonsRange}
       </div>
       {last && (
         <div className="frc-rivalry-last">
@@ -485,15 +514,16 @@ const EuroleagueClub = ({ team }) => (
 
 /* ═══════════════ Assemblage : palmarès repliable + onglets ═══════════════ */
 
-const EuroleagueTeamPanels = ({ team, isSmallScreen }) => {
+const EuroleagueTeamPanels = ({ team, isSmallScreen, data = EUROLEAGUE_DATA }) => {
   const [activeTab, setActiveTab] = useState('roster');
+  const tabs = TABS.filter((t) => t.id !== 'analytics' || (data.analytics && data.analytics.byClub[team.id]));
   const [palmOpen, setPalmOpen] = useState(true);
   const [palmH, setPalmH] = useState(0);
 
   const accentColor = toHex(team.color);
 
   return (
-    <>
+    <DataCtx.Provider value={data}>
       <EuroleagueTeamIdentity
         team={team}
         isOpen={palmOpen}
@@ -502,7 +532,7 @@ const EuroleagueTeamPanels = ({ team, isSmallScreen }) => {
       />
       <div style={{ '--tab-accent': accentColor, '--palm-extra': `${palmOpen ? 0 : palmH}px` }}>
         <div className="tab-bar">
-          {TABS.map((tab) => (
+          {tabs.map((tab) => (
             <button
               key={tab.id}
               className={`tab-btn${activeTab === tab.id ? ' active' : ''}`}
@@ -519,7 +549,7 @@ const EuroleagueTeamPanels = ({ team, isSmallScreen }) => {
           {activeTab === 'club' && <EuroleagueClub team={team} />}
         </div>
       </div>
-    </>
+    </DataCtx.Provider>
   );
 };
 

@@ -38,6 +38,11 @@ const PAGE_META = {
     description:
       'Carte interactive des clubs de La Boulangère Wonderligue et de Ligue Féminine 2 : classements, salles et palmarès du basket féminin français.',
   },
+  eurocup: {
+    title: `EuroCup Map — Teams, Rosters & Standings | ${SITE}`,
+    description:
+      'Interactive map of every BKT EuroCup basketball team: rosters, player stats, standings and arenas, updated daily.',
+  },
   europe: {
     title: `EuroLeague Map — Teams, Rosters, Standings & Final Four | ${SITE}`,
     description:
@@ -84,10 +89,13 @@ function Shell({ leagueId, gender, setGender }) {
 
   const league = LEAGUES.find((l) => l.id === leagueId);
   usePageMeta(leagueId, gender);
-  const Map = leagueId === 'france' ? FranceMap : leagueId === 'europe' ? EuroleagueMap : App;
+  const Map = leagueId === 'france' ? FranceMap : leagueId === 'europe' || leagueId === 'eurocup' ? EuroleagueMap : App;
+  // Titre imposé par la carte (Europe : EuroLeague / EuroCup / les deux selon le filtre).
+  const [titleOverride, setTitleOverride] = useState(null);
 
   // Le titre suit le genre sélectionné (Men's / Women's) selon l'univers.
   let navLeague = league;
+  if (titleOverride) navLeague = { ...league, ...titleOverride };
   if (league && gender === 'women') {
     if (leagueId === 'usa') {
       navLeague = { ...league, title: "NCAA Division I Women's Basketball" };
@@ -110,6 +118,8 @@ function Shell({ leagueId, gender, setGender }) {
           searchSubmit={searchSubmit}
           gender={gender}
           setGender={setGender}
+          onTitle={setTitleOverride}
+          leagueId={leagueId}
         />
       </Suspense>
       <LeaguePicker currentLeague={leagueId} gender={gender} />
@@ -135,6 +145,10 @@ function Root() {
           <Route
             path="/europe"
             element={<Shell key="europe" leagueId="europe" gender={gender} setGender={setGender} />}
+          />
+          <Route
+            path="/eurocup"
+            element={<Shell key="eurocup" leagueId="eurocup" gender={gender} setGender={setGender} />}
           />
           <Route path="*" element={<Navigate to="/usa" replace />} />
         </Routes>

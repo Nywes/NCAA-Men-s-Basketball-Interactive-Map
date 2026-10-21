@@ -4,20 +4,27 @@ const BASE = 'https://api-live.euroleague.net';
 const COMPETITION = 'E'; // E = EuroLeague, U = EuroCup
 const UA = 'Mozilla/5.0 (compatible; ncaa-basket-map/1.0)';
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+// L'API limite le débit en rafale (429) : 3 tentatives avec pause croissante.
 async function get(url, { optional = false } = {}) {
-  const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
-  if (!res.ok) {
+  for (let k = 1; k <= 4; k++) {
+    const res = await fetch(url, { headers: { 'User-Agent': UA, Accept: 'application/json' } });
+    if (res.ok) return res.json();
+    if ((res.status === 429 || res.status >= 500) && k < 4) {
+      await sleep(30000 * k); // 30 s, 60 s, 90 s : la limite se réarme lentement
+      continue;
+    }
     if (optional) return null;
     throw new Error(`${url} -> HTTP ${res.status}`);
   }
-  return res.json();
+  return null;
 }
 
 // Saison en cours = celle dont la fenêtre [startDate, endDate] (1er juillet ->
 // 30 juin) contient aujourd'hui. Surcharge possible : EL_SEASON=E2025.
 // Renvoie { code: 'E2026', alias: '2026-27', year: 2026, seasons: [{code, alias, year}...] }.
-async function resolveSeason() {
-  const res = await get(`${BASE}/v2/competitions/${COMPETITION}/seasons`);
+async function resolveSeason(competition = COMPETITION) {
+  const res = await get(`${BASE}/v2/competitions/${competition}/seasons`);
   const seasons = (res.data || res)
     .map((s) => ({ code: s.code, alias: s.alias || s.name, year: s.year, start: s.startDate, end: s.endDate }))
     .sort((a, b) => a.year - b.year);
@@ -27,7 +34,7 @@ async function resolveSeason() {
     (forced && seasons.find((s) => s.code === forced)) ||
     seasons.find((s) => new Date(s.start) <= now && now <= new Date(s.end)) ||
     seasons.filter((s) => new Date(s.start) <= now).pop();
-  if (!current) throw new Error('Saison EuroLeague en cours introuvable');
+  if (!current) throw new Error(`Saison ${competition} en cours introuvable`);
   return { ...current, seasons };
 }
 

@@ -1318,3 +1318,6 @@ table.an-table { width: 100%; border-collapse: collapse; }
 .brk-up-row span { opacity: .7; text-transform: uppercase; letter-spacing: 1.5px; font-size: 11px; font-weight: 700; }
 .brk-up-row b { font-weight: 800; text-align: right; }
 .brk-upcoming p, .brk-upcoming-txt { color: #fff; opacity: .8; text-align: center; font-size: 13px; line-height: 1.5; margin: 18px 0 0; }
+
+/* classement par groupes (EuroCup) : intertitre par groupe */
+.st tbody tr.st-group td { background: #f1f5f9; color: #475569; font-size: 10px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; text-align: left; padding: 5px 12px; }

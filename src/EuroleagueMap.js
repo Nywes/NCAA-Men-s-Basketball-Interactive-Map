@@ -9,8 +9,32 @@ import { Icon } from 'leaflet';
 import { useEffect, useState, useRef } from 'react';
 
 import euroleagueTeamsData from './euroleague-teams.json';
-import EuroleagueTeamPanels from './EuroleagueTeamPanels';
+import eurocupTeamsData from './eurocup-teams.json';
+import eurocupRostersData from './eurocup-rosters.json';
+import eurocupStandingsData from './eurocup-standings.json';
+import { EURO_COMPETITIONS } from './leagues';
+import EuroleagueTeamPanels, { EUROLEAGUE_DATA } from './EuroleagueTeamPanels';
 import EuroleagueBracket from './EuroleagueBracket';
+
+// Carte Europe = EuroLeague + EuroCup (même API, même format). Chaque club
+// porte sa compétition ; le filtre latéral choisit lesquelles afficher.
+const ALL_TEAMS = [
+  ...euroleagueTeamsData.map((t) => ({ ...t, competition: 'euroleague' })),
+  ...eurocupTeamsData.map((t) => ({ ...t, competition: 'eurocup' })),
+];
+const COMP_BY_ID = Object.fromEntries(EURO_COMPETITIONS.map((c) => [c.id, c]));
+const COMP_DATA = {
+  euroleague: EUROLEAGUE_DATA,
+  eurocup: {
+    label: 'EuroCup',
+    logo: COMP_BY_ID.eurocup.badge,
+    rosters: eurocupRostersData,
+    standings: eurocupStandingsData,
+    analytics: null,
+    rivalries: null,
+    logoById: Object.fromEntries(eurocupTeamsData.map((t) => [t.id, t.logo])),
+  },
+};
 
 // Logo de secours (ballon) pour les rares clubs sans crest disponible.
 const FALLBACK_LOGO = `${process.env.PUBLIC_URL}/basketball.png`;
@@ -52,7 +76,7 @@ function buildCoLocatedAnchors(teams) {
   return anchorById;
 }
 
-const CO_LOCATED_ANCHORS = buildCoLocatedAnchors(euroleagueTeamsData);
+const CO_LOCATED_ANCHORS = buildCoLocatedAnchors(ALL_TEAMS.filter((t) => t.latitude && t.longitude));
 
 const customIcon = function (logo, anchor) {
   return new Icon({
@@ -192,14 +216,30 @@ function AutoPanPopup({ children, isSmallScreen }) {
   );
 }
 
-export default function EuroleagueMap({ searchQuery, searchSubmit }) {
+export default function EuroleagueMap({ searchQuery, searchSubmit, leagueId, onTitle }) {
   const [flyTarget, setFlyTarget] = useState(null);
+  // Compétitions affichées : celle de l'entrée choisie dans le sélecteur, puis
+  // ajout/retrait via le filtre latéral (vide = toutes, comme la carte France).
+  const [selectedComps, setSelectedComps] = useState([leagueId === 'eurocup' ? 'eurocup' : 'euroleague']);
+  const activeComps = selectedComps.length ? selectedComps : EURO_COMPETITIONS.map((c) => c.id);
+  const activeKey = activeComps.join('+');
+  const toggleComp = (id) =>
+    setSelectedComps((prev) => (prev.includes(id) ? prev.filter((c) => c !== id) : [...prev, id]));
+
+  // Le titre du bandeau suit le filtre : une compétition -> son nom, les deux -> "EuroLeague & EuroCup".
+  useEffect(() => {
+    if (!onTitle) return undefined;
+    const act = EURO_COMPETITIONS.filter((c) => activeComps.includes(c.id));
+    onTitle(act.length === 1 ? { title: act[0].title, shortTitle: act[0].shortTitle } : { title: 'EuroLeague & EuroCup', shortTitle: 'EL & EC' });
+    return () => onTitle(null);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [activeKey, onTitle]);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
   const [mapZoom, setMapZoom] = useState(4);
   const [bracketOpen, setBracketOpen] = useState(false);
   const showCoLocatedSideBySide = mapZoom >= CO_LOCATED_ZOOM_THRESHOLD;
 
-  const teams = euroleagueTeamsData;
+  const teams = ALL_TEAMS.filter((t) => activeComps.includes(t.competition) && t.latitude && t.longitude);
 
   const updateScreenSize = () => {
     setIsSmallScreen(window.innerWidth < 600);
@@ -248,7 +288,7 @@ export default function EuroleagueMap({ searchQuery, searchSubmit }) {
           <FullscreenControl position="topleft" />
           {filteredTeams.map((team) => (
             <Marker
-              key={team.id}
+              key={`${team.competition}-${team.id}`}
               position={[team.latitude, team.longitude]}
               icon={customIcon(
                 team.logo || FALLBACK_LOGO,
@@ -274,12 +314,12 @@ export default function EuroleagueMap({ searchQuery, searchSubmit }) {
                         <span
                           className="modal-conf-chip"
                           style={{
-                            background: '#F47216',
+                            background: `#${COMP_BY_ID[team.competition].color}`,
                             borderColor: 'transparent',
                             color: '#fff',
                           }}
                         >
-                          EUROLEAGUE
+                          {COMP_BY_ID[team.competition].name}
                         </span>
                         {team.venue && <span className="modal-venue">{team.venue}</span>}
                       </div>
@@ -300,13 +340,28 @@ export default function EuroleagueMap({ searchQuery, searchSubmit }) {
                       )}
                     </div>
                   </div>
-                  <EuroleagueTeamPanels team={team} isSmallScreen={isSmallScreen} />
+                  <EuroleagueTeamPanels team={team} isSmallScreen={isSmallScreen} data={COMP_DATA[team.competition]} />
                 </div>
               </AutoPanPopup>
             </Marker>
           ))}
         </MapContainer>
 
+        {/* Filtre latéral EuroLeague / EuroCup (même habillage que les divisions FR) */}
+        <div className={`fr-side${isSmallScreen ? ' fr-side-mobile' : ''}`}>
+          {EURO_COMPETITIONS.map((c) => (
+            <button
+              key={c.id}
+              onClick={() => toggleComp(c.id)}
+              className={`fr-div-btn${activeComps.includes(c.id) ? '' : ' fr-div-off'}`}
+            >
+              <img className="fr-div-badge" src={c.badge} alt={c.name} />
+              <span className="fr-div-name">{c.name}</span>
+            </button>
+          ))}
+        </div>
+
+        {activeComps.includes('euroleague') && (
         <button
           className="brk-trigger"
           onClick={() => setBracketOpen(true)}
@@ -317,6 +372,7 @@ export default function EuroleagueMap({ searchQuery, searchSubmit }) {
             <path d="M8 21h8M12 17v4M7 4h10v3a5 5 0 0 1-10 0V4zM7 4H3v2a4 4 0 0 0 4 4M17 4h4v2a4 4 0 0 1-4 4" />
           </svg>
         </button>
+        )}
         {bracketOpen && (
           <EuroleagueBracket onClose={() => setBracketOpen(false)} isSmallScreen={isSmallScreen} />
         )}

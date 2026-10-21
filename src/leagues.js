@@ -1,6 +1,7 @@
 import ncaaLogo from './assets/icons/ncaa-logo.png';
 import ffbbLogo from './assets/icons/ffbb-logo.png';
 import euroleagueLogo from './assets/icons/euroleague-logo.png';
+import eurocupLogo from './assets/icons/eurocup-logo.png';
 
 // Config des "univers" disponibles. Ajouter une ligue = ajouter une entrée ici
 // (le LeaguePicker et les routes se construisent depuis cet objet).
@@ -39,6 +40,14 @@ export const LEAGUES = [
     shortTitle: 'EuroLeague',
     logo: euroleagueLogo,
   },
+  {
+    id: 'eurocup',
+    path: '/eurocup',
+    name: 'BKT EuroCup',
+    title: 'BKT EuroCup',
+    shortTitle: 'EuroCup',
+    logo: eurocupLogo,
+  },
 ];
 
 export const FR_DIVISIONS = [
@@ -66,4 +75,11 @@ export const FR_WOMEN_DIVISIONS = [
     name: 'LIGUE FÉMININE 2',
     badge: 'https://www.proballers.com/api/getLeagueLogo?id=100036&width=300',
   },
+];
+
+// Compétitions de la carte Europe (filtre latéral, comme les divisions FR).
+// `leagueId` = entrée du sélecteur qui présélectionne la compétition.
+export const EURO_COMPETITIONS = [
+  { id: 'euroleague', leagueId: 'europe', name: 'EUROLEAGUE', badge: euroleagueLogo, title: 'Turkish Airlines EuroLeague', shortTitle: 'EuroLeague', color: 'F47216' },
+  { id: 'eurocup', leagueId: 'eurocup', name: 'EUROCUP', badge: eurocupLogo, title: 'BKT EuroCup', shortTitle: 'EuroCup', color: '0A5EB0' },
 ];
