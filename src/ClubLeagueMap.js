@@ -196,6 +196,18 @@ function AutoPanPopup({ children, isSmallScreen }) {
   );
 }
 
+// Cadre la carte sur l'ensemble des clubs au chargement (ex. Espagne : péninsule + Canaries).
+function FitTeams({ points }) {
+  const map = useMap();
+  const done = useRef(false);
+  useEffect(() => {
+    if (done.current || !points.length) return;
+    done.current = true;
+    map.fitBounds(points, { padding: [48, 48] });
+  }, [map, points]);
+  return null;
+}
+
 export default function ClubLeagueMap({ config, searchQuery, searchSubmit, leagueId, onTitle }) {
   const EURO_COMPETITIONS = config.competitions;
   const COMP_BY_ID = useMemo(() => Object.fromEntries(config.competitions.map((c) => [c.id, c])), [config]);
@@ -263,6 +275,7 @@ export default function ClubLeagueMap({ config, searchQuery, searchSubmit, leagu
         }}
       >
         <MapContainer center={config.center} zoom={config.zoom} style={{ zIndex: 0 }}>
+          {config.fitTeams && <FitTeams points={teams.map((t) => [t.latitude, t.longitude])} />}
           <TileLayer
             attribution="Jawg Sunny"
             url="https://tile.jawg.io/jawg-sunny/{z}/{x}/{y}{r}.png?access-token=Lko8BbD9udqn97TlGKDf86gU5pvGzg1Tao375U3VUY0l0odxgtIsHzr2vVQIvX0B"

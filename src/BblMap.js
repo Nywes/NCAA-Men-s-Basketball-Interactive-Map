@@ -19,6 +19,7 @@ const CONFIG = {
       color: '0A3D91',
       data: {
         label: 'Bundesliga',
+        tag: 'BBL',
         accent: '#0A3D91',
         logo: bblLogo,
         teams: bblTeamsData,

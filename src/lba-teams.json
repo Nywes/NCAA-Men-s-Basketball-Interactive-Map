@@ -8,13 +8,14 @@
     "shortDisplayName": "Acqua S.Bernardo Cantù",
     "division": "lba",
     "code": "CNT",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/cszFkDr2mSz9nPU4Y7fqQsLG/thumb",
+    "logo": "lba-logos/12.png",
     "color": null,
     "secondaryColor": null,
     "venue": "PalaDesio",
     "location": "Desio",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/cszFkDr2mSz9nPU4Y7fqQsLG/thumb"
   },
   {
     "id": "57",
@@ -25,13 +26,14 @@
     "shortDisplayName": "APU Old Wild West Udine",
     "division": "lba",
     "code": "UD",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/PdkXq2WH7pbAYgqbBBW5T1ic/thumb",
+    "logo": "lba-logos/57.png",
     "color": null,
     "secondaryColor": null,
     "venue": "PalaCarnera Credifriuli",
     "location": "Udine",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/PdkXq2WH7pbAYgqbBBW5T1ic/thumb"
   },
   {
     "id": "28",
@@ -42,13 +44,14 @@
     "shortDisplayName": "Armani Olimpia Milano",
     "division": "lba",
     "code": "MIO",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/e5xdeycmH1X2jEPY1jMBiCZV/thumb",
+    "logo": "lba-logos/28.png",
     "color": null,
     "secondaryColor": null,
     "venue": "Unipol Forum",
     "location": "Assago",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/e5xdeycmH1X2jEPY1jMBiCZV/thumb"
   },
   {
     "id": "246",
@@ -59,13 +62,14 @@
     "shortDisplayName": "BC Roma",
     "division": "lba",
     "code": "RMB",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/gxrVRq4XLCRXYwdsbCQeFSS8/thumb",
+    "logo": "lba-logos/246.png",
     "color": null,
     "secondaryColor": null,
     "venue": "Palazzetto dello Sport",
     "location": "Roma",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/gxrVRq4XLCRXYwdsbCQeFSS8/thumb"
   },
   {
     "id": "111",
@@ -76,13 +80,14 @@
     "shortDisplayName": "Bertram Derthona Tortona",
     "division": "lba",
     "code": "BDBT",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/LQkDL6WKmL1dQeLpxkp55tL7/thumb",
+    "logo": "lba-logos/111.png",
     "color": null,
     "secondaryColor": null,
     "venue": "Nova Arena",
     "location": "Tortona",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/LQkDL6WKmL1dQeLpxkp55tL7/thumb"
   },
   {
     "id": "104",
@@ -93,13 +98,14 @@
     "shortDisplayName": "Dolomiti Energia Trentino",
     "division": "lba",
     "code": "TN",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/iQJMb4iWpLE4Wwr63PY1YgLk/thumb",
+    "logo": "lba-logos/104.png",
     "color": null,
     "secondaryColor": null,
     "venue": "BTS Arena",
     "location": "Trento",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/iQJMb4iWpLE4Wwr63PY1YgLk/thumb"
   },
   {
     "id": "50",
@@ -110,13 +116,14 @@
     "shortDisplayName": "Longobardi Scafati Basket",
     "division": "lba",
     "code": "SCF",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/jEWc31daH9TEd77zF7LDKqMo/thumb",
+    "logo": "lba-logos/50.png",
     "color": null,
     "secondaryColor": null,
     "venue": "Beta Ricambi Arena PalaMangano",
     "location": "Scafati",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/jEWc31daH9TEd77zF7LDKqMo/thumb"
   },
   {
     "id": "247",
@@ -127,13 +134,14 @@
     "shortDisplayName": "Maxima Roma",
     "division": "lba",
     "code": "RMX",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/YzevUx1mesEZywaFwB4tksGL/thumb",
+    "logo": "lba-logos/247.png",
     "color": null,
     "secondaryColor": null,
     "venue": "PalaEur",
     "location": "Roma",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/YzevUx1mesEZywaFwB4tksGL/thumb"
   },
   {
     "id": "42",
@@ -144,13 +152,14 @@
     "shortDisplayName": "Napoli Basketball",
     "division": "lba",
     "code": "PZZ",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/48PaXiFhMot5c6vnRxHpwVoC/thumb",
+    "logo": "lba-logos/42.png",
     "color": null,
     "secondaryColor": null,
     "venue": "Alcott Arena",
     "location": "Napoli",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/48PaXiFhMot5c6vnRxHpwVoC/thumb"
   },
   {
     "id": "107",
@@ -161,13 +170,14 @@
     "shortDisplayName": "Nutribullet Treviso Basket",
     "division": "lba",
     "code": "TVU",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/Y6Kc6v8CzU8yeQGvNyHVU84N/thumb",
+    "logo": "lba-logos/107.png",
     "color": null,
     "secondaryColor": null,
     "venue": "Palaverde",
     "location": "Villorba",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/Y6Kc6v8CzU8yeQGvNyHVU84N/thumb"
   },
   {
     "id": "60",
@@ -178,13 +188,14 @@
     "shortDisplayName": "Openjobmetis Varese",
     "division": "lba",
     "code": "VA",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/dvvAgKmXKGxHKw4GEn7Wz4uC/thumb",
+    "logo": "lba-logos/60.png",
     "color": null,
     "secondaryColor": null,
     "venue": "Itelyum Arena",
     "location": "Varese",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/dvvAgKmXKGxHKw4GEn7Wz4uC/thumb"
   },
   {
     "id": "106",
@@ -195,13 +206,14 @@
     "shortDisplayName": "Pallacanestro Trieste",
     "division": "lba",
     "code": "TSS",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/T5zGJQ7ysxPDYoY9eqd6rqTn/thumb",
+    "logo": "lba-logos/106.png",
     "color": null,
     "secondaryColor": null,
     "venue": "PalaTrieste",
     "location": "Trieste",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/T5zGJQ7ysxPDYoY9eqd6rqTn/thumb"
   },
   {
     "id": "63",
@@ -212,13 +224,14 @@
     "shortDisplayName": "Tezenis Verona",
     "division": "lba",
     "code": "VR",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/FCHwHiUvrJNA9h13c447LBDq/thumb",
+    "logo": "lba-logos/63.png",
     "color": null,
     "secondaryColor": null,
     "venue": "Pala MAGIS",
     "location": "Verona",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/FCHwHiUvrJNA9h13c447LBDq/thumb"
   },
   {
     "id": "61",
@@ -229,13 +242,14 @@
     "shortDisplayName": "Umana Reyer Venezia",
     "division": "lba",
     "code": "VE",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/EGx6SvrpNQCDJd96DFDdbQVD/thumb",
+    "logo": "lba-logos/61.png",
     "color": null,
     "secondaryColor": null,
     "venue": "Palasport Taliercio",
     "location": "Venezia",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/EGx6SvrpNQCDJd96DFDdbQVD/thumb"
   },
   {
     "id": "44",
@@ -246,13 +260,14 @@
     "shortDisplayName": "UNA Hotels Reggio Emilia",
     "division": "lba",
     "code": "RE",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/tBq5sA33bdF9ScSJBJ3mCGRj/thumb",
+    "logo": "lba-logos/44.png",
     "color": null,
     "secondaryColor": null,
     "venue": "PalaBigi",
     "location": "Reggio nell'Emilia",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/tBq5sA33bdF9ScSJBJ3mCGRj/thumb"
   },
   {
     "id": "6",
@@ -263,12 +278,13 @@
     "shortDisplayName": "Virtus Costa Bologna",
     "division": "lba",
     "code": "BOV",
-    "logo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/tcKLhHtaP14WoCiDWnUN88v9/thumb",
+    "logo": "lba-logos/6.png",
     "color": null,
     "secondaryColor": null,
     "venue": "PalaDozza",
     "location": "Bologna",
     "capacity": null,
-    "website": null
+    "website": null,
+    "logoSource": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/tcKLhHtaP14WoCiDWnUN88v9/thumb"
   }
 ]

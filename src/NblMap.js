@@ -19,6 +19,7 @@ const CONFIG = {
       color: 'F47B30',
       data: {
         label: 'NBL',
+        tag: 'NBL',
         accent: '#F47B30',
         logo: nblLogo,
         teams: nblTeamsData,

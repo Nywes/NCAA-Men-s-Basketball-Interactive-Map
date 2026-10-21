@@ -8,6 +8,7 @@ import acbStandingsData from './acb-standings.json';
 const CONFIG = {
   center: [40.2, -3.5],
   zoom: 6,
+  fitTeams: true, // Tenerife (Canaries) doit rester visible
   competitions: [
     {
       id: 'acb',
@@ -19,6 +20,7 @@ const CONFIG = {
       color: 'E9510E',
       data: {
         label: 'Liga Endesa',
+        tag: 'ACB',
         accent: '#E9510E',
         logo: acbLogo,
         teams: acbTeamsData,

@@ -84,6 +84,22 @@ async function geocode(q) {
     return null;
   }
 }
+// Logo de club : PNG transparent du CDN NBL de préférence (le logo sportradar a un fond
+// blanc) ; on vérifie qu'il répond et pèse < 150 Ko (ex. Perth : PNG de 580 Ko sur un autre hôte).
+const MAX_LOGO_BYTES = 150000;
+async function pickLogo(code, candidates) {
+  const urls = [`https://cdn.nbl.com.au/app_assets/transparent_logos/${code}.png`, ...candidates].filter(Boolean);
+  for (const u of urls) {
+    try {
+      const r = await fetch(u, { method: 'HEAD', headers: { 'User-Agent': UA } });
+      const len = +(r.headers.get('content-length') || 0);
+      if (r.ok && (!len || len <= MAX_LOGO_BYTES)) return u;
+    } catch (e) {
+      /* candidat suivant */
+    }
+  }
+  return urls[urls.length - 1] || null;
+}
 const hex = (c) => (c ? c.replace('#', '').toUpperCase() : null);
 const r1 = (v) => (v != null ? Math.round(v * 10) / 10 : null);
 const pct = (v) => (v != null ? Math.round(v * 1000) / 10 : null); // 0.483871 -> 48.4
@@ -160,8 +176,7 @@ const photo = (p) => (p.external_player_image || p.image || null) && String(p.ex
       shortDisplayName: lt.name || at.name,
       division: 'nbl',
       code,
-      // logo sportradar (webp 200 px) de préférence : le PNG du CDN NBL pèse ~150 Ko
-      logo: lt.external_team_logo || at.external_team_logo || lt.team_logo || at.team_logo || null,
+      logo: await pickLogo(code, [lt.team_logo_transparent, at.team_logo_transparent, lt.external_team_logo, at.external_team_logo, lt.team_logo]),
       color: hex(lt.color_primary || at.color_primary),
       secondaryColor: hex(lt.color_secondary || at.color_secondary),
       venue: venue || team.venue || null,

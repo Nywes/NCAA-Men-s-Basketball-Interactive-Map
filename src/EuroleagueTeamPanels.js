@@ -18,6 +18,7 @@ const TABS = [
 // fournit celles de l'EuroCup (même format, sans analytics ni rivalités) via `data`.
 export const EUROLEAGUE_DATA = {
   label: 'EuroLeague',
+  tag: 'EL', // sigle affiché derrière le rang ligue (« #3 EL »)
   accent: '#F47216',
   logo: euroleagueLogo,
   rosters: euroleagueRostersData,
@@ -151,26 +152,29 @@ const StatBox = ({ v, l }) => (
   </div>
 );
 
-// Même chose que StatBox, mais réserve TOUJOURS une ligne de hauteur fixe pour
-// le rang ligue (même vide) — les 3 cases PPG/RPG/APG restent alignées à la
-// même hauteur, que le joueur soit classé ou non dans cette catégorie.
-const HeroStatBox = ({ v, l, rank }) => (
+// Même chose que StatBox, avec la ligne du rang ligue (« #3 EL »). Si le joueur
+// est classé dans au moins une des 3 catégories, les 3 cases réservent la ligne
+// (même vide) pour rester alignées ; sinon elle n'est pas rendue du tout.
+const HeroStatBox = ({ v, l, rank, tag, showRank }) => (
   <div className="rt-s">
     <div className="rt-v">{v}</div>
     <div className="rt-l">{l}</div>
-    <div className="rt-rank">{rank ? `#${rank} EL` : ' '}</div>
+    {showRank && <div className="rt-rank">{rank ? `#${rank} ${tag}` : '\u00a0'}</div>}
   </div>
 );
 
 const EuroPlayerPanel = ({ p }) => {
   const data = useContext(DataCtx);
+  const lr = p.leagueRank || {};
+  const showRank = !!(lr.pts || lr.reb || lr.ast);
+  const tag = data.tag || data.label;
   return (
   <>
     <div className="rt-season">{data.standings.season} · Season averages</div>
     <div className="rt-hero">
-      <HeroStatBox v={fmtAvg(p.ppg)} l="PPG" rank={p.leagueRank?.pts} />
-      <HeroStatBox v={fmtAvg(p.rpg)} l="RPG" rank={p.leagueRank?.reb} />
-      <HeroStatBox v={fmtAvg(p.apg)} l="APG" rank={p.leagueRank?.ast} />
+      <HeroStatBox v={fmtAvg(p.ppg)} l="PPG" rank={lr.pts} tag={tag} showRank={showRank} />
+      <HeroStatBox v={fmtAvg(p.rpg)} l="RPG" rank={lr.reb} tag={tag} showRank={showRank} />
+      <HeroStatBox v={fmtAvg(p.apg)} l="APG" rank={lr.ast} tag={tag} showRank={showRank} />
     </div>
     <div className="rt-strip">
       <StatBox v={p.gp ?? '—'} l="GP" />

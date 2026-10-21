@@ -20,6 +20,7 @@ const CONFIG = {
       ...EC,
       data: {
         label: 'EuroCup',
+        tag: 'EC',
         accent: `#${EC.color}`,
         logo: EC.badge,
         teams: eurocupTeamsData,

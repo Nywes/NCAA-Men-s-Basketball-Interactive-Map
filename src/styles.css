@@ -1321,3 +1321,6 @@ table.an-table { width: 100%; border-collapse: collapse; }
 
 /* classement par groupes (EuroCup) : intertitre par groupe */
 .st tbody tr.st-group td { background: #f1f5f9; color: #475569; font-size: 10px; font-weight: 800; letter-spacing: 1.5px; text-transform: uppercase; text-align: left; padding: 5px 12px; }
+
+/* logos de clubs non carrés (ACB…) : proportions conservées dans la case du marqueur */
+img.leaflet-marker-icon { object-fit: contain; }
