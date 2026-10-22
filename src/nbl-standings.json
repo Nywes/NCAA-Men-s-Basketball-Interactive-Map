@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -9,19 +9,19 @@
       "group": null,
       "teamId": "0602b1bc-8dfb-488c-ac11-7895de1a7556",
       "name": "Tasmania JackJumpers",
-      "wins": 5,
+      "wins": 6,
       "losses": 2,
-      "winPct": 71.4,
+      "winPct": 75,
       "lastFive": [
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W"
       ],
-      "pointsFor": 684,
-      "pointsAgainst": 663,
-      "diff": 21
+      "pointsFor": 790,
+      "pointsAgainst": 748,
+      "diff": 42
     },
     {
       "rank": 2,
@@ -83,25 +83,6 @@
     {
       "rank": 5,
       "group": null,
-      "teamId": "f8185bc5-2674-4293-a2a7-aeb8c7549b30",
-      "name": "Brisbane Bullets",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 574,
-      "pointsAgainst": 584,
-      "diff": -10
-    },
-    {
-      "rank": 6,
-      "group": null,
       "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
       "name": "Adelaide 36ers",
       "wins": 4,
@@ -119,7 +100,7 @@
       "diff": -16
     },
     {
-      "rank": 7,
+      "rank": 6,
       "group": null,
       "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
       "name": "Cairns Taipans",
@@ -138,7 +119,7 @@
       "diff": -56
     },
     {
-      "rank": 8,
+      "rank": 7,
       "group": null,
       "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
       "name": "Melbourne United",
@@ -155,6 +136,25 @@
       "pointsFor": 647,
       "pointsAgainst": 630,
       "diff": 17
+    },
+    {
+      "rank": 8,
+      "group": null,
+      "teamId": "f8185bc5-2674-4293-a2a7-aeb8c7549b30",
+      "name": "Brisbane Bullets",
+      "wins": 3,
+      "losses": 4,
+      "winPct": 42.9,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 659,
+      "pointsAgainst": 690,
+      "diff": -31
     },
     {
       "rank": 9,

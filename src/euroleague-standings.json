@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-21",
+  "updated": "2026-10-22",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "standings": [
@@ -63,6 +63,25 @@
     {
       "rank": 4,
       "group": "Regular Season",
+      "teamId": "HTA",
+      "name": "Hapoel IBI Tel Aviv",
+      "wins": 5,
+      "losses": 2,
+      "winPct": 71.4,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 630,
+      "pointsAgainst": 601,
+      "diff": 29
+    },
+    {
+      "rank": 5,
+      "group": "Regular Season",
       "teamId": "PAM",
       "name": "Valencia Basket",
       "wins": 4,
@@ -80,7 +99,7 @@
       "diff": 46
     },
     {
-      "rank": 5,
+      "rank": 6,
       "group": "Regular Season",
       "teamId": "RED",
       "name": "Crvena Zvezda Meridianbet Belgrade",
@@ -99,45 +118,7 @@
       "diff": 28
     },
     {
-      "rank": 6,
-      "group": "Regular Season",
-      "teamId": "HTA",
-      "name": "Hapoel IBI Tel Aviv",
-      "wins": 4,
-      "losses": 2,
-      "winPct": 66.7,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 540,
-      "pointsAgainst": 520,
-      "diff": 20
-    },
-    {
       "rank": 7,
-      "group": "Regular Season",
-      "teamId": "VIR",
-      "name": "Virtus Bologna",
-      "wins": 4,
-      "losses": 2,
-      "winPct": 66.7,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "pointsFor": 525,
-      "pointsAgainst": 518,
-      "diff": 7
-    },
-    {
-      "rank": 8,
       "group": "Regular Season",
       "teamId": "DUB",
       "name": "Dubai Basketball",
@@ -154,6 +135,25 @@
       "pointsFor": 490,
       "pointsAgainst": 493,
       "diff": -3
+    },
+    {
+      "rank": 8,
+      "group": "Regular Season",
+      "teamId": "VIR",
+      "name": "Virtus Bologna",
+      "wins": 4,
+      "losses": 3,
+      "winPct": 57.1,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 606,
+      "pointsAgainst": 608,
+      "diff": -2
     },
     {
       "rank": 9,
