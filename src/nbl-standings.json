@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -28,19 +28,19 @@
       "group": null,
       "teamId": "39fc4268-0cdf-455f-9ca1-12e344064000",
       "name": "Sydney Kings",
-      "wins": 4,
+      "wins": 5,
       "losses": 2,
-      "winPct": 66.7,
+      "winPct": 71.4,
       "lastFive": [
         "W",
+        "L",
+        "L",
         "W",
-        "L",
-        "L",
         "W"
       ],
-      "pointsFor": 606,
-      "pointsAgainst": 535,
-      "diff": 71
+      "pointsFor": 714,
+      "pointsAgainst": 617,
+      "diff": 97
     },
     {
       "rank": 3,
@@ -181,18 +181,18 @@
       "teamId": "105249a3-251d-4a9d-94f4-f57b8e0854b3",
       "name": "Illawarra Hawks",
       "wins": 2,
-      "losses": 6,
-      "winPct": 25,
+      "losses": 7,
+      "winPct": 22.2,
       "lastFive": [
+        "L",
+        "L",
+        "L",
         "W",
-        "L",
-        "L",
-        "L",
-        "W"
+        "L"
       ],
-      "pointsFor": 789,
-      "pointsAgainst": 845,
-      "diff": -56
+      "pointsFor": 871,
+      "pointsAgainst": 953,
+      "diff": -82
     }
   ]
 }

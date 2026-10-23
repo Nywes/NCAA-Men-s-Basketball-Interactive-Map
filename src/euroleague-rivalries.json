@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-22",
+  "updated": "2026-10-23",
   "seasonsRange": "E2019–E2026",
   "source": "api-live.euroleague.net (résultats agrégés localement)",
   "byClub": {
@@ -90,17 +90,17 @@
         "name": "Crvena Zvezda Meridianbet Belgrade",
         "logo": "https://media-cdn.incrowdsports.com/d2eef4a8-62df-4fdd-9076-276004268515.png"
       },
-      "wins": 5,
+      "wins": 6,
       "losses": 3,
-      "totalMeetings": 8,
+      "totalMeetings": 9,
       "lastMeeting": {
-        "date": "2026-04-02T20:00:00",
-        "season": "E2025",
+        "date": "2026-10-22T20:45:00",
+        "season": "E2026",
         "phase": "RS",
-        "homeCode": "RED",
-        "homeScore": 82,
-        "awayCode": "PAR",
-        "awayScore": 89
+        "homeCode": "PAR",
+        "homeScore": 85,
+        "awayCode": "RED",
+        "awayScore": 82
       }
     },
     "RED": {
@@ -111,16 +111,16 @@
         "logo": "https://media-cdn.incrowdsports.com/2681304e-77dd-4331-88b1-683078c0fb49.png"
       },
       "wins": 3,
-      "losses": 5,
-      "totalMeetings": 8,
+      "losses": 6,
+      "totalMeetings": 9,
       "lastMeeting": {
-        "date": "2026-04-02T20:00:00",
-        "season": "E2025",
+        "date": "2026-10-22T20:45:00",
+        "season": "E2026",
         "phase": "RS",
-        "homeCode": "RED",
-        "homeScore": 82,
-        "awayCode": "PAR",
-        "awayScore": 89
+        "homeCode": "PAR",
+        "homeScore": 85,
+        "awayCode": "RED",
+        "awayScore": 82
       }
     },
     "TEL": {
