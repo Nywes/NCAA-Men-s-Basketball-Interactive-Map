@@ -1,62 +1,8 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "season": "E2026",
   "source": "api-live.euroleague.net (Off/Def Rating et Pace calculés localement, formules standard)",
   "byClub": {
-    "PRS": {
-      "offRating": {
-        "value": 109.23276983094927,
-        "rank": 16
-      },
-      "defRating": {
-        "value": 118.07542262678803,
-        "rank": 14
-      },
-      "pace": {
-        "value": 76.9,
-        "rank": 6
-      },
-      "ppg": {
-        "value": 84,
-        "rank": 13
-      },
-      "oppPpg": {
-        "value": 90.8,
-        "rank": 13
-      },
-      "efgPct": {
-        "value": 52.4,
-        "rank": 14
-      },
-      "tsPct": {
-        "value": 54.3,
-        "rank": 18
-      },
-      "astRatio": {
-        "value": 18.1,
-        "rank": 11
-      },
-      "tovRatio": {
-        "value": 13.1,
-        "rank": 15
-      },
-      "orebPct": {
-        "value": 37.1,
-        "rank": 2
-      },
-      "drebPct": {
-        "value": 61.6,
-        "rank": 19
-      },
-      "threePtRate": {
-        "value": 50.3,
-        "rank": 1
-      },
-      "ftRate": {
-        "value": 17.4,
-        "rank": 20
-      }
-    },
     "PAR": {
       "offRating": {
         "value": 106.97585906916049,
@@ -68,7 +14,7 @@
       },
       "pace": {
         "value": 73.56800000000001,
-        "rank": 17
+        "rank": 18
       },
       "ppg": {
         "value": 78.7,
@@ -88,7 +34,7 @@
       },
       "astRatio": {
         "value": 18.4,
-        "rank": 8
+        "rank": 9
       },
       "tovRatio": {
         "value": 10.9,
@@ -96,7 +42,7 @@
       },
       "orebPct": {
         "value": 28.6,
-        "rank": 19
+        "rank": 18
       },
       "drebPct": {
         "value": 70.2,
@@ -108,7 +54,7 @@
       },
       "ftRate": {
         "value": 30.7,
-        "rank": 12
+        "rank": 11
       }
     },
     "RED": {
@@ -118,7 +64,7 @@
       },
       "defRating": {
         "value": 102.20250356520361,
-        "rank": 2
+        "rank": 3
       },
       "pace": {
         "value": 75.732,
@@ -126,7 +72,7 @@
       },
       "ppg": {
         "value": 81,
-        "rank": 19
+        "rank": 18
       },
       "oppPpg": {
         "value": 77.4,
@@ -150,7 +96,7 @@
       },
       "orebPct": {
         "value": 33.2,
-        "rank": 11
+        "rank": 10
       },
       "drebPct": {
         "value": 67.9,
@@ -172,7 +118,7 @@
       },
       "defRating": {
         "value": 119.8045905707196,
-        "rank": 15
+        "rank": 14
       },
       "pace": {
         "value": 77.376,
@@ -184,7 +130,7 @@
       },
       "oppPpg": {
         "value": 92.7,
-        "rank": 17
+        "rank": 16
       },
       "efgPct": {
         "value": 51.2,
@@ -212,17 +158,71 @@
       },
       "threePtRate": {
         "value": 43.7,
-        "rank": 5
+        "rank": 4
       },
       "ftRate": {
         "value": 31.1,
-        "rank": 11
+        "rank": 10
+      }
+    },
+    "PRS": {
+      "offRating": {
+        "value": 110.71595451949537,
+        "rank": 16
+      },
+      "defRating": {
+        "value": 120.32085561497328,
+        "rank": 15
+      },
+      "pace": {
+        "value": 77.044,
+        "rank": 6
+      },
+      "ppg": {
+        "value": 85.3,
+        "rank": 12
+      },
+      "oppPpg": {
+        "value": 92.7,
+        "rank": 17
+      },
+      "efgPct": {
+        "value": 53.5,
+        "rank": 14
+      },
+      "tsPct": {
+        "value": 55.1,
+        "rank": 18
+      },
+      "astRatio": {
+        "value": 18.3,
+        "rank": 10
+      },
+      "tovRatio": {
+        "value": 12.5,
+        "rank": 12
+      },
+      "orebPct": {
+        "value": 35.9,
+        "rank": 4
+      },
+      "drebPct": {
+        "value": 61.7,
+        "rank": 19
+      },
+      "threePtRate": {
+        "value": 49.1,
+        "rank": 1
+      },
+      "ftRate": {
+        "value": 17.5,
+        "rank": 20
       }
     },
     "MIL": {
       "offRating": {
         "value": 111.9023397761953,
-        "rank": 14
+        "rank": 15
       },
       "defRating": {
         "value": 123.94924238368044,
@@ -234,11 +234,11 @@
       },
       "ppg": {
         "value": 83.6,
-        "rank": 14
+        "rank": 15
       },
       "oppPpg": {
         "value": 92.6,
-        "rank": 16
+        "rank": 15
       },
       "efgPct": {
         "value": 51.2,
@@ -254,7 +254,7 @@
       },
       "tovRatio": {
         "value": 12.6,
-        "rank": 11
+        "rank": 13
       },
       "orebPct": {
         "value": 34.4,
@@ -292,11 +292,11 @@
       },
       "oppPpg": {
         "value": 92,
-        "rank": 15
+        "rank": 14
       },
       "efgPct": {
         "value": 56.9,
-        "rank": 7
+        "rank": 8
       },
       "tsPct": {
         "value": 60.8,
@@ -320,71 +320,17 @@
       },
       "threePtRate": {
         "value": 41.8,
-        "rank": 8
+        "rank": 10
       },
       "ftRate": {
         "value": 28.2,
         "rank": 18
       }
     },
-    "ZAL": {
-      "offRating": {
-        "value": 111.69136545086675,
-        "rank": 15
-      },
-      "defRating": {
-        "value": 117.84327664461094,
-        "rank": 11
-      },
-      "pace": {
-        "value": 73.148,
-        "rank": 18
-      },
-      "ppg": {
-        "value": 81.7,
-        "rank": 18
-      },
-      "oppPpg": {
-        "value": 86.2,
-        "rank": 8
-      },
-      "efgPct": {
-        "value": 53.3,
-        "rank": 13
-      },
-      "tsPct": {
-        "value": 57,
-        "rank": 14
-      },
-      "astRatio": {
-        "value": 18.1,
-        "rank": 12
-      },
-      "tovRatio": {
-        "value": 13.5,
-        "rank": 17
-      },
-      "orebPct": {
-        "value": 35.5,
-        "rank": 4
-      },
-      "drebPct": {
-        "value": 69.2,
-        "rank": 6
-      },
-      "threePtRate": {
-        "value": 38.3,
-        "rank": 18
-      },
-      "ftRate": {
-        "value": 30.3,
-        "rank": 13
-      }
-    },
     "MUN": {
       "offRating": {
         "value": 115.3947715870082,
-        "rank": 11
+        "rank": 10
       },
       "defRating": {
         "value": 124.2408238711381,
@@ -396,7 +342,7 @@
       },
       "ppg": {
         "value": 87.4,
-        "rank": 9
+        "rank": 8
       },
       "oppPpg": {
         "value": 94.1,
@@ -404,15 +350,15 @@
       },
       "efgPct": {
         "value": 57,
-        "rank": 6
+        "rank": 7
       },
       "tsPct": {
         "value": 61.7,
-        "rank": 3
+        "rank": 2
       },
       "astRatio": {
         "value": 18.3,
-        "rank": 9
+        "rank": 11
       },
       "tovRatio": {
         "value": 13.9,
@@ -424,11 +370,11 @@
       },
       "drebPct": {
         "value": 65.8,
-        "rank": 14
+        "rank": 15
       },
       "threePtRate": {
         "value": 41.5,
-        "rank": 11
+        "rank": 12
       },
       "ftRate": {
         "value": 34.1,
@@ -438,7 +384,7 @@
     "BAR": {
       "offRating": {
         "value": 120.28087787686228,
-        "rank": 4
+        "rank": 3
       },
       "defRating": {
         "value": 118.01142735088375,
@@ -454,7 +400,7 @@
       },
       "oppPpg": {
         "value": 88.4,
-        "rank": 10
+        "rank": 11
       },
       "efgPct": {
         "value": 57.4,
@@ -478,11 +424,11 @@
       },
       "drebPct": {
         "value": 65.8,
-        "rank": 15
+        "rank": 16
       },
       "threePtRate": {
         "value": 44.6,
-        "rank": 4
+        "rank": 3
       },
       "ftRate": {
         "value": 23,
@@ -500,7 +446,7 @@
       },
       "pace": {
         "value": 77.584,
-        "rank": 3
+        "rank": 4
       },
       "ppg": {
         "value": 83,
@@ -528,7 +474,7 @@
       },
       "orebPct": {
         "value": 28.5,
-        "rank": 20
+        "rank": 19
       },
       "drebPct": {
         "value": 68.7,
@@ -536,32 +482,86 @@
       },
       "threePtRate": {
         "value": 39.1,
-        "rank": 15
+        "rank": 16
       },
       "ftRate": {
         "value": 33.6,
         "rank": 4
       }
     },
-    "ASV": {
+    "ULK": {
       "offRating": {
-        "value": 113.30201827285396,
-        "rank": 12
+        "value": 112.84188153699873,
+        "rank": 13
       },
       "defRating": {
-        "value": 122.98043669023899,
+        "value": 101.51574472845238,
+        "rank": 2
+      },
+      "pace": {
+        "value": 71.51599999999999,
+        "rank": 20
+      },
+      "ppg": {
+        "value": 80.7,
+        "rank": 19
+      },
+      "oppPpg": {
+        "value": 72.6,
+        "rank": 1
+      },
+      "efgPct": {
+        "value": 53.8,
+        "rank": 13
+      },
+      "tsPct": {
+        "value": 57.3,
+        "rank": 14
+      },
+      "astRatio": {
+        "value": 18,
+        "rank": 14
+      },
+      "tovRatio": {
+        "value": 12.2,
+        "rank": 9
+      },
+      "orebPct": {
+        "value": 32.5,
+        "rank": 12
+      },
+      "drebPct": {
+        "value": 69.6,
+        "rank": 6
+      },
+      "threePtRate": {
+        "value": 43.2,
+        "rank": 7
+      },
+      "ftRate": {
+        "value": 30.3,
+        "rank": 12
+      }
+    },
+    "ASV": {
+      "offRating": {
+        "value": 111.9995899328515,
+        "rank": 14
+      },
+      "defRating": {
+        "value": 123.9171664360039,
         "rank": 17
       },
       "pace": {
-        "value": 77.492,
-        "rank": 4
+        "value": 78.036,
+        "rank": 2
       },
       "ppg": {
-        "value": 87.8,
-        "rank": 7
+        "value": 87.4,
+        "rank": 9
       },
       "oppPpg": {
-        "value": 95.3,
+        "value": 96.7,
         "rank": 20
       },
       "efgPct": {
@@ -569,38 +569,38 @@
         "rank": 3
       },
       "tsPct": {
-        "value": 59.7,
-        "rank": 9
+        "value": 60,
+        "rank": 7
       },
       "astRatio": {
-        "value": 20.2,
+        "value": 19.9,
         "rank": 1
       },
       "tovRatio": {
-        "value": 13.1,
+        "value": 13.4,
         "rank": 16
       },
       "orebPct": {
-        "value": 29.9,
-        "rank": 17
+        "value": 27.2,
+        "rank": 20
       },
       "drebPct": {
-        "value": 59.8,
+        "value": 58.9,
         "rank": 20
       },
       "threePtRate": {
-        "value": 45.4,
-        "rank": 2
+        "value": 43.6,
+        "rank": 5
       },
       "ftRate": {
-        "value": 29.7,
-        "rank": 16
+        "value": 30.2,
+        "rank": 13
       }
     },
     "VIR": {
       "offRating": {
         "value": 113.18485989125888,
-        "rank": 13
+        "rank": 12
       },
       "defRating": {
         "value": 113.57695524884986,
@@ -616,7 +616,7 @@
       },
       "oppPpg": {
         "value": 86.9,
-        "rank": 9
+        "rank": 10
       },
       "efgPct": {
         "value": 50.9,
@@ -632,7 +632,7 @@
       },
       "tovRatio": {
         "value": 12.2,
-        "rank": 9
+        "rank": 10
       },
       "orebPct": {
         "value": 36.7,
@@ -644,11 +644,65 @@
       },
       "threePtRate": {
         "value": 41.8,
-        "rank": 9
+        "rank": 11
       },
       "ftRate": {
         "value": 32.8,
-        "rank": 6
+        "rank": 7
+      }
+    },
+    "ZAL": {
+      "offRating": {
+        "value": 114.5120439726249,
+        "rank": 11
+      },
+      "defRating": {
+        "value": 115.85924448994989,
+        "rank": 11
+      },
+      "pace": {
+        "value": 74.228,
+        "rank": 17
+      },
+      "ppg": {
+        "value": 85,
+        "rank": 14
+      },
+      "oppPpg": {
+        "value": 86,
+        "rank": 8
+      },
+      "efgPct": {
+        "value": 54.7,
+        "rank": 11
+      },
+      "tsPct": {
+        "value": 58.3,
+        "rank": 12
+      },
+      "astRatio": {
+        "value": 18.5,
+        "rank": 8
+      },
+      "tovRatio": {
+        "value": 13.6,
+        "rank": 17
+      },
+      "orebPct": {
+        "value": 37.1,
+        "rank": 2
+      },
+      "drebPct": {
+        "value": 72,
+        "rank": 1
+      },
+      "threePtRate": {
+        "value": 40.2,
+        "rank": 14
+      },
+      "ftRate": {
+        "value": 28.9,
+        "rank": 16
       }
     },
     "DUB": {
@@ -666,7 +720,7 @@
       },
       "ppg": {
         "value": 85.3,
-        "rank": 12
+        "rank": 13
       },
       "oppPpg": {
         "value": 83.4,
@@ -690,7 +744,7 @@
       },
       "orebPct": {
         "value": 32.5,
-        "rank": 12
+        "rank": 13
       },
       "drebPct": {
         "value": 66.8,
@@ -698,7 +752,7 @@
       },
       "threePtRate": {
         "value": 38.8,
-        "rank": 16
+        "rank": 17
       },
       "ftRate": {
         "value": 35.8,
@@ -708,7 +762,7 @@
     "TEL": {
       "offRating": {
         "value": 115.46024659863947,
-        "rank": 10
+        "rank": 9
       },
       "defRating": {
         "value": 123.96364795918369,
@@ -732,19 +786,19 @@
       },
       "tsPct": {
         "value": 60.7,
-        "rank": 6
+        "rank": 5
       },
       "astRatio": {
         "value": 18.7,
-        "rank": 6
+        "rank": 7
       },
       "tovRatio": {
         "value": 12.6,
-        "rank": 12
+        "rank": 14
       },
       "orebPct": {
         "value": 29.7,
-        "rank": 18
+        "rank": 17
       },
       "drebPct": {
         "value": 68.5,
@@ -752,75 +806,21 @@
       },
       "threePtRate": {
         "value": 38.7,
-        "rank": 17
+        "rank": 18
       },
       "ftRate": {
         "value": 28.5,
         "rank": 17
       }
     },
-    "ULK": {
-      "offRating": {
-        "value": 116.02378835037797,
-        "rank": 9
-      },
-      "defRating": {
-        "value": 103.51823032458871,
-        "rank": 3
-      },
-      "pace": {
-        "value": 71.96799999999999,
-        "rank": 20
-      },
-      "ppg": {
-        "value": 83.5,
-        "rank": 15
-      },
-      "oppPpg": {
-        "value": 74.5,
-        "rank": 2
-      },
-      "efgPct": {
-        "value": 55.5,
-        "rank": 10
-      },
-      "tsPct": {
-        "value": 59.2,
-        "rank": 11
-      },
-      "astRatio": {
-        "value": 18,
-        "rank": 14
-      },
-      "tovRatio": {
-        "value": 12.8,
-        "rank": 14
-      },
-      "orebPct": {
-        "value": 34,
-        "rank": 10
-      },
-      "drebPct": {
-        "value": 70.7,
-        "rank": 1
-      },
-      "threePtRate": {
-        "value": 41.8,
-        "rank": 10
-      },
-      "ftRate": {
-        "value": 31.8,
-        "rank": 10
-      }
-    },
     "HTA": {
       "offRating": {
         "value": 119.6553924696873,
-        "rank": 5
+        "rank": 4
       },
       "defRating": {
         "value": 114.20442459051267,
-        "rank": 9
+        "rank": 8
       },
       "pace": {
         "value": 75.216,
@@ -836,11 +836,11 @@
       },
       "efgPct": {
         "value": 54.8,
-        "rank": 11
+        "rank": 9
       },
       "tsPct": {
         "value": 59.2,
-        "rank": 12
+        "rank": 11
       },
       "astRatio": {
         "value": 15.4,
@@ -848,7 +848,7 @@
       },
       "tovRatio": {
         "value": 10.1,
-        "rank": 1
+        "rank": 2
       },
       "orebPct": {
         "value": 30.2,
@@ -860,11 +860,11 @@
       },
       "threePtRate": {
         "value": 39.3,
-        "rank": 14
+        "rank": 15
       },
       "ftRate": {
         "value": 32.2,
-        "rank": 7
+        "rank": 8
       }
     },
     "PAN": {
@@ -882,11 +882,11 @@
       },
       "ppg": {
         "value": 87.6,
-        "rank": 8
+        "rank": 7
       },
       "oppPpg": {
         "value": 73.9,
-        "rank": 1
+        "rank": 2
       },
       "efgPct": {
         "value": 57.1,
@@ -894,7 +894,7 @@
       },
       "tsPct": {
         "value": 60.3,
-        "rank": 7
+        "rank": 6
       },
       "astRatio": {
         "value": 18.8,
@@ -902,7 +902,7 @@
       },
       "tovRatio": {
         "value": 12.6,
-        "rank": 13
+        "rank": 15
       },
       "orebPct": {
         "value": 34.8,
@@ -914,7 +914,7 @@
       },
       "threePtRate": {
         "value": 42.2,
-        "rank": 7
+        "rank": 8
       },
       "ftRate": {
         "value": 33.6,
@@ -936,7 +936,7 @@
       },
       "ppg": {
         "value": 95.3,
-        "rank": 3
+        "rank": 2
       },
       "oppPpg": {
         "value": 90,
@@ -948,7 +948,7 @@
       },
       "tsPct": {
         "value": 61.8,
-        "rank": 2
+        "rank": 1
       },
       "astRatio": {
         "value": 18.8,
@@ -968,7 +968,7 @@
       },
       "threePtRate": {
         "value": 45.1,
-        "rank": 3
+        "rank": 2
       },
       "ftRate": {
         "value": 29.8,
@@ -977,109 +977,109 @@
     },
     "PAM": {
       "offRating": {
-        "value": 122.21503879053112,
-        "rank": 3
+        "value": 123.52295956523906,
+        "rank": 2
       },
       "defRating": {
-        "value": 113.76069226178636,
-        "rank": 8
+        "value": 114.29924714563495,
+        "rank": 9
       },
       "pace": {
-        "value": 80.432,
+        "value": 80.228,
         "rank": 1
       },
       "ppg": {
-        "value": 98.3,
+        "value": 99.1,
         "rank": 1
       },
       "oppPpg": {
-        "value": 91.5,
-        "rank": 14
-      },
-      "efgPct": {
-        "value": 56.7,
-        "rank": 9
-      },
-      "tsPct": {
-        "value": 60.8,
-        "rank": 5
-      },
-      "astRatio": {
-        "value": 18.5,
-        "rank": 7
-      },
-      "tovRatio": {
-        "value": 10.1,
-        "rank": 2
-      },
-      "orebPct": {
-        "value": 31.7,
+        "value": 91.7,
         "rank": 13
       },
+      "efgPct": {
+        "value": 57.1,
+        "rank": 6
+      },
+      "tsPct": {
+        "value": 60.9,
+        "rank": 3
+      },
+      "astRatio": {
+        "value": 18.8,
+        "rank": 6
+      },
+      "tovRatio": {
+        "value": 9.8,
+        "rank": 1
+      },
+      "orebPct": {
+        "value": 32.6,
+        "rank": 11
+      },
       "drebPct": {
-        "value": 69.5,
+        "value": 69.9,
         "rank": 5
       },
       "threePtRate": {
-        "value": 41.2,
-        "rank": 12
+        "value": 41.9,
+        "rank": 9
       },
       "ftRate": {
-        "value": 32.2,
-        "rank": 8
+        "value": 33.4,
+        "rank": 6
       }
     },
     "OLY": {
       "offRating": {
-        "value": 122.86057451706536,
-        "rank": 2
+        "value": 119.15755989944074,
+        "rank": 5
       },
       "defRating": {
-        "value": 112.35111600440398,
+        "value": 110.43558565491762,
         "rank": 6
       },
       "pace": {
-        "value": 79.928,
-        "rank": 2
+        "value": 77.96400000000001,
+        "rank": 3
       },
       "ppg": {
-        "value": 98.2,
-        "rank": 2
+        "value": 92.9,
+        "rank": 3
       },
       "oppPpg": {
-        "value": 89.8,
-        "rank": 11
+        "value": 86.1,
+        "rank": 9
       },
       "efgPct": {
-        "value": 56.8,
-        "rank": 8
+        "value": 54.8,
+        "rank": 10
       },
       "tsPct": {
-        "value": 62.1,
-        "rank": 1
+        "value": 59.8,
+        "rank": 9
       },
       "astRatio": {
-        "value": 18.3,
-        "rank": 10
+        "value": 18.2,
+        "rank": 12
       },
       "tovRatio": {
-        "value": 12.2,
-        "rank": 10
+        "value": 12.3,
+        "rank": 11
       },
       "orebPct": {
-        "value": 37.7,
+        "value": 37.3,
         "rank": 1
       },
       "drebPct": {
-        "value": 65.1,
-        "rank": 16
+        "value": 66.4,
+        "rank": 14
       },
       "threePtRate": {
-        "value": 37.1,
+        "value": 37.7,
         "rank": 19
       },
       "ftRate": {
-        "value": 34.5,
+        "value": 34.3,
         "rank": 2
       }
     }

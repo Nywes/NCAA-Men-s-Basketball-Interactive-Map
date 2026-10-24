@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -6142,7 +6142,7 @@
         "code": "30005634",
         "firstName": "Gregor",
         "lastName": "Glas",
-        "photo": null,
+        "photo": "https://static.acb.com/media/PRO/00/00/94/52/78/0000945278_03.jpg",
         "height": 198,
         "age": 25,
         "nationality": "SLO",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -79,25 +79,6 @@
     {
       "rank": 5,
       "group": null,
-      "teamId": "430",
-      "name": "EWE Baskets Oldenburg",
-      "wins": 3,
-      "losses": 2,
-      "winPct": 60,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 386,
-      "pointsAgainst": 423,
-      "diff": -37
-    },
-    {
-      "rank": 6,
-      "group": null,
       "teamId": "415",
       "name": "Telekom Baskets Bonn",
       "wins": 3,
@@ -115,7 +96,7 @@
       "diff": 43
     },
     {
-      "rank": 7,
+      "rank": 6,
       "group": null,
       "teamId": "433",
       "name": "MHP RIESEN Ludwigsburg",
@@ -134,7 +115,7 @@
       "diff": -4
     },
     {
-      "rank": 8,
+      "rank": 7,
       "group": null,
       "teamId": "551",
       "name": "ROSTOCK SEAWOLVES",
@@ -153,7 +134,7 @@
       "diff": 52
     },
     {
-      "rank": 9,
+      "rank": 8,
       "group": null,
       "teamId": "428",
       "name": "SYNTAINICS MBC",
@@ -172,7 +153,45 @@
       "diff": 23
     },
     {
+      "rank": 9,
+      "group": null,
+      "teamId": "420",
+      "name": "BMA365 Bamberg Baskets",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 528,
+      "pointsAgainst": 516,
+      "diff": 12
+    },
+    {
       "rank": 10,
+      "group": null,
+      "teamId": "430",
+      "name": "EWE Baskets Oldenburg",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 456,
+      "pointsAgainst": 503,
+      "diff": -47
+    },
+    {
+      "rank": 11,
       "group": null,
       "teamId": "540",
       "name": "Fitness First Würzburg Baskets",
@@ -188,25 +207,6 @@
       "pointsFor": 303,
       "pointsAgainst": 321,
       "diff": -18
-    },
-    {
-      "rank": 11,
-      "group": null,
-      "teamId": "420",
-      "name": "BMA365 Bamberg Baskets",
-      "wins": 2,
-      "losses": 3,
-      "winPct": 40,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "pointsFor": 448,
-      "pointsAgainst": 446,
-      "diff": 2
     },
     {
       "rank": 12,
@@ -230,25 +230,6 @@
     {
       "rank": 13,
       "group": null,
-      "teamId": "483",
-      "name": "Science City Jena",
-      "wins": 2,
-      "losses": 3,
-      "winPct": 40,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 376,
-      "pointsAgainst": 437,
-      "diff": -61
-    },
-    {
-      "rank": 14,
-      "group": null,
       "teamId": "413",
       "name": "ALBA BERLIN",
       "wins": 2,
@@ -264,6 +245,25 @@
       "pointsFor": 402,
       "pointsAgainst": 453,
       "diff": -51
+    },
+    {
+      "rank": 14,
+      "group": null,
+      "teamId": "483",
+      "name": "Science City Jena",
+      "wins": 2,
+      "losses": 3,
+      "winPct": 40,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 376,
+      "pointsAgainst": 437,
+      "diff": -61
     },
     {
       "rank": 15,

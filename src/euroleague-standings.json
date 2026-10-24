@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-23",
+  "updated": "2026-10-24",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "standings": [
@@ -27,41 +27,60 @@
       "group": "Regular Season",
       "teamId": "ULK",
       "name": "Fenerbahce Beko Istanbul",
-      "wins": 5,
+      "wins": 6,
       "losses": 1,
-      "winPct": 83.3,
+      "winPct": 85.7,
       "lastFive": [
-        "W",
         "W",
         "L",
         "W",
+        "W",
         "W"
       ],
-      "pointsFor": 501,
-      "pointsAgainst": 447,
-      "diff": 54
+      "pointsFor": 565,
+      "pointsAgainst": 508,
+      "diff": 57
     },
     {
       "rank": 3,
       "group": "Regular Season",
-      "teamId": "OLY",
-      "name": "Olympiacos Piraeus",
+      "teamId": "PAM",
+      "name": "Valencia Basket",
       "wins": 5,
-      "losses": 1,
-      "winPct": 83.3,
+      "losses": 2,
+      "winPct": 71.4,
       "lastFive": [
         "W",
+        "W",
         "L",
-        "W",
-        "W",
+        "L",
         "W"
       ],
-      "pointsFor": 564,
-      "pointsAgainst": 524,
-      "diff": 40
+      "pointsFor": 687,
+      "pointsAgainst": 630,
+      "diff": 57
     },
     {
       "rank": 4,
+      "group": "Regular Season",
+      "teamId": "OLY",
+      "name": "Olympiacos Piraeus",
+      "wins": 5,
+      "losses": 2,
+      "winPct": 71.4,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 625,
+      "pointsAgainst": 588,
+      "diff": 37
+    },
+    {
+      "rank": 5,
       "group": "Regular Season",
       "teamId": "HTA",
       "name": "Hapoel IBI Tel Aviv",
@@ -80,7 +99,7 @@
       "diff": 29
     },
     {
-      "rank": 5,
+      "rank": 6,
       "group": "Regular Season",
       "teamId": "DUB",
       "name": "Dubai Basketball",
@@ -97,25 +116,6 @@
       "pointsFor": 597,
       "pointsAgainst": 584,
       "diff": 13
-    },
-    {
-      "rank": 6,
-      "group": "Regular Season",
-      "teamId": "PAM",
-      "name": "Valencia Basket",
-      "wins": 4,
-      "losses": 2,
-      "winPct": 66.7,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 583,
-      "pointsAgainst": 537,
-      "diff": 46
     },
     {
       "rank": 7,
@@ -215,6 +215,25 @@
     {
       "rank": 12,
       "group": "Regular Season",
+      "teamId": "ZAL",
+      "name": "Zalgiris Kaunas",
+      "wins": 3,
+      "losses": 4,
+      "winPct": 42.9,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 595,
+      "pointsAgainst": 602,
+      "diff": -7
+    },
+    {
+      "rank": 13,
+      "group": "Regular Season",
       "teamId": "IST",
       "name": "Anadolu Efes Istanbul",
       "wins": 3,
@@ -232,7 +251,7 @@
       "diff": -9
     },
     {
-      "rank": 13,
+      "rank": 14,
       "group": "Regular Season",
       "teamId": "BES",
       "name": "Besiktas",
@@ -251,45 +270,7 @@
       "diff": -10
     },
     {
-      "rank": 14,
-      "group": "Regular Season",
-      "teamId": "ZAL",
-      "name": "Zalgiris Kaunas",
-      "wins": 2,
-      "losses": 4,
-      "winPct": 33.3,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 490,
-      "pointsAgainst": 517,
-      "diff": -27
-    },
-    {
       "rank": 15,
-      "group": "Regular Season",
-      "teamId": "ASV",
-      "name": "LDLC ASVEL Villeurbanne",
-      "wins": 2,
-      "losses": 4,
-      "winPct": 33.3,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 527,
-      "pointsAgainst": 572,
-      "diff": -45
-    },
-    {
-      "rank": 16,
       "group": "Regular Season",
       "teamId": "TEL",
       "name": "Maccabi Rapyd Tel Aviv",
@@ -308,7 +289,7 @@
       "diff": -45
     },
     {
-      "rank": 17,
+      "rank": 16,
       "group": "Regular Season",
       "teamId": "MUN",
       "name": "FC Bayern Munich",
@@ -327,13 +308,13 @@
       "diff": -47
     },
     {
-      "rank": 18,
+      "rank": 17,
       "group": "Regular Season",
-      "teamId": "PRS",
-      "name": "Paris Basketball",
-      "wins": 1,
+      "teamId": "ASV",
+      "name": "LDLC ASVEL Villeurbanne",
+      "wins": 2,
       "losses": 5,
-      "winPct": 16.7,
+      "winPct": 28.6,
       "lastFive": [
         "L",
         "W",
@@ -341,9 +322,28 @@
         "L",
         "L"
       ],
-      "pointsFor": 504,
-      "pointsAgainst": 545,
-      "diff": -41
+      "pointsFor": 612,
+      "pointsAgainst": 677,
+      "diff": -65
+    },
+    {
+      "rank": 18,
+      "group": "Regular Season",
+      "teamId": "PRS",
+      "name": "Paris Basketball",
+      "wins": 1,
+      "losses": 6,
+      "winPct": 14.3,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 597,
+      "pointsAgainst": 649,
+      "diff": -52
     },
     {
       "rank": 19,
