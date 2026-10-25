@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -26,25 +26,6 @@
     {
       "rank": 2,
       "group": null,
-      "teamId": "39fc4268-0cdf-455f-9ca1-12e344064000",
-      "name": "Sydney Kings",
-      "wins": 5,
-      "losses": 2,
-      "winPct": 71.4,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 714,
-      "pointsAgainst": 617,
-      "diff": 97
-    },
-    {
-      "rank": 3,
-      "group": null,
       "teamId": "bc5327d5-322e-4796-b103-4c3b63869edb",
       "name": "Perth Wildcats",
       "wins": 5,
@@ -62,23 +43,42 @@
       "diff": -16
     },
     {
-      "rank": 4,
+      "rank": 3,
       "group": null,
-      "teamId": "bbae77db-317d-4c17-aa04-75d53d20ad15",
-      "name": "NZ Breakers",
-      "wins": 4,
-      "losses": 4,
-      "winPct": 50,
+      "teamId": "39fc4268-0cdf-455f-9ca1-12e344064000",
+      "name": "Sydney Kings",
+      "wins": 5,
+      "losses": 3,
+      "winPct": 62.5,
       "lastFive": [
-        "W",
-        "W",
         "L",
+        "L",
+        "W",
         "W",
         "L"
       ],
-      "pointsFor": 737,
-      "pointsAgainst": 712,
-      "diff": 25
+      "pointsFor": 809,
+      "pointsAgainst": 722,
+      "diff": 87
+    },
+    {
+      "rank": 4,
+      "group": null,
+      "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
+      "name": "Cairns Taipans",
+      "wins": 5,
+      "losses": 4,
+      "winPct": 55.6,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 810,
+      "pointsAgainst": 864,
+      "diff": -54
     },
     {
       "rank": 5,
@@ -102,78 +102,78 @@
     {
       "rank": 6,
       "group": null,
-      "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
-      "name": "Adelaide 36ers",
+      "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
+      "name": "South East Melbourne Phoenix",
       "wins": 4,
-      "losses": 4,
-      "winPct": 50,
+      "losses": 5,
+      "winPct": 44.4,
       "lastFive": [
-        "L",
+        "W",
         "L",
         "L",
         "W",
         "W"
       ],
-      "pointsFor": 710,
-      "pointsAgainst": 726,
-      "diff": -16
+      "pointsFor": 880,
+      "pointsAgainst": 845,
+      "diff": 35
     },
     {
       "rank": 7,
       "group": null,
-      "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
-      "name": "Cairns Taipans",
+      "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
+      "name": "Melbourne United",
       "wins": 4,
-      "losses": 4,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 724,
-      "pointsAgainst": 780,
-      "diff": -56
-    },
-    {
-      "rank": 8,
-      "group": null,
-      "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
-      "name": "South East Melbourne Phoenix",
-      "wins": 3,
       "losses": 5,
-      "winPct": 37.5,
+      "winPct": 44.4,
       "lastFive": [
-        "L",
+        "W",
         "W",
         "L",
         "L",
         "W"
       ],
-      "pointsFor": 772,
-      "pointsAgainst": 751,
-      "diff": 21
+      "pointsFor": 854,
+      "pointsAgainst": 828,
+      "diff": 26
     },
     {
-      "rank": 9,
+      "rank": 8,
       "group": null,
-      "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
-      "name": "Melbourne United",
-      "wins": 3,
+      "teamId": "bbae77db-317d-4c17-aa04-75d53d20ad15",
+      "name": "NZ Breakers",
+      "wins": 4,
       "losses": 5,
-      "winPct": 37.5,
+      "winPct": 44.4,
       "lastFive": [
-        "L",
         "W",
+        "L",
         "W",
         "L",
         "L"
       ],
-      "pointsFor": 749,
-      "pointsAgainst": 733,
-      "diff": 16
+      "pointsFor": 821,
+      "pointsAgainst": 798,
+      "diff": 23
+    },
+    {
+      "rank": 9,
+      "group": null,
+      "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
+      "name": "Adelaide 36ers",
+      "wins": 4,
+      "losses": 5,
+      "winPct": 44.4,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 804,
+      "pointsAgainst": 834,
+      "diff": -30
     },
     {
       "rank": 10,

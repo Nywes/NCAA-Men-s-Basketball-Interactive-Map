@@ -1,10 +1,29 @@
 {
-  "updated": "2026-10-24",
+  "updated": "2026-10-25",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
     {
       "rank": 1,
+      "group": null,
+      "teamId": "414",
+      "name": "VET-CONCEPT Gladiators Trier",
+      "wins": 5,
+      "losses": 1,
+      "winPct": 83.33,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 597,
+      "pointsAgainst": 524,
+      "diff": 73
+    },
+    {
+      "rank": 2,
       "group": null,
       "teamId": "486",
       "name": "FC Bayern München Basketball",
@@ -22,26 +41,45 @@
       "diff": 127
     },
     {
-      "rank": 2,
+      "rank": 3,
       "group": null,
-      "teamId": "414",
-      "name": "VET-CONCEPT Gladiators Trier",
+      "teamId": "428",
+      "name": "SYNTAINICS MBC",
       "wins": 4,
-      "losses": 1,
-      "winPct": 80,
+      "losses": 2,
+      "winPct": 66.67,
       "lastFive": [
-        "L",
         "W",
+        "L",
         "W",
         "W",
         "W"
       ],
-      "pointsFor": 500,
-      "pointsAgainst": 436,
-      "diff": 64
+      "pointsFor": 507,
+      "pointsAgainst": 479,
+      "diff": 28
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "group": null,
+      "teamId": "433",
+      "name": "MHP RIESEN Ludwigsburg",
+      "wins": 4,
+      "losses": 2,
+      "winPct": 66.67,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 532,
+      "pointsAgainst": 520,
+      "diff": 12
+    },
+    {
+      "rank": 5,
       "group": null,
       "teamId": "426",
       "name": "SKYLINERS",
@@ -59,7 +97,7 @@
       "diff": 17
     },
     {
-      "rank": 4,
+      "rank": 6,
       "group": null,
       "teamId": "422",
       "name": "Basketball Löwen Braunschweig",
@@ -77,83 +115,7 @@
       "diff": 7
     },
     {
-      "rank": 5,
-      "group": null,
-      "teamId": "415",
-      "name": "Telekom Baskets Bonn",
-      "wins": 3,
-      "losses": 2,
-      "winPct": 60,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 444,
-      "pointsAgainst": 401,
-      "diff": 43
-    },
-    {
-      "rank": 6,
-      "group": null,
-      "teamId": "433",
-      "name": "MHP RIESEN Ludwigsburg",
-      "wins": 3,
-      "losses": 2,
-      "winPct": 60,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 448,
-      "pointsAgainst": 452,
-      "diff": -4
-    },
-    {
       "rank": 7,
-      "group": null,
-      "teamId": "551",
-      "name": "ROSTOCK SEAWOLVES",
-      "wins": 3,
-      "losses": 2,
-      "winPct": 60,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 454,
-      "pointsAgainst": 402,
-      "diff": 52
-    },
-    {
-      "rank": 8,
-      "group": null,
-      "teamId": "428",
-      "name": "SYNTAINICS MBC",
-      "wins": 3,
-      "losses": 2,
-      "winPct": 60,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 404,
-      "pointsAgainst": 381,
-      "diff": 23
-    },
-    {
-      "rank": 9,
       "group": null,
       "teamId": "420",
       "name": "BMA365 Bamberg Baskets",
@@ -170,6 +132,44 @@
       "pointsFor": 528,
       "pointsAgainst": 516,
       "diff": 12
+    },
+    {
+      "rank": 8,
+      "group": null,
+      "teamId": "551",
+      "name": "ROSTOCK SEAWOLVES",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 552,
+      "pointsAgainst": 505,
+      "diff": 47
+    },
+    {
+      "rank": 9,
+      "group": null,
+      "teamId": "415",
+      "name": "Telekom Baskets Bonn",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 512,
+      "pointsAgainst": 485,
+      "diff": 27
     },
     {
       "rank": 10,
@@ -306,25 +306,6 @@
     {
       "rank": 17,
       "group": null,
-      "teamId": "541",
-      "name": "RASTA Vechta",
-      "wins": 1,
-      "losses": 4,
-      "winPct": 20,
-      "lastFive": [
-        "L",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 403,
-      "pointsAgainst": 465,
-      "diff": -62
-    },
-    {
-      "rank": 18,
-      "group": null,
       "teamId": "473",
       "name": "Phoenix Hagen",
       "wins": 1,
@@ -340,6 +321,25 @@
       "pointsFor": 438,
       "pointsAgainst": 460,
       "diff": -22
+    },
+    {
+      "rank": 18,
+      "group": null,
+      "teamId": "541",
+      "name": "RASTA Vechta",
+      "wins": 1,
+      "losses": 5,
+      "winPct": 16.67,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 491,
+      "pointsAgainst": 562,
+      "diff": -71
     }
   ]
 }
