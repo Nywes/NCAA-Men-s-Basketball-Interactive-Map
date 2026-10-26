@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-26",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -2069,6 +2069,21 @@
     ],
     "LJU": [
       {
+        "code": "015395",
+        "firstName": "Uros",
+        "lastName": "Stjepanovic",
+        "photo": null,
+        "height": 190,
+        "nationality": "SLO",
+        "position": "Guard",
+        "number": "16",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "005553",
         "firstName": "Rihards",
         "lastName": "Lomazs",
@@ -2473,7 +2488,7 @@
         "code": "015255",
         "firstName": "Julien",
         "lastName": "Taponat",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4xp/4ef692a1-6e76-494e-91e4-da21531b2411.png",
         "height": 202,
         "nationality": "FRA",
         "position": "Forward",
@@ -7385,7 +7400,7 @@
         "code": "015241",
         "firstName": "Ramiro",
         "lastName": "Rodriguez",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4xp/9c1f1a80-8deb-4395-8bd8-f09075d16213.png",
         "height": 194,
         "nationality": "ITA",
         "position": "Guard",
@@ -9123,7 +9138,7 @@
         "code": "015210",
         "firstName": "Lenny",
         "lastName": "Benczak",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4xp/f7465b9f-a67a-4547-8392-e725fedd009b.png",
         "height": 201,
         "nationality": "AUT",
         "position": "Guard",
@@ -9138,7 +9153,7 @@
         "code": "015125",
         "firstName": "Maximilian",
         "lastName": "Peters",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4xp/eef6b46e-90cb-42c5-8d4d-be5eb0525587.png",
         "height": 205,
         "nationality": "GER",
         "position": "Forward",
@@ -9195,7 +9210,7 @@
         "code": "015123",
         "firstName": "Julius",
         "lastName": "Messer",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4xp/ce0d39aa-28f4-4cb0-bfd2-969d9acc82e1.png",
         "height": 201,
         "nationality": "GER",
         "position": "Forward",
