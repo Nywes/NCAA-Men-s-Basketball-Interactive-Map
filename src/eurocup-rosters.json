@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -92,7 +92,7 @@
         "code": "004292",
         "firstName": "Vassilis",
         "lastName": "Toliopoulos",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4xq/f3447a42-4ae9-43a2-8de7-e19b894e2983.png",
         "height": 187,
         "nationality": "GRE",
         "position": "Guard",
@@ -299,7 +299,7 @@
         "code": "006085",
         "firstName": "Neno",
         "lastName": "Dimitrijevic",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4xq/e9d7f9fa-2fae-4036-bcca-f8948e0804e3.png",
         "height": 190,
         "nationality": "MKD",
         "position": "Guard",
@@ -5478,7 +5478,7 @@
         "number": "11",
         "ppg": 8.8,
         "rpg": 1.5,
-        "apg": 2.8,
+        "apg": 3,
         "gp": 4,
         "min": 21.545833333333334,
         "spg": 0.2,
@@ -5487,7 +5487,7 @@
         "p2": 50,
         "p3": 28.6,
         "ft": 100,
-        "pir": 10.5,
+        "pir": 10.8,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -5537,11 +5537,11 @@
         "min": 17.8125,
         "spg": 0.5,
         "bpg": 0,
-        "tov": 2.2,
+        "tov": 2,
         "p2": 20,
         "p3": 33.3,
         "ft": 100,
-        "pir": 2.2,
+        "pir": 2.5,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6353,11 +6353,11 @@
         "min": 23.7,
         "spg": 1.2,
         "bpg": 0,
-        "tov": 3.8,
+        "tov": 3.5,
         "p2": 47.6,
         "p3": 38.9,
         "ft": 85,
-        "pir": 14.5,
+        "pir": 14.8,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6407,11 +6407,11 @@
         "min": 22.2375,
         "spg": 1.2,
         "bpg": 0,
-        "tov": 0.8,
+        "tov": 1,
         "p2": 63.6,
         "p3": 37.5,
         "ft": 90,
-        "pir": 9.8,
+        "pir": 9.5,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -7752,6 +7752,21 @@
       }
     ],
     "RIG": [
+      {
+        "code": "015399",
+        "firstName": "Ody",
+        "lastName": "Oguama",
+        "photo": null,
+        "height": 206,
+        "nationality": "USA",
+        "position": "Center",
+        "number": "4",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "015259",
         "firstName": "Ritvars",

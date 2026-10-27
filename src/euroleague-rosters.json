@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -8,7 +8,7 @@
         "code": "014213",
         "firstName": "Cameron",
         "lastName": "Payne",
-        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4pc/284b62c2-0a18-434a-875b-eb2a8e4f4e52.png",
+        "photo": null,
         "height": 191,
         "nationality": "USA",
         "position": "Guard",
@@ -1139,6 +1139,51 @@
     ],
     "RED": [
       {
+        "code": "015396",
+        "firstName": "Christian",
+        "lastName": "Koloko",
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4xq/ed6668e6-2482-4fac-b6b5-d08966fef355.png",
+        "height": 211,
+        "nationality": "CMR",
+        "position": "Center",
+        "number": "35",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "014196",
+        "firstName": "Ognjen",
+        "lastName": "Simjanovski",
+        "photo": null,
+        "height": 194,
+        "nationality": "SRB",
+        "position": "Guard",
+        "number": "10",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "012948",
+        "firstName": "Aleksej",
+        "lastName": "Nedeljkovic",
+        "photo": null,
+        "height": 201,
+        "nationality": "SRB",
+        "position": "Guard",
+        "number": "5",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "012806",
         "firstName": "Andrej",
         "lastName": "Bjelic",
@@ -1301,13 +1346,13 @@
         "position": "Guard",
         "number": "3",
         "ppg": 1.7,
-        "rpg": 3.6,
+        "rpg": 3.4,
         "apg": 3.3,
         "gp": 7,
         "min": 20.845238095238095,
         "spg": 0.9,
         "bpg": 0,
-        "tov": 1.4,
+        "tov": 1.3,
         "p2": 23.1,
         "p3": 13.3,
         "ft": 0,
@@ -2598,7 +2643,7 @@
         "p2": 75,
         "p3": 20,
         "ft": 66.7,
-        "pir": 4.6,
+        "pir": 4.4,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -2733,7 +2778,7 @@
         "p2": 57.1,
         "p3": 41.7,
         "ft": 83.3,
-        "pir": 8.5,
+        "pir": 8.7,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -3418,13 +3463,13 @@
         "apg": 0,
         "gp": 7,
         "min": 14.983333333333334,
-        "spg": 0.4,
+        "spg": 0.6,
         "bpg": 0.7,
         "tov": 0.7,
         "p2": 60,
         "p3": 0,
         "ft": 50,
-        "pir": 5.7,
+        "pir": 5.9,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -4334,6 +4379,21 @@
       }
     ],
     "TEL": [
+      {
+        "code": "015398",
+        "firstName": "Shane",
+        "lastName": "Hunter",
+        "photo": null,
+        "height": 208,
+        "nationality": "USA",
+        "position": "Forward",
+        "number": "40",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "013289",
         "firstName": "Marcio",
@@ -5947,6 +6007,36 @@
       }
     ],
     "PAR": [
+      {
+        "code": "015400",
+        "firstName": "Robert",
+        "lastName": "Franks",
+        "photo": null,
+        "height": 203,
+        "nationality": "USA",
+        "position": "Forward",
+        "number": "8",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "015397",
+        "firstName": "Antonio",
+        "lastName": "Reeves",
+        "photo": null,
+        "height": 196,
+        "nationality": "USA",
+        "position": "Guard",
+        "number": "12",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "005793",
         "firstName": "Bandja",
@@ -7593,6 +7683,21 @@
       }
     ],
     "ZAL": [
+      {
+        "code": "011218",
+        "firstName": "Keenan",
+        "lastName": "Evans",
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHGF4xq/9ea018fd-b73e-4214-a913-0763f50c35f4.png",
+        "height": 191,
+        "nationality": "USA",
+        "position": "Guard",
+        "number": "34",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "000898",
         "firstName": "Jonas",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "season": "2026-27",
   "source": "legabasket.it",
   "rosters": {
@@ -511,34 +511,6 @@
         }
       },
       {
-        "code": "9078",
-        "firstName": "Riccardo",
-        "lastName": "Pavese",
-        "photo": null,
-        "height": null,
-        "age": 18,
-        "nationality": null,
-        "position": "",
-        "number": "4",
-        "gp": 0,
-        "min": null,
-        "ppg": null,
-        "rpg": null,
-        "apg": null,
-        "spg": null,
-        "bpg": null,
-        "tov": null,
-        "p2": 0,
-        "p3": 0,
-        "ft": 0,
-        "pir": null,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
         "code": "6619",
         "firstName": "Leonardo",
         "lastName": "Okeke",
@@ -815,34 +787,6 @@
         "leagueRank": {
           "pts": 9,
           "reb": 18,
-          "ast": null
-        }
-      },
-      {
-        "code": "9072",
-        "firstName": "Matteo",
-        "lastName": "Molteni",
-        "photo": null,
-        "height": null,
-        "age": 18,
-        "nationality": null,
-        "position": "",
-        "number": "36",
-        "gp": 0,
-        "min": null,
-        "ppg": null,
-        "rpg": null,
-        "apg": null,
-        "spg": null,
-        "bpg": null,
-        "tov": null,
-        "p2": 0,
-        "p3": 0,
-        "ft": 0,
-        "pir": null,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
           "ast": null
         }
       },
@@ -1467,34 +1411,6 @@
         }
       },
       {
-        "code": "7550",
-        "firstName": "Vittorio Salvatore",
-        "lastName": "Ferrara",
-        "photo": null,
-        "height": null,
-        "age": 18,
-        "nationality": null,
-        "position": "",
-        "number": "4",
-        "gp": 0,
-        "min": null,
-        "ppg": null,
-        "rpg": null,
-        "apg": null,
-        "spg": null,
-        "bpg": null,
-        "tov": null,
-        "p2": 0,
-        "p3": 0,
-        "ft": 0,
-        "pir": null,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
         "code": "1965",
         "firstName": "Leonardo",
         "lastName": "Faggian",
@@ -1528,7 +1444,7 @@
         "lastName": "Petrucelli",
         "photo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/uCjB2ye5SCVLUJRwgb4LhABf/thumb",
         "height": 193,
-        "age": 33,
+        "age": 34,
         "nationality": "ITA",
         "position": "Guard-Forward",
         "number": "11",

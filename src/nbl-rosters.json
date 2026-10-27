@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -2450,7 +2450,7 @@
         "leagueRank": {
           "pts": 3,
           "reb": null,
-          "ast": 18
+          "ast": 19
         }
       },
       {
@@ -2770,7 +2770,7 @@
         "age": 18,
         "nationality": "AUS",
         "position": "Guard",
-        "number": null,
+        "number": "30",
         "gp": 1,
         "min": 0.5,
         "ppg": 0,
@@ -3024,7 +3024,7 @@
         "age": 27,
         "nationality": "DEU",
         "position": "Guard",
-        "number": null,
+        "number": "11",
         "gp": 2,
         "min": 14.5,
         "ppg": 6.5,
@@ -3311,18 +3311,18 @@
         "min": 34.2,
         "ppg": 13.4,
         "rpg": 7.3,
-        "apg": 4.2,
+        "apg": 4.3,
         "spg": 0.8,
         "bpg": 0.3,
         "tov": 2,
         "p2": 63,
         "p3": 54.5,
         "ft": 74.5,
-        "pir": 20,
+        "pir": 20.1,
         "leagueRank": {
           "pts": null,
           "reb": 7,
-          "ast": 19
+          "ast": 18
         }
       },
       {

@@ -1,12 +1,12 @@
 {
-  "updated": "2026-10-26",
+  "updated": "2026-10-27",
   "season": "E2026",
   "source": "api-live.euroleague.net (Off/Def Rating et Pace calculés localement, formules standard)",
   "byClub": {
     "PAR": {
       "offRating": {
         "value": 106.97585906916049,
-        "rank": 19
+        "rank": 20
       },
       "defRating": {
         "value": 107.38364506307087,
@@ -59,15 +59,15 @@
     },
     "RED": {
       "offRating": {
-        "value": 106.95610838218983,
-        "rank": 20
+        "value": 107.23931578668643,
+        "rank": 18
       },
       "defRating": {
-        "value": 102.20250356520361,
+        "value": 102.47312397394484,
         "rank": 3
       },
       "pace": {
-        "value": 75.732,
+        "value": 75.532,
         "rank": 11
       },
       "ppg": {
@@ -91,7 +91,7 @@
         "rank": 13
       },
       "tovRatio": {
-        "value": 11.3,
+        "value": 11.2,
         "rank": 5
       },
       "orebPct": {
@@ -99,8 +99,8 @@
         "rank": 10
       },
       "drebPct": {
-        "value": 67.9,
-        "rank": 10
+        "value": 67.5,
+        "rank": 11
       },
       "threePtRate": {
         "value": 40.3,
@@ -167,15 +167,15 @@
     },
     "PRS": {
       "offRating": {
-        "value": 110.71595451949537,
+        "value": 111.00411222736972,
         "rank": 16
       },
       "defRating": {
-        "value": 120.32085561497328,
+        "value": 120.63401176409347,
         "rank": 15
       },
       "pace": {
-        "value": 77.044,
+        "value": 76.84400000000001,
         "rank": 6
       },
       "ppg": {
@@ -203,7 +203,7 @@
         "rank": 12
       },
       "orebPct": {
-        "value": 35.9,
+        "value": 36.3,
         "rank": 4
       },
       "drebPct": {
@@ -438,7 +438,7 @@
     "IST": {
       "offRating": {
         "value": 106.9808207877913,
-        "rank": 18
+        "rank": 19
       },
       "defRating": {
         "value": 108.65642400494946,
@@ -856,7 +856,7 @@
       },
       "drebPct": {
         "value": 67.8,
-        "rank": 11
+        "rank": 10
       },
       "threePtRate": {
         "value": 39.3,
