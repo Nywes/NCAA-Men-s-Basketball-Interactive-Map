@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-27",
+  "updated": "2026-10-28",
   "season": "2026-27",
   "source": "legabasket.it",
   "rosters": {
@@ -766,7 +766,7 @@
         "code": "6133",
         "firstName": "Osvaldas",
         "lastName": "Olisevicius",
-        "photo": null,
+        "photo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/fCuWPYt9sWfguwH8Xa7Vgxyr/thumb",
         "height": 200,
         "age": 33,
         "nationality": "LTU",
@@ -2118,7 +2118,7 @@
         "code": "9443",
         "firstName": "Vincenzo",
         "lastName": "Brancaccio",
-        "photo": null,
+        "photo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/9NjQohSvFQzSKcTtgwTJQ7bm/thumb",
         "height": null,
         "age": 17,
         "nationality": "ITA",
@@ -5832,7 +5832,7 @@
         "code": "6188",
         "firstName": "Riccardo",
         "lastName": "Tavernelli",
-        "photo": null,
+        "photo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/dVm1agi1gbjsiRa88uPmcarj/thumb",
         "height": 188,
         "age": 35,
         "nationality": "ITA",
