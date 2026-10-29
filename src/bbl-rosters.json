@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "rosters": {
@@ -488,7 +488,7 @@
         "lastName": "Hollersbacher",
         "photo": "https://api.basketball-bundesliga.de/images/player/portrait/2026/6158",
         "height": 202,
-        "age": 25,
+        "age": 26,
         "nationality": "DE",
         "position": "Forward",
         "number": "9",

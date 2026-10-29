@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "standings": [
@@ -44,6 +44,25 @@
     {
       "rank": 3,
       "group": "Regular Season",
+      "teamId": "HTA",
+      "name": "Hapoel IBI Tel Aviv",
+      "wins": 6,
+      "losses": 2,
+      "winPct": 75,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 748,
+      "pointsAgainst": 689,
+      "diff": 59
+    },
+    {
+      "rank": 4,
+      "group": "Regular Season",
       "teamId": "ULK",
       "name": "Fenerbahce Beko Istanbul",
       "wins": 6,
@@ -61,42 +80,23 @@
       "diff": 49
     },
     {
-      "rank": 4,
+      "rank": 5,
       "group": "Regular Season",
       "teamId": "OLY",
       "name": "Olympiacos Piraeus",
-      "wins": 5,
+      "wins": 6,
       "losses": 2,
-      "winPct": 71.4,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 625,
-      "pointsAgainst": 588,
-      "diff": 37
-    },
-    {
-      "rank": 5,
-      "group": "Regular Season",
-      "teamId": "HTA",
-      "name": "Hapoel IBI Tel Aviv",
-      "wins": 5,
-      "losses": 2,
-      "winPct": 71.4,
+      "winPct": 75,
       "lastFive": [
         "W",
+        "W",
+        "W",
         "L",
-        "W",
-        "W",
         "W"
       ],
-      "pointsFor": 630,
-      "pointsAgainst": 601,
-      "diff": 29
+      "pointsFor": 706,
+      "pointsAgainst": 661,
+      "diff": 45
     },
     {
       "rank": 6,
@@ -177,21 +177,21 @@
     {
       "rank": 10,
       "group": "Regular Season",
-      "teamId": "VIR",
-      "name": "Virtus Bologna",
+      "teamId": "ZAL",
+      "name": "Zalgiris Kaunas",
       "wins": 4,
-      "losses": 3,
-      "winPct": 57.1,
+      "losses": 4,
+      "winPct": 50,
       "lastFive": [
         "W",
+        "L",
+        "L",
         "W",
-        "W",
-        "W",
-        "L"
+        "W"
       ],
-      "pointsFor": 606,
-      "pointsAgainst": 608,
-      "diff": -2
+      "pointsFor": 686,
+      "pointsAgainst": 676,
+      "diff": 10
     },
     {
       "rank": 11,
@@ -199,94 +199,94 @@
       "teamId": "PAR",
       "name": "Partizan Mozzart Bet Belgrade",
       "wins": 4,
-      "losses": 3,
-      "winPct": 57.1,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 541,
-      "pointsAgainst": 546,
-      "diff": -5
-    },
-    {
-      "rank": 12,
-      "group": "Regular Season",
-      "teamId": "ZAL",
-      "name": "Zalgiris Kaunas",
-      "wins": 3,
       "losses": 4,
-      "winPct": 42.9,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 595,
-      "pointsAgainst": 602,
-      "diff": -7
-    },
-    {
-      "rank": 13,
-      "group": "Regular Season",
-      "teamId": "IST",
-      "name": "Anadolu Efes Istanbul",
-      "wins": 3,
-      "losses": 4,
-      "winPct": 42.9,
+      "winPct": 50,
       "lastFive": [
         "L",
         "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 581,
-      "pointsAgainst": 590,
-      "diff": -9
-    },
-    {
-      "rank": 14,
-      "group": "Regular Season",
-      "teamId": "BES",
-      "name": "Besiktas",
-      "wins": 3,
-      "losses": 4,
-      "winPct": 42.9,
-      "lastFive": [
-        "L",
-        "W",
         "L",
         "W",
         "L"
       ],
-      "pointsFor": 634,
-      "pointsAgainst": 644,
-      "diff": -10
+      "pointsFor": 616,
+      "pointsAgainst": 628,
+      "diff": -12
+    },
+    {
+      "rank": 12,
+      "group": "Regular Season",
+      "teamId": "VIR",
+      "name": "Virtus Bologna",
+      "wins": 4,
+      "losses": 4,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 680,
+      "pointsAgainst": 699,
+      "diff": -19
+    },
+    {
+      "rank": 13,
+      "group": "Regular Season",
+      "teamId": "BES",
+      "name": "Besiktas",
+      "wins": 3,
+      "losses": 5,
+      "winPct": 37.5,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 707,
+      "pointsAgainst": 725,
+      "diff": -18
+    },
+    {
+      "rank": 14,
+      "group": "Regular Season",
+      "teamId": "IST",
+      "name": "Anadolu Efes Istanbul",
+      "wins": 3,
+      "losses": 5,
+      "winPct": 37.5,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 669,
+      "pointsAgainst": 708,
+      "diff": -39
     },
     {
       "rank": 15,
       "group": "Regular Season",
       "teamId": "ASV",
       "name": "LDLC ASVEL Villeurbanne",
-      "wins": 2,
+      "wins": 3,
       "losses": 5,
-      "winPct": 28.6,
+      "winPct": 37.5,
       "lastFive": [
-        "L",
         "W",
         "L",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "pointsFor": 612,
-      "pointsAgainst": 677,
-      "diff": -65
+      "pointsFor": 694,
+      "pointsAgainst": 752,
+      "diff": -58
     },
     {
       "rank": 16,

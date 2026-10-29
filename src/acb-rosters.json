@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-28",
+  "updated": "2026-10-29",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -1078,7 +1078,7 @@
         "lastName": "Hlinason",
         "photo": "https://static.acb.com/media/PRO/00/00/93/22/50/0000932250_5-6_01.jpg",
         "height": 215,
-        "age": 28,
+        "age": 29,
         "nationality": "ISL",
         "position": "Center",
         "number": "32",
