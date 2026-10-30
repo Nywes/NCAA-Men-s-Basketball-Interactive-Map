@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -7,11 +7,11 @@
     {
       "rank": 1,
       "group": null,
-      "teamId": "0602b1bc-8dfb-488c-ac11-7895de1a7556",
-      "name": "Tasmania JackJumpers",
-      "wins": 6,
-      "losses": 2,
-      "winPct": 75,
+      "teamId": "39fc4268-0cdf-455f-9ca1-12e344064000",
+      "name": "Sydney Kings",
+      "wins": 7,
+      "losses": 3,
+      "winPct": 70,
       "lastFive": [
         "W",
         "W",
@@ -19,28 +19,28 @@
         "W",
         "W"
       ],
-      "pointsFor": 790,
-      "pointsAgainst": 748,
-      "diff": 42
+      "pointsFor": 979,
+      "pointsAgainst": 881,
+      "diff": 98
     },
     {
       "rank": 2,
       "group": null,
-      "teamId": "39fc4268-0cdf-455f-9ca1-12e344064000",
-      "name": "Sydney Kings",
+      "teamId": "0602b1bc-8dfb-488c-ac11-7895de1a7556",
+      "name": "Tasmania JackJumpers",
       "wins": 6,
       "losses": 3,
       "winPct": 66.7,
       "lastFive": [
+        "W",
         "L",
         "W",
         "W",
-        "L",
-        "W"
+        "L"
       ],
-      "pointsFor": 908,
-      "pointsAgainst": 813,
-      "diff": 95
+      "pointsFor": 858,
+      "pointsAgainst": 819,
+      "diff": 39
     },
     {
       "rank": 3,
@@ -83,6 +83,25 @@
     {
       "rank": 5,
       "group": null,
+      "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
+      "name": "Adelaide 36ers",
+      "wins": 5,
+      "losses": 5,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 912,
+      "pointsAgainst": 935,
+      "diff": -23
+    },
+    {
+      "rank": 6,
+      "group": null,
       "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
       "name": "South East Melbourne Phoenix",
       "wins": 4,
@@ -100,7 +119,7 @@
       "diff": 35
     },
     {
-      "rank": 6,
+      "rank": 7,
       "group": null,
       "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
       "name": "Melbourne United",
@@ -119,45 +138,7 @@
       "diff": 26
     },
     {
-      "rank": 7,
-      "group": null,
-      "teamId": "bbae77db-317d-4c17-aa04-75d53d20ad15",
-      "name": "NZ Breakers",
-      "wins": 4,
-      "losses": 5,
-      "winPct": 44.4,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 821,
-      "pointsAgainst": 798,
-      "diff": 23
-    },
-    {
       "rank": 8,
-      "group": null,
-      "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
-      "name": "Adelaide 36ers",
-      "wins": 4,
-      "losses": 5,
-      "winPct": 44.4,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 804,
-      "pointsAgainst": 834,
-      "diff": -30
-    },
-    {
-      "rank": 9,
       "group": null,
       "teamId": "f8185bc5-2674-4293-a2a7-aeb8c7549b30",
       "name": "Brisbane Bullets",
@@ -174,6 +155,25 @@
       "pointsFor": 842,
       "pointsAgainst": 878,
       "diff": -36
+    },
+    {
+      "rank": 9,
+      "group": null,
+      "teamId": "bbae77db-317d-4c17-aa04-75d53d20ad15",
+      "name": "NZ Breakers",
+      "wins": 4,
+      "losses": 6,
+      "winPct": 40,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 922,
+      "pointsAgainst": 906,
+      "diff": 16
     },
     {
       "rank": 10,

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -1484,7 +1484,7 @@
         "firstName": "Reginald",
         "lastName": "Perry",
         "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnOW8/25727378-bf5d-44de-aa38-15f5e3adc243.png",
-        "height": 130,
+        "height": 205,
         "nationality": "USA",
         "position": "Center",
         "number": "11",
@@ -9313,8 +9313,8 @@
         "min": 21.633333333333333,
         "spg": 0.4,
         "bpg": 0.4,
-        "tov": 1.8,
-        "p2": 66.7,
+        "tov": 1.6,
+        "p2": 64.5,
         "p3": 50,
         "ft": 44.4,
         "pir": 11.6,

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "standings": [
@@ -63,25 +63,6 @@
     {
       "rank": 4,
       "group": "Regular Season",
-      "teamId": "ULK",
-      "name": "Fenerbahce Beko Istanbul",
-      "wins": 6,
-      "losses": 2,
-      "winPct": 75,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 643,
-      "pointsAgainst": 594,
-      "diff": 49
-    },
-    {
-      "rank": 5,
-      "group": "Regular Season",
       "teamId": "OLY",
       "name": "Olympiacos Piraeus",
       "wins": 6,
@@ -99,13 +80,32 @@
       "diff": 45
     },
     {
+      "rank": 5,
+      "group": "Regular Season",
+      "teamId": "RED",
+      "name": "Crvena Zvezda Meridianbet Belgrade",
+      "wins": 6,
+      "losses": 3,
+      "winPct": 66.7,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 763,
+      "pointsAgainst": 683,
+      "diff": 80
+    },
+    {
       "rank": 6,
       "group": "Regular Season",
       "teamId": "MAD",
       "name": "Real Madrid",
-      "wins": 5,
+      "wins": 6,
       "losses": 3,
-      "winPct": 62.5,
+      "winPct": 66.7,
       "lastFive": [
         "W",
         "W",
@@ -113,28 +113,28 @@
         "W",
         "W"
       ],
-      "pointsFor": 771,
-      "pointsAgainst": 716,
-      "diff": 55
+      "pointsFor": 866,
+      "pointsAgainst": 792,
+      "diff": 74
     },
     {
       "rank": 7,
       "group": "Regular Season",
-      "teamId": "RED",
-      "name": "Crvena Zvezda Meridianbet Belgrade",
-      "wins": 5,
+      "teamId": "ULK",
+      "name": "Fenerbahce Beko Istanbul",
+      "wins": 6,
       "losses": 3,
-      "winPct": 62.5,
+      "winPct": 66.7,
       "lastFive": [
         "W",
         "W",
         "W",
         "L",
-        "W"
+        "L"
       ],
-      "pointsFor": 660,
-      "pointsAgainst": 610,
-      "diff": 50
+      "pointsFor": 719,
+      "pointsAgainst": 689,
+      "diff": 30
     },
     {
       "rank": 8,
@@ -293,28 +293,28 @@
       "group": "Regular Season",
       "teamId": "PRS",
       "name": "Paris Basketball",
-      "wins": 2,
+      "wins": 3,
       "losses": 6,
-      "winPct": 25,
+      "winPct": 33.3,
       "lastFive": [
         "L",
         "L",
         "L",
-        "L",
+        "W",
         "W"
       ],
-      "pointsFor": 696,
-      "pointsAgainst": 742,
-      "diff": -46
+      "pointsFor": 795,
+      "pointsAgainst": 836,
+      "diff": -41
     },
     {
       "rank": 17,
       "group": "Regular Season",
-      "teamId": "MUN",
-      "name": "FC Bayern Munich",
+      "teamId": "TEL",
+      "name": "Maccabi Rapyd Tel Aviv",
       "wins": 2,
-      "losses": 6,
-      "winPct": 25,
+      "losses": 7,
+      "winPct": 22.2,
       "lastFive": [
         "L",
         "W",
@@ -322,28 +322,28 @@
         "L",
         "L"
       ],
-      "pointsFor": 696,
-      "pointsAgainst": 747,
-      "diff": -51
+      "pointsFor": 780,
+      "pointsAgainst": 852,
+      "diff": -72
     },
     {
       "rank": 18,
       "group": "Regular Season",
-      "teamId": "TEL",
-      "name": "Maccabi Rapyd Tel Aviv",
+      "teamId": "MUN",
+      "name": "FC Bayern Munich",
       "wins": 2,
-      "losses": 6,
-      "winPct": 25,
+      "losses": 7,
+      "winPct": 22.2,
       "lastFive": [
         "W",
         "L",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "pointsFor": 686,
-      "pointsAgainst": 753,
-      "diff": -67
+      "pointsFor": 769,
+      "pointsAgainst": 850,
+      "diff": -81
     },
     {
       "rank": 19,

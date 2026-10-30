@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -362,6 +362,34 @@
         "p3": 0,
         "ft": 69.23,
         "pir": 15,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "30004606",
+        "firstName": "Jakob",
+        "lastName": "Siftar",
+        "photo": null,
+        "height": null,
+        "age": 17,
+        "nationality": "SLO",
+        "position": "",
+        "number": "42",
+        "gp": 0,
+        "min": null,
+        "ppg": null,
+        "rpg": null,
+        "apg": null,
+        "spg": null,
+        "bpg": null,
+        "tov": null,
+        "p2": null,
+        "p3": null,
+        "ft": null,
+        "pir": null,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -4536,7 +4564,7 @@
         "code": "30002409",
         "firstName": "Rati",
         "lastName": "Andronikashvili",
-        "photo": null,
+        "photo": "https://static.acb.com/media/PRO/00/00/94/73/74/0000947374_5-6_01.jpg",
         "height": 194,
         "age": 25,
         "nationality": "GEO",
