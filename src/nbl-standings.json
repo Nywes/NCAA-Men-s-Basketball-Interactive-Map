@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -67,21 +67,40 @@
       "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
       "name": "Cairns Taipans",
       "wins": 6,
-      "losses": 4,
-      "winPct": 60,
+      "losses": 5,
+      "winPct": 54.5,
       "lastFive": [
         "W",
+        "L",
         "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 1014,
+      "pointsAgainst": 1062,
+      "diff": -48
+    },
+    {
+      "rank": 5,
+      "group": null,
+      "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
+      "name": "Melbourne United",
+      "wins": 5,
+      "losses": 5,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "L",
         "L",
         "W",
         "W"
       ],
-      "pointsFor": 917,
-      "pointsAgainst": 949,
-      "diff": -32
+      "pointsFor": 967,
+      "pointsAgainst": 925,
+      "diff": 42
     },
     {
-      "rank": 5,
+      "rank": 6,
       "group": null,
       "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
       "name": "Adelaide 36ers",
@@ -100,7 +119,7 @@
       "diff": -23
     },
     {
-      "rank": 6,
+      "rank": 7,
       "group": null,
       "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
       "name": "South East Melbourne Phoenix",
@@ -117,25 +136,6 @@
       "pointsFor": 880,
       "pointsAgainst": 845,
       "diff": 35
-    },
-    {
-      "rank": 7,
-      "group": null,
-      "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
-      "name": "Melbourne United",
-      "wins": 4,
-      "losses": 5,
-      "winPct": 44.4,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 854,
-      "pointsAgainst": 828,
-      "diff": 26
     },
     {
       "rank": 8,

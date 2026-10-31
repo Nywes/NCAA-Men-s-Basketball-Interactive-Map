@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -44,6 +44,25 @@
     {
       "rank": 3,
       "group": null,
+      "teamId": "426",
+      "name": "SKYLINERS",
+      "wins": 4,
+      "losses": 1,
+      "winPct": 80,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 451,
+      "pointsAgainst": 423,
+      "diff": 28
+    },
+    {
+      "rank": 4,
+      "group": null,
       "teamId": "428",
       "name": "SYNTAINICS MBC",
       "wins": 4,
@@ -61,7 +80,7 @@
       "diff": 28
     },
     {
-      "rank": 4,
+      "rank": 5,
       "group": null,
       "teamId": "433",
       "name": "MHP RIESEN Ludwigsburg",
@@ -78,24 +97,6 @@
       "pointsFor": 532,
       "pointsAgainst": 520,
       "diff": 12
-    },
-    {
-      "rank": 5,
-      "group": null,
-      "teamId": "426",
-      "name": "SKYLINERS",
-      "wins": 3,
-      "losses": 1,
-      "winPct": 75,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "pointsFor": 358,
-      "pointsAgainst": 341,
-      "diff": 17
     },
     {
       "rank": 6,
@@ -233,25 +234,6 @@
     {
       "rank": 13,
       "group": null,
-      "teamId": "483",
-      "name": "Science City Jena",
-      "wins": 2,
-      "losses": 3,
-      "winPct": 40,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 376,
-      "pointsAgainst": 437,
-      "diff": -61
-    },
-    {
-      "rank": 14,
-      "group": null,
       "teamId": "418",
       "name": "ratiopharm ulm",
       "wins": 2,
@@ -269,26 +251,64 @@
       "diff": -37
     },
     {
-      "rank": 15,
+      "rank": 14,
       "group": null,
-      "teamId": "473",
-      "name": "Phoenix Hagen",
+      "teamId": "483",
+      "name": "Science City Jena",
       "wins": 2,
       "losses": 4,
       "winPct": 33.33,
       "lastFive": [
         "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 458,
+      "pointsAgainst": 530,
+      "diff": -72
+    },
+    {
+      "rank": 15,
+      "group": null,
+      "teamId": "541",
+      "name": "RASTA Vechta",
+      "wins": 2,
+      "losses": 5,
+      "winPct": 28.57,
+      "lastFive": [
         "L",
         "L",
         "W",
+        "L",
         "W"
       ],
-      "pointsFor": 526,
-      "pointsAgainst": 533,
-      "diff": -7
+      "pointsFor": 591,
+      "pointsAgainst": 636,
+      "diff": -45
     },
     {
       "rank": 16,
+      "group": null,
+      "teamId": "473",
+      "name": "Phoenix Hagen",
+      "wins": 2,
+      "losses": 5,
+      "winPct": 28.57,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 600,
+      "pointsAgainst": 633,
+      "diff": -33
+    },
+    {
+      "rank": 17,
       "group": null,
       "teamId": "554",
       "name": "Veolia Towers Hamburg",
@@ -305,25 +325,6 @@
       "pointsFor": 479,
       "pointsAgainst": 537,
       "diff": -58
-    },
-    {
-      "rank": 17,
-      "group": null,
-      "teamId": "541",
-      "name": "RASTA Vechta",
-      "wins": 1,
-      "losses": 5,
-      "winPct": 16.67,
-      "lastFive": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "pointsFor": 491,
-      "pointsAgainst": 562,
-      "diff": -71
     },
     {
       "rank": 18,

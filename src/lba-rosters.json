@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-30",
+  "updated": "2026-10-31",
   "season": "2026-27",
   "source": "legabasket.it",
   "rosters": {
@@ -2372,7 +2372,7 @@
         "lastName": "Onyema",
         "photo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/1wLBcwvvb9Zzi2XMrHWzFjcG/thumb",
         "height": 206,
-        "age": 24,
+        "age": 25,
         "nationality": "USA",
         "position": "Center",
         "number": "21",
@@ -4651,7 +4651,7 @@
         "firstName": "Lodovico",
         "lastName": "Deangeli",
         "photo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/vhLmiReYzdx5qeFXsxB9j2SW/thumb",
-        "height": 205,
+        "height": 203,
         "age": 26,
         "nationality": "ITA",
         "position": "Guard-Forward",
