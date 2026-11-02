@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -4418,6 +4418,21 @@
     ],
     "LEM": [
       {
+        "code": "015403",
+        "firstName": "Nathan",
+        "lastName": "Kuta",
+        "photo": null,
+        "height": 200,
+        "nationality": "NED",
+        "position": "Center",
+        "number": "77",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "014878",
         "firstName": "Lucas",
         "lastName": "Dufeal",
@@ -4761,6 +4776,21 @@
       }
     ],
     "LKB": [
+      {
+        "code": "005793",
+        "firstName": "Bandja",
+        "lastName": "Sy",
+        "photo": null,
+        "height": 205,
+        "nationality": "FRA",
+        "position": "Forward",
+        "number": "35",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "015221",
         "firstName": "Titas",

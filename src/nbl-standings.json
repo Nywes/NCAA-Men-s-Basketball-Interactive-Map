@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -64,6 +64,25 @@
     {
       "rank": 4,
       "group": null,
+      "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
+      "name": "Melbourne United",
+      "wins": 6,
+      "losses": 5,
+      "winPct": 54.5,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 1061,
+      "pointsAgainst": 999,
+      "diff": 62
+    },
+    {
+      "rank": 5,
+      "group": null,
       "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
       "name": "Cairns Taipans",
       "wins": 6,
@@ -79,25 +98,6 @@
       "pointsFor": 1014,
       "pointsAgainst": 1062,
       "diff": -48
-    },
-    {
-      "rank": 5,
-      "group": null,
-      "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
-      "name": "Melbourne United",
-      "wins": 5,
-      "losses": 5,
-      "winPct": 50,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 967,
-      "pointsAgainst": 925,
-      "diff": 42
     },
     {
       "rank": 6,
@@ -162,18 +162,18 @@
       "teamId": "bbae77db-317d-4c17-aa04-75d53d20ad15",
       "name": "NZ Breakers",
       "wins": 4,
-      "losses": 6,
-      "winPct": 40,
+      "losses": 7,
+      "winPct": 36.4,
       "lastFive": [
-        "L",
         "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "pointsFor": 922,
-      "pointsAgainst": 906,
-      "diff": 16
+      "pointsFor": 996,
+      "pointsAgainst": 1000,
+      "diff": -4
     },
     {
       "rank": 10,

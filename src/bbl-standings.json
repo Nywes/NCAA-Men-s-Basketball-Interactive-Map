@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -9,18 +9,18 @@
       "teamId": "486",
       "name": "FC Bayern München Basketball",
       "wins": 5,
-      "losses": 0,
-      "winPct": 100,
+      "losses": 1,
+      "winPct": 83.33,
       "lastFive": [
         "W",
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ],
-      "pointsFor": 499,
-      "pointsAgainst": 353,
-      "diff": 146
+      "pointsFor": 566,
+      "pointsAgainst": 422,
+      "diff": 144
     },
     {
       "rank": 2,
@@ -44,6 +44,25 @@
     {
       "rank": 3,
       "group": null,
+      "teamId": "428",
+      "name": "SYNTAINICS MBC",
+      "wins": 5,
+      "losses": 2,
+      "winPct": 71.43,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 616,
+      "pointsAgainst": 568,
+      "diff": 48
+    },
+    {
+      "rank": 4,
+      "group": null,
       "teamId": "426",
       "name": "SKYLINERS",
       "wins": 4,
@@ -58,25 +77,6 @@
       ],
       "pointsFor": 451,
       "pointsAgainst": 423,
-      "diff": 28
-    },
-    {
-      "rank": 4,
-      "group": null,
-      "teamId": "428",
-      "name": "SYNTAINICS MBC",
-      "wins": 4,
-      "losses": 2,
-      "winPct": 66.67,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "pointsFor": 507,
-      "pointsAgainst": 479,
       "diff": 28
     },
     {
@@ -120,11 +120,49 @@
     {
       "rank": 7,
       "group": null,
+      "teamId": "551",
+      "name": "ROSTOCK SEAWOLVES",
+      "wins": 4,
+      "losses": 3,
+      "winPct": 57.14,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 621,
+      "pointsAgainst": 572,
+      "diff": 49
+    },
+    {
+      "rank": 8,
+      "group": null,
       "teamId": "420",
       "name": "BMA365 Bamberg Baskets",
-      "wins": 3,
+      "wins": 4,
       "losses": 3,
-      "winPct": 50,
+      "winPct": 57.14,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 616,
+      "pointsAgainst": 594,
+      "diff": 22
+    },
+    {
+      "rank": 9,
+      "group": null,
+      "teamId": "415",
+      "name": "Telekom Baskets Bonn",
+      "wins": 4,
+      "losses": 3,
+      "winPct": 57.14,
       "lastFive": [
         "W",
         "L",
@@ -132,12 +170,12 @@
         "L",
         "W"
       ],
-      "pointsFor": 528,
-      "pointsAgainst": 516,
-      "diff": 12
+      "pointsFor": 607,
+      "pointsAgainst": 573,
+      "diff": 34
     },
     {
-      "rank": 8,
+      "rank": 10,
       "group": null,
       "teamId": "422",
       "name": "Basketball Löwen Braunschweig",
@@ -156,61 +194,23 @@
       "diff": -32
     },
     {
-      "rank": 9,
-      "group": null,
-      "teamId": "415",
-      "name": "Telekom Baskets Bonn",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "pointsFor": 512,
-      "pointsAgainst": 485,
-      "diff": 27
-    },
-    {
-      "rank": 10,
-      "group": null,
-      "teamId": "551",
-      "name": "ROSTOCK SEAWOLVES",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 552,
-      "pointsAgainst": 505,
-      "diff": 47
-    },
-    {
       "rank": 11,
       "group": null,
       "teamId": "413",
       "name": "ALBA BERLIN",
       "wins": 3,
-      "losses": 3,
-      "winPct": 50,
+      "losses": 4,
+      "winPct": 42.86,
       "lastFive": [
+        "L",
+        "L",
+        "L",
         "W",
-        "L",
-        "L",
-        "L",
-        "W"
+        "L"
       ],
-      "pointsFor": 500,
-      "pointsAgainst": 535,
-      "diff": -35
+      "pointsFor": 588,
+      "pointsAgainst": 630,
+      "diff": -42
     },
     {
       "rank": 12,
@@ -256,18 +256,18 @@
       "teamId": "483",
       "name": "Science City Jena",
       "wins": 2,
-      "losses": 4,
-      "winPct": 33.33,
+      "losses": 5,
+      "winPct": 28.57,
       "lastFive": [
+        "W",
+        "W",
         "L",
-        "W",
-        "W",
         "L",
         "L"
       ],
-      "pointsFor": 458,
-      "pointsAgainst": 530,
-      "diff": -72
+      "pointsFor": 536,
+      "pointsAgainst": 618,
+      "diff": -82
     },
     {
       "rank": 15,
@@ -332,18 +332,18 @@
       "teamId": "554",
       "name": "Veolia Towers Hamburg",
       "wins": 1,
-      "losses": 5,
-      "winPct": 16.67,
+      "losses": 6,
+      "winPct": 14.29,
       "lastFive": [
-        "W",
+        "L",
         "L",
         "L",
         "L",
         "L"
       ],
-      "pointsFor": 479,
-      "pointsAgainst": 537,
-      "diff": -58
+      "pointsFor": 568,
+      "pointsAgainst": 646,
+      "diff": -78
     }
   ]
 }
