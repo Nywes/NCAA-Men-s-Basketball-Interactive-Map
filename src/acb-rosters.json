@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -3377,34 +3377,6 @@
           "reb": null,
           "ast": null
         }
-      },
-      {
-        "code": "20213230",
-        "firstName": "Yankuba",
-        "lastName": "Sima",
-        "photo": "https://static.acb.com/media/PRO/00/00/93/13/83/0000931383_5-6_01.jpg",
-        "height": 211,
-        "age": 30,
-        "nationality": "ESP",
-        "position": "Center",
-        "number": "77",
-        "gp": 0,
-        "min": null,
-        "ppg": null,
-        "rpg": null,
-        "apg": null,
-        "spg": null,
-        "bpg": null,
-        "tov": null,
-        "p2": null,
-        "p3": null,
-        "ft": null,
-        "pir": null,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
       }
     ],
     "14": [
@@ -6086,7 +6058,7 @@
         "lastName": "Radosavljevic",
         "photo": "https://static.acb.com/media/PRO/00/00/93/88/69/0000938869_5-6_01.jpg",
         "height": 201,
-        "age": 24,
+        "age": 25,
         "nationality": "SRB",
         "position": "Forward",
         "number": "15",

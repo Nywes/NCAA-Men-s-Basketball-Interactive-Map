@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "season": "2026-27",
   "source": "legabasket.it",
   "standings": [
@@ -9,18 +9,18 @@
       "teamId": "6",
       "name": "Virtus Costa Bologna",
       "wins": 5,
-      "losses": 0,
-      "winPct": 100,
+      "losses": 1,
+      "winPct": 83.3,
       "lastFive": [
         "W",
         "W",
         "W",
         "W",
-        "W"
+        "L"
       ],
-      "pointsFor": 487,
-      "pointsAgainst": 421,
-      "diff": 66
+      "pointsFor": 580,
+      "pointsAgainst": 521,
+      "diff": 59
     },
     {
       "rank": 2,
@@ -63,6 +63,25 @@
     {
       "rank": 4,
       "group": null,
+      "teamId": "28",
+      "name": "Armani Olimpia Milano",
+      "wins": 4,
+      "losses": 2,
+      "winPct": 66.7,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 548,
+      "pointsAgainst": 493,
+      "diff": 55
+    },
+    {
+      "rank": 5,
+      "group": null,
       "teamId": "247",
       "name": "Maxima Roma",
       "wins": 4,
@@ -80,7 +99,7 @@
       "diff": 19
     },
     {
-      "rank": 5,
+      "rank": 6,
       "group": null,
       "teamId": "60",
       "name": "Openjobmetis Varese",
@@ -99,26 +118,26 @@
       "diff": 4
     },
     {
-      "rank": 6,
+      "rank": 7,
       "group": null,
-      "teamId": "28",
-      "name": "Armani Olimpia Milano",
+      "teamId": "61",
+      "name": "Umana Reyer Venezia",
       "wins": 3,
-      "losses": 2,
-      "winPct": 60,
+      "losses": 3,
+      "winPct": 50,
       "lastFive": [
         "W",
         "L",
         "W",
-        "W",
+        "L",
         "L"
       ],
-      "pointsFor": 453,
-      "pointsAgainst": 411,
-      "diff": 42
+      "pointsFor": 532,
+      "pointsAgainst": 542,
+      "diff": -10
     },
     {
-      "rank": 7,
+      "rank": 8,
       "group": null,
       "teamId": "104",
       "name": "Dolomiti Energia Trentino",
@@ -137,42 +156,23 @@
       "diff": -20
     },
     {
-      "rank": 8,
-      "group": null,
-      "teamId": "63",
-      "name": "Tezenis Verona",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 538,
-      "pointsAgainst": 543,
-      "diff": -5
-    },
-    {
       "rank": 9,
       "group": null,
-      "teamId": "61",
-      "name": "Umana Reyer Venezia",
+      "teamId": "106",
+      "name": "Pallacanestro Trieste",
       "wins": 3,
       "losses": 3,
       "winPct": 50,
       "lastFive": [
-        "W",
+        "L",
         "L",
         "W",
-        "L",
-        "L"
+        "W",
+        "W"
       ],
-      "pointsFor": 532,
-      "pointsAgainst": 542,
-      "diff": -10
+      "pointsFor": 545,
+      "pointsAgainst": 519,
+      "diff": 26
     },
     {
       "rank": 10,
@@ -196,21 +196,21 @@
     {
       "rank": 11,
       "group": null,
-      "teamId": "106",
-      "name": "Pallacanestro Trieste",
-      "wins": 2,
+      "teamId": "63",
+      "name": "Tezenis Verona",
+      "wins": 3,
       "losses": 3,
-      "winPct": 40,
+      "winPct": 50,
       "lastFive": [
-        "L",
-        "L",
-        "L",
         "W",
-        "W"
+        "W",
+        "W",
+        "L",
+        "L"
       ],
-      "pointsFor": 445,
-      "pointsAgainst": 426,
-      "diff": 19
+      "pointsFor": 538,
+      "pointsAgainst": 543,
+      "diff": -5
     },
     {
       "rank": 12,
@@ -294,7 +294,7 @@
       "teamId": "12",
       "name": "Acqua S.Bernardo Cantù",
       "wins": 0,
-      "losses": 5,
+      "losses": 6,
       "winPct": 0,
       "lastFive": [
         "L",
@@ -303,9 +303,9 @@
         "L",
         "L"
       ],
-      "pointsFor": 369,
-      "pointsAgainst": 442,
-      "diff": -73
+      "pointsFor": 451,
+      "pointsAgainst": 537,
+      "diff": -86
     }
   ]
 }

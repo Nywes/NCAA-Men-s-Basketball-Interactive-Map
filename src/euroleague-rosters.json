@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -2393,7 +2393,7 @@
         "code": "013541",
         "firstName": "Caspar",
         "lastName": "Vossenberg",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLm/73ac507a-cb19-4d68-a862-78391a1f6635.png",
         "height": 202,
         "nationality": "GER",
         "position": "Guard",
@@ -2462,7 +2462,7 @@
         "code": "012838",
         "firstName": "Andrija",
         "lastName": "Susic",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLm/47d4d8fc-2158-4e14-8724-cabaed68a79f.png",
         "height": 195,
         "nationality": "SRB",
         "position": "Guard",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-02",
+  "updated": "2026-11-03",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -3633,6 +3633,21 @@
       }
     ],
     "MAN": [
+      {
+        "code": "010594",
+        "firstName": "Luka",
+        "lastName": "Scuka",
+        "photo": null,
+        "height": 208,
+        "nationality": "SLO",
+        "position": "Forward",
+        "number": "3",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "013498",
         "firstName": "Gerard",
