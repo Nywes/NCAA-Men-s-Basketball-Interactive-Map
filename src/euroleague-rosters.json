@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -2821,6 +2821,21 @@
     ],
     "ULK": [
       {
+        "code": "015405",
+        "firstName": "Dwight",
+        "lastName": "Powell",
+        "photo": null,
+        "height": 212,
+        "nationality": "CAN",
+        "position": "Center",
+        "number": "16",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "007200",
         "firstName": "Shane",
         "lastName": "Larkin",
@@ -3180,6 +3195,21 @@
     ],
     "HTA": [
       {
+        "code": "011193",
+        "firstName": "Tamir",
+        "lastName": "Blatt",
+        "photo": null,
+        "height": 178,
+        "nationality": "ISR",
+        "position": "Guard",
+        "number": "45",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "008912",
         "firstName": "Khadeen",
         "lastName": "Carrington",
@@ -3468,36 +3498,6 @@
         }
       },
       {
-        "code": "009877",
-        "firstName": "Oz",
-        "lastName": "Blayzer",
-        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnOO0/b58aa6da-916c-49a8-a8dd-fda7bfbecb12.png",
-        "height": 200,
-        "nationality": "ISR",
-        "position": "Forward",
-        "number": "14",
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "008858",
-        "firstName": "Tyler",
-        "lastName": "Ennis",
-        "photo": null,
-        "height": 188,
-        "nationality": "CAN",
-        "position": "Guard",
-        "number": "11",
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
         "code": "004846",
         "firstName": "Bar",
         "lastName": "Timor",
@@ -3506,21 +3506,6 @@
         "nationality": "ISR",
         "position": "Guard",
         "number": "10",
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "013283",
-        "firstName": "Guy",
-        "lastName": "Palatin",
-        "photo": null,
-        "height": 195,
-        "nationality": "ISR",
-        "position": "Guard",
-        "number": "9",
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -3604,21 +3589,6 @@
         "p3": 25,
         "ft": 81.8,
         "pir": 9.6,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "014169",
-        "firstName": "Alex",
-        "lastName": "Len",
-        "photo": null,
-        "height": 213,
-        "nationality": "UKR",
-        "position": "Center",
-        "number": "21",
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -3969,6 +3939,21 @@
       }
     ],
     "ASV": [
+      {
+        "code": "014277",
+        "firstName": "Yohan",
+        "lastName": "Bassoumba",
+        "photo": null,
+        "height": 199,
+        "nationality": "FRA",
+        "position": "Forward",
+        "number": "93",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "014597",
         "firstName": "Lorenz",
@@ -4391,33 +4376,6 @@
         "nationality": "USA",
         "position": "Forward",
         "number": "40",
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "013289",
-        "firstName": "Marcio",
-        "lastName": "Santos",
-        "photo": null,
-        "height": 204,
-        "nationality": "BRA",
-        "position": "Center",
-        "number": "3",
-        "ppg": 8.3,
-        "rpg": 4,
-        "apg": 0.7,
-        "gp": 7,
-        "min": 16.43095238095238,
-        "spg": 0.7,
-        "bpg": 0.1,
-        "tov": 1.1,
-        "p2": 65.4,
-        "p3": 25,
-        "ft": 81.8,
-        "pir": 9.6,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -5242,7 +5200,7 @@
         "code": "006544",
         "firstName": "Dimitris",
         "lastName": "Moraitis",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLn/452e4a09-a9f7-4e6a-b1ad-5afec2b6d891.png",
         "height": 190,
         "nationality": "GRE",
         "position": "Guard",
@@ -5508,21 +5466,6 @@
         "nationality": "USA",
         "position": "Guard",
         "number": "25",
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "004451",
-        "firstName": "Ioannis",
-        "lastName": "Kouzeloglou",
-        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnONz/c248b31f-2d23-48b3-baa0-f052346dceb3.png",
-        "height": 204,
-        "nationality": "GRE",
-        "position": "Center",
-        "number": "24",
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -5813,21 +5756,6 @@
         "p3": 28.6,
         "ft": 75,
         "pir": 5.9,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "007993",
-        "firstName": "Amath",
-        "lastName": "M'Baye",
-        "photo": null,
-        "height": 206,
-        "nationality": "FRA",
-        "position": "Forward",
-        "number": "22",
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6445,7 +6373,7 @@
         "code": "014380",
         "firstName": "Omer",
         "lastName": "Kutluay",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLn/4ddba465-b22e-478b-97a0-acd15a9c2776.png",
         "height": 190,
         "nationality": "TUR",
         "position": "Guard",
@@ -6460,7 +6388,7 @@
         "code": "014635",
         "firstName": "Serigne",
         "lastName": "Sarr",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLn/f891fc44-9574-4144-b576-3c7218178784.png",
         "height": 213,
         "nationality": "SEN",
         "position": "Center",
@@ -6475,7 +6403,7 @@
         "code": "014384",
         "firstName": "Pablo",
         "lastName": "Mera",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLn/d1e4be48-ab34-4228-bd2c-0aa876ddc796.png",
         "height": 190,
         "nationality": "ESP",
         "position": "Guard",
@@ -6490,7 +6418,7 @@
         "code": "014244",
         "firstName": "Seydou",
         "lastName": "Dolo",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLn/b0e01612-64de-45a3-abb7-7b7a42485ef9.png",
         "height": 203,
         "nationality": "MLI",
         "position": "Forward",
@@ -6505,7 +6433,7 @@
         "code": "013553",
         "firstName": "Fabian",
         "lastName": "Kayser",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLn/735342ca-0eab-4f15-9850-af594134011a.png",
         "height": 204,
         "nationality": "ESP",
         "position": "Forward",
@@ -6520,7 +6448,7 @@
         "code": "014379",
         "firstName": "Rhys",
         "lastName": "Robinson",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLn/33974a93-af61-48cd-a873-3986f4e35041.png",
         "height": 198,
         "nationality": "ESP",
         "position": "Forward",

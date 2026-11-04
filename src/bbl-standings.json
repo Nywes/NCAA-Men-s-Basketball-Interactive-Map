@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -8,19 +8,19 @@
       "group": null,
       "teamId": "486",
       "name": "FC Bayern München Basketball",
-      "wins": 5,
+      "wins": 6,
       "losses": 1,
-      "winPct": 83.33,
+      "winPct": 85.71,
       "lastFive": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
-      "pointsFor": 566,
-      "pointsAgainst": 422,
-      "diff": 144
+      "pointsFor": 674,
+      "pointsAgainst": 488,
+      "diff": 186
     },
     {
       "rank": 2,
@@ -177,25 +177,6 @@
     {
       "rank": 10,
       "group": null,
-      "teamId": "422",
-      "name": "Basketball Löwen Braunschweig",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 535,
-      "pointsAgainst": 567,
-      "diff": -32
-    },
-    {
-      "rank": 11,
-      "group": null,
       "teamId": "413",
       "name": "ALBA BERLIN",
       "wins": 3,
@@ -213,7 +194,7 @@
       "diff": -42
     },
     {
-      "rank": 12,
+      "rank": 11,
       "group": null,
       "teamId": "418",
       "name": "ratiopharm ulm",
@@ -230,6 +211,25 @@
       "pointsFor": 573,
       "pointsAgainst": 594,
       "diff": -21
+    },
+    {
+      "rank": 12,
+      "group": null,
+      "teamId": "422",
+      "name": "Basketball Löwen Braunschweig",
+      "wins": 3,
+      "losses": 4,
+      "winPct": 42.86,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 601,
+      "pointsAgainst": 675,
+      "diff": -74
     },
     {
       "rank": 13,

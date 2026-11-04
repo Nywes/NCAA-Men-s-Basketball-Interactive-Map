@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -45,25 +45,6 @@
     {
       "rank": 3,
       "group": null,
-      "teamId": "bc5327d5-322e-4796-b103-4c3b63869edb",
-      "name": "Perth Wildcats",
-      "wins": 5,
-      "losses": 4,
-      "winPct": 55.6,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 839,
-      "pointsAgainst": 870,
-      "diff": -31
-    },
-    {
-      "rank": 4,
-      "group": null,
       "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
       "name": "Melbourne United",
       "wins": 6,
@@ -79,6 +60,25 @@
       "pointsFor": 1061,
       "pointsAgainst": 999,
       "diff": 62
+    },
+    {
+      "rank": 4,
+      "group": null,
+      "teamId": "f8185bc5-2674-4293-a2a7-aeb8c7549b30",
+      "name": "Brisbane Bullets",
+      "wins": 6,
+      "losses": 5,
+      "winPct": 54.5,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 1047,
+      "pointsAgainst": 1071,
+      "diff": -24
     },
     {
       "rank": 5,
@@ -102,21 +102,21 @@
     {
       "rank": 6,
       "group": null,
-      "teamId": "f8185bc5-2674-4293-a2a7-aeb8c7549b30",
-      "name": "Brisbane Bullets",
+      "teamId": "bc5327d5-322e-4796-b103-4c3b63869edb",
+      "name": "Perth Wildcats",
       "wins": 5,
       "losses": 5,
       "winPct": 50,
       "lastFive": [
-        "W",
         "L",
         "W",
         "L",
-        "W"
+        "L",
+        "L"
       ],
-      "pointsFor": 938,
-      "pointsAgainst": 967,
-      "diff": -29
+      "pointsFor": 943,
+      "pointsAgainst": 979,
+      "diff": -36
     },
     {
       "rank": 7,
