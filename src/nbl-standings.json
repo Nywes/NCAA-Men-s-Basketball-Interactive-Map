@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -83,25 +83,6 @@
     {
       "rank": 5,
       "group": null,
-      "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
-      "name": "Cairns Taipans",
-      "wins": 6,
-      "losses": 5,
-      "winPct": 54.5,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 1014,
-      "pointsAgainst": 1062,
-      "diff": -48
-    },
-    {
-      "rank": 6,
-      "group": null,
       "teamId": "bc5327d5-322e-4796-b103-4c3b63869edb",
       "name": "Perth Wildcats",
       "wins": 5,
@@ -117,6 +98,25 @@
       "pointsFor": 943,
       "pointsAgainst": 979,
       "diff": -36
+    },
+    {
+      "rank": 6,
+      "group": null,
+      "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
+      "name": "Cairns Taipans",
+      "wins": 6,
+      "losses": 6,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 1109,
+      "pointsAgainst": 1169,
+      "diff": -60
     },
     {
       "rank": 7,
@@ -180,19 +180,19 @@
       "group": null,
       "teamId": "105249a3-251d-4a9d-94f4-f57b8e0854b3",
       "name": "Illawarra Hawks",
-      "wins": 3,
+      "wins": 4,
       "losses": 8,
-      "winPct": 27.3,
+      "winPct": 33.3,
       "lastFive": [
-        "L",
         "W",
         "L",
         "L",
+        "W",
         "W"
       ],
-      "pointsFor": 1057,
-      "pointsAgainst": 1149,
-      "diff": -92
+      "pointsFor": 1164,
+      "pointsAgainst": 1244,
+      "diff": -80
     }
   ]
 }

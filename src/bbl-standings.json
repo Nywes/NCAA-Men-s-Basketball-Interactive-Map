@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -178,7 +178,7 @@
       "rank": 10,
       "group": null,
       "teamId": "413",
-      "name": "ALBA BERLIN",
+      "name": "ALBA Berlin",
       "wins": 3,
       "losses": 4,
       "winPct": 42.86,

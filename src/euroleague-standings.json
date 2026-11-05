@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "standings": [
@@ -8,18 +8,18 @@
       "group": "Regular Season",
       "teamId": "PAN",
       "name": "Panathinaikos AKTOR Athens",
-      "wins": 7,
+      "wins": 8,
       "losses": 2,
-      "winPct": 77.8,
+      "winPct": 80,
       "lastFive": [
-        "W",
         "L",
         "W",
         "W",
-        "L"
+        "L",
+        "W"
       ],
-      "pointsFor": 761,
-      "pointsAgainst": 675,
+      "pointsFor": 862,
+      "pointsAgainst": 776,
       "diff": 86
     },
     {
@@ -63,25 +63,6 @@
     {
       "rank": 4,
       "group": "Regular Season",
-      "teamId": "MAD",
-      "name": "Real Madrid",
-      "wins": 6,
-      "losses": 3,
-      "winPct": 66.7,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "pointsFor": 866,
-      "pointsAgainst": 792,
-      "diff": 74
-    },
-    {
-      "rank": 5,
-      "group": "Regular Season",
       "teamId": "PAM",
       "name": "Valencia Basket",
       "wins": 6,
@@ -99,7 +80,7 @@
       "diff": 61
     },
     {
-      "rank": 6,
+      "rank": 5,
       "group": "Regular Season",
       "teamId": "HTA",
       "name": "Hapoel IBI Tel Aviv",
@@ -118,7 +99,7 @@
       "diff": 45
     },
     {
-      "rank": 7,
+      "rank": 6,
       "group": "Regular Season",
       "teamId": "ULK",
       "name": "Fenerbahce Beko Istanbul",
@@ -137,7 +118,7 @@
       "diff": 30
     },
     {
-      "rank": 8,
+      "rank": 7,
       "group": "Regular Season",
       "teamId": "BAR",
       "name": "FC Barcelona",
@@ -156,7 +137,7 @@
       "diff": 25
     },
     {
-      "rank": 9,
+      "rank": 8,
       "group": "Regular Season",
       "teamId": "DUB",
       "name": "Dubai Basketball",
@@ -173,6 +154,25 @@
       "pointsFor": 787,
       "pointsAgainst": 766,
       "diff": 21
+    },
+    {
+      "rank": 9,
+      "group": "Regular Season",
+      "teamId": "MAD",
+      "name": "Real Madrid",
+      "wins": 6,
+      "losses": 4,
+      "winPct": 60,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 967,
+      "pointsAgainst": 893,
+      "diff": 74
     },
     {
       "rank": 10,

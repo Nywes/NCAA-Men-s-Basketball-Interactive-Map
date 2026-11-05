@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-04",
+  "updated": "2026-11-05",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -4820,7 +4820,7 @@
         "lastName": "Brankovic",
         "photo": "https://static.acb.com/media/PRO/00/00/93/41/38/0000934138_5-6_01.jpg",
         "height": 217,
-        "age": 25,
+        "age": 26,
         "nationality": "CRO",
         "position": "Center",
         "number": "22",
