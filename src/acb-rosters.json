@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -3549,6 +3549,34 @@
         }
       },
       {
+        "code": "30005648",
+        "firstName": "Kevin",
+        "lastName": "Knox",
+        "photo": null,
+        "height": 201,
+        "age": 27,
+        "nationality": "USA",
+        "position": "Forward",
+        "number": "11",
+        "gp": 0,
+        "min": null,
+        "ppg": null,
+        "rpg": null,
+        "apg": null,
+        "spg": null,
+        "bpg": null,
+        "tov": null,
+        "p2": null,
+        "p3": null,
+        "ft": null,
+        "pir": null,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "30005432",
         "firstName": "Simonas",
         "lastName": "Lukosius",
@@ -5398,6 +5426,34 @@
         "p3": 25,
         "ft": 0,
         "pir": 1.7,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "30002830",
+        "firstName": "Mohamed",
+        "lastName": "Sangare",
+        "photo": null,
+        "height": 204,
+        "age": 19,
+        "nationality": "MLI",
+        "position": "Center",
+        "number": "99",
+        "gp": 0,
+        "min": null,
+        "ppg": null,
+        "rpg": null,
+        "apg": null,
+        "spg": null,
+        "bpg": null,
+        "tov": null,
+        "p2": null,
+        "p3": null,
+        "ft": null,
+        "pir": null,
         "leagueRank": {
           "pts": null,
           "reb": null,

@@ -1,11 +1,30 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-06",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
   "standings": [
     {
       "rank": 1,
+      "group": null,
+      "teamId": "0602b1bc-8dfb-488c-ac11-7895de1a7556",
+      "name": "Tasmania JackJumpers",
+      "wins": 8,
+      "losses": 3,
+      "winPct": 72.7,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 1035,
+      "pointsAgainst": 985,
+      "diff": 50
+    },
+    {
+      "rank": 2,
       "group": null,
       "teamId": "39fc4268-0cdf-455f-9ca1-12e344064000",
       "name": "Sydney Kings",
@@ -22,25 +41,6 @@
       "pointsFor": 979,
       "pointsAgainst": 881,
       "diff": 98
-    },
-    {
-      "rank": 2,
-      "group": null,
-      "teamId": "0602b1bc-8dfb-488c-ac11-7895de1a7556",
-      "name": "Tasmania JackJumpers",
-      "wins": 7,
-      "losses": 3,
-      "winPct": 70,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 956,
-      "pointsAgainst": 908,
-      "diff": 48
     },
     {
       "rank": 3,
@@ -162,18 +162,18 @@
       "teamId": "bbae77db-317d-4c17-aa04-75d53d20ad15",
       "name": "NZ Breakers",
       "wins": 4,
-      "losses": 7,
-      "winPct": 36.4,
+      "losses": 8,
+      "winPct": 33.3,
       "lastFive": [
-        "W",
+        "L",
         "L",
         "L",
         "L",
         "L"
       ],
-      "pointsFor": 996,
-      "pointsAgainst": 1000,
-      "diff": -4
+      "pointsFor": 1073,
+      "pointsAgainst": 1079,
+      "diff": -6
     },
     {
       "rank": 10,
