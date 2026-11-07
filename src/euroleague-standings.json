@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "standings": [
@@ -25,21 +25,21 @@
     {
       "rank": 2,
       "group": "Regular Season",
-      "teamId": "OLY",
-      "name": "Olympiacos Piraeus",
+      "teamId": "RED",
+      "name": "Crvena Zvezda Meridianbet Belgrade",
       "wins": 7,
-      "losses": 2,
-      "winPct": 77.8,
+      "losses": 3,
+      "winPct": 70,
       "lastFive": [
-        "W",
         "W",
         "L",
         "W",
+        "W",
         "W"
       ],
-      "pointsFor": 790,
-      "pointsAgainst": 739,
-      "diff": 51
+      "pointsFor": 825,
+      "pointsAgainst": 740,
+      "diff": 85
     },
     {
       "rank": 3,
@@ -82,6 +82,44 @@
     {
       "rank": 5,
       "group": "Regular Season",
+      "teamId": "OLY",
+      "name": "Olympiacos Piraeus",
+      "wins": 7,
+      "losses": 3,
+      "winPct": 70,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 847,
+      "pointsAgainst": 801,
+      "diff": 46
+    },
+    {
+      "rank": 6,
+      "group": "Regular Season",
+      "teamId": "DUB",
+      "name": "Dubai Basketball",
+      "wins": 7,
+      "losses": 3,
+      "winPct": 70,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 880,
+      "pointsAgainst": 841,
+      "diff": 39
+    },
+    {
+      "rank": 7,
+      "group": "Regular Season",
       "teamId": "BAR",
       "name": "FC Barcelona",
       "wins": 7,
@@ -97,44 +135,6 @@
       "pointsFor": 902,
       "pointsAgainst": 874,
       "diff": 28
-    },
-    {
-      "rank": 6,
-      "group": "Regular Season",
-      "teamId": "RED",
-      "name": "Crvena Zvezda Meridianbet Belgrade",
-      "wins": 6,
-      "losses": 3,
-      "winPct": 66.7,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 763,
-      "pointsAgainst": 683,
-      "diff": 80
-    },
-    {
-      "rank": 7,
-      "group": "Regular Season",
-      "teamId": "DUB",
-      "name": "Dubai Basketball",
-      "wins": 6,
-      "losses": 3,
-      "winPct": 66.7,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 787,
-      "pointsAgainst": 766,
-      "diff": 21
     },
     {
       "rank": 8,
@@ -179,28 +179,28 @@
       "group": "Regular Season",
       "teamId": "ZAL",
       "name": "Zalgiris Kaunas",
-      "wins": 5,
+      "wins": 6,
       "losses": 4,
-      "winPct": 55.6,
+      "winPct": 60,
       "lastFive": [
         "L",
-        "L",
+        "W",
         "W",
         "W",
         "W"
       ],
-      "pointsFor": 773,
-      "pointsAgainst": 756,
-      "diff": 17
+      "pointsFor": 856,
+      "pointsAgainst": 823,
+      "diff": 33
     },
     {
       "rank": 11,
       "group": "Regular Season",
-      "teamId": "BES",
-      "name": "Besiktas",
-      "wins": 4,
+      "teamId": "PAR",
+      "name": "Partizan Mozzart Bet Belgrade",
+      "wins": 5,
       "losses": 5,
-      "winPct": 44.4,
+      "winPct": 50,
       "lastFive": [
         "L",
         "W",
@@ -208,50 +208,12 @@
         "L",
         "W"
       ],
-      "pointsFor": 810,
-      "pointsAgainst": 826,
-      "diff": -16
+      "pointsFor": 784,
+      "pointsAgainst": 782,
+      "diff": 2
     },
     {
       "rank": 12,
-      "group": "Regular Season",
-      "teamId": "PAR",
-      "name": "Partizan Mozzart Bet Belgrade",
-      "wins": 4,
-      "losses": 5,
-      "winPct": 44.4,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 696,
-      "pointsAgainst": 715,
-      "diff": -19
-    },
-    {
-      "rank": 13,
-      "group": "Regular Season",
-      "teamId": "VIR",
-      "name": "Virtus Bologna",
-      "wins": 4,
-      "losses": 5,
-      "winPct": 44.4,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 781,
-      "pointsAgainst": 802,
-      "diff": -21
-    },
-    {
-      "rank": 14,
       "group": "Regular Season",
       "teamId": "IST",
       "name": "Anadolu Efes Istanbul",
@@ -270,7 +232,26 @@
       "diff": -29
     },
     {
-      "rank": 15,
+      "rank": 13,
+      "group": "Regular Season",
+      "teamId": "BES",
+      "name": "Besiktas",
+      "wins": 4,
+      "losses": 6,
+      "winPct": 40,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 877,
+      "pointsAgainst": 909,
+      "diff": -32
+    },
+    {
+      "rank": 14,
       "group": "Regular Season",
       "teamId": "PRS",
       "name": "Paris Basketball",
@@ -287,6 +268,25 @@
       "pointsFor": 890,
       "pointsAgainst": 926,
       "diff": -36
+    },
+    {
+      "rank": 15,
+      "group": "Regular Season",
+      "teamId": "VIR",
+      "name": "Virtus Bologna",
+      "wins": 4,
+      "losses": 6,
+      "winPct": 40,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 856,
+      "pointsAgainst": 895,
+      "diff": -39
     },
     {
       "rank": 16,
@@ -332,18 +332,18 @@
       "teamId": "TEL",
       "name": "Maccabi Rapyd Tel Aviv",
       "wins": 2,
-      "losses": 7,
-      "winPct": 22.2,
+      "losses": 8,
+      "winPct": 20,
       "lastFive": [
-        "L",
         "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "pointsFor": 780,
-      "pointsAgainst": 852,
-      "diff": -72
+      "pointsFor": 847,
+      "pointsAgainst": 940,
+      "diff": -93
     },
     {
       "rank": 19,

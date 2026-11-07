@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "standings": [
@@ -69,8 +69,8 @@
       "losses": 1,
       "winPct": 83.3,
       "lastFive": [
-        "W",
         "L",
+        "W",
         "W",
         "W",
         "W"
@@ -601,9 +601,9 @@
       "losses": 4,
       "winPct": 33.3,
       "lastFive": [
+        "W",
+        "W",
         "L",
-        "W",
-        "W",
         "L",
         "L"
       ],

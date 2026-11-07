@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -1384,7 +1384,7 @@
         "code": "009911",
         "firstName": "Gary",
         "lastName": "Browne",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnOW8/b6449003-3696-4ae4-be4e-c6c6d0c1e11e.png",
         "height": 185,
         "nationality": "USA",
         "position": "Guard",
@@ -3561,6 +3561,21 @@
       }
     ],
     "MAN": [
+      {
+        "code": "014206",
+        "firstName": "Isaiah",
+        "lastName": "Mobley",
+        "photo": null,
+        "height": 204,
+        "nationality": "BAH",
+        "position": "Forward",
+        "number": "33",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "010594",
         "firstName": "Luka",
@@ -10005,6 +10020,21 @@
       }
     ],
     "BUR": [
+      {
+        "code": "009299",
+        "firstName": "Mantas",
+        "lastName": "Rubstavicius",
+        "photo": null,
+        "height": 200,
+        "nationality": "LTU",
+        "position": "Forward",
+        "number": "17",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "015112",
         "firstName": "Poyraz",

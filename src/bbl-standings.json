@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -179,19 +179,19 @@
       "group": null,
       "teamId": "413",
       "name": "ALBA Berlin",
-      "wins": 3,
+      "wins": 4,
       "losses": 4,
-      "winPct": 42.86,
+      "winPct": 50,
       "lastFive": [
         "L",
         "L",
-        "L",
         "W",
-        "L"
+        "L",
+        "W"
       ],
-      "pointsFor": 588,
-      "pointsAgainst": 630,
-      "diff": -42
+      "pointsFor": 690,
+      "pointsAgainst": 702,
+      "diff": -12
     },
     {
       "rank": 11,
@@ -272,25 +272,6 @@
     {
       "rank": 15,
       "group": null,
-      "teamId": "541",
-      "name": "RASTA Vechta",
-      "wins": 2,
-      "losses": 5,
-      "winPct": 28.57,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 591,
-      "pointsAgainst": 636,
-      "diff": -45
-    },
-    {
-      "rank": 16,
-      "group": null,
       "teamId": "485",
       "name": "NINERS Chemnitz",
       "wins": 2,
@@ -308,10 +289,10 @@
       "diff": -14
     },
     {
-      "rank": 17,
+      "rank": 16,
       "group": null,
-      "teamId": "473",
-      "name": "Phoenix Hagen",
+      "teamId": "541",
+      "name": "RASTA Vechta",
       "wins": 2,
       "losses": 5,
       "winPct": 28.57,
@@ -319,12 +300,31 @@
         "L",
         "L",
         "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 591,
+      "pointsAgainst": 636,
+      "diff": -45
+    },
+    {
+      "rank": 17,
+      "group": null,
+      "teamId": "473",
+      "name": "Phoenix Hagen",
+      "wins": 2,
+      "losses": 6,
+      "winPct": 25,
+      "lastFive": [
+        "L",
         "W",
+        "W",
+        "L",
         "L"
       ],
-      "pointsFor": 600,
-      "pointsAgainst": 633,
-      "diff": -33
+      "pointsFor": 672,
+      "pointsAgainst": 735,
+      "diff": -63
     },
     {
       "rank": 18,

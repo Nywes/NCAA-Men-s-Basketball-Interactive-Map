@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-06",
+  "updated": "2026-11-07",
   "season": "2026-27",
   "source": "legabasket.it",
   "rosters": {
@@ -1022,7 +1022,7 @@
         "lastName": "Tonut",
         "photo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/GUfmxC6nP5fgKzz2KK7MQwUy/thumb",
         "height": 194,
-        "age": 32,
+        "age": 33,
         "nationality": "ITA",
         "position": "Guard",
         "number": "7",
@@ -1330,7 +1330,7 @@
         "lastName": "Akele",
         "photo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/sgwgsNL364vhCY9a838fmcKP/thumb",
         "height": 203,
-        "age": 30,
+        "age": 31,
         "nationality": "ITA",
         "position": "Forward",
         "number": "45",
@@ -1945,6 +1945,34 @@
         }
       },
       {
+        "code": "6617",
+        "firstName": "Troy",
+        "lastName": "Caupain",
+        "photo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/CwAhCJ3984Qqign7xLaX8jaz/thumb",
+        "height": 193,
+        "age": 30,
+        "nationality": "USA",
+        "position": "Guard",
+        "number": "10",
+        "gp": 0,
+        "min": null,
+        "ppg": null,
+        "rpg": null,
+        "apg": null,
+        "spg": null,
+        "bpg": null,
+        "tov": null,
+        "p2": null,
+        "p3": null,
+        "ft": null,
+        "pir": null,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "7195",
         "firstName": "Luca",
         "lastName": "Manfredotti",
@@ -2531,6 +2559,34 @@
         "leagueRank": {
           "pts": null,
           "reb": 14,
+          "ast": null
+        }
+      },
+      {
+        "code": "9452",
+        "firstName": "Mehdy",
+        "lastName": "Ngouama",
+        "photo": "https://lba-media.s3.eu-south-1.amazonaws.com/variants/iRsZPXpHfj1vXvFGVHsGNzam/thumb",
+        "height": 188,
+        "age": 31,
+        "nationality": "FRA",
+        "position": "Guard",
+        "number": "00",
+        "gp": 0,
+        "min": null,
+        "ppg": null,
+        "rpg": null,
+        "apg": null,
+        "spg": null,
+        "bpg": null,
+        "tov": null,
+        "p2": null,
+        "p3": null,
+        "ft": null,
+        "pir": null,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
           "ast": null
         }
       }
