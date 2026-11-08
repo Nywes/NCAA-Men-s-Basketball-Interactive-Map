@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "season": "2026-27",
   "source": "api2.acb.com",
   "standings": [
@@ -25,6 +25,25 @@
     {
       "rank": 2,
       "group": null,
+      "teamId": "3",
+      "name": "Kosner Baskonia",
+      "wins": 5,
+      "losses": 2,
+      "winPct": 71.42857142857143,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 665,
+      "pointsAgainst": 590,
+      "diff": 75
+    },
+    {
+      "rank": 3,
+      "group": null,
       "teamId": "13",
       "name": "Valencia Basket",
       "wins": 4,
@@ -40,25 +59,6 @@
       "pointsFor": 594,
       "pointsAgainst": 523,
       "diff": 71
-    },
-    {
-      "rank": 3,
-      "group": null,
-      "teamId": "3",
-      "name": "Kosner Baskonia",
-      "wins": 4,
-      "losses": 2,
-      "winPct": 66.66666666666667,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 567,
-      "pointsAgainst": 497,
-      "diff": 70
     },
     {
       "rank": 4,
@@ -142,21 +142,40 @@
       "teamId": "4",
       "name": "Surne Bilbao",
       "wins": 4,
-      "losses": 2,
-      "winPct": 66.66666666666667,
+      "losses": 3,
+      "winPct": 57.142857142857146,
       "lastFive": [
-        "L",
         "W",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 557,
-      "pointsAgainst": 556,
-      "diff": 1
+      "pointsFor": 644,
+      "pointsAgainst": 648,
+      "diff": -4
     },
     {
       "rank": 9,
+      "group": null,
+      "teamId": "591",
+      "name": "FIATC Girona",
+      "wins": 4,
+      "losses": 3,
+      "winPct": 57.142857142857146,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 635,
+      "pointsAgainst": 681,
+      "diff": -46
+    },
+    {
+      "rank": 10,
       "group": null,
       "teamId": "14",
       "name": "Unicaja",
@@ -175,7 +194,7 @@
       "diff": 23
     },
     {
-      "rank": 10,
+      "rank": 11,
       "group": null,
       "teamId": "12",
       "name": "UCAM Murcia",
@@ -194,42 +213,23 @@
       "diff": -3
     },
     {
-      "rank": 11,
+      "rank": 12,
       "group": null,
       "teamId": "57",
       "name": "Monbus Obradoiro",
       "wins": 3,
-      "losses": 3,
-      "winPct": 50,
+      "losses": 4,
+      "winPct": 42.857142857142854,
       "lastFive": [
+        "W",
+        "W",
         "L",
-        "W",
-        "W",
         "L",
         "L"
       ],
-      "pointsFor": 533,
-      "pointsAgainst": 576,
-      "diff": -43
-    },
-    {
-      "rank": 12,
-      "group": null,
-      "teamId": "591",
-      "name": "FIATC Girona",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 543,
-      "pointsAgainst": 594,
-      "diff": -51
+      "pointsFor": 632,
+      "pointsAgainst": 676,
+      "diff": -44
     },
     {
       "rank": 13,
@@ -313,8 +313,8 @@
       "teamId": "658",
       "name": "iLERNA Lleida",
       "wins": 1,
-      "losses": 5,
-      "winPct": 16.666666666666668,
+      "losses": 6,
+      "winPct": 14.285714285714286,
       "lastFive": [
         "L",
         "L",
@@ -322,28 +322,28 @@
         "L",
         "L"
       ],
-      "pointsFor": 557,
-      "pointsAgainst": 641,
-      "diff": -84
+      "pointsFor": 650,
+      "pointsAgainst": 739,
+      "diff": -89
     },
     {
       "rank": 18,
       "group": null,
       "teamId": "10",
       "name": "Kids&Us Manresa",
-      "wins": 0,
+      "wins": 1,
       "losses": 6,
-      "winPct": 0,
+      "winPct": 14.285714285714286,
       "lastFive": [
         "L",
         "L",
         "L",
         "L",
-        "L"
+        "W"
       ],
-      "pointsFor": 506,
-      "pointsAgainst": 617,
-      "diff": -111
+      "pointsFor": 606,
+      "pointsAgainst": 716,
+      "diff": -110
     }
   ]
 }

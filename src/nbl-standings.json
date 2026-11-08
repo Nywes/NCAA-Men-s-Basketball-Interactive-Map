@@ -1,11 +1,30 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
   "standings": [
     {
       "rank": 1,
+      "group": null,
+      "teamId": "39fc4268-0cdf-455f-9ca1-12e344064000",
+      "name": "Sydney Kings",
+      "wins": 8,
+      "losses": 3,
+      "winPct": 72.7,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 1089,
+      "pointsAgainst": 980,
+      "diff": 109
+    },
+    {
+      "rank": 2,
       "group": null,
       "teamId": "0602b1bc-8dfb-488c-ac11-7895de1a7556",
       "name": "Tasmania JackJumpers",
@@ -22,25 +41,6 @@
       "pointsFor": 1035,
       "pointsAgainst": 985,
       "diff": 50
-    },
-    {
-      "rank": 2,
-      "group": null,
-      "teamId": "39fc4268-0cdf-455f-9ca1-12e344064000",
-      "name": "Sydney Kings",
-      "wins": 7,
-      "losses": 3,
-      "winPct": 70,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 979,
-      "pointsAgainst": 881,
-      "diff": 98
     },
     {
       "rank": 3,
@@ -64,6 +64,25 @@
     {
       "rank": 4,
       "group": null,
+      "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
+      "name": "Cairns Taipans",
+      "wins": 7,
+      "losses": 6,
+      "winPct": 53.8,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 1209,
+      "pointsAgainst": 1261,
+      "diff": -52
+    },
+    {
+      "rank": 5,
+      "group": null,
       "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
       "name": "Adelaide 36ers",
       "wins": 6,
@@ -79,25 +98,6 @@
       "pointsFor": 1107,
       "pointsAgainst": 1109,
       "diff": -2
-    },
-    {
-      "rank": 5,
-      "group": null,
-      "teamId": "bc5327d5-322e-4796-b103-4c3b63869edb",
-      "name": "Perth Wildcats",
-      "wins": 5,
-      "losses": 5,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 943,
-      "pointsAgainst": 979,
-      "diff": -36
     },
     {
       "rank": 6,
@@ -121,21 +121,21 @@
     {
       "rank": 7,
       "group": null,
-      "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
-      "name": "Cairns Taipans",
-      "wins": 6,
+      "teamId": "bc5327d5-322e-4796-b103-4c3b63869edb",
+      "name": "Perth Wildcats",
+      "wins": 5,
       "losses": 6,
-      "winPct": 50,
+      "winPct": 45.5,
       "lastFive": [
+        "W",
         "L",
-        "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "pointsFor": 1109,
-      "pointsAgainst": 1169,
-      "diff": -60
+      "pointsFor": 1035,
+      "pointsAgainst": 1079,
+      "diff": -44
     },
     {
       "rank": 8,
@@ -143,18 +143,18 @@
       "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
       "name": "South East Melbourne Phoenix",
       "wins": 4,
-      "losses": 6,
-      "winPct": 40,
+      "losses": 7,
+      "winPct": 36.4,
       "lastFive": [
         "L",
+        "W",
+        "W",
         "L",
-        "W",
-        "W",
         "L"
       ],
-      "pointsFor": 969,
-      "pointsAgainst": 943,
-      "diff": 26
+      "pointsFor": 1068,
+      "pointsAgainst": 1053,
+      "diff": 15
     },
     {
       "rank": 9,

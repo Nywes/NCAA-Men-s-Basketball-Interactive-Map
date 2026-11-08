@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -27,9 +27,9 @@
       "group": null,
       "teamId": "414",
       "name": "VET-CONCEPT Gladiators Trier",
-      "wins": 5,
+      "wins": 6,
       "losses": 1,
-      "winPct": 83.33,
+      "winPct": 85.71,
       "lastFive": [
         "W",
         "W",
@@ -37,9 +37,9 @@
         "W",
         "W"
       ],
-      "pointsFor": 597,
-      "pointsAgainst": 524,
-      "diff": 73
+      "pointsFor": 689,
+      "pointsAgainst": 603,
+      "diff": 86
     },
     {
       "rank": 3,
@@ -63,6 +63,44 @@
     {
       "rank": 4,
       "group": null,
+      "teamId": "551",
+      "name": "ROSTOCK SEAWOLVES",
+      "wins": 5,
+      "losses": 3,
+      "winPct": 62.5,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 718,
+      "pointsAgainst": 659,
+      "diff": 59
+    },
+    {
+      "rank": 5,
+      "group": null,
+      "teamId": "415",
+      "name": "Telekom Baskets Bonn",
+      "wins": 5,
+      "losses": 3,
+      "winPct": 62.5,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 704,
+      "pointsAgainst": 660,
+      "diff": 44
+    },
+    {
+      "rank": 6,
+      "group": null,
       "teamId": "426",
       "name": "SKYLINERS",
       "wins": 4,
@@ -80,7 +118,7 @@
       "diff": 28
     },
     {
-      "rank": 5,
+      "rank": 7,
       "group": null,
       "teamId": "540",
       "name": "Fitness First Würzburg Baskets",
@@ -99,7 +137,7 @@
       "diff": 16
     },
     {
-      "rank": 6,
+      "rank": 8,
       "group": null,
       "teamId": "433",
       "name": "MHP RIESEN Ludwigsburg",
@@ -118,61 +156,23 @@
       "diff": -4
     },
     {
-      "rank": 7,
-      "group": null,
-      "teamId": "551",
-      "name": "ROSTOCK SEAWOLVES",
-      "wins": 4,
-      "losses": 3,
-      "winPct": 57.14,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 621,
-      "pointsAgainst": 572,
-      "diff": 49
-    },
-    {
-      "rank": 8,
+      "rank": 9,
       "group": null,
       "teamId": "420",
       "name": "BMA365 Bamberg Baskets",
       "wins": 4,
-      "losses": 3,
-      "winPct": 57.14,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 616,
-      "pointsAgainst": 594,
-      "diff": 22
-    },
-    {
-      "rank": 9,
-      "group": null,
-      "teamId": "415",
-      "name": "Telekom Baskets Bonn",
-      "wins": 4,
-      "losses": 3,
-      "winPct": 57.14,
+      "losses": 4,
+      "winPct": 50,
       "lastFive": [
         "W",
         "L",
         "W",
-        "L",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 607,
-      "pointsAgainst": 573,
-      "diff": 34
+      "pointsFor": 695,
+      "pointsAgainst": 686,
+      "diff": 9
     },
     {
       "rank": 10,
@@ -196,44 +196,6 @@
     {
       "rank": 11,
       "group": null,
-      "teamId": "418",
-      "name": "ratiopharm ulm",
-      "wins": 3,
-      "losses": 4,
-      "winPct": 42.86,
-      "lastFive": [
-        "L",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 573,
-      "pointsAgainst": 594,
-      "diff": -21
-    },
-    {
-      "rank": 12,
-      "group": null,
-      "teamId": "422",
-      "name": "Basketball Löwen Braunschweig",
-      "wins": 3,
-      "losses": 4,
-      "winPct": 42.86,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 601,
-      "pointsAgainst": 675,
-      "diff": -74
-    },
-    {
-      "rank": 13,
-      "group": null,
       "teamId": "430",
       "name": "EWE Baskets Oldenburg",
       "wins": 3,
@@ -251,7 +213,64 @@
       "diff": -63
     },
     {
+      "rank": 12,
+      "group": null,
+      "teamId": "422",
+      "name": "Basketball Löwen Braunschweig",
+      "wins": 3,
+      "losses": 5,
+      "winPct": 37.5,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 688,
+      "pointsAgainst": 772,
+      "diff": -84
+    },
+    {
+      "rank": 13,
+      "group": null,
+      "teamId": "541",
+      "name": "RASTA Vechta",
+      "wins": 3,
+      "losses": 5,
+      "winPct": 37.5,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 690,
+      "pointsAgainst": 726,
+      "diff": -36
+    },
+    {
       "rank": 14,
+      "group": null,
+      "teamId": "418",
+      "name": "ratiopharm ulm",
+      "wins": 3,
+      "losses": 5,
+      "winPct": 37.5,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 660,
+      "pointsAgainst": 691,
+      "diff": -31
+    },
+    {
+      "rank": 15,
       "group": null,
       "teamId": "483",
       "name": "Science City Jena",
@@ -270,42 +289,23 @@
       "diff": -82
     },
     {
-      "rank": 15,
+      "rank": 16,
       "group": null,
       "teamId": "485",
       "name": "NINERS Chemnitz",
       "wins": 2,
-      "losses": 5,
-      "winPct": 28.57,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 607,
-      "pointsAgainst": 621,
-      "diff": -14
-    },
-    {
-      "rank": 16,
-      "group": null,
-      "teamId": "541",
-      "name": "RASTA Vechta",
-      "wins": 2,
-      "losses": 5,
-      "winPct": 28.57,
+      "losses": 6,
+      "winPct": 25,
       "lastFive": [
         "L",
         "L",
-        "W",
         "L",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 591,
-      "pointsAgainst": 636,
-      "diff": -45
+      "pointsFor": 697,
+      "pointsAgainst": 720,
+      "diff": -23
     },
     {
       "rank": 17,

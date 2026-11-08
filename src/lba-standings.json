@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-07",
+  "updated": "2026-11-08",
   "season": "2026-27",
   "source": "legabasket.it",
   "standings": [
@@ -122,41 +122,22 @@
       "group": null,
       "teamId": "61",
       "name": "Umana Reyer Venezia",
-      "wins": 3,
+      "wins": 4,
       "losses": 3,
-      "winPct": 50,
+      "winPct": 57.1,
       "lastFive": [
-        "W",
         "L",
         "W",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "pointsFor": 532,
-      "pointsAgainst": 542,
-      "diff": -10
+      "pointsFor": 615,
+      "pointsAgainst": 620,
+      "diff": -5
     },
     {
       "rank": 8,
-      "group": null,
-      "teamId": "104",
-      "name": "Dolomiti Energia Trentino",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 477,
-      "pointsAgainst": 497,
-      "diff": -20
-    },
-    {
-      "rank": 9,
       "group": null,
       "teamId": "106",
       "name": "Pallacanestro Trieste",
@@ -173,6 +154,25 @@
       "pointsFor": 545,
       "pointsAgainst": 519,
       "diff": 26
+    },
+    {
+      "rank": 9,
+      "group": null,
+      "teamId": "104",
+      "name": "Dolomiti Energia Trentino",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 477,
+      "pointsAgainst": 497,
+      "diff": -20
     },
     {
       "rank": 10,
@@ -237,18 +237,18 @@
       "teamId": "44",
       "name": "UNA Hotels Reggio Emilia",
       "wins": 2,
-      "losses": 4,
-      "winPct": 33.3,
+      "losses": 5,
+      "winPct": 28.6,
       "lastFive": [
-        "L",
         "W",
         "L",
         "W",
+        "L",
         "L"
       ],
-      "pointsFor": 494,
-      "pointsAgainst": 503,
-      "diff": -9
+      "pointsFor": 572,
+      "pointsAgainst": 586,
+      "diff": -14
     },
     {
       "rank": 14,
