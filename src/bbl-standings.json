@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -8,19 +8,19 @@
       "group": null,
       "teamId": "486",
       "name": "FC Bayern München Basketball",
-      "wins": 6,
+      "wins": 7,
       "losses": 1,
-      "winPct": 85.71,
+      "winPct": 87.5,
       "lastFive": [
         "W",
         "W",
-        "W",
         "L",
+        "W",
         "W"
       ],
-      "pointsFor": 674,
-      "pointsAgainst": 488,
-      "diff": 186
+      "pointsFor": 768,
+      "pointsAgainst": 561,
+      "diff": 207
     },
     {
       "rank": 2,
@@ -46,19 +46,19 @@
       "group": null,
       "teamId": "428",
       "name": "SYNTAINICS MBC",
-      "wins": 5,
+      "wins": 6,
       "losses": 2,
-      "winPct": 71.43,
+      "winPct": 75,
       "lastFive": [
-        "L",
+        "W",
         "W",
         "W",
         "W",
         "W"
       ],
-      "pointsFor": 616,
-      "pointsAgainst": 568,
-      "diff": 48
+      "pointsFor": 693,
+      "pointsAgainst": 641,
+      "diff": 52
     },
     {
       "rank": 4,
@@ -104,43 +104,24 @@
       "teamId": "426",
       "name": "SKYLINERS",
       "wins": 4,
-      "losses": 1,
-      "winPct": 80,
+      "losses": 2,
+      "winPct": 66.67,
       "lastFive": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 451,
-      "pointsAgainst": 423,
-      "diff": 28
+      "pointsFor": 524,
+      "pointsAgainst": 500,
+      "diff": 24
     },
     {
       "rank": 7,
       "group": null,
       "teamId": "540",
       "name": "Fitness First Würzburg Baskets",
-      "wins": 4,
-      "losses": 2,
-      "winPct": 66.67,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 497,
-      "pointsAgainst": 481,
-      "diff": 16
-    },
-    {
-      "rank": 8,
-      "group": null,
-      "teamId": "433",
-      "name": "MHP RIESEN Ludwigsburg",
       "wins": 4,
       "losses": 3,
       "winPct": 57.14,
@@ -151,12 +132,12 @@
         "W",
         "L"
       ],
-      "pointsFor": 610,
-      "pointsAgainst": 614,
-      "diff": -4
+      "pointsFor": 570,
+      "pointsAgainst": 575,
+      "diff": -5
     },
     {
-      "rank": 9,
+      "rank": 8,
       "group": null,
       "teamId": "420",
       "name": "BMA365 Bamberg Baskets",
@@ -175,10 +156,48 @@
       "diff": 9
     },
     {
+      "rank": 9,
+      "group": null,
+      "teamId": "430",
+      "name": "EWE Baskets Oldenburg",
+      "wins": 4,
+      "losses": 4,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 595,
+      "pointsAgainst": 656,
+      "diff": -61
+    },
+    {
       "rank": 10,
       "group": null,
+      "teamId": "433",
+      "name": "MHP RIESEN Ludwigsburg",
+      "wins": 4,
+      "losses": 4,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 682,
+      "pointsAgainst": 688,
+      "diff": -6
+    },
+    {
+      "rank": 11,
+      "group": null,
       "teamId": "413",
-      "name": "ALBA Berlin",
+      "name": "ALBA BERLIN",
       "wins": 4,
       "losses": 4,
       "winPct": 50,
@@ -192,25 +211,6 @@
       "pointsFor": 690,
       "pointsAgainst": 702,
       "diff": -12
-    },
-    {
-      "rank": 11,
-      "group": null,
-      "teamId": "430",
-      "name": "EWE Baskets Oldenburg",
-      "wins": 3,
-      "losses": 4,
-      "winPct": 42.86,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 521,
-      "pointsAgainst": 584,
-      "diff": -63
     },
     {
       "rank": 12,

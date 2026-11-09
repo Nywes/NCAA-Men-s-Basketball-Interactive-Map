@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "season": "2026-27",
   "source": "api2.acb.com",
   "standings": [
@@ -8,7 +8,7 @@
       "group": null,
       "teamId": "9",
       "name": "Real Madrid",
-      "wins": 6,
+      "wins": 7,
       "losses": 0,
       "winPct": 100,
       "lastFive": [
@@ -18,12 +18,31 @@
         "W",
         "W"
       ],
-      "pointsFor": 654,
-      "pointsAgainst": 526,
-      "diff": 128
+      "pointsFor": 744,
+      "pointsAgainst": 597,
+      "diff": 147
     },
     {
       "rank": 2,
+      "group": null,
+      "teamId": "13",
+      "name": "Valencia Basket",
+      "wins": 5,
+      "losses": 2,
+      "winPct": 71.42857142857143,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 694,
+      "pointsAgainst": 616,
+      "diff": 78
+    },
+    {
+      "rank": 3,
       "group": null,
       "teamId": "3",
       "name": "Kosner Baskonia",
@@ -42,99 +61,80 @@
       "diff": 75
     },
     {
-      "rank": 3,
-      "group": null,
-      "teamId": "13",
-      "name": "Valencia Basket",
-      "wins": 4,
-      "losses": 2,
-      "winPct": 66.66666666666667,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "pointsFor": 594,
-      "pointsAgainst": 523,
-      "diff": 71
-    },
-    {
       "rank": 4,
       "group": null,
       "teamId": "28",
       "name": "La Laguna Tenerife",
-      "wins": 4,
+      "wins": 5,
       "losses": 2,
-      "winPct": 66.66666666666667,
+      "winPct": 71.42857142857143,
       "lastFive": [
         "W",
         "W",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
-      "pointsFor": 527,
-      "pointsAgainst": 479,
-      "diff": 48
+      "pointsFor": 607,
+      "pointsAgainst": 553,
+      "diff": 54
     },
     {
       "rank": 5,
       "group": null,
-      "teamId": "25",
-      "name": "Río Breogán",
-      "wins": 4,
+      "teamId": "16",
+      "name": "Casademont Zaragoza",
+      "wins": 5,
       "losses": 2,
-      "winPct": 66.66666666666667,
+      "winPct": 71.42857142857143,
       "lastFive": [
         "W",
         "W",
         "L",
-        "L",
+        "W",
         "W"
       ],
-      "pointsFor": 628,
-      "pointsAgainst": 592,
-      "diff": 36
+      "pointsFor": 648,
+      "pointsAgainst": 614,
+      "diff": 34
     },
     {
       "rank": 6,
       "group": null,
-      "teamId": "16",
-      "name": "Casademont Zaragoza",
-      "wins": 4,
+      "teamId": "2",
+      "name": "Barça",
+      "wins": 5,
       "losses": 2,
-      "winPct": 66.66666666666667,
+      "winPct": 71.42857142857143,
       "lastFive": [
+        "W",
         "L",
         "W",
         "W",
-        "L",
         "W"
       ],
-      "pointsFor": 552,
-      "pointsAgainst": 523,
-      "diff": 29
+      "pointsFor": 681,
+      "pointsAgainst": 661,
+      "diff": 20
     },
     {
       "rank": 7,
       "group": null,
-      "teamId": "2",
-      "name": "Barça",
+      "teamId": "25",
+      "name": "Río Breogán",
       "wins": 4,
-      "losses": 2,
-      "winPct": 66.66666666666667,
+      "losses": 3,
+      "winPct": 57.142857142857146,
       "lastFive": [
-        "L",
         "W",
         "L",
+        "L",
         "W",
-        "W"
+        "L"
       ],
-      "pointsFor": 582,
-      "pointsAgainst": 570,
-      "diff": 12
+      "pointsFor": 719,
+      "pointsAgainst": 691,
+      "diff": 28
     },
     {
       "rank": 8,
@@ -180,18 +180,18 @@
       "teamId": "14",
       "name": "Unicaja",
       "wins": 3,
-      "losses": 3,
-      "winPct": 50,
+      "losses": 4,
+      "winPct": 42.857142857142854,
       "lastFive": [
+        "W",
+        "W",
+        "W",
         "L",
-        "W",
-        "W",
-        "W",
         "L"
       ],
-      "pointsFor": 530,
-      "pointsAgainst": 507,
-      "diff": 23
+      "pointsFor": 621,
+      "pointsAgainst": 603,
+      "diff": 18
     },
     {
       "rank": 11,
@@ -199,18 +199,18 @@
       "teamId": "12",
       "name": "UCAM Murcia",
       "wins": 3,
-      "losses": 3,
-      "winPct": 50,
+      "losses": 4,
+      "winPct": 42.857142857142854,
       "lastFive": [
-        "W",
         "L",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 560,
-      "pointsAgainst": 563,
-      "diff": -3
+      "pointsFor": 631,
+      "pointsAgainst": 653,
+      "diff": -22
     },
     {
       "rank": 12,
@@ -234,21 +234,21 @@
     {
       "rank": 13,
       "group": null,
-      "teamId": "549",
-      "name": "Recoletas Salud San Pablo Burgos",
-      "wins": 2,
+      "teamId": "657",
+      "name": "Leyma Coruña",
+      "wins": 3,
       "losses": 4,
-      "winPct": 33.333333333333336,
+      "winPct": 42.857142857142854,
       "lastFive": [
-        "W",
         "L",
         "L",
+        "L",
         "W",
-        "L"
+        "W"
       ],
-      "pointsFor": 528,
-      "pointsAgainst": 525,
-      "diff": 3
+      "pointsFor": 643,
+      "pointsAgainst": 699,
+      "diff": -56
     },
     {
       "rank": 14,
@@ -256,37 +256,37 @@
       "teamId": "8",
       "name": "Asisa Joventut",
       "wins": 2,
-      "losses": 4,
-      "winPct": 33.333333333333336,
+      "losses": 5,
+      "winPct": 28.571428571428573,
       "lastFive": [
+        "L",
         "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 625,
+      "pointsAgainst": 629,
+      "diff": -4
+    },
+    {
+      "rank": 15,
+      "group": null,
+      "teamId": "549",
+      "name": "Recoletas Salud San Pablo Burgos",
+      "wins": 2,
+      "losses": 5,
+      "winPct": 28.571428571428573,
+      "lastFive": [
+        "L",
         "L",
         "W",
         "L",
         "L"
       ],
-      "pointsFor": 551,
-      "pointsAgainst": 549,
-      "diff": 2
-    },
-    {
-      "rank": 15,
-      "group": null,
-      "teamId": "657",
-      "name": "Leyma Coruña",
-      "wins": 2,
-      "losses": 4,
-      "winPct": 33.333333333333336,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 540,
-      "pointsAgainst": 599,
-      "diff": -59
+      "pointsFor": 621,
+      "pointsAgainst": 625,
+      "diff": -4
     },
     {
       "rank": 16,
@@ -294,18 +294,18 @@
       "teamId": "22",
       "name": "MoraBanc Andorra",
       "wins": 1,
-      "losses": 5,
-      "winPct": 16.666666666666668,
+      "losses": 6,
+      "winPct": 14.285714285714286,
       "lastFive": [
-        "L",
         "L",
         "W",
         "L",
+        "L",
         "L"
       ],
-      "pointsFor": 507,
-      "pointsAgainst": 579,
-      "diff": -72
+      "pointsFor": 607,
+      "pointsAgainst": 682,
+      "diff": -75
     },
     {
       "rank": 17,

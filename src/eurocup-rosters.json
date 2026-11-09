@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-08",
+  "updated": "2026-11-09",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -366,6 +366,21 @@
       }
     ],
     "TRT": [
+      {
+        "code": "015409",
+        "firstName": "Christian",
+        "lastName": "Vital",
+        "photo": null,
+        "height": null,
+        "nationality": "USA",
+        "position": "Guard",
+        "number": "1",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "015205",
         "firstName": "Brayden",
@@ -3659,7 +3674,7 @@
         "height": 192,
         "nationality": "ESP",
         "position": "Guard",
-        "number": "18",
+        "number": "71",
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -3983,6 +3998,36 @@
       }
     ],
     "TNF": [
+      {
+        "code": "015411",
+        "firstName": "Mohamed",
+        "lastName": "Sangare",
+        "photo": null,
+        "height": 201,
+        "nationality": "MLI",
+        "position": "Forward",
+        "number": "24",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "015410",
+        "firstName": "Jaume",
+        "lastName": "Segui",
+        "photo": null,
+        "height": 202,
+        "nationality": "ESP",
+        "position": "Forward",
+        "number": "17",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "001386",
         "firstName": "Giorgi",
@@ -9676,6 +9721,21 @@
       }
     ],
     "WRO": [
+      {
+        "code": "013925",
+        "firstName": "Jared",
+        "lastName": "Coleman -Jones",
+        "photo": null,
+        "height": 208,
+        "nationality": "USA",
+        "position": "Center",
+        "number": "31",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "015245",
         "firstName": "Paul",
