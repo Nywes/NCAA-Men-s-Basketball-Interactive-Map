@@ -23,42 +23,137 @@
       "diff": 87
     },
     {
-      "rank": 1,
-      "group": "D",
-      "teamId": "BAH",
-      "name": "Bahcesehir",
+      "rank": 2,
+      "group": "A",
+      "teamId": "ARI",
+      "name": "Aris",
       "wins": 5,
       "losses": 1,
       "winPct": 83.3,
       "lastFive": [
         "W",
         "W",
-        "L",
         "W",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 548,
-      "pointsAgainst": 476,
-      "diff": 72
+      "pointsFor": 529,
+      "pointsAgainst": 458,
+      "diff": 71
     },
     {
-      "rank": 1,
-      "group": "C",
-      "teamId": "NAP",
-      "name": "Napoli",
-      "wins": 6,
-      "losses": 0,
-      "winPct": 100,
+      "rank": 3,
+      "group": "A",
+      "teamId": "LEM",
+      "name": "Le Mans Sarthe",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
       "lastFive": [
+        "L",
         "W",
         "W",
-        "W",
-        "W",
+        "L",
         "W"
       ],
-      "pointsFor": 540,
-      "pointsAgainst": 490,
-      "diff": 50
+      "pointsFor": 477,
+      "pointsAgainst": 467,
+      "diff": 10
+    },
+    {
+      "rank": 4,
+      "group": "A",
+      "teamId": "TRT",
+      "name": "Derthona",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 481,
+      "pointsAgainst": 484,
+      "diff": -3
+    },
+    {
+      "rank": 5,
+      "group": "A",
+      "teamId": "RIG",
+      "name": "Riga Zelli",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 469,
+      "pointsAgainst": 492,
+      "diff": -23
+    },
+    {
+      "rank": 6,
+      "group": "A",
+      "teamId": "RTK",
+      "name": "Rostock",
+      "wins": 2,
+      "losses": 4,
+      "winPct": 33.3,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 478,
+      "pointsAgainst": 517,
+      "diff": -39
+    },
+    {
+      "rank": 7,
+      "group": "A",
+      "teamId": "LJU",
+      "name": "Cedevita Olimpija",
+      "wins": 1,
+      "losses": 5,
+      "winPct": 16.7,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 428,
+      "pointsAgainst": 476,
+      "diff": -48
+    },
+    {
+      "rank": 8,
+      "group": "A",
+      "teamId": "BGS",
+      "name": "Burgos",
+      "wins": 1,
+      "losses": 5,
+      "winPct": 16.7,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 458,
+      "pointsAgainst": 513,
+      "diff": -55
     },
     {
       "rank": 1,
@@ -81,63 +176,6 @@
     },
     {
       "rank": 2,
-      "group": "A",
-      "teamId": "ARI",
-      "name": "Aris",
-      "wins": 5,
-      "losses": 1,
-      "winPct": 83.3,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 529,
-      "pointsAgainst": 458,
-      "diff": 71
-    },
-    {
-      "rank": 2,
-      "group": "C",
-      "teamId": "BUR",
-      "name": "Tofas",
-      "wins": 5,
-      "losses": 1,
-      "winPct": 83.3,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 538,
-      "pointsAgainst": 482,
-      "diff": 56
-    },
-    {
-      "rank": 2,
-      "group": "D",
-      "teamId": "MAN",
-      "name": "Manresa",
-      "wins": 4,
-      "losses": 2,
-      "winPct": 66.7,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "pointsFor": 531,
-      "pointsAgainst": 501,
-      "diff": 30
-    },
-    {
-      "rank": 2,
       "group": "B",
       "teamId": "VNC",
       "name": "Reyer Venice",
@@ -154,63 +192,6 @@
       "pointsFor": 528,
       "pointsAgainst": 484,
       "diff": 44
-    },
-    {
-      "rank": 3,
-      "group": "A",
-      "teamId": "LEM",
-      "name": "Le Mans Sarthe",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 477,
-      "pointsAgainst": 467,
-      "diff": 10
-    },
-    {
-      "rank": 3,
-      "group": "C",
-      "teamId": "NIN",
-      "name": "Chemnitz",
-      "wins": 4,
-      "losses": 2,
-      "winPct": 66.7,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 525,
-      "pointsAgainst": 486,
-      "diff": 39
-    },
-    {
-      "rank": 3,
-      "group": "D",
-      "teamId": "PAO",
-      "name": "PAOK",
-      "wins": 4,
-      "losses": 2,
-      "winPct": 66.7,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 535,
-      "pointsAgainst": 518,
-      "diff": 17
     },
     {
       "rank": 3,
@@ -251,101 +232,6 @@
       "diff": 0
     },
     {
-      "rank": 4,
-      "group": "C",
-      "teamId": "BUD",
-      "name": "Buducnost",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 551,
-      "pointsAgainst": 525,
-      "diff": 26
-    },
-    {
-      "rank": 4,
-      "group": "D",
-      "teamId": "ULM",
-      "name": "Ulm",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "pointsFor": 535,
-      "pointsAgainst": 529,
-      "diff": 6
-    },
-    {
-      "rank": 4,
-      "group": "A",
-      "teamId": "TRT",
-      "name": "Derthona",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 481,
-      "pointsAgainst": 484,
-      "diff": -3
-    },
-    {
-      "rank": 5,
-      "group": "D",
-      "teamId": "LKB",
-      "name": "Lietkabelis",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 455,
-      "pointsAgainst": 473,
-      "diff": -18
-    },
-    {
-      "rank": 5,
-      "group": "A",
-      "teamId": "RIG",
-      "name": "Riga Zelli",
-      "wins": 3,
-      "losses": 3,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "pointsFor": 469,
-      "pointsAgainst": 492,
-      "diff": -23
-    },
-    {
       "rank": 5,
       "group": "B",
       "teamId": "SIA",
@@ -365,44 +251,6 @@
       "diff": -30
     },
     {
-      "rank": 5,
-      "group": "C",
-      "teamId": "BOU",
-      "name": "Bourg",
-      "wins": 2,
-      "losses": 4,
-      "winPct": 33.3,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 502,
-      "pointsAgainst": 525,
-      "diff": -23
-    },
-    {
-      "rank": 6,
-      "group": "D",
-      "teamId": "BOS",
-      "name": "BOSNA",
-      "wins": 2,
-      "losses": 4,
-      "winPct": 33.3,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 477,
-      "pointsAgainst": 487,
-      "diff": -10
-    },
-    {
       "rank": 6,
       "group": "B",
       "teamId": "FRA",
@@ -420,101 +268,6 @@
       "pointsFor": 517,
       "pointsAgainst": 550,
       "diff": -33
-    },
-    {
-      "rank": 6,
-      "group": "C",
-      "teamId": "TRN",
-      "name": "Trento",
-      "wins": 2,
-      "losses": 4,
-      "winPct": 33.3,
-      "lastFive": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "pointsFor": 489,
-      "pointsAgainst": 527,
-      "diff": -38
-    },
-    {
-      "rank": 6,
-      "group": "A",
-      "teamId": "RTK",
-      "name": "Rostock",
-      "wins": 2,
-      "losses": 4,
-      "winPct": 33.3,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 478,
-      "pointsAgainst": 517,
-      "diff": -39
-    },
-    {
-      "rank": 7,
-      "group": "D",
-      "teamId": "BCR",
-      "name": "Roma",
-      "wins": 2,
-      "losses": 4,
-      "winPct": 33.3,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 518,
-      "pointsAgainst": 553,
-      "diff": -35
-    },
-    {
-      "rank": 7,
-      "group": "A",
-      "teamId": "LJU",
-      "name": "Cedevita Olimpija",
-      "wins": 1,
-      "losses": 5,
-      "winPct": 16.7,
-      "lastFive": [
-        "L",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 428,
-      "pointsAgainst": 476,
-      "diff": -48
-    },
-    {
-      "rank": 7,
-      "group": "C",
-      "teamId": "KLA",
-      "name": "Neptunas",
-      "wins": 1,
-      "losses": 5,
-      "winPct": 16.7,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 503,
-      "pointsAgainst": 550,
-      "diff": -47
     },
     {
       "rank": 7,
@@ -537,22 +290,155 @@
     },
     {
       "rank": 8,
-      "group": "D",
-      "teamId": "BLK",
-      "name": "Balkan",
+      "group": "B",
+      "teamId": "CLU",
+      "name": "Cluj",
+      "wins": 2,
+      "losses": 4,
+      "winPct": 33.3,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 489,
+      "pointsAgainst": 571,
+      "diff": -82
+    },
+    {
+      "rank": 1,
+      "group": "C",
+      "teamId": "NAP",
+      "name": "Napoli",
+      "wins": 6,
+      "losses": 0,
+      "winPct": 100,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 540,
+      "pointsAgainst": 490,
+      "diff": 50
+    },
+    {
+      "rank": 2,
+      "group": "C",
+      "teamId": "BUR",
+      "name": "Tofas",
+      "wins": 5,
+      "losses": 1,
+      "winPct": 83.3,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 538,
+      "pointsAgainst": 482,
+      "diff": 56
+    },
+    {
+      "rank": 3,
+      "group": "C",
+      "teamId": "NIN",
+      "name": "Chemnitz",
+      "wins": 4,
+      "losses": 2,
+      "winPct": 66.7,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 525,
+      "pointsAgainst": 486,
+      "diff": 39
+    },
+    {
+      "rank": 4,
+      "group": "C",
+      "teamId": "BUD",
+      "name": "Buducnost",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 551,
+      "pointsAgainst": 525,
+      "diff": 26
+    },
+    {
+      "rank": 5,
+      "group": "C",
+      "teamId": "BOU",
+      "name": "Bourg",
+      "wins": 2,
+      "losses": 4,
+      "winPct": 33.3,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 502,
+      "pointsAgainst": 525,
+      "diff": -23
+    },
+    {
+      "rank": 6,
+      "group": "C",
+      "teamId": "TRN",
+      "name": "Trento",
+      "wins": 2,
+      "losses": 4,
+      "winPct": 33.3,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 489,
+      "pointsAgainst": 527,
+      "diff": -38
+    },
+    {
+      "rank": 7,
+      "group": "C",
+      "teamId": "KLA",
+      "name": "Neptunas",
       "wins": 1,
       "losses": 5,
       "winPct": 16.7,
       "lastFive": [
         "L",
+        "W",
         "L",
         "L",
-        "L",
-        "W"
+        "L"
       ],
-      "pointsFor": 414,
-      "pointsAgainst": 476,
-      "diff": -62
+      "pointsFor": 503,
+      "pointsAgainst": 550,
+      "diff": -47
     },
     {
       "rank": 8,
@@ -574,29 +460,124 @@
       "diff": -63
     },
     {
-      "rank": 8,
-      "group": "A",
-      "teamId": "BGS",
-      "name": "Burgos",
-      "wins": 1,
-      "losses": 5,
-      "winPct": 16.7,
+      "rank": 1,
+      "group": "D",
+      "teamId": "BAH",
+      "name": "Bahcesehir",
+      "wins": 5,
+      "losses": 1,
+      "winPct": 83.3,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 548,
+      "pointsAgainst": 476,
+      "diff": 72
+    },
+    {
+      "rank": 2,
+      "group": "D",
+      "teamId": "MAN",
+      "name": "Manresa",
+      "wins": 4,
+      "losses": 2,
+      "winPct": 66.7,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 531,
+      "pointsAgainst": 501,
+      "diff": 30
+    },
+    {
+      "rank": 3,
+      "group": "D",
+      "teamId": "PAO",
+      "name": "PAOK",
+      "wins": 4,
+      "losses": 2,
+      "winPct": 66.7,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 535,
+      "pointsAgainst": 518,
+      "diff": 17
+    },
+    {
+      "rank": 4,
+      "group": "D",
+      "teamId": "ULM",
+      "name": "Ulm",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
       "lastFive": [
         "L",
+        "W",
         "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 535,
+      "pointsAgainst": 529,
+      "diff": 6
+    },
+    {
+      "rank": 5,
+      "group": "D",
+      "teamId": "LKB",
+      "name": "Lietkabelis",
+      "wins": 3,
+      "losses": 3,
+      "winPct": 50,
+      "lastFive": [
         "L",
+        "W",
+        "W",
         "L",
         "L"
       ],
-      "pointsFor": 458,
-      "pointsAgainst": 513,
-      "diff": -55
+      "pointsFor": 455,
+      "pointsAgainst": 473,
+      "diff": -18
     },
     {
-      "rank": 8,
-      "group": "B",
-      "teamId": "CLU",
-      "name": "Cluj",
+      "rank": 6,
+      "group": "D",
+      "teamId": "BOS",
+      "name": "BOSNA",
+      "wins": 2,
+      "losses": 4,
+      "winPct": 33.3,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 477,
+      "pointsAgainst": 487,
+      "diff": -10
+    },
+    {
+      "rank": 7,
+      "group": "D",
+      "teamId": "BCR",
+      "name": "Roma",
       "wins": 2,
       "losses": 4,
       "winPct": 33.3,
@@ -607,9 +588,28 @@
         "L",
         "L"
       ],
-      "pointsFor": 489,
-      "pointsAgainst": 571,
-      "diff": -82
+      "pointsFor": 518,
+      "pointsAgainst": 553,
+      "diff": -35
+    },
+    {
+      "rank": 8,
+      "group": "D",
+      "teamId": "BLK",
+      "name": "Balkan",
+      "wins": 1,
+      "losses": 5,
+      "winPct": 16.7,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 414,
+      "pointsAgainst": 476,
+      "diff": -62
     }
   ]
 }

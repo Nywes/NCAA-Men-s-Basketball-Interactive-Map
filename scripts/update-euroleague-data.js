@@ -245,6 +245,9 @@ async function geocode(q) {
     pointsAgainst: r.pointsAgainst,
     diff: parseInt(r.pointsDifference, 10) || 0,
   }));
+  // L'API renvoie les lignes rang par rang (tous les 1ers, puis tous les 2es...) :
+  // on range groupe par groupe (EuroCup A-D), puis par rang.
+  standings.sort((a, b) => (a.group || '').localeCompare(b.group || '') || a.rank - b.rank);
   console.log('Classement:', standings.length, 'lignes');
 
   const meta = { updated: new Date().toISOString().slice(0, 10), season: seasonLabel, source: 'api-live.euroleague.net' };

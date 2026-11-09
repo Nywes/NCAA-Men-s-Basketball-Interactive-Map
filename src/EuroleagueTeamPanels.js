@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, useEffect, useLayoutEffect, useRef } from 'react';
+import React, { createContext, useContext, useState, useEffect, useLayoutEffect, useMemo, useRef } from 'react';
 import blankHeadshot from './assets/player.png';
 import { readableTeamColor } from './teamColors';
 import euroleagueLogo from './assets/icons/euroleague-logo.png';
@@ -288,8 +288,15 @@ const EuroleagueStanding = ({ team, isSmallScreen }) => {
   const meRowRef = useRef(null);
 
   const data = useContext(DataCtx);
-  const rows = data.standings.standings || [];
   // EuroCup : 4 groupes (A-D) -> un intertitre par groupe ; poule unique -> aucun.
+  // L'API renvoie les lignes rang par rang (tous les 1ers, puis tous les 2es...) :
+  // on retrie groupe par groupe, puis par rang, pour afficher chaque poule d'un bloc.
+  const rows = useMemo(() => {
+    const raw = data.standings.standings || [];
+    return [...raw].sort(
+      (a, b) => (a.group || '').localeCompare(b.group || '') || (a.rank || 0) - (b.rank || 0)
+    );
+  }, [data.standings]);
   const groups = [...new Set(rows.map((r) => r.group).filter(Boolean))];
   const grouped = groups.length > 1;
   const teamHex = readableTeamColor(team, data.accent);
