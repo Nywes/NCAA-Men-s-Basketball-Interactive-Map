@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -1037,7 +1037,7 @@
         "code": "015254",
         "firstName": "Sukhmail",
         "lastName": "Mathon",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLt/9879dcda-5104-4d9b-9caf-954ce61784b1.png",
         "height": 208,
         "nationality": "USA",
         "position": "Center",
@@ -3577,6 +3577,21 @@
     ],
     "MAN": [
       {
+        "code": "014237",
+        "firstName": "Alex",
+        "lastName": "Muncunill",
+        "photo": null,
+        "height": 192,
+        "nationality": "ESP",
+        "position": "Guard",
+        "number": "18",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "014206",
         "firstName": "Isaiah",
         "lastName": "Mobley",
@@ -5412,7 +5427,7 @@
         "p2": 54.5,
         "p3": 47.4,
         "ft": 83.3,
-        "pir": 10.3,
+        "pir": 10.2,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -5700,7 +5715,7 @@
         "p2": 63.5,
         "p3": 0,
         "ft": 82.4,
-        "pir": 15.3,
+        "pir": 15.2,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -7550,6 +7565,21 @@
     ],
     "BGS": [
       {
+        "code": "013457",
+        "firstName": "Code",
+        "lastName": "Mbengue",
+        "photo": null,
+        "height": 208,
+        "nationality": "SEN",
+        "position": "Center",
+        "number": "0",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "015241",
         "firstName": "Ramiro",
         "lastName": "Rodriguez",
@@ -7557,7 +7587,7 @@
         "height": 194,
         "nationality": "ITA",
         "position": "Guard",
-        "number": "6",
+        "number": "20",
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -9767,7 +9797,7 @@
         "code": "015233",
         "firstName": "Adam",
         "lastName": "Wilczek",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTLt/5c852233-2d74-42bd-80e7-d412b1b720ef.png",
         "height": 201,
         "nationality": "POL",
         "position": "Forward",

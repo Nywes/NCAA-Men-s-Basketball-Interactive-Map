@@ -1,10 +1,29 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "season": "2026-27",
   "source": "legabasket.it",
   "standings": [
     {
       "rank": 1,
+      "group": null,
+      "teamId": "6",
+      "name": "Virtus Costa Bologna",
+      "wins": 6,
+      "losses": 1,
+      "winPct": 85.7,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 675,
+      "pointsAgainst": 602,
+      "diff": 73
+    },
+    {
+      "rank": 2,
       "group": null,
       "teamId": "42",
       "name": "Napoli Basketball",
@@ -21,25 +40,6 @@
       "pointsFor": 656,
       "pointsAgainst": 606,
       "diff": 50
-    },
-    {
-      "rank": 2,
-      "group": null,
-      "teamId": "6",
-      "name": "Virtus Costa Bologna",
-      "wins": 5,
-      "losses": 1,
-      "winPct": 83.3,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 580,
-      "pointsAgainst": 521,
-      "diff": 59
     },
     {
       "rank": 3,
@@ -180,18 +180,18 @@
       "teamId": "63",
       "name": "Tezenis Verona",
       "wins": 3,
-      "losses": 3,
-      "winPct": 50,
+      "losses": 4,
+      "winPct": 42.9,
       "lastFive": [
         "W",
         "W",
-        "W",
+        "L",
         "L",
         "L"
       ],
-      "pointsFor": 538,
-      "pointsAgainst": 543,
-      "diff": -5
+      "pointsFor": 619,
+      "pointsAgainst": 638,
+      "diff": -19
     },
     {
       "rank": 11,

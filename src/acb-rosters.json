@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-10",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -2202,7 +2202,7 @@
         "code": "30005650",
         "firstName": "Luka",
         "lastName": "Scuka",
-        "photo": null,
+        "photo": "https://static.acb.com/media/PRO/00/00/95/01/26/0000950126_5-6_01.jpg",
         "height": 206,
         "age": 24,
         "nationality": "SLO",
@@ -2538,7 +2538,7 @@
         "code": "30005725",
         "firstName": "Eric",
         "lastName": "Mobley",
-        "photo": null,
+        "photo": "https://static.acb.com/media/PRO/00/00/95/01/05/0000950105_5-6_01.jpg",
         "height": 207,
         "age": 27,
         "nationality": "BAH",
@@ -5436,7 +5436,7 @@
         "code": "30002830",
         "firstName": "Mohamed",
         "lastName": "Sangare",
-        "photo": "https://static.acb.com/media/PRO/00/00/93/31/27/0000933127_5-6_01.jpg",
+        "photo": "https://static.acb.com/media/PRO/00/00/95/01/51/0000950151_5-6_01.jpg",
         "height": 204,
         "age": 19,
         "nationality": "MLI",
