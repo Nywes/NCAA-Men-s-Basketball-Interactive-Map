@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-12",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "rosters": {
@@ -113,7 +113,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 4
+          "ast": 5
         }
       },
       {
@@ -421,7 +421,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 19
+          "ast": 20
         }
       },
       {
@@ -729,9 +729,9 @@
         "ft": 75.9,
         "pir": 19.3,
         "leagueRank": {
-          "pts": 8,
+          "pts": 7,
           "reb": null,
-          "ast": 3
+          "ast": 4
         }
       },
       {
@@ -787,7 +787,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 12
+          "ast": 13
         }
       },
       {
@@ -983,7 +983,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 10
+          "ast": 11
         }
       }
     ],
@@ -1797,7 +1797,7 @@
         "ft": 69.4,
         "pir": 18.5,
         "leagueRank": {
-          "pts": 11,
+          "pts": 10,
           "reb": null,
           "ast": null
         }
@@ -2557,7 +2557,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 16
+          "ast": 17
         }
       },
       {
@@ -3879,7 +3879,7 @@
         "leagueRank": {
           "pts": 2,
           "reb": null,
-          "ast": 20
+          "ast": null
         }
       },
       {
@@ -4018,7 +4018,7 @@
         "pir": 18.6,
         "leagueRank": {
           "pts": null,
-          "reb": 2,
+          "reb": 1,
           "ast": null
         }
       },
@@ -4131,7 +4131,7 @@
         "leagueRank": {
           "pts": 18,
           "reb": null,
-          "ast": 7
+          "ast": 8
         }
       },
       {
@@ -4609,7 +4609,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 17
+          "ast": 18
         }
       },
       {
@@ -4663,7 +4663,7 @@
         "ft": 75,
         "pir": 15.3,
         "leagueRank": {
-          "pts": 12,
+          "pts": 11,
           "reb": null,
           "ast": null
         }
@@ -5057,7 +5057,7 @@
         "ft": 72.1,
         "pir": 13.6,
         "leagueRank": {
-          "pts": 9,
+          "pts": 8,
           "reb": null,
           "ast": null
         }
@@ -5087,7 +5087,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 15
+          "ast": 16
         }
       },
       {
@@ -5397,7 +5397,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 8
+          "ast": 9
         }
       },
       {
@@ -5593,7 +5593,7 @@
         "leagueRank": {
           "pts": null,
           "reb": 12,
-          "ast": 13
+          "ast": 14
         }
       },
       {
@@ -5804,18 +5804,18 @@
         "nationality": "DE",
         "position": "Center",
         "number": "41",
-        "gp": 7,
-        "min": 19.2,
-        "ppg": 4.9,
-        "rpg": 4.7,
-        "apg": 0.6,
-        "spg": 0.3,
+        "gp": 8,
+        "min": 19.3,
+        "ppg": 5.4,
+        "rpg": 4.9,
+        "apg": 0.5,
+        "spg": 0.4,
         "bpg": 0.4,
-        "tov": 0.7,
-        "p2": 50,
+        "tov": 0.9,
+        "p2": 52,
         "p3": null,
-        "ft": 85.7,
-        "pir": 8.3,
+        "ft": 89.5,
+        "pir": 8.9,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -5860,18 +5860,18 @@
         "nationality": "DE",
         "position": "Guard",
         "number": "36",
-        "gp": 7,
-        "min": 16.6,
-        "ppg": 4.3,
+        "gp": 8,
+        "min": 15.8,
+        "ppg": 3.8,
         "rpg": 2.3,
-        "apg": 0.6,
-        "spg": 0.7,
+        "apg": 0.5,
+        "spg": 0.6,
         "bpg": 0,
-        "tov": 1,
+        "tov": 0.9,
         "p2": 75,
         "p3": 44.4,
         "ft": null,
-        "pir": 5.3,
+        "pir": 4.9,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6000,18 +6000,18 @@
         "nationality": "US",
         "position": "Forward",
         "number": "5",
-        "gp": 7,
-        "min": 23.6,
-        "ppg": 13.1,
-        "rpg": 2.9,
-        "apg": 3.7,
-        "spg": 1,
+        "gp": 8,
+        "min": 23.8,
+        "ppg": 13.9,
+        "rpg": 3.4,
+        "apg": 3.5,
+        "spg": 1.3,
         "bpg": 0,
         "tov": 2.6,
-        "p2": 50,
-        "p3": 31,
-        "ft": 73.3,
-        "pir": 10.9,
+        "p2": 49.2,
+        "p3": 28.6,
+        "ft": 73.1,
+        "pir": 11.4,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6028,18 +6028,18 @@
         "nationality": "US",
         "position": "Forward",
         "number": "44",
-        "gp": 6,
-        "min": 19.3,
-        "ppg": 11.8,
-        "rpg": 4.5,
-        "apg": 0.5,
-        "spg": 1,
+        "gp": 7,
+        "min": 19.5,
+        "ppg": 11.6,
+        "rpg": 5.3,
+        "apg": 0.6,
+        "spg": 0.9,
         "bpg": 1,
-        "tov": 1.3,
-        "p2": 79.5,
+        "tov": 1.4,
+        "p2": 74.5,
         "p3": null,
-        "ft": 81.8,
-        "pir": 15.8,
+        "ft": 78.6,
+        "pir": 15.7,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6056,18 +6056,18 @@
         "nationality": "US",
         "position": "Guard",
         "number": "3",
-        "gp": 5,
-        "min": 20.8,
-        "ppg": 11.2,
-        "rpg": 2.8,
-        "apg": 2.4,
-        "spg": 0.8,
+        "gp": 6,
+        "min": 20.4,
+        "ppg": 10.2,
+        "rpg": 2.3,
+        "apg": 2,
+        "spg": 0.7,
         "bpg": 0.2,
-        "tov": 1.6,
-        "p2": 45.8,
-        "p3": 36,
+        "tov": 1.5,
+        "p2": 48,
+        "p3": 37,
         "ft": 77.8,
-        "pir": 9.6,
+        "pir": 8.5,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6084,18 +6084,18 @@
         "nationality": "DE",
         "position": "Guard",
         "number": "2",
-        "gp": 7,
-        "min": 16.6,
-        "ppg": 3.6,
-        "rpg": 1.7,
-        "apg": 2.1,
-        "spg": 0.6,
+        "gp": 8,
+        "min": 16.2,
+        "ppg": 3.3,
+        "rpg": 1.6,
+        "apg": 2,
+        "spg": 0.5,
         "bpg": 0,
-        "tov": 2,
-        "p2": 60,
+        "tov": 1.9,
+        "p2": 50,
         "p3": 14.3,
-        "ft": 70,
-        "pir": 3.3,
+        "ft": 66.7,
+        "pir": 2.8,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6112,18 +6112,18 @@
         "nationality": "US",
         "position": "Forward",
         "number": "24",
-        "gp": 6,
-        "min": 20.1,
-        "ppg": 6.7,
-        "rpg": 2.2,
-        "apg": 0.3,
-        "spg": 0.2,
-        "bpg": 0,
-        "tov": 0.7,
+        "gp": 7,
+        "min": 20.8,
+        "ppg": 7,
+        "rpg": 2.3,
+        "apg": 0.4,
+        "spg": 0.3,
+        "bpg": 0.3,
+        "tov": 0.9,
         "p2": 71.4,
-        "p3": 50,
+        "p3": 48,
         "ft": 60,
-        "pir": 6.5,
+        "pir": 7,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6155,7 +6155,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 18
+          "ast": 19
         }
       },
       {
@@ -6168,18 +6168,18 @@
         "nationality": "DE",
         "position": "Forward",
         "number": "10",
-        "gp": 7,
-        "min": 18.1,
-        "ppg": 4.9,
+        "gp": 8,
+        "min": 17.7,
+        "ppg": 4.8,
         "rpg": 3.9,
-        "apg": 0.4,
-        "spg": 0.6,
+        "apg": 0.6,
+        "spg": 0.5,
         "bpg": 0.4,
         "tov": 0.9,
-        "p2": 56,
-        "p3": 8.3,
+        "p2": 55.2,
+        "p3": 7.7,
         "ft": 30,
-        "pir": 5.1,
+        "pir": 5.3,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6196,18 +6196,18 @@
         "nationality": "US",
         "position": "Forward",
         "number": "15",
-        "gp": 4,
-        "min": 20.8,
-        "ppg": 9.3,
-        "rpg": 4.8,
-        "apg": 1.5,
-        "spg": 0.5,
+        "gp": 5,
+        "min": 21.8,
+        "ppg": 10.8,
+        "rpg": 4.2,
+        "apg": 1.4,
+        "spg": 0.4,
         "bpg": 0,
-        "tov": 1.5,
-        "p2": 36.8,
-        "p3": 23.8,
+        "tov": 1.8,
+        "p2": 47.8,
+        "p3": 30.8,
         "ft": 57.1,
-        "pir": 6,
+        "pir": 7.8,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -6224,22 +6224,22 @@
         "nationality": "US",
         "position": "Guard",
         "number": "32",
-        "gp": 2,
-        "min": 26.2,
-        "ppg": 17.5,
-        "rpg": 2.5,
-        "apg": 6,
-        "spg": 0,
+        "gp": 3,
+        "min": 26.4,
+        "ppg": 16,
+        "rpg": 2.3,
+        "apg": 6.7,
+        "spg": 0.3,
         "bpg": 0,
-        "tov": 2,
-        "p2": 54.5,
-        "p3": 54.5,
+        "tov": 1.7,
+        "p2": 53.8,
+        "p3": 42.9,
         "ft": 100,
-        "pir": 19,
+        "pir": 17.7,
         "leagueRank": {
-          "pts": 7,
+          "pts": 12,
           "reb": null,
-          "ast": 6
+          "ast": 3
         }
       }
     ],
@@ -6351,9 +6351,9 @@
         "ft": 79.6,
         "pir": 14,
         "leagueRank": {
-          "pts": 10,
+          "pts": 9,
           "reb": null,
-          "ast": 11
+          "ast": 12
         }
       },
       {
@@ -6409,7 +6409,7 @@
         "leagueRank": {
           "pts": 13,
           "reb": null,
-          "ast": 5
+          "ast": 6
         }
       },
       {
@@ -7954,7 +7954,7 @@
         "pir": 18.1,
         "leagueRank": {
           "pts": null,
-          "reb": 3,
+          "reb": 2,
           "ast": null
         }
       },
@@ -8629,7 +8629,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 14
+          "ast": 15
         }
       },
       {
@@ -9008,18 +9008,18 @@
         "nationality": "DE",
         "position": "Guard",
         "number": "3",
-        "gp": 7,
-        "min": 18.7,
-        "ppg": 4.1,
+        "gp": 8,
+        "min": 20.2,
+        "ppg": 5.6,
         "rpg": 2.1,
-        "apg": 0.9,
-        "spg": 0.6,
+        "apg": 0.8,
+        "spg": 0.8,
         "bpg": 0.1,
-        "tov": 0.3,
-        "p2": 8.3,
-        "p3": 31.8,
+        "tov": 0.4,
+        "p2": 14.3,
+        "p3": 40.7,
         "ft": 100,
-        "pir": 3.9,
+        "pir": 5.5,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -9120,18 +9120,18 @@
         "nationality": "DE",
         "position": "Guard",
         "number": "10",
-        "gp": 0,
-        "min": null,
-        "ppg": null,
-        "rpg": null,
-        "apg": null,
-        "spg": null,
-        "bpg": null,
-        "tov": null,
+        "gp": 1,
+        "min": 1.4,
+        "ppg": 0,
+        "rpg": 0,
+        "apg": 0,
+        "spg": 0,
+        "bpg": 0,
+        "tov": 1,
         "p2": null,
         "p3": null,
         "ft": null,
-        "pir": null,
+        "pir": -1,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -9176,18 +9176,18 @@
         "nationality": "DE",
         "position": "Center",
         "number": "13",
-        "gp": 7,
-        "min": 24.2,
-        "ppg": 9.3,
-        "rpg": 4.7,
-        "apg": 1.7,
+        "gp": 8,
+        "min": 23.3,
+        "ppg": 9,
+        "rpg": 4.4,
+        "apg": 1.6,
         "spg": 0.9,
         "bpg": 0.3,
-        "tov": 2,
+        "tov": 1.9,
         "p2": 50,
-        "p3": 37.5,
+        "p3": 41.2,
         "ft": 76.5,
-        "pir": 10.4,
+        "pir": 10.1,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -9204,18 +9204,18 @@
         "nationality": "DE",
         "position": "Forward",
         "number": "19",
-        "gp": 7,
-        "min": 7.8,
-        "ppg": 2,
+        "gp": 8,
+        "min": 7.1,
+        "ppg": 1.8,
         "rpg": 1,
         "apg": 0,
         "spg": 0.1,
         "bpg": 0.4,
         "tov": 0.4,
         "p2": 0,
-        "p3": 37.5,
+        "p3": 33.3,
         "ft": 71.4,
-        "pir": 2,
+        "pir": 1.6,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -9232,21 +9232,21 @@
         "nationality": "CA",
         "position": "Forward",
         "number": "55",
-        "gp": 6,
-        "min": 29.6,
-        "ppg": 12.5,
-        "rpg": 10.8,
-        "apg": 1.3,
-        "spg": 1.2,
+        "gp": 7,
+        "min": 27.7,
+        "ppg": 11.3,
+        "rpg": 9.6,
+        "apg": 1.4,
+        "spg": 1.1,
         "bpg": 0,
-        "tov": 2.3,
-        "p2": 53.3,
-        "p3": 26.9,
+        "tov": 2,
+        "p2": 50,
+        "p3": 25,
         "ft": 66.7,
-        "pir": 16.3,
+        "pir": 14.3,
         "leagueRank": {
           "pts": null,
-          "reb": 1,
+          "reb": 3,
           "ast": null
         }
       },
@@ -9260,18 +9260,18 @@
         "nationality": "DE",
         "position": "Forward",
         "number": "20",
-        "gp": 1,
-        "min": 2.1,
-        "ppg": 0,
+        "gp": 2,
+        "min": 3.9,
+        "ppg": 2,
         "rpg": 0,
-        "apg": 0,
-        "spg": 0,
+        "apg": 0.5,
+        "spg": 0.5,
         "bpg": 0,
         "tov": 0,
-        "p2": null,
-        "p3": null,
-        "ft": null,
-        "pir": 0,
+        "p2": 100,
+        "p3": 0,
+        "ft": 100,
+        "pir": 2.5,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -9331,7 +9331,7 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": 9
+          "ast": 10
         }
       },
       {
@@ -9372,18 +9372,18 @@
         "nationality": "FR",
         "position": "Guard",
         "number": "28",
-        "gp": 7,
-        "min": 22,
-        "ppg": 12.3,
-        "rpg": 0.4,
+        "gp": 8,
+        "min": 22.9,
+        "ppg": 13.8,
+        "rpg": 0.8,
         "apg": 3.3,
         "spg": 0.6,
         "bpg": 0.1,
         "tov": 1.9,
-        "p2": 65,
-        "p3": 31,
-        "ft": 77.8,
-        "pir": 8.9,
+        "p2": 66.7,
+        "p3": 31.4,
+        "ft": 78.9,
+        "pir": 10.3,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -9400,18 +9400,18 @@
         "nationality": "FR",
         "position": "Center",
         "number": "22",
-        "gp": 7,
-        "min": 14,
-        "ppg": 4.7,
-        "rpg": 4.3,
-        "apg": 0.4,
-        "spg": 0.1,
-        "bpg": 0.4,
-        "tov": 0.7,
-        "p2": 63.2,
+        "gp": 8,
+        "min": 15.2,
+        "ppg": 5,
+        "rpg": 4.8,
+        "apg": 0.5,
+        "spg": 0.3,
+        "bpg": 0.8,
+        "tov": 0.6,
+        "p2": 68.2,
         "p3": 0,
-        "ft": 60,
-        "pir": 7.3,
+        "ft": 58.8,
+        "pir": 8.8,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -9428,18 +9428,18 @@
         "nationality": "US",
         "position": "Guard",
         "number": "11",
-        "gp": 2,
-        "min": 13.5,
-        "ppg": 4,
-        "rpg": 1.5,
-        "apg": 0.5,
-        "spg": 0.5,
+        "gp": 3,
+        "min": 15.3,
+        "ppg": 5.3,
+        "rpg": 2,
+        "apg": 0.3,
+        "spg": 0.7,
         "bpg": 0,
-        "tov": 0.5,
+        "tov": 0.7,
         "p2": 100,
-        "p3": 22.2,
+        "p3": 36.4,
         "ft": null,
-        "pir": 2.5,
+        "pir": 5.3,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -9540,22 +9540,22 @@
         "nationality": "CA",
         "position": "Guard",
         "number": "1",
-        "gp": 0,
-        "min": null,
-        "ppg": null,
-        "rpg": null,
-        "apg": null,
-        "spg": null,
-        "bpg": null,
-        "tov": null,
-        "p2": null,
-        "p3": null,
-        "ft": null,
-        "pir": null,
+        "gp": 1,
+        "min": 34.3,
+        "ppg": 11,
+        "rpg": 4,
+        "apg": 6,
+        "spg": 2,
+        "bpg": 1,
+        "tov": 2,
+        "p2": 0,
+        "p3": 20,
+        "ft": 83.3,
+        "pir": 9,
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": null
+          "ast": 7
         }
       },
       {
@@ -9567,19 +9567,19 @@
         "age": 25,
         "nationality": "US",
         "position": "Forward",
-        "number": "43",
-        "gp": 0,
-        "min": null,
-        "ppg": null,
-        "rpg": null,
-        "apg": null,
-        "spg": null,
-        "bpg": null,
-        "tov": null,
-        "p2": null,
-        "p3": null,
-        "ft": null,
-        "pir": null,
+        "number": "4",
+        "gp": 1,
+        "min": 21.2,
+        "ppg": 10,
+        "rpg": 2,
+        "apg": 1,
+        "spg": 1,
+        "bpg": 0,
+        "tov": 2,
+        "p2": 0,
+        "p3": 40,
+        "ft": 66.7,
+        "pir": 5,
         "leagueRank": {
           "pts": null,
           "reb": null,

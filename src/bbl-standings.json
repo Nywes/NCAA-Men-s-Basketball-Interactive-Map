@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-09",
+  "updated": "2026-11-12",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -272,24 +272,43 @@
     {
       "rank": 15,
       "group": null,
+      "teamId": "554",
+      "name": "Veolia Towers Hamburg",
+      "wins": 2,
+      "losses": 6,
+      "winPct": 25,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 659,
+      "pointsAgainst": 733,
+      "diff": -74
+    },
+    {
+      "rank": 16,
+      "group": null,
       "teamId": "483",
       "name": "Science City Jena",
       "wins": 2,
-      "losses": 5,
-      "winPct": 28.57,
+      "losses": 6,
+      "winPct": 25,
       "lastFive": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "pointsFor": 536,
-      "pointsAgainst": 618,
-      "diff": -82
+      "pointsFor": 623,
+      "pointsAgainst": 709,
+      "diff": -86
     },
     {
-      "rank": 16,
+      "rank": 17,
       "group": null,
       "teamId": "485",
       "name": "NINERS Chemnitz",
@@ -308,7 +327,7 @@
       "diff": -23
     },
     {
-      "rank": 17,
+      "rank": 18,
       "group": null,
       "teamId": "473",
       "name": "Phoenix Hagen",
@@ -325,25 +344,6 @@
       "pointsFor": 672,
       "pointsAgainst": 735,
       "diff": -63
-    },
-    {
-      "rank": 18,
-      "group": null,
-      "teamId": "554",
-      "name": "Veolia Towers Hamburg",
-      "wins": 1,
-      "losses": 6,
-      "winPct": 14.29,
-      "lastFive": [
-        "L",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 568,
-      "pointsAgainst": 646,
-      "diff": -78
     }
   ]
 }

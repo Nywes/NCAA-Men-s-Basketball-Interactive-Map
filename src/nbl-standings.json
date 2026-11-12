@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-12",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -29,18 +29,18 @@
       "teamId": "0602b1bc-8dfb-488c-ac11-7895de1a7556",
       "name": "Tasmania JackJumpers",
       "wins": 8,
-      "losses": 3,
-      "winPct": 72.7,
+      "losses": 4,
+      "winPct": 66.7,
       "lastFive": [
-        "W",
         "W",
         "L",
         "W",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 1035,
-      "pointsAgainst": 985,
-      "diff": 50
+      "pointsFor": 1127,
+      "pointsAgainst": 1083,
+      "diff": 44
     },
     {
       "rank": 3,
@@ -48,21 +48,40 @@
       "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
       "name": "Melbourne United",
       "wins": 7,
-      "losses": 5,
-      "winPct": 58.3,
+      "losses": 6,
+      "winPct": 53.8,
       "lastFive": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 1181,
-      "pointsAgainst": 1091,
-      "diff": 90
+      "pointsFor": 1274,
+      "pointsAgainst": 1192,
+      "diff": 82
     },
     {
       "rank": 4,
+      "group": null,
+      "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
+      "name": "Adelaide 36ers",
+      "wins": 7,
+      "losses": 6,
+      "winPct": 53.8,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 1208,
+      "pointsAgainst": 1202,
+      "diff": 6
+    },
+    {
+      "rank": 5,
       "group": null,
       "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
       "name": "Cairns Taipans",
@@ -81,26 +100,26 @@
       "diff": -52
     },
     {
-      "rank": 5,
+      "rank": 6,
       "group": null,
-      "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
-      "name": "Adelaide 36ers",
+      "teamId": "bc5327d5-322e-4796-b103-4c3b63869edb",
+      "name": "Perth Wildcats",
       "wins": 6,
       "losses": 6,
       "winPct": 50,
       "lastFive": [
-        "W",
         "L",
-        "W",
+        "L",
+        "L",
         "L",
         "W"
       ],
-      "pointsFor": 1107,
-      "pointsAgainst": 1109,
-      "diff": -2
+      "pointsFor": 1133,
+      "pointsAgainst": 1171,
+      "diff": -38
     },
     {
-      "rank": 6,
+      "rank": 7,
       "group": null,
       "teamId": "f8185bc5-2674-4293-a2a7-aeb8c7549b30",
       "name": "Brisbane Bullets",
@@ -117,25 +136,6 @@
       "pointsFor": 1139,
       "pointsAgainst": 1191,
       "diff": -52
-    },
-    {
-      "rank": 7,
-      "group": null,
-      "teamId": "bc5327d5-322e-4796-b103-4c3b63869edb",
-      "name": "Perth Wildcats",
-      "wins": 5,
-      "losses": 6,
-      "winPct": 45.5,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 1035,
-      "pointsAgainst": 1079,
-      "diff": -44
     },
     {
       "rank": 8,
