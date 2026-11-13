@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-11",
+  "updated": "2026-11-13",
   "seasonsRange": "E2019–E2026",
   "source": "api-live.euroleague.net (résultats agrégés localement)",
   "byClub": {
@@ -130,17 +130,17 @@
         "name": "Hapoel IBI Tel Aviv",
         "logo": "https://media-cdn.incrowdsports.com/cbb1c3ad-03d5-426a-b5ef-2832a4eee484.png"
       },
-      "wins": 1,
+      "wins": 2,
       "losses": 1,
-      "totalMeetings": 2,
+      "totalMeetings": 3,
       "lastMeeting": {
-        "date": "2026-04-12T21:15:00",
-        "season": "E2025",
+        "date": "2026-11-12T20:05:00",
+        "season": "E2026",
         "phase": "RS",
         "homeCode": "TEL",
-        "homeScore": 88,
+        "homeScore": 80,
         "awayCode": "HTA",
-        "awayScore": 99
+        "awayScore": 73
       }
     },
     "HTA": {
@@ -151,16 +151,16 @@
         "logo": "https://media-cdn.cortextech.io/1b533342-78f5-4932-b714-a7d80b5826b5.png"
       },
       "wins": 1,
-      "losses": 1,
-      "totalMeetings": 2,
+      "losses": 2,
+      "totalMeetings": 3,
       "lastMeeting": {
-        "date": "2026-04-12T21:15:00",
-        "season": "E2025",
+        "date": "2026-11-12T20:05:00",
+        "season": "E2026",
         "phase": "RS",
         "homeCode": "TEL",
-        "homeScore": 88,
+        "homeScore": 80,
         "awayCode": "HTA",
-        "awayScore": 99
+        "awayScore": 73
       }
     },
     "ULK": {

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-12",
+  "updated": "2026-11-13",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "rosters": {
@@ -2221,6 +2221,34 @@
           "reb": null,
           "ast": null
         }
+      },
+      {
+        "code": "2005481",
+        "firstName": "Filip",
+        "lastName": "Stanic",
+        "photo": "https://api.basketball-bundesliga.de/images/player/portrait/2026/2005481",
+        "height": 206,
+        "age": 28,
+        "nationality": "DE",
+        "position": "Center",
+        "number": "65",
+        "gp": 0,
+        "min": null,
+        "ppg": null,
+        "rpg": null,
+        "apg": null,
+        "spg": null,
+        "bpg": null,
+        "tov": null,
+        "p2": null,
+        "p3": null,
+        "ft": null,
+        "pir": null,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
       }
     ],
     "420": [
@@ -2960,7 +2988,7 @@
         "lastName": "Bangala ",
         "photo": "https://api.basketball-bundesliga.de/images/player/portrait/2026/2004186",
         "height": 202,
-        "age": 24,
+        "age": 25,
         "nationality": "SE",
         "position": "Center",
         "number": "0",
