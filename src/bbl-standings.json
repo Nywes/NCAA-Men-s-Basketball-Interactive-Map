@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -101,6 +101,25 @@
     {
       "rank": 6,
       "group": null,
+      "teamId": "433",
+      "name": "MHP RIESEN Ludwigsburg",
+      "wins": 5,
+      "losses": 4,
+      "winPct": 55.56,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 775,
+      "pointsAgainst": 767,
+      "diff": 8
+    },
+    {
+      "rank": 7,
+      "group": null,
       "teamId": "426",
       "name": "SKYLINERS",
       "wins": 4,
@@ -118,7 +137,7 @@
       "diff": 24
     },
     {
-      "rank": 7,
+      "rank": 8,
       "group": null,
       "teamId": "540",
       "name": "Fitness First Würzburg Baskets",
@@ -137,7 +156,7 @@
       "diff": -5
     },
     {
-      "rank": 8,
+      "rank": 9,
       "group": null,
       "teamId": "420",
       "name": "BMA365 Bamberg Baskets",
@@ -156,7 +175,7 @@
       "diff": 9
     },
     {
-      "rank": 9,
+      "rank": 10,
       "group": null,
       "teamId": "430",
       "name": "EWE Baskets Oldenburg",
@@ -173,25 +192,6 @@
       "pointsFor": 595,
       "pointsAgainst": 656,
       "diff": -61
-    },
-    {
-      "rank": 10,
-      "group": null,
-      "teamId": "433",
-      "name": "MHP RIESEN Ludwigsburg",
-      "wins": 4,
-      "losses": 4,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 682,
-      "pointsAgainst": 688,
-      "diff": -6
     },
     {
       "rank": 11,
@@ -332,18 +332,18 @@
       "teamId": "473",
       "name": "Phoenix Hagen",
       "wins": 2,
-      "losses": 6,
-      "winPct": 25,
+      "losses": 7,
+      "winPct": 22.22,
       "lastFive": [
+        "W",
+        "W",
         "L",
-        "W",
-        "W",
         "L",
         "L"
       ],
-      "pointsFor": 672,
-      "pointsAgainst": 735,
-      "diff": -63
+      "pointsFor": 751,
+      "pointsAgainst": 828,
+      "diff": -77
     }
   ]
 }

@@ -1,29 +1,10 @@
 {
-  "updated": "2026-11-13",
+  "updated": "2026-11-14",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "standings": [
     {
       "rank": 1,
-      "group": "Regular Season",
-      "teamId": "PAN",
-      "name": "Panathinaikos AKTOR Athens",
-      "wins": 8,
-      "losses": 2,
-      "winPct": 80,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 862,
-      "pointsAgainst": 776,
-      "diff": 86
-    },
-    {
-      "rank": 2,
       "group": "Regular Season",
       "teamId": "PAM",
       "name": "Valencia Basket",
@@ -40,6 +21,25 @@
       "pointsFor": 1053,
       "pointsAgainst": 966,
       "diff": 87
+    },
+    {
+      "rank": 2,
+      "group": "Regular Season",
+      "teamId": "PAN",
+      "name": "Panathinaikos AKTOR Athens",
+      "wins": 8,
+      "losses": 3,
+      "winPct": 72.7,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 936,
+      "pointsAgainst": 852,
+      "diff": 84
     },
     {
       "rank": 3,
@@ -65,19 +65,19 @@
       "group": "Regular Season",
       "teamId": "BAR",
       "name": "FC Barcelona",
-      "wins": 7,
+      "wins": 8,
       "losses": 3,
-      "winPct": 70,
+      "winPct": 72.7,
       "lastFive": [
-        "L",
+        "W",
         "W",
         "W",
         "W",
         "W"
       ],
-      "pointsFor": 902,
-      "pointsAgainst": 874,
-      "diff": 28
+      "pointsFor": 978,
+      "pointsAgainst": 948,
+      "diff": 30
     },
     {
       "rank": 5,
@@ -215,6 +215,44 @@
     {
       "rank": 12,
       "group": "Regular Season",
+      "teamId": "IST",
+      "name": "Anadolu Efes Istanbul",
+      "wins": 5,
+      "losses": 6,
+      "winPct": 45.5,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 945,
+      "pointsAgainst": 962,
+      "diff": -17
+    },
+    {
+      "rank": 13,
+      "group": "Regular Season",
+      "teamId": "BES",
+      "name": "Besiktas",
+      "wins": 5,
+      "losses": 6,
+      "winPct": 45.5,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 972,
+      "pointsAgainst": 1000,
+      "diff": -28
+    },
+    {
+      "rank": 14,
+      "group": "Regular Season",
       "teamId": "PRS",
       "name": "Paris Basketball",
       "wins": 5,
@@ -232,80 +270,42 @@
       "diff": -36
     },
     {
-      "rank": 13,
-      "group": "Regular Season",
-      "teamId": "IST",
-      "name": "Anadolu Efes Istanbul",
-      "wins": 4,
-      "losses": 6,
-      "winPct": 40,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "pointsFor": 842,
-      "pointsAgainst": 871,
-      "diff": -29
-    },
-    {
-      "rank": 14,
-      "group": "Regular Season",
-      "teamId": "BES",
-      "name": "Besiktas",
-      "wins": 4,
-      "losses": 6,
-      "winPct": 40,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "pointsFor": 877,
-      "pointsAgainst": 909,
-      "diff": -32
-    },
-    {
       "rank": 15,
-      "group": "Regular Season",
-      "teamId": "VIR",
-      "name": "Virtus Bologna",
-      "wins": 4,
-      "losses": 6,
-      "winPct": 40,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 856,
-      "pointsAgainst": 895,
-      "diff": -39
-    },
-    {
-      "rank": 16,
       "group": "Regular Season",
       "teamId": "ASV",
       "name": "LDLC ASVEL Villeurbanne",
       "wins": 4,
-      "losses": 6,
-      "winPct": 40,
+      "losses": 7,
+      "winPct": 36.4,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 974,
+      "pointsAgainst": 1025,
+      "diff": -51
+    },
+    {
+      "rank": 16,
+      "group": "Regular Season",
+      "teamId": "VIR",
+      "name": "Virtus Bologna",
+      "wins": 4,
+      "losses": 7,
+      "winPct": 36.4,
       "lastFive": [
         "L",
         "L",
-        "W",
-        "W",
+        "L",
+        "L",
         "L"
       ],
-      "pointsFor": 883,
-      "pointsAgainst": 930,
-      "diff": -47
+      "pointsFor": 947,
+      "pointsAgainst": 998,
+      "diff": -51
     },
     {
       "rank": 17,
