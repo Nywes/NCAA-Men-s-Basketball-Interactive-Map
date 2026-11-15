@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-14",
+  "updated": "2026-11-15",
   "season": "2026-27",
   "source": "legabasket.it",
   "standings": [
@@ -101,21 +101,21 @@
     {
       "rank": 6,
       "group": null,
-      "teamId": "57",
-      "name": "APU Old Wild West Udine",
-      "wins": 4,
+      "teamId": "60",
+      "name": "Openjobmetis Varese",
+      "wins": 5,
       "losses": 3,
-      "winPct": 57.1,
+      "winPct": 62.5,
       "lastFive": [
         "L",
-        "L",
-        "L",
         "W",
+        "W",
+        "L",
         "W"
       ],
-      "pointsFor": 569,
-      "pointsAgainst": 562,
-      "diff": 7
+      "pointsFor": 713,
+      "pointsAgainst": 697,
+      "diff": 16
     },
     {
       "rank": 7,
@@ -139,21 +139,21 @@
     {
       "rank": 8,
       "group": null,
-      "teamId": "60",
-      "name": "Openjobmetis Varese",
+      "teamId": "57",
+      "name": "APU Old Wild West Udine",
       "wins": 4,
       "losses": 3,
       "winPct": 57.1,
       "lastFive": [
-        "W",
+        "L",
+        "L",
         "L",
         "W",
-        "W",
-        "L"
+        "W"
       ],
-      "pointsFor": 614,
-      "pointsAgainst": 613,
-      "diff": 1
+      "pointsFor": 569,
+      "pointsAgainst": 562,
+      "diff": 7
     },
     {
       "rank": 9,
@@ -179,19 +179,19 @@
       "group": null,
       "teamId": "63",
       "name": "Tezenis Verona",
-      "wins": 3,
+      "wins": 4,
       "losses": 4,
-      "winPct": 42.9,
+      "winPct": 50,
       "lastFive": [
         "W",
-        "W",
         "L",
         "L",
-        "L"
+        "L",
+        "W"
       ],
-      "pointsFor": 619,
-      "pointsAgainst": 638,
-      "diff": -19
+      "pointsFor": 708,
+      "pointsAgainst": 726,
+      "diff": -18
     },
     {
       "rank": 11,
@@ -215,44 +215,6 @@
     {
       "rank": 12,
       "group": null,
-      "teamId": "246",
-      "name": "BC Roma",
-      "wins": 2,
-      "losses": 5,
-      "winPct": 28.6,
-      "lastFive": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "L"
-      ],
-      "pointsFor": 701,
-      "pointsAgainst": 695,
-      "diff": 6
-    },
-    {
-      "rank": 13,
-      "group": null,
-      "teamId": "44",
-      "name": "UNA Hotels Reggio Emilia",
-      "wins": 2,
-      "losses": 5,
-      "winPct": 28.6,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 572,
-      "pointsAgainst": 586,
-      "diff": -14
-    },
-    {
-      "rank": 14,
-      "group": null,
       "teamId": "111",
       "name": "Bertram Derthona Tortona",
       "wins": 2,
@@ -268,6 +230,44 @@
       "pointsFor": 586,
       "pointsAgainst": 637,
       "diff": -51
+    },
+    {
+      "rank": 13,
+      "group": null,
+      "teamId": "246",
+      "name": "BC Roma",
+      "wins": 2,
+      "losses": 6,
+      "winPct": 25,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 789,
+      "pointsAgainst": 784,
+      "diff": 5
+    },
+    {
+      "rank": 14,
+      "group": null,
+      "teamId": "44",
+      "name": "UNA Hotels Reggio Emilia",
+      "wins": 2,
+      "losses": 6,
+      "winPct": 25,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 656,
+      "pointsAgainst": 685,
+      "diff": -29
     },
     {
       "rank": 15,
