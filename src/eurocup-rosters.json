@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -4110,6 +4110,21 @@
     ],
     "TNF": [
       {
+        "code": "012975",
+        "firstName": "Emilis",
+        "lastName": "Prekevicius",
+        "photo": null,
+        "height": 190,
+        "nationality": "LTU",
+        "position": "Forward",
+        "number": "16",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "015411",
         "firstName": "Mohamed",
         "lastName": "Sangare",
@@ -5198,6 +5213,21 @@
       }
     ],
     "LLI": [
+      {
+        "code": "013621",
+        "firstName": "Dominykas",
+        "lastName": "Grunkis",
+        "photo": null,
+        "height": 183,
+        "nationality": "LTU",
+        "position": "Guard",
+        "number": "55",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "015122",
         "firstName": "Landrius",
@@ -7320,6 +7350,21 @@
     ],
     "ULM": [
       {
+        "code": "007005",
+        "firstName": "Filip",
+        "lastName": "Stanic",
+        "photo": null,
+        "height": 206,
+        "nationality": "GER",
+        "position": "Center",
+        "number": "65",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "015234",
         "firstName": "Nil",
         "lastName": "Failenschmid",
@@ -7720,6 +7765,21 @@
       }
     ],
     "BGS": [
+      {
+        "code": "005379",
+        "firstName": "Vlatko",
+        "lastName": "Cancar",
+        "photo": null,
+        "height": 203,
+        "nationality": "SLO",
+        "position": "Forward",
+        "number": "31",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "013457",
         "firstName": "Code",

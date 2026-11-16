@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-15",
+  "updated": "2026-11-16",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -8,28 +8,28 @@
       "group": null,
       "teamId": "486",
       "name": "FC Bayern München Basketball",
-      "wins": 7,
+      "wins": 8,
       "losses": 1,
-      "winPct": 87.5,
+      "winPct": 88.89,
       "lastFive": [
-        "W",
         "W",
         "L",
         "W",
+        "W",
         "W"
       ],
-      "pointsFor": 768,
-      "pointsAgainst": 561,
-      "diff": 207
+      "pointsFor": 859,
+      "pointsAgainst": 622,
+      "diff": 237
     },
     {
       "rank": 2,
       "group": null,
       "teamId": "414",
       "name": "VET-CONCEPT Gladiators Trier",
-      "wins": 6,
+      "wins": 7,
       "losses": 1,
-      "winPct": 85.71,
+      "winPct": 87.5,
       "lastFive": [
         "W",
         "W",
@@ -37,31 +37,12 @@
         "W",
         "W"
       ],
-      "pointsFor": 689,
-      "pointsAgainst": 603,
-      "diff": 86
+      "pointsFor": 788,
+      "pointsAgainst": 688,
+      "diff": 100
     },
     {
       "rank": 3,
-      "group": null,
-      "teamId": "428",
-      "name": "SYNTAINICS MBC",
-      "wins": 6,
-      "losses": 2,
-      "winPct": 75,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "W"
-      ],
-      "pointsFor": 693,
-      "pointsAgainst": 641,
-      "diff": 52
-    },
-    {
-      "rank": 4,
       "group": null,
       "teamId": "415",
       "name": "Telekom Baskets Bonn",
@@ -80,23 +61,42 @@
       "diff": 58
     },
     {
+      "rank": 4,
+      "group": null,
+      "teamId": "428",
+      "name": "SYNTAINICS MBC",
+      "wins": 6,
+      "losses": 3,
+      "winPct": 66.67,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 754,
+      "pointsAgainst": 732,
+      "diff": 22
+    },
+    {
       "rank": 5,
       "group": null,
       "teamId": "551",
       "name": "ROSTOCK SEAWOLVES",
-      "wins": 5,
+      "wins": 6,
       "losses": 3,
-      "winPct": 62.5,
+      "winPct": 66.67,
       "lastFive": [
-        "W",
         "W",
         "L",
         "W",
+        "W",
         "W"
       ],
-      "pointsFor": 718,
-      "pointsAgainst": 659,
-      "diff": 59
+      "pointsFor": 804,
+      "pointsAgainst": 734,
+      "diff": 70
     },
     {
       "rank": 6,
@@ -142,18 +142,18 @@
       "teamId": "426",
       "name": "SKYLINERS",
       "wins": 4,
-      "losses": 2,
-      "winPct": 66.67,
+      "losses": 3,
+      "winPct": 57.14,
       "lastFive": [
         "W",
         "W",
         "W",
-        "W",
+        "L",
         "L"
       ],
-      "pointsFor": 524,
-      "pointsAgainst": 500,
-      "diff": 24
+      "pointsFor": 609,
+      "pointsAgainst": 599,
+      "diff": 10
     },
     {
       "rank": 9,
@@ -234,43 +234,24 @@
     {
       "rank": 13,
       "group": null,
-      "teamId": "422",
-      "name": "Basketball Löwen Braunschweig",
+      "teamId": "485",
+      "name": "NINERS Chemnitz",
       "wins": 3,
-      "losses": 5,
-      "winPct": 37.5,
+      "losses": 6,
+      "winPct": 33.33,
       "lastFive": [
         "L",
         "L",
+        "W",
         "L",
-        "L",
-        "L"
+        "W"
       ],
-      "pointsFor": 688,
-      "pointsAgainst": 772,
-      "diff": -84
+      "pointsFor": 808,
+      "pointsAgainst": 799,
+      "diff": 9
     },
     {
       "rank": 14,
-      "group": null,
-      "teamId": "541",
-      "name": "RASTA Vechta",
-      "wins": 3,
-      "losses": 5,
-      "winPct": 37.5,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 690,
-      "pointsAgainst": 726,
-      "diff": -36
-    },
-    {
-      "rank": 15,
       "group": null,
       "teamId": "554",
       "name": "Veolia Towers Hamburg",
@@ -289,23 +270,42 @@
       "diff": -67
     },
     {
+      "rank": 15,
+      "group": null,
+      "teamId": "541",
+      "name": "RASTA Vechta",
+      "wins": 3,
+      "losses": 6,
+      "winPct": 33.33,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 765,
+      "pointsAgainst": 812,
+      "diff": -47
+    },
+    {
       "rank": 16,
       "group": null,
-      "teamId": "485",
-      "name": "NINERS Chemnitz",
-      "wins": 2,
+      "teamId": "422",
+      "name": "Basketball Löwen Braunschweig",
+      "wins": 3,
       "losses": 6,
-      "winPct": 25,
+      "winPct": 33.33,
       "lastFive": [
         "L",
         "L",
         "L",
-        "W",
+        "L",
         "L"
       ],
-      "pointsFor": 697,
-      "pointsAgainst": 720,
-      "diff": -23
+      "pointsFor": 767,
+      "pointsAgainst": 883,
+      "diff": -116
     },
     {
       "rank": 17,
