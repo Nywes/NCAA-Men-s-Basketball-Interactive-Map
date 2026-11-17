@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -1558,6 +1558,21 @@
     ],
     "DUB": [
       {
+        "code": "JUJ",
+        "firstName": "Marcelinho",
+        "lastName": "Huertas",
+        "photo": null,
+        "height": 190,
+        "nationality": "ITA",
+        "position": "Guard",
+        "number": "9",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
         "code": "005942",
         "firstName": "Nemanja",
         "lastName": "Dangubic",
@@ -1988,6 +2003,21 @@
       }
     ],
     "BAR": [
+      {
+        "code": "014423",
+        "firstName": "Nil",
+        "lastName": "Poza",
+        "photo": null,
+        "height": 172,
+        "nationality": "ESP",
+        "position": "Guard",
+        "number": "43",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "014422",
         "firstName": "Jakob",
@@ -3113,7 +3143,7 @@
         "firstName": "Chris",
         "lastName": "Silva",
         "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjCjnONx/feec6c35-12e0-40b5-b67e-4950139c43e6.png",
-        "height": 203,
+        "height": 206,
         "nationality": "GAB",
         "position": "Center",
         "number": "30",
@@ -3572,7 +3602,7 @@
         "code": "008325",
         "firstName": "Kenan",
         "lastName": "Kamenjas",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTPy/44aeb33b-6719-402b-b6e7-ac8316b5507f.png",
         "height": 207,
         "nationality": "BIH",
         "position": "Center",
@@ -3587,7 +3617,7 @@
         "code": "007109",
         "firstName": "Rolands",
         "lastName": "Smits",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTPy/9c3b96da-0723-457c-b933-107d7c0d05af.png",
         "height": 208,
         "nationality": "LAT",
         "position": "Center",
@@ -3648,7 +3678,7 @@
         "height": 192,
         "nationality": "BRA",
         "position": "Forward",
-        "number": "11",
+        "number": "13",
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -4385,6 +4415,21 @@
       }
     ],
     "TEL": [
+      {
+        "code": "012597",
+        "firstName": "Kamar",
+        "lastName": "Baldwin",
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTPy/9f6079be-1bf1-4606-9461-ef254a4021dd.png",
+        "height": 185,
+        "nationality": "USA",
+        "position": "Guard",
+        "number": "44",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "015398",
         "firstName": "Shane",
@@ -5959,6 +6004,21 @@
       }
     ],
     "PAR": [
+      {
+        "code": "014220",
+        "firstName": "Chris",
+        "lastName": "Silva",
+        "photo": null,
+        "height": 206,
+        "nationality": "GAB",
+        "position": "Center",
+        "number": "30",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "015400",
         "firstName": "Robert",

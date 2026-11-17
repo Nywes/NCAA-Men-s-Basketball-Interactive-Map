@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-16",
+  "updated": "2026-11-17",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "rosters": {
@@ -66,7 +66,7 @@
         "lastName": "Bean",
         "photo": "https://api.basketball-bundesliga.de/images/player/portrait/2026/57252",
         "height": 201,
-        "age": 29,
+        "age": 30,
         "nationality": "US",
         "position": "Forward",
         "number": "34",
@@ -7992,7 +7992,7 @@
         "lastName": "Franklin",
         "photo": "https://api.basketball-bundesliga.de/images/player/portrait/2026/2004042",
         "height": 192,
-        "age": 25,
+        "age": 26,
         "nationality": "US",
         "position": "Guard",
         "number": "4",
