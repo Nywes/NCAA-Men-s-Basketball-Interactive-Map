@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "rosters": {
@@ -3690,7 +3690,7 @@
         "lastName": "Bedime",
         "photo": "https://api.basketball-bundesliga.de/images/player/portrait/2026/2003147",
         "height": 203,
-        "age": 24,
+        "age": 25,
         "nationality": "DE",
         "position": "Center",
         "number": "35",
@@ -5124,7 +5124,7 @@
         "lastName": "Joplin",
         "photo": "https://api.basketball-bundesliga.de/images/player/portrait/2026/2004259",
         "height": 203,
-        "age": 23,
+        "age": 24,
         "nationality": "US",
         "position": "Forward",
         "number": "2",

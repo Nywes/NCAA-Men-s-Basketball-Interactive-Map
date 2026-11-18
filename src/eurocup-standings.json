@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "standings": [
@@ -8,7 +8,7 @@
       "group": "A",
       "teamId": "JER",
       "name": "Jerusalem",
-      "wins": 7,
+      "wins": 8,
       "losses": 0,
       "winPct": 100,
       "lastFive": [
@@ -18,9 +18,9 @@
         "W",
         "W"
       ],
-      "pointsFor": 619,
-      "pointsAgainst": 518,
-      "diff": 101
+      "pointsFor": 710,
+      "pointsAgainst": 598,
+      "diff": 112
     },
     {
       "rank": 2,
@@ -123,18 +123,18 @@
       "teamId": "RTK",
       "name": "Rostock",
       "wins": 2,
-      "losses": 5,
-      "winPct": 28.6,
+      "losses": 6,
+      "winPct": 25,
       "lastFive": [
         "L",
         "L",
-        "L",
         "W",
+        "L",
         "L"
       ],
-      "pointsFor": 549,
-      "pointsAgainst": 605,
-      "diff": -56
+      "pointsFor": 629,
+      "pointsAgainst": 696,
+      "diff": -67
     },
     {
       "rank": 8,
@@ -160,9 +160,9 @@
       "group": "B",
       "teamId": "TNF",
       "name": "La Laguna Tenerife",
-      "wins": 6,
+      "wins": 7,
       "losses": 1,
-      "winPct": 85.7,
+      "winPct": 87.5,
       "lastFive": [
         "W",
         "W",
@@ -170,28 +170,28 @@
         "W",
         "W"
       ],
-      "pointsFor": 640,
-      "pointsAgainst": 553,
-      "diff": 87
+      "pointsFor": 731,
+      "pointsAgainst": 641,
+      "diff": 90
     },
     {
       "rank": 2,
       "group": "B",
       "teamId": "LLI",
       "name": "London",
-      "wins": 4,
+      "wins": 5,
       "losses": 3,
-      "winPct": 57.1,
+      "winPct": 62.5,
       "lastFive": [
-        "L",
         "W",
         "W",
         "L",
+        "W",
         "W"
       ],
-      "pointsFor": 560,
-      "pointsAgainst": 517,
-      "diff": 43
+      "pointsFor": 628,
+      "pointsAgainst": 572,
+      "diff": 56
     },
     {
       "rank": 3,
@@ -234,44 +234,6 @@
     {
       "rank": 5,
       "group": "B",
-      "teamId": "TTK",
-      "name": "Turk Telekom",
-      "wins": 3,
-      "losses": 4,
-      "winPct": 42.9,
-      "lastFive": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 564,
-      "pointsAgainst": 566,
-      "diff": -2
-    },
-    {
-      "rank": 6,
-      "group": "B",
-      "teamId": "SIA",
-      "name": "Siauliai",
-      "wins": 3,
-      "losses": 4,
-      "winPct": 42.9,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 560,
-      "pointsAgainst": 605,
-      "diff": -45
-    },
-    {
-      "rank": 7,
-      "group": "B",
       "teamId": "FRA",
       "name": "Skyliners",
       "wins": 3,
@@ -287,6 +249,44 @@
       "pointsFor": 606,
       "pointsAgainst": 663,
       "diff": -57
+    },
+    {
+      "rank": 6,
+      "group": "B",
+      "teamId": "TTK",
+      "name": "Turk Telekom",
+      "wins": 3,
+      "losses": 5,
+      "winPct": 37.5,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 652,
+      "pointsAgainst": 657,
+      "diff": -5
+    },
+    {
+      "rank": 7,
+      "group": "B",
+      "teamId": "SIA",
+      "name": "Siauliai",
+      "wins": 3,
+      "losses": 5,
+      "winPct": 37.5,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 615,
+      "pointsAgainst": 673,
+      "diff": -58
     },
     {
       "rank": 8,
@@ -464,19 +464,19 @@
       "group": "D",
       "teamId": "BAH",
       "name": "Bahcesehir",
-      "wins": 6,
+      "wins": 7,
       "losses": 1,
-      "winPct": 85.7,
+      "winPct": 87.5,
       "lastFive": [
-        "W",
         "L",
+        "W",
         "W",
         "W",
         "W"
       ],
-      "pointsFor": 647,
-      "pointsAgainst": 537,
-      "diff": 110
+      "pointsFor": 739,
+      "pointsAgainst": 607,
+      "diff": 132
     },
     {
       "rank": 2,
@@ -519,44 +519,6 @@
     {
       "rank": 4,
       "group": "D",
-      "teamId": "ULM",
-      "name": "Ulm",
-      "wins": 3,
-      "losses": 4,
-      "winPct": 42.9,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 613,
-      "pointsAgainst": 612,
-      "diff": 1
-    },
-    {
-      "rank": 5,
-      "group": "D",
-      "teamId": "BCR",
-      "name": "Roma",
-      "wins": 3,
-      "losses": 4,
-      "winPct": 42.9,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 601,
-      "pointsAgainst": 631,
-      "diff": -30
-    },
-    {
-      "rank": 6,
-      "group": "D",
       "teamId": "LKB",
       "name": "Lietkabelis",
       "wins": 3,
@@ -572,6 +534,44 @@
       "pointsFor": 516,
       "pointsAgainst": 572,
       "diff": -56
+    },
+    {
+      "rank": 5,
+      "group": "D",
+      "teamId": "ULM",
+      "name": "Ulm",
+      "wins": 3,
+      "losses": 5,
+      "winPct": 37.5,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "L",
+        "L"
+      ],
+      "pointsFor": 691,
+      "pointsAgainst": 698,
+      "diff": -7
+    },
+    {
+      "rank": 6,
+      "group": "D",
+      "teamId": "BCR",
+      "name": "Roma",
+      "wins": 3,
+      "losses": 5,
+      "winPct": 37.5,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 671,
+      "pointsAgainst": 723,
+      "diff": -52
     },
     {
       "rank": 7,
@@ -597,19 +597,19 @@
       "group": "D",
       "teamId": "BLK",
       "name": "Balkan",
-      "wins": 1,
+      "wins": 2,
       "losses": 6,
-      "winPct": 14.3,
+      "winPct": 25,
       "lastFive": [
         "L",
         "L",
-        "L",
         "W",
-        "L"
+        "L",
+        "W"
       ],
-      "pointsFor": 470,
-      "pointsAgainst": 555,
-      "diff": -85
+      "pointsFor": 556,
+      "pointsAgainst": 633,
+      "diff": -77
     }
   ]
 }

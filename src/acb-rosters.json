@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -390,6 +390,34 @@
         "p3": 0,
         "ft": 100,
         "pir": 2,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "30001446",
+        "firstName": "Nil",
+        "lastName": "Poza",
+        "photo": null,
+        "height": 165,
+        "age": 17,
+        "nationality": "ESP",
+        "position": "",
+        "number": "43",
+        "gp": 0,
+        "min": null,
+        "ppg": null,
+        "rpg": null,
+        "apg": null,
+        "spg": null,
+        "bpg": null,
+        "tov": null,
+        "p2": null,
+        "p3": null,
+        "ft": null,
+        "pir": null,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -3822,34 +3850,6 @@
         "p3": 0,
         "ft": 92,
         "pir": 10,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "20212430",
-        "firstName": "Matthew",
-        "lastName": "Thomas",
-        "photo": "https://static.acb.com/media/PRO/00/00/94/05/76/0000940576_5-6_01.jpg",
-        "height": 191,
-        "age": 32,
-        "nationality": "USA",
-        "position": "Guard",
-        "number": "21",
-        "gp": 3,
-        "min": 4.9,
-        "ppg": 0.7,
-        "rpg": 0,
-        "apg": 0,
-        "spg": 0.7,
-        "bpg": 0,
-        "tov": 0.7,
-        "p2": 50,
-        "p3": 0,
-        "ft": 0,
-        "pir": -2.3,
         "leagueRank": {
           "pts": null,
           "reb": null,

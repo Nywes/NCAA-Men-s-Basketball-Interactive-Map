@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "season": "E2026",
   "source": "api-live.euroleague.net (Off/Def Rating et Pace calculés localement, formules standard)",
   "byClub": {
@@ -9,7 +9,7 @@
         "rank": 20
       },
       "defRating": {
-        "value": 119.8237196203192,
+        "value": 119.04141024303745,
         "rank": 16
       },
       "pace": {
@@ -21,7 +21,7 @@
         "rank": 19
       },
       "oppPpg": {
-        "value": 91.9,
+        "value": 91.3,
         "rank": 16
       },
       "efgPct": {
@@ -63,8 +63,8 @@
         "rank": 19
       },
       "defRating": {
-        "value": 119.87864468667775,
-        "rank": 17
+        "value": 118.40197605111958,
+        "rank": 14
       },
       "pace": {
         "value": 74.492,
@@ -75,7 +75,7 @@
         "rank": 18
       },
       "oppPpg": {
-        "value": 89.3,
+        "value": 88.2,
         "rank": 12
       },
       "efgPct": {
@@ -117,8 +117,8 @@
         "rank": 18
       },
       "defRating": {
-        "value": 106.87169894366197,
-        "rank": 4
+        "value": 106.73415492957747,
+        "rank": 3
       },
       "pace": {
         "value": 72.704,
@@ -129,7 +129,7 @@
         "rank": 20
       },
       "oppPpg": {
-        "value": 77.7,
+        "value": 77.6,
         "rank": 1
       },
       "efgPct": {
@@ -172,7 +172,7 @@
       },
       "defRating": {
         "value": 119.13499344692006,
-        "rank": 13
+        "rank": 17
       },
       "pace": {
         "value": 76.3,
@@ -225,8 +225,8 @@
         "rank": 17
       },
       "defRating": {
-        "value": 121.75453439796944,
-        "rank": 19
+        "value": 122.28332716408441,
+        "rank": 18
       },
       "pace": {
         "value": 75.64399999999999,
@@ -237,7 +237,7 @@
         "rank": 15
       },
       "oppPpg": {
-        "value": 92.1,
+        "value": 92.5,
         "rank": 17
       },
       "efgPct": {
@@ -279,7 +279,7 @@
         "rank": 12
       },
       "defRating": {
-        "value": 125.57378779085107,
+        "value": 127.94808209782093,
         "rank": 20
       },
       "pace": {
@@ -291,7 +291,7 @@
         "rank": 9
       },
       "oppPpg": {
-        "value": 95.2,
+        "value": 97,
         "rank": 20
       },
       "efgPct": {
@@ -333,7 +333,7 @@
         "rank": 15
       },
       "defRating": {
-        "value": 104.59293560198148,
+        "value": 106.0736592720224,
         "rank": 1
       },
       "pace": {
@@ -345,7 +345,7 @@
         "rank": 16
       },
       "oppPpg": {
-        "value": 77.7,
+        "value": 78.8,
         "rank": 2
       },
       "efgPct": {
@@ -387,8 +387,8 @@
         "rank": 13
       },
       "defRating": {
-        "value": 119.24796213515646,
-        "rank": 14
+        "value": 118.06468577438862,
+        "rank": 13
       },
       "pace": {
         "value": 76.06,
@@ -399,8 +399,8 @@
         "rank": 12
       },
       "oppPpg": {
-        "value": 90.7,
-        "rank": 14
+        "value": 89.8,
+        "rank": 13
       },
       "efgPct": {
         "value": 51.3,
@@ -441,8 +441,8 @@
         "rank": 14
       },
       "defRating": {
-        "value": 106.5907241659886,
-        "rank": 3
+        "value": 106.86194738269596,
+        "rank": 4
       },
       "pace": {
         "value": 73.74,
@@ -453,8 +453,8 @@
         "rank": 17
       },
       "oppPpg": {
-        "value": 78.6,
-        "rank": 4
+        "value": 78.8,
+        "rank": 3
       },
       "efgPct": {
         "value": 52.9,
@@ -495,7 +495,7 @@
         "rank": 4
       },
       "defRating": {
-        "value": 116.5519816503974,
+        "value": 116.68533632047794,
         "rank": 11
       },
       "pace": {
@@ -507,8 +507,8 @@
         "rank": 5
       },
       "oppPpg": {
-        "value": 87.4,
-        "rank": 9
+        "value": 87.5,
+        "rank": 11
       },
       "efgPct": {
         "value": 56.8,
@@ -549,7 +549,7 @@
         "rank": 9
       },
       "defRating": {
-        "value": 119.61053487899125,
+        "value": 118.72076469391908,
         "rank": 15
       },
       "pace": {
@@ -561,8 +561,8 @@
         "rank": 3
       },
       "oppPpg": {
-        "value": 94.1,
-        "rank": 19
+        "value": 93.4,
+        "rank": 18
       },
       "efgPct": {
         "value": 55.6,
@@ -603,8 +603,8 @@
         "rank": 10
       },
       "defRating": {
-        "value": 121.29099427381571,
-        "rank": 18
+        "value": 123.63352420614262,
+        "rank": 19
       },
       "pace": {
         "value": 76.84,
@@ -615,8 +615,8 @@
         "rank": 6
       },
       "oppPpg": {
-        "value": 93.2,
-        "rank": 18
+        "value": 95,
+        "rank": 19
       },
       "efgPct": {
         "value": 58.4,
@@ -657,8 +657,8 @@
         "rank": 16
       },
       "defRating": {
-        "value": 114.18206493370914,
-        "rank": 8
+        "value": 113.26860841423947,
+        "rank": 7
       },
       "pace": {
         "value": 76.632,
@@ -669,8 +669,8 @@
         "rank": 13
       },
       "oppPpg": {
-        "value": 87.5,
-        "rank": 10
+        "value": 86.8,
+        "rank": 8
       },
       "efgPct": {
         "value": 53.5,
@@ -711,7 +711,7 @@
         "rank": 5
       },
       "defRating": {
-        "value": 117.99084743893698,
+        "value": 116.88812923857309,
         "rank": 12
       },
       "pace": {
@@ -723,8 +723,8 @@
         "rank": 10
       },
       "oppPpg": {
-        "value": 85.6,
-        "rank": 7
+        "value": 84.8,
+        "rank": 6
       },
       "efgPct": {
         "value": 55.3,
@@ -765,8 +765,8 @@
         "rank": 11
       },
       "defRating": {
-        "value": 110.56247316444828,
-        "rank": 6
+        "value": 114.05109489051095,
+        "rank": 8
       },
       "pace": {
         "value": 74.52799999999999,
@@ -777,8 +777,8 @@
         "rank": 14
       },
       "oppPpg": {
-        "value": 82.4,
-        "rank": 6
+        "value": 85,
+        "rank": 7
       },
       "efgPct": {
         "value": 54,
@@ -819,7 +819,7 @@
         "rank": 7
       },
       "defRating": {
-        "value": 105.76093985772795,
+        "value": 106.29984910541066,
         "rank": 2
       },
       "pace": {
@@ -831,8 +831,8 @@
         "rank": 11
       },
       "oppPpg": {
-        "value": 78.5,
-        "rank": 3
+        "value": 78.9,
+        "rank": 4
       },
       "efgPct": {
         "value": 55.9,
@@ -873,8 +873,8 @@
         "rank": 3
       },
       "defRating": {
-        "value": 115.47833456933996,
-        "rank": 10
+        "value": 114.94861743828793,
+        "rank": 9
       },
       "pace": {
         "value": 75.51200000000001,
@@ -885,8 +885,8 @@
         "rank": 4
       },
       "oppPpg": {
-        "value": 87.2,
-        "rank": 8
+        "value": 86.8,
+        "rank": 9
       },
       "efgPct": {
         "value": 56.2,
@@ -927,7 +927,7 @@
         "rank": 6
       },
       "defRating": {
-        "value": 108.06684878675881,
+        "value": 109.67379077615298,
         "rank": 5
       },
       "pace": {
@@ -939,7 +939,7 @@
         "rank": 7
       },
       "oppPpg": {
-        "value": 80.7,
+        "value": 81.9,
         "rank": 5
       },
       "efgPct": {
@@ -981,8 +981,8 @@
         "rank": 2
       },
       "defRating": {
-        "value": 113.84591742649319,
-        "rank": 7
+        "value": 111.15664378649728,
+        "rank": 6
       },
       "pace": {
         "value": 78.08800000000001,
@@ -993,8 +993,8 @@
         "rank": 2
       },
       "oppPpg": {
-        "value": 88.9,
-        "rank": 11
+        "value": 86.8,
+        "rank": 10
       },
       "efgPct": {
         "value": 56.2,
@@ -1036,7 +1036,7 @@
       },
       "defRating": {
         "value": 115.39446721311472,
-        "rank": 9
+        "rank": 10
       },
       "pace": {
         "value": 78.08000000000001,
@@ -1048,7 +1048,7 @@
       },
       "oppPpg": {
         "value": 90.1,
-        "rank": 13
+        "rank": 14
       },
       "efgPct": {
         "value": 58.6,

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-17",
+  "updated": "2026-11-18",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -140,8 +140,8 @@
     {
       "rank": 8,
       "group": null,
-      "teamId": "bbae77db-317d-4c17-aa04-75d53d20ad15",
-      "name": "NZ Breakers",
+      "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
+      "name": "South East Melbourne Phoenix",
       "wins": 5,
       "losses": 9,
       "winPct": 35.7,
@@ -149,15 +149,34 @@
         "L",
         "L",
         "L",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
-      "pointsFor": 1269,
-      "pointsAgainst": 1280,
-      "diff": -11
+      "pointsFor": 1374,
+      "pointsAgainst": 1371,
+      "diff": 3
     },
     {
       "rank": 9,
+      "group": null,
+      "teamId": "bbae77db-317d-4c17-aa04-75d53d20ad15",
+      "name": "NZ Breakers",
+      "wins": 5,
+      "losses": 10,
+      "winPct": 33.3,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 1365,
+      "pointsAgainst": 1381,
+      "diff": -16
+    },
+    {
+      "rank": 10,
       "group": null,
       "teamId": "105249a3-251d-4a9d-94f4-f57b8e0854b3",
       "name": "Illawarra Hawks",
@@ -174,25 +193,6 @@
       "pointsFor": 1462,
       "pointsAgainst": 1571,
       "diff": -109
-    },
-    {
-      "rank": 10,
-      "group": null,
-      "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
-      "name": "South East Melbourne Phoenix",
-      "wins": 4,
-      "losses": 9,
-      "winPct": 30.8,
-      "lastFive": [
-        "W",
-        "L",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 1273,
-      "pointsAgainst": 1275,
-      "diff": -2
     }
   ]
 }
