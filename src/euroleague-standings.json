@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "standings": [
@@ -142,18 +142,18 @@
       "teamId": "MAD",
       "name": "Real Madrid",
       "wins": 7,
-      "losses": 4,
-      "winPct": 63.6,
+      "losses": 5,
+      "winPct": 58.3,
       "lastFive": [
         "W",
         "W",
-        "W",
         "L",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 1072,
-      "pointsAgainst": 977,
-      "diff": 95
+      "pointsFor": 1151,
+      "pointsAgainst": 1060,
+      "diff": 91
     },
     {
       "rank": 9,
@@ -215,6 +215,25 @@
     {
       "rank": 12,
       "group": "Regular Season",
+      "teamId": "BES",
+      "name": "Besiktas",
+      "wins": 6,
+      "losses": 6,
+      "winPct": 50,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 1055,
+      "pointsAgainst": 1079,
+      "diff": -24
+    },
+    {
+      "rank": 13,
+      "group": "Regular Season",
       "teamId": "PRS",
       "name": "Paris Basketball",
       "wins": 6,
@@ -230,25 +249,6 @@
       "pointsFor": 1071,
       "pointsAgainst": 1104,
       "diff": -33
-    },
-    {
-      "rank": 13,
-      "group": "Regular Season",
-      "teamId": "BES",
-      "name": "Besiktas",
-      "wins": 5,
-      "losses": 6,
-      "winPct": 45.5,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 972,
-      "pointsAgainst": 1000,
-      "diff": -28
     },
     {
       "rank": 14,

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "rosters": {
@@ -6164,7 +6164,7 @@
         "lastName": "Moses",
         "photo": "https://api.basketball-bundesliga.de/images/player/portrait/2026/2004953",
         "height": 182,
-        "age": 24,
+        "age": 25,
         "nationality": "US",
         "position": "Guard",
         "number": "11",
@@ -6952,7 +6952,7 @@
         "lastName": "Jokubaitis",
         "photo": "https://api.basketball-bundesliga.de/images/player/portrait/2026/2002017",
         "height": 193,
-        "age": 25,
+        "age": 26,
         "nationality": "LT",
         "position": "Guard",
         "number": "31",

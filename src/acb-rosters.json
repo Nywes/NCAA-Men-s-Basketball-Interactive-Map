@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -290,7 +290,7 @@
         "lastName": "Balcerowski",
         "photo": "https://static.acb.com/media/PRO/00/00/93/01/22/0000930122_5-6_01.jpg",
         "height": 216,
-        "age": 25,
+        "age": 26,
         "nationality": "POL",
         "position": "Center",
         "number": "22",
@@ -401,7 +401,7 @@
         "firstName": "Nil",
         "lastName": "Poza",
         "photo": null,
-        "height": 165,
+        "height": 175,
         "age": 17,
         "nationality": "ESP",
         "position": "",
@@ -880,7 +880,7 @@
         "lastName": "Faried",
         "photo": "https://static.acb.com/media/PRO/00/00/92/78/34/0000927834_5-6_01.jpg",
         "height": 203,
-        "age": 36,
+        "age": 37,
         "nationality": "USA",
         "position": "Center",
         "number": "35",

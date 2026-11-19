@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18",
+  "updated": "2026-11-19",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -83,25 +83,6 @@
     {
       "rank": 5,
       "group": null,
-      "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
-      "name": "Adelaide 36ers",
-      "wins": 7,
-      "losses": 6,
-      "winPct": 53.8,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 1208,
-      "pointsAgainst": 1202,
-      "diff": 6
-    },
-    {
-      "rank": 6,
-      "group": null,
       "teamId": "bc5327d5-322e-4796-b103-4c3b63869edb",
       "name": "Perth Wildcats",
       "wins": 7,
@@ -117,6 +98,25 @@
       "pointsFor": 1244,
       "pointsAgainst": 1271,
       "diff": -27
+    },
+    {
+      "rank": 6,
+      "group": null,
+      "teamId": "3164912c-7e74-463b-8fc3-5f7d45edfcc6",
+      "name": "Adelaide 36ers",
+      "wins": 7,
+      "losses": 7,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 1305,
+      "pointsAgainst": 1305,
+      "diff": 0
     },
     {
       "rank": 7,
@@ -140,6 +140,25 @@
     {
       "rank": 8,
       "group": null,
+      "teamId": "105249a3-251d-4a9d-94f4-f57b8e0854b3",
+      "name": "Illawarra Hawks",
+      "wins": 6,
+      "losses": 10,
+      "winPct": 37.5,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 1565,
+      "pointsAgainst": 1668,
+      "diff": -103
+    },
+    {
+      "rank": 9,
+      "group": null,
       "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
       "name": "South East Melbourne Phoenix",
       "wins": 5,
@@ -157,7 +176,7 @@
       "diff": 3
     },
     {
-      "rank": 9,
+      "rank": 10,
       "group": null,
       "teamId": "bbae77db-317d-4c17-aa04-75d53d20ad15",
       "name": "NZ Breakers",
@@ -174,25 +193,6 @@
       "pointsFor": 1365,
       "pointsAgainst": 1381,
       "diff": -16
-    },
-    {
-      "rank": 10,
-      "group": null,
-      "teamId": "105249a3-251d-4a9d-94f4-f57b8e0854b3",
-      "name": "Illawarra Hawks",
-      "wins": 5,
-      "losses": 10,
-      "winPct": 33.3,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "L"
-      ],
-      "pointsFor": 1462,
-      "pointsAgainst": 1571,
-      "diff": -109
     }
   ]
 }
