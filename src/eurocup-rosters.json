@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -1766,6 +1766,21 @@
       }
     ],
     "BUD": [
+      {
+        "code": "015493",
+        "firstName": "Luka",
+        "lastName": "Jocovic",
+        "photo": null,
+        "height": 188,
+        "nationality": "MNE",
+        "position": "Guard",
+        "number": "42",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "011281",
         "firstName": "Yogi",
@@ -5165,6 +5180,21 @@
       }
     ],
     "LLI": [
+      {
+        "code": "015418",
+        "firstName": "Jaden",
+        "lastName": "Shackelford",
+        "photo": null,
+        "height": 191,
+        "nationality": "USA",
+        "position": "Guard",
+        "number": "13",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "015417",
         "firstName": "Ade",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "rosters": {
@@ -430,7 +430,7 @@
         "lastName": "Borczanowski",
         "photo": "https://api.basketball-bundesliga.de/images/player/portrait/2026/2004526",
         "height": 204,
-        "age": 17,
+        "age": 18,
         "nationality": "DE",
         "position": "Guard",
         "number": "8",

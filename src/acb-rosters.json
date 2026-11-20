@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19",
+  "updated": "2026-11-20",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -148,7 +148,7 @@
         "code": "20209919",
         "firstName": "Darío",
         "lastName": "Brizuela",
-        "photo": "https://static.acb.com/media/PRO/00/00/94/12/30/0000941230_5-6_01.jpg",
+        "photo": "https://static.acb.com/media/PRO/00/00/95/22/12/0000952212_5-6_01.jpg",
         "height": 188,
         "age": 32,
         "nationality": "ESP",
@@ -166,6 +166,34 @@
         "p3": 42.86,
         "ft": 75,
         "pir": 10.1,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "30005917",
+        "firstName": "Killian",
+        "lastName": "Hayes",
+        "photo": "https://static.acb.com/media/PRO/00/00/95/21/69/0000952169_5-6_01.jpg",
+        "height": 193,
+        "age": 25,
+        "nationality": "FRA",
+        "position": "Guard",
+        "number": "9",
+        "gp": 0,
+        "min": null,
+        "ppg": null,
+        "rpg": null,
+        "apg": null,
+        "spg": null,
+        "bpg": null,
+        "tov": null,
+        "p2": null,
+        "p3": null,
+        "ft": null,
+        "pir": null,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -372,7 +400,7 @@
         "code": "30004602",
         "firstName": "Abdrahamane",
         "lastName": "Kone",
-        "photo": "https://static.acb.com/media/PRO/00/00/93/72/21/0000937221_5-6_01.jpg",
+        "photo": "https://static.acb.com/media/PRO/00/00/95/21/91/0000952191_5-6_01.jpg",
         "height": 207,
         "age": 17,
         "nationality": "MLI",
@@ -390,34 +418,6 @@
         "p3": 0,
         "ft": 100,
         "pir": 2,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "30001446",
-        "firstName": "Nil",
-        "lastName": "Poza",
-        "photo": null,
-        "height": 175,
-        "age": 17,
-        "nationality": "ESP",
-        "position": "",
-        "number": "43",
-        "gp": 0,
-        "min": null,
-        "ppg": null,
-        "rpg": null,
-        "apg": null,
-        "spg": null,
-        "bpg": null,
-        "tov": null,
-        "p2": null,
-        "p3": null,
-        "ft": null,
-        "pir": null,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -2190,6 +2190,34 @@
         "p3": 33.33,
         "ft": 81.25,
         "pir": 7.9,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "30001229",
+        "firstName": "Eli",
+        "lastName": "Ndiaye",
+        "photo": null,
+        "height": 204,
+        "age": 22,
+        "nationality": "ESP",
+        "position": "Forward",
+        "number": "44",
+        "gp": 0,
+        "min": null,
+        "ppg": null,
+        "rpg": null,
+        "apg": null,
+        "spg": null,
+        "bpg": null,
+        "tov": null,
+        "p2": null,
+        "p3": null,
+        "ft": null,
+        "pir": null,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -5321,34 +5349,6 @@
         }
       },
       {
-        "code": "20201760",
-        "firstName": "Marcelo",
-        "lastName": "Tieppo",
-        "photo": "https://static.acb.com/media/PRO/00/00/93/16/73/0000931673_5-6_01.jpg",
-        "height": 191,
-        "age": 43,
-        "nationality": "ITA",
-        "position": "Guard",
-        "number": "9",
-        "gp": 8,
-        "min": 20.9,
-        "ppg": 15.1,
-        "rpg": 1.1,
-        "apg": 3.9,
-        "spg": 0.6,
-        "bpg": 0,
-        "tov": 1.8,
-        "p2": 61.11,
-        "p3": 71.43,
-        "ft": 92.59,
-        "pir": 17.4,
-        "leagueRank": {
-          "pts": null,
-          "reb": null,
-          "ast": 20
-        }
-      },
-      {
         "code": "30004699",
         "firstName": "Emilis",
         "lastName": "Prekevicius",
@@ -6018,6 +6018,34 @@
         "p3": 42.55,
         "ft": 72.22,
         "pir": 9.8,
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "30001134",
+        "firstName": "Shannon",
+        "lastName": "Evans II",
+        "photo": null,
+        "height": 185,
+        "age": 32,
+        "nationality": "USA",
+        "position": "Guard",
+        "number": "2",
+        "gp": 0,
+        "min": null,
+        "ppg": null,
+        "rpg": null,
+        "apg": null,
+        "spg": null,
+        "bpg": null,
+        "tov": null,
+        "p2": null,
+        "p3": null,
+        "ft": null,
+        "pir": null,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -7287,7 +7315,7 @@
         "leagueRank": {
           "pts": 8,
           "reb": null,
-          "ast": null
+          "ast": 20
         }
       },
       {
