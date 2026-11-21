@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -161,40 +161,21 @@
       "teamId": "540",
       "name": "Fitness First Würzburg Baskets",
       "wins": 4,
-      "losses": 4,
-      "winPct": 50,
-      "lastFive": [
-        "L",
-        "W",
-        "W",
-        "L",
-        "L"
-      ],
-      "pointsFor": 654,
-      "pointsAgainst": 666,
-      "diff": -12
-    },
-    {
-      "rank": 10,
-      "group": null,
-      "teamId": "418",
-      "name": "ratiopharm ulm",
-      "wins": 4,
       "losses": 5,
       "winPct": 44.44,
       "lastFive": [
-        "L",
-        "L",
+        "W",
         "W",
         "L",
-        "W"
+        "L",
+        "L"
       ],
-      "pointsFor": 757,
-      "pointsAgainst": 769,
-      "diff": -12
+      "pointsFor": 745,
+      "pointsAgainst": 763,
+      "diff": -18
     },
     {
-      "rank": 11,
+      "rank": 10,
       "group": null,
       "teamId": "420",
       "name": "BMA365 Bamberg Baskets",
@@ -211,6 +192,25 @@
       "pointsFor": 766,
       "pointsAgainst": 771,
       "diff": -5
+    },
+    {
+      "rank": 11,
+      "group": null,
+      "teamId": "418",
+      "name": "ratiopharm ulm",
+      "wins": 4,
+      "losses": 5,
+      "winPct": 44.44,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "L",
+        "W"
+      ],
+      "pointsFor": 757,
+      "pointsAgainst": 769,
+      "diff": -12
     },
     {
       "rank": 12,
@@ -234,21 +234,21 @@
     {
       "rank": 13,
       "group": null,
-      "teamId": "485",
-      "name": "NINERS Chemnitz",
-      "wins": 3,
+      "teamId": "541",
+      "name": "RASTA Vechta",
+      "wins": 4,
       "losses": 6,
-      "winPct": 33.33,
+      "winPct": 40,
       "lastFive": [
         "L",
-        "L",
+        "W",
         "W",
         "L",
         "W"
       ],
-      "pointsFor": 808,
-      "pointsAgainst": 799,
-      "diff": 9
+      "pointsFor": 862,
+      "pointsAgainst": 903,
+      "diff": -41
     },
     {
       "rank": 14,
@@ -272,21 +272,21 @@
     {
       "rank": 15,
       "group": null,
-      "teamId": "541",
-      "name": "RASTA Vechta",
+      "teamId": "485",
+      "name": "NINERS Chemnitz",
       "wins": 3,
       "losses": 6,
       "winPct": 33.33,
       "lastFive": [
-        "W",
+        "L",
         "L",
         "W",
-        "W",
-        "L"
+        "L",
+        "W"
       ],
-      "pointsFor": 765,
-      "pointsAgainst": 812,
-      "diff": -47
+      "pointsFor": 808,
+      "pointsAgainst": 799,
+      "diff": 9
     },
     {
       "rank": 16,

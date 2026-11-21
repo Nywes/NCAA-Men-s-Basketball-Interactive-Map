@@ -1,11 +1,30 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
   "standings": [
     {
       "rank": 1,
+      "group": null,
+      "teamId": "0602b1bc-8dfb-488c-ac11-7895de1a7556",
+      "name": "Tasmania JackJumpers",
+      "wins": 10,
+      "losses": 4,
+      "winPct": 71.4,
+      "lastFive": [
+        "W",
+        "W",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 1326,
+      "pointsAgainst": 1257,
+      "diff": 69
+    },
+    {
+      "rank": 2,
       "group": null,
       "teamId": "39fc4268-0cdf-455f-9ca1-12e344064000",
       "name": "Sydney Kings",
@@ -24,26 +43,26 @@
       "diff": 116
     },
     {
-      "rank": 2,
+      "rank": 3,
       "group": null,
-      "teamId": "0602b1bc-8dfb-488c-ac11-7895de1a7556",
-      "name": "Tasmania JackJumpers",
+      "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
+      "name": "Melbourne United",
       "wins": 9,
-      "losses": 4,
-      "winPct": 69.2,
+      "losses": 6,
+      "winPct": 60,
       "lastFive": [
-        "L",
         "W",
         "W",
         "L",
+        "W",
         "W"
       ],
-      "pointsFor": 1231,
-      "pointsAgainst": 1175,
-      "diff": 56
+      "pointsFor": 1470,
+      "pointsAgainst": 1378,
+      "diff": 92
     },
     {
-      "rank": 3,
+      "rank": 4,
       "group": null,
       "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
       "name": "Cairns Taipans",
@@ -60,25 +79,6 @@
       "pointsFor": 1391,
       "pointsAgainst": 1433,
       "diff": -42
-    },
-    {
-      "rank": 4,
-      "group": null,
-      "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
-      "name": "Melbourne United",
-      "wins": 8,
-      "losses": 6,
-      "winPct": 57.1,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 1376,
-      "pointsAgainst": 1287,
-      "diff": 89
     },
     {
       "rank": 5,
@@ -140,25 +140,6 @@
     {
       "rank": 8,
       "group": null,
-      "teamId": "105249a3-251d-4a9d-94f4-f57b8e0854b3",
-      "name": "Illawarra Hawks",
-      "wins": 6,
-      "losses": 10,
-      "winPct": 37.5,
-      "lastFive": [
-        "W",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 1565,
-      "pointsAgainst": 1668,
-      "diff": -103
-    },
-    {
-      "rank": 9,
-      "group": null,
       "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
       "name": "South East Melbourne Phoenix",
       "wins": 5,
@@ -176,23 +157,42 @@
       "diff": 3
     },
     {
+      "rank": 9,
+      "group": null,
+      "teamId": "105249a3-251d-4a9d-94f4-f57b8e0854b3",
+      "name": "Illawarra Hawks",
+      "wins": 6,
+      "losses": 11,
+      "winPct": 35.3,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 1647,
+      "pointsAgainst": 1763,
+      "diff": -116
+    },
+    {
       "rank": 10,
       "group": null,
       "teamId": "bbae77db-317d-4c17-aa04-75d53d20ad15",
       "name": "NZ Breakers",
       "wins": 5,
-      "losses": 10,
-      "winPct": 33.3,
+      "losses": 11,
+      "winPct": 31.3,
       "lastFive": [
-        "L",
         "L",
         "W",
         "L",
+        "L",
         "L"
       ],
-      "pointsFor": 1365,
-      "pointsAgainst": 1381,
-      "diff": -16
+      "pointsFor": 1456,
+      "pointsAgainst": 1475,
+      "diff": -19
     }
   ]
 }
