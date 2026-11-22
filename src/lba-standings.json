@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "season": "2026-27",
   "source": "legabasket.it",
   "standings": [
@@ -28,18 +28,18 @@
       "teamId": "42",
       "name": "Napoli Basketball",
       "wins": 7,
-      "losses": 1,
-      "winPct": 87.5,
+      "losses": 2,
+      "winPct": 77.8,
       "lastFive": [
-        "L",
         "W",
         "W",
         "W",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 746,
-      "pointsAgainst": 695,
-      "diff": 51
+      "pointsFor": 832,
+      "pointsAgainst": 795,
+      "diff": 37
     },
     {
       "rank": 3,
@@ -139,25 +139,6 @@
     {
       "rank": 8,
       "group": null,
-      "teamId": "106",
-      "name": "Pallacanestro Trieste",
-      "wins": 4,
-      "losses": 4,
-      "winPct": 50,
-      "lastFive": [
-        "W",
-        "W",
-        "W",
-        "W",
-        "L"
-      ],
-      "pointsFor": 750,
-      "pointsAgainst": 709,
-      "diff": 41
-    },
-    {
-      "rank": 9,
-      "group": null,
       "teamId": "57",
       "name": "APU Old Wild West Udine",
       "wins": 4,
@@ -175,7 +156,7 @@
       "diff": -6
     },
     {
-      "rank": 10,
+      "rank": 9,
       "group": null,
       "teamId": "63",
       "name": "Tezenis Verona",
@@ -194,7 +175,45 @@
       "diff": -18
     },
     {
+      "rank": 10,
+      "group": null,
+      "teamId": "106",
+      "name": "Pallacanestro Trieste",
+      "wins": 4,
+      "losses": 5,
+      "winPct": 44.4,
+      "lastFive": [
+        "W",
+        "W",
+        "W",
+        "L",
+        "L"
+      ],
+      "pointsFor": 839,
+      "pointsAgainst": 803,
+      "diff": 36
+    },
+    {
       "rank": 11,
+      "group": null,
+      "teamId": "104",
+      "name": "Dolomiti Energia Trentino",
+      "wins": 4,
+      "losses": 5,
+      "winPct": 44.4,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "L",
+        "W"
+      ],
+      "pointsFor": 738,
+      "pointsAgainst": 759,
+      "diff": -21
+    },
+    {
+      "rank": 12,
       "group": null,
       "teamId": "111",
       "name": "Bertram Derthona Tortona",
@@ -213,26 +232,26 @@
       "diff": -37
     },
     {
-      "rank": 12,
+      "rank": 13,
       "group": null,
-      "teamId": "104",
-      "name": "Dolomiti Energia Trentino",
+      "teamId": "44",
+      "name": "UNA Hotels Reggio Emilia",
       "wins": 3,
-      "losses": 5,
-      "winPct": 37.5,
+      "losses": 6,
+      "winPct": 33.3,
       "lastFive": [
         "W",
         "L",
         "L",
         "L",
-        "L"
+        "W"
       ],
-      "pointsFor": 638,
-      "pointsAgainst": 673,
-      "diff": -35
+      "pointsFor": 750,
+      "pointsAgainst": 774,
+      "diff": -24
     },
     {
-      "rank": 13,
+      "rank": 14,
       "group": null,
       "teamId": "246",
       "name": "BC Roma",
@@ -249,25 +268,6 @@
       "pointsFor": 789,
       "pointsAgainst": 784,
       "diff": 5
-    },
-    {
-      "rank": 14,
-      "group": null,
-      "teamId": "44",
-      "name": "UNA Hotels Reggio Emilia",
-      "wins": 2,
-      "losses": 6,
-      "winPct": 25,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 656,
-      "pointsAgainst": 685,
-      "diff": -29
     },
     {
       "rank": 15,

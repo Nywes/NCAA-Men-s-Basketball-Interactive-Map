@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21",
+  "updated": "2026-11-22",
   "season": "2026-27",
   "seasonName": "NBL27",
   "source": "nbl.com.au",
@@ -29,21 +29,40 @@
       "teamId": "39fc4268-0cdf-455f-9ca1-12e344064000",
       "name": "Sydney Kings",
       "wins": 9,
-      "losses": 4,
-      "winPct": 69.2,
+      "losses": 5,
+      "winPct": 64.3,
       "lastFive": [
         "W",
         "W",
-        "W",
         "L",
-        "W"
+        "W",
+        "L"
       ],
-      "pointsFor": 1282,
-      "pointsAgainst": 1166,
-      "diff": 116
+      "pointsFor": 1386,
+      "pointsAgainst": 1281,
+      "diff": 105
     },
     {
       "rank": 3,
+      "group": null,
+      "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
+      "name": "Cairns Taipans",
+      "wins": 10,
+      "losses": 6,
+      "winPct": 62.5,
+      "lastFive": [
+        "L",
+        "W",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 1486,
+      "pointsAgainst": 1525,
+      "diff": -39
+    },
+    {
+      "rank": 4,
       "group": null,
       "teamId": "41c8f340-4d0a-4d68-a3c7-1b31f643f803",
       "name": "Melbourne United",
@@ -60,25 +79,6 @@
       "pointsFor": 1470,
       "pointsAgainst": 1378,
       "diff": 92
-    },
-    {
-      "rank": 4,
-      "group": null,
-      "teamId": "6bf2a6e3-2626-491d-962b-48805205c06e",
-      "name": "Cairns Taipans",
-      "wins": 9,
-      "losses": 6,
-      "winPct": 60,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "W",
-        "W"
-      ],
-      "pointsFor": 1391,
-      "pointsAgainst": 1433,
-      "diff": -42
     },
     {
       "rank": 5,
@@ -123,41 +123,22 @@
       "group": null,
       "teamId": "f8185bc5-2674-4293-a2a7-aeb8c7549b30",
       "name": "Brisbane Bullets",
-      "wins": 6,
+      "wins": 7,
       "losses": 8,
-      "winPct": 42.9,
+      "winPct": 46.7,
       "lastFive": [
         "W",
-        "W",
-        "L",
-        "L",
-        "L"
-      ],
-      "pointsFor": 1321,
-      "pointsAgainst": 1389,
-      "diff": -68
-    },
-    {
-      "rank": 8,
-      "group": null,
-      "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
-      "name": "South East Melbourne Phoenix",
-      "wins": 5,
-      "losses": 9,
-      "winPct": 35.7,
-      "lastFive": [
-        "L",
         "L",
         "L",
         "L",
         "W"
       ],
-      "pointsFor": 1374,
-      "pointsAgainst": 1371,
-      "diff": 3
+      "pointsFor": 1436,
+      "pointsAgainst": 1493,
+      "diff": -57
     },
     {
-      "rank": 9,
+      "rank": 8,
       "group": null,
       "teamId": "105249a3-251d-4a9d-94f4-f57b8e0854b3",
       "name": "Illawarra Hawks",
@@ -174,6 +155,25 @@
       "pointsFor": 1647,
       "pointsAgainst": 1763,
       "diff": -116
+    },
+    {
+      "rank": 9,
+      "group": null,
+      "teamId": "3bdb8ad6-7cf0-464d-b62c-eaca9145d06e",
+      "name": "South East Melbourne Phoenix",
+      "wins": 5,
+      "losses": 10,
+      "winPct": 33.3,
+      "lastFive": [
+        "L",
+        "L",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 1466,
+      "pointsAgainst": 1466,
+      "diff": 0
     },
     {
       "rank": 10,
