@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -779,6 +779,21 @@
       }
     ],
     "BES": [
+      {
+        "code": "015550",
+        "firstName": "Mady",
+        "lastName": "Sissoko",
+        "photo": null,
+        "height": 206,
+        "nationality": "MLI",
+        "position": "Center",
+        "number": "44",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "013403",
         "firstName": "Lonnie",
@@ -3637,6 +3652,21 @@
       }
     ],
     "BAS": [
+      {
+        "code": "011579",
+        "firstName": "Zacharie",
+        "lastName": "Perrin",
+        "photo": null,
+        "height": 208,
+        "nationality": "FRA",
+        "position": "Center",
+        "number": "52",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "008325",
         "firstName": "Kenan",

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-22",
+  "updated": "2026-11-23",
   "season": "2026-27",
   "source": "easycredit-bbl.de",
   "standings": [
@@ -8,19 +8,19 @@
       "group": null,
       "teamId": "486",
       "name": "FC Bayern München Basketball",
-      "wins": 8,
+      "wins": 9,
       "losses": 1,
-      "winPct": 88.89,
+      "winPct": 90,
       "lastFive": [
-        "W",
         "L",
+        "W",
         "W",
         "W",
         "W"
       ],
-      "pointsFor": 859,
-      "pointsAgainst": 622,
-      "diff": 237
+      "pointsFor": 949,
+      "pointsAgainst": 701,
+      "diff": 248
     },
     {
       "rank": 2,
@@ -65,41 +65,60 @@
       "group": null,
       "teamId": "415",
       "name": "Telekom Baskets Bonn",
-      "wins": 6,
+      "wins": 7,
       "losses": 3,
-      "winPct": 66.67,
+      "winPct": 70,
       "lastFive": [
-        "W",
         "L",
+        "W",
         "W",
         "W",
         "W"
       ],
-      "pointsFor": 789,
-      "pointsAgainst": 731,
-      "diff": 58
+      "pointsFor": 878,
+      "pointsAgainst": 803,
+      "diff": 75
     },
     {
       "rank": 5,
       "group": null,
+      "teamId": "433",
+      "name": "MHP RIESEN Ludwigsburg",
+      "wins": 6,
+      "losses": 4,
+      "winPct": 60,
+      "lastFive": [
+        "W",
+        "L",
+        "L",
+        "W",
+        "W"
+      ],
+      "pointsFor": 871,
+      "pointsAgainst": 854,
+      "diff": 17
+    },
+    {
+      "rank": 6,
+      "group": null,
       "teamId": "428",
       "name": "SYNTAINICS MBC",
       "wins": 6,
-      "losses": 3,
-      "winPct": 66.67,
+      "losses": 4,
+      "winPct": 60,
       "lastFive": [
         "W",
         "W",
         "W",
-        "W",
+        "L",
         "L"
       ],
-      "pointsFor": 754,
-      "pointsAgainst": 732,
-      "diff": 22
+      "pointsFor": 841,
+      "pointsAgainst": 828,
+      "diff": 13
     },
     {
-      "rank": 6,
+      "rank": 7,
       "group": null,
       "teamId": "426",
       "name": "SKYLINERS",
@@ -118,45 +137,7 @@
       "diff": 22
     },
     {
-      "rank": 7,
-      "group": null,
-      "teamId": "433",
-      "name": "MHP RIESEN Ludwigsburg",
-      "wins": 5,
-      "losses": 4,
-      "winPct": 55.56,
-      "lastFive": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "W"
-      ],
-      "pointsFor": 775,
-      "pointsAgainst": 767,
-      "diff": 8
-    },
-    {
       "rank": 8,
-      "group": null,
-      "teamId": "413",
-      "name": "ALBA BERLIN",
-      "wins": 5,
-      "losses": 4,
-      "winPct": 55.56,
-      "lastFive": [
-        "L",
-        "W",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 785,
-      "pointsAgainst": 779,
-      "diff": 6
-    },
-    {
-      "rank": 9,
       "group": null,
       "teamId": "420",
       "name": "BMA365 Bamberg Baskets",
@@ -173,6 +154,25 @@
       "pointsFor": 848,
       "pointsAgainst": 846,
       "diff": 2
+    },
+    {
+      "rank": 9,
+      "group": null,
+      "teamId": "413",
+      "name": "ALBA BERLIN",
+      "wins": 5,
+      "losses": 5,
+      "winPct": 50,
+      "lastFive": [
+        "W",
+        "L",
+        "W",
+        "W",
+        "L"
+      ],
+      "pointsFor": 864,
+      "pointsAgainst": 869,
+      "diff": -5
     },
     {
       "rank": 10,
@@ -196,25 +196,6 @@
     {
       "rank": 11,
       "group": null,
-      "teamId": "418",
-      "name": "ratiopharm ulm",
-      "wins": 4,
-      "losses": 5,
-      "winPct": 44.44,
-      "lastFive": [
-        "L",
-        "L",
-        "W",
-        "L",
-        "W"
-      ],
-      "pointsFor": 757,
-      "pointsAgainst": 769,
-      "diff": -12
-    },
-    {
-      "rank": 12,
-      "group": null,
       "teamId": "541",
       "name": "RASTA Vechta",
       "wins": 4,
@@ -230,6 +211,25 @@
       "pointsFor": 862,
       "pointsAgainst": 903,
       "diff": -41
+    },
+    {
+      "rank": 12,
+      "group": null,
+      "teamId": "418",
+      "name": "ratiopharm ulm",
+      "wins": 4,
+      "losses": 6,
+      "winPct": 40,
+      "lastFive": [
+        "L",
+        "W",
+        "L",
+        "W",
+        "L"
+      ],
+      "pointsFor": 829,
+      "pointsAgainst": 858,
+      "diff": -29
     },
     {
       "rank": 13,
@@ -253,6 +253,25 @@
     {
       "rank": 14,
       "group": null,
+      "teamId": "554",
+      "name": "Veolia Towers Hamburg",
+      "wins": 4,
+      "losses": 6,
+      "winPct": 40,
+      "lastFive": [
+        "L",
+        "L",
+        "W",
+        "W",
+        "W"
+      ],
+      "pointsFor": 847,
+      "pointsAgainst": 911,
+      "diff": -64
+    },
+    {
+      "rank": 15,
+      "group": null,
       "teamId": "485",
       "name": "NINERS Chemnitz",
       "wins": 4,
@@ -268,25 +287,6 @@
       "pointsFor": 901,
       "pointsAgainst": 879,
       "diff": 22
-    },
-    {
-      "rank": 15,
-      "group": null,
-      "teamId": "554",
-      "name": "Veolia Towers Hamburg",
-      "wins": 3,
-      "losses": 6,
-      "winPct": 33.33,
-      "lastFive": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "W"
-      ],
-      "pointsFor": 750,
-      "pointsAgainst": 817,
-      "diff": -67
     },
     {
       "rank": 16,
@@ -313,18 +313,18 @@
       "teamId": "473",
       "name": "Phoenix Hagen",
       "wins": 2,
-      "losses": 7,
-      "winPct": 22.22,
+      "losses": 8,
+      "winPct": 20,
       "lastFive": [
         "W",
-        "W",
+        "L",
         "L",
         "L",
         "L"
       ],
-      "pointsFor": 751,
-      "pointsAgainst": 828,
-      "diff": -77
+      "pointsFor": 845,
+      "pointsAgainst": 925,
+      "diff": -80
     },
     {
       "rank": 18,
