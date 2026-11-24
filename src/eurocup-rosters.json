@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -7326,7 +7326,7 @@
         "code": "007005",
         "firstName": "Filip",
         "lastName": "Stanic",
-        "photo": null,
+        "photo": "https://media-cdn.cortextech.io/1dU3kpCqReRp93/1BSdBWIjHHNTU3/dfe73065-9b6a-4406-b3f4-0dc14163a4d0.png",
         "height": 206,
         "nationality": "GER",
         "position": "Center",

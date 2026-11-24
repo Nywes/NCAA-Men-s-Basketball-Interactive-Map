@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -7384,6 +7384,36 @@
       }
     ],
     "VIR": [
+      {
+        "code": "003527",
+        "firstName": "Awudu",
+        "lastName": "Abass",
+        "photo": null,
+        "height": 200,
+        "nationality": "ITA",
+        "position": "Forward",
+        "number": "50",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
+      {
+        "code": "012113",
+        "firstName": "Achille",
+        "lastName": "Lonati",
+        "photo": null,
+        "height": 195,
+        "nationality": "ITA",
+        "position": "Guard",
+        "number": "22",
+        "leagueRank": {
+          "pts": null,
+          "reb": null,
+          "ast": null
+        }
+      },
       {
         "code": "013028",
         "firstName": "Matteo",

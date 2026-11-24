@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-23",
+  "updated": "2026-11-24",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -5380,7 +5380,7 @@
         "code": "30002911",
         "firstName": "Rafael",
         "lastName": "Rodríguez",
-        "photo": null,
+        "photo": "https://static.acb.com/media/PRO/00/00/93/17/28/0000931728_5-6_01.jpg",
         "height": 183,
         "age": 20,
         "nationality": "ESP",
