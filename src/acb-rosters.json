@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-25",
+  "updated": "2026-11-26",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -1490,7 +1490,7 @@
         "pir": 9.9,
         "leagueRank": {
           "pts": null,
-          "reb": 16,
+          "reb": 15,
           "ast": null
         }
       },
@@ -2670,7 +2670,7 @@
         "pir": 11.6,
         "leagueRank": {
           "pts": null,
-          "reb": null,
+          "reb": 20,
           "ast": null
         }
       },
@@ -2727,34 +2727,6 @@
         "leagueRank": {
           "pts": null,
           "reb": null,
-          "ast": null
-        }
-      },
-      {
-        "code": "30005354",
-        "firstName": "Yordan",
-        "lastName": "Minchev",
-        "photo": "https://static.acb.com/media/PRO/00/00/92/64/19/0000926419_5-6_01.jpg",
-        "height": 205,
-        "age": 28,
-        "nationality": "BUL",
-        "position": "Forward",
-        "number": "91",
-        "gp": 7,
-        "min": 17.8,
-        "ppg": 6.4,
-        "rpg": 6,
-        "apg": 1.1,
-        "spg": 0.9,
-        "bpg": 0.1,
-        "tov": 1.7,
-        "p2": 51.61,
-        "p3": 25,
-        "ft": 40,
-        "pir": 7.7,
-        "leagueRank": {
-          "pts": null,
-          "reb": 14,
           "ast": null
         }
       }
@@ -3964,7 +3936,7 @@
         "pir": 9.9,
         "leagueRank": {
           "pts": null,
-          "reb": 15,
+          "reb": 14,
           "ast": null
         }
       },
@@ -3992,7 +3964,7 @@
         "pir": 9.7,
         "leagueRank": {
           "pts": null,
-          "reb": 19,
+          "reb": 18,
           "ast": null
         }
       },
@@ -4050,7 +4022,7 @@
         "pir": 9.2,
         "leagueRank": {
           "pts": null,
-          "reb": 17,
+          "reb": 16,
           "ast": null
         }
       },
@@ -4330,7 +4302,7 @@
         "pir": 19.1,
         "leagueRank": {
           "pts": null,
-          "reb": 18,
+          "reb": 17,
           "ast": null
         }
       },
@@ -6384,7 +6356,7 @@
         "pir": 11.9,
         "leagueRank": {
           "pts": null,
-          "reb": 20,
+          "reb": 19,
           "ast": null
         }
       },
