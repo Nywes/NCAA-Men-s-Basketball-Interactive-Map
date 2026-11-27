@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "season": "2026-27",
   "source": "api-live.euroleague.net",
   "rosters": {
@@ -3315,11 +3315,11 @@
         "min": 20.89166666666667,
         "spg": 0.4,
         "bpg": 0.2,
-        "tov": 1,
+        "tov": 0.9,
         "p2": 44.4,
         "p3": 44.8,
         "ft": 94.7,
-        "pir": 12.2,
+        "pir": 12.3,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -4985,11 +4985,11 @@
         "min": 15.375641025641025,
         "spg": 0.8,
         "bpg": 0.2,
-        "tov": 0.8,
+        "tov": 0.9,
         "p2": 47.1,
         "p3": 33.3,
         "ft": 0,
-        "pir": 3.4,
+        "pir": 3.3,
         "leagueRank": {
           "pts": null,
           "reb": null,
@@ -7204,10 +7204,10 @@
         "spg": 0.9,
         "bpg": 0.1,
         "tov": 1.8,
-        "p2": 53.7,
+        "p2": 53.3,
         "p3": 42.9,
         "ft": 74.1,
-        "pir": 19.9,
+        "pir": 19.8,
         "leagueRank": {
           "pts": null,
           "reb": null,

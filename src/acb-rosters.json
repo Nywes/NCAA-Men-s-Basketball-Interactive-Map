@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-26",
+  "updated": "2026-11-27",
   "season": "2026-27",
   "source": "api2.acb.com",
   "rosters": {
@@ -4116,7 +4116,7 @@
         "lastName": "Homesley",
         "photo": "https://static.acb.com/media/PRO/00/00/92/88/09/0000928809_5-6_01.jpg",
         "height": 198,
-        "age": 29,
+        "age": 30,
         "nationality": "USA",
         "position": "Guard",
         "number": "5",
@@ -4566,7 +4566,7 @@
         "lastName": "Akinjo",
         "photo": "https://static.acb.com/media/PRO/00/00/92/81/84/0000928184_5-6_01.jpg",
         "height": 185,
-        "age": 25,
+        "age": 26,
         "nationality": "USA",
         "position": "Guard",
         "number": "11",

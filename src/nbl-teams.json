@@ -62,7 +62,7 @@
     "shortDisplayName": "NZ Breakers",
     "division": "nbl",
     "code": "NZL",
-    "logo": "https://images.dc.connect.sportradar.com/b1sjj/9c43694837504a4d8ec00f739bcfff0d?size=200&format=webp",
+    "logo": "https://images.dc.prod.cloud.atriumsports.com/b1sjj/9c43694837504a4d8ec00f739bcfff0d?size=200&amp;format=webp",
     "color": "000000",
     "secondaryColor": "FFFFFF",
     "venue": "North Shore Events Centre",
